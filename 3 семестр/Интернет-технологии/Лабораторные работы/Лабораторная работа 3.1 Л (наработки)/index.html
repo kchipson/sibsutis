@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+        <title>������������ ������ 3.1</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div id="dd" class="block" tabindex="1">
+                Menu1
+                <ul class="dropdown">
+                    <li><a href="#">SubMenu1</a></li>
+                    <li><a href="#">SubMenu2</a></li>
+                    <li><a href="#">SubMenu3</a></li>
+                </ul>
+            </div>
+            <div id="ddd" class="block" tabindex="2">
+                Menu2
+                <ul class="dropdown">
+                    <li><a href="#">SubMenu1</a></li>
+                    <li><a href="#">SubMenu2</a></li>
+                    <li><a href="#">SubMenu3</a></li>
+                </ul>
+            </div>
+        </div>
+        <script
+            type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+        ></script>
+        <script type="text/javascript">
+            function DropDown(el) {
+                this.dd = el;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents: function() {
+                    var obj = this;
+
+                    obj.dd.on("mouseover", function(event) {
+                        $(this).toggleClass("active");
+                        event.stopPropagation();
+                    });
+                }
+            };
+
+            $(function() {
+                var dd = new DropDown($("#dd"));
+
+                $(document).mouseout(function() {
+                    // all dropdowns
+                    $(".block").removeClass("active");
+                });
+            });
+        </script>
+    </body>
+</html>

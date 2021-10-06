@@ -1,0 +1,18 @@
+<svg id="step-complete" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 56.18 56.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6fb05a;
+        stroke: #6ab255;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="28.09" cy="28.09" r="25"/>
+  <path id="check" class="cls-2" d="M1106.84,1336.79L1094,1349.63l-4.72-4.72a0.6,0.6,0,0,0-.83,0l-1.38,1.39a0.573,0.573,0,0,0,0,.82l6.52,6.52a0.573,0.573,0,0,0,.82,0l14.64-14.64a0.585,0.585,0,0,0,0-.83l-1.38-1.38A0.585,0.585,0,0,0,1106.84,1336.79Z" transform="translate(-1069.91 -1316.91)"/>
+</svg>

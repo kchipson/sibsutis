@@ -1,0 +1,13 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_themeisle-companion">
+            <key name="llorix_one_lite_our_services_title" />
+            <key name="llorix_one_lite_our_services_subtitle" />
+            <key name="llorix_one_lite_our_team_title" />
+            <key name="llorix_one_lite_our_team_subtitle" />
+            <key name="llorix_one_lite_our_team_background" />
+            <key name="llorix_one_lite_happy_customers_title" />
+            <key name="llorix_one_lite_happy_customers_subtitle" />
+        </key>
+    </admin-texts>
+</wpml-config>

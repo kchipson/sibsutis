@@ -1,0 +1,36 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Error</TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+<a href="javabook.html"><img src="icons/home.gif" border=0 alt="Домой" width=64 height=64></a>
+<H2><A NAME="start">Error</A></H2>
+<UL>
+    <LI>Свойства
+    <UL>
+        <LI>description
+        <LI>number
+    </UL>
+</UL>
+<P>Создание объекта:<BR>
+   var newErrorObj = new Error()<BR>
+   var newErrorObj = new Error(код_ошибки)<BR>
+   var newErrorObj = new Error(код_ошибки, строка_описания_ошибки)
+<P>Объект Error хранит сообщения об ошибках.
+<P>Пример работы с объектом <B>Error</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+try
+  x = y
+catch(e){
+  response.write(e)
+  response.write(e.number & 0xFFFF)
+  response.write(e.description)
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+</BODY>
+</HTML>

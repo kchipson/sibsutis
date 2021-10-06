@@ -1,0 +1,448 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Язык HTML -- META tag</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<center>
+<H2><A NAME="start">Описание HTML документов (команда META).</A></H2>
+</center>
+<ul>
+<li><a href="#1">Команда META</a>
+<LI><a href="#2">Атрибут HTTP-EQUIV</a>
+<ul>
+<LI><a href="#Expires">Значение: Expires</a>
+<LI><a href="#Pragma">Значение: Pragma</a>
+<LI><a href="#Content-Type">Значение: Content-Type</a>
+<LI><a href="#Content-language">Значение: Content-language</a>
+<LI><a href="#auto">Значение: Refresh</a>
+<LI><a href="#Window-target">Значение: Window-target</a>
+<LI><a href="#Ext-cache">Значение: Ext-cache</a>
+<LI><a href="#PICS-Label">Значение: PICS-Label</a>
+<LI><a href="#Cache-Control">Значение: Cache-Control</a>
+<LI><a href="#Vary">Значение: Vary</a>
+<LI><a href="#Lotus">Значение: Lotus</a>
+</ul>
+<LI><a href="#3">Атрибут NAME</a>
+<ul>
+<LI><a href="#Robots">Значение: Robots</a>
+<LI><a href="#Description">Значение: Description</a>
+<LI><a href="#Keywords">Значение: Keywords</a>
+<LI><a href="#Document-state">Значение: Document-state</a>
+<LI><a href="#URL">Значение: URL</a>
+<LI><a href="#Author">Значение: Author</a>
+<LI><a href="#Generator">Значение: Generator</a>
+<LI><a href="#Copyright">Значение: Copyright</a>
+<LI><a href="#Distribution">Значение: Distribution</a>
+<LI><a href="#Resource-type">Значение: Resource-type</a>
+<LI><a href="#others">Прочие значения</a>
+</ul>
+<P>
+<CENTER><a name=1></a><h3>Команда META</h3></CENTER>
+<P>
+Команда META (тэг) имеют два возможных атрибута
+<P>
+
+<table><tr><td bgcolor=aqua> &lt;META HTTP-EQUIV=&quot;имя&quot; CONTENT=&quot;содержимое&quot;&gt;
+<br>
+ &lt;META NAME=&quot;имя&quot; CONTENT=&quot;содержимое&quot;&gt;
+<P align=justify>
+
+</table>META команды (описания-инструкции) должны находиться в заголовке HTML-документа
+между инструкциями &lt;HEAD&gt; и &lt;/HEAD&gt;
+(особенно это важно для документов, использующих фреймы).
+<P>
+<a name=2><B>Атрибут HTTP-EQUIV</B></a>
+<P align=justify>
+META-команда с атрибутом HTTP-EQUIV эквивалентна HTTP-заголовку ответа HTTP сервера
+(некоторые HTTP серверы, могут использовать эти команды для формирования реальных
+ HTTP-заголовков).
+Обычно они управляют действиями браузеров и могут быть использованы
+для совершенствования информации, выдаваемой обычными заголовками.
+Команды META могут дать такой же эффект, что и реальный HTTP-заголовок
+ответа сервера.
+Описание HTTP-заголовка ответа дано в 
+ RFC1945 (протокол HTTP/1.0) и 
+ RFC2068 (протокол HTTP/1.1).
+<P align=justify >
+HTTP-заголовки формируются сервером, как правило, согласно информации,
+заданной в
+конфигурационных файлах,
+но могут быть сгенерированы и с помощью
+CGI-скриптов.
+
+Это позволяют сделать серверы Apache,
+Netscape, CERN, NCSA и некоторые другие. Существуют
+серверы, которые используют другие механизмы генерирования заголовков
+(например, через специальный дизайнер, как это сделано в сервере MS IIS).
+Некоторые генерируемые сервером поля заголовков не могут быть
+подменены значениями из содержания команды META (в частности Date), другие 
+подменяются только при ненормальном (ошибочном)
+статус-коде HTTP-ответа (&lt;&gt;200).
+Если информация, заданная в заголовках (HTTP и META) противоречит друг другу,
+то значение HTTP-заголовка превалирует
+над значением команды META (по протоколу, но не все просмотрщики это соблюдают).
+<P><a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="Expires"><B>Значение: Expires</B></a>
+<P>
+Источник: HTTP/1.1 (RFC2068)
+<P align=justify >
+Дата устаревания документа. Управление кэшированием у клиента в HTTP/1.0.
+В Netscape Navigator это выглядит следующим образом: если указанная
+дата прошла, то очередной запрос этого документа вызывает повторный
+сетевой запрос, а не подгрузку документа из кэша. Дата со значением
+&quot;0&quot; интерпретируется как &quot;текущее_время&quot;. Такое значение
+заставляет браузер каждый раз при запросе проверять - изменялся
+ли этот документ. Это, кстати относится и к прокси-агентам. Поисковые
+роботы могут либо совсем не индексировать такой документ, либо
+постоянно &quot;просматривать&quot; его.
+<P>
+Дата должна быть задана в формате, описанном в
+RFC850
+(стандартная запись Даты для UNIX систем),
+<P>
+<table><tr><td bgcolor=aqua>
+&lt;META HTTP-EQUIV=&quot;expires&quot; CONTENT=&quot;Wed,
+26 Feb 1997 08:21:57 GMT&quot;&gt;
+
+</table><P>
+что эквивалентно HTTP-заголовку
+
+<table><tr><td bgcolor=aqua><P>Expires: Wed, 26 Feb 1997 08:21:57 GMT
+
+</table><P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Pragma">Значение: Pragma</a></B>
+<P align=justify >
+Контроль кэширования для протокола HTTP/1.0.
+Значение может быть только одно &quot;no-cache&quot; (не кэшировать данный документ).
+<P>
+<B><a name="Content-Type">Значение:</a>
+Content-Type</B>
+<P>
+Источник: HTTP/1.0 (RFC1045)
+<P align=justify >
+Указание MIME-типа документа.
+Может быть расширено указанием кодовой страницы документа
+(<tt>charset</tt>).
+Если же указывать charset в содержании команды META, то Netscape Navigator и MSIE
+выводят данный документ уже в заданном charset.
+Однако будьте аккуратны, если текст документа в кодировке Windows
+имеет значение <tt>charset=KOI8-r</tt>,
+то никакими силами пользователь не сможет поменять <tt>encoding</tt>,
+чтобы увидеть <i><b>нормальный русский текст!</i></b>
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META HTTP-EQUIV=&quot;Content-type&quot;
+CONTENT=&quot;text/html; charset=ISO-8859-5&quot;&gt;
+
+</table><P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Content-language">Значение: Content-language</a></B>
+<P>
+Источник: HTTP/1.0
+<P align=justify >
+Указание языка документа. Может использоваться поисковыми
+машинами при индексировании страниц. Комбинация поля <tt>Accept-Language</tt>
+(посылаемого *броузером) с содержимым <tt>Content-language</tt>
+может быть условием выбора сервером того или иного языка.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META HTTP-EQUIV=&quot;Content-language&quot;
+CONTENT=&quot;en-GB&quot;&gt;
+</table>
+<P>
+что эквивалентно HTTP-заголовку
+
+<table><tr><td bgcolor=aqua><P>
+Content-language: en-GB
+
+</table><P align=justify >
+Язык описывается парой значений (язык-диалект). В
+примере: Английский-Великобритания. Можно использовать только фиксированные коды
+языков, например:
+<pre>
+    en - английский
+    fr - французский
+    de - немецкий
+    it - итальянский
+    ru - русский
+</pre>
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<a name=auto><B>Значение: Refresh</B></a>
+<P>
+Источники: Netscape (Автоматическая перезагрузка документа)
+<P align=justify >
+Определение задержки в секундах, после которой браузер
+автоматически обновляет документ. Дополнительная возможность -
+автоматическая загрузка другого документа.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META HTTP-EQUIV=&quot;Refresh&quot;
+Content=&quot;3; URL=http://www.name.com/page.html&quot;&gt;
+
+</table><P>что эквивалентно HTTP-заголовку
+
+<table><tr><td bgcolor=aqua><P>Refresh: 3; URL=http://www.name.com/page.html
+</table>
+<P align=justify >В Netscape Navigator это дает такой же эффект, что и
+нажатие на кнопку Reload.
+<p>
+Спецификация протокола HTTP <font size=+1><tt>"Refresh"</tt></font>
+автоматически загружает в окно просмотрщика новый документ.
+<p><b>Пример</b>
+<table bgcolor=aqua><tr><td>
+<pre>&lt;META HTTP-EQUIV="Refresh" CONTENT="12; URL=webpage.html"&gt;</pre>
+</td></tr></table>
+Если данная команда указана в заголовке документа, то через 12 секунд
+просмотрщик автоматически заменяет текущий документ на документ, указанный
+атрибутом URL.
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Window-target">Значение: Window-target</a></B>
+<P align=justify >
+Определяет окно текущей страницы; может быть использован
+для прекращения появления новых окон браузера при применении фреймовых
+структур. Действует для многих (но не для всех) браузеров.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META HTTP-EQUIV=&quot;Window-target&quot; CONTENT=&quot;_top&quot;&gt;
+
+</table><P>что эквивалентно HTTP-заголовку
+
+<table><tr><td bgcolor=aqua><P>Window-target: _top
+
+</table><P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Ext-cache">Значение: Ext-cache</a></B>
+<P align=justify >
+Определяет имя альтернативного кэша для просмотрщика
+
+<table><tr><td bgcolor=aqua><P>&lt;META HTTP-EQUIV=&quot;Ext-cache&quot;
+CONTENT=&quot;name=/some/path/index.db; istructions=User Instructions&quot;&gt;
+
+</table><P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="PICS-Label">Значение: PICS-Label</a></B>
+<P>
+Platform for Internet Content Selection
+(Platform-Independant Content rating Scheme).
+Обычно используется для определения рейтинга &quot;взрослости&quot; (adult)
+содержания (sex,violence,
+...):-)) однако это довольно гибкая схема
+и может использоваться для других целей.
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Cache-Control">Значение: Cache-Control</a></B>
+<P>
+Источники: HTTP/1.1
+<P align=justify >
+Определяет действия кэша по отношению к данному документу. Возможные
+значения:
+<UL>
+<LI>Public -
+документ кэшируется в доступных для всех кэшах
+<LI>Private
+- только в частном кэше
+<LI>no-cache
+- не может быть кэширован
+<LI>no-store
+- может быть кэширован, но не сохраняется
+</UL>
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Vary">Значение: Vary</a></B>
+<P>
+Источники: HTTP/1.1
+<P align=justify>Определяет доступные альтернативы для указанных в CONTENT полей HTTP-заголовка.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META HTTP-EQUIV=&quot;Vary&quot;
+CONTENT=&quot;Content-language&quot;&gt;
+</table>
+<P>что эквивалентно HTTP-заголовку
+
+<table><tr><td bgcolor=aqua><P>Vary: Content-language
+<P>
+</table>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Lotus">Значение: Lotus</a></B>
+<P align=justify>Lotus-редакторы генерируют свои собственные поля
+Bulletin-Date и Bulletin-Text атрибуты. Bulletin-Text содержит
+описание документа
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<P><a name=3></a>
+<h3>Атрибут NAME</h3>
+<P align=justify >
+Команда META с атрибутом NAME используются
+в случаях, когда поля не соотносятся с HTTP-заголовками.
+Принципиально нет никаких ограничений на использования значений этого атрибута,
+за исключением того, что существует негласная договоренность между создателями поисковых машин
+и роботов о том как использовать некоторые из них. Ниже приводятся наиболее
+употребимые значения этого атрибута.
+<P>
+META с атрибутом NAME это поля, содержащие описание документа, или поля, предназначенные
+для интерпретации поисковыми машинами (роботами).
+Иногда некоторые поисковые агенты могут интерпретировать
+значение &quot;Keywords&quot;
+описанный как NAME, другие - как HTTP-EQUIV
+<P>
+<B><a name="Robots">Значение: Robots</a></B>
+<P align=justify >
+Управление индексацией страницы для поисковых роботов.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META NAME=&quot;Robots&quot; CONTENT=&quot;NOINDEX,FOLLOW&quot;&gt;
+</table>
+<P>
+Возможные значения:
+<UL>
+<LI>ALL
+<LI>NONE
+<LI>INDEX
+<LI>NOINDEX
+<LI>FOLLOW
+<LI>NOFOLLOW
+</UL>
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Description">Значение: Description</a></B>
+<P>
+Источники: Spidering, Altavista, Infoseek
+<P align=justify >
+Краткая аннотация содержания документа. Используется
+поисковыми системами для описания документа. Задание этого значения полезено
+в случаях, когда в документе мало текста, когда это управляющий
+фреймами файл (frameset) или в начале документа используются скрипты.
+Длина текста до 100 символов.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META NAME=&quot;Description&quot;
+CONTENT=&quot;
+Документ содержит словарь META-тагов&quot;&gt;
+
+</table><P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Keywords">Значение: Keywords</a></B>
+<P>
+Источники: Altavista, Infoseek
+<P align=justify >
+Используется поисковыми системами для индексирования
+документа. Обычно здесь указываются синонимы к словам в заголовке
+(title)
+или альтернативный заголовок. Длина списка до 1000 символов. Не
+допускается использование одного и того же ключевого слова более
+7 раз, поисковые системы просто будут игнорировать это слово.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META NAME=&quot;Keywords&quot;
+CONTENT=&quot;таги,тэги,метаданные,список&quot;&gt;
+
+</table>
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Document-state">Значение: Document-state</a></B>
+<P align=justify >
+Управление индексацией страницы для поисковых роботов.
+Определяет частоту индексации - или один раз
+индексировать, или реиндексировать документ регулярно.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META NAME=&quot;Document-state&quot;
+CONTENT=&quot;Static&quot;&gt;
+
+</table><P>
+Возможные значения:
+<UL>
+<LI>Static
+<LI>Dynamic
+</UL>
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="URL">Значение: URL</a></B>
+<P align=justify >
+Управление индексацией страницы для поисковых роботов.
+Определяет частоту индексации - или один раз
+индексировать, или реиндексировать документ регулярно.
+
+<table><tr><td bgcolor=aqua><P>
+&lt;META NAME=&quot;URL&quot; CONTENT=&quot;absolute_url&quot;&gt;
+<P>
+</table>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Author">Значение: Author</a></B>
+<P>
+Обычно имя автора, формат произвольный.
+<P>
+<B><a name="Generator">Значение: Generator</a></B>
+<P>
+<P align=justify>Обычно название и версия редактора, с помощью которого
+создана эта страница. Может быть использована для определения
+доли рынка, занимаемого тем или иным продуктом.
+<P>
+<B><a name="Copyright">Значение: Copyright</a></B>
+<P align=justify >
+Обычно описание авторских прав на документ в произвольном
+формате.
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="Distribution">Значение: Distribution</a></B>
+<P>
+Возможные значения
+<UL>
+<LI>global
+<LI>local
+<LI>iu (internal use)
+</UL>
+<P>
+<B><a name="Resource-type">Значение: Resource-type</a></B>
+<P align=justify >
+Текущее состояние данного файла. Важен для поисковых
+систем, т.е. если его значение document,
+то поисковая система приступает к его индексированию.
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<B><a name="others">Прочие значения</a></B>
+<UL>
+<LI>Classification
+<LI>Formatter
+<LI>Site-languages
+<LI>Language
+<LI>Version
+<LI>Template
+<LI>Operator
+<LI>Rating
+<LI>Creation
+<LI>Host
+<LI>Document
+<LI>Subject
+<LI>Build
+<LI>Random text
+</UL>
+<P align=justify >
+Помимо перечисленных более или менее стандартных
+значений данного атрибута существует еще множество других специализированных, например,
+для конкретной поисковой машины.<br>
+<a href="#start"><img src="icons/up.gif" border=0></a>

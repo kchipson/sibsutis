@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>код примера</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<h3>Код извлечения</h3>
+<hr color=black>
+<p>
+
+&lthtml&gt<br>
+&lthead&gt<br>
+&lttitle&gtSamlpe&lt/title&gt<br>
+
+&ltscript language="JavaScript"&gt <br><br>
+ function LoadDoc()<br>
+ {  var xmldoc=new ActiveXObject("Microsoft.XMLDOM") <br> 
+        xmldoc.async=false;<br>
+        xmldoc.load("samples.xml") // загружаем документ в память<br>
+    output="  Овощи и не только: \n";<br>
+    vegetables=xmldoc.getElementsByTagName("vegetables");<br>
+// вывод всех дочерних узлов тега &ltvegetables&gt &lt/vegetables&gt <br>  
+    for(var i=0;i&ltvegetables.length;i++) output+=vegetables.item(i).text;
+ 
+    document.all.textar.value=output;<br>
+    // затем выведем их значения  в "textarea"<br>
+    <br>	
+    output="  Овощи : \n"; <br>
+    vegetables=xmldoc.getElementsByTagName("vegetables") ;<br>
+    product=vegetables.item(0).getElementsByTagName("product");<br>
+    // вывод именно узла &ltproduct&gt &lt/product&gt тега &ltvegetables&gt &lt/vegetables&gt <br>
+    for(var i=0;i&ltproduct.length;i++) output+=product.item(i).text+" "; <br>   
+    
+    document.all.textat.value=output; <br>
+    document.all.textar.value=output; <br>   
+ } <br>
+&lt/script&gt<br><br> 
+
+&lt/head&gt<br> 
+&ltbody onLoad="LoadDoc()"&gt <br>
+
+&lttextarea id="textar" rows="6"&gt&lt/textarea&gt><br>   
+  
+&lt/body&gt<br>  
+&lt/html&gt<br><br>
+
+<p>
+</BODY>
+</HTML>

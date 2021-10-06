@@ -1,0 +1,96 @@
+.ti-cf-module label {
+    display: block;
+    margin-top: 20px;
+}
+.ti-cf-module input,
+.ti-cf-module textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+.ti-cf-module select{
+    height: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.ti-cf-module.content-form-newsletter select.country{
+    width: 100%;
+    line-height: inherit;
+}
+.ti-cf-module fieldset {
+    border: none;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.ti-cf-module .content-forms-required{
+    width: 100%;
+}
+
+.ti-cf-module .content-form-loading {
+    opacity: .5;
+    pointer-events: none;
+}
+.ti-cf-module .content-form-notice {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.ti-cf-module .content-form-notice-wrapper {
+	display: flex;
+	width: 100%;
+}
+
+.ti-cf-module .content-form-success {
+	color: #53a813;
+    border: 2px solid #53a813;
+}
+.ti-cf-module .content-form-error {
+    color: #d5521a;
+    border: 2px solid #d5521a;
+}
+
+.ti-cf-module.content-form {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ti-cf-module.content-form .submit-form {
+    width: 100%;
+}
+
+.ti-cf-module .form-control {
+    height: auto;
+}
+
+.ti-cf-module.content-form-newsletter {
+    align-items: flex-end;
+}
+
+.ti-cf-module.content-form-newsletter button {
+    margin: 0;
+}
+
+.ti-cf-module.content-form-newsletter fieldset {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ti-cf-module.content-form-newsletter > .form-group .form-control {
+    margin-bottom: 0;
+
+}
+.ti-cf-module.content-form-newsletter .elementor-column:not(.elementor-col-100) + .submit-form {
+    display: flex; width: auto;
+}
+
+.ti-cf-module .elementor-button-icon svg{
+    height: initial;
+}

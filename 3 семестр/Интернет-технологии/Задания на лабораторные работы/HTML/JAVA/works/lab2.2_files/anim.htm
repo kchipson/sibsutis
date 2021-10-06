@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+
+<BODY background="12.gif" text="Black" link="Blue" vlink="lightsteelblue" alink="Maroon">
+<h1><font color="red"><i>JavaScript</i></font> анимация</h1>
+<BR>
+Следующий пример использует <font color="red"><i>JavaScript</font></i>, 
+чтобы создать анимацию с объектом <I>Image</I>,  
+многократно изменяя значение свойства <I>src</I>. 
+Сценарий начинается,  предварительно загрузив десять изображений, 
+которые создают анимацию (Image1.gif,Image2.gif,Image3.gif, и так далее). 
+Когда объект <I>Image</I> размещается на документе с тегом &LT;IMG&GT;, 
+показывается Image1.gif, и обработчик событий onLoad начинает анимацию,  
+вызывая функцию <i>animate</i>. 
+
+<font color="purple"><XMP>
+<SCRIPT>
+delay = 100
+imageNum = 1 // стартовый номер картинки
+theImages = new Array()
+for(i = 1; i < 11; i++) {
+   theImages[i] = new Image()
+   theImages[i].src = "Image" + i + ".gif"
+   }
+function animate() {
+   document.animation.src = theImages[imageNum].src
+   imageNum++;   
+   if(imageNum > 10) {
+   imageNum = 1
+   }
+}
+function slower() {
+   delay+=10
+   if(delay > 4000) delay = 4000
+}
+function faster() {
+   delay-=10
+   if(delay < 0) delay = 0
+}
+</SCRIPT>
+<BODY BGCOLOR="white">
+ <IMG NAME="animation" SRC="Image1.gif" ALT="[Анимация]" 
+onLoad="setTimeout('animate()', delay)">  
+<FORM>  
+<INPUT TYPE="button" Value="Slower" onClick="slower()">
+<INPUT TYPE="button" Value="Faster" onClick="faster()">
+</FORM>
+</BODY>
+</XMP></font>
+
+</body></html>

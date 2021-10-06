@@ -1,0 +1,987 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+</HEAD>
+<BODY text="Black" link="#336699" vlink="#6699cc" alink=" #ff6600">
+<a name="list_tan">
+<H2>Метод tan</H2> 
+<P>
+ Возвращает тангенс аргумента. 
+<H3> Синтаксис</H3> 
+<PRE> Math.tan <I>(number)</I></PRE> 
+<P>
+<I> number </I> - числовое выражение, представляющее размер угла в радианах, или свойство существующего объекта. 
+<H3>Метод</H3> 
+<P>
+<A HREF="m_q.html#list_Math">Math</A> 
+<H3> Описание</H3> 
+<P>
+Коричневый метод возвращает числовую значение, которая представляет тангенс угла. 
+<H3> Примеры</H3> 
+<PRE>  
+// Возвращает значение 0.9999999999999999 
+document.write (" тангенс pi/4 радиан" + 
+Math.tan (Math. PI/4))
+// Возвращает значение0 
+document.write (" тангенс 0 радиан" + 
+Math.tan (0)) </PRE> 
+<H3> Смотрите также</H3> 
+<LI> Методы <A HREF="a.html#list_acos">acos</A>, <A HREF="a.html#list_asin">asin</A>, <A HREF="a.html#list_atan">atan</A>, <A HREF="c.html#list_cos"> cos </A>,  <A HREF="s.html#list_sin"> sin </A> 
+<!----------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_target">
+<H2> Свойство target</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_target">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Строка, определяющая имя окна, в которое будет помещен ответ после посылке данных формы серверу
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>FormName</I>.target 
+2. Связи <I>[index]</I> .target </PRE> 
+<P>
+<I>FormName</I> является либо именем формы либо элемента в массиве <I>form</I>. <BR>
+<I> index </I> - целое число, представляющее объект связи. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="f_g.html#list_formob">form</A>, <A HREF="h_l.html#list_linkob"> link </A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>target</b> отражает атрибут TARGET тега &lt;FORM&gt; и &lt;A&gt; хотя, изменение  <b>target</b> отменяет эти атрибуты. 
+<P>
+Вы можете изменять свойством <b>target</b> в любое время. 
+<P>
+Обычно используется для просмотра ответа сервера на посыл-ку данных. Кроме того, может быть использовано для просмот-ра или изменения URL гиперссылки. Для гиперссылки свойство target возвращает строку, указывающую имя окна, в кото-ром должно быть выведено содержимое выбранной гипер-ссылки.
+<table><tr><td bgcolor=aqua>homePage.target ="http://www.wossamotta.edu/"</table>
+Для установки свойства <b>target</b> нужно использовать констан-ту типа литерал. Выражения <font color="red"><i>JavaScript</i></font> или переменные недопу-стимы.
+<H3> Примеры</H3> 
+<P>
+Следующий пример определяет форму  <I>musicInfo</I> показанную в окне"msgWindow": 
+<PRE> document.musicInfo.target ="msgWindow"</PRE> 
+<H3> Смотрите также</H3> 
+<P>
+Для формы: 
+<LI> Свойства <A HREF="a.html#list_action">action</A>, <A HREF="d_e.html#list_encoding"> encoding </A>, <A HREF="m_q.html#list_method"> method </A> 
+<!------------------------------------------------------------------------------------------------->
+ 
+<HR align=center width=250>
+ <A NAME="list_textob">
+<H2>Объект text</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_textob">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Область <b>text</b> ввода формы HTML. Область <b>text</b> позволяет пользователю, только однострочный ввод. 
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить объект <b>text</b>, используйте стандарт HTML синтаксис с использованием обработчиков событий onBlur, on Change, onFocus, и onSelect: 
+<PRE>   
+&LT;INPUT 
+TYPE ="text" 
+NAME = <I>"textName" </I>
+VALUE= <I>"textValue"</I> 
+SIZE=<I>integer </I>
+[onBlur = <I>"handlerText"</I>] 
+[onChange = <I>"handlerText"</I>] 
+[onFocus = <I>"handlerText"</I>] 
+[onSelect = <I>"handlerText"</I>] &GT;
+ </PRE> 
+<I>NAME ="textName"</I> определяет имя объекта <b>text</b>. Вы можете обращаться к этому значению, используя свойство name. <BR>
+<I>VALUE="textValue"</I> определяет начальное значение объекта <b>text</b>. Вы можете обращаться к этому значению, используя свойство defaultValue. <BR>
+<I>SIZE=integer</I> определяет число символов, объект <b>text</b> может размещаться без полосы прокрутки. 
+<P>
+Использование свойство объекта и методы <b>text</b>: 
+<PRE>  
+1. <I>textName</I>.<I>propertyName </I>
+2. <I>textName</I>.<I>methodName</I> <I>(parameters)</I> 
+3. <I>FormName</I>.elements <I>[ index]</I> .<I>propertyName </I>
+4. <I><I>formName.elements[index].methodName(parameters)</I></I>  </PRE> 
+<I>textName</I> - значение атрибута NAME объекта <b>text</b>. <BR>
+<I>formName</I> является либо значением атрибута NAME объекта form либо элемента в массиве <I>form</I>. <BR>
+<I> index </I> - целое число, представляющее объект <b>text</b> формы. <BR>
+<I>propertyName</I> - один из свойства, описанных  ниже. <BR>
+<I>methodName</I> - один из методов, описанных  ниже. 
+<H3> Свойство</H3> 
+<LI> <A HREF="f_g.html#list_formob"> form </A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>text</b> формы выглядит  следующим образом: 
+<FORM>  
+<P>
+<B>Фамилия:</B> 
+<INPUT TYPE="text" VALUE="Salamone" SIZE=25>
+</FORM>
+<P>
+Объект <b>text</b> - элемент формы и должен быть определен внутри тег &LT;FORM &GT;. 
+<P>
+Объекты <b>text</b>  могут модифицироваться динамически,  изменяя свойство value (this.value). 
+<H3>Свойства</H3> 
+<LI> <A HREF="d_e.html#list_defaultValue">defaultValue</A> отражает атрибут VALUE
+<LI> <A HREF="m_q.html#list_name"> name </A> отражает атрибут NAME
+<LI> <A HREF="t_z.html#list_value"> value </A> отражает текущее значение области объекта <b>text</b> 
+<H3> Методы</H3> 
+<LI> <A HREF="f_g.html#list_focus"> focus </A> 
+<LI> <A HREF="b.html#list_blur"> blur </A> 
+<LI> <A HREF="s.html#list_selectmet">select</A> 
+<H3> Обработчики событий</H3> 
+<LI> <A HREF="m_q.html#list_onBlur">onBlur</A> 
+<LI> <A HREF="m_q.html#list_onChange">onChange</A> 
+<LI> <A HREF="m_q.html#list_onFocus">onFocus</A> 
+<LI> <A HREF="m_q.html#list_onSelect">onSelect</A> 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1.</B> Следующий пример создает объект <b>text</b>, длинной в 25 знаков. Область <b>text</b> незаполнена, когда форма загружена. 
+<table><tr><td bgcolor=aqua><xmp>
+ <B>Фамилия:</B> 
+<INPUT TYPE="text" NAME="last_name" VALUE="" SIZE=25>
+</xmp></table>
+<P>
+<B>Пример 2.</B> Следующий пример создает два объекта <b>text</b>  формы. Каждый объект имеет свое значение по умолчанию. Объект <I>city</I> имеет обработчик событий onFocus. Объект <I>state</I> имеет обработчик событий onChange, который форматирует значение в большие буквы. 
+<table><tr><td bgcolor=aqua><xmp>
+<FORM NAME="form1">  <BR>
+<B>Город:</B> 
+<INPUT TYPE="text" NAME="city" VALUE="Anchorage" SIZE="20" onFocus="this.select()">
+ <B>Государство:</B> 
+<INPUT TYPE="text" NAME="state" VALUE="AK" SIZE="2" onChange="this.value=this.value.toUpperCase()">
+</FORM>
+</xmp></table>
+<P>
+Смотрите также примеры для обработчиков событий <A HREF="m_q.html#list_onBlur">onBlur</A>, <A HREF="m_q.html#list_onChange">onChange</A>, <A HREF="m_q.html#list_onFocus">onFocus</A>, и <A HREF="m_q.html#list_onSelect">onSelect</A>. 
+<H3> Смотрите также</H3> 
+<LI> Объекты  <A HREF="f_g.html#list_formob"> form </A>, <A HREF="m_q.html#list_password"> password </A>, <A HREF="s.html#list_string"> string </A>, <A HREF="t_z.html#list_textarea">textarea</A> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_textpr">
+<H2> Свойство text</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_textpr">Измененный в Navigator 3.0</A></FONT>  
+<P>
+ Строка, определяющая текст, который следует за тегом &lt;OPTION&gt; в объекте select. 
+<H3> Синтаксис</H3> 
+<PRE> <I>selectName</I>.options <I>[index]</I> .text</PRE> 
+<P>
+<I>selectName</I> является либо значением атрибута NAME объекта select либо элемента в массиве <I>elements</I>. <BR>
+<I> index </I> - целое число, представляющее элемент в объекте select. 
+<H3> Свойство</H3> 
+<P>
+Массив <A HREF="s.html#list_selectob">select</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>text</b> отражает текст, который следует за тегом &lt;OPTION&gt; в объекте select. 
+<P>
+Вы можете изменять свойство <b>text</b>  в любое время. 
+<P>
+Свойство text может быть также использовано для измене-ния значения элемента списка, за важным исключением: изме-нение значения не приводит к немедленному отображению на экране.
+<H3> Примеры</H3> 
+<P>
+В следующем примере, функция <I>getChoice ()</I> возвращает значение свойства <b>text</b>  для выбранного объекта. Цикл <B>for</B> вычисляет каждый элемент в объекте select <I>musicType</I>. Оператор <B> if </B> находит элемент, который выбран. 
+<table><tr><td bgcolor=aqua><XMP>  
+function getChoice() { 
+     for (var i = 0; i < document.musicForm.musicType.length; i++) { 
+        if (document.musicForm.musicType.options[i].selected == true) { 
+          return document.musicForm.musicType.options[i].text }
+   }
+ return null
+}
+ </XMP></table>
+ Следующий пример, аналогичен предыдущему в синтаксисе HTML:
+<table><tr><td bgcolor=aqua><XMP>   
+<SELECT NAME="musicType">
+   <OPTION SELECTED> R&B
+   <OPTION> Jazz
+   <OPTION> Blues
+   <OPTION> New Age
+</SELECT>
+ </xmP></table> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_textarea">
+<H2> Объект textarea </H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_textarea">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Область многострочного ввода формы HTML. Область <b>textarea</b> позволяет пользователю, вводит слова, фразы, или числа. 
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить область <b>textarea</b>, используйте стандарт HTML синтаксис с использованием обработчиков событий onBlur, onChange, onFocus, и onSelect: 
+<PRE>   
+&LT;TEXTAREA 
+NAME = <I>"textareaName"</I> 
+STRING = <I>"integer" </I>
+ROWS = <I>"integer" </I>
+WRAP <I>"integer"</I> ="off|virtual|physical" 
+[onBlur = <I>"handlerText"</I>] 
+[onChange = <I>"handlerText"</I>] 
+[onFocus = <I>"handlerText"</I>] 
+[onSelect = <I>"handlerText"</I>]&GT ;
+<I>TextToDisplay</I> 
+&LT;TEXTAREA&GT;
+ </PRE> 
+<I>NAME ="textareaName"</I> определяет имя объекта <b>textarea</b>. Вы можете обращаться к этому значению, используя свойство name. <BR>
+<I>STRING ="integer"</I> и <I> ROWS ="integer"</I> определяют размер области ввода. <BR>
+<I>textToDisplay</I> определяет начальное значение объекта <b>textarea</b>. Вы можете обращаться к этому значению, используя свойство defaultValue. 
+<P>
+ Атрибут WRAP управляет переходом на новую строку внутри тега <B>TEXTAREA</B>. <P>
+Использование свойств объекта и методы <b>textarea</b>: 
+<PRE>  
+1. <I>textareaName</I>.<I>propertyName </I>
+2. <I>textareaName</I>.<I>methodName</I> <I>( parameters)</I> 
+3. <I>formName</I>.elements <I>[ index]</I> .<I>propertyName </I>
+4. <I>formName.elements[index].methodName(parameters)</I> </PRE> 
+<I>textareaName</I> - значение атрибута NAME объекта <b>textarea</b>. <BR>
+<I>formName</I> является либо значением атрибута NAME объекта form либо элемента в массиве <I>form</I>. <BR>
+<I>index</I> - целое число, представляющее объект <b>textarea</b> формы. <BR>
+<I>propertyName</I> - один из свойства, описанных  ниже. <BR>
+<I>methodName</I> - один из методов, описанных  ниже. 
+<H3> Свойство</H3> 
+<LI> <A HREF="f_g.html#list_formob"> form </A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>textarea</b> формы выглядит следующим образом: 
+<FORM>  
+<P>
+<TEXTAREA NAME="list_item_description" ROWS=5 COLS=45>
+ Our storage ottoman provides an attractive way to
+store lots of CDs and videos--and it's versatile
+enough to store other things as well.
+It can hold up to 72 CDs under the lid and 20 videos
+in the drawer below.
+</TEXTAREA>
+</FORM>
+<P>
+Объект <b>textarea</b> - элемент формы и должен быть определен внутри тега &LT;FORM&GT;. 
+<P>
+Объекты  <b>textarea</b> могут модифицироваться динамически,  изменяя  свойство value (this.value). 
+<P>
+Чтобы перейти на новую строку в объекте <b>textarea</b>, вы можете использовать символ newline. Этот символ изменяется в зависимости от платформы для платформы: Unix - \n, Windows - \r\n, и Macintosh - \n. Один способ ввода символа newline состоит в том, чтобы проверить свойство appVersion, для определения текущей платформы и изменить символ newline соответственно. Смотрите для примера свойство <A HREF="a.html#list_appVersion">appVersion</A>. 
+<H3> Свойства</H3> 
+<LI> <A HREF="d_e.html#list_defaultValue">defaultValue</A> отражает атрибут VALUE
+<LI> <A HREF="m_q.html#list_name"> name </A> отражает атрибут NAME
+<LI> <A HREF="t_z.html#list_value"> value </A> отражает текущую значение объекта <b>textarea</b> 
+<H3> Методы</H3> 
+<LI> <A HREF="f_g.html#list_focus"> focus </A> 
+<LI> <A HREF="b.html#list_blur"> blur </A> 
+<LI> <A HREF="s.html#list_selectmet">select</A> 
+<H3> Обработчики событий</H3> 
+<LI> <A HREF="m_q.html#list_onBlur">onBlur</A> 
+<LI> <A HREF="m_q.html#list_onChange">onChange</A> 
+<LI> <A HREF="m_q.html#list_onFocus">onFocus</A> 
+<LI> <A HREF="m_q.html#list_onSelect">onSelect</A> 
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает объект <b>textarea</b>, длиной в 6 строк и шириной в 55 столбцов. Ообласть <b>textarea</b> появляется сразу же после слова"Описание:". Когда форма загружена, объект <b>textarea</b> содержит несколько строк данных, включая одну незаполненную строку. 
+<table><tr><td bgcolor=aqua><xmp>
+ <B>Описание:</B> <BR>
+<TEXTAREA NAME="list_item_description" ROWS=6 COLS=55>
+ Our storage ottoman provides an attractive way to
+store lots of CDs and videos--and it's versatile
+enough to store other things as well.
+
+It can hold up to 72 CDs under the lid and 20 videos
+in the drawer below.
+</TEXTAREA>
+</xmp></table>
+<P>
+Смотрите также примеры для обработчиков событий <A HREF="m_q.html#list_onBlur">onBlur</A>, <A HREF="m_q.html#list_onChange">onChange</A>, <A HREF="m_q.html#list_onFocus">onFocus</A>, и <A HREF="m_q.html#list_onSelect">onSelect</A>. 
+<H3> Смотрите также</H3> 
+<LI> Объекты <A HREF="f_g.html#list_formob">form</A>, <A HREF="m_q.html#list_password"> password </A>, <A HREF="s.html#list_string"> string </A>, и <A HREF="t_z.html#list_textob">text</A> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_title">
+<H2> Свойство title </H2> 
+<P>
+ Строка, представляющая заголовок документа. 
+<H3> Синтаксис</H3> 
+<PRE> document.title</PRE> 
+<H3> Свойство</H3> 
+<P>
+<A HREF="d_e.html#list_document"> document </A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b> title </b> - отражение значения, указанного внутри тегов &lt;TITLE&gt; и &lt; / TITLE &gt;. Если документ не имеет заголовка, то свойство <b> title </b> имеет значение - null. 
+<P>
+Свойство <b> title </b> - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, значение свойства <b> title </b> присвоена переменная с именем <I>docTitle</I>: 
+<table><tr><td bgcolor=aqua><PRE>  
+var newWindow = window.open("http://www.netscape.com")
+var docTitle = newWindow.document.title
+</PRE> </table>
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_toGMTString">
+<H2> Метод toGMTString </H2> 
+<P>
+Преобразует дату в строку, используя соглашения Internet GMT. 
+<H3> Синтаксис</H3> 
+<PRE> <I>dateObjectName</I>.toGMTString ()</PRE> 
+<P>
+<I>dateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date"> Date </A> 
+<H3> Описание</H3> 
+<P>
+Этот метод возвращает время в формате GMT, который зависит от платформы.
+Например, если today представляет собой объект Date, то выражение
+<table><tr><td bgcolor=aqua><pre>today-toGMTString()</pre></table>
+возвратит строку "Thu. 11 Jan 1996 06:05:15". Фактический фор-мат может различаться от платформы к платформе. Время и дата определяются на клиентском компьютере.
+<H3> Примеры</H3> 
+В следующем примере, <I> today </I> - объект даты: 
+<PRE>  
+today.toGMTString ()
+ </PRE> 
+<P>
+ В этом примере, метод toGMTString преобразует дату в GMT (UTC) используя отставание часового пояса операционной системы и возвращает значение - строку, которая является подобной следующей форме. Точный формат зависит от платформы. 
+<P>
+ Mon, 18 Dec 1995 17:28:35 GMT 
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="t_z.html#list_toLocaleString">toLocaleString</A> 
+<!----------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_toLocaleString">
+<H2> Метод toLocaleString </H2> 
+<P>
+Преобразует дату в строку, используя локальные соглашения. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>dateObjectName</I>.toLocaleString ()</PRE> </table>
+<P>
+<I>dateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date"> Date </A> 
+<H3> Описание</H3> 
+Возвращаемая строка со значением даты зависит от установок клиентского компьютера, например mm/dd/yy hh:mm:ss.
+<H3> Примеры</H3> 
+В следующем примере, <I> today </I> - объект даты: 
+<PRE>  
+today.toLocaleString ()
+ </PRE> 
+<P>
+ В этом примере, toLocaleString возвращает значение строку, которая является подобной следующей форме. Точный формат зависит от платформы. 
+<P>
+ 12/18/95 17:28:35 
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="t_z.html#list_toGMTString">toGMTString</A> 
+<!------------------------------------------------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="list_toLowerCase">
+<H2> Метод toLowerCase </H2> 
+<P>
+Преобразует все символы строки к нижнему регистру.
+<H3> Синтаксис</H3> 
+<PRE> <I>stringName</I>.toLowerCase ()</PRE> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string"> string </A> 
+<H3> Описание</H3> 
+<P>
+Результатом использования метода <b>toLowerCase</b является вывод на экран строки символами нижнего регистра. Следует отметить, что реальное содержимое строки не изменяется.
+<H3> Примеры</H3> 
+<P>
+Следующие примеры оба показывают на экране "alphabet". 
+<table><tr><td bgcolor=aqua><PRE>  
+var upperText="ALPHABET"
+document.write(upperText.toLowerCase())
+
+"ALPHABET".toLowerCase()
+</PRE> </table>
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="t_z.html#list_toUpperCase">toUpperCase</A> 
+<!------------------------------------------------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="list_top">
+<H2>Свойство top </H2> 
+<P>
+ Объект window высшего уровня.
+<H3> Синтаксис</H3> 
+<PRE>  
+1. top.<I>propertyName </I>
+2. top.<I>methodName</I> 
+3. top.<I>frameName </I>
+4. top.frames <I>[index]</I> </PRE> 
+<P>
+<I>propertyName</I> - defaultStatus, status, или length. <BR>
+<I>methodName</I> - любой метод, связанный с объектом window. <BR>
+<I>frameName</I> и frames <I>[index]</I> - способы обращения к фреймам. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="t_z.html#list_windowob">window </A> 
+<H3> Описание</H3> 
+<P>
+Называемое также предком или окном броузера.	Свойство <b>top</b> ссылается на окно высшего уровня, содержащее кадры или наборы вложенных кадров. Используйте свойство <b> top </b>, чтобы обращаться к окну предка. 
+<P>
+Свойство <b> top </b> только для чтения. Значение свойство <b> top </b>
+<table><tr><td bgcolor=aqua><PRE> &lt;object <I>ObjectReference</I>&gt;</PRE></table>
+Где <I>objectReference</I> - внутренняя ссылка. 
+<H3> Примеры</H3> 
+<P>
+Утверждение <TT>top.close ()</TT> закрывает самое верхнее окно. 
+<P>
+Утверждение <TT>top.length</TT> определяет число фреймов, содержащихся внутри самого верхнего окна предка. Когда самый верхний предок определен следующим образом, <TT>top.length</TT> возвращается 3: 
+<table><tr><td bgcolor=aqua><xmP>          
+<FRAMESET COLS="30%,40%,30%">
+<FRAME SRC=child1.htm NAME="childFrame1">
+<FRAME SRC=child2.htm NAME="childFrame2">
+<FRAME SRC=child3.htm NAME="childFrame3">
+</FRAMESET>
+ </xmP></table> 
+<P>
+Следующий пример устанавливает цвет фона фрейма с именем <I>myFrame</I> в красный. <I>MyFrame</I> - дочерний из самого верхнего окна предка. 
+<table><tr><td bgcolor=aqua><PRE>         
+top.myFrame.document.bgColor ="red"
+ </PRE></table> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_toUpperCase">
+<H2> Метод toUpperCase </H2> 
+<P>
+ Преобразует все символы строки к верхнему регистру.
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>        <I>stringName</I>.toUpperCase ()</PRE></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string"> string </A> 
+<H3> Описание</H3> 
+<P>
+Несмотря на то что метод <b> toUpperCase </b> выводит на экран строку символами верхнего регистра, реальное содержимое строки не изменяется.
+<H3> Примеры</H3> 
+<P>
+Следующие примеры оба выводят на экран " ALPHABET". 
+<table><tr><td bgcolor=aqua><PRE>         
+var lowerText="alphabet"
+document.write(lowerText.toUpperCase()) 
+   "alphabet".toUpperCase()
+ </PRE></table> 
+<H3> Смотрите также</H3> 
+<LI> Метод  <A HREF="t_z.html#list_toLowerCase">toLowerCase</A> 
+<!------------------------------------------------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="list_unescape">
+<H2> Функция unescape </H2> 
+<P>
+Возвращает строка ASCII за указанную значение. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> unescape (<i>" string "</i>)</PRE></table> 
+<P>
+<I> string </I> - строка или свойство существующего объекта, содержщие символы в любой из следующих форм: 
+<LI> <I>"%integer"</I>, где <I> integer </I> - число от 0 до 255 (десятеричная)
+<LI> <I>" hex "</I>, где <I> hex </I> - номер между 0x0 и 0xFF (шестнадцатеричная) 
+<H3> Описание</H3> 
+<P>
+Функция <b>unescape</b> - не метод, связанный с любым объектом, а - часть языка непосредственно. 
+<P>
+Строка, возвращенная функцией <b>unescape</b> - строка символов в ISO Latin-1 
+ (МЕЖДУНАРОДНОЙ ОРГАНИЗАЦИИ ПО СТАНДАРТИЗАЦИИ Латинский -1). 
+<H3> Примеры</H3> 
+<P>
+Следующий пример возвращается" &"  
+<table><tr><td bgcolor=aqua><PRE>         
+unescape ("%26")
+ </PRE></table> 
+<P>
+Следующий пример возвращается"! #_"  
+<table><tr><td bgcolor=aqua><PRE>         
+Unescape ("%21%23")
+ </PRE></table> 
+<H3> Смотрите также</H3> 
+<LI> Функцию <A HREF="d_e.html#list_escape">escape</A> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_URL">
+<H2> Свойство URL</H2> 
+<P>
+ Строка, определяющая полный URL документа. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> document. URL</PRE></table> 
+<H3> Свойство</H3> 
+<P>
+<A HREF="d_e.html#list_document"> document </A> 
+<H3> Описание</H3> 
+<P>
+Строка <b>URL</b> -значение свойства, которое обычно соответствует измененному window.location.href, когда вы загружаете документ, но переадресация может изменять location.href.
+<P>
+URL - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает <b>URL</b> текущего документа: 
+<table><tr><td bgcolor=aqua><PRE>         
+document.write (" текущий URL -" + document. URL)
+ </PRE></table> 
+<H3> Смотрите также</H3> 
+<LI> <A HREF="h_l.html#list_hpr">href</A> 
+<!----------------------------------------------------------------->
+ 
+<HR align=center width=250>
+ <A NAME="list_userAgent">
+<H2> Свойство userAgent </H2> 
+<P>
+ Заголовок, посылаемый как часть протокола HTTP от клиента к серверу для идентификации типа клиента. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> navigator.userAgent</PRE></table> 
+<H3> Свойство</H3> 
+<P>
+<A HREF="m_q.html#list_navigator"> navigator </A> 
+<H3> Описание</H3> 
+<P>
+Синтаксис возвращаемого значения такой же, как у свойства appVersion, дополненный кодовым именем приложения-броузера.
+<P>
+UserAgent - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает информацию <b>userAgent</b> для Navigator: 
+<table><tr><td bgcolor=aqua><PRE> document.write (" значение navigator.userAgent -" + 
+navigator.userAgent)
+</PRE></table> 
+<P>
+На экране этот пример для Navigator 2.0 выглядит следующим образом: 
+<table><tr><td bgcolor=aqua><PRE>        Значение navigator.userAgent - Mozilla/2.0 (Win16;I)</PRE></table> 
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="a.html#list_appName">appName</A>, <A HREF="a.html#list_appVersion">appVersion</A>, <A HREF="a.html#list_appCodeName">appCodeName</A> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_UTC">
+<H2> Метод  UTC </H2> 
+<P>
+ Возвращает количество миллисекунд для даты на базе универ-сального координированного времени (UTC), прошедших с полуночи 1 января 19/0 года.
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> Date.UTC(year, month, day [, hrs] [, min] [, sec])
+</PRE></table> 
+<P>
+<I> year </I> - годом после 1900. <BR>
+<I> month </I> - месяц от 0 до 11. <BR>
+<I> day </I> - день месяца от 1 до 31. <BR>
+<I> hrs </I> - часы от 0 до 23. <BR>
+<I> min </I> - минуты от 0 до 59. <BR>
+<I> sec </I> - секунды от 0 до 59. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date"> Date </A> 
+<H3> Описание</H3> 
+<P>
+ Метод <b> UTC </b> всегда вычисляется от одной и той же даты и по-этому всегда используется как Date . <b> UTC </b>() а не созданным заранее объектом. При указании значения для месяца не забывайте, что <font color="red"><i>JavaScnpt</i></font> нумерует месяцы от 0 до 11.
+<H3> Примеры</H3> 
+<P>
+ Следующее утверждение создает объект Date, используя GMT 
+ вместо местного времени: 
+<table><tr><td bgcolor=aqua><PRE>         
+gmtDate = new Date(Date.UTC(96, 11, 1, 0, 0, 0))
+ </PRE></table> 
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="m_q.html#list_parse"> parse </A> 
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_value">
+<H2> Свойство value </H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_value">Измененный в Navigator 3.0</A></FONT>  
+<P>
+ Возвращает значение объекта.
+<H3> Синтаксис</H3> 
+<font color="purple"><PRE>         
+1. <I>objectName</I>.value 
+2. <I>radioName</I> <I>[index]</I> .value 
+3. <I>selectName</I>.options. <I>[ index]</I> .value
+ </PRE></font> 
+<P>
+<I>objectName</I> является либо значением атрибута NAME объектов hidden, password, text, textarea, button, reset, submit or checkbox 
+или элемент в массиве <I>elements</I>. <BR>
+<I>radioName</I> - значение атрибута NAME объекта radio. <BR>
+<I>selectName</I> является либо значением атрибута NAME объекта select либо элемента в массиве <I> elements </I>. <BR>
+<I> index </I> - целое число, представляющее переключатель в объекте radio или элемент в объекте select 
+. 
+<H3> Свойства</H3> 
+<LI> Объекты <A HREF="b.html#list_button"> button </A>, <A HREF="c.html#list_checkbox"> checkbox </A>, <A HREF="h_l.html#list_hidden"> hidden </A>, <A HREF="m_q.html#list_password"> password </A>, <A HREF="r.html#list_radio"> radio </A>, <A HREF="r.html#list_reset"> reset </A>, <A HREF="s.html#list_submitob">submit</A>, <A HREF="t_z.html#list_textob">text</A>, <A HREF="t_z.html#list_textarea">textarea</A> 
+<LI> Массив <A HREF="s.html#list_selectob">select</A> 
+<H3> Описание</H3> 
+<P>
+Свойство value отличается для каждого объекта. 
+<table>
+<caption align=top> Значение различных объектов формы</caption>
+<tr><th>Объект</th>Значение свойства value<th></th></tr>
+<tr><td> button, reset, submit </td><td> Надпись на кнопке, но не имя кнопки</td></tr>
+<tr><td> checkbox </td><td> <i>On</i> для отмеченного элемента, <i>off</i>-для
+неотмеченного </td></tr>
+<tr><td> radio </td><td> Строковое представление
+значения </td></tr>
+<tr><td> hidden,text,textarea </td><td> Содержимое поля </td></tr>
+<tr><td> select </td><td> Представление значения выбранного элемента </td></tr>
+<tr><td> password </td><td> Возвращает допустимое значение по умолчанию, но зашифрованное значение модифицируется пользователем
+</td></tr>
+</table>
+Изменение значения для объектов text или textarea не-медленно отображается на экране. Изменение значений всех остальных объектов формы на экране не отображается.
+<P>
+Когда атрибут VALUE не определен в HTML, свойство value отличается для каждого объекта: 
+<LI> Для button, это - пустая строка 
+<LI> Для reset, это - строка " reset " 
+<LI> Для submit, это - строка" Submit Query " 
+<P>
+<H4> Массив elements</H4> 
+<P>
+Свойство value - строка, которая первоначально отражает атрибут VALUE. Значение этого свойство может изменяться, когда программа изменяет его. 
+<P>
+<H3> Примеры</H3> 
+<P>
+Следующая функция вычисляет свойство value группы кнопок и показывает их в окне <I>msgWindow</I>: 
+<table><tr><td bgcolor=aqua><PRE>         
+function valueGetter() {
+   var msgWindow=window.open("")
+   msgWindow.document.write("submitButton.value is " +
+      document.valueTest.submitButton.value + "<BR>")
+   msgWindow.document.write("resetButton.value is " +
+      document.valueTest.resetButton.value + "<BR>")
+   msgWindow.document.write("helpButton.value is " +
+      document.valueTest.helpButton.value + "<BR>")
+   msgWindow.document.close()
+}
+</PRE></table> 
+<P>
+Этот пример выводит следующее значения: 
+<table><tr><td bgcolor=aqua><PRE>         
+Query 
+Submit
+ResetHelp
+ </PRE></table> 
+<P>
+Предыдущий пример выполняется, когда  кнопки были определены следующим образом 
+<table><tr><td bgcolor=aqua><XMP>          
+<INPUT TYPE="submit" NAME="submitButton">
+<INPUT TYPE="reset" NAME="resetButton">
+<INPUT TYPE="button" NAME="helpButton" VALUE="Help">
+ </XMP></table> 
+<P>
+Следующая функция вычисляет свойство value группы переключателей и показывает их в окне <I>msgWindow</I>: 
+<table><tr><td bgcolor=aqua><PRE>         
+function valueGetter() {
+   var msgWindow=window.open("")
+   for (var i = 0; i < document.valueTest.radioObj.length; i++) {
+       msgWindow.document.write
+          ("The value of radioObj[" + i + "] is " +
+          document.valueTest.radioObj[i].value +"<BR>")
+   }
+   msgWindow.document.close()
+}
+</PRE></table>
+<P>
+Этот пример выводит на экран следующие значение:
+<table><tr><td bgcolor=aqua><PRE>         
+on
+on
+on
+on
+</PRE></table> 
+<P>
+Предыдущий пример выполняется, когда кнопки определены следующим образом 
+<table><tr><td bgcolor=aqua><xmP>          
+<BR><INPUT TYPE="radio" NAME="radioObj">R&B
+<BR><INPUT TYPE="radio" NAME="radioObj" CHECKED>Soul
+<BR><INPUT TYPE="radio" NAME="radioObj">Rock and Roll
+<BR><INPUT TYPE="radio" NAME="radioObj">Blues
+</xmP></table> 
+<H3> Смотрите также</H3> 
+<P>
+Для скрытый, пароль, текст, и textarea: 
+<LI> <A HREF="d_e.html#list_defaultValue">DefaultValue</A> свойство 
+<P>
+Для hidden, password, text, и textarea: 
+<LI> Свойство <A HREF="m_q.html#list_name"> name</A> 
+<P>
+Для массива select: 
+<LI> Свойства <A HREF="d_e.html#list_defaultSelected">defaultSelected</A>, <A HREF="s.html#list_selected"> selected </A>, <A HREF="s.html#list_selectedIndex">selectedIndex</A>, <A HREF="t_z.html#list_textpr">text</A> 
+<P>
+Для checkbox and radio: 
+<LI> Свойства 
+<A HREF="c.html#list_checked"> checked </A>, <A HREF="d_e.html#list_defaultChecked">defaultChecked</A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_vlinkColor">
+<H2> Свойство vlinkColor </H2> 
+<P>
+ Строка, определяющая цвет просмотренной гиперссылки. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> document.vlinkColor</PRE></table> 
+<H3> Свойство</H3> 
+<P>
+<A HREF="d_e.html#list_document"> document </A> 
+<H3> Описание</H3> 
+<P>
+Как и все свойства цвета, свойство vlinkColor использует шестнадцатеричные триплеты RGB или строковые литералы <A HREF="colorV.html">Цвета в JavaScript</A>..
+Это свойство не может быть установлено после того, кэкдо мент отформатирован. Для переопределения установок бап зера настройка цветов выполняется в обработчике собьг -onLoad в теге <BODY>:
+<table><tr><td bgcolor=aqua><xmp><BODY onLoad="document .vlinkColor= ' aliceblue '"></xmp></table>
+Эта свойство - отражение <a font color="red"><i>JavaScript</i></font> атрибута VLINK тега &lt;BODY&gt;. 
+<P>
+Если Вы выражаете цвет как шестнадцатеричный RGB триплет, Вы должны использовать формат rrggbb. Например, шестнадцатеричное значение RGB для salmon - red=FA, green=80, и blue=72, так что триплет RGB для salmon -"FA8072". 
+<H3> Примеры</H3> 
+<P>
+Следующий пример устанавливает цвет просмотренных гиперссылок в aqua при использование строкового литерала: 
+<table><tr><td bgcolor=aqua><PRE>         
+document.vlinkColor ="aqua"
+ </PRE></table> 
+<P>
+Следующий пример устанавливает цвет просмотренных гиперссылок в aqua при использование шестнадцатеричного триплета: 
+<table><tr><td bgcolor=aqua><PRE>         
+document.vlinkColor ="00FFFF"
+ </PRE></table> 
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="a.html#list_alinkColor">alinkColor</A>, <A HREF="b.html#list_bgColor">bgColor</A>, <A HREF="f_g.html#list_fgColor">fgColor</A>, и <A HREF="h_l.html#list_linkColor">linkColor</A> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_windowob">
+<H2> Объект window</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_windowob">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Наивысший объект в иерархии <font color="red"><i> JavaScript </i></font>, представляющий со-бой открытое окно броузера.
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определять окно, используйте метод open: 
+<table><tr><td bgcolor=aqua><PRE>         <I>
+windowVar</I> = window.open (<I>"URL"</I>, <I>"windowName"</I> [, <I>"windowFeatures"</I>])
+ </PRE></table> 
+<I>windowVar</I> - имя нового окна. <BR>
+<I>WindowName</I> - имя окна, которое используется в  атрибуте TARGET тегов &LT;FORM&GT; или &LT;A&GT;у. 
+<P>
+Более подробно смотрите метод <A HREF="m_q.html#list_openwin">open</A>. 
+<P>
+Использование свойства объекта и методы <b> window </b>: 
+<PRE>          
+1. window.<I>propertyName </I>
+2. window.<I>methodName</I> <I>( parametrs)</I> 
+3. self.<I>propertyName </I>
+4. self.<I>methodName</I> <I>( parametrs)</I> 
+5. top.<I>propertyName </I>
+6. top.<I>methodName</I> <I>( parametrs)</I> 
+7. parent.<I>propertyName </I>
+8. parent.<I>methodName</I> <I>( parametrs)</I> 
+9. <I>windowVar</I>.<I>propertyName </I>
+10. <I>windowVar</I>.<I>methodName</I> <I>( parametrs)</I> 
+11. <I>propertyName </I>
+12. <I>methodName</I> <I>(parametrs)</I> </PRE></font> 
+<I>windowVar</I> переменная для объекта <b>window</b>. Смотрите раздел синтаксис для определения окна. <BR>
+<I>propertyName</I> - один из свойства, описанных  ниже. <BR>
+<I>methodName</I> - один из методов, описанных  ниже. 
+<P>
+Чтобы определить обработчики событий onLoad или onUnload для объекта <b>window</b>, используйте теги &LT;BODY&GT; или &LT;FRAMESET&GT;: 
+<table><tr><td bgcolor=aqua><PRE>          
+&LT;BODY ... 
+[onLoad = <I>"handlerText"</I>] 
+[onUnload = <I>"handlerText"</I>] &GT ;
+&LT;BODY&GT;
+
+&LT;FRAMESET 
+STRING = <I>"rowHeightList" </I>
+COLS = <I>"columnWidthList"</I> 
+[onLoad = <I>"handlerText"</I>] 
+[onUnload = <I>"handlerText"</I>] &GT ;
+[&LT;FRAME SRC = <I>"locationOrURL"</I> NAME = <I>"frameName"</I> &GT;] 
+&LT;FRAMESET &GT; </PRE></table> 
+<P>
+Для информации относительно тегов &LT;BODY&GT; и &LT;FRAMESET&GT; , смотрите объекты <A HREF="f_g.html#list_frameob">frame</A> и <A HREF="d_e.html#list_document"> document </A>. 
+<H3> Свойство</H3> 
+<LI> Отсутствуют. 
+<H3> Описание</H3> 
+<P>
+Объект <b> window </b> создается браузером во время загрузки стра-ницы и содержит свойства, применяемые ко всему окну. Это объект высшего уровня для каждого из объектов document, location и history. Так как существование этого объекта подразумевается, вам не надо указывать имя окна, ссылаясь на его объекты, свойства или методы.
+Например, следующие две строки приводят к одному и тому же результату (выводу сообщения в строке состояния):
+<table><tr><td bgcolor=aqua><pre>status="Go away from here." window.status="Go away from here."</pre></table>
+Существует несколько способов ссылки на объект <b> window </b>, в зависимости от его отношения к текущему положению, как показано в следующей таблице.
+<table>
+<cption align=top>Псевдонимы объекта <b> window </b></cption>
+<tr><th>Псевдоним</th><th>Описание</th></tr>
+<tr><td> window, self </td><td> Окно, содержащее текущий документ. Если эти псевдонимы опущены, все равно подразумевается текущий документ. Исключениями являются обработчики ошибок, в которых методы типа open и close должны быть указаны с определенным окном и кадром
+</td></tr>
+<tr><td>top</td><td> Ссылается на окно самого высокого уровня. Полезно в случае сложной иерархии кадров, созданной с использованием многих
+тегов &lt;FRAMESET></td></tr>
+<tr><td>parent</td><td> Окно, содержащее тег &lt;FRAME SET>, создавший текущий кадр </td></tr>
+<tr><td>windowName</td><td> Используется для указания на объект window в тегах HTML. При использовании свойств и методов объектов window используйте имя переменной типа window
+</td></tr>
+</table>
+<table>
+<p>
+Создание нового окна с помощью метода open:
+<table><tr><td bgcolor=aqua><pre>aNewWindow = window.open("URL","Window_Name" *" [, "windowl'eatures" ])</pre></table>
+Имя переменной используется для ссылки на свойства и ме-тоды окна. Параметр Window_Name используется в аргу-менте target тегов &lt;FORM...> или &lt;А. . . >. Парамет-ры windowFeatures (приведены в следующей таблице) управляют представлением и функциональностью броузера.<p>
+Если не один из списка windowFeatures не указан, используются значения по умолчанию. Если же указан хотя бы один параметр из списка windowFeatures, все не указанные параметры исключаются.
+<cption align=top>Значение пораметра <b> windowFeatures </b></cption>
+<tr><th>Параметр </th><th>Применение</th></tr>
+<tr><td>toolbar</td><td>Выводит стандартную панель инструментов, включая кнопки Forward, Back, перехода к домашней странице и печати</td></tr>
+<tr><td>location</td><td>Выводит строку URL</td></tr>
+<tr><td>directories</td><td>В Natscape Navigator, выводит набор кнопок для стандартных ссылок, таки как What's new, What's Cool и Handbook</td></tr>
+<tr><td>status</td><td>Выводит строку состояния внизу окна</td></tr>
+<tr><td>menubars</td><td>Выводит меню в верхней части экрана, включающее пункта File, Edit и View</td></tr>
+<tr><td>scrollbars</td><td>Добавляет линейку прокрутки, если документ не помещается на экране</td></tr>
+<tr><td>resize</td><td>Позволяет пользователю изменять размер окна</td></tr>
+<tr><td>width</td><td> Первоначальная ширина окна в пикселях </td></tr>
+<tr><td>height</td><td> Первоначальная высота окна в пикселях </td></tr>
+</table>
+<H3> Свойства</H3> 
+<LI> <A HREF="d_e.html#list_defaultStatus">defaultStatus</A> отражает сообщение, показанное в строке состояния окна 
+<LI> <A HREF="f_g.html#list_frameob">frame</A> - массив, отражающий все фреймы в окне 
+<LI> <A HREF="h_l.html#list_length"> length </A> отражает число фреймов в родительском окне 
+<LI> <A HREF="m_q.html#list_name"> name </A> отражает аргумент <I>windowName</I> 
+<LI> <A HREF="m_q.html#list_parent"> parent </A> - синоним для аргумента <I>windowName</I> и обращается к окну, содержащему frameset 
+<LI> <A HREF="s.html#list_self"> self </A> - синоним для аргумента <I>windowName</I> и обращается к текущему окну 
+<LI> <A HREF="s.html#list_status"> status </A> определяет основное или временное сообщение в строке состояния окна 
+<LI> <A HREF="t_z.html#list_top"> top </A> - синоним для аргумента <I>windowName</I> и обращается к самому верхнему окну 
+<LI> <A HREF="t_z.html#list_windowpr">window</A> - синоним для аргумента <I>windowName</I> и обращается к текущему окну 
+<P>
+Следующие объекты - также свойства объекта <b> window </b>: 
+<LI> <A HREF="d_e.html#list_document"> document </A> 
+<LI> <A HREF="f_g.html#list_frameob">frame</A> 
+<LI> <A HREF="h_l.html#list_location"> location </A> 
+<H3> Методы</H3> 
+<LI> <A HREF="a.html#list_alert"> alert </A> 
+<LI> <A HREF="c.html#list_closewin">close</A> 
+<LI> <A HREF="c.html#list_confirm"> confirm </A> 
+<LI> <A HREF="m_q.html#list_openwin">open</A> 
+<LI> <A HREF="m_q.html#list_prompt"> prompt </A> 
+<LI> <A HREF="s.html#list_setTimeout">setTimeout</A> 
+<LI> <A HREF="c.html#list_clearTimeout">clearTimeout</A> 
+<H3> Обработчики событий</H3> 
+<LI> <A HREF="m_q.html#list_onLoad">onLoad</A> 
+<LI> <A HREF="m_q.html#list_onUnload">onUnload</A> 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, документ в верхнем окне открывает второе окно, <I>window2</I> и определяет кнопки, которые открывают окно сообщения, записывают в окно сообщения, закрывают окно сообщения, и закрывают <I>window2.</I> Обработчики событий onLoad и onUnload документа, загруженнного в alert выводит <I>window2</I>, когда окно открывается и закрываются. 
+<P>
+WIN1. HTML, который определяет,  фреймы для первого окна, содержит следующий код: 
+<table><tr><td bgcolor=aqua><xmp>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE> Пример объекта Окна: Окно 1</TITLE> 
+</HEAD> 
+<BODY BGCOLOR="antiquewhite">
+ <SCRIPT>
+window2=open("win2.html","secondWindow","scrollbars=yes,width=250, height=400")
+document.writeln("<B>The first window has no name:" + window.name +"</B>")
+document.writeln("<BR><B>The second window is named:" + window2.name +"</B>")
+</SCRIPT>
+<FORM NAME="form1">  
+<P>
+<INPUT TYPE="button" VALUE="Open a message window" onClick="window3=window.open('','messageWindow','scrollbars=yes,width=175, height=300')">
+<P>
+<INPUT TYPE="button" VALUE="Write to the message window" onClick="window3.document.writeln('Hey there');window3.document.close()">
+<P>
+<INPUT TYPE="button" VALUE="Close the message window" onClick="window3.close()">
+<P>
+<INPUT TYPE="button" VALUE="Close window2" onClick="window2.close()">
+</FORM>
+</BODY>
+</xmp></table>
+<P>
+WIN2. HTML, который определяет,  содержание для <I>window2</I>, содержит следующий код: 
+<table><tr><td bgcolor=aqua><xmp>
+  
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE> Пример объекта Окна: Окно 2</TITLE> 
+</HEAD> 
+<BODY BGCOLOR="oldlace" onLoad="alert('Message from ' + window.name + ': Hello, World.')" onUnload="alert('Message from ' + window.name + ': I\'m closing')">
+ <B>Некоторые числа</B> 
+<LI> Один 
+<LI> Два 
+<LI> Три 
+<LI> Четыре 
+<LI> Пять 
+<LI> Шесть 
+<LI> Семь 
+<LI> Восемь 
+<LI> Девять 
+</BODY>
+ </xmp></table>
+<P>
+Смотрите также пример для объекта <A HREF="f_g.html#list_frameob"> frame </A>. 
+<H3> Смотрите также</H3> 
+<LI> Объекты <A HREF="d_e.html#list_document"> document </A> и <A HREF="f_g.html#list_frameob">frame</A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_windowpr">
+<H2> Свойство window</H2> 
+<P>
+Синоним текущего окна или фрейма. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>         
+1. window.<I>propertyName </I>
+2. window.<I>methodName</I> </PRE></table> 
+<P>
+<I>propertyName</I> - свойство defaultStatus, status, length, или name, когда вызывающее окно обращается к объекту window. <BR>
+<I>propertyName</I> - свойство length, или name, когда вызывающее окно обращается к объекту frame. <BR>
+<I>methodName</I> - любой метод, связанный с объектом window. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="f_g.html#list_frameob">frame</A>, <A HREF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b> window </b> обращается к текущему окну или фрейму. 
+<P>
+ Хотя вы можете использовать свойство окна как синоним для текущего фрейма, ваш код будет более читаемым, если вы используете свойство self. Например, <TT>window.name</TT> и <TT>self.name</TT> оба определяют имя текущего фрейма, но <TT>self.name</TT> проще. 
+<P>
+Свойство <b> window </b>  только для чтения. Значение свойство <b> window </b>
+<table><tr><td bgcolor=aqua><PRE> &lt;object <I>NameAttribute</I> &gt;</PRE></table> 
+Где <I>nameAttribute</I> - атрибут NAME, если окно обращается к фрейму, или внутренняя ссылка, если окно обращается к окну. 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, <TT>window.status</TT> используется, чтобы изменить свойство status текущего окна. 
+<table><tr><td bgcolor=aqua><xmp>
+ <A HREF="" onClick="this.href=pickRandomURL()" onMouseOver="window.status='Pick a random URL' ; 
+return true">Go!</A>
+</xmp></table>
+<H3> Смотрите также</H3> 
+<LI> Свойство <A HREF="s.html#list_self"> self </A> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_write">
+<H2> Метод write </H2> 
+<P>
+ Записывает строку или несколько строк в окно документа.
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  document.write (<I>expression1</I> [, <I>expression2</I>], ... [, <I>expressionN</I>])</PRE></table> 
+<I>expression1</I> - <I>expressionN</I> - любые выражения <a font color="red"><i>JavaScript</i></font> или свойства существующих объектов. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_document"> document </A> 
+<H3> Описание</H3> 
+<P>
+Метод <b>write</b> показывает любое число выражений в окне документа. Вы можете определить любое выражение <a font color="red"><i>JavaScript</i></font> с методом <b>write</b>, включая числовые, строковые и логические выражения. Метод write не добавляет символ новой строки (<BR> или /п) в конце строки.
+<P>
+Использование метод <b>write</b> внутри любого тега &lt;SCRIPT&gt; или внутри обработчика событий. Когда метод write вызывается из обработчика события, текущей доку-мент очищается, если для вывода не создается новое окно.
+<H3> Примеры</H3> 
+В следующем примере, метод <b>write</b>  выводит аргументы, включая строку, число, и переменную: 
+<table><tr><td bgcolor=aqua><PRE>         
+var mystery = "world"
+// Displays Hello world testing 123 msgWindow.document.write
+("Hello ", mystery, " testing ", 123)
+ </PRE></table> 
+В следующем примере, метод <b>write</b> выводит два аргумента. Первый аргумент - присвоенное выражение, и второй аргумент - строковый литерал. 
+<table><tr><td bgcolor=aqua><PRE>         
+//Displays Hello world...
+msgWindow.document.write(mystr = "Hello "+ "world...")
+</PRE></table> 
+В следующем примере, метод <b>write</b>  выводит аргумент, который является условным выражением. Если значениепеременного <I>возраста</I> - меньше чем 18,"Незначительные" показы метода. Если значение<I>возраста</I> большая чем или равна 18, метод показывает"Взрослого". 
+<table><tr><td bgcolor=aqua><PRE>         
+msgWindow.document.write(status = (age &gt;= 18) ? "Adult" : "Minor")
+ </PRE></table> 
+<H3> Смотрите также</H3> 
+<LI> Методы <A HREF="c.html#list_closedoc">close</A>, <A HREF="m_q.html#list_opendoc">open</A>, <A HREF="t_z.html#list_writeln">writeln</A>
+ <!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_writeln">
+<H2> Метод writeln</H2> 
+<P>
+Записывает строку или несколько строк в окно документа и до-бавляет символ новой строки в конце вывода.
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> document.writeln (<I>expression1</I> [, <I>expression2</I>], ... [, <I>expressionN</I>])</PRE></table> 
+<I>expression1</I> - <I>expressionN</I> - любые выражения <a font color="red"><i>JavaScript</i></font> или свойства существующих объектов. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Метод <b> writeln </b> показывает любое число выражений в окне документа. Вы можете определять любое выражение <a font color="red"><i>JavaScript</i></font>, включая числовые , строковые или логические выражения. 
+<P>
+Используйте метод <b>writeln</b> внутри любого тега &lt;SCRIPT&gt; или внутри обработчика результата. Когда метод <b>writeln</b> вызывается из обработчика события, текущей документ очи-щается, если для вывода не создается новое окно. HTML игнорирует символ новой строки, за исключением ис-пользования его внутри тега &LT;PRE>.
+<H3> Примеры</H3> 
+<P>
+Все примеры, используемые для метода <A HREF="t_z.html#list_write">write</A> также имеют силу с writeln методом. 
+<H3> Смотрите также</H3> 
+<LI> Методы <A HREF="c.html#list_closedoc">close</A>, <A HREF="m_q.html#list_opendoc">open</A>, <A HREF="t_z.html#list_write">write</A>
+</HTML>

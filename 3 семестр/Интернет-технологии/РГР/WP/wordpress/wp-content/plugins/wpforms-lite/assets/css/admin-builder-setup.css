@@ -1,0 +1,203 @@
+/* ==========================================================================
+   Admin Form Builder - Setup panel
+   ========================================================================== */
+
+#wpforms-panel-setup {
+}
+
+#wpforms-panel-setup .wpforms-panel-content {
+	padding: 0;
+}
+
+#wpforms-panel-setup  .wpforms-panel-full-content .wpforms-panel-content {
+	padding: 0;
+	padding-bottom: 30px;
+}
+
+#wpforms-setup-form-name {
+	border-bottom: 1px solid #d6d6d6;
+	overflow: auto;
+}
+
+#wpforms-setup-form-name span {
+	display: inline-block;
+	font-size: 16px;
+	height: 90px;
+	float: left;
+	border-right: 1px solid #d6d6d6;
+	line-height: 90px;
+	padding: 0 30px;
+}
+
+#wpforms-setup-name {
+	float: left;
+	margin: 17px 0 18px 18px;
+	height: 55px;
+	box-shadow: none;
+	border: 1px solid #d6d6d6;
+	font-size: 18px;
+	width: 420px;
+	padding: 0 20px;
+}
+
+#wpforms-setup-name:focus {
+	border: 1px solid #999;
+}
+
+#wpforms-setup-name.error {
+	border-color: red;
+}
+
+#wpforms-setup-template-search {
+	box-shadow: none;
+	display: block;
+	width: 100%;
+	border: 1px solid #d6d6d6;
+	font-size: 16px;
+	padding: 10px 10px 10px 35px;
+}
+
+.wpforms-setup-template-search-wrap {
+	padding: 0 31px 0 29px;
+	position: relative;
+}
+
+.wpforms-setup-template-search-wrap .fa {
+	color: #ccc;
+	position: absolute;
+	top: 9px;
+	left: 40px;
+	font-size: 20px;
+}
+
+.wpforms-setup-title {
+	font-size: 24px;
+	padding: 40px 30px 2px 30px;
+}
+
+.wpforms-setup-title.additional {
+	padding-top: 12px;
+}
+
+.wpforms-setup-title .count {
+	color: #ccc;
+}
+
+.wpforms-setup-desc {
+	padding: 15px 30px;
+	color: #666;
+	font-size: 16px;
+	margin: 0;
+}
+
+.wpforms-setup-desc.core {
+	padding-bottom: 0;
+}
+
+.wpforms-setup-templates {
+	padding: 0 15px 0 15px;
+	margin-top: 30px;
+}
+
+.wpforms-setup-templates .wpforms-template {
+	float: left;
+	width: 33.333333%;
+	padding: 0 15px;
+}
+
+.wpforms-setup-templates .wpforms-template-inner {
+	border: 1px solid #d6d6d6;
+	padding: 20px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.wpforms-setup-templates .wpforms-template.selected .wpforms-template-inner {
+	background-color: #fff4ec;
+	border-color: #e27730;
+}
+
+.wpforms-setup-templates .wpforms-template-name {
+	font-size: 18px;
+	line-height: 1.3;
+	margin: 0;
+}
+
+.wpforms-setup-templates .wpforms-template-name .selected {
+	background-color: #e27730;
+	color: #fff;
+	border-radius: 2px;
+	font-size: 12px;
+	display: inline-block;
+	padding: 5px;
+	vertical-align: text-top;
+	text-transform: uppercase;
+	line-height: 1;
+	margin: 0 0 0 6px;
+}
+
+.wpforms-setup-templates .wpforms-template-details {
+	margin: 10px 0 0;
+}
+
+.wpforms-setup-templates .wpforms-template-details p {
+	font-size: 14px;
+	color: #888;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.wpforms-setup-templates .wpforms-template-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.85);
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition:    all 0.3s ease-in-out;
+	-ms-transition:     all 0.3s ease-in-out;
+	-o-transition:      all 0.3s ease-in-out;
+	transition:         all 0.3s ease-in-out;
+}
+
+.wpforms-setup-templates .wpforms-template:hover .wpforms-template-overlay {
+	opacity: 1;
+}
+
+.wpforms-setup-templates .wpforms-template-select {
+	background-color: #e27730;
+	border: 1px solid #b85a1b;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 15px;
+	font-weight: 500;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	position: relative;
+}
+
+.wpforms-setup-templates .wpforms-template-select:hover {
+	background-color: #b85a1b;
+	text-decoration: none;
+}
+
+#wpforms-setup-templates-additional {
+	max-height: 450px;
+	overflow: auto;
+}

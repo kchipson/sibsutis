@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Windows-1251" ?> 
+<Recipe name="хлеб" prep_time="5 мин" cook_time="3 час">
+  <name>Простой хлеб</name>
+  <ingredient amount="3" unit="стакан">Мука</ingredient>
+  <ingredient amount="0.25" unit="грамм">Дрожжи</ingredient>
+  <ingredient amount="1.5" unit="стакан">Тёплая вода</ingredient>
+  <ingredient amount="1" unit="чайная ложка">Соль</ingredient>
+  <Instructions>
+   <step>Смешать все ингредиенты и тщательно замесить.</step>
+   <step>Закрыть тканью и оставить на один час в тёплом помещении.</step>
+   <step>Замесить ещё раз, положить на противень и поставить в духовку.</step>
+  </Instructions>
+</Recipe>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1251" ?>
+<note id="My">
+
+ <fruits>
+    <product> Виноград </product>
+    <product> Лимоны </product>
+    <product> Мандарины </product>
+ </fruits>
+ 
+ <vegetables>
+    <drink> Сок </drink>
+    <drink> Лимонад </drink>	
+    <product> Капуста </product>
+    <product>  Морковь </product>
+    <product>  Баклажаны </product>
+ </vegetables>
+
+</note>

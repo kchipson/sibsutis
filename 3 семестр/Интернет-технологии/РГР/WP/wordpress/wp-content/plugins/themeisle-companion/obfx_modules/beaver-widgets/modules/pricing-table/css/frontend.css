@@ -1,0 +1,65 @@
+/**
+ * This file should contain frontend styles that
+ * will be applied to all module instances.
+ */
+
+.obfx-card {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+	border-radius: 6px;
+	color: rgba(0, 0, 0, 0.87);
+	background: #fff;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.obfx-pricing-header {
+	background-position: center;
+	background-size: cover;
+}
+
+.obfx-pricing-header * {
+	margin: 0;
+	padding: 0;
+}
+
+.blog-post .section-text .obfx-pricing-header p {
+	margin: 0;
+}
+
+.obfx-pricing-features {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.obfx-pricing-features li {
+	margin: 0;
+	padding: 0;
+}
+
+.obfx-pricing-feature-content {
+	float: left;
+	width: 100%;
+}
+
+.obfx-pricing-features hr {
+	float: left;
+	width: 100%;
+	margin: 0;
+}
+
+.obfx-pricing-features li i {
+	margin-right: 10px;
+}
+
+.obfx-plan-bottom {
+	float: left;
+	width: 100%;
+}
+
+a.obfx-plan-button {
+	margin: 0;
+	text-transform: none;
+}

@@ -1,0 +1,115 @@
+/* ==========================================================================
+   Admin Form Builder - Conditional Fields Styles
+   ========================================================================== */
+
+.wpforms-notification .wpforms-conditional-groups,
+.wpforms-confirmation .wpforms-conditional-groups {
+	padding: 0 20px;
+}
+
+.wpforms-conditional-block {
+	margin-bottom: 20px;
+}
+
+.wpforms-conditional-block button {
+	cursor: pointer;
+}
+
+.wpforms-conditional-block h4 {
+	margin: 0 0 15px 0;
+	font-size: 14px;
+}
+
+.wpforms-conditional-block h5 {
+	margin: 10px 0;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.wpforms-conditional-block h4 select {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	vertical-align: baseline;
+	box-shadow: none;
+}
+
+.wpforms-conditional-block table {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 13px;
+}
+
+.wpforms-conditional-block table td {
+	padding: 0 5px 10px 0;
+}
+
+.wpforms-conditional-block .field {
+	width: 130px;
+}
+.wpforms-conditional-block .value {
+
+}
+
+.wpforms-conditional-block .value :disabled {
+	background-color: #f1f1f1;
+	cursor:not-allowed;
+}
+
+.wpforms-conditional-block .operator {
+	width: 68px;
+}
+
+.wpforms-conditional-block .actions {
+	width: 66px;
+}
+
+.wpforms-conditional-block .wpforms-conditional-row input,
+.wpforms-conditional-block .wpforms-conditional-row select {
+	font-size: 13px;
+	width: 100%;
+	box-shadow: none;
+	margin: 0;
+}
+
+.wpforms-conditional-block .wpforms-conditional-rule-add {
+	color: #fff;
+	background-color: #999;
+	border: none;
+	padding: 2px 4px;
+	height: 26px;
+	vertical-align: middle;
+	font-size: 12px;
+	border-radius: 2px;
+	margin: 0 0 0 3px;
+}
+
+.wpforms-conditional-block .wpforms-conditional-rule-add:hover {
+	background-color: #666;
+}
+
+.wpforms-conditional-block .wpforms-conditional-rule-delete {
+	background-color: transparent;
+	border: none;
+	color: #d22222;
+	opacity: 0.45;
+	font-size: 16px;
+	padding: 0 2px;
+	margin: 0 0 0 3px;
+	height: 26px;
+	vertical-align: middle;
+}
+
+.wpforms-conditional-block .wpforms-conditional-rule-delete:hover {
+	opacity: 1;
+}
+
+.wpforms-conditional-block .wpforms-conditional-groups-add {
+	background-color: #0e6cad;
+	border: none;
+	color: #fff;
+	padding: 6px 12px;
+	border-radius: 2px;
+}

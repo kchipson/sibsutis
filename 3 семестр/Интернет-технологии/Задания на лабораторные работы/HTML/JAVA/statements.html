@@ -1,0 +1,448 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Служебные слова</TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+<a href="javabook.html"><img src="icons/home.gif" border=0 alt="Домой" width=64 height=64></a>
+
+<H2><A NAME="start">Служебные слова</A></H2>
+<P>
+<UL>
+    <LI><A href="#break">break</A><BR>
+    <LI><A href="#ccon">@cc_on</A><BR>
+    <LI><A href="#continue">continue</A><BR>
+    <LI><A href="#comment">комментарии</A><BR>
+    <LI><A href="#dowhile">do...while</A><BR>
+    <LI><A href="#for">for</A><BR>
+    <LI><A href="#forin">for...in</A><BR>
+    <LI><A href="#if">@if...@elif...@else...@end</A><BR>
+    <LI><A href="#ifelse">if...else</A><BR>
+    <LI><A href="#label">метка</A><BR>
+    <LI><A href="#set">@set</A><BR>
+    <LI><A href="#switch">switch...case...default</A><BR>
+    <LI><A href="#this">this</A><BR>
+    <LI><A href="#trycatch">try...catch</A><BR>
+    <LI><A href="#trycatch">throw</A><BR>
+    <LI><A href="#var">var</A><BR>
+    <LI><A href="#while">while</A><BR>
+    <LI><A href="#with">with</A><BR>
+</UL>
+<P>
+
+<a name="break"><H3>break [метка];</H3></a>
+<blockquote>
+<P><b>break</b> используется для прекращения выполнения последовательности операторов
+
+<P>Вы можете использовать <b>break</b> в операторе выбора <b>switch</b> и
+в циклических конструкциях <b>while</b>, <b>for</b>, <b>for...in</b> или <b>do...while</b>.
+
+<p>При появлении <b>break</b> происходит переход в следующую за последовательностью операторов
+часть программы, если метка опущена. При наличии метки происходит переход в ту часть
+программы на которую эта метка указывает.
+
+<P>Следующий пример иллюстрирует использование <B>break</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function BreakTest(breakpoint){
+   var i = 0;
+   while (i &lt; 100){
+      if (i == breakpoint) <B>break</B>;
+      i++;
+   }
+   return(i);
+}</FONT></PRE></BLOCKQUOTE>
+
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="ccon"><H3>@cc_on</H3><a>
+<BLOCKQUOTE>
+<P>Activates conditional compilation support.
+<P>The <b>@cc_on</b> statement activates conditional compilation in the scripting engine. <p>
+It is strongly recommended that you use the <b>@cc_on</b> statement in a comment, so that browsers that
+do not support conditional compilation will accept your script as valid syntax:
+<blockquote><pre><Font Face="Courier New, Courier" Size=3>/*<Font COlor="#FFOOOO">@cc_on</font>*/
+...
+(remainder of script)
+</font></pre></blockquote>
+</BLOCKQUOTE>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="continue"><H3>continue [метка];</H3></a>
+<blockquote>
+<P><b>continue</b> используется для прекращения текущей итерации и начала новой итерации
+
+<P>Вы можете использовать <b>continue</b> в циклических конструкциях
+ <b>while</b>, <b>for</b>, <b>for...in</b> или <b>do...while</b>.
+
+<p>При появлении <b>continue</b> происходит переход на следующую итерацию, если метка опущена.
+При наличии метки происходит переход в ту часть программы на которую эта метка указывает.
+
+<P>Следующий пример иллюстрирует использование <B>continue</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function skip5(){
+  var s = "", i=0;
+  while (i &lt; 10){
+    i++;
+    if (i==5){
+      continue;
+    }
+    s += i;
+  }
+  return(s);
+}
+</FONT></PRE></BLOCKQUOTE>
+
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="comment"><H3>Комментарии</H3></a>
+<blockquote>
+<P><i>//строка</i><BR>для создания одной строки комментария
+
+<P><I>/*строки*/</i><BR>для создания нескольких строк комментария
+
+<P><I>//@CondStatement</I>
+
+<P><I>/*@CondStatement@*/</I><BR>The CondStatement argument is conditional compilation
+code to be used if conditional compilation is activated. There can be no space
+between the "//" and "@" characters.
+
+<P>Следующий пример демонстрирует использование комментариев:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function myfunction(arg1, arg2){
+  /* This is a multiline comment that
+     can span as many lines as necessary. */
+  var r;
+  // This is a single line comment.
+  r = arg1 + arg2; // Sum the two arguments.
+  return(r);
+}
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="dowhile"><H3>
+do{<BR>
+&nbsp;&nbsp;&nbsp;операторы<BR>
+}while(условие_продолжения);
+</H3></a>
+<blockquote>
+<P>Конструкция <b>do...while</b> используется для выполнения блока опеараторов хотя бы один раз и
+пока условие_продолжения итерации имеет значение истина.
+
+<P>Следующий код показывает использование <B>do...while</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+//функция возвращает список: буква_диска название_диска,
+//если диск читается
+function GetDriveList()
+{
+  var fso, s, n, e, x;
+  fso = new ActiveXObject("Scripting.FileSystemObject");
+  e = new Enumerator(fso.Drives);
+  s = "";
+  do{
+    x = e.item();
+    s = s + x.DriveLetter;
+    s += " - ";
+    if (x.DriveType == 3)
+      n = x.ShareName;
+    else if (x.IsReady)
+      n = x.VolumeName;
+    else
+      n = "[Drive not ready]";
+    s +=  n + "&lt;br&gt";
+    e.moveNext();
+  }while (!e.atEnd())</font>;
+  return(s);
+}
+document.write(GetDriveList());
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="for"><H3>for(инициализация; условие_продолжения; инкремент) операторы</H3></a>
+<blockquote>
+<P>Конструкция <b>for</b> используется для циклического выполнения блока операторов,
+пока условие_продолжения имеет значение истина
+
+<P><I>"Инициализация"</i> содержит операторы, задающие начальные значения переменным
+
+<P><I>"Инкремент"</I> содержит операторы изменяющие значения переменных на каждой итерации.
+
+<P>Следующий пример демонстрирует использование <B>for</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+var myarray = new Array();
+for (i = 0; i &lt; 10; i++){
+  myarray[i] = i;
+}
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="forin"><H3>for(переменная in объект) операторы</H3></a>
+<blockquote>
+<P>Конструкция <b>for...in</b> используется для просмотра элементов объекта(массива)
+
+<P><I>"переменная"</i> - идентификатор, в который передаются свойства объекта
+
+<P>Следующий пример демонстрирует использование конструкции <B>for...in</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function ForInDemo(){
+  var a, key, s = "";
+  a = {"a" : "Athens" , "b" : "Belgrade", "c" : "Cairo"}
+  for (key in a){
+     s += a[key] + "&ltBR&gt;";
+  }
+  return(s);
+}
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="if"><H3>
+@if(условие1) текст1 @elif(условие2) текст2 @else текст3 @end</H3></a>
+<blockquote>
+<P>Конструкция <b>@if...@elif...@else...@end</b> используется для генерирования
+текстового сообщения в зависимости от условий.
+<P><B>@elif</B> можно использовать несколько раз. <B>@elif</B> обрабатывается
+интепретатором, если не выполнены все предыдущие условия.
+<P>Следующий пример демонстрирует использование <B>@if...@elif...@else...@end</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+alert(@if (@_win32) "using Windows 95" @else "using Windows 3.1" @end)
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="ifelse"><H3>
+if(условие)<BR>
+&nbsp;&nbsp;&nbsp;операторы<BR>
+else<BR>
+&nbsp;&nbsp;&nbsp;операторы<BR>
+</H3></a>
+<blockquote>
+<P>Конструкция <b>if...else</b> используется для организации условного перехода.
+<P><B>else</B> можно использовать несколько раз. <B>else</B> обрабатывается
+интепретатором, если не выполнены все предыдущие условия.
+<P>Следующий пример демонстрирует использование <B>if...else</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+if (x == 5)
+  {
+  if (y == 6)
+     z = 17;
+  }
+else
+  z = 20;
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="label"><H3>Метка: операторы</H3></a>
+<blockquote>
+<P>Метка используется для перехода в какую-нибудь часть программы
+с помощью <B>break</B> или <B>continue</B>.
+<P>Следующий пример демонстрирует использование метки:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function labelDemo(){
+    var a = new Array();
+    var i, j, s = "", s1 = "";
+  Outer:
+    for (i = 0; i &lt; 5; i++){
+      Inner:
+        for (j = 0; j &lt; 5; j++){
+          if (j == 2)
+            continue Inner;
+          else
+            a[i,j] = j + 1;
+        }
+    }
+    for (i = 0; i &lt; 5; i++){
+      s = ""
+      for (j = 0; j &lt; 5; j++){
+        s += a[i,j];
+      }
+      s1 += s + "\n";
+    }
+    return(s1)
+}
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="set"><H3>@set @имя_переменной = терм</H3></a>
+<blockquote>
+<P>Creates variables used with conditional compilation statements.
+<P>Терм - Zero or more unary operators followed by a constant,
+   conditional compilation variable, or parenthesized expression.
+<P>Numeric and Boolean variables are supported for conditional compilation.
+  Strings are not. Variables created using @set are generally used in conditional
+  compilation statements, but can be used anywhere in JavaScript code.
+<P>Следующий пример демонстрирует использование <B>@set</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+@set @myvar1 = 12
+@set @myvar2 = (@myvar1 * 20)
+@set @myvar3 = @_jscript_version
+</FONT></PRE></BLOCKQUOTE>
+<P>The following operators are supported in parenthesized expressions:
+<ul>
+<li><b>! ~</b>
+<li><b>* / %</b>
+<li><b>+ - </b>
+<li><b>&lt;&lt;  &gt;&gt;  &gt;&gt;&gt;</b>
+<li><b>&lt; &lt;= &gt; &gt;=</b>
+<li><b>== != === !==</b>
+<li><b>& ^ |</b>
+<li><b>&& ||</b>
+</ul>
+<P>If a variable is used before it has been defined, its value is <b>NaN</b>.
+<b>NaN</b> can be checked for using the <b>@if</b> statement:
+<blockquote><pre><Font Face="Courier New, Courier" Size=3>@if (@newVar != @newVar)
+  ...
+</pre></font></blockquote>
+<P>This works because <b>NaN</b> is the only value not equal to itself.
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="switch"><H3>
+switch(условие){<BR>
+&nbsp;&nbsp;&nbsp;case метка: операторы<BR>
+&nbsp;&nbsp;&nbsp;default : операторы<BR>
+}<BR>
+</H3></a>
+<blockquote>
+<P>Конструкция <b>switch...case...default</b>используется для организации выбора
+из нескольких вариантов.
+<P><B>case</B> можно использовать несколько раз. Если метка в <B>сase</B> совпадает с
+условием, заданным в <B>switch</B>, то выполняются все операторы, идущие после данной
+метки.
+<P>Если нет ни одной метки равной условию, описанному в <B>switch</B>, то выполняются
+операторы заданные в <B>default</B>
+<P>Следующий пример демонстрирует использование конструкции <B>switch...case...default</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+//функция для подсчета среднего балла по массиву оценок
+function sredball(){
+   var strnumber = "55324235";
+   var five=0,four=0,three=0,two=0;
+   for (var i = 0; i &lt; strnumber.length; i++){
+      switch (strnumber.charAt(i)){
+         case '5' : five++; break;
+         case '4' : four++; break;
+         case '3' : three++; break;
+         default : two++; break;
+      }
+    }
+    var sum = five + four + three + two;
+    var sred = five * 5 + four * 4 + three * 3 + two * 2;
+    return sred / sum;
+}
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="this"><H3>this.имя_свойства</H3></a>
+<blockquote>
+<P>С помощью <b>this</b> можно обратиться к свойствам объекта.
+<P>Следующий пример демонстрирует использование <B>this</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function Car(color, make, model){
+  this.color = color;
+  this.make = make;
+  this.model = model;
+}
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="trycatch">
+<H3>
+  try{<BR>
+&nbsp;&nbsp;&nbsp;участок_программы<BR>
+  }<BR>
+  catch(имя_ошибки){<BR>
+&nbsp;&nbsp;&nbsp;обработка_ошибки<BR>
+  }<BR>
+  </H3></a>
+<blockquote>
+<P><b>try...catch</b> используется для обработки ошибочных ситуаций.
+<P><B>try</B> объединяет собой участок программы, в котором предположительно может возникнуть ошибочная ситуация,
+например деление на ноль. В <B>try</B> с помощью конструкции <B>THROW</B> <i>выражение</I>; можно генерировать
+собственное сообщение об ошибке.
+<p>В <b>catch</b> происходит обработка соотвествующей ошибки. <i>Имя_ошибки</i> - произвольный идентификатор
+содержащий генерируемое сообщение об ошибке.
+<P>Следующий пример иллюстрирует использование <B>try...catch</B> и <B>throw</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function TryCatchDemo(x){
+  try {
+    try {
+    if (x == 0)
+      throw "x equals zero";
+    else
+      throw "x does not equal zero";
+    }
+    catch(e){
+      if (e == "x equals zero")
+        return(e + " handled locally.");
+      else
+        throw e;
+    }
+  }
+  catch(e){
+    return(e + " handled higher up.");
+  }
+}
+document.write(TryCatchDemo(0));
+document.write(TryCatchDemo(1));</FONT></PRE></blockquote>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="var"><H3>var имя_переменной = значение_переменной</H3></a>
+<blockquote>
+<P><b>var</b> используется для создания переменных.
+<P>В конструкции <b>var</b> можно описывать множество переменных, при этом
+значение для них указывать необязательно.
+<P>Примеры использования <B>var</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+var index;
+var name = "Thomas Jefferson";
+var answer = 42, counter, numpages = 10;
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="while"><H3>while(условие_продолжения) операторы</H3></a>
+<blockquote>
+<P><b>while</b> используется для организации цикла, в котором итерации будут
+выполняться пока условие_продолжения есть истина, в противном случае операторы
+в <b>while</b> не выполняться ни разу.
+<P>Пример использования <B>while</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function BreakTest(breakpoint){
+   var i = 0;
+   while (i &lt; 100){
+     if (i == breakpoint) break;
+     i++;
+   }
+   return(i);
+}
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<a name="with"><H3>with(объект) операторы</H3></a>
+<blockquote>
+<P><b>with</b> используется для получения доступа к элементам заданого объекта
+<P>Следующий пример иллюстрирует использование <B>with</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+var x,y;
+with (Math){
+  x = cos(3 * PI) + sin (LN10);
+  y = tan(14 * E);
+}
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+</BODY>
+</HTML>

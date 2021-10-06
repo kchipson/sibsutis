@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 7</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+
+<h3>CSS - Каскадные Таблицы Стилей</h3>
+<P>
+Задание стиля страницы (Style Sheet) возможно либо в заголовке документа:
+в разделе &lt;HEAD&gt; с помощью команды &lt;STYLE&gt;,
+либо непосредственно в тексте с помощью дополнительного атрибута STYLE
+для команд разметки текста (&lt;P&gt;, &lt;H1&gt; и т.п.)
+
+<H4>Синтаксис стиля</h4>
+<P>Синтаксис стиля не слишком сильно отличается от синтаксиса <b>HTML</b>, он  записываются следующим образом:
+<p><table><tr><td bgcolor=aqua>
+<pre> <b>селектор</b> {атрибут:<b> значение</b>}</pre></td></tr></table>
+<p>
+Здесь под <b>селектором</b> подразумевается элемент, для которого задается стиль, далее в фигурных скобках, через "<b>;</b>" записываются пары <b>атрибут</b>:<b>значение</b>, где "<b>:</b>" является заменителем знака "<b>=</b>".
+<p>
+Например,  для окрашивания всех заголовков  второго уровня в красный цвет достаточно просто указать в описании стиля следующее:<br> 
+
+<p><table><tr><td bgcolor=aqua>
+<pre> H2 {color:<strong> red</strong>} </span></pre></td></tr></table>
+
+<P>Селекторы могут описывать следующие элементы: 
+<ul>
+<p><li><i>команды</i> 
+<br>Пример: <span class=cod>P {color:<strong> red</strong>} </span>стиль применяется к команде <b>&lt;P&gt;</b>
+<p><li><i>команды потомков</i> 
+<br>Пример: <span class=cod>H1 B {color:<strong> red</strong>} </span>стиль применяется к команде <b>&lt;B&gt;</b>, находящейся внутри заголовка первого уровня, т.е. являющимся его <b>потомком</b>
+<p><li><i>дочерние команды</i> 
+<br>Пример: <span class=cod>OL LI {color:<strong> red</strong>} </span>стиль применяется к команде <b>&lt;LI&gt;</b>, которая является <b>дочерним</b> элементом для команды <b>&lt;OL&gt;</b>, 
+т.е. на команды <b>&lt;LI&gt;</b>, которые являются <b>дочерними</b> элементами для команды <b>&lt;UL&gt;</b> стиль не распространяется
+<p><li><i>атрибуты команд</i> 
+<br>Пример: <span class=cod>DIV[class=red] {color:<strong> red </strong>} </span> стиль применяется ко всем элементам, включенным в <b>&lt;DIV&gt;</b>, у которых атрибут <b>class</b> равен <b>red</b>
+<p><li><i>ID</i> 
+<br>Пример: <span class=cod>P#12 {color:<strong> red </strong>} </span> стиль применяется к 
+команде <b>&lt;P&gt;</b>, у которой идентификатор <b>ID</b> равен <b>12</b>
+<p><li><i>классы</i> 
+<br>Пример: <span class=cod>.red {color:<strong> red</strong>} </span>стиль применяется к любомым командам, у которых атрибут <b>class</b> равен <b>red</b>
+<p><li><i>псевдоклассы</i> 
+<br>Пример: <span class=cod>A:visited {color:<strong> red </strong>} </span> стиль применяется к посещенной команде <b>&lt;A&gt;</b>.
+</ul>
+</P>
+<p>
+В том случае, если свойств у команды предположительно много, то их разделяют точкой с запятой:
+
+<p><table><tr><td bgcolor=aqua>
+<pre>H2 {color:<strong> red</strong>;  font-size:<strong> 15pt</strong>}</pre></td></tr></table>
+
+<p> Если какая либо команда в документе вставлена внутри другой команды, то она наследует все  свойства, и для того, чтобы задать ей особые свойства необходимо использовать следующий синтаксис:
+<p><table><tr><td bgcolor=aqua>
+<pre> H3 B {color:<strong> green</strong>} </pre></td></tr></table>
+<p>
+Здесь назначается зеленый цвет для текста выделенного командами <b>&lt;B&gt;</b> и <b>&lt;/B&gt;</b>, если он является заголовком третьего уровня.</P>
+<P>
+Следующий пример демонстрирует задание стиля в заголовке документа:
+
+<p><table><tr><td bgcolor=aqua>
+<pre>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt;Style Sheets&lt;/TITLE&gt;
+&lt;STYLE TYPE="text/css" TITLE="Bright Colours"&gt;
+BODY { background: #FFFFFF;}
+P { color: blue;
+    font-size: 12pt;
+    font-family: Arial}
+
+H1 { color: red;
+     font-size: 18pt}
+
+&lt;/STYLE
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+...</pre></td></tr></table>
+
+<P>
+Атрибуты TYPE и TITLE команды &lt;STYLE&gt; являются необязательными.
+Атрибут TYPE задает определение MIME
+(Content-Type:  "text/css") а атрибут TITLE используется для задания
+названия соответсвующего стиля документа.
+<P>
+<A HREF="css1.htm" target="_blank">Демонстрация примера</a>
+<P>
+Определение стиля обязатально требует задания начала и конца команды<br>
+&lt;STYLE&gt; ... &lt;/STYLE&gt;<br>
+<P>
+<h4>Основные команды</h4>
+<P><b>Задание цвета</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+P {color: #800000} /* RGB - color
+</pre></td></tr></table>
+<P><b>Задание размера</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+P {font-size: 32pt} /* pt - point, px - pixel
+</pre></td></tr></table>
+<P><b>Задание курсива</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+P {font-style: italic} 
+</pre></td></tr></table>
+<P><b>Задание жирного шрифта</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+P {font-weight: bold} 
+</pre></td></tr></table>
+<P><b>Задание семейства шрифтов</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+P {font-family: Arial} /* имя семейства шрифтов
+</pre></td></tr></table>
+<P><b>Задание размещения</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+P {text-align: center} /* center/left/right
+</pre></td></tr></table>
+<P><b>Задание отступов</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+P {margin-top: -10pt}
+P {margin-left: -20pt}
+P {margin-right: 15pt}
+P {text-indent: 5em }  /* задание отступа в начале абзаца
+</pre></td></tr></table>
+<P>
+Использование команды &lt;LINK&gt; позволяет задать внешний стиль документа,
+например,<br>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;LINK REL="stylesheet" TYPE="text/css"
+HREF="http://www.foo.org/sheet" TITLE="coolsheet"&gt;
+</pre></td></tr></table>
+<P>
+<h4>Динамическое изменение стиля</h4>
+<P>
+Стиль соответсвующей команды языка HTML может быть изменен в ходе
+выполнения документа при помощи атрибута STYLE соответсующей команды
+разметки текста, например,
+<P>
+<table><tr><td bgcolor=aqua>
+<pre>&lt;H1 STYLE="color: #FF0000"&gt;Заголовок &lt;/H1&gt;</pre></td></tr></table>
+<h1 STYLE="color: #FF0000">Заголовок</H1>
+<P>
+<table><tr><td bgcolor=aqua>
+<pre>&lt;H1 STYLE="color: #00FF00; text-align: right"&gt;Заголовок 1&lt;/H1&gt;</pre></td></tr></table>
+<h1 STYLE="color: #00FF00; text-align: right">Заголовок 1 </H1>
+<P>
+<table><tr><td bgcolor=aqua>
+<pre>&lt;H1 STYLE="text-align: left"&gt;Заголовок 2&lt;/H1&gt;</pre></td></tr></table>
+<h1 STYLE="text-align: left">Заголовок 2 </H1>
+<P>
+<table><tr><td bgcolor=aqua>
+<pre>&lt;H1 STYLE="font-size: 26pt"&gt;Заголовок 3&lt;/H1&gt;</pre></td></tr></table>
+<h1 STYLE="font-size: 26pt">Заголовок 3</H1>
+<p>
+<h4>Селекторы</h4>
+<P>
+Другой способ выбора стиля в документе связан с предопределением
+различных стилей в заголовке документа.
+Для выбора стиля используется два вида селекторов:
+CLASS и ID (идентификатор).
+<p>
+Использование селекторов зависет от способа декларации
+стиля в заголовке.
+<h3>Селектор CLASS</h3>
+<p>
+Задание выбора стиля по методу CLASS мозможно двумя способами:
+<P>
+<ol>
+<li> Задание имени стиля конкретной команды, например,
+<br><table><tr><td bgcolor=aqua>
+<pre>
+P.redtext { color: #FF0000}
+</pre></td></tr></table>
+<p>Тогда соответствующий стиль параграфа включается командой
+<br><table><tr><td bgcolor=aqua>
+<pre>
+&lt;P CLASS="redtext"&gt;text&lt;/P&gt;
+</pre></td></tr></table>
+<P>
+<LI> Задание имени стиля, которй может быть использован для произвольной команды
+разметки, например,
+<br><table><tr><td bgcolor=aqua>
+<pre>
+.redtext { color: #FF0000}
+</pre></td></tr></table>
+<p>Тогда соответствующий стиль включается командой
+<br><table><tr><td bgcolor=aqua>
+<pre>
+&lt;H1 CLASS="redtext"&gt;text&lt;/H1&gt;
+</pre></td></tr></table>
+</ol>
+
+<p>
+Использование селекторов для задания отступов позволяет сделать наложение текста друг на друга
+как это сделано в следующем примере. Команда &lt;DIV&gt; создает блок текста, 
+в пределах которого действуют заданные в этой команде значения атрибутов.
+<P>
+<table><tr><td bgcolor=aqua>
+<pre>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt;Style Sheets&lt;/TITLE&gt;
+&lt;STYLE&gt;
+  .t1 { color: darkmagenta;
+          margin-left: 10pt;
+          font-size: 30pt;
+          font-weight: bold;
+          font-family: Courier New }
+  .t2 { margin-top: -37pt;
+               margin-left: 8pt;
+               color: magenta;
+               font-size: 30pt;
+               font-weight: bold;
+               font-family: Courier New }
+&lt;/STYLE&gt;
+&lt;/HEAD&gt;
+&lt;BODY BGCOLOR=#FFFFFF&gt;
+&lt;DIV CLASS="t1"&gt;Объявление&lt;/DIV&gt;
+&lt;DIV CLASS="t2"&gt;Объявление&lt;/DIV&gt;
+&lt;p&gt;
+&lt;DIV class="t1"&gt;Объявление&lt;/DIV&gt;
+&lt;P&gt;&amp;nbsp;
+&lt;p&gt;
+&lt;DIV CLASS="t2"&gt;Объявление&lt;/DIV&gt;
+</pre></td></tr></table>
+<P>
+<A HREF="css2.htm" target="_blank">Демонстрация примера</a>
+
+<h4>Селектор ID</h4>
+<P>
+Принцип работы селектора ID аналогичен принципу работы селектора CLASS.
+Идентификатор ID должен быть уникальным и используется для задания имени стиля
+произвольной команды HTML (является более ранней командой языка HTML 3).
+<P>
+Определяется в заголовке документа
+<br><table><tr><td bgcolor=aqua>
+<pre>
+#redtext { color : #FF0000}
+</pre></td></tr></table>
+<p>Соответствующий стиль включается командой
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;P ID="redtext"&gt;some text&lt;/P&gt; would be coloured red.
+</pre></td></tr></table>
+<P>
+<h4>Команда SPAN</h4>
+<P>
+Команда SPAN позволяет менять стиль вывода текста внутри одной команды
+(внутри параграфа), например, следующий текст
+<SPAN STYLE="color: #FF0000">будет отбражен красным цветом</SPAN>.
+Это изменение сделано командой:
+<P>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;SPAN STYLE="color: #FF0000"&gt;будет отбражен красным цветом&lt;/SPAN&gt;
+</pre></td></tr></table>
+<P>
+<h4>Комибинация стилей команды</h4>
+<P>
+Следующее определение в заголовке документа переопределяет стиль команды STRONG
+<p><table><tr><td bgcolor=aqua>
+<pre>
+STRONG { color: #00FF00}
+</pre></td></tr></table>
+<P>
+И если в документе встречается текст в скобках
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;STRONG&gt; ... &lt;/STRONG&gt;
+</pre></td></tr></table>
+<P>
+То данный текст будет показан "зеленым" цветов и с соответвующим выделенем
+для команды STRONG (по-умолчанию - жирный текст)
+<p>
+Задание стиля
+<br><table><tr><td bgcolor=aqua>
+<pre>
+P STRONG { color: #00FF00}
+</pre></td></tr></table>
+<P>
+устанавливает зеленый цвет для параграфа помеченного командой STRONG,
+между скобками
+<br><table><tr><td bgcolor=aqua>
+<pre>
+&lt;P&gt; ... &lt;STRONG&gt; ... &lt;/STRONG&gt; ...&lt;/P&gt;
+</pre></td></tr></table>
+Например:
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;P&gt;&lt;STRONG&gt;Этот текст ярко зеленый&lt;/STRONG&gt;&lt;/P&gt;
+А этот - &lt;STRONG&gt;основного&lt;/STRONG&gt; цвета.
+</pre></td></tr></table>
+<P>
+<A HREF="css3.htm" target="_blank">Демонстрация примера</a>
+
+<h4>Подробнее об элементах CSS</h4>
+<P>
+<UL>
+        <LI><A href="203.html">Единицы измерения</a>
+        <LI><A href="204.html">Свойства шрифта</a>
+        <LI><A href="205.html">Свойства текста</a>
+        <LI><A href="206.html">Свойства цвета и фона</a>
+        <LI><A href="207.html">Свойства обрамления</a>
+        <LI><A href="208.html"">Свойства позиционирования</a>
+        <LI><A href="209.html">Визуальные свойства</a>
+        <LI><A href="211.html">Группирование стилей, назначение классов и псевдоклассов</a>
+</ul>     
+
+<p>&nbsp;
+
+</BODY></HTML>

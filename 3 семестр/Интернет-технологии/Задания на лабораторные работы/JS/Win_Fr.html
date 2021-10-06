@@ -1,0 +1,482 @@
+<HTML>
+<HEAD>
+        <META HTTP-EQUIV="Content-Type"               CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+<script language="JavaScript">
+function openWin() {
+  myWin= open("sesame.html");
+}
+function openWin1() {
+  myWin= open("sesame.html", "displayWindow", 
+    "width=250,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function openWin2() {
+  myWin= open("close.html","displayWindow","width=200,height=100,status=no,toolbar=no,menubar=no");
+}
+function WinOpen(url) {
+msg=open(url,"DisplayWindow","width=500,height=400,toolbar=no,directories=no,menubar=no,status=no");
+}
+</script>
+</HEAD>
+<BODY text="Black" link=" #336699" vlink="#6699cc" alink="#ff6600">
+<h1 align=center><b><a name="5">Использование окон и фреймов</a></b></h1><BR>
+<ul>
+	<li> 
+	<a href="#1">Открытие и закрытие окон</a>
+	<li>
+	<a href="#2">Использование фреймов</a>
+        <li>
+	<a href="#4">Управление окнами</a>
+        <li>
+	<a href="#3">Обращение к окнам и фреймам</a>
+</ul>
+<h2><a name="1">Открытие и закрытие окон</a></h2>
+<a href="#11">Открытие окон</a>
+<Br>
+<a href="#12">Закрытие окон</a>
+<p>
+Открытие новых окон в браузере - грандиозная возможность языка <font color="red"><i>JavaScript</i></font>. Вы можете либо загружать в новое окно новые документы (например, те же документы HTML), либо (динамически) создавать новые материалы.  
+<p>
+<h3><a name="11">Открытие окон</a></h3>
+Вы можете создавать окно с помощью метода <font color="teal">Window</font>.
+Следующее утверждение создает 
+окно <I>"msgWindow"</i>, которое показывает содержание файл <i>sesame.html</i>:
+<br>
+<table><tr><td bgcolor=aqua><I>MsgWindow=window.open("sesame.html")</i></table>
+<br>
+Следующее утверждение создает окно <I>"homeWindow"</i>, которое показывает домашнюю страницу Netscape: 
+<br>
+<table><tr><td bgcolor=aqua><I>homeWindow=window.open("http://www.netscape.com") </i></table>
+<br>
+Окна могут иметь  два названия. Следующее утверждение создает окно с двумя
+названиями. Название окна <I>"msgWindow"</i> - это вовсе не имя окна, но только с помощью этой переменной вы можете получить доступ к окну. И поскольку это обычная переменная, то область ее действия - лишь тот скрипт, в котором она определена; а между тем, имя окна, <I>"displayWindow"</i> - уникальный идентификатор, которым можно пользоваться с любого из окон браузера.
+<br>
+<table><tr><td bgcolor=aqua><I>msgWindow=window.open("sesame.html","displayWindow")</i></table> 
+<br>
+Когда Вы создаете окно, имя окна не требуется. Но если Вы хотите обратиться к окну из другого окна, то окно должно иметь свое уникальное имя (в данном случае <I>"displayWindow"</i>). Приведенный далее скрипт открывает новое окно браузера и загружает в него страничку <i>sesame.html</i> с помощью метода <font color="teal">open()</font>:
+<p>
+<table><tr><td bgcolor=aqua>
+<I>
+<pre>
+&lt;html>
+ &lt;head>
+ &lt;script language="JavaScript">
+  &lt;!-- hide
+  function openWin() {
+   msgWindow= open("sesame.html")
+   }
+  // -->
+ &lt;/script>
+ &lt;/head>
+ &lt;body>
+  &lt;form>
+   &lt;input type="button" value="Открыть новое окно"    onClick="openWin()">
+  &lt;/form>
+ &lt;/body>
+&lt;/html>
+</pre> 
+</table>
+</i>
+<form>
+<input type="button" value="Открыть новое окно" onClick="openWin()">
+</form>
+<p>
+Заметим, что Вы имеете возможность управлять самим процессом создания окна. Например, Вы можете
+указать, должно ли новое окно иметь строку статуса, панель инструментов, меню или полосы прокрутки. Кроме того, Вы можете задать размер окна. Рассмотрим следующий пример создания окна размерами 250x100 пикселов, которое не имеет ни строки статуса, ни панель инструментов, ни меню, ни полосы прокрутки.
+<p>
+<table><tr><td bgcolor=aqua><I>
+<pre>
+&lt;html>
+ &lt;head>
+  &lt;script language="JavaScript">
+   &lt;!-- hide
+    function openWin() {
+     msgWindow= open("sesame.html",displayWindow",
+      "width=250,height=100,status=no,
+     toolbar=no,menubar=no,scrollbars=no")
+    }
+   // -->
+  &lt;/script>
+ &lt;/head>
+ &lt;body>
+  &lt;form>
+   &lt;input type="button" value="Открыть новое окно" 
+   onClick="openWin()">
+  &lt;/form>
+ &lt;/body>
+&lt;/html>
+</pre> 
+</i></table>
+<form>
+<input type="button" value="Открыть новое окно" onClick="openWin1()">
+</form>
+<p>
+Как видно в примере, свойства окна записаны в строке <font color=purple><i> "width=250,height=100,status=no,toolbar=no,menubar=no,scrollbars=no"</font></i>, в которой следует обратить внимание на то, что вам не следует помещать в ней символы пробела.  
+ <h3><a name="12">Закрытие окон</a></h3>
+<P>
+Вы можете закрывать окна с помощью языка <font color="red"><i>JavaScript</i></font>. Следующие утверждения закрывают текущее окно:
+<table><tr><td bgcolor=aqua><I>
+<br>
+Window.close ()
+<br>
+Self.close ()
+</i></table>
+<br>
+Замечание: не использовать следующее утверждение в обработке результата <font color="teal"> close() </font>
+Следующее утверждение закрывает окно, названное <i>"msgWindow"</i>: 
+<br>
+<table><tr><td bgcolor=aqua><I>
+MsgWindow.close()
+</i></table>
+<br>
+Теперь создадим пример, который открывает новое окно. Загрузим туда web-страницу, где при нажатие кнопки оно будет закрыто:
+<p>
+<table><tr><td bgcolor=aqua>
+<I>
+<pre>
+&lt;html>
+ &lt;script language="JavaScript">
+  &lt;!-- hide
+   function closeIt(){
+    close();
+   }
+  // -->
+ &lt;/script>
+ &lt;center>
+  &lt;form>
+    &lt;input type=button value="Закрыть окно" onClick="closeIt()">
+  &lt;/form>
+ &lt;/center>
+&lt;/html>
+</pre> 
+</table>
+</i>
+<form>
+<input type="button" value="Пример" onClick="openWin2()">
+</form>
+<p>
+<font color="teal">
+open()</font> и <font color="teal">close()</font> - это методы объекта window. Мы должны помнить, что следует писать не просто <font color="teal">open()</font> и <font color="teal">close()</font>, а <font color="teal">
+window.open()</font> и <font color="teal"> window.close()</font>. Однако в нашем случае объект <font color="teal"> window </font>можно опустить - Вам нет необходимости писать префикс <font color="teal">window</font>, если Вы хотите всего лишь вызвать один из методов этого объекта (и такое возможно только для этого объекта).
+<h2><a name="2">Использование фреймов</a></h2> 
+<p>
+Один из способов выдать сразу несколько файлов HTML на экране пользователя - это открыть несколько окон броузера. Другой путь состоит в том, чтобы разбить окно на несколько разделов. Эти разделы называются фреймами. В каждом фрейме показывается свой документ HTML. Каждый фрейм может иметь свои полосы прокрутки, ссылки, графические изображения и т.д. Фреймы могут функционировать независимо или влиять друг на друга, используя ссылки, указывающие на другие фреймы.
+<br>
+Для использования фреймов необходимо как минимум три файла: установачный файл и два исходных файла HTML. Установачный файл назначает исходные файлы HTML для каждого из окон, но не содержит собственного текста или графики. Исходные файлы HTML выдаются во фреймы и, как и любые другие файлы могут содержать ссылки, изображения, скрипты и пр.
+<br>
+Для создания установочного фрейма необходимо два тэга:
+<b>
+&lt;frameset>
+</b>
+и
+<b>
+&lt;fram>
+</b>.
+HTML-страница, создающая фреймы, в общем случае может выглядеть следующим образом:
+<table><tr><td bgcolor=aqua>
+<pre>
+&lt;html>
+&lt;frameset cols="50%,50%"> 
+  &lt;frameset rows="50%,50%"> 
+    &lt;frame src="cell.htm"> 
+    &lt;frame src="cell.htm"> 
+  &lt;/frameset> 
+  &lt;frameset rows="33%,33%,33%"> 
+    &lt;frame src="cell.htm"> 
+    &lt;frame src="cell.htm"> 
+    &lt;frame src="cell.htm"> 
+  &lt;/frameset> 
+&lt;/frameset> 
+&lt;/html>
+</pre>
+</table>
+<p>
+<form>
+<input type=button value="Frame's example" onClick="WinOpen('frames2.htm')">
+</form>
+<p> 
+Внутри тега <b>&lt;frameset></b> мы использовали свойства <font color="teal">rows</font> и <font color="teal">cols</font>. Это означает, что фреймы будут расположены друг над другом или друг под друго соответсвенно. Фрагмент "33%,33%,33%" задает размеры открываемых окон. Этот фрагмент эквивалентен следующей записи "33%,33%,*" или задать размер фрейма в пиксилах, для чего достаточно после числа не ставить символ %. Любому фрейму можно присвоить уникальное имя, воспользовавшись в тэге <b>&lt;frame></b> атрибутом <font color="teal">name</font>. Такая
+возможность пригодится нам в языке <font color="red"><i>JavaScript</i></font> для доступа к фреймам. 
+<br>
+Тег <b>&lt;frame></b> содержит отрибуты, которые управляют различными свойствами фреймов.
+<br><b>
+BORDER=</b>определяет ширину разделительной полосы между фреймами.
+<br><b>
+BORDERCOLOR=</b>устанавливает цвет разделительной полосы между фреймами.
+<br><b>
+NORESIZE</b> атрибут, запрещающий пользователю изменять размеры фреймов.
+<br><b>
+SCROLLING=</b>задает, появляются ли в окне полосы прокрутки.
+<br><b>
+MARGINHEIGHT=</b>добавляет пустое поле между верхней границей фрейма и началом текста или графики.
+<br><b>
+MARGINWIDTH=</b>добавляет пустое поле между боковыми границами фрейма и текстом или графикой.
+<p>
+Следующий график показывает окно, содержащее три фреймов: 
+<XMP>
+ 
+
+       This frame is                 This frame is
+       named listFrame               named contentFrame
+             |                              |
+             |                              |
+-------------v------------------------------v----------
+| Music Club    |  Toshiko Akiyoshi                   |
+| Artists       |     Interlude                       |
+|               |                                     |
+| Jazz          |  The Beatles                        |
+| - T. Akiyoshi |     Please Please Me                |
+| - J. Coltrane |                                     |
+| - M. Davis    |  Betty Carter                       |
+| - D. Gordon   |     Ray Charles and Betty Carter    |
+|               |                                     |
+| Soul          |  Jimmy Cliff                        |
+| - B. Carter   |     The Harder They Come            |
+| - R. Charles  |                                     |
+| ...           |  ...                                |
+-------------------------------------------------------
+|  Alphabetical   By category   Musician Descriptions |
+----------------^--------------------------------------
+                |
+                |
+         This frame is named
+         navigateFrame
+</XMP>
+<B>Пример 1.</B> Следующе утверждение создает frameset, показанный в предыдущем графике. 
+<table><tr><td bgcolor=aqua><XMP>
+<FRAMESET ROWS="90%,10%">
+<FRAMESET COLS="30%,70%">
+<FRAME SRC=category.html NAME="listFrame">
+<FRAME SRC=titles.html NAME="contentFrame">
+</FRAMESET>
+<FRAME SRC=navigate.html NAME="navigateFrame">
+</FRAMESET>
+</XMP></table>
+<P>
+Следующий график показывает иерархию фреймов. Все три фрейма имеют того же самого родителя, даже при том, что два из фреймов определены внутри отдельного frameset. Это, потому что родитель фреймов есть родитель окно, и фрейм, расположенный не в frameset, определяет окно. 
+<XMP>
+ top
+ |
+ +--listFrame (category.html)
+ |
+ +--contentFrame (titles.html)
+ |
+ +--navigateFrame (navigate.html)
+</XMP>
+<P>
+Вы можете обращаться к предыдущим фреймам, используя массив <I>frames</I> следующим образом. (Для информации относительно массива <I>frames</I>, смотрите объект <A HREF="f_g.html#list_frameob">frame</A>.) 
+<UL>
+<LI> <I>listFrame</I> - top.frames [0] 
+<LI> <I>contentFrame</I> - [1] top.frames 
+<LI> <I>navigateFrame</I> - top.frames [2] 
+</UL>
+<P>
+<B>Пример 2.</B>Вы можете создавать окно подобно предыдущему, но в котором вершина двух фреймов имеют отдельного родителя из <I>navigateFrame</I>. Верхний уровень frameset будет определен следующим образом: 
+<table><tr><td bgcolor=aqua><XMP>
+<FRAMESET ROWS="90%,10%">
+<FRAME SRC=muskel3.html NAME="upperFrame">
+<FRAME SRC=navigate.html NAME="navigateFrame">
+</FRAMESET>
+</XMP></table>
+<P>
+Файл <TT>muskel3.html</TT> содержит следующие утверждения для верхних фреймов и определяют frameset: 
+<table><tr><td bgcolor=aqua><XMP> 
+<FRAMESET COLS="30%,70%"> 
+<FRAME SRC=category.html NAME="listFrame"> 
+<FRAME SRC=titles.html NAME="contentFrame"> 
+</FRAMESET>
+</XMP></table>
+<P>
+Следующий график показывает иерархию фреймов. <I>UpperFrame</I> и <I>navigateFrame</I> родитель: верхнее окно. <I>ListFrame</I> и <I>contentFrame</I> родитель: <I>upperFrame</I>. 
+<XMP>
+top
+ |
+ |                   +--listFrame
+ |                   |  (category.html)
+ +---upperFrame------|
+ |   (muskel3.html)  |
+ |                   +--contentFrame
+ |                      (titles.html)
+ |
+ +---navigateFrame
+     (navigate.html)
+</XMP>
+<P>
+Вы можете обращаться к предыдущим фреймам, использующим массив <I>frames</I> следующим образом. (Для информации относительно массивов <I>frames</I>, смотрите объект <A HREF="f_g.html#list_frameob">frame</A>.) 
+<UL>
+<LI> <I>upperFrame</I> - top.frames [0] 
+<LI> <I>navigateFrame</I> - [1] top.frames 
+<LI> <I>listFrame</I> - upperFrame.frames [0] или top.frames [0] .frames [0] 
+<LI> <I>contentFrame</I> - upperFrame.frames [1] или top.frames [0] .frames [1] 
+</UL>
+<H3> Модифицикация фреймов</H3> 
+<P>
+Вы можете модифицировать содержание фрейма,  используя свойство location, пока вы точно определяете иерархию фреймов. 
+<P>
+Например, пусть вы используете frameset, описанный в Примере 2 в предыдущем примере. Если вы хотите, чтобы пользователь был способен закрывать фрейм, содержащий список artists (в фрейме <I>listframe</I>) и просматр только music titles, сортируемые musician (в настоящее время в фрейме <I>contentFrame</I>), вы можете добавить следующую кнопку к <I>navigateFrame</I>. 
+<P>
+Если Вы хотите, чтобы пользователь мог закрыть фрейм, содержащий список artists (в фрейме <I>listframe</I>) и просматривая только music titles, сортируемые musician (в настоящее время в фрейме <I>contentFrame</I>), вы можете добавить следующую кнопку к <I>navigateFrame</I>. 
+<XMP>
+<INPUT TYPE="button" VALUE="Titles Only"
+   onClick="top.frames[0].location='artists.html'">
+</XMP>
+<P>
+Когда пользователь нажимает на эту кнопку, файл <TT>artists.html</TT> загружается в фрейм <I>upperFrame</I>; фреймы <I>listFrame</I> и <I>contentFrame</I> закрываются и больше не существуют. 
+<H3> Обращение и управляние среди фреймов</H3> 
+<P>
+Поскольку фреймы - это тип окна, то вы обращаетесь к фреймам и перемещаетесь среди фреймов также как с окном. Смотрите также: <a href="#3">обращение к окнам и фреймам</a> и <a href="#4">Управление окнами</a>
+<H3> Пример Фреймов</H3> 
+<P>
+Если frameset в предыдущем примере разработан, чтобы представить доступные названия для music club, фреймы и их файлы HTML могут иметь следующее содержание: 
+<UL>
+<LI> <TT>category.html</TT>, в фрейме <I>listFrame</I>, содержит список музыкантов, сортируемых классом. 
+<LI> <TT>titles.html</TT>, в фрейме <I>contentFrame</I>, содержит алфавитный список каждого музыканта и названий, доступных для того музыканта. 
+<LI> <TT>navigate.html</TT>, в фрейме <I>navigateFrame</I>, содержит гиперссылки, которые позволяют пользователю, выбирать, как музыканты показаны в <I>listFrame</I>: в алфавитном списке или категорическом списке. Этот файл также определяет гиперссылки, которые позволяют пользователю, выделить описание каждого музыканта. 
+<LI> Дополнительный файл, <TT>alphabet.html</TT>, содержит список музыкантов, сортируемые в алфавитном порядке. Этот файл показана в <I>listFrame</I>, когда пользователь нажимает связь для алфавитного списка. 
+</UL>
+<P>
+Файл <TT>category.html</TT> (категорический список) содержит следующий код: 
+<table><tr><td bgcolor=aqua><XMP>
+<B>Music Club Artists</B>
+<P><B>Jazz</B>
+<LI><A HREF="titles.html#0001" TARGET="contentFrame">Toshiko Akiyoshi</A>
+<LI><A HREF="titles.html#0006" TARGET="contentFrame">John Coltrane</A>
+<LI><A HREF="titles.html#0007" TARGET="contentFrame">Miles Davis</A>
+<LI><A HREF="titles.html#0010" TARGET="contentFrame">Dexter Gordon</A>
+
+<P><B>Soul</B>
+<LI><A HREF="titles.html#0003" TARGET="contentFrame">Betty Carter</A>
+<LI><A HREF="titles.html#0004" TARGET="contentFrame">Ray Charles</A>
+...
+The file alphabet.html (the alphabetical list) contains code similar to the following: 
+
+<B>Music Club Artists</B>
+<LI><A HREF="titles.html#0001" TARGET="contentFrame">Toshiko Akiyoshi</A>
+<LI><A HREF="titles.html#0002" TARGET="contentFrame">The Beatles</A>
+<LI><A HREF="titles.html#0003" TARGET="contentFrame">Betty Carter</A>
+<LI><A HREF="titles.html#0004" TARGET="contentFrame">Ray Charles</A>
+...
+</XMP></table>
+<P>
+Файл <TT>navigate.html</TT> (навигационные связи внизу экрана) содержит следующий код:
+<table><tr><td bgcolor=aqua><XMP>
+<A HREF="alphabet.html" TARGET="listFrame"><B>Alphabetical</B></A>
+<A HREF="category.html" TARGET="listFrame"><B>By category</B></A>
+<A HREF="artists.html" TARGET="_parent">
+   <B>Musician Descriptions</B></A>
+</XMP></table>
+<P>
+Файл <TT>titles.html</TT> (главный файл, показанный в фрейме справа) содержит следующий код: 
+<table><tr><td bgcolor=aqua><XMP>
+<!-------------------------------------->
+<A NAME="0001"><H3>Toshiko Akiyoshi</H3></A>
+<P>Interlude
+<!-------------------------------------->
+<A NAME="0002"><H3>The Beatles</H3></A>
+<P>Please Please Me
+<!-------------------------------------->
+<A NAME="0003"><H3>Betty Carter</H3></A>
+<P>Ray Charles and Betty Carter...
+</XMP></table>
+<P>
+Для более подробного создания фрейма, смотрите объект <A HREF="f_g.html#list_frameob">frame</A>. 
+<!------------------------------------------------------------------->
+<HR align=center width=250>
+<h2><a name="3">Обращение к окнам и фреймам</a></h2>
+<P>
+Имя, которое вы используете, чтобы обратиться к окну, зависит от того, обращаетесь ли вы к свойствам, методам, и обработчикам события окна или - обращаетесь к окну, как к строке, указывающей имя окна подчиненной формы или гиперсвязь. 
+<P>
+Так как объект окна - верхнего уровня объект в <font color="red"><i>JavaScript</i></font> иерархии пользователя, окно необходимо для определения объектов в любом окне. 
+<H3> Обращение к свойствам, методам, и обработчикам собития окна</H3> 
+<P>
+Вы можете обращаться к свойствам, методам, и обработчикам собития текущего окна или другого окна следующими из способов: 
+<UL>
+<LI> <I>self или window.</I> Self или window - синонимы для текущего окна, и вам необязательно использовать их, чтобы обратиться к текущему окну. Например, Вы можете закрыть текущее окно,  используя или <TT>window.close ()</TT> или <TT>self.close ()</TT>. 
+<LI> <I>top или parent. </I> Top или parent  - также синонимы, которые могут использоваться вместо имени окна. Top обращается к самому верхнему окну, и parent обращается к окну, содержащий frameset. Например, выражение <TT>parent.frame2.document.bgColor="teal"</TT>  изменяет цвет фона фрейма с именем <I>frame2</I> в teal; <I>frame2</I> - фрейм в текущем frameset. 
+<LI> <I>The name of a window variable.</I> Variable окна - переменная, которая определена, когда окно открыто. Например, <TT>msgWindow.close ()</TT> закрывает окно с именем <I>msgWindow</I>. Однако, когда Вы открываете или закрываете окно внутри обработчика события, то вы должны точно определить <TT>window.open ()</TT> или <TT>window.close ()</TT> вместо использования <TT>open()</TT> или <TT>close()</TT>. Из-за обзора статических объектов в <font color="red"><i>JavaScript</i></font>, обращение к <TT>close()</TT> без определения точного имени окна эквивалентно выражению <TT>document.close()</TT>. 
+<LI> <I>Omit the window name.</I> Поскольку существование текущего окна принято, то вы не должны обращаться к имени окна, чтобы вызывать его метод и присвоить его свойству. Например, <TT>close()</TT> закрывает текущее окно. 
+</UL>
+<P>
+Для получения дополнительной информации этих методах обращения к окну, смотрите объект <A HREF="t_z.html#list_windowob">window</A>. 
+<P>
+<B>Пример 1: обращение к текущему окну.</B> Следующая выражение обращается к форме с именем <I>musicForm</I> в текущем окне. Выражение выдает предупреждение, если переключатель выбран. 
+<table><tr><td bgcolor=aqua><XMP>
+if (self.document.musicForm.checkbox1.checked) {
+      alert('The checkbox on the musicForm is checked!')}
+</XMP></table>
+<P>
+<B>Пример 2: обращение к другому окну.</B> Следующие выражения обращаются к форме с именем <I>musicForm</I> в окне <I>checkboxWin</I>. Выражения определяют, если выбран переключатель, отмечает переключатель, определят, если выбрана вторая опция объекта selected, выбирает вторую опция объекта selected. Даже при том, что значения объекта изменены в <I>checkboxWin</I>, текущее окно остается активным: проверка переключателя и выбора опции отбора не дает фокус окну. 
+<table><tr><td bgcolor=aqua><XMP>
+// Определят выбран ли переключатель
+if (checkboxWin.document.musicForm.checkbox2.checked) {
+      alert('The checkbox on the musicForm in checkboxWin is checked!')}
+// Отмечает переключатель
+   checkboxWin.document.musicForm.checkbox2.checked=true
+// Определяет, выбрана ли опция в объекте select
+if (checkboxWin.document.musicForm.musicTypes.options[1].selected)
+   {alert('Option 1 is selected!')}
+// Выбирает опцию в объекте select
+checkboxWin.document.musicForm.musicTypes.selectedIndex=1
+</XMP></table>
+<P>
+<B>Пример 3: обращение к фрейму в другом окне.</B> Следующее выражение обращается к фрейму с именем <I>frame2</I>, который находится в окне с именем <I>window2</I>. Выражение изменяет цвет фона <I>frame2</I> в фиолетовый. Имя фрейма <I>frame2</I>, должно быть определено в теге &LT;FRAMESET&GT;, который создает frameset. 
+<table><tr><td bgcolor=aqua><XMP>
+ Window2.frame2.document.bgColor = "violet" 
+</XMP></table>
+<H3> Обращение к окну подчиненной формы или гиперсвязи</H3> 
+<P>
+Используйте имя окна, когда обращаетесь к окну, как к строке, указывающей имя окна подчиненной формы или гиперсвязи (атрибут TARGET тегов &LT;FORM&GT; или &LT;A&GT;).
+<P>
+<B>Пример 1: второе окно.</B> Следующий пример создает гиперссылку ко второму окну. В примере есть кнопка, которая открывает, окно с именем <I>window2</I>, и связь, которая загружает файл <TT>doc2.html</TT> в открытое окно, и еще одна кнопка, которая закрывает окно. 
+<table><tr><td bgcolor=aqua><XMP>
+<P>
+<INPUT TYPE="button" VALUE="Open window2"
+   onClick="msgWindow=window.open('',
+      'window2','resizable=no,width=200,height=200')">
+<P>
+<A HREF="doc2.html" 
+      TARGET="window2"> Load a file into window2</A><P>
+<INPUT TYPE="button" VALUE="Close window2"
+   onClick="msgWindow.close()">
+</XMP></table>
+<P>
+<B>Пример 2:anchor во втором окне.</B> Следующий пример создает гиперссылку к anchor во втором окне. Связь отображает anchor с именем <I>numbers</I> в файле <TT>doc2.html</TT> в окне <I>window2</I>. Если <I>window2</I> не существует, его создает. 
+<table><tr><td bgcolor=aqua><XMP>
+ <A HREF="doc2.html#numbers" TARGET="window2">numbers</A> 
+</XMP></table>
+<P>
+<B>Пример 3: имя фрейма.</B> Следующий пример создает гиперссылку к anchor в фрейме. Связь отображает anchor с именем <I>abs_method</I> в файле <TT>sesame.html</TT> фрейма с именем "contentFrame". Фрейм должн быть внутри текущего frameset, и имя фрейма должно быть определено в атрибуте NAME тега &LT;FRAME&GT;. 
+<table><tr><td bgcolor=aqua><XMP>
+ <A HREF="sesame.html#abs_method"
+  TARGET="contentFrame">abs</A> 
+</XMP></table>
+<P>
+<B>Пример 4: литеральное имя фрейма.</B> Следующий пример создает гиперссылку к файле. Сслка отображает файл с именем <TT>artists.html</TT> в родительском окне текущего frameset. Этот объект ссылки появляется в фрейме внутри frameset, и когда пользователь нажимает ссылку, все фреймы в frameset исчезают, и загружается файл <TT>artists.html</TT> в родительское окно. 
+<table><tr><td bgcolor=aqua><XMP>
+  <A HREF="artists.html" TARGET="_parent">
+      <B>Musician Descriptions</B></A>
+</XMP></table>
+<!------------------------------------------------------>
+ <HR align=center width=250>
+<h2><a name="4">Управление окнами</a></h2>
+<P>
+Может быть открыто много окон одновременно. Пользователь может перемещаться среди этих окон, щелкая их, давая им фокус. Вы можете дать фокус окну запрограммированно,  давая фокус объекту в окне или, точно определяя окно как адрес гиперссылки. Хотя вы можете изменять значения объекта во втором окне, которое не делает второе окно активным: текущее окно остается активным. 
+<P>
+Активное окно - окно, которое имеет фокус. Когда окно имеет фокус, оно принесено на передний план и изменяется некоторым визуальным способом. Например, область заголовка окна могжет быть изменено в различный цвет. Визуальная команда вызова программы изменяется в зависимости от платформы, которую вы используете. 
+<P>
+<B>Пример 1: передача фокуса объекту в другом окне.</B> Следующее выражение дает фокус текстовому объекту с именем <I>city</I> в окне <I>checkboxWin</I>. Так как текстовый объект получает фокус, то <I>checkboxWin</I> также получает фокус и становится активным окном. В примере также показано выражение, которое создает <I>checkboxWin</I>. 
+<table><tr><td bgcolor=aqua><XMP>
+ сheckboxWin=window.open ("doc2.html")
+ ...
+ checkboxWin.document.musicForm.city.focus()  
+</XMP></table>
+<P>
+<B>Пример 2: передача фокуса другому окну, при использовании гиперссылки.</B> Следующее выражение определяет <I>window2</I> как target гиперссылки. Когда пользователь нажимает на ссылку, фокус передается <I>window2</I>. Если <I>window2</I> не существует, то оно создается. 
+<table><tr><td bgcolor=aqua><XMP>
+ <A HREF="doc2.html"
+      TARGET="window2"> Load a file into window2</A>
+</XMP></table> 
+<p>
+<hr align=center width=250>
+</body>
+</html>

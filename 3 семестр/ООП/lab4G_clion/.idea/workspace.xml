@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="lab4_clion" targetName="lab4_clion" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6f90ad4-8ad6-4c21-8c76-4443c29bb465" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1SIUcX8exxVXzLs2fVada6blQWD" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Win10Pro\Desktop\Object-oriented programming\lab4_clion\cmake-build-debug" />
+      <recent name="C:\Users\Win10Pro\Desktop\Object-oriented programming\lab4_clion" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="lab4_clion" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab4_clion" TARGET_NAME="lab4_clion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab4_clion" RUN_TARGET_NAME="lab4_clion">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6f90ad4-8ad6-4c21-8c76-4443c29bb465" name="Default Changelist" comment="" />
+      <created>1571250685902</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571250685902</updated>
+      <workItem from="1571250699764" duration="926000" />
+      <workItem from="1571252965936" duration="1862000" />
+      <workItem from="1571255351866" duration="12175000" />
+      <workItem from="1571338643445" duration="604000" />
+      <workItem from="1571923815844" duration="514000" />
+      <workItem from="1571926878383" duration="866000" />
+      <workItem from="1571927795857" duration="175000" />
+      <workItem from="1571928403609" duration="181000" />
+      <workItem from="1575564155578" duration="19293000" />
+      <workItem from="1575585706737" duration="5960000" />
+      <workItem from="1575792718744" duration="121000" />
+      <workItem from="1576181607043" duration="11977000" />
+      <workItem from="1576203744428" duration="1854000" />
+      <workItem from="1576211859773" duration="68000" />
+      <workItem from="1576596817015" duration="6344000" />
+      <workItem from="1576603333635" duration="602000" />
+      <workItem from="1576805326760" duration="917000" />
+      <workItem from="1577125958613" duration="644000" />
+      <workItem from="1577170300008" duration="676000" />
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/../lab3/point.cpp</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

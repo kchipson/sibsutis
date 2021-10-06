@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N </TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<h3><a name="start">XPath</a></h3>
+
+<P>
+<UL>
+<LI><a href="#wtf">Что такое XPath?</a>
+<LI><a href="#1">Пути адресации XPath</A>
+    <OL>
+     <LI><a href="#11">Выражения для Путей Адресации</A>
+     <LI><a href="#12">Оси</A>
+     <LI><a href="#13">Сокращения для Путей Адресации</A>
+    </OL>
+<LI><a href="#2">Выражения XPath</A>
+    <OL>
+     <LI><a href="#21">Числовые Выражения</A>
+     <LI><a href="#22">Операции Равенства</A>
+     <LI><a href="#23">Операции Сравнения</A>
+     <LI><a href="#24">Булевы Операции</A>
+    </OL>
+<LI><a href="#3">Функции XPath</A>
+    <OL>
+     <LI><a href="#31">Числовые Функции</A>
+     <LI><a href="#32">Строковые Функции</A>
+     <LI><a href="#33">Булевы Функции</A>
+    </OL>
+
+</UL>
+<P>
+<h3><a name="wtf">Что такое XPath?</a></h3>
+<h4>XPath - это набор синтаксических правил для адресации частей XML-документа.</h4>
+<ol>
+<li>XPath - это синтаксис для адресации частей XML-документа
+<li>XPath использует пути для адресации элементов XML
+<li>XPath является важнейшей частью стандарта XSLT
+<li>XPath не является XML-форматом
+</ol>
+<p>&nbsp;</p>
+
+<h3><a name="1">Пути адресации XPath</a></h3>
+<h4 name="11">Выражения для Путей Адресации</h4>
+<table border=1 width="100%">
+<tr><th>Имя</th> <th>Описание</th> <th>Пример</th> <th>Результат</th></tr>
+<tr><td>/</td><td>Дочерний элемент узла</td> <td>/price</td> <td>элемент price</td></tr>
+<tr><td>//</td><td>Узел и его дочерние элементы</td> <td>//cd</td> <td>элемент cd и его подэлементы</td></tr>
+<tr><td>|</td> <td>список дочерних элементов</td> <td>price | title</td> <td>элемент price и title</td></tr>
+</table>
+
+<h4><a name="12">Оси</a></h4>
+Оси служат для определения набора узлов относительно данного узла.<p>
+<table border=1 width="100%">
+ <tr><th>Имя</th><th>Описание </th></tr>
+ <tr><td>self</td><td> сам узел</td></tr>
+ <tr><td>child</td><td> Дочерние узлы</td></tr>
+ <tr><td>parent</td><td> Родительский узел</td></tr>
+ <tr><td>descendant</td><td> Потомки узла</td></tr>
+ <tr><td>descendant-or-self</td><td> Узел и его потомки</td></tr>
+ <tr><td>ancestor</td><td> Предки узла</td></tr>
+ <tr><td>ancestor-or-self</td><td> Сам узел и его предки</td></tr>
+ <tr><td>following</td><td> Все узлы после данного</td></tr>
+ <tr><td>following-sibling</td><td> Все узлы этого же уровня после данного</td></tr>
+ <tr><td>preceding</td><td> Все узлы перед данным</td></tr>
+ <tr><td>preceding-sibling</td><td> Все узлы этого же уровня перед данным</td></tr>
+ <tr><td>attribute</td><td> Узлы аттрибутов</td></tr>
+ <tr><td>namespace</td><td> Узлы пространства имен</td></tr>
+</table>
+
+<h4><a name="13">Сокращения для Путей Адресации</a></h4>
+При описании путей адресации могут использоваться сокращения.
+<table border=1 width="100%">
+<tr><th>Сокращение</th><th>Значение</th></tr>
+<tr><td></td>&nbsp;<td>child::</td></tr>
+<tr><td>@</td><td> attribute::</td></tr>
+<tr><td>.</td><td> self::</td></tr>
+<tr><td>..</td><td> parent::</td></tr>
+<tr><td>//</td><td> /descendant-or-self/</td></tr>
+<tr><td>число</td><td> [position()='значение']</td></tr>
+</table>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+
+<h3><a name="2">Выражения XPath</a></h3>
+<h4><a name="21">Числовые Выражения</a></h4>
+Числовые выражения используются для выполнения арифметических операций над числами.<p>
+
+<table border=1 width="100%">
+<tr><th>Оператор</th><th>Описание</th><th> Пример</th><th> Результат</th></tr>
+<tr><td>+</td><td> Сложение</td><td> 6 + 4</td><td> 10</td></tr>
+<tr><td>- </td><td>Вычитание</td><td> 6 - 4</td><td> 2</td></tr>
+<tr><td>*</td><td> Умножение</td><td> 6 * 4</td><td> 24</td></tr>
+<tr><td>div</td><td> Деление</td><td> 8 div 4</td><td> 2</td></tr>
+<tr><td>mod</td><td> Остаток от деления</td><td> 5 mod 2</td><td> 1</td></tr>
+</table>
+
+<h4><a name="22">Операции равенства</a></h4>
+Операции равенства используются для проверки равенства двух значений.<p>
+
+<table border=1 width="100%">
+<tr><th>Оператор </th><th>Описание</th><th> Пример</th><th> Результат</th></tr>
+<tr><td>= </td><td>Равно</td><td> price=9.80</td><td> 'истина' (если значение price равно 9.80)</td></tr>
+<tr><td>!= </td><td>Не равно</td><td> price!=9.80</td><td> 'ложь'</td></tr>
+</table>
+
+<h4><a name="23">Операции Сравнения</a></h4>
+
+<table border=1 width="100%">
+<tr><th>Оператор</th><th> Описание</th><th> Пример</th><th> Результат</th></tr>
+<tr><td>&lt;</td><td> Меньше</td><td> price&lt;9.80</td><td> 'ложь' (если price равно 9.80)</td></tr>
+<tr><td>&lt;=</td><td> Меньше или равно</td><td> price&lt;=9.80</td><td> 'истина'</td></tr>
+<tr><td>&gt;</td><td> Больше </td><td>price&gt;9.80</td><td> 'ложь'</td></tr>
+<tr><td>&gt;=</td><td> Меньше или равно</td><td> price&gt;=9.80</td><td> 'истина' </td></tr>
+</table>
+
+<h4><a name="24">Булевы Выражения</a></h4>
+
+<table border=1 width="100%">
+<tr><th>Оператор</th><th> Описание</th><th> Пример</th><th> Результат</th></tr>
+<tr><td>or</td><td> или </td><td>price=9.80 or price=9.70</td><td> 'истина' (если price равно 9.80)</td></tr>
+<tr><td>and </td><td>и </td><td>price&lt;=9.80 and price=9.70</td><td> 'ложь' </td></tr>
+</table>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+
+<h3><a name="3">Функции XPath</a></h3>
+Библиотека функций XPath включает набор базовых функций для преобразования данных.<p>
+<h4><a name="31">Числовые Функции</a></h4>
+<table border=1 width="100%">
+  <tr><th>Имя</th><th> Описание</th><th> Пример</th><th> Результат</th></tr>
+  <tr><td>round</td><td> Округляет до ближайшего целого.</td><td> round(3.14)</td><td> 3</td></tr>
+  <tr><td>ceiling</td><td> Округляет до ближайшего целого, которое больше данного.</td><td> ceiling(3.14)</td><td> 4</td></tr>
+  <tr><td>floor</td><td> Округляет до ближайшего целого, которое меньше данного.</td><td> floor(3.14)</td><td> 3</td></tr>
+  <tr><td>count</td><td> Возвращает количество узлов.</td><td> count(nodeset)</td><td> количество узлов в множестве узлов</td></tr>
+  <tr><td>number</td><td> Преобразует аргумент в число.</td><td> number(price)</td><td> Численное значение элемента price</td></tr>
+  <tr><td>sum</td><td> Возвращает сумму списка чисел.</td><td> sum(/cd/price)</td><td> Суммарная цена всех CD</td></tr>
+</table>
+
+
+<h4><a name="32">Строковые Функции</a></h4>
+<table border=1 width="100%">
+  <tr><th>Имя</th><th> Описание</th><th> Пример</th><th> Результат</th></tr>
+  <tr><td>string</td><td> Преобразует аргумент в строку.</td><td> string(3.14)</td><td> '3,14'</td></tr>
+  <tr><td>string-length </td><td>Возвращает длину строки.</td><td> string-lenght('Beatles')</td><td> 7</td></tr>
+  <tr><td>substring </td><td>Возвращает подстроку.</td><td> substring('Beatles',1,4)</td><td> 'Beat'</td></tr>
+  <tr><td>substring-after </td><td>Возвращает остаток строки после второго аргумента.</td><td> substring-after('12:30',':')</td><td> '30'</td></tr>
+  <tr><td>substring-before </td><td>Возвращает часть строки перед вторым аргументом.</td><td> substring-before('12:30',':')</td><td> '12'</td></tr>
+  <tr><td>contains </td><td>Возвращает 'истину', если первая строка содержит вторую.</td><td> contains('XML','X')</td><td>'истина'</td></tr>
+  <tr><td>starts-with </td><td>Возвращает 'истину', если первая строка начинается второй. </td><td>starts-with('XML','X')</td><td> 'истина'</td></tr>
+  <tr><td>concat </td><td>Возвращает конкатенацию двух строк.</td><td> concat('The',' ','Beatles')</td><td> 'The Beatles' </td></tr>
+  <tr><td>normalize-space </td><td>Удаляет лишние пробелы в строке.</td><td> normalize-space('  The    Beatles')</td><td> 'The Beatles' </td></tr>
+  <tr><td>translate </td><td>Заменяет символы в строке.</td><td> translate('12:30',':','.')</td><td> '12.30' </td></tr>
+</table>
+<h4><a name="33">Булевы Функции</a></h4>
+<table border=1 width="100%">
+  <tr><th>Имя</th><th> Описание</th><th> Пример</th><th> Результат</th></tr>
+  <tr><td>boolean</td><td> Преобразует аргумент к булевому типу.</td><td> boolean(3.14)</td><td> 'истина', если price не равен нулю</td></tr>
+  <tr><td>false</td><td> Вовращает 'ложь'. </td><td>number(false())</td><td> 0</td></tr>
+  <tr><td>true</td><td>  Возвращает 'истину'.</td><td> number(true())</td><td> 1</td></tr>
+  <tr><td>not </td><td> Возвращает отрицание.</td><td> not(false())</td><td> 'истина'</td></tr>
+</table>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+</BODY>
+</HTML>

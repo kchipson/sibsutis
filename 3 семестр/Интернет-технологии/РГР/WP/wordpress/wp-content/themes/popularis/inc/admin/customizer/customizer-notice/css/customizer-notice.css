@@ -1,0 +1,119 @@
+div.recomended-actions_container {
+	margin-bottom: 2em;
+	padding: 0 10px;
+}
+
+.recomended-actions_container p.succes {
+	margin: 1em 0;
+}
+
+.popularis-recommeded-actions p.title {
+	margin-bottom: 0;
+	color: #555d66;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.popularis-recommeded-actions div.description {
+	font-size: 12px;
+}
+
+.popularis-recommeded-actions .custom-action {
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px solid #fafafa;
+}
+
+.popularis-recommeded-actions .custom-action p {
+	margin-top: 0;
+}
+
+.recomended-actions_container .popularis-recommeded-actions-container:not(:first-child) {
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+}
+
+.recomended-actions_container .popularis-recommeded-actions-container:first-child {
+	height: auto;
+	opacity: 1;
+}
+
+.recomended-actions_container .popularis-recommeded-actions-container {
+	-webkit-transition: opacity 2s;
+	/* Safari */
+	transition: opacity 2s;
+}
+
+.recomended-actions_container .hide {
+	display: none;
+}
+
+.recomended-actions_container #demo_content .button {
+	display: block;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.recomended-actions_container .succes a {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.recomended-actions_container .succes a.social {
+	width: 49%;
+	margin-bottom: 1em;
+	padding-top: 4px;
+	line-height: 20px;
+}
+
+.recomended-actions_container .succes a.social span,
+.recomended-actions_container .succes a.ti-customizer-notify-wordpress span {
+	margin-right: 5px;
+}
+
+.recomended-actions_container .succes a.ti-customizer-notify-wordpress {
+	padding-top: 4px;
+	line-height: 20px;
+}
+
+.dismiss-button-recommended-plugin {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 50%;
+	color: #d54e21;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.popularis-recommeded-actions {
+	position: relative;
+}
+
+.popularis-recommeded-actions .dismiss-button-recommended-plugin {
+	top: 0;
+	right: 0;
+}
+
+.popularis-recommeded-actions #temp_load {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+}
+
+.popularis-recommeded-actions #temp_load img {
+	margin: 0 auto;
+}

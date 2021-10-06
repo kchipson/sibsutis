@@ -1,0 +1,348 @@
+.obfx-template-browser {
+	display: grid;
+	padding: 35px 0 0;
+	grid-gap: 2em;
+}
+
+.obfx-template-browser .template-name {
+	float: left;
+	margin: 0;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.obfx-template {
+	position: relative;
+	box-sizing: border-box;
+
+	border: 1px solid #ddd;
+	background: #fff;
+	box-shadow: 0 1px 1px -1px rgba(0,0,0,0.1);
+	cursor: pointer;
+}
+.obfx-preview-wrap {
+    margin: 15px 0;
+    position: relative;
+}
+
+.obfx-preview-wrap .badge,
+.obfx-template .badge {
+	position: absolute;
+	color: #fff;
+	z-index: 10;
+	background-color: #00a6e3;
+	padding: 7px 12px;
+	text-transform: uppercase;
+	border-radius: 0 0 3px 0;
+	top: 1px;
+	left: 0;
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.25);
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.obfx-template:nth-child(3n) {
+	margin-right: 0;
+}
+
+.obfx-template:hover .obfx-template-actions,
+.obfx-template:hover .obfx-preview-template {
+	opacity: 1;
+}
+
+.obfx-template:hover .obfx-template-screenshot {
+	opacity: 0.4;
+}
+
+.obfx-template-actions {
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 10px 15px;
+	border-left: 1px solid rgba(0,0,0,0.05);
+	opacity: 0;
+	background: rgba(244,244,244,0.7);
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+
+.obfx-template-actions .button .dashicons {
+	line-height: 27px;
+}
+
+.obfx-template-actions .button {
+	margin-left: 5px;
+}
+
+.obfx-template-screenshot {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-right: none;
+	border-left: none;
+	background: #fff;
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+
+.obfx-template img {
+	float: left;
+	width: 100%;
+}
+
+.obfx-template-browser.customizer {
+	display: block !important;
+	padding: 10px 20px 60px;
+}
+
+.obfx-next-prev {
+	position: absolute;
+	left: 45px;
+}
+
+.obfx-next-prev span:hover {
+	border-color: #ccc;
+	outline: 0;
+	color: #000;
+	background: #ddd;
+	box-shadow: none;
+}
+
+.obfx-next-prev .previous-template,
+.obfx-next-prev  .next-template {
+	display: block;
+	float: left;
+	position: relative;
+	width: 45px;
+	height: 45px;
+	padding-right: 2px;
+	border: none;
+	border-right: 1px solid #ddd;
+	color: #444;
+	background: #eee;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: color 0.1s ease-in-out,background 0.1s ease-in-out;
+	transition: color 0.1s ease-in-out,background 0.1s ease-in-out;
+}
+
+.obfx-next-prev .previous-template {
+	border-left: 1px solid #ddd;
+}
+
+.obfx-next-prev .next-template:before {
+	position: relative;
+	top: 6px;
+	left: 14px;
+	font: 400 20px/1 dashicons;
+	content: "\f345";
+}
+
+.obfx-next-prev .previous-template:before {
+	position: relative;
+	top: 6px;
+	left: 14px;
+	font: 400 20px/1 dashicons;
+	content: "\f341";
+}
+
+.obfx-custom-customizer {
+	background: #fff;
+}
+
+.obfx-template-browser.customizer .obfx-template.active {
+	display: inline-block;
+}
+
+.customize-controls-preview-toggle {
+	float: left;
+	position: relative;
+	left: 120px;
+}
+
+.obfx-template-browser.customizer .template-name {
+	padding-left: 0;
+}
+
+.obfx-template-browser.customizer .obfx-template-screenshot {
+	border: 1px solid #ddd;
+}
+
+.obfx-hide {
+	display: none !important;
+}
+
+.obfx-import-elementor-hidden-form {
+	display: inline-block;
+}
+
+.obfx-done-import {
+	display: block;
+	margin: 0;
+	padding-top: 10px;
+	color: green;
+	text-align: center;
+}
+
+.obfx-done-import .dashicons {
+	font-size: 30px;
+}
+
+.obfx-updating.updating-message.button.button-primary {
+	padding: 0 4px 0 10px;
+}
+
+.obfx-no-elementor-modal-wrapper {
+	display: none;
+	position: fixed;
+	z-index: 900000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.obfx-no-elementor-modal {
+	position: relative;
+	top: 50%;
+	width: auto;
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	text-align: right;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.obfx-no-elementor-modal p {
+	margin: 30px 0 20px;
+	text-align: left;
+}
+
+.obfx-no-elementor-modal .modal-header {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #d4d4d4;
+	background: #e6e6e6;
+}
+
+.obfx-close-modal {
+	float: right;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #7b7b7b;
+	cursor: pointer;
+}
+
+.obfx-template-preview.theme-install-overlay .install-theme-info.obfx-theme-info .theme-screenshot {
+	width: 100%;
+	margin: 0;
+}
+
+.obfx-template-preview.theme-install-overlay .install-theme-info.obfx-theme-info {
+	display: none;
+}
+
+.obfx-template-preview.theme-install-overlay .install-theme-info.obfx-theme-info.active {
+	display: block;
+}
+
+.more-details.obfx-preview-template {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 51px;
+	left: 0;
+	opacity: 0;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+
+.more-details.obfx-preview-template span {
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 45%;
+	padding: 15px 12px;
+	border-radius: 3px;
+	color: #fff;
+	background: #23282d;
+	background: rgba(0,0,0,0.7);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.6);
+	font-size: 15px;
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.obfx-required-plugins > p {
+	margin-top: 20px;
+	color: #333;
+	font-weight: 800;
+}
+
+.obfx-required-plugins .button {
+	display: none;
+}
+
+#obfx-template-dir-fetch-templates {
+	display: block;
+	margin: 0 auto;
+}
+#obfx-template-dir-fetch-templates .dashicons {
+	margin: 3px 5px 0 -2px;
+}
+
+@media only screen and (max-width: 2000px) {
+	.obfx-template-browser {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 1450px) {
+	.obfx-template-browser {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.obfx-template-browser {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.obfx-template-preview .wp-full-overlay-sidebar {
+		width: 100%;
+	}
+	.obfx-template-browser {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (min-width: 2000px) {
+	.obfx-template-browser {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}

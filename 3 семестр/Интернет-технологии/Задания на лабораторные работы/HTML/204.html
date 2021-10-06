@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Таблицы стилей CSS.Примеры. </TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+
+<h2><A NAME="list">Свойства шрифта </A></h2>
+<UL>
+        <LI><A href="#1">font-family</a>
+        <LI><A href="#2">font-size</a>
+        <LI><A href="#3">font-style</a>
+        <LI><A href="#4">font-variant</a>
+        <LI><A href="#5">font-weight</a>
+        <LI><A href="#6">font-face</a>
+</UL>
+
+
+<UL>
+       <LI id=1><B>font-family</B><BR>Атрибут определяет тип шрифта по следующим элементам: 
+       <UL>
+            <LI><I>Название шрифта</I>.
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-family:<strong> Times</strong>} </span>
+            <LI><I>Дополнительные шрифты</I>.  На случай, если какой-нибудь из шрифтов не установлен.
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-family:<strong> times,garamond,arial,hevletica</strong>} </span>
+            <LI><I>Название семейства шрифтов</I>. 
+<br><B>Serif</B>-с засечками, <B>Sans Serif</B>- без засечек, <B>Cursive</B>- курсивные, 
+<B>Fantasy</B>- декоративные, <B>Monospace</B>- моноширинные. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-family:<strong> Serif</strong>} </span>
+       </UL>              
+       <LI id=2><B>font-size</B><BR>Атрибут определяет размер шрифта при помощи одной из  размерностей: 
+       <UL>
+            <LI><I>Пункты</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-size:<strong> 12</strong>pt} </span>
+            <LI><I>Дюймы</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-size:<strong> 12</strong>in} </span>
+            <LI><I>Сантиметры</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-size: <strong>12</strong>cm} </span>
+            <LI><I>Пиксели</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-size: <strong>12</strong>px} </span>
+            <LI><I>Проценты</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-size:<strong> 50</strong>%} </span>
+            <LI><I>Абсолют</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-size:<strong> small</strong>} </span><br>
+Может принимать значения:  
+<UL>
+            <LI><I>xx-small</I>
+            <LI><I>x-small</I>
+            <LI><I>small</I>
+            <LI><I>medium</I>
+            <LI><I>large</I>
+            <LI><I>x-large</I>
+            <LI><I>xx-large</I>
+</UL>
+       </UL>
+       <p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+           <LI id=3><B>font-style</B><BR>  Атрибут определяет стиль начертания шрифта. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-style:<strong> italic</strong>} </span><br>
+Может принимать значения:  
+<UL>
+            <LI><I>italic</I>
+            <LI><I>normal</I>
+            <LI><I>oblique</I>
+</UL>
+       <LI id=4><B>font-variant</B><BR>  Атрибут определяет размер начертания шрифта. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-variant:<strong> normal</strong>} </span><br>
+Может принимать значения:  
+<UL>
+            <LI><I>small-caps</I>
+            <LI><I>normal</I>
+
+</UL>
+       <LI id=5><B>font-weight</B><BR>  Атрибут определяет насыщенность начертания шрифта. 
+ <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight: <strong>насыщенность</strong>} </span><br>
+Может принимать значения:  
+       <UL>
+            <LI><I>normal</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight:normal} </span>
+            <LI><I>bold</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight:bold} </span>
+            <LI><I>число</I>.  Задается в пределах от 100 до 900.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight:700} </span> 
+            <LI><I>Очень светлый</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight:extra-light} </span>
+            <LI><I>Средне-светлый</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight:demi-light} </span>
+            <LI><I>Светлый</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight: light} </span>
+            <LI><I>Средний</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight: medium} </span>
+            <LI><I>Очень жирный</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight: extra-bold} </span>
+            <LI><I>Средн-жирный</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight: demi-bold} </span>
+            <LI><I>Жирный</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {font-weight: bold} </span>
+       </UL>
+       <LI id=6><B>font-face</B><BR>Атрибут определяет загружаемый шрифт c расширением <b>.eot</b>, используется для того, 
+чтобы обеспечить правильное оформление документа, поскольку, если в системе пользователя нет нужного
+шрифта, броузер использует шрифт по-умолчанию, а это не всегда приемлемо.<br>
+
+<span class=cod>@font-face { font-family: <strong> имя</strong>; src: URL(http://<strong>domen.ru/путь/file</strong>.eot)}   </span>
+</UL>
+ <p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+</BODY>
+</HTML>

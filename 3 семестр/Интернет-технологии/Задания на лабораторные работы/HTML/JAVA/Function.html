@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Function</TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+<a href="javabook.html"><img src="icons/home.gif" border=0 alt="Домой" width=64 height=64></a>
+<H2><A NAME="start">Function</A></H2>
+<UL>
+    <LI>Методы
+    <UL>
+        <LI>toString
+        <LI>valueOf
+    </UL>
+    <LI>Свойства
+    <UL>
+        <LI>arguments
+        <LI>caller
+        <LI>prototype
+    </UL>
+</UL>
+<P>Создание объекта:<BR>
+<B>function</B>(аргументы){тело_функции}<BR>
+new <B>Function</B>( аргументы, тело_функции );
+<P>Объект <b>function</b> используется для создания новой функции.
+<P>Тело <b>function</b> может содержать оператор <B>return</B>.
+   <B>return</B>позволяет выйти из любой точки внутри функции и вернуть
+   результирующее выражение.
+<P>Следующие примеры демонстрирует использование <B>functionn</B> и <B>return</B>:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+function add(x, y){
+   return(x + y);
+}
+var add2 = new Function("x", "y", "return(x+y)");
+add(2, 3);
+add2(2, 3);
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+</blockquote>
+</BODY>
+</HTML>

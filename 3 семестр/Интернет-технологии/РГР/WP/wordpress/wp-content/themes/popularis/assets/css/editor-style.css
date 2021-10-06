@@ -1,0 +1,150 @@
+/*
+Theme Name: Twenty Sixteen
+Description: Used to style the TinyMCE editor.
+*/
+/* WordPress Core */
+.gallery-caption {
+    font-weight: bold;
+}
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+img.alignnone {
+    max-width: 96%;
+    height: auto;
+    width: auto;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0;
+    padding: 10px 0 0 0;
+    color: #000;
+}
+/* Recommended CSS from WP for defined content width support */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+iframe,
+embed {
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.sticky,
+.bypostauthor {}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+th { 
+    font-weight: bold; 
+}
+td, th { 
+    padding: 6px; 
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+body, html {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Roboto Condensed', "Helvetica Neue", helvetica, arial, sans-serif;
+    padding: 0;
+    color: #404040;
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 16px;
+    max-width: 750px;
+    word-wrap: break-word;
+    margin: 20px 15px;
+}
+a, a:active, a:hover, a:focus {
+    text-decoration: none;
+    color: #00aff2;
+}
+h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -.02em;
+}
+a:active {
+    border-bottom: none;
+}
+
+body.post-type-page {
+	max-width: 840px;
+}

@@ -1,0 +1,151 @@
+.menu-item-handle .item-title {
+	margin-right: 10em;
+}
+
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+
+.fade.in {
+	opacity: 1;
+}
+
+.obfx-menu-icon-container ~ .popover {
+	z-index: 999999;
+}
+
+.obfx-menu-icon-container {
+	margin-right: 10px;
+	padding: 2px 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #555;
+	background: #f7f7f7;
+	box-shadow: 0 1px 0 #ccc;
+	vertical-align: top;
+}
+
+.obfx-menu-icon-container:hover {
+	border-color: #999;
+	color: #23282d;
+	background: #fafafa;
+}
+
+.obfx-menu-icon-container:active {
+	border-color: #999;
+	background: #eee;
+	box-shadow: inset 0 2px 5px -3px rgba(0,0,0,0.5);
+	-webkit-transform: translateY(1px);
+	-ms-transform: translateY(1px);
+	transform: translateY(1px);
+}
+
+.dashicons-obfx-default-icon:before {
+	color: #909090;
+	content: "\f132";
+}
+
+.obfx-menu-icon-container {
+	color: #333;
+}
+
+.iconpicker-items .dashicons-obfx-default-icon {
+	top: 1px;
+	right: 1px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.iconpicker-items .dashicons-obfx-default-icon:before {
+	color: red;
+}
+
+.iconpicker-item.obfx-menu-icon-selected .dashicons-obfx-default-icon:before {
+	color: #5eadd9;
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover.popover {
+	width: 252px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover .iconpicker-item {
+	width: auto;
+	height: auto;
+	padding: 7px 7px;
+	border: 1px solid #f5f5f5;
+	border-top: none;
+	border-left: none;
+	color: #9da3a9;
+	text-decoration: none;
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover .iconpicker-item.obfx-menu-icon-selected {
+	color: #fff;
+	background-color: #5eadd9;
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover .iconpicker-search {
+	width: 100%;
+	padding-left: 25px;
+	font-weight: 100;
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover .popover-title {
+	padding: 7px;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #fff;
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover.popover.bottomLeft > .arrow {
+	display: none;
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover .popover-title:before {
+	position: absolute;
+	padding: 6px 0 0 7px;
+	color: #9da3a8;
+	font-family: FontAwesome;
+	font-size: 16px;
+	content: "\f002";
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover .iconpicker-item i {
+	width: 32px;
+	height: 32px;
+	font-size: 20px;
+	line-height: 32px;
+	-webkit-transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover .iconpicker-item:not(.obfx-menu-icon-selected):hover {
+	color: #5eadd9;
+	background: transparent;
+}
+
+.obfx-menu-icon-container ~ .iconpicker-popover .iconpicker-item:hover > i:not(.dashicons-obfx-default-icon) {
+	-webkit-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.obfx-menu-icon-footer b {
+	font-style: normal;
+}
+
+.obfx-menu-icon-footer {
+	padding: 5px 20px 5px 0;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+	text-align: right;
+}
+
+.obfx-menu-icon-footer .iconpicker-btn.iconpicker-btn-cancel,
+.obfx-menu-icon-footer .iconpicker-btn.iconpicker-btn-accept {
+	display: none;
+}

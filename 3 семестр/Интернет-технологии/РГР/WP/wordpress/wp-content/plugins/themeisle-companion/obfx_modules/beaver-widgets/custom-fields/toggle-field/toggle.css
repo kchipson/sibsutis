@@ -1,0 +1,98 @@
+.fl-lightbox .btn-switch {
+	display: inline-block;
+	position: relative;
+	font-size: 0.5em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.fl-lightbox .btn-switch__radio {
+	display: none;
+}
+
+.fl-lightbox .btn-switch__label {
+	display: inline-block;
+	margin: 0;
+	color: #666;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 30px;
+	vertical-align: top;
+	cursor: pointer;
+	-webkit-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+
+.fl-lightbox .btn-switch__txt {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	min-width: 1.5em;
+	opacity: 1;
+	color: inherit;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+	pointer-events: none;
+}
+
+.fl-lightbox .btn-switch__radio_no:checked ~ .btn-switch__label_yes .btn-switch__txt,
+.fl-lightbox .btn-switch__radio_yes:checked ~ .btn-switch__label_no .btn-switch__txt {
+	opacity: 0;
+}
+
+.fl-lightbox .btn-switch__label:before {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 1.5em;
+	background: #f0f0f0;
+	box-shadow: inset 0 0.0715em 0.3572em rgba(43,43,43,0.05);
+	content: "";
+	-webkit-transition: background 0.2s ease-in-out;
+	transition: background 0.2s ease-in-out;
+}
+
+.fl-lightbox .btn-switch__radio_yes:checked ~ .btn-switch__label:before {
+	background: #6ad500;
+}
+
+.fl-lightbox .btn-switch__label_no:after {
+	position: absolute;
+	z-index: 2;
+	top: 0.5em;
+	bottom: 0.5em;
+	left: 0.5em;
+	width: 2em;
+	border-radius: 1em;
+	background: #fff;
+	box-shadow: 0 0.1429em 0.2143em rgba(43,43,43,0.2), 0 0.3572em 0.3572em rgba(43,43,43,0.1);
+	content: "";
+	-webkit-transition: left 0.2s ease-in-out, background 0.2s ease-in-out;
+	transition: left 0.2s ease-in-out, background 0.2s ease-in-out;
+	pointer-events: none;
+}
+
+.fl-lightbox .btn-switch__radio_yes:checked ~ .btn-switch__label_no:after {
+	left: -webkit-calc(100% - 2.5em);
+	left: calc(100% - 2.5em);
+	background: #fff;
+}
+
+.fl-lightbox .btn-switch__radio_no:checked ~ .btn-switch__label_yes:before,
+.fl-lightbox .btn-switch__radio_yes:checked ~ .btn-switch__label_no:before {
+	z-index: 1;
+}
+
+.fl-lightbox .btn-switch__radio_yes:checked ~ .btn-switch__label_yes {
+	padding: 0 10px;
+	color: #fff;
+}
+
+.fl-lightbox .btn-switch__radio_no:checked ~ .btn-switch__label_no {
+	padding: 0 10px;
+}

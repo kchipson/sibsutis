@@ -1,0 +1,6420 @@
+# Translators:
+# Birgit Olzem <coachbirgit@gmail.com>, 2018
+# ThemeBoy <transifex@themeboy.com>, 2018
+# Sven de Vries <signor.aglie@gmail.com>, 2018
+# Sören Wrede <soerenwrede@gmail.com>, 2019
+# FX Bénard <fxb@wp-translations.org>, 2019
+# Christian Herrmann, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: WPForms Lite 1.5.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpforms-lite\n"
+"POT-Creation-Date: 2019-01-23T21:47:41+00:00\n"
+"PO-Revision-Date: 2018-12-07 13:54+0000\n"
+"Last-Translator: Christian Herrmann, 2019\n"
+"Language-Team: German (Germany) (https://www.transifex.com/wp-translations/teams/64435/de_DE/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: wpforms-lite\n"
+"X-Generator: WP-CLI 2.1.0\n"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: includes/admin/class-menu.php:39 includes/admin/class-menu.php:40
+#: includes/admin/class-menu.php:51 includes/admin/class-menu.php:103
+#: includes/integrations.php:45 includes/class-form.php:73
+#: src/Lite/Admin/DashboardWidget.php:158
+#: src/Integrations/Gutenberg/FormSelector.php:88
+msgid "WPForms"
+msgstr "WPForms"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://wpforms.com"
+msgstr "https://wpforms.com"
+
+#. Description of the plugin
+msgid ""
+"Beginner friendly WordPress contact form plugin. Use our Drag & Drop form "
+"builder to create your WordPress forms."
+msgstr ""
+"Einsteigerfreundliches WordPress-Kontaktformular-Plugin. Benutze unseren "
+"Drag-and-drop-Formular-Builder, um deine WordPress-Formulare zu erstellen."
+
+#. translators: %s - form name.
+#: lite/wpforms-lite.php:55 includes/class-process.php:461
+msgid "New %s Entry"
+msgstr "Neuer %s-Eintrag"
+
+#: lite/wpforms-lite.php:64 lite/wpforms-lite.php:77
+#: includes/admin/builder/panels/class-settings.php:43
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: lite/wpforms-lite.php:65
+msgid "Multiple notifications"
+msgstr "Mehrere Benachrichtigungen"
+
+#: lite/wpforms-lite.php:66
+msgid "Add New Notification"
+msgstr "Neue Benachrichtigung hinzufügen"
+
+#: lite/wpforms-lite.php:81 includes/admin/builder/class-builder.php:382
+#: includes/fields/class-base.php:629
+msgid "On"
+msgstr "An"
+
+#: lite/wpforms-lite.php:82 includes/admin/builder/class-builder.php:381
+#: includes/fields/class-base.php:629 includes/fields/class-base.php:1180
+msgid "Off"
+msgstr "Aus"
+
+#: lite/wpforms-lite.php:91
+#: includes/admin/importers/class-pirate-forms.php:445
+#: includes/admin/builder/class-builder.php:347
+msgid "Default Notification"
+msgstr "Standard-Benachrichtigung"
+
+#: lite/wpforms-lite.php:102
+msgid "Send To Email Address"
+msgstr "Sende an E-Mail-Adresse"
+
+#: lite/wpforms-lite.php:105
+msgid ""
+"Enter the email address to receive form entry notifications. For multiple "
+"notifications, separate email addresses with a comma."
+msgstr ""
+"Gib die E-Mail-Adresse für den Erhalt von Formular-Eintrags-"
+"Benachrichtigungen ein. Trenne mehrere E-Mail-Adressen für "
+"Benachrichtigungen mit einem Komma."
+
+#: lite/wpforms-lite.php:121
+msgid "CC"
+msgstr "CC"
+
+#: lite/wpforms-lite.php:137
+msgid "Email Subject"
+msgstr "E-Mail-Betreff"
+
+#. translators: %s - form name.
+#: lite/wpforms-lite.php:140
+#: includes/admin/importers/class-contact-form-7.php:124
+#: includes/admin/importers/class-contact-form-7.php:414
+#: includes/admin/importers/class-ninja-forms.php:132
+#: includes/admin/importers/class-ninja-forms.php:409
+#: includes/admin/importers/class-pirate-forms.php:448
+msgid "New Entry: %s"
+msgstr "Neuer Eintrag: %s"
+
+#: lite/wpforms-lite.php:153
+msgid "From Name"
+msgstr "Von-Name"
+
+#: lite/wpforms-lite.php:171
+msgid "From Email"
+msgstr "Absender E-Mail (from)"
+
+#: lite/wpforms-lite.php:189
+msgid "Reply-To"
+msgstr "Antwort-an"
+
+#: lite/wpforms-lite.php:204 lite/wpforms-lite.php:277
+#: includes/templates/class-suggestion.php:76
+msgid "Message"
+msgstr "Nachricht"
+
+#. translators: %s - {all_fields} Smart Tag.
+#: lite/wpforms-lite.php:217
+msgid "To display all form fields, use the %s Smart Tag."
+msgstr "Um alle Formularfelder anzuzeigen, benutze den %s Smart Tag."
+
+#: lite/wpforms-lite.php:244 lite/wpforms-lite.php:294
+#: includes/admin/importers/class-contact-form-7.php:134
+#: includes/admin/importers/class-ninja-forms.php:142
+#: includes/admin/importers/class-pirate-forms.php:459
+#: includes/class-process.php:339
+msgid "Thanks for contacting us! We will be in touch with you shortly."
+msgstr "Danke, dass du uns kontaktiert hast! Wir melden uns zeitnah bei dir."
+
+#: lite/wpforms-lite.php:252
+msgid "Confirmations"
+msgstr "Bestätigungen"
+
+#: lite/wpforms-lite.php:253
+msgid "Multiple confirmations"
+msgstr "Mehrere Bestätigungen"
+
+#: lite/wpforms-lite.php:254
+msgid "Add New Confirmation"
+msgstr "Neue Bestätigung hinzufügen"
+
+#: lite/wpforms-lite.php:262 includes/admin/builder/class-builder.php:353
+msgid "Default Confirmation"
+msgstr "Standard Bestätigung"
+
+#: lite/wpforms-lite.php:273
+msgid "Confirmation Type"
+msgstr "Art der Bestätigung"
+
+#: lite/wpforms-lite.php:278
+msgid "Show Page"
+msgstr "Seite anzeigen"
+
+#: lite/wpforms-lite.php:279
+msgid "Go to URL (Redirect)"
+msgstr "Gehe zu URL (Umleitung)"
+
+#: lite/wpforms-lite.php:292
+msgid "Confirmation Message"
+msgstr "Bestätigungs-Nachricht"
+
+#: lite/wpforms-lite.php:309
+msgid "Automatically scroll to the confirmation message"
+msgstr "Bestätigungs-Nachricht automatisch scrollen"
+
+#: lite/wpforms-lite.php:327
+msgid "Confirmation Page"
+msgstr "Bestätigungs-Seite"
+
+#: lite/wpforms-lite.php:340
+msgid "Confirmation Redirect URL"
+msgstr "Bestätigungs-Umleitungs-URL"
+
+#. translators: %s - WPForms.com docs page URL.
+#: lite/wpforms-lite.php:373
+msgid ""
+"You've just turned off notification emails for this form. Since entries are "
+"not stored in WPForms Lite, notification emails are recommended for "
+"collecting entry details. For setup steps, <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">please see our notification tutorial</a>."
+msgstr ""
+"Du hast gerade die Benachrichtigungs-E-Mails für dieses Formular "
+"ausgeschaltet. Da WPForms Lite Einträge nicht speichert, werden "
+"Benachrichtigungs-E-Mails für das Sammeln von Eintragsdetails empfohlen. Für"
+" die schrittweise Einrichtung <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">lies bitte unser Benachrichtigungs-Tutorial</a>."
+
+#: lite/wpforms-lite.php:409
+msgid "Dismiss this message"
+msgstr "Diese Nachricht verwerfen"
+
+#: lite/wpforms-lite.php:410 includes/admin/class-about.php:417
+msgid "Get WPForms Pro and Unlock all the Powerful Features"
+msgstr "Hol dir WPForms Pro und schalte all seine mächtigen Funktionen frei"
+
+#: lite/wpforms-lite.php:411
+msgid ""
+"Thanks for being a loyal WPForms Lite user. Upgrade to WPForms Pro to unlock"
+" all the awesome features and experience why WPForms is consistently rated "
+"the best WordPress form builder."
+msgstr ""
+"Danke, dass du ein treuer Benutzer von WPForms Lite bist. Führe ein Upgrade "
+"auf WPForms Pro durch, um all seine tollen Funktionen freizuschalten und "
+"erfahre, warum WPForms immer wieder als der beste WordPress-Formular-Builder"
+" bewertet wird."
+
+#. translators: %s - star icons.
+#: lite/wpforms-lite.php:417
+msgid ""
+"We know that you will truly love WPForms. It has over 2000+ five star "
+"ratings (%s) and is active on over 1 million websites."
+msgstr ""
+"Wir erwarten, dass du WPForms lieben wirst. Es hat über 2000+ Fünf-Sterne-"
+"Bewertungen (%s) und ist auf über 1 Million Websites aktiv."
+
+#: lite/wpforms-lite.php:429
+msgid "Pro Features:"
+msgstr "Pro-Funktionen:"
+
+#: lite/wpforms-lite.php:432
+msgid "Entry Management - view all leads in one place"
+msgstr "Eintragsverwaltung - Alle Leads an einem Ort anzeigen"
+
+#: lite/wpforms-lite.php:433
+msgid "All form features like file upload, pagination, etc"
+msgstr ""
+"Alle Formular-Funktionen wie Hochladen von Dateien, Seitennummerierung etc."
+
+#: lite/wpforms-lite.php:434
+msgid "Create surveys & polls with the surveys addon"
+msgstr "Erstelle Umfragen und Abstimmungen mit dem Umfragen-Add-on"
+
+#: lite/wpforms-lite.php:435
+msgid "WordPress user registration and login forms"
+msgstr "WordPress-Benutzerregistrierungs- und Anmeldeformulare"
+
+#: lite/wpforms-lite.php:436
+msgid "Create payment forms with Stripe and PayPal"
+msgstr "Erstelle Zahlungsformulare mit Stripe und PayPal"
+
+#: lite/wpforms-lite.php:439
+msgid "Powerful Conditional Logic so you can create smart forms"
+msgstr ""
+"Mächtige Bedingte Logik, sodass du intelligente Formulare erstellen kannst"
+
+#: lite/wpforms-lite.php:440
+msgid "500+ integrations with different marketing & payment services"
+msgstr "500+ Integrationen mit verschiedenen Marketing- und Zahlungsdiensten"
+
+#: lite/wpforms-lite.php:441
+msgid "Collect signatures, geo-location data, and more"
+msgstr "Sammle Signaturen, Geolocation-Daten und mehr"
+
+#: lite/wpforms-lite.php:442
+msgid "Accept user submitted content with Post Submissions addon"
+msgstr ""
+"Vom Benutzer übermittelte Inhalte mit dem Post Submissions Add-on "
+"akzeptieren"
+
+#: lite/wpforms-lite.php:443
+msgid "Bonus form templates, form abandonment, and more"
+msgstr "Bonus-Formular-Templates, Formularabbruch und mehr"
+
+#: lite/wpforms-lite.php:448
+msgid "Get WPForms Pro Today and Unlock all the Powerful Features »"
+msgstr ""
+"Hol dir WPForms Pro heute und schalte all seine mächtigen Funktionen frei »"
+
+#: lite/wpforms-lite.php:454
+msgid ""
+"<strong>Bonus:</strong> WPForms Lite users get <span class=\"green\">50% off"
+" regular price</span>, automatically applied at checkout."
+msgstr ""
+"<strong>Bonus:</strong> Benutzer von WPForms Lite erhalten <span "
+"class=\"green\">50% Rabatt</span>, dieser wird automatisch an der Kasse "
+"abgezogen."
+
+#: lite/wpforms-lite.php:623
+msgid "View and Manage All Your Form Entries inside WordPress"
+msgstr ""
+"All deine Formulareinträge innerhalb von WordPress anzeigen und verwalten"
+
+#: lite/wpforms-lite.php:625
+msgid "Form entries are not stored in WPForms Lite."
+msgstr "Formulareinträge werden in WPForms Lite nicht gespeichert."
+
+#: lite/wpforms-lite.php:626
+msgid ""
+"Once you upgrade to WPForms Pro, all future form entries will be stored in "
+"your WordPress database and displayed on this Entries screen."
+msgstr ""
+"Nach dem Upgrade auf WPForms Pro werden alle zukünftigen Formulareinträge "
+"innerhalb deiner WordPress-Datenbank gespeichert und auf diesem Einträge-"
+"Bildschirm angezeigt."
+
+#: lite/wpforms-lite.php:630
+msgid "View Entries in Dashboard"
+msgstr "Einträge im Dashboard anzeigen"
+
+#: lite/wpforms-lite.php:631
+msgid "Export Entries in a CSV File"
+msgstr "Einträge in eine CSV-Datei exportieren"
+
+#: lite/wpforms-lite.php:632
+msgid "Add Notes / Comments"
+msgstr "Notizen/Kommentare hinzufügen"
+
+#: lite/wpforms-lite.php:633
+msgid "Save Favorite Entries"
+msgstr "Favorisierte Einträge speichern"
+
+#: lite/wpforms-lite.php:636
+msgid "Mark Read / Unread"
+msgstr "Als gelesen/ungelesen markieren"
+
+#: lite/wpforms-lite.php:637
+msgid "Print Entries"
+msgstr "Einträge drucken"
+
+#: lite/wpforms-lite.php:638
+msgid "Resend Notifications"
+msgstr "Benachrichtigungen erneut senden"
+
+#: lite/wpforms-lite.php:639
+msgid "See Geolocation Data"
+msgstr "Geolocation-Daten ansehen"
+
+#: lite/wpforms-lite.php:645
+msgid "Upgrade to WPForms Pro Now"
+msgstr "Jetzt Upgrade auf WPForms Pro durchführen"
+
+#: lite/wpforms-lite.php:1045 includes/admin/class-about.php:85
+#: includes/admin/class-menu.php:113
+msgid "WPForms Addons"
+msgstr "WPForms-Add-ons"
+
+#: lite/wpforms-lite.php:1046
+msgid "Search Addons"
+msgstr "Add-ons durchsuchen"
+
+#: lite/wpforms-lite.php:1049
+msgid "Form Addons are a PRO feature."
+msgstr "Formular-Add-ons sind ein PRO-Funktion."
+
+#: lite/wpforms-lite.php:1050
+msgid ""
+"Please upgrade to the PRO plan to unlock them and more awesome features."
+msgstr ""
+"Bitte führe ein Upgrade auf das PRO-Paket durch, um diese und weitere tolle "
+"Funktionen freizuschalten."
+
+#: lite/wpforms-lite.php:1053 lite/wpforms-lite.php:1079
+#: includes/admin/class-tools.php:499 includes/admin/class-welcome.php:262
+msgid "Upgrade Now"
+msgstr "Jetzt Upgrade durchführen"
+
+#. translators: %s - addon name
+#: lite/wpforms-lite.php:1069
+msgid "%s Addon"
+msgstr "%s Add-on"
+
+#: includes/functions.php:684
+msgid "Alabama"
+msgstr "Alabama"
+
+#: includes/functions.php:685
+msgid "Alaska"
+msgstr "Alaska"
+
+#: includes/functions.php:686
+msgid "Arizona"
+msgstr "Arizona"
+
+#: includes/functions.php:687
+msgid "Arkansas"
+msgstr "Arkansas"
+
+#: includes/functions.php:688
+msgid "California"
+msgstr "Kalifornien"
+
+#: includes/functions.php:689
+msgid "Colorado"
+msgstr "Colorado"
+
+#: includes/functions.php:690
+msgid "Connecticut"
+msgstr "Connecticut"
+
+#: includes/functions.php:691
+msgid "Delaware"
+msgstr "Delaware"
+
+#: includes/functions.php:692
+msgid "District of Columbia"
+msgstr "District of Columbia"
+
+#: includes/functions.php:693
+msgid "Florida"
+msgstr "Florida"
+
+#: includes/functions.php:694
+msgctxt "US State"
+msgid "Georgia"
+msgstr "Georgia"
+
+#: includes/functions.php:695
+msgid "Hawaii"
+msgstr "Hawaii"
+
+#: includes/functions.php:696
+msgid "Idaho"
+msgstr "Idaho"
+
+#: includes/functions.php:697
+msgid "Illinois"
+msgstr "Illinois"
+
+#: includes/functions.php:698
+msgid "Indiana"
+msgstr "Indiana"
+
+#: includes/functions.php:699
+msgid "Iowa"
+msgstr "Iowa"
+
+#: includes/functions.php:700
+msgid "Kansas"
+msgstr "Kansas"
+
+#: includes/functions.php:701
+msgid "Kentucky"
+msgstr "Kentucky"
+
+#: includes/functions.php:702
+msgid "Louisiana"
+msgstr "Louisiana"
+
+#: includes/functions.php:703
+msgid "Maine"
+msgstr "Maine"
+
+#: includes/functions.php:704
+msgid "Maryland"
+msgstr "Maryland"
+
+#: includes/functions.php:705
+msgid "Massachusetts"
+msgstr "Massachusetts"
+
+#: includes/functions.php:706
+msgid "Michigan"
+msgstr "Michigan"
+
+#: includes/functions.php:707
+msgid "Minnesota"
+msgstr "Minnesota"
+
+#: includes/functions.php:708
+msgid "Mississippi"
+msgstr "Mississippi"
+
+#: includes/functions.php:709
+msgid "Missouri"
+msgstr "Missouri"
+
+#: includes/functions.php:710
+msgid "Montana"
+msgstr "Montana"
+
+#: includes/functions.php:711
+msgid "Nebraska"
+msgstr "Nebraska"
+
+#: includes/functions.php:712
+msgid "Nevada"
+msgstr "Nevada"
+
+#: includes/functions.php:713
+msgid "New Hampshire"
+msgstr "New Hampshire"
+
+#: includes/functions.php:714
+msgid "New Jersey"
+msgstr "New Jersey"
+
+#: includes/functions.php:715
+msgid "New Mexico"
+msgstr "New Mexico"
+
+#: includes/functions.php:716
+msgid "New York"
+msgstr "New York"
+
+#: includes/functions.php:717
+msgid "North Carolina"
+msgstr "North Carolina"
+
+#: includes/functions.php:718
+msgid "North Dakota"
+msgstr "North Dakota"
+
+#: includes/functions.php:719
+msgid "Ohio"
+msgstr "Ohio"
+
+#: includes/functions.php:720
+msgid "Oklahoma"
+msgstr "Oklahoma"
+
+#: includes/functions.php:721
+msgid "Oregon"
+msgstr "Oregon"
+
+#: includes/functions.php:722
+msgid "Pennsylvania"
+msgstr "Pennsylvania"
+
+#: includes/functions.php:723
+msgid "Rhode Island"
+msgstr "Rhode Island"
+
+#: includes/functions.php:724
+msgid "South Carolina"
+msgstr "South Carolina"
+
+#: includes/functions.php:725
+msgid "South Dakota"
+msgstr "South Dakota"
+
+#: includes/functions.php:726
+msgid "Tennessee"
+msgstr "Tennessee"
+
+#: includes/functions.php:727
+msgid "Texas"
+msgstr "Texas"
+
+#: includes/functions.php:728
+msgid "Utah"
+msgstr "Utah"
+
+#: includes/functions.php:729
+msgid "Vermont"
+msgstr "Vermont"
+
+#: includes/functions.php:730
+msgid "Virginia"
+msgstr "Virginia"
+
+#: includes/functions.php:731
+msgid "Washington"
+msgstr "Washington"
+
+#: includes/functions.php:732
+msgid "West Virginia"
+msgstr "West Virginia"
+
+#: includes/functions.php:733
+msgid "Wisconsin"
+msgstr "Wisconsin"
+
+#: includes/functions.php:734
+msgid "Wyoming"
+msgstr "Wyoming"
+
+#: includes/functions.php:750
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: includes/functions.php:751
+msgid "Åland Islands"
+msgstr "Ålandinseln"
+
+#: includes/functions.php:752
+msgid "Albania"
+msgstr "Albanien"
+
+#: includes/functions.php:753
+msgid "Algeria"
+msgstr "Algerien"
+
+#: includes/functions.php:754
+msgid "American Samoa"
+msgstr "Amerikanisch-Samoa"
+
+#: includes/functions.php:755
+msgid "Andorra"
+msgstr "Andorra"
+
+#: includes/functions.php:756
+msgid "Angola"
+msgstr "Angola"
+
+#: includes/functions.php:757
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: includes/functions.php:758
+msgid "Antarctica"
+msgstr "Antarktis"
+
+#: includes/functions.php:759
+msgid "Antigua and Barbuda"
+msgstr "Antigua und Barbuda"
+
+#: includes/functions.php:760
+msgid "Argentina"
+msgstr "Argentinien"
+
+#: includes/functions.php:761
+msgid "Armenia"
+msgstr "Armenien"
+
+#: includes/functions.php:762
+msgid "Aruba"
+msgstr "Aruba"
+
+#: includes/functions.php:763
+msgid "Australia"
+msgstr "Australien"
+
+#: includes/functions.php:764
+msgid "Austria"
+msgstr "Österreich"
+
+#: includes/functions.php:765
+msgid "Azerbaijan"
+msgstr "Aserbaidschan"
+
+#: includes/functions.php:766
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: includes/functions.php:767
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: includes/functions.php:768
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: includes/functions.php:769
+msgid "Barbados"
+msgstr "Barbados"
+
+#: includes/functions.php:770
+msgid "Belarus"
+msgstr "Weißrussland"
+
+#: includes/functions.php:771
+msgid "Belgium"
+msgstr "Belgien"
+
+#: includes/functions.php:772
+msgid "Belize"
+msgstr "Belize"
+
+#: includes/functions.php:773
+msgid "Benin"
+msgstr "Benin"
+
+#: includes/functions.php:774
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: includes/functions.php:775
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: includes/functions.php:776
+msgid "Bolivia (Plurinational State of)"
+msgstr "Bolivien (Plurinationaler Staat)"
+
+#: includes/functions.php:777
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnien und Herzegowina"
+
+#: includes/functions.php:778
+msgid "Botswana"
+msgstr "Botswana"
+
+#: includes/functions.php:779
+msgid "Bouvet Island"
+msgstr "Bouvetinsel"
+
+#: includes/functions.php:780
+msgid "Brazil"
+msgstr "Brasilien"
+
+#: includes/functions.php:781
+msgid "British Indian Ocean Territory"
+msgstr "Britisches Territorium im Indischen Ozean"
+
+#: includes/functions.php:782
+msgid "Brunei Darussalam"
+msgstr "Brunei Darussalam"
+
+#: includes/functions.php:783
+msgid "Bulgaria"
+msgstr "Bulgarien"
+
+#: includes/functions.php:784
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: includes/functions.php:785
+msgid "Burundi"
+msgstr "Burundi"
+
+#: includes/functions.php:786
+msgid "Cabo Verde"
+msgstr "Cabo Verde"
+
+#: includes/functions.php:787
+msgid "Cambodia"
+msgstr "Kambodscha"
+
+#: includes/functions.php:788
+msgid "Cameroon"
+msgstr "Kamerun"
+
+#: includes/functions.php:789
+msgid "Canada"
+msgstr "Kanada"
+
+#: includes/functions.php:790
+msgid "Cayman Islands"
+msgstr "Caymen Inseln"
+
+#: includes/functions.php:791
+msgid "Central African Republic"
+msgstr "Zentralafrikanische Republik"
+
+#: includes/functions.php:792
+msgid "Chad"
+msgstr "Tschad"
+
+#: includes/functions.php:793
+msgid "Chile"
+msgstr "Chile"
+
+#: includes/functions.php:794
+msgid "China"
+msgstr "China"
+
+#: includes/functions.php:795
+msgid "Christmas Island"
+msgstr "Weihnachtsinsel"
+
+#: includes/functions.php:796
+msgid "Cocos (Keeling) Islands"
+msgstr "Kokosinseln (Keelinginseln)"
+
+#: includes/functions.php:797
+msgid "Colombia"
+msgstr "Kolumbien"
+
+#: includes/functions.php:798
+msgid "Comoros"
+msgstr "Komoren"
+
+#: includes/functions.php:799
+msgid "Congo"
+msgstr "Republik Kongo"
+
+#: includes/functions.php:800
+msgid "Congo (Democratic Republic of the)"
+msgstr "Kongo (Demokratische Republik)"
+
+#: includes/functions.php:801
+msgid "Cook Islands"
+msgstr "Cookinseln"
+
+#: includes/functions.php:802
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: includes/functions.php:803
+msgid "Côte d'Ivoire"
+msgstr "Côte d'Ivoire"
+
+#: includes/functions.php:804
+msgid "Croatia"
+msgstr "Kroatien"
+
+#: includes/functions.php:805
+msgid "Cuba"
+msgstr "Kuba"
+
+#: includes/functions.php:806
+msgid "Curaçao"
+msgstr "Curaçao"
+
+#: includes/functions.php:807
+msgid "Cyprus"
+msgstr "Zypern"
+
+#: includes/functions.php:808
+msgid "Czech Republic"
+msgstr "Tschechische Republik"
+
+#: includes/functions.php:809
+msgid "Denmark"
+msgstr "Dänemark"
+
+#: includes/functions.php:810
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: includes/functions.php:811
+msgid "Dominica"
+msgstr "Dominica"
+
+#: includes/functions.php:812
+msgid "Dominican Republic"
+msgstr "Dominikanische Republik"
+
+#: includes/functions.php:813
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: includes/functions.php:814
+msgid "Egypt"
+msgstr "Ägypten"
+
+#: includes/functions.php:815
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: includes/functions.php:816
+msgid "Equatorial Guinea"
+msgstr "Äquatorial Guinea"
+
+#: includes/functions.php:817
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: includes/functions.php:818
+msgid "Estonia"
+msgstr "Estland"
+
+#: includes/functions.php:819
+msgid "Ethiopia"
+msgstr "Äthopien"
+
+#: includes/functions.php:820
+msgid "Falkland Islands (Malvinas)"
+msgstr "Falklandinseln (Malwinen)"
+
+#: includes/functions.php:821
+msgid "Faroe Islands"
+msgstr "Färöer-Inseln"
+
+#: includes/functions.php:822
+msgid "Fiji"
+msgstr "Fidschi"
+
+#: includes/functions.php:823
+msgid "Finland"
+msgstr "Finnland"
+
+#: includes/functions.php:824
+msgid "France"
+msgstr "Frankreich"
+
+#: includes/functions.php:825
+msgid "French Guiana"
+msgstr "Französisch-Guayana"
+
+#: includes/functions.php:826
+msgid "French Polynesia"
+msgstr "Französisch-Polynesien"
+
+#: includes/functions.php:827
+msgid "French Southern Territories"
+msgstr "Französische Süd- und Antarktisgebiete"
+
+#: includes/functions.php:828
+msgid "Gabon"
+msgstr "Gabun"
+
+#: includes/functions.php:829
+msgid "Gambia"
+msgstr "Gambia"
+
+#: includes/functions.php:830
+msgctxt "Country"
+msgid "Georgia"
+msgstr "Georgia"
+
+#: includes/functions.php:831
+msgid "Germany"
+msgstr "Deutschland"
+
+#: includes/functions.php:832
+msgid "Ghana"
+msgstr "Ghana"
+
+#: includes/functions.php:833
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: includes/functions.php:834
+msgid "Greece"
+msgstr "Griechenland"
+
+#: includes/functions.php:835
+msgid "Greenland"
+msgstr "Grönland"
+
+#: includes/functions.php:836
+msgid "Grenada"
+msgstr "Grenada"
+
+#: includes/functions.php:837
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+#: includes/functions.php:838
+msgid "Guam"
+msgstr "Guam"
+
+#: includes/functions.php:839
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: includes/functions.php:840
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: includes/functions.php:841
+msgid "Guinea"
+msgstr "Guinea"
+
+#: includes/functions.php:842
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+#: includes/functions.php:843
+msgid "Guyana"
+msgstr "Guyana"
+
+#: includes/functions.php:844
+msgid "Haiti"
+msgstr "Haiti"
+
+#: includes/functions.php:845
+msgid "Heard Island and McDonald Islands"
+msgstr "Heard und McDonaldinseln"
+
+#: includes/functions.php:846
+msgid "Honduras"
+msgstr "Honduras"
+
+#: includes/functions.php:847
+msgid "Hong Kong"
+msgstr "Hongkong"
+
+#: includes/functions.php:848
+msgid "Hungary"
+msgstr "Ungarn"
+
+#: includes/functions.php:849
+msgid "Iceland"
+msgstr "Island"
+
+#: includes/functions.php:850
+msgid "India"
+msgstr "Indien"
+
+#: includes/functions.php:851
+msgid "Indonesia"
+msgstr "Indonesien"
+
+#: includes/functions.php:852
+msgid "Iran (Islamic Republic of)"
+msgstr "Iran (Islamische Republik)"
+
+#: includes/functions.php:853
+msgid "Iraq"
+msgstr "Irak"
+
+#: includes/functions.php:854
+msgid "Ireland (Republic of)"
+msgstr "Irland"
+
+#: includes/functions.php:855
+msgid "Isle of Man"
+msgstr "Isle of Man"
+
+#: includes/functions.php:856
+msgid "Israel"
+msgstr "Israel"
+
+#: includes/functions.php:857
+msgid "Italy"
+msgstr "Italien"
+
+#: includes/functions.php:858
+msgid "Jamaica"
+msgstr "Jamaika"
+
+#: includes/functions.php:859
+msgid "Japan"
+msgstr "Japan"
+
+#: includes/functions.php:860
+msgid "Jersey"
+msgstr "Jersey"
+
+#: includes/functions.php:861
+msgid "Jordan"
+msgstr "Jordanien"
+
+#: includes/functions.php:862
+msgid "Kazakhstan"
+msgstr "Kasachstan"
+
+#: includes/functions.php:863
+msgid "Kenya"
+msgstr "Kenia"
+
+#: includes/functions.php:864
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: includes/functions.php:865
+msgid "Korea (Democratic People's Republic of)"
+msgstr "Korea (Demokratische Volksrepublik)"
+
+#: includes/functions.php:866
+msgid "Korea (Republic of)"
+msgstr "Korea (Republik)"
+
+#: includes/functions.php:867
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: includes/functions.php:868
+msgid "Kyrgyzstan"
+msgstr "Kirgistan"
+
+#: includes/functions.php:869
+msgid "Lao People's Democratic Republic"
+msgstr "Demokratische Volksrepublik Laos"
+
+#: includes/functions.php:870
+msgid "Latvia"
+msgstr "Lettland"
+
+#: includes/functions.php:871
+msgid "Lebanon"
+msgstr "Libanon"
+
+#: includes/functions.php:872
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: includes/functions.php:873
+msgid "Liberia"
+msgstr "Liberia"
+
+#: includes/functions.php:874
+msgid "Libya"
+msgstr "Libyen"
+
+#: includes/functions.php:875
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: includes/functions.php:876
+msgid "Lithuania"
+msgstr "Litauen"
+
+#: includes/functions.php:877
+msgid "Luxembourg"
+msgstr "Luxemburg"
+
+#: includes/functions.php:878
+msgid "Macao"
+msgstr "Macau"
+
+#: includes/functions.php:879
+msgid "Macedonia (Republic of)"
+msgstr "Mazedonien (Republik)"
+
+#: includes/functions.php:880
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+#: includes/functions.php:881
+msgid "Malawi"
+msgstr "Malawi"
+
+#: includes/functions.php:882
+msgid "Malaysia"
+msgstr "Malaysia"
+
+#: includes/functions.php:883
+msgid "Maldives"
+msgstr "Malediven"
+
+#: includes/functions.php:884
+msgid "Mali"
+msgstr "Mali"
+
+#: includes/functions.php:885
+msgid "Malta"
+msgstr "Malta"
+
+#: includes/functions.php:886
+msgid "Marshall Islands"
+msgstr "Marshall-Inseln"
+
+#: includes/functions.php:887
+msgid "Martinique"
+msgstr "Martinique"
+
+#: includes/functions.php:888
+msgid "Mauritania"
+msgstr "Mauretanien"
+
+#: includes/functions.php:889
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: includes/functions.php:890
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: includes/functions.php:891
+msgid "Mexico"
+msgstr "Mexiko"
+
+#: includes/functions.php:892
+msgid "Micronesia (Federated States of)"
+msgstr "Mikronesien"
+
+#: includes/functions.php:893
+msgid "Moldova (Republic of)"
+msgstr "Moldau (Republik)"
+
+#: includes/functions.php:894
+msgid "Monaco"
+msgstr "Monaco"
+
+#: includes/functions.php:895
+msgid "Mongolia"
+msgstr "Mongolei"
+
+#: includes/functions.php:896
+msgid "Montenegro"
+msgstr "Montenegro"
+
+#: includes/functions.php:897
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: includes/functions.php:898
+msgid "Morocco"
+msgstr "Marokko"
+
+#: includes/functions.php:899
+msgid "Mozambique"
+msgstr "Mosambik"
+
+#: includes/functions.php:900
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: includes/functions.php:901
+msgid "Namibia"
+msgstr "Namibia"
+
+#: includes/functions.php:902
+msgid "Nauru"
+msgstr "Nauru"
+
+#: includes/functions.php:903
+msgid "Nepal"
+msgstr "Nepal"
+
+#: includes/functions.php:904
+msgid "Netherlands"
+msgstr "Niederlande"
+
+#: includes/functions.php:905
+msgid "New Caledonia"
+msgstr "Neukaledonien"
+
+#: includes/functions.php:906
+msgid "New Zealand"
+msgstr "Neuseeland"
+
+#: includes/functions.php:907
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: includes/functions.php:908
+msgid "Niger"
+msgstr "Niger"
+
+#: includes/functions.php:909
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: includes/functions.php:910
+msgid "Niue"
+msgstr "Niue"
+
+#: includes/functions.php:911
+msgid "Norfolk Island"
+msgstr "Norfolkinsel"
+
+#: includes/functions.php:912
+msgid "Northern Mariana Islands"
+msgstr "Nördliche Marianen"
+
+#: includes/functions.php:913
+msgid "Norway"
+msgstr "Norwegen"
+
+#: includes/functions.php:914
+msgid "Oman"
+msgstr "Oman"
+
+#: includes/functions.php:915
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: includes/functions.php:916
+msgid "Palau"
+msgstr "Palau"
+
+#: includes/functions.php:917
+msgid "Palestine (State of)"
+msgstr "Palästina (Staat)"
+
+#: includes/functions.php:918
+msgid "Panama"
+msgstr "Panama"
+
+#: includes/functions.php:919
+msgid "Papua New Guinea"
+msgstr "Papua Neu Guinea"
+
+#: includes/functions.php:920
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: includes/functions.php:921
+msgid "Peru"
+msgstr "Peru"
+
+#: includes/functions.php:922
+msgid "Philippines"
+msgstr "Philippinen"
+
+#: includes/functions.php:923
+msgid "Pitcairn"
+msgstr "Pitcairninseln"
+
+#: includes/functions.php:924
+msgid "Poland"
+msgstr "Polen"
+
+#: includes/functions.php:925
+msgid "Portugal"
+msgstr "Portugal"
+
+#: includes/functions.php:926
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: includes/functions.php:927
+msgid "Qatar"
+msgstr "Katar"
+
+#: includes/functions.php:928
+msgid "Réunion"
+msgstr "Réunion"
+
+#: includes/functions.php:929
+msgid "Romania"
+msgstr "Rumänien"
+
+#: includes/functions.php:930
+msgid "Russian Federation"
+msgstr "Russland"
+
+#: includes/functions.php:931
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: includes/functions.php:932
+msgid "Saint Barthélemy"
+msgstr "Saint-Barthélemy"
+
+#: includes/functions.php:933
+msgid "Saint Helena, Ascension and Tristan da Cunha"
+msgstr "St. Helena, Ascension und Tristan da Cunha"
+
+#: includes/functions.php:934
+msgid "Saint Kitts and Nevis"
+msgstr "St. Kitts und Nevis"
+
+#: includes/functions.php:935
+msgid "Saint Lucia"
+msgstr "St. Lucia"
+
+#: includes/functions.php:936
+msgid "Saint Martin (French part)"
+msgstr "St. Martin (französisch)"
+
+#: includes/functions.php:937
+msgid "Saint Pierre and Miquelon"
+msgstr "Saint-Pierre und Miquelon"
+
+#: includes/functions.php:938
+msgid "Saint Vincent and the Grenadines"
+msgstr "St. Vincent und die Grenadinen"
+
+#: includes/functions.php:939
+msgid "Samoa"
+msgstr "Samoa"
+
+#: includes/functions.php:940
+msgid "San Marino"
+msgstr "San Marino"
+
+#: includes/functions.php:941
+msgid "Sao Tome and Principe"
+msgstr "São Tomé und Príncipe"
+
+#: includes/functions.php:942
+msgid "Saudi Arabia"
+msgstr "Saudi-Arabien"
+
+#: includes/functions.php:943
+msgid "Senegal"
+msgstr "Senegal"
+
+#: includes/functions.php:944
+msgid "Serbia"
+msgstr "Serbien"
+
+#: includes/functions.php:945
+msgid "Seychelles"
+msgstr "Seychellen"
+
+#: includes/functions.php:946
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: includes/functions.php:947
+msgid "Singapore"
+msgstr "Singapur"
+
+#: includes/functions.php:948
+msgid "Sint Maarten (Dutch part)"
+msgstr "Sint Maarten"
+
+#: includes/functions.php:949
+msgid "Slovakia"
+msgstr "Slowakei"
+
+#: includes/functions.php:950
+msgid "Slovenia"
+msgstr "Slovenien"
+
+#: includes/functions.php:951
+msgid "Solomon Islands"
+msgstr "Salomonen"
+
+#: includes/functions.php:952
+msgid "Somalia"
+msgstr "Somalia"
+
+#: includes/functions.php:953
+msgid "South Africa"
+msgstr "Südafrika"
+
+#: includes/functions.php:954
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Südgeorgien und die Südlichen Sandwichinseln"
+
+#: includes/functions.php:955
+msgid "South Sudan"
+msgstr "Südsudan"
+
+#: includes/functions.php:956
+msgid "Spain"
+msgstr "Spanien"
+
+#: includes/functions.php:957
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: includes/functions.php:958
+msgid "Sudan"
+msgstr "Sudan"
+
+#: includes/functions.php:959
+msgid "Suriname"
+msgstr "Surinam"
+
+#: includes/functions.php:960
+msgid "Svalbard and Jan Mayen"
+msgstr "Spitzbergen"
+
+#: includes/functions.php:961
+msgid "Swaziland"
+msgstr "Königreich Eswatini (Swasiland)"
+
+#: includes/functions.php:962
+msgid "Sweden"
+msgstr "Schweden"
+
+#: includes/functions.php:963
+msgid "Switzerland"
+msgstr "Schweiz"
+
+#: includes/functions.php:964
+msgid "Syrian Arab Republic"
+msgstr "Syrien (Arabische Republik)"
+
+#: includes/functions.php:965
+msgid "Taiwan, Province of China"
+msgstr "Taiwan (Republik China)"
+
+#: includes/functions.php:966
+msgid "Tajikistan"
+msgstr "Tadschikistan"
+
+#: includes/functions.php:967
+msgid "Tanzania (United Republic of)"
+msgstr "Tansania (Vereinigte Republik)"
+
+#: includes/functions.php:968
+msgid "Thailand"
+msgstr "Thailand"
+
+#: includes/functions.php:969
+msgid "Timor-Leste"
+msgstr "Osttimor"
+
+#: includes/functions.php:970
+msgid "Togo"
+msgstr "Togo"
+
+#: includes/functions.php:971
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: includes/functions.php:972
+msgid "Tonga"
+msgstr "Tonga"
+
+#: includes/functions.php:973
+msgid "Trinidad and Tobago"
+msgstr "Trinidad und Tobago"
+
+#: includes/functions.php:974
+msgid "Tunisia"
+msgstr "Tunesien"
+
+#: includes/functions.php:975
+msgid "Turkey"
+msgstr "Türkei"
+
+#: includes/functions.php:976
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: includes/functions.php:977
+msgid "Turks and Caicos Islands"
+msgstr "Turks- und Caicosinseln"
+
+#: includes/functions.php:978
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: includes/functions.php:979
+msgid "Uganda"
+msgstr "Uganda"
+
+#: includes/functions.php:980
+msgid "Ukraine"
+msgstr "Ukraine"
+
+#: includes/functions.php:981
+msgid "United Arab Emirates"
+msgstr "Vereinigte Arabische Emirate"
+
+#: includes/functions.php:982
+msgid "United Kingdom of Great Britain and Northern Ireland"
+msgstr "Vereinigte Königreich Großbritannien und Nordirland"
+
+#: includes/functions.php:983
+msgid "United States of America"
+msgstr "USA"
+
+#: includes/functions.php:984
+msgid "United States Minor Outlying Islands"
+msgstr "US Minor Outlying Islands"
+
+#: includes/functions.php:985
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: includes/functions.php:986
+msgid "Uzbekistan"
+msgstr "Usbekistan"
+
+#: includes/functions.php:987
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: includes/functions.php:988
+msgid "Vatican City State"
+msgstr "Vatikanstadt (Staat)"
+
+#: includes/functions.php:989
+msgid "Venezuela (Bolivarian Republic of)"
+msgstr "Venezuela (Bolivarische Republik)"
+
+#: includes/functions.php:990
+msgid "Viet Nam"
+msgstr "Vietnam (Sozialistische Republik)"
+
+#: includes/functions.php:991
+msgid "Virgin Islands (British)"
+msgstr "Britische Jungferninseln"
+
+#: includes/functions.php:992
+msgid "Virgin Islands (U.S.)"
+msgstr "Amerikanische Jungferninseln"
+
+#: includes/functions.php:993
+msgid "Wallis and Futuna"
+msgstr "Futuna (Wallis und Futuna)"
+
+#: includes/functions.php:994
+msgid "Western Sahara"
+msgstr "Westsahara"
+
+#: includes/functions.php:995
+msgid "Yemen"
+msgstr "Jemen"
+
+#: includes/functions.php:996
+msgid "Zambia"
+msgstr "Sambia"
+
+#: includes/functions.php:997
+msgid "Zimbabwe"
+msgstr "Simbabwe"
+
+#: includes/functions.php:1012
+msgid "January"
+msgstr "Januar"
+
+#: includes/functions.php:1013
+msgid "February"
+msgstr "Februar"
+
+#: includes/functions.php:1014
+msgid "March"
+msgstr "März"
+
+#: includes/functions.php:1015
+msgid "April"
+msgstr "April"
+
+#: includes/functions.php:1016
+msgid "May"
+msgstr "Mai"
+
+#: includes/functions.php:1017
+msgid "June"
+msgstr "Juni"
+
+#: includes/functions.php:1018
+msgid "July"
+msgstr "Juli"
+
+#: includes/functions.php:1019
+msgid "August"
+msgstr "August"
+
+#: includes/functions.php:1020
+msgid "September"
+msgstr "September"
+
+#: includes/functions.php:1021
+msgid "October"
+msgstr "Oktober"
+
+#: includes/functions.php:1022
+msgid "November"
+msgstr "November"
+
+#: includes/functions.php:1023
+msgid "December"
+msgstr "Dezember"
+
+#: includes/functions.php:1038
+msgid "Sunday"
+msgstr "Sonntag"
+
+#: includes/functions.php:1039
+msgid "Monday"
+msgstr "Montag"
+
+#: includes/functions.php:1040
+msgid "Tuesday"
+msgstr "Dienstag"
+
+#: includes/functions.php:1041
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+#: includes/functions.php:1042
+msgid "Thursday"
+msgstr "Donnerstag"
+
+#: includes/functions.php:1043
+msgid "Friday"
+msgstr "Freitag"
+
+#: includes/functions.php:1044
+msgid "Saturday"
+msgstr "Samstag"
+
+#: includes/functions.php:1652 includes/class-frontend.php:1033
+#: includes/admin/class-settings.php:439
+msgid "This field is required."
+msgstr "Dieses Feld ist erforderlich."
+
+#: includes/class-widget.php:43
+msgctxt "Widget"
+msgid "Display a form."
+msgstr "Ein Fomular anzeigen."
+
+#: includes/class-widget.php:52
+msgctxt "Widget"
+msgid "WPForms"
+msgstr "WPForms"
+
+#: includes/class-widget.php:120
+msgctxt "Widget"
+msgid "Title:"
+msgstr "Titel:"
+
+#: includes/class-widget.php:129
+msgctxt "Widget"
+msgid "Form:"
+msgstr "Formular:"
+
+#: includes/class-widget.php:137
+msgctxt "Widget"
+msgid "Select your form"
+msgstr "Wähle dein Formular aus"
+
+#: includes/class-widget.php:143
+msgctxt "Widget"
+msgid "No forms"
+msgstr "Keine Formulare"
+
+#: includes/class-widget.php:152
+msgctxt "Widget"
+msgid "Display form name"
+msgstr "Formularnamen anzeigen"
+
+#: includes/class-widget.php:158
+msgctxt "Widget"
+msgid "Display form description"
+msgstr "Formularbeschreibung anzeigen"
+
+#: includes/class-frontend.php:1034 includes/admin/class-settings.php:445
+msgid "Please enter a valid URL."
+msgstr "Bitte gib eine gültige URL an."
+
+#: includes/class-frontend.php:1035 includes/admin/class-settings.php:451
+msgid "Please enter a valid email address."
+msgstr "Bitte gib eine gültige E-Mail-Adresse an."
+
+#: includes/class-frontend.php:1036 includes/admin/class-settings.php:457
+#: includes/fields/class-number.php:162
+msgid "Please enter a valid number."
+msgstr "Bitte gib eine gültige Zahl ein."
+
+#: includes/class-frontend.php:1037 includes/admin/class-settings.php:463
+msgid "Field values do not match."
+msgstr "Feld-Werte stimmen nicht überein."
+
+#: includes/class-frontend.php:1038
+msgid "File type is not allowed."
+msgstr "Dateityp ist nicht erlaubt."
+
+#: includes/class-frontend.php:1039
+msgid "File exceeds max size allowed."
+msgstr "Datei größer als maximal erlaubt."
+
+#: includes/class-frontend.php:1040
+msgid "Please enter time in 12-hour AM/PM format (eg 8:45 AM)."
+msgstr "Bitte Zeit im 12-Stunden-AM/PM-Format eingeben (z. B. 8:45 AM)."
+
+#: includes/class-frontend.php:1041
+msgid "Please enter time in 24-hour format (eg 22:45)."
+msgstr "Bitte Zeit im 24-Stunden-Format eingeben (z. B. 22:45)."
+
+#: includes/class-frontend.php:1042
+msgid "Payment is required."
+msgstr "Zahlung ist erforderlich."
+
+#: includes/class-frontend.php:1043
+msgid "Please enter a valid credit card number."
+msgstr "Bitte gib eine gültige Kreditkartennummer ein."
+
+#. translators: %s - URL to a non-amp version of a page with the form.
+#: includes/class-frontend.php:1153
+msgid "<a href=\"%s\">Go to the full page</a> to view and submit the form."
+msgstr ""
+"<a href=\"%s\">Zur vollständigen Seite gehen</a>,um das Formular anzusehen "
+"und zu übertragen."
+
+#: includes/providers/class-base.php:93
+msgid "Connection"
+msgstr "Verbindung"
+
+#: includes/providers/class-base.php:163
+#: includes/providers/class-base.php:1135
+#: includes/providers/class-base.php:1183
+#: src/Providers/Provider/Settings/PageIntegrations.php:185
+msgid "You do not have permission"
+msgstr "Du hast keine Berechtigung"
+
+#. translators: %s - Name field label.
+#: includes/providers/class-base.php:469
+msgid "%s (Full)"
+msgstr "%s (Voll)"
+
+#. translators: %s - Name field label.
+#: includes/providers/class-base.php:484
+msgid "%s (First)"
+msgstr "%s (Erster)"
+
+#. translators: %s - Name field label.
+#: includes/providers/class-base.php:500
+msgid "%s (Middle)"
+msgstr "%s (Mittel)"
+
+#. translators: %s - Name field label.
+#: includes/providers/class-base.php:516
+msgid "%s (Last)"
+msgstr "%s (Letzter)"
+
+#: includes/providers/class-base.php:722
+msgid "Select Account"
+msgstr "Konto auswählen"
+
+#: includes/providers/class-base.php:734
+#: includes/providers/class-base.php:1296
+#: includes/providers/class-constant-contact.php:490
+#: src/Providers/Provider/Settings/PageIntegrations.php:140
+#: src/Providers/Provider/Settings/FormBuilder.php:390
+msgid "Add New Account"
+msgstr "Neues Konto hinzufügen"
+
+#: includes/providers/class-base.php:767
+msgid "Select List"
+msgstr "Liste auswählen"
+
+#: includes/providers/class-base.php:813
+msgid "Select Groups"
+msgstr "Gruppen auswählen"
+
+#: includes/providers/class-base.php:815
+msgid ""
+"We also noticed that you have some segments in your list. You can select "
+"specific list segments below if needed. This is optional."
+msgstr ""
+"Wir haben außerdem festgestellt, dass du einige Segmente in deiner Liste "
+"hast. Du kannst, falls nötig, unten bestimmte Listensegmente auswählen. Dies"
+" ist optional."
+
+#: includes/providers/class-base.php:875 includes/providers/class-base.php:880
+msgid "List Fields"
+msgstr "Felder auflisten"
+
+#: includes/providers/class-base.php:880
+msgid "Available Form Fields"
+msgstr "Verfügbare Formularfelder"
+
+#: includes/providers/class-base.php:953
+#: src/Providers/Provider/Settings/FormBuilder.php:205
+msgid "Marketing provider connection"
+msgstr "Marketing-Anbieter-Verbindung"
+
+#. translators: %s - Provider type.
+#: includes/providers/class-base.php:1069
+msgid "Add New %s"
+msgstr "Neu hinzufügen %s"
+
+#: includes/providers/class-base.php:1143
+#: includes/providers/class-base.php:1191
+#: src/Providers/Provider/Settings/PageIntegrations.php:193
+msgid "Missing data"
+msgstr "Fehlende Daten"
+
+#: includes/providers/class-base.php:1159
+#: src/Providers/Provider/Settings/PageIntegrations.php:209
+msgid "Connection missing"
+msgstr "Verbindung fehlt"
+
+#: includes/providers/class-base.php:1203
+msgid "Could not connect to the provider."
+msgstr "Konnte keine Verbindung mit dem Anbieter herstellen."
+
+#. translators: %s - Connection date.
+#: includes/providers/class-base.php:1213
+#: includes/providers/class-base.php:1285
+#: src/Providers/Provider/Settings/PageIntegrations.php:108
+msgid "Connected on: %s"
+msgstr "Verbunden am: %s"
+
+#: includes/providers/class-base.php:1214
+#: includes/providers/class-base.php:1286
+#: src/Providers/Provider/Settings/PageIntegrations.php:109
+msgid "Disconnect"
+msgstr "Trennen"
+
+#. translators: %s - provider name.
+#: includes/providers/class-base.php:1240
+#: src/Providers/Provider/Settings/PageIntegrations.php:135
+msgid "Connect to %s"
+msgstr "Verbinden mit %s"
+
+#: includes/providers/class-base.php:1258
+#: src/Providers/Provider/Settings/PageIntegrations.php:81
+msgid "Show Accounts"
+msgstr "Konten anzeigen"
+
+#. translators: %s - provider name.
+#: includes/providers/class-base.php:1267
+#: src/Providers/Provider/Settings/PageIntegrations.php:90
+msgid "Integrate %s with WPForms"
+msgstr "Integriere %s mit WPForms"
+
+#: includes/providers/class-base.php:1270
+#: src/Providers/Provider/Settings/PageIntegrations.php:93
+msgid "Connected"
+msgstr "Verbunden"
+
+#: includes/providers/class-base.php:1303
+#: src/Providers/Provider/Settings/PageIntegrations.php:147
+msgid ""
+"Please fill out all of the fields below to add your new provider account."
+msgstr ""
+"Bitte alle Felder unten ausfüllen, um dein neues Anbieterkonto hinzuzufügen."
+
+#: includes/providers/class-constant-contact.php:113
+msgid "Constant Contact Subscription stopped by conditional logic"
+msgstr "Constant-Contact-Abonnement von bedingter Logik gestoppt"
+
+#: includes/providers/class-constant-contact.php:131
+#: includes/providers/class-constant-contact.php:309
+#: includes/providers/class-constant-contact.php:394
+msgid "Constant Contact API Error"
+msgstr "Constant-Contact-API-Fehler"
+
+#: includes/providers/class-constant-contact.php:401
+msgid "API list error: Constant API error"
+msgstr "API-Listenfehler: Konstanter API-Fehler"
+
+#: includes/providers/class-constant-contact.php:493
+msgid ""
+"Please fill out all of the fields below to register your new Constant "
+"Contact account."
+msgstr ""
+"Bitte alle Felder unten ausfüllen, um dein neues Constant-Contact-Konto zu "
+"registrieren."
+
+#: includes/providers/class-constant-contact.php:495
+#: includes/providers/class-constant-contact.php:596
+msgid ""
+"Click here for documentation on connecting WPForms with Constant Contact."
+msgstr ""
+"Hier klicken für Dokumentation zur Verbindung von WPForms mit Constant "
+"Contact."
+
+#: includes/providers/class-constant-contact.php:500
+#: includes/providers/class-constant-contact.php:601
+msgid ""
+"Because Constant Contact requires external authentication, you will need to "
+"register WPForms with Constant Contact before you can proceed."
+msgstr ""
+"Weil Constant Contact eine externe Authentifizierung erfordert, musst du "
+"WPForms mit Constant Contact registrieren, bevor du fortfahren kannst."
+
+#: includes/providers/class-constant-contact.php:504
+#: includes/providers/class-constant-contact.php:605
+msgid "Click here to register with Constant Contact"
+msgstr "Hier klicken, um bei Constant Contact zu registrieren"
+
+#: includes/providers/class-constant-contact.php:507
+#: includes/providers/class-constant-contact.php:608
+msgid "Authorization Code"
+msgstr "Authorisierungscode"
+
+#: includes/providers/class-constant-contact.php:509
+#: includes/providers/class-constant-contact.php:610
+msgid "Account Nickname"
+msgstr "Konto-Spitzname"
+
+#: includes/providers/class-constant-contact.php:511
+msgid "Connect"
+msgstr "Verbinden"
+
+#: includes/providers/class-constant-contact.php:551
+msgid ""
+"Get the most out of <strong>WPForms</strong> &mdash; use it with an active "
+"Constant Contact account."
+msgstr ""
+"Hold das Beste aus <strong>WPForms</strong> heraus &ndash; benutze es mit "
+"einem aktiven Constant-Contact-Konto."
+
+#: includes/providers/class-constant-contact.php:560
+#: includes/providers/class-constant-contact.php:667
+msgid "Try Constant Contact for Free"
+msgstr "Constant Contact kostenlos testen"
+
+#. translators: %s - WPForms Constant Contact internal URL.
+#: includes/providers/class-constant-contact.php:566
+msgid ""
+"Learn More about the <a href=\"%s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">power of email marketing</a>"
+msgstr ""
+"Erfahre mehr über die <a href=\"%s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">Kraft des E-Mail-Marketings</a>"
+
+#: includes/providers/class-constant-contact.php:658
+msgid ""
+"Get the most out of the <strong>WPForms</strong> plugin &mdash; use it with "
+"an active Constant Contact account."
+msgstr ""
+"Hol das Beste aus dem <strong>WPForms</strong>-Plugin heraus &ndash; benutze"
+" es mit einem aktiven Constant-Contact-Konto."
+
+#: includes/providers/class-constant-contact.php:670
+msgid "Connect your existing account"
+msgstr "Dein existierendes Konto verbinden"
+
+#. translators: %s - WPForms Constant Contact internal URL.
+#: includes/providers/class-constant-contact.php:676
+msgid "Learn More about the <a href=\"%s\">power of email marketing</a>"
+msgstr "Erfahre mehr über die <a href=\"%s\">Kraft des E-Mail-Marketings</a>"
+
+#: includes/providers/class-constant-contact.php:748
+msgid "Grow Your Website with WPForms + Email Marketing"
+msgstr "Mach deine Website mit WPForms + E-Mail-Marketing zum Erfolg"
+
+#: includes/providers/class-constant-contact.php:749
+msgid "Wondering if email marketing is really worth your time?"
+msgstr "Du fragst dich, ob sich dein Zeitaufwand für E-Mail-Marketing lohnt?"
+
+#: includes/providers/class-constant-contact.php:750
+msgid ""
+"Email is hands-down the most effective way to nurture leads and turn them "
+"into customers, with a return on investment (ROI) of <strong>$44 back for "
+"every $1 spent</strong> according to DMA."
+msgstr ""
+"E-Mail ist zweifellos der effektivste Weg, um Leads zu pflegen und sie in "
+"Kunden zu verwandeln, mit einem Return on Investment (ROI) von <strong>$44 "
+"für jeden ausgegeben $1 </strong> laut DMA."
+
+#: includes/providers/class-constant-contact.php:751
+msgid ""
+"Here are 3 big reasons why every smart business in the world has an email "
+"list:"
+msgstr ""
+"Hier sind 3 wichtige Gründe, warum jedes intelligente Geschäftsmodell auf "
+"der Welt eine E-Mail-Liste führt:"
+
+#: includes/providers/class-constant-contact.php:756
+msgid ""
+"<strong>Email is still #1</strong> - At least 91% of consumers check their "
+"email on a daily basis. You get direct access to your subscribers, without "
+"having to play by social media&#39;s rules and algorithms."
+msgstr ""
+"<strong>E_Mail ist noch immer die Nummer 1</strong> - Mindestend 91% der "
+"Kunden prüfen täglich ihre E-Mails. Du kannst deine Abonnenten direkt "
+"erreichen, ohne dich nach den Regeln und Algorithmen Sozialer Medien richten"
+" zu müssen."
+
+#: includes/providers/class-constant-contact.php:757
+msgid ""
+"<strong>You own your email list</strong> - Unlike with social media, your "
+"list is your property and no one can revoke your access to it."
+msgstr ""
+"<strong>Deine E-Mail-Liste gehört dir</strong> - Anders als bei Sozialen "
+"Medien gehört deine Liste dir und niemand kann dir den Zugriff darauf "
+"verweigern."
+
+#: includes/providers/class-constant-contact.php:758
+msgid ""
+"<strong>Email converts</strong> - People who buy products marketed through "
+"email spend 138% more than those who don&#39;t receive email offers."
+msgstr ""
+"<strong>E-Mail konvertiert</strong> - Menschen, die Produkte kaufen, die "
+"durch E-Mail vermarket weren, geben 138% mehr aus als solche, die keine E"
+"-Mail-Angebote erhalten."
+
+#: includes/providers/class-constant-contact.php:760
+msgid ""
+"That&#39;s why it&#39;s crucial to start collecting email addresses and "
+"building your list as soon as possible."
+msgstr ""
+"Daher ist es entscheidend, E-Mail-Adressen zu sammeln und deine Liste so "
+"schnell wie möglich aufzubauen."
+
+#. translators: %s - WPBeginners.com Guide to Email Lists URL.
+#: includes/providers/class-constant-contact.php:766
+msgid ""
+"For more details, see this guide on <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">why building your email list is so "
+"important</a>."
+msgstr ""
+"Mehr Details findest du in dieser Anleitung darüber, <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">warum der Aufbau deiner E"
+"-Mail-Liste so wichtig ist</a>."
+
+#: includes/providers/class-constant-contact.php:780
+msgid "You&#39;ve Already Started - Here&#39;s the Next Step (It&#39;s Easy)"
+msgstr ""
+"Du hast bereits begonnen - Hier ist der nächste Schritt (Es ist einfach)"
+
+#: includes/providers/class-constant-contact.php:781
+msgid "Here are the 3 things you need to build an email list:"
+msgstr ""
+"Hier sind die 3 Dinge, di du brauchst, um eine E-Mail-Liste aufzubauen:"
+
+#: includes/providers/class-constant-contact.php:783
+msgid "A Website or Blog"
+msgstr "Eine Website oder Blog"
+
+#: includes/providers/class-constant-contact.php:784
+msgid "High-Converting Form Builder"
+msgstr "Hochkonvertierender Formular-Builder"
+
+#: includes/providers/class-constant-contact.php:785
+msgid "The Best Email Marketing Service"
+msgstr "Der beste E-Mail-Marketing-Dienst"
+
+#: includes/providers/class-constant-contact.php:787
+msgid ""
+"With a powerful email marketing service like Constant Contact, you can "
+"instantly send out mass notifications and beautifully designed newsletters "
+"to engage your subscribers."
+msgstr ""
+"Mit einem mächtigen E-Mail-Marketing-Dienst wie Constant Contact kannst du "
+"Massenbenachrichtigungen und wunderschöne Newsletter sofort versenden, um "
+"damit deine Abonnenten zu begeistern."
+
+#: includes/providers/class-constant-contact.php:790
+msgid "Get Started with Constant Contact for Free"
+msgstr "Beginne kostenlos mit Constant Contact"
+
+#: includes/providers/class-constant-contact.php:793
+msgid ""
+"WPForms plugin makes it fast and easy to capture all kinds of visitor "
+"information right from your WordPress site - even if you don&#39;t have a "
+"Constant Contact account."
+msgstr ""
+"WPForms-Plugin macht es leicht, alle Arten Besucherinformationen direkt von "
+"deiner WordPress-Website zu erfassen - selbst, wenn du kein Constant-"
+"Contact-Konto hast."
+
+#: includes/providers/class-constant-contact.php:794
+msgid ""
+"But when you combine WPForms with Constant Contact, you can nurture your "
+"contacts and engage with them even after they leave your website. When you "
+"use Constant Contact + WPForms together, you can:"
+msgstr ""
+"Wenn du aber WPForms mit Constant Contact kombinierst, kannst du deine "
+"Kontakte pflegen und das selbst dann, wenn sie deine Website verlassen "
+"haben. Wenn du Constant Contact und WPForms zusammen benutzt, kannst du:"
+
+#: includes/providers/class-constant-contact.php:796
+msgid "Seamlessly add new contacts to your email list"
+msgstr "Reibungsloses Hinzufügen neuer Kontakte zu deiner E-Mail-Liste"
+
+#: includes/providers/class-constant-contact.php:797
+msgid "Create and send professional email newsletters"
+msgstr "Erstellen und Senden professioneller E-Mail-Newsletter"
+
+#: includes/providers/class-constant-contact.php:798
+msgid "Get expert marketing and support"
+msgstr "Erhalte Experten-Marketing und Support"
+
+#: includes/providers/class-constant-contact.php:802
+msgid "Try Constant Contact Today"
+msgstr "Constant Contact heute ausprobieren"
+
+#: includes/providers/class-constant-contact.php:806
+msgid "WPForms Makes List Building Easy"
+msgstr "WPForms macht das Erstellen von Listen einfach"
+
+#: includes/providers/class-constant-contact.php:807
+msgid ""
+"When creating WPForms, our goal was to make a WordPress forms plugin "
+"that&#39;s both EASY and POWERFUL."
+msgstr ""
+"Beim Erstellen von WPForms war unser Ziel, ein WordPress-Formular-Plugin zu "
+"kreieren, dass sowohl EINFACH und MÄCHTIG ist."
+
+#: includes/providers/class-constant-contact.php:808
+msgid ""
+"We made the form creation process extremely intuitive, so you can create a "
+"form to start capturing emails within 5 minutes or less."
+msgstr ""
+"Wir haben das Erstellen eines Formulars extrem intuitiv gemacht, sodass du "
+"innerhalb von 5 Minuten ein Formular erstellen und damit beginnen kannst, "
+"E-Mails einzusammeln."
+
+#: includes/providers/class-constant-contact.php:809
+msgid "Here&#39;s how it works."
+msgstr "So funktiert es."
+
+#: includes/providers/class-constant-contact.php:813
+msgid "1. Select from our pre-built templates, or create a form from scratch."
+msgstr ""
+"1. Wähle aus unseren vorgefertigten Templates oder erstelle ein ganz neues "
+"Formular"
+
+#: includes/providers/class-constant-contact.php:817
+msgid "2. Drag and drop any field you want onto your signup form."
+msgstr ""
+"2. Ziehe Felder mit Drag-and-drop dahin, wo du sie auf deinem "
+"Anmeldeformular haben willst."
+
+#: includes/providers/class-constant-contact.php:821
+msgid "3. Connect your Constant Contact email list."
+msgstr "3. Verbinde deiner Constant-Contact-E-Mail-Liste."
+
+#: includes/providers/class-constant-contact.php:825
+msgid "4. Add your new form to any post, page, or sidebar."
+msgstr ""
+"4. Füge dein neues Formular beliebigen Beiträgen, Seiten oder Seitenleisten "
+"hinzu."
+
+#: includes/providers/class-constant-contact.php:828
+msgid ""
+"It doesn&#39;t matter what kind of business you run, what kind of website "
+"you have, or what industry you are in - you need to start building your "
+"email list today."
+msgstr ""
+"Es spielt keine Rolle, welche Art Unternehmen du führst, welche Art Website "
+"du betreibst oder in welcher Industriesparte du dich bewegst - du musst "
+"heute damit beginnen, deine E-Mail-Liste aufzubauen."
+
+#: includes/providers/class-constant-contact.php:829
+msgid "With Constant Contact + WPForms, growing your list is easy."
+msgstr "Mit Constant Contact + WPForms wächst deine Liste auf einfache Weise."
+
+#: includes/emails/class-emails.php:331
+msgid ""
+"You cannot send emails with WPForms_WP_Emails() until init/admin_init has "
+"been reached."
+msgstr ""
+"Du kannst E-Mails nicht mit WPForms_WP_Emails() versenden, bis "
+"init/admin_init erreicht wurde."
+
+#: includes/emails/class-emails.php:492
+#: src/Lite/Admin/Builder/Education.php:229
+msgid "Page Break"
+msgstr "Seitenumbruch"
+
+#: includes/emails/class-emails.php:508 includes/emails/class-emails.php:550
+#: includes/fields/class-base.php:1402
+msgid "(empty)"
+msgstr "(leer)"
+
+#. translators: %d - field ID.
+#: includes/emails/class-emails.php:514 includes/emails/class-emails.php:556
+#: src/Pro/Admin/Entries/PrintPreview.php:221
+msgid "Field ID #%d"
+msgstr "Feld-ID #%d"
+
+#: includes/emails/class-emails.php:568
+msgid "An empty form was submitted."
+msgstr "Ein leeres Formular wurde übermittelt."
+
+#. translators: %s - link to a site.
+#: includes/emails/templates/footer-default.php:41
+msgid "Sent from %s"
+msgstr "Gesendet von %s"
+
+#: includes/admin/class-about.php:77 includes/admin/class-menu.php:71
+msgid "Form Entries"
+msgstr "Formulareinträge"
+
+#: includes/admin/class-about.php:78
+msgid "Form Fields"
+msgstr "Formularfelder"
+
+#: includes/admin/class-about.php:79 includes/admin/class-welcome.php:167
+msgid "Form Templates"
+msgstr "Formular-Templates"
+
+#: includes/admin/class-about.php:80 includes/admin/class-welcome.php:179
+msgid "Smart Conditional Logic"
+msgstr "Intelligente Bedingte Logik"
+
+#: includes/admin/class-about.php:81
+msgid "Marketing Integrations"
+msgstr "Marketing-Integration"
+
+#: includes/admin/class-about.php:82
+msgid "Payment Forms"
+msgstr "Zahlungs-Formulare"
+
+#: includes/admin/class-about.php:83
+msgid "Surveys & Polls"
+msgstr "Umfragen und Abstimmungen"
+
+#: includes/admin/class-about.php:84
+msgid "Advanced Form Features"
+msgstr "Erweiterte Formular-Funktionen"
+
+#: includes/admin/class-about.php:86
+#: includes/templates/class-suggestion.php:55
+msgid "Customer Support"
+msgstr "Kunden-Support"
+
+#: includes/admin/class-about.php:116
+msgid "About Us"
+msgstr "Über Uns"
+
+#: includes/admin/class-about.php:117
+msgid "Getting Started"
+msgstr "Jetzt loslegen"
+
+#. translators: $s - license type.
+#: includes/admin/class-about.php:127
+msgid "%s vs Pro"
+msgstr "%s vs Pro"
+
+#: includes/admin/class-about.php:239
+msgid ""
+"Hello and welcome to WPForms, the most beginner friendly drag & drop "
+"WordPress forms plugin. At WPForms, we build software that helps you create "
+"beautiful responsive online forms for your website in minutes."
+msgstr ""
+"Hallo und Willkommen zu WPForms, dem einsteigerfreundlichsten Drag-and-drop-"
+"WordPress-Formular-Plugin. Bei WPForms erstellen wir Software, die dir "
+"eröglicht, wunderschöne, responsive Online-Formulare für deine Website "
+"innerhalb von Minuten zu erstellen."
+
+#: includes/admin/class-about.php:243
+msgid ""
+"Over the years, we found that most WordPress contact form plugins were "
+"bloated, buggy, slow, and very hard to use. So we started with a simple "
+"goal: build a WordPress forms plugin that’s both easy and powerful."
+msgstr ""
+"Über die Jahre fanden wir die meisten WordPress-Kontaktformular-Plugin "
+"aufgeblasen, fehlerhaft, langsam und schwer zu benutzen. So sind wir mit "
+"einem einfachen Ziel angetreten: Ein WordPress-Formular-Plugin zu erstellen,"
+" dass sowohl einfach als auch mächtig ist."
+
+#: includes/admin/class-about.php:246
+msgid ""
+"Our goal is to take the pain out of creating online forms and make it easy."
+msgstr ""
+"Unser Ziel ist es, das Erstellen von Online-Formularen schmerzlos und "
+"einfach zu machen."
+
+#. translators: %1$s - WPBeginner URL, %2$s - OptinMonster URL, %3$s -
+#. MonsterInsights URL.
+#: includes/admin/class-about.php:253
+msgid ""
+"WPForms is brought to you by the same team that’s behind the largest "
+"WordPress resource site, <a href=\"%1$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">WPBeginner</a>, the most popular lead-generation software, <a "
+"href=\"%2$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">OptinMonster</a>, and the best WordPress analytics plugin, <a "
+"href=\"%3$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">MonsterInsights</a>."
+msgstr ""
+"WPForms kommt von demselben Team, das hinter der größten WordPress-"
+"Ressourcen-Website steckt, <a href=\"%1$s\" target=\"_blank\" rel=\"noopener"
+" noreferrer\">WPBeginner</a>, der beliebtesten Lead-erzeugenden Software, <a"
+" href=\"%2$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">OptinMonster</a> und des besten WordPress-Analyse-Plugins, <a "
+"href=\"%3$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">MonsterInsights</a>."
+
+#: includes/admin/class-about.php:269
+msgid ""
+"Yup, we know a thing or two about building awesome products that customers "
+"love."
+msgstr ""
+"Ja, wir verstehen das eine oder andere davon, wie man tolle Produkte "
+"erstellt, die die Kunden lieben."
+
+#: includes/admin/class-about.php:275
+msgid "The WPForms Team photo"
+msgstr "Das WPForms-Teamfoto"
+
+#: includes/admin/class-about.php:277
+msgid "The WPForms Team: Ethan, Jess, Slava, Syed, Jared, and Lindsay."
+msgstr "Das WPForms-Team: Ethan, Jess, Slava, Syed, Jared und Lindsay."
+
+#: includes/admin/class-about.php:278
+msgid "Not pictured: Pavlo, Matt, Calista, Daisy, Ijiene."
+msgstr "Nicht im Bild: Pavlo, Matt, Calista, Daisy, Ijiene."
+
+#: includes/admin/class-about.php:293 includes/admin/admin.php:123
+msgid "Active"
+msgstr "Aktiv"
+
+#: includes/admin/class-about.php:296 includes/admin/admin.php:122
+msgid "Activated"
+msgstr "Aktiviert"
+
+#: includes/admin/class-about.php:301 includes/admin/admin.php:125
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: includes/admin/class-about.php:304 includes/admin/admin.php:121
+#: includes/admin/admin.php:152
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: includes/admin/class-about.php:311 includes/admin/class-tools.php:277
+msgid "Not Installed"
+msgstr "Nicht installiert"
+
+#: includes/admin/class-about.php:314
+msgid "Install Plugin"
+msgstr "Plugin installieren"
+
+#. translators: %s - status text.
+#: includes/admin/class-about.php:335
+msgid "Status: %s"
+msgstr "Status: %s"
+
+#: includes/admin/class-about.php:371
+msgid "Creating Your First Form"
+msgstr "Dein erstes Formular erstellen"
+
+#: includes/admin/class-about.php:375
+msgid ""
+"Want to get started creating your first form with WPForms? By following the "
+"step by step instructions in this walkthrough, you can easily publish your "
+"first form on your site."
+msgstr ""
+"Willst du damit beginnen, dein erstes Formular mit WPForms zu erstellen? "
+"Folge der Schritt-für-Schritt-Anleitung in dieser Beschreibung und du kannst"
+" dein erstes Formular ganz einfach auf deiner Website veröffentlichen."
+
+#: includes/admin/class-about.php:379
+msgid ""
+"To begin, you’ll need to be logged into the WordPress admin area. Once "
+"there, click on WPForms in the admin sidebar to go the Forms Overview page."
+msgstr ""
+"Um anzufangen, musst du im WordPress-Adminbereich angemeldet sein. Sobald du"
+" dort bist, klicke in der Admin-Seitenleiste auf WPForms, um zur Formular-"
+"Übersichtsseite zu gelangen."
+
+#: includes/admin/class-about.php:383
+msgid ""
+"In the Forms Overview page, the forms list will be empty because there are "
+"no forms yet. To create a new form, click on the Add New button, and this "
+"will launch the WPForms Form Builder."
+msgstr ""
+"Auf der Formular-Übersichtsseite wird die Liste der Formulare leer sein, "
+"weil es noch keine Formulare gibt. Klicke auf den Neues-Formular-hinzufügen-"
+"Button, um ein neues Formular zu erstellen. Dies wird den WPForms-Formular-"
+"Builder aufrufen."
+
+#: includes/admin/class-about.php:389
+msgid "How to Add a New Form"
+msgstr "So erstellst du ein neues Formular"
+
+#: includes/admin/class-about.php:394
+msgid "How to Customize Form Fields"
+msgstr "So individualisierst du Formularfelder"
+
+#: includes/admin/class-about.php:399
+msgid "How to Display Forms on Your Site"
+msgstr "So zeigst du Formulare auf deiner Website an"
+
+#: includes/admin/class-about.php:423
+msgid ""
+"Thanks for being a loyal WPForms Lite user. <strong>Upgrade to WPForms "
+"Pro</strong> to unlock all the awesome features and experience<br>why "
+"WPForms is consistently rated the best WordPress form builder."
+msgstr ""
+"Danke, dass du ein treuer Benutzer von WPForms Lite bist. Führe ein "
+"<strong>Upgrade auf WPForms Pro</strong> durch, um all seine tollen "
+"Funktionen freizuschalten und erfahre, <br>warum WPForms immer wieder als "
+"der beste WordPress-Formular-Builder bewertet wird."
+
+#. translators: %s - stars.
+#: includes/admin/class-about.php:437
+msgid ""
+"We know that you will truly love WPForms. It has over <strong>2000+ five "
+"star ratings</strong> (%s) and is active on over 1 million websites."
+msgstr ""
+"Wir erwarten, dass du WPForms lieben wirst. Es hat über <strong>2000+ Fünf-"
+"Sterne-Bewertungen</strong> (%s) und ist auf über 1 Million Websites aktiv."
+
+#: includes/admin/class-about.php:458
+msgid "Entry Management - view all leads in one place."
+msgstr "Eintragsverwaltung - Alle Leads an einem Ort anzeigen."
+
+#: includes/admin/class-about.php:462
+msgid "All form features like file upload, pagination, etc."
+msgstr ""
+"Alle Formularfunktionen wie Hochladen von Dateien, Seitennummerierung etc."
+
+#: includes/admin/class-about.php:466
+msgid "Create surveys & polls with the surveys addon."
+msgstr "Umfragen und Abstimmungen erstellen mit dem Umfragen-Add-on."
+
+#: includes/admin/class-about.php:470
+msgid "WordPress user registration and login forms."
+msgstr "WordPress-Benutzer-Registrierungs- und Anmeldeformulare."
+
+#: includes/admin/class-about.php:474
+msgid "Create payment forms with Stripe and PayPal."
+msgstr "Bezahlformulare mit Stripe und PayPal erstellen."
+
+#: includes/admin/class-about.php:482
+msgid "Powerful Conditional Logic so you can create smart forms."
+msgstr ""
+"Mächtige bedingte Logik, sodass du intelligente Formulare erstellen kannst."
+
+#: includes/admin/class-about.php:486
+msgid "500+ integrations with different marketing & payment services."
+msgstr "500+ Integrationen mit verschiedenen Marketing- und Zahlungsdiensten."
+
+#: includes/admin/class-about.php:490
+msgid "Collect signatures, geo-location data, and more."
+msgstr "Sammle Signaturen, Geolocation-Daten und mehr."
+
+#: includes/admin/class-about.php:494
+msgid "Accept user submitted content with Post Submissions addon."
+msgstr ""
+"Vom Benutzer übermittelte Inhalte mit dem Post Submissions Add-on "
+"akzeptieren."
+
+#: includes/admin/class-about.php:498
+msgid "Bonus form templates, form abandonment, and more."
+msgstr "Bonus-Formular-Templates, Formularabbruch und mehr."
+
+#: includes/admin/class-about.php:513 includes/admin/class-about.php:696
+msgid "Get WPForms Pro Today and Unlock all the Powerful Features"
+msgstr ""
+"Hol dir WPForms Pro heute und schalte all seine mächtigen Funktionen frei"
+
+#: includes/admin/class-about.php:522 includes/admin/class-about.php:705
+msgid ""
+"Bonus: WPForms Lite users get <span class=\"price-20-off\">50% off regular "
+"price</span>, automatically applied at checkout."
+msgstr ""
+"Bonus: Benutzer von WPForms Lite erhalten <span class=\"price-20-off\">50% "
+"Rabatt</span>, dieser wird automatisch an der Kasse abgezogen."
+
+#: includes/admin/class-about.php:543
+msgid "How to Choose the Right Form Field"
+msgstr "So wählst du das korrekte Formularfeld aus"
+
+#: includes/admin/class-about.php:547
+msgid ""
+"Are you wondering which form fields you have access to in WPForms and what "
+"each field does? WPForms has lots of field types to make creating and "
+"filling out forms easy. In this tutorial, we’ll cover all of the fields "
+"available in WPForms."
+msgstr ""
+"Fragst du dich, auf welche Formularfelder du in WPForms Zugriff hast und was"
+" jedes Feld tut? WPForms hat viele Feldtypen, um das Erstellen und Ausfüllen"
+" von Formularen zu erleichtern. In diesem Tutorial werden wir alle in "
+"WPForms verfügbaren Felder behandeln."
+
+#: includes/admin/class-about.php:551 includes/admin/class-about.php:570
+#: includes/admin/class-about.php:589 includes/admin/class-about.php:608
+msgid "Read Documentation"
+msgstr "Dokumentation lesen"
+
+#: includes/admin/class-about.php:562
+msgid "A Complete Guide to WPForms Settings"
+msgstr "Eine vollständige Anleitung zu den WPForms-Einstellungen"
+
+#: includes/admin/class-about.php:566
+msgid ""
+"Would you like to learn more about all of the settings available in WPForms?"
+" In addition to tons of customization options within the form builder, "
+"WPForms has an extensive list of plugin-wide options available. This "
+"includes choosing your currency, adding GDPR enhancements, setting up "
+"integrations."
+msgstr ""
+"Möchtest du mehr über all die Einstellungen erfahren, die WPForms anbietet? "
+"Zusätzlich zu einer Menge Optionen zur Individualisierung innerhalb des "
+"Formular-Builders, hat WPForms eine umfangreiche Liste von Plugin-weiten "
+"Optionen zu bieten. Dies beinhaltet die Auswahl deiner Währung, DSGVO-"
+"Erweiterungen und das Einrichten von Integrationen."
+
+#: includes/admin/class-about.php:581
+msgid "How to Create GDPR Compliant Forms"
+msgstr "So erstellst du DSGVO-konforme Formulare"
+
+#: includes/admin/class-about.php:585
+msgid ""
+"Do you need to check that your forms are compliant with the European Union’s"
+" General Data Protection Regulation? The best way to ensure GDPR compliance "
+"for your specific site is always to consult legal counsel. In this guide, "
+"we’ll discuss general considerations for GDPR compliance in your WordPress "
+"forms."
+msgstr ""
+"Musst du prüfen, ob deine Formulare der Datenschutz-Grundverordnung genügen?"
+" Der beste Weg, dies für deine bestimmte Website sicherzustellen ist, "
+"rechtliche Beratung einzuholen. In dieser Anleitung behandeln wir allgemeine"
+" Überlegungen bezüglich der DSGVO-Konformität deiner WordPress-Formulare."
+
+#: includes/admin/class-about.php:600
+msgid "How to Install and Activate WPForms Addons"
+msgstr "So installierst und aktivierst du WPForms-Add-ons"
+
+#: includes/admin/class-about.php:604
+msgid ""
+"Would you like to access WPForms addons to extend the functionality of your "
+"forms? The first thing you need to do is install WPForms. Once that’s done, "
+"let’s go ahead and look at the process of activating addons."
+msgstr ""
+"Würdest du gerne auf WPForms-Add-ons zugreifen, um die Funktionalität deiner"
+" Formulare zu erweitern? Als erstes musst du WPForms installieren. Danach "
+"schau dir bitte den Prozess an, wie du Add-ons aktivierst."
+
+#: includes/admin/class-about.php:632
+msgid ""
+"Get the most out of WPForms by upgrading to Pro and unlocking all of the "
+"powerful features."
+msgstr ""
+"Hol das meiste aus WPForms heraus, indem du ein Upgrade auf Pro durchführst "
+"und all seine mächtigen Funktionen freischaltest."
+
+#: includes/admin/class-about.php:641
+msgid "Feature"
+msgstr "Funktion"
+
+#: includes/admin/class-about.php:651
+msgid "Pro"
+msgstr "Pro"
+
+#: includes/admin/class-about.php:733 src/Lite/Admin/DashboardWidget.php:360
+msgid "MonsterInsights"
+msgstr "MonsterInsights"
+
+#: includes/admin/class-about.php:734
+msgid ""
+"MonsterInsights makes it “effortless” to properly connect your WordPress "
+"site with Google Analytics, so you can start making data-driven decisions to"
+" grow your business."
+msgstr ""
+"MonsterInsights macht es dir leicht, deine WordPress-Website korrekt mit "
+"Google Analytics zu verbinden, sodass du deine Entscheidungen aufgrund von "
+"Daten treffen kannst, die dein Business zum Wachsen bringen."
+
+#: includes/admin/class-about.php:739
+msgid "OptinMonster"
+msgstr "OptinMonster"
+
+#: includes/admin/class-about.php:740
+msgid ""
+"Our high-converting optin forms like Exit-Intent® popups, Fullscreen Welcome"
+" Mats, and Scroll boxes help you dramatically boost conversions and get more"
+" email subscribers."
+msgstr ""
+"Unsere hochkonvertierenden Optin-Formulare wie Exit-Intent® Popups, "
+"Fullscreen Welcome Mats und Scroll-Boxen helfen dir, Konversionen dramatisch"
+" zu steigern und mehr E-Mail-Abonnenten zu generieren."
+
+#: includes/admin/class-about.php:745
+msgid "WP Mail SMTP"
+msgstr "WP Mail SMTP"
+
+#: includes/admin/class-about.php:746
+msgid ""
+"SMTP (Simple Mail Transfer Protocol) is an industry standard for sending "
+"emails. SMTP helps increase email deliverability by using proper "
+"authentication."
+msgstr ""
+"SMTP (Simple Mail Transfer Protocol) ist ein Industriestandard für das "
+"Senden von E-Mails. SMTP hilft dabei, die Zustellbarkeit von E-Mails zu "
+"verbessern, indem es eine korrekte Authentifizierung verwendet."
+
+#: includes/admin/class-about.php:771
+msgid "Entries via Email Only"
+msgstr "Einträge nur via E-Mail"
+
+#: includes/admin/class-about.php:777 includes/admin/class-about.php:783
+#: includes/admin/class-about.php:789
+msgid "Complete Entry Management inside WordPress"
+msgstr "Komplette Eintragsverwaltung innerhalb von WordPress"
+
+#: includes/admin/class-about.php:797
+msgid "Standard Fields Only"
+msgstr "Nur Standardfelder"
+
+#: includes/admin/class-about.php:798
+msgid ""
+"Name, Email, Single Line Text, Paragraph Text, Dropdown, Multiple Choice, "
+"Checkboxes, and Numbers"
+msgstr ""
+"Name, E-Mail, Einzeiliger Text, Absatz, Drop-down, Multiple Choice, "
+"Auswahlboxen und Zahlen"
+
+#: includes/admin/class-about.php:804 includes/admin/class-about.php:811
+#: includes/admin/class-about.php:818
+msgid "Access to all Standard and Fancy Fields"
+msgstr "Zugang zu allen Standardfeldern und Fancy Fields"
+
+#: includes/admin/class-about.php:805 includes/admin/class-about.php:812
+#: includes/admin/class-about.php:819
+msgid ""
+"Address, Phone, Website URL, Date/Time, Password, File Upload, HTML, "
+"Pagebreaks, Section Dividers, Ratings, and Hidden Field"
+msgstr ""
+"Adresse, Telefon, Website-URL, Datum/Zeit, Passwort, Datei-Upload, HTML, "
+"Seitenumbrüche, Abschnitt-Teiler, Bewertungen und Verborgenes Feld"
+
+#: includes/admin/class-about.php:827
+msgid "Not available"
+msgstr "Nicht verfügbar"
+
+#: includes/admin/class-about.php:833 includes/admin/class-about.php:839
+#: includes/admin/class-about.php:845
+msgid "Powerful Form Logic for Building Smart Forms"
+msgstr "Mächtige Formular-Logik zum Erstellen intelligenter Formulare"
+
+#: includes/admin/class-about.php:853 includes/admin/class-about.php:859
+#: includes/admin/class-about.php:865
+msgid "Basic Form Templates"
+msgstr "Basis-Formular-Templates"
+
+#: includes/admin/class-about.php:871
+msgid "All Form Templates including Bonus 150+ pre-made form templates."
+msgstr ""
+"Alle Formular-Templates inklusive Bonus 150+ vorgefertigte Formular-"
+"Templates"
+
+#: includes/admin/class-about.php:879 includes/admin/class-about.php:886
+msgid "Limited Marketing Integration"
+msgstr "Eingeschränkte Marketing-Integration"
+
+#: includes/admin/class-about.php:880 includes/admin/class-about.php:887
+msgid "Constant Contact only"
+msgstr "Nur Constant Contact"
+
+#: includes/admin/class-about.php:893
+msgid "6 Email Marketing Integrations"
+msgstr "6 E-Mail-Marketing-Integrationen"
+
+#: includes/admin/class-about.php:894
+msgid ""
+"Constant Contact, Mailchimp, AWeber, GetResponse, Campaign Monitor, and Drip"
+msgstr ""
+"Constant Contact, MailChimp, AWeber, GetResponse, Campaign Monitor und Drip"
+
+#: includes/admin/class-about.php:900
+msgid "All Marketing Integrations"
+msgstr "Alle Marketing-Integrationen"
+
+#: includes/admin/class-about.php:901
+msgid ""
+"Constant Contact, MailChimp, AWeber, GetResponse, Campaign Monitor, and "
+"Drip."
+msgstr ""
+"Constant Contact, MailChimp, AWeber, GetResponse, Campaign Monitor und Drip."
+
+#: includes/admin/class-about.php:904
+msgid "<strong>Bonus:</strong> 500+ integrations with Zapier."
+msgstr "<strong>Bonus:</strong> 500+ Integrationen mit Zapier."
+
+#: includes/admin/class-about.php:916 includes/admin/class-about.php:922
+#: includes/admin/class-about.php:928 includes/admin/class-about.php:943
+#: includes/admin/class-about.php:949 includes/admin/class-about.php:955
+msgid "Not Available"
+msgstr "Nicht verfügbar"
+
+#: includes/admin/class-about.php:934
+msgid "Create Payment Forms"
+msgstr "Zahlungsformulare erstellen"
+
+#: includes/admin/class-about.php:935
+msgid "Accept payments using Stripe (credit card) and PayPal"
+msgstr "Zahlungen von Stripe akzeptieren (Kreditkarte) und PayPal"
+
+#: includes/admin/class-about.php:961
+msgid "Create interactive Surveys and Polls with beautiful reports"
+msgstr ""
+"Erstelle interaktive Umfragen und Abstimmungen mit wunderschönen Berichten"
+
+#: includes/admin/class-about.php:969
+msgid "No Advanced Features"
+msgstr "Keine erweiterten Funktionen"
+
+#: includes/admin/class-about.php:975 includes/admin/class-about.php:982
+msgid "Limited Advanced Features"
+msgstr "Eingeschränkte erweiterte Funktionen"
+
+#: includes/admin/class-about.php:976 includes/admin/class-about.php:983
+msgid ""
+"Multi-page Forms, File Upload Forms, File Upload Forms, Multiple Form "
+"Notifications, Conditional Form Confirmation"
+msgstr ""
+"Multi-page Forms, File Upload Forms, Multiple Form Notifications, "
+"Conditional Form Confirmation"
+
+#: includes/admin/class-about.php:989
+msgid "All Advanced Features"
+msgstr "Alle erweiterten Funktionen"
+
+#: includes/admin/class-about.php:990
+msgid ""
+"Multi-page Forms, File Upload Forms, Multiple Form Notifications, "
+"Conditional Form Confirmation, Custom CAPTCHA, Offline Forms, Signature "
+"Forms"
+msgstr ""
+"Multi-page Forms, File Upload Forms, Multiple Form Notifications, "
+"Conditional Form Confirmation, Custom CAPTCHA, Offline Forms, Signature "
+"Forms"
+
+#: includes/admin/class-about.php:998
+msgid "No Addons Included"
+msgstr "Keine Add-ons enthalten"
+
+#: includes/admin/class-about.php:1004
+msgid "Custom Captcha Addon included"
+msgstr "Custom Captcha Add-on enthalten"
+
+#: includes/admin/class-about.php:1010
+msgid "Email Marketing Addons included"
+msgstr "E-Mail-Marketing-Add-ons enthalten"
+
+#: includes/admin/class-about.php:1016
+msgid "All Addons Included"
+msgstr "Alle Add-ons enthalten"
+
+#: includes/admin/class-about.php:1017
+msgid ""
+"Form Abandonment, Front-end Post Submission, User Registration, Geo-"
+"location, and more (17 total)"
+msgstr ""
+"Form Abandonment, Front-end Post Submission, User Registration, Geo-location"
+" und mehr (17 gesamt)"
+
+#: includes/admin/class-about.php:1025
+msgid "Limited Support"
+msgstr "Eingeschränkter Support"
+
+#: includes/admin/class-about.php:1031 includes/admin/class-about.php:1037
+msgid "Standard Support"
+msgstr "Standard-Support"
+
+#: includes/admin/class-about.php:1043 includes/admin/class-welcome.php:250
+msgid "Priority Support"
+msgstr "Bevorzugter Support"
+
+#: includes/admin/importers/class-contact-form-7.php:93
+msgid "Unknown Form"
+msgstr "Unbekanntes Formular"
+
+#: includes/admin/importers/class-contact-form-7.php:94
+msgid "The form you are trying to import does not exist."
+msgstr "Das Formular, das du importieren willst, existiert nicht."
+
+#: includes/admin/importers/class-contact-form-7.php:115
+#: includes/admin/importers/class-ninja-forms.php:123
+#: includes/admin/builder/panels/class-settings.php:119
+#: includes/admin/builder/panels/class-fields.php:142
+msgid "Submit"
+msgstr "Absenden"
+
+#: includes/admin/importers/class-contact-form-7.php:116
+#: includes/admin/importers/class-ninja-forms.php:124
+#: includes/admin/importers/class-pirate-forms.php:440
+msgid "Sending"
+msgstr "Senden"
+
+#: includes/admin/importers/class-contact-form-7.php:121
+#: includes/admin/importers/class-ninja-forms.php:129
+msgid "Notification 1"
+msgstr "Benachrichtigung 1"
+
+#: includes/admin/importers/class-contact-form-7.php:147
+#: includes/admin/importers/class-ninja-forms.php:155
+#: includes/admin/importers/class-pirate-forms.php:426
+msgid "No form fields found."
+msgstr "Keine Formularfelder gefunden."
+
+#: includes/admin/importers/class-contact-form-7.php:316
+msgid "Acceptance Field"
+msgstr "Annehmen-Feld"
+
+#: includes/admin/importers/class-contact-form-7.php:411
+msgid "Notification 2"
+msgstr "Benachrichtigung 2"
+
+#. translators: %1$s - field type; %2$s - field name if available.
+#: includes/admin/importers/class-contact-form-7.php:504
+msgid "%1$s Field %2$s"
+msgstr "%1$s Feld %2$s"
+
+#: includes/admin/importers/class-ninja-forms.php:231
+#: includes/admin/importers/class-pirate-forms.php:243
+#: includes/admin/importers/class-pirate-forms.php:335
+msgid "Single Checkbox Field"
+msgstr "Einzelnes Auswahlfeld"
+
+#: includes/admin/importers/class-ninja-forms.php:406
+#: includes/admin/importers/class-ninja-forms.php:422
+msgid "Notification"
+msgstr "Benachrichtigung"
+
+#. translators: %1$s - field type; %2$s - field name if available.
+#: includes/admin/importers/class-ninja-forms.php:476
+msgid "%1$s Field"
+msgstr "%1$s Feld"
+
+#: includes/admin/importers/class-base.php:114
+msgid "There was an error while creating a new form."
+msgstr "Beim Erstellen eines neuen Formulars ist ein Fehler aufgetreten."
+
+#: includes/admin/importers/class-pirate-forms.php:88
+#: includes/admin/importers/class-pirate-forms.php:176
+msgid "Default Form"
+msgstr "Standardformular"
+
+#: includes/admin/class-review.php:96
+msgid ""
+"Hey, I noticed you collected over 50 entries from WPForms - that’s awesome! "
+"Could you please do me a BIG favor and give it a 5-star rating on WordPress "
+"to help us spread the word and boost our motivation?"
+msgstr ""
+"Hallo, ich habe festgestellt, dass du über 50 Einträge mit WPForms gesammelt"
+" hast - das ist toll! Kannst du mir bitte einen RIESEN-Gefallen tun und ihm "
+"eine 5-Sterne-Bewertung auf WordPress geben, um uns zu helfen, bekannter zu "
+"werden und unsere Motivation anzukurbeln?"
+
+#: includes/admin/class-review.php:97 includes/admin/class-review.php:161
+msgid "~ Syed Balkhi<br>Co-Founder of WPForms"
+msgstr "~ Syed Balkhi<br>Mitbegründer von WPForms"
+
+#: includes/admin/class-review.php:99 includes/admin/class-review.php:163
+msgid "Ok, you deserve it"
+msgstr "Ok, ihr verdient es"
+
+#: includes/admin/class-review.php:100 includes/admin/class-review.php:164
+msgid "Nope, maybe later"
+msgstr "Nein, vielleicht später"
+
+#: includes/admin/class-review.php:101 includes/admin/class-review.php:165
+msgid "I already did"
+msgstr "Hab ich schon"
+
+#: includes/admin/class-review.php:160
+msgid ""
+"Hey, I noticed you created a contact form with WPForms - that’s awesome! "
+"Could you please do me a BIG favor and give it a 5-star rating on WordPress "
+"to help us spread the word and boost our motivation?"
+msgstr ""
+"Hallo, ich habe festgestellt, dass du ein Kontaktformular mit WPForms "
+"erstellt hast - das ist toll! Kannst du mir bitte einen RIESEN-Gefallen tun "
+"und ihm eine 5-Sterne-Bewertung auf WordPress geben, um uns zu helfen, "
+"bekannter zu werden und unsere Motivation anzukurbeln?"
+
+#. translators: $1$s - WPForms plugin name; $2$s - WP.org review link; $3$s -
+#. WP.org review link.
+#: includes/admin/class-review.php:218
+msgid ""
+"Please rate %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href=\"%3$s\" "
+"target=\"_blank\" rel=\"noopener\">WordPress.org</a> to help us spread the "
+"word. Thank you from the WPForms team!"
+msgstr ""
+"Bitte mit %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> auf <a href=\"%3$s\" "
+"target=\"_blank\" rel=\"noopener\">WordPress.org</a> bewerten, um uns zu "
+"helfen, bekannter zu werden. Das WPForms-Team sagt Danke!"
+
+#. translators: %s - ID of a setting.
+#: includes/admin/settings-api.php:75
+msgid "The callback function used for the %s setting is missing."
+msgstr "Die Callback-Funktion für die %s Einstellung fehlt."
+
+#: includes/admin/settings-api.php:106
+msgid "You're using WPForms Lite - no license needed. Enjoy!"
+msgstr "Du benutzt WPForms Lite - keine Lizenz nötig. Viel Spaß!"
+
+#. translators: %s - WPForms.com upgrade URL.
+#: includes/admin/settings-api.php:112
+msgid ""
+"To unlock more features consider <strong><a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\" class=\"wpforms-upgrade-modal\">upgrading to "
+"PRO</a></strong>."
+msgstr ""
+"Um weitere Funktionen freizuschalten, <strong><a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-upgrade-"
+"modal\">führe ein Upgrade auf PRO durch</a></strong>."
+
+#: includes/admin/settings-api.php:129
+msgid ""
+"As a valued WPForms Lite user you receive <strong>50% off</strong>, "
+"automatically applied at checkout!"
+msgstr ""
+"Als geschätzter Benutzer von WPForms Lite erhältst du <strong>50% "
+"Rabatt</strong>, dieser wird automatisch an der Kasse abgezogen!"
+
+#: includes/admin/settings-api.php:144
+msgid "Verify Key"
+msgstr "Schlüssel überprüfen"
+
+#: includes/admin/settings-api.php:148
+msgid "Deactivate Key"
+msgstr "Schlüssel deaktivieren"
+
+#. translators: $s - license type.
+#: includes/admin/settings-api.php:155
+msgid "Your license key type is %s."
+msgstr "Dein Lizenzschlüsseltyp ist %s."
+
+#: includes/admin/settings-api.php:161
+msgid ""
+"If your license has been upgraded or is incorrect, <a href=\"#\" id"
+"=\"wpforms-setting-license-key-refresh\">click here to force a refresh</a>."
+msgstr ""
+"Falls du ein Upgrade deiner Lizenz durchgeführt hast oder diese inkorrekt "
+"ist, <a href=\"#\" id=\"wpforms-setting-license-key-refresh\">hier klicken, "
+"um sie zu aktualisieren</a>."
+
+#: includes/admin/settings-api.php:317 includes/fields/class-base.php:820
+#: includes/fields/class-base.php:951
+msgid "Upload Image"
+msgstr "Bild hochladen"
+
+#: includes/admin/ajax-actions.php:24 includes/fields/class-base.php:1579
+msgid "You do not have permission."
+msgstr "Du hast keine Berechtigung."
+
+#: includes/admin/ajax-actions.php:29
+msgid "No data provided"
+msgstr "Keine Daten angegeben"
+
+#: includes/admin/ajax-actions.php:69
+msgid "An error occurred and the form could not be saved"
+msgstr ""
+"Ein Fehler ist aufgetreten und das Formular konnte nicht gespeichert werden"
+
+#: includes/admin/ajax-actions.php:100
+msgid "No form name provided"
+msgstr "Kein Formularname angegeben"
+
+#: includes/admin/ajax-actions.php:137
+msgid "Error creating form"
+msgstr "Fehler beim Erstellen des Formulars"
+
+#: includes/admin/ajax-actions.php:155
+msgid "No form ID provided"
+msgstr "Keine Formular-ID angegeben"
+
+#: includes/admin/ajax-actions.php:185
+msgid "Error updating form template"
+msgstr "Fehler bei der Aktualisierung des Formular-Templates"
+
+#: includes/admin/ajax-actions.php:293 includes/fields/class-base.php:838
+msgid "post type"
+msgstr "Beitragstyp"
+
+#: includes/admin/ajax-actions.php:324 includes/fields/class-base.php:845
+msgid "taxonomy"
+msgstr "Taxonomie"
+
+#: includes/admin/ajax-actions.php:384
+msgid "Success! Your server can make SSL connections."
+msgstr "Erfolg! Dein Server kann SSL-Verbindungen herstellen."
+
+#: includes/admin/ajax-actions.php:391
+msgid ""
+"There was an error and the connection failed. Please contact your web host "
+"with the technical details below."
+msgstr ""
+"Ein Fehler ist aufgetreten und die Verbindung ist fehlgeschlagen. Bitte "
+"kontaktiere deinen Webhost mit den technischen Details unten."
+
+#: includes/admin/ajax-actions.php:422
+msgid "Plugin deactivated."
+msgstr "Plugin deaktiviert."
+
+#: includes/admin/ajax-actions.php:424
+msgid "Addon deactivated."
+msgstr "Add-on deaktiviert."
+
+#: includes/admin/ajax-actions.php:428
+msgid ""
+"Could not deactivate the addon. Please deactivate from the Plugins page."
+msgstr ""
+"Add-on konnte nicht deaktiviert werden. Bitte deaktiviere es auf der "
+"Plugins-Seite."
+
+#: includes/admin/ajax-actions.php:458
+msgid "Plugin activated."
+msgstr "Plugin aktiviert."
+
+#: includes/admin/ajax-actions.php:460
+msgid "Addon activated."
+msgstr "Add-on aktiviert."
+
+#: includes/admin/ajax-actions.php:465
+msgid "Could not activate addon. Please activate from the Plugins page."
+msgstr ""
+"Add-on konnte nicht aktiviert werden. Bitte aktiviere es auf der Plugins-"
+"Seite."
+
+#: includes/admin/ajax-actions.php:484
+msgid ""
+"Could not install addon. Please download from wpforms.com and install "
+"manually."
+msgstr ""
+"Add-on konnte nicht installiert werden. Bitte lade es von wpforms.com "
+"herunter und installiere es manuell."
+
+#: includes/admin/ajax-actions.php:549
+msgid "Plugin installed & activated."
+msgstr "Plugin installiert und aktiviert."
+
+#: includes/admin/ajax-actions.php:549
+msgid "Addon installed & activated."
+msgstr "Add-on installiert und aktiviert."
+
+#: includes/admin/ajax-actions.php:557
+msgid "Plugin installed."
+msgstr "Plugin installiert."
+
+#: includes/admin/ajax-actions.php:557
+msgid "Addon installed."
+msgstr "Add-on installiert."
+
+#: includes/admin/class-tools.php:98 includes/admin/class-tools.php:255
+#: includes/admin/class-tools.php:295 includes/admin/class-tools.php:358
+msgid "Import"
+msgstr "importieren"
+
+#: includes/admin/class-tools.php:99 includes/admin/class-tools.php:540
+msgid "Export"
+msgstr "Export"
+
+#: includes/admin/class-tools.php:100
+msgid "System Info"
+msgstr "Systeminformation"
+
+#. translators: %s - Forms list page URL.
+#: includes/admin/class-tools.php:190
+msgid ""
+"Import was successfully finished. You can go and <a href=\"%s\">check your "
+"forms</a>."
+msgstr ""
+"Import wurde erfolgreich beendet. Du kannst nun <a href=\"%s\">deine "
+"Formulare prüfen</a>."
+
+#: includes/admin/class-tools.php:240
+msgid "WPForms Import"
+msgstr "WPForms-Import"
+
+#: includes/admin/class-tools.php:241
+msgid "Select a WPForms export file."
+msgstr "WPForms-Exportdatei auswählen."
+
+#: includes/admin/class-tools.php:245
+msgid "files selected"
+msgstr "Dateien ausgewählt"
+
+#: includes/admin/class-tools.php:247
+msgid "No file chosen"
+msgstr "Keine Datei gewählt"
+
+#: includes/admin/class-tools.php:249
+msgid "Choose a file&hellip;"
+msgstr "Datei wählen&hellip;"
+
+#: includes/admin/class-tools.php:261
+msgid "Import from Other Form Plugins"
+msgstr "Import von anderen Formular-Plugins"
+
+#: includes/admin/class-tools.php:262
+msgid "Not happy with other WordPress contact form plugins?"
+msgstr "Nicht zufrieden mit anderen WordPress-Kontaktformular-Plugins?"
+
+#: includes/admin/class-tools.php:263
+msgid ""
+"WPForms makes it easy for you to switch by allowing you import your third-"
+"party forms with a single click."
+msgstr ""
+"WPForms macht es dir den Wechsel leicht. Du kannst mit einem einzigen Klick "
+"deine Formulare von Drittanbietern importieren."
+
+#: includes/admin/class-tools.php:267
+msgid "No form importers are currently enabled."
+msgstr "Aktuell sind keine Formular-Importer aktiviert."
+
+#: includes/admin/class-tools.php:272
+msgid "Select previous contact form plugin..."
+msgstr "Vorheriges Kontaktformular-Plugin auswählen..."
+
+#: includes/admin/class-tools.php:279
+msgid "Not Active"
+msgstr "Nicht aktiv"
+
+#: includes/admin/class-tools.php:316
+msgid "Form Import"
+msgstr "Formular-Import"
+
+#: includes/admin/class-tools.php:322
+msgid "Select the forms you would like to import."
+msgstr "Formulare auswählen, die du importieren möchtest."
+
+#: includes/admin/class-tools.php:326
+msgid "Available Forms"
+msgstr "Verfügbare Formulare"
+
+#: includes/admin/class-tools.php:331
+msgid "No forms found."
+msgstr "Keine Formulare gefunden."
+
+#: includes/admin/class-tools.php:345
+msgid "Select All"
+msgstr "Alle auswählen"
+
+#: includes/admin/class-tools.php:350
+msgid "Forms to Import"
+msgstr "Formulare zum Import"
+
+#. translators: %1$s - current forms counter; %2$s - total forms counter; %3$s
+#. - provider name.
+#: includes/admin/class-tools.php:369
+msgid "Analyzing %1$s of %2$s forms from %3$s."
+msgstr "Analysiere %1$s von %2$s Formulare von %3$s."
+
+#: includes/admin/class-tools.php:377
+msgid "Heads Up!"
+msgstr "Achtung!"
+
+#: includes/admin/class-tools.php:378
+msgid ""
+"One or more of your forms contain fields that are not available in WPForms "
+"Lite. To properly import these fields, we recommend upgrading to WPForms "
+"Pro."
+msgstr ""
+"Eins oder mehr deiner Formulare beinhalten Felder, die in WPForms Lite nicht"
+" verfügbar sind. Um diese Felder korrekt zu importieren empfehlen wir, ein "
+"Upgrade auf WPForms Pro durchzuführen."
+
+#: includes/admin/class-tools.php:379
+msgid ""
+"You can continue with the import without upgrading, and we will do our best "
+"to match the fields. However, some of them will be omitted due to "
+"compatibility issues."
+msgstr ""
+"Du kannst mit dem Import fortfahren oder ein Upgrade durchzuführen und wir "
+"werden unser Bestes tun, die Felder korrekt zuzuordnen. Trotzdem werden "
+"aufgrund von Kompatibilitätsproblemen einige verworfen werden."
+
+#: includes/admin/class-tools.php:381 includes/admin/class-welcome.php:309
+#: src/Lite/Admin/DashboardWidget.php:257
+msgid "Upgrade to WPForms Pro"
+msgstr "Upgrade auf WPForms Pro durchführen"
+
+#: includes/admin/class-tools.php:382
+msgid "Continue Import without Upgrading"
+msgstr "Import ohne Upgrade fortsetzen"
+
+#: includes/admin/class-tools.php:385
+msgid "Below is the list of form fields that may be impacted:"
+msgstr ""
+"Unten ist eine Liste von Formularfeldern, die davon betroffen sein können:"
+
+#. translators: %1$s - current forms counter; %2$s - total forms counter; %3$s
+#. - provider name.
+#: includes/admin/class-tools.php:396
+msgid "Importing %1$s of %2$s forms from %3$s."
+msgstr "Importiere %1$s von %2$s Formulare von %3$s."
+
+#. translators: %s - number of imported forms.
+#: includes/admin/class-tools.php:408
+msgid ""
+"Congrats, the import process has finished! We have successfully imported %s "
+"forms. You can review the results below."
+msgstr ""
+"Gratulation, der Importvorgang wurde beendet! Wir haben %s Formulare "
+"erfolgreich importiert. Du kannst die Ergebnisse unten prüfen."
+
+#: includes/admin/class-tools.php:466
+#: includes/admin/overview/class-overview-table.php:158
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: includes/admin/class-tools.php:468
+#: includes/admin/overview/class-overview-table.php:180
+msgid "Preview"
+msgstr "Vorschau"
+
+#: includes/admin/class-tools.php:472
+msgid "The following fields are available in PRO and were not imported:"
+msgstr ""
+"Die folgenden Felder sind in PRO verfügbar und wurden nicht importiert:"
+
+#: includes/admin/class-tools.php:480
+msgid ""
+"The following fields are available in PRO and were imported as text fields:"
+msgstr ""
+"Die folgenden Felder sind in PRO verfügbar und wurden als Textfelder "
+"importiert:"
+
+#: includes/admin/class-tools.php:488
+msgid "The following fields are not supported and were not imported:"
+msgstr ""
+"Die folgenden Felder werden nicht unterstützt und wurden nicht importiert:"
+
+#: includes/admin/class-tools.php:519
+msgid "Form Export"
+msgstr "Formular-Export"
+
+#: includes/admin/class-tools.php:521
+msgid ""
+"Form exports files can be used to create a backup of your forms or to import"
+" forms into another site."
+msgstr ""
+"Formular-Exportdateien können benutzt werden, um ein Backup deiner Formulare"
+" zu erstellen oder um Formulare auf eine andere Website zu übertragen."
+
+#: includes/admin/class-tools.php:527
+msgid "Select form(s)"
+msgstr "Formular(e) auswählen"
+
+#: includes/admin/class-tools.php:534
+msgid "You need to create a form before you can use form export."
+msgstr ""
+"Du musst ein Formular erstellen, bevor du den Formular-Export benutzen "
+"kannst."
+
+#: includes/admin/class-tools.php:546
+msgid "Form Template Export"
+msgstr "Formular-Template-Export"
+
+#: includes/admin/class-tools.php:550
+msgid ""
+"The following code can be used to register your custom form template. Copy "
+"and paste the following code to your theme's functions.php file or include "
+"it within an external file."
+msgstr ""
+"Der folgende Code kann benutzt werden, um dein individuelles Formular-"
+"Template zu registrieren. Kopiere den folgenden Code in die functions.php "
+"deines Themes oder binde ihn über eine externe Datei ein."
+
+#. translators: %s - WPForms.com docs URL.
+#: includes/admin/class-tools.php:555
+msgid ""
+"For more information <a href=\"%s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">see our documentation</a>."
+msgstr ""
+"Sieh dir <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">unsere"
+" Dokumentation</a> für weitere Informationen an."
+
+#: includes/admin/class-tools.php:571
+msgid ""
+"Select a form to generate PHP code that can be used to register a custom "
+"form template."
+msgstr ""
+"Wähle ein Formular, um PHP-Code zu generieren, der für die Registrierung "
+"eines individuellen Formular-Templates benutzt werden kann."
+
+#: includes/admin/class-tools.php:584
+msgid "You need to create a form before you can generate a template."
+msgstr ""
+"Du musst ein Formular erstellen, bevor du ein Template erstellen kannst."
+
+#: includes/admin/class-tools.php:590
+msgid "Export Template"
+msgstr "Template exportieren"
+
+#: includes/admin/class-tools.php:608
+msgid "System Information"
+msgstr "Systeminformationen"
+
+#: includes/admin/class-tools.php:613
+msgid "Test SSL Connections"
+msgstr "SSL-Verbindungen testen"
+
+#: includes/admin/class-tools.php:614
+msgid ""
+"Click the button below to verify your web server can perform SSL connections"
+" successfully."
+msgstr ""
+"Klicke den Button unten, um zu überprüfen, ob dein Webserver erfolgreich "
+"SSL-Verbindungen herstellen kann."
+
+#: includes/admin/class-tools.php:615
+msgid "Test Connection"
+msgstr "Verbindung testen"
+
+#: includes/admin/class-tools.php:682
+msgid "Please upload a valid .json form export file."
+msgstr "Bitte lade eine gültige .json-Formular-Exportdatei hoch."
+
+#: includes/admin/class-tools.php:683
+msgid "Error"
+msgstr "Fehler"
+
+#: includes/admin/class-menu.php:52
+msgid "All Forms"
+msgstr "Alle Formulare"
+
+#: includes/admin/class-menu.php:61
+msgid "WPForms Builder"
+msgstr "WPForms Builder"
+
+#: includes/admin/class-menu.php:62
+#: includes/admin/overview/class-overview.php:125
+msgid "Add New"
+msgstr "Neues Formular hinzufügen"
+
+#: includes/admin/class-menu.php:72
+#: includes/admin/overview/class-overview-table.php:172
+#: src/Lite/Admin/DashboardWidget.php:139
+msgid "Entries"
+msgstr "Einträge"
+
+#: includes/admin/class-menu.php:83
+msgid "WPForms Settings"
+msgstr "WPForms-Einstellungen"
+
+#: includes/admin/class-menu.php:84 includes/admin/class-menu.php:161
+#: includes/admin/builder/panels/class-settings.php:22
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/admin/class-menu.php:93
+msgid "WPForms Tools"
+msgstr "WPForms-Werkzeuge"
+
+#: includes/admin/class-menu.php:94
+msgid "Tools"
+msgstr "Werkzeuge"
+
+#: includes/admin/class-menu.php:104
+msgid "Info"
+msgstr "Info"
+
+#: includes/admin/class-menu.php:114
+msgid "Addons"
+msgstr "Add-ons"
+
+#: includes/admin/class-menu.php:123
+msgid "About WPForms"
+msgstr "Über WPForms"
+
+#: includes/admin/class-editor.php:45 includes/admin/class-editor.php:47
+#: includes/admin/class-editor.php:130
+msgid "Add Form"
+msgstr "Formulare"
+
+#: includes/admin/class-editor.php:71
+msgid "Insert Form"
+msgstr "Formular einfügen"
+
+#: includes/admin/class-editor.php:72 includes/admin/admin.php:132
+#: includes/admin/builder/class-builder.php:330
+#: src/Pro/Admin/Entries/PrintPreview.php:190
+msgid "Close"
+msgstr "Schließen"
+
+#. translators: %s - WPForms documentation link.
+#: includes/admin/class-editor.php:82
+msgid ""
+"Heads up! Don't forget to test your form. <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">Check out our complete guide</a>!"
+msgstr ""
+"Achtung! Vergiss nicht, deine Formulare zu testen. <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">Sieh dir unsere vollständige "
+"Anleitung an</a>!"
+
+#: includes/admin/class-editor.php:97
+msgid "Select a form below to insert"
+msgstr "Wähle unten ein Formular zum Einfügen aus"
+
+#: includes/admin/class-editor.php:103
+msgid "Show form name"
+msgstr "Formularname anzeigen"
+
+#: includes/admin/class-editor.php:104
+msgid "Show form description"
+msgstr "Formularbeschreibung anzeigen"
+
+#. translators: %s - WPForms Builder page.
+#: includes/admin/class-editor.php:110
+#: includes/admin/overview/class-overview-table.php:332
+msgid ""
+"Whoops, you haven't created a form yet. Want to <a href=\"%s\">give it a "
+"go</a>?"
+msgstr ""
+"Oops, du hast noch kein Formular erstellt. Willst du <a href=\"%s\">es "
+"ausprobieren</a>?"
+
+#: includes/admin/class-editor.php:126 includes/admin/admin.php:131
+#: includes/admin/builder/class-builder.php:328
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: includes/admin/class-welcome.php:40 includes/admin/class-welcome.php:41
+#: includes/admin/class-welcome.php:118
+msgid "Welcome to WPForms"
+msgstr "Willkommen bei WPForms"
+
+#: includes/admin/class-welcome.php:114
+#: includes/admin/builder/class-builder.php:502
+#: src/Lite/Admin/DashboardWidget.php:212 src/Admin/Challenge.php:506
+msgid "Sullie the WPForms mascot"
+msgstr "Sullie, das WPForms-Maskottchen"
+
+#: includes/admin/class-welcome.php:119
+msgid ""
+"Thank you for choosing WPForms - the most powerful drag & drop WordPress "
+"form builder in the market."
+msgstr ""
+"Danke, dass du dich für WPForms entschieden hast - der mächtigste Drag-and-"
+"drop-Wordpress-Formular-Builder auf dem Markt."
+
+#: includes/admin/class-welcome.php:122 includes/admin/class-welcome.php:123
+msgid "Watch how to create your first form"
+msgstr "Sieh, wie du dein erstes Formular erstellst"
+
+#: includes/admin/class-welcome.php:128
+msgid ""
+"WPForms makes it easy to create forms in WordPress. You can watch the video "
+"tutorial or read our guide on how create your first form."
+msgstr ""
+"WPForms macht es leicht, Formulare in WordPress zu erstellen. Du kannst die "
+"Videoanleitung ansehen oder unsere Anleitung lesen, wie du dein erstes "
+"Formular erstellst."
+
+#: includes/admin/class-welcome.php:133 includes/admin/class-welcome.php:302
+msgid "Create Your First Form"
+msgstr "Erstelle dein erstes Formular"
+
+#: includes/admin/class-welcome.php:139
+msgid "Read the Full Guide"
+msgstr "Lies die vollständige Anleitung"
+
+#: includes/admin/class-welcome.php:154
+msgid "WPForms Features &amp; Addons"
+msgstr "WPForms-Funktionen und Add-ons"
+
+#: includes/admin/class-welcome.php:155
+msgid ""
+"WPForms is both easy to use and extremely powerful. We have tons of helpful "
+"features that allow us to give you everything you need from a form builder."
+msgstr ""
+"WPForms ist sowohl einfach zu benutzen als auch extrem mächtig. Wir haben "
+"jede Menge hilfreiche Funktionen, die es uns ermöglichen, dir alles "
+"anzubieten, was du von einem Formular-Builder erwartest."
+
+#: includes/admin/class-welcome.php:161
+msgid "Drag &amp; Drop Form Builder"
+msgstr "Drag-and-drop-Formular-Builder"
+
+#: includes/admin/class-welcome.php:162
+msgid ""
+"Easily create an amazing form in just a few minutes without writing any "
+"code."
+msgstr ""
+"Erstelle in wenigen Minuten ein großartiges Formular ohne eine Zeile Code zu"
+" schreiben."
+
+#: includes/admin/class-welcome.php:168
+msgid "Start with pre-built form templates to save even more time."
+msgstr ""
+"Starte mit vorgefertigten Formular-Templates, um sogar noch mehr Zeit zu "
+"sparen."
+
+#: includes/admin/class-welcome.php:173
+msgid "Responsive Mobile Friendly"
+msgstr "Responsiv, mobilgerätefreundlich"
+
+#: includes/admin/class-welcome.php:174
+msgid ""
+"WPForms is 100% responsive meaning it works on mobile, tablets & desktop."
+msgstr ""
+"WPForms ist 100% responsiv und funktioniert sowohl auf Mobilgeräten und "
+"Tablets als auch auf dem Desktop."
+
+#: includes/admin/class-welcome.php:180
+msgid "Easily create high performance forms with our smart conditional logic."
+msgstr ""
+"Erstelle mit unserer intelligenten bedingten Logik leicht leistungsfähige "
+"Formulare."
+
+#: includes/admin/class-welcome.php:185
+msgid "Instant Notifications"
+msgstr "Sofortbenachrichtigungen"
+
+#: includes/admin/class-welcome.php:186
+msgid ""
+"Respond to leads quickly with our instant form notification feature for your"
+" team."
+msgstr ""
+"Antworte schnell auf Leads mit unserer Funktion für Sofortbenachrichtigungen"
+" für dein Team."
+
+#: includes/admin/class-welcome.php:191
+msgid "Entry Management"
+msgstr "Eintragsverwaltung"
+
+#: includes/admin/class-welcome.php:192
+msgid "View all your leads in one place to streamline your workflow."
+msgstr ""
+"All deine Leads an einem Ort anzeigen, um deinen Workflow zu optimieren."
+
+#: includes/admin/class-welcome.php:197
+msgid "Payments Made Easy"
+msgstr "Zahlungen leicht gemacht"
+
+#: includes/admin/class-welcome.php:198
+msgid ""
+"Easily collect payments, donations, and online orders without hiring a "
+"developer."
+msgstr ""
+"Sammle mühelos Zahlungen, Spenden und Online-Bestellungen, ohne einen "
+"Entwickler einzustellen."
+
+#: includes/admin/class-welcome.php:203
+msgid "Marketing &amp; Subscriptions"
+msgstr "Marketing und Abonnements"
+
+#: includes/admin/class-welcome.php:204
+msgid ""
+"Create subscription forms and connect with your email marketing service."
+msgstr ""
+"Erstelle Abonnement-Formulare und verbinde deinen E-Mail-Marketing-Dienst."
+
+#: includes/admin/class-welcome.php:209
+msgid "Easy to Embed"
+msgstr "Einfach einzubetten"
+
+#: includes/admin/class-welcome.php:210
+msgid ""
+"Easily embed your forms in blog posts, pages, sidebar widgets, footer, etc."
+msgstr ""
+"Einfaches Einbetten deiner Formulare in Blogbeiträgen, Seiten, "
+"Seitenleisten-Widgets, Footer etc."
+
+#: includes/admin/class-welcome.php:215
+msgid "Spam Protection"
+msgstr "Spam-Schutz"
+
+#: includes/admin/class-welcome.php:216
+msgid "Our smart captcha and honeypot automatically prevent spam submissions."
+msgstr ""
+"Unser intelligentes Captcha- und Honeypot-System verhindern "
+"Spamübertragungen automatisch."
+
+#: includes/admin/class-welcome.php:224
+msgid "See All Features"
+msgstr "Alle Funktionen ansehen"
+
+#: includes/admin/class-welcome.php:237
+#: includes/admin/builder/panels/class-payments.php:82
+#: src/Lite/Admin/Builder/Education.php:75
+msgid "Upgrade to PRO"
+msgstr "Upgrade auf PRO"
+
+#: includes/admin/class-welcome.php:239
+msgid "PayPal"
+msgstr "PayPal"
+
+#: includes/admin/class-welcome.php:240
+msgid "Post Submissions"
+msgstr "Beitrags-Abonnements"
+
+#: includes/admin/class-welcome.php:241
+msgid "Stripe"
+msgstr "Stripe"
+
+#: includes/admin/class-welcome.php:242
+msgid "Signatures"
+msgstr "Signaturen"
+
+#: includes/admin/class-welcome.php:243
+msgid "User Registration"
+msgstr "Benutzerregistrierung"
+
+#: includes/admin/class-welcome.php:244
+msgid "Form Abandonment"
+msgstr "Formularabbruch"
+
+#: includes/admin/class-welcome.php:245
+msgid "Geolocation"
+msgstr "Geolocation"
+
+#: includes/admin/class-welcome.php:246
+msgid "Polls"
+msgstr "Abstimmungen"
+
+#: includes/admin/class-welcome.php:247
+msgid "Zapier"
+msgstr "Zapier"
+
+#: includes/admin/class-welcome.php:248
+msgid "Unlimited Sites"
+msgstr "Unbegrenzte Websites"
+
+#: includes/admin/class-welcome.php:249
+msgid "Surveys"
+msgstr "Umfragen"
+
+#: includes/admin/class-welcome.php:255
+msgid "PRO"
+msgstr "PRO"
+
+#: includes/admin/class-welcome.php:258
+msgid "per year"
+msgstr "pro Jahr"
+
+#: includes/admin/class-welcome.php:274
+msgid "Testimonials"
+msgstr "Referenzen"
+
+#: includes/admin/class-welcome.php:278
+msgid ""
+"WPForms is by far the easiest form plugin to use. My clients love it – it’s "
+"one of the few plugins they can use without any training. As a developer I "
+"appreciate how fast, modern, clean and extensible it is."
+msgstr ""
+"WPForms ist das bei weitem am einfachsten zu benutzende Formular-Plugin. "
+"Meine Kunden lieben es – es ist eines der wenigen Plugins, das sie ohne "
+"Einarbeitung benutzen können. Als Entwickler schätze ich, wie schnell, "
+"modern, aufgeräumt und erweiterbar es ist."
+
+#: includes/admin/class-welcome.php:285
+msgid ""
+"As a business owner, time is my most valuable asset. WPForms allow me to "
+"create smart online forms with just a few clicks. With their pre-built form "
+"templates and the drag & drop builder, I can create a new form that works in"
+" less than 2 minutes without writing a single line of code. Well worth the "
+"investment."
+msgstr ""
+"Als Geschäftsinhaber ist Zeit die wertvollste Ressource. WPForms ermöglicht "
+"es mir, intelligente Online-Formulare mit nur ein paar Klicks zu erstellen. "
+"Mit den vorgefertigten Formular-Templates und dem Drag-and-drop-Builder kann"
+" ich ein neues Formular innerhalb von 2 Minuten erstellen, ohne eine Zeile "
+"Code zu schreiben. Das ist eine gute Investition."
+
+#: includes/admin/admin.php:124
+msgid "Deactivate"
+msgstr "Deaktivieren"
+
+#: includes/admin/admin.php:126
+msgid "Install Addon"
+msgstr "Add-on installieren"
+
+#: includes/admin/admin.php:127
+msgid ""
+"Could not install an addon. Please download from wpforms.com and install "
+"manually."
+msgstr ""
+"Ein Add-on konnte nicht installiert werden. Bitte lade es von wpforms.com "
+"herunter und installiere es manuell."
+
+#: includes/admin/admin.php:128
+msgid ""
+"Could not install a plugin. Please download from WordPress.org and install "
+"manually."
+msgstr ""
+"Ein Plugin konnte nicht installiert werden. Bitte lade es von WordPress.org "
+"herunter und installiere es manuell."
+
+#: includes/admin/admin.php:129
+msgid "Searching Addons"
+msgstr "Add-ons durchsuchen"
+
+#: includes/admin/admin.php:133
+msgid "Are you sure you want to delete this entry?"
+msgstr "Bist du sicher, dass du diesen Eintrag löschen willst?"
+
+#: includes/admin/admin.php:134
+msgid "Are you sure you want to delete ALL entries?"
+msgstr "Bist du sicher, dass du ALLE Einträge löschen willst?"
+
+#: includes/admin/admin.php:135
+msgid "Hide Empty Fields"
+msgstr "Leere Felder verbergen"
+
+#: includes/admin/admin.php:136
+msgid "Show Empty Fields"
+msgstr "Leere Felder anzeigen"
+
+#: includes/admin/admin.php:137
+msgid "Entries Field Columns"
+msgstr "Eintragsfelder-Spalten"
+
+#: includes/admin/admin.php:138
+msgid "Are you sure you want to delete this note?"
+msgstr "Bist du sicher, dass du diese Notiz löschen willst?"
+
+#: includes/admin/admin.php:139
+msgid "Unstar entry"
+msgstr "Eintrag nicht mehr favorisieren"
+
+#: includes/admin/admin.php:140
+msgid "Star entry"
+msgstr "Eintrag favorisieren"
+
+#: includes/admin/admin.php:141
+msgid "Mark entry read"
+msgstr "Eintrag als gelesen markieren"
+
+#: includes/admin/admin.php:142
+msgid "Mark entry unread"
+msgstr "Eintrag als ungelesen markieren"
+
+#: includes/admin/admin.php:143
+msgid "Are you sure you want to delete this form?"
+msgstr "Bist du sicher, dass du dieses Formular löschen willst?"
+
+#: includes/admin/admin.php:144
+msgid "Are you sure you want to duplicate this form?"
+msgstr "Bist du sicher, dass du dieses Formular duplizieren willst?"
+
+#: includes/admin/admin.php:145 includes/admin/builder/class-builder.php:338
+msgid "Heads up!"
+msgstr "Achtung!"
+
+#: includes/admin/admin.php:146
+msgid "Please select at least one form to import."
+msgstr "Bitte wähle mindestens ein Formular zum Import aus."
+
+#: includes/admin/admin.php:149 includes/admin/builder/class-builder.php:329
+msgid "OK"
+msgstr "OK"
+
+#: includes/admin/admin.php:150
+msgid "Install and Activate"
+msgstr "Installieren und aktivieren"
+
+#: includes/admin/admin.php:151
+msgid ""
+"needs to be installed and activated to import its forms. Would you like us "
+"to install and activate it for you?"
+msgstr ""
+"muss installiert und aktiviert werden, um seine Formulare zu importieren. "
+"Sollen wir es für dich installieren und aktivieren?"
+
+#: includes/admin/admin.php:153
+msgid ""
+"needs to be activated to import its forms. Would you like us to activate it "
+"for you?"
+msgstr ""
+"muss aktiviert werden, um seine Formulare zu importieren. Sollen wir es für "
+"dich aktivieren?"
+
+#: includes/admin/admin.php:154
+msgid "Are you sure you want to disconnect this account?"
+msgstr "Bist du sicher, dass du dieses Konto trennen willst?"
+
+#: includes/admin/admin.php:155
+msgid "Could not authenticate with the provider."
+msgstr ""
+"Bei dem Dienstleister konnte die Authentifizierung nicht durchgeführt "
+"werden."
+
+#: includes/admin/admin.php:156
+msgid "Save and Refresh"
+msgstr "Speichern und neu laden"
+
+#. translators: %s - WPForms.com docs page URL.
+#: includes/admin/admin.php:160
+msgid ""
+"You've selected <strong>Base Styling Only</strong>, which may result in "
+"styling issues. <a href=\"%s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">Please check out our tutorial</a> for common issues and "
+"recommendations."
+msgstr ""
+"Du hast <strong>Nur Basis-Styling</strong>ausgewählt, was zu Problemen mit "
+"dem Styling führen kann. <a href=\"%s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">Bitte sieh dir unser Tutorial an</a>, um mehr über häufige "
+"Probleme und Empfehlungen zu erfahren."
+
+#. translators: %s - WPForms.com docs page URL.
+#: includes/admin/admin.php:175
+msgid ""
+"You've selected <strong>No Styling</strong>, which will likely result in "
+"significant styling issues and is recommended only for developers. <a "
+"href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Please check out "
+"our tutorial</a> for more details and recommendations."
+msgstr ""
+"Du hast <strong>Kein Styling</strong>ausgewählt, was sehr wahrscheinlich zu "
+"Styling-Problemen führen wird und nur für Entwickler empfohlen ist. <a "
+"href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Bitte lies unser "
+"Tutorial</a> für weitere Details und Empfehlungen."
+
+#: includes/admin/admin.php:187
+msgid "Testing"
+msgstr "Testen"
+
+#: includes/admin/admin.php:188
+msgid "Upgrade was successfully completed!"
+msgstr "Upgrade erfolgreich abgeschlossen!"
+
+#: includes/admin/admin.php:189 includes/admin/builder/class-builder.php:406
+msgid "Upload or Choose Your Image"
+msgstr "Dein Bild hochladen oder auswählen"
+
+#: includes/admin/admin.php:190 includes/admin/builder/class-builder.php:407
+msgid "Use Image"
+msgstr "Bild benutzen"
+
+#: includes/admin/admin.php:192
+msgid "Select fields"
+msgstr "Felder auswählen"
+
+#: includes/admin/admin.php:193
+msgid "Loading..."
+msgstr "Lädt..."
+
+#: includes/admin/admin.php:194
+msgid "No results found"
+msgstr "Es konnten keine Resultate gefunden werden"
+
+#: includes/admin/admin.php:195
+msgid "No choices to choose from"
+msgstr "Keine Wahlmöglichkeit vorhanden"
+
+#: includes/admin/admin.php:196
+msgid "Press to select"
+msgstr "Drücken zum Auswählen"
+
+#. translators: %1$s - WPForms plugin name; %2$s - WPForms.com URL to a
+#. related doc.
+#: includes/admin/admin.php:368
+msgid ""
+"Your site is running an outdated version of PHP that is no longer supported "
+"and may cause issues with %1$s. <a href=\"%2$s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">Read more</a> for additional information."
+msgstr ""
+"Deine Website läuft mit einer veralteten Version von PHP, die nicht länger "
+"unterstützt wird und Probleme mit %1$s verursachen kann. <a href=\"%2$s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">Mehr lesen</a> für weitere "
+"Informationen."
+
+#: includes/admin/admin.php:382
+msgid ""
+"<strong>Please Note:</strong> Support for PHP 5.3 will be discontinued in "
+"2019. After this, if no further action is taken, WPForms functionality will "
+"be disabled."
+msgstr ""
+"<strong>Bitte beachten:</strong> Unterstützung für PHP 5.3 wird in 2019 "
+"auslaufen! Danach wird WPForms automatisch deaktiviert, wenn keine weiteren "
+"Aktionen unternommen werden."
+
+#: includes/admin/admin.php:404
+msgid "Thanks for your interest in WPForms Pro!"
+msgstr "Danke für dein Interesse an WPForms Pro!"
+
+#. translators: %s - WPForms.com contact page URL.
+#: includes/admin/admin.php:408
+msgid ""
+"If you have any questions or issues just <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">let us know</a>."
+msgstr ""
+"Falls du Fragen oder Probleme hast, <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">sag es uns</a>."
+
+#: includes/admin/admin.php:422
+msgid ""
+"After purchasing WPForms Pro, you'll need to <strong>download and install "
+"the Pro version of the plugin</strong>, and then <strong>remove the free "
+"plugin</strong>."
+msgstr ""
+"Nach dem Kauf von WPForms Pro musst du <strong>die Pro-Version des Plugins "
+"herunterladen und installieren</strong>und dann <strong>das kostenlose "
+"Plugin entfernen</strong>."
+
+#: includes/admin/admin.php:427
+msgid "(Don't worry, all your forms and settings will be preserved.)"
+msgstr ""
+"(Keine Sorge, all deine Formulare und Einstellungen werden beibehalten.)"
+
+#. translators: %s - WPForms.com upgrade from Lite to paid docs page URL.
+#: includes/admin/admin.php:433
+msgid ""
+"Check out <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our "
+"documentation</a> for step-by-step instructions."
+msgstr ""
+"Sieh dir <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">unsere"
+" Dokumentation</a> an für eine Schritt-für-Schritt-Anleitung."
+
+#: includes/admin/overview/class-overview.php:74
+msgid "Number of forms per page:"
+msgstr "Anzahl Formulare pro Seite:"
+
+#: includes/admin/overview/class-overview.php:123
+msgid "Forms Overview"
+msgstr "Formularübersicht"
+
+#: includes/admin/overview/class-overview-table.php:51
+#: includes/templates/class-subscribe.php:37
+#: includes/templates/class-suggestion.php:34
+#: includes/templates/class-contact.php:34 includes/fields/class-name.php:22
+#: includes/fields/class-name.php:268
+msgid "Name"
+msgstr "Name"
+
+#: includes/admin/overview/class-overview-table.php:52
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: includes/admin/overview/class-overview-table.php:53
+msgid "Created"
+msgstr "Erstellt"
+
+#: includes/admin/overview/class-overview-table.php:140
+#: includes/admin/overview/class-overview-table.php:157
+msgid "Edit This Form"
+msgstr "Dieses Formular bearbeiten"
+
+#: includes/admin/overview/class-overview-table.php:171
+msgid "View entries"
+msgstr "Einträge anzeigen"
+
+#: includes/admin/overview/class-overview-table.php:179
+msgid "View preview"
+msgstr "Vorschau anzeigen"
+
+#: includes/admin/overview/class-overview-table.php:196
+msgid "Duplicate this form"
+msgstr "Dieses Formular duplizieren"
+
+#: includes/admin/overview/class-overview-table.php:197
+msgid "Duplicate"
+msgstr "Duplizieren"
+
+#: includes/admin/overview/class-overview-table.php:213
+msgid "Delete this form"
+msgstr "Dieses Formular löschen"
+
+#: includes/admin/overview/class-overview-table.php:214
+#: includes/admin/overview/class-overview-table.php:231
+#: src/Providers/Provider/Settings/FormBuilder.php:179
+msgid "Delete"
+msgstr "Löschen"
+
+#: includes/admin/overview/class-overview-table.php:272
+msgid "Form was successfully deleted."
+msgstr "Formular wurde erfolgreich gelöscht."
+
+#: includes/admin/overview/class-overview-table.php:274
+msgid "Forms were successfully deleted."
+msgstr "Formulare wurden erfolgreich gelöscht."
+
+#: includes/admin/overview/class-overview-table.php:284
+#: includes/admin/overview/class-overview-table.php:315
+msgid "Security check failed. Please try again."
+msgstr "Sicherheitsprüfung fehlgeschlagen. Bitte erneut versuchen."
+
+#: includes/admin/overview/class-overview-table.php:303
+msgid "Form was successfully duplicated."
+msgstr "Formular wurde erfolgreich dupliziert."
+
+#: includes/admin/overview/class-overview-table.php:305
+msgid "Forms were successfully duplicated."
+msgstr "Formulare wurden erfolgreich dupliziert."
+
+#: includes/admin/builder/functions.php:280
+#: includes/admin/builder/class-builder.php:402
+#: includes/fields/class-base.php:1068
+msgid "Show Smart Tags"
+msgstr "Smart Tags anzeigen"
+
+#: includes/admin/builder/panels/class-setup.php:22
+msgid "Setup"
+msgstr "Einrichtung"
+
+#: includes/admin/builder/panels/class-setup.php:56
+#: includes/admin/builder/panels/class-settings.php:90
+#: includes/class-smart-tags.php:37
+msgid "Form Name"
+msgstr "Formularname"
+
+#: includes/admin/builder/panels/class-setup.php:57
+msgid "Enter your form name here&hellip;"
+msgstr "Gib hier deinen Formularnamen ein&hellip;"
+
+#: includes/admin/builder/panels/class-setup.php:61
+#: src/Admin/Challenge.php:487 src/Admin/Challenge.php:544
+msgid "Select a Template"
+msgstr "Ein Template auswählen"
+
+#: includes/admin/builder/panels/class-setup.php:67
+msgid ""
+"To speed up the process, you can select from one of our pre-made templates "
+"or start with a <strong><a href=\"#\" class=\"wpforms-trigger-blank\">blank "
+"form.</a></strong>"
+msgstr ""
+"Um den Prozess zu beschleunigen, kannst du eines unserer vorgefertigten "
+"Templates auswählen oder mit einem <strong><a href=\"#\" class=\"wpforms-"
+"trigger-blank\">leeren Formular</a></strong> starten."
+
+#: includes/admin/builder/panels/class-setup.php:82
+msgid "Additional Templates"
+msgstr "Zusätzliche Templates"
+
+#. translators: %1$s - WPForms.com URL to a template suggestion, %2$s -
+#. WPForms.com URL to a doc about custom templates.
+#: includes/admin/builder/panels/class-setup.php:93
+msgid ""
+"Have a suggestion for a new template? <a href=\"%1$s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">We'd love to hear it</a>. Also, you can <a "
+"href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">create your own "
+"templates</a>!"
+msgstr ""
+"Hast du einen Vorschlag für ein neues Template? <a href=\"%1$s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">Wir würden gerne davon "
+"hören</a>. Außerdem kannst du <a href=\"%1$s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">deine eigenen Templates erstellen</a>!"
+
+#: includes/admin/builder/panels/class-setup.php:110
+msgid "Search additional templates..."
+msgstr "Zusätzliche Templates durchsuchen..."
+
+#. translators: %1$s - WPForms.com URL to an addon page, %2$s - WPForms.com
+#. URL to a docs article.
+#: includes/admin/builder/panels/class-setup.php:122
+msgid ""
+"More are available in the <a href=\"%1$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">Form Templates Pack addon</a> or by <a href=\"%2$s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">creating your own</a>."
+msgstr ""
+"Weitere verfügbar im <a href=\"%1$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">Form Templates Pack Add-on</a> oder indem du<a href=\"%2$s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">deine eigenen erstellst</a>."
+
+#: includes/admin/builder/panels/class-setup.php:170
+msgid "Selected"
+msgstr "Ausgewählt"
+
+#. translators: %s - Form template name.
+#: includes/admin/builder/panels/class-setup.php:182
+msgid "%s template"
+msgstr "%s-Template"
+
+#. translators: %s - Form template name.
+#: includes/admin/builder/panels/class-setup.php:195
+msgid "Create a %s"
+msgstr "Ein %s erstellen"
+
+#: includes/admin/builder/panels/class-payments.php:22
+msgid "Payments"
+msgstr "Zahlungen"
+
+#: includes/admin/builder/panels/class-payments.php:41
+#: includes/admin/builder/panels/class-analytics.php:77
+msgid "Default"
+msgstr "Standard"
+
+#: includes/admin/builder/panels/class-payments.php:62
+#: includes/admin/builder/panels/class-analytics.php:98
+#: includes/admin/builder/panels/class-providers.php:96
+msgid ""
+"You need to <a href=\"#\" class=\"wpforms-panel-switch\" data-"
+"panel=\"setup\">setup your form</a> before you can manage these settings."
+msgstr ""
+"Du musst <a href=\"#\" class=\"wpforms-panel-switch\" data-"
+"panel=\"setup\">dein Formular einrichten</a>, bevor du diese Einstellungen "
+"verwalten kannst."
+
+#: includes/admin/builder/panels/class-payments.php:91
+msgid "Install Your Payment Integration"
+msgstr "Installiere deine Zahlungsintegration"
+
+#. translators: %s - Addons page URL.
+#: includes/admin/builder/panels/class-payments.php:97
+msgid ""
+"It seems you do not have any payment addons activated. You can head over to "
+"the <a href=\"%s\">Addons page</a> to install and activate the addon for "
+"your payment service."
+msgstr ""
+"Es scheint, du hast keine Zahlungs-Add-ons aktiviert. Du kannst zur <a "
+"href=\"%s\">Add-ons-Seite</a>gehen, um das Add-on für deine Zahlungsmethode "
+"zu installieren und zu aktivieren."
+
+#: includes/admin/builder/panels/class-payments.php:112
+msgid "Select Your Payment Integration"
+msgstr "Wähle deine Zahlungsintegration aus"
+
+#: includes/admin/builder/panels/class-payments.php:113
+msgid ""
+"Select your payment provider from the options on the left. If you don't see "
+"your payment service listed, then let us know and we'll do our best to get "
+"it added as fast as possible."
+msgstr ""
+"Wähle deinen Zahlungsanbieter aus den Optionen zur Linken. Falls du deinen "
+"Zahlungsdienst nicht findest, teil uns das mit und wir werden unser bestes "
+"tun, um diesen so schnell wie möglich hinzuzufügen."
+
+#: includes/admin/builder/panels/class-analytics.php:21
+msgid "Analytics"
+msgstr "Analysedienste"
+
+#: includes/admin/builder/panels/class-analytics.php:55
+#: includes/admin/builder/panels/class-providers.php:56
+msgid ""
+"We need to save your progress to continue to the Marketing panel. Is that "
+"OK?"
+msgstr ""
+"Wir müssen deinen Fortschritt speichern, um zum Marketing-Panel zu wechseln."
+" Ist das OK?"
+
+#: includes/admin/builder/panels/class-analytics.php:56
+#: includes/admin/builder/panels/class-providers.php:57
+msgid "Are you sure you want to delete this connection?"
+msgstr "Bist du sicher, dass du diese Verbindung trennen willst?"
+
+#: includes/admin/builder/panels/class-analytics.php:57
+#: includes/admin/builder/panels/class-providers.php:58
+msgid "Enter a %type% nickname"
+msgstr "Gib einen Spitznamen für %type% ein"
+
+#: includes/admin/builder/panels/class-analytics.php:58
+#: includes/admin/builder/panels/class-providers.php:59
+msgid "Eg: Newsletter Optin"
+msgstr "z. B: Newsletter Optin"
+
+#: includes/admin/builder/panels/class-analytics.php:59
+#: includes/admin/builder/panels/class-providers.php:60
+msgid "You must provide a connection nickname"
+msgstr "Du musst einen Verbindungs-Spitznamen eingeben"
+
+#: includes/admin/builder/panels/class-analytics.php:60
+#: includes/admin/builder/panels/class-providers.php:61
+msgid "Field required"
+msgstr "Feld erforderlich"
+
+#: includes/admin/builder/panels/class-analytics.php:118
+msgid "Install Your Analytic Integration"
+msgstr "Installiere deine Analyse-Integration"
+
+#. translators: %s - plugin admin area Addons page.
+#: includes/admin/builder/panels/class-analytics.php:123
+msgid ""
+"It seems you do not have any analytics plugins or addons activated. We "
+"recommend <a href=\"%s\">MonsterInsights</a>."
+msgstr ""
+"Es scheint, du hast keine Analyse-Plugins oder Add-ons aktiviert. Wir "
+"empfehlen <a href=\"%s\">MonsterInsights</a>."
+
+#: includes/admin/builder/panels/class-analytics.php:138
+msgid "Select Your Analytics Integration"
+msgstr "Wähle deine Analyse-Integration"
+
+#: includes/admin/builder/panels/class-analytics.php:139
+msgid "Select your analytics plugin or service from the options on the left."
+msgstr "Wähle dein Analyse-Plugin oder -Dienst aus den Optionen zur Linken."
+
+#: includes/admin/builder/panels/class-providers.php:22
+msgid "Marketing"
+msgstr "Marketing"
+
+#: includes/admin/builder/panels/class-providers.php:119
+msgid "Install Your Marketing Integration"
+msgstr "Installiere deine Marketing-Integration"
+
+#. translators: %s - plugin admin area Addons page.
+#: includes/admin/builder/panels/class-providers.php:124
+msgid ""
+"It seems you do not have any marketing addons activated. You can head over "
+"to the <a href=\"%s\">Addons page</a> to install and activate the addon for "
+"your provider."
+msgstr ""
+"Es scheint, du hast keine Marketing-Add-ons aktiviert. Du kannst zur <a "
+"href=\"%s\">Addons page</a>, um das Add-on für deinen Provider zu "
+"installieren und zu aktivieren."
+
+#: includes/admin/builder/panels/class-providers.php:139
+msgid "Select Your Marketing Integration"
+msgstr "Wähle deine Marketing-Integration aus"
+
+#: includes/admin/builder/panels/class-providers.php:140
+msgid ""
+"Select your email marketing service provider or CRM from the options on the "
+"left. If you don't see your email marketing service listed, then let us know"
+" and we'll do our best to get it added as fast as possible."
+msgstr ""
+"Wähle deinen Marketing-Dienst-Anbieter oder CRM aus den Optionen zur Linken."
+" Falls du deinen E-Mail-Marketing-Dienst nicht findest, teil uns das mit und"
+" wir werden unser bestes tun, um diesen so schnell wie möglich hinzuzufügen."
+
+#: includes/admin/builder/panels/class-settings.php:42
+#: includes/admin/builder/panels/class-settings.php:82
+#: includes/admin/class-settings.php:164 includes/admin/class-settings.php:286
+msgid "General"
+msgstr "Allgemein"
+
+#: includes/admin/builder/panels/class-settings.php:44
+msgid "Confirmation"
+msgstr "Bestätigung"
+
+#: includes/admin/builder/panels/class-settings.php:63
+msgid ""
+"You need to <a href=\"#\" class=\"wpforms-panel-switch\" data-"
+"panel=\"setup\">setup your form</a> before you can manage the settings."
+msgstr ""
+"Du musst <a href=\"#\" class=\"wpforms-panel-switch\" data-"
+"panel=\"setup\">dein Formular einrichten</a>, bevor du die Einstellungen "
+"verwalten kannst."
+
+#: includes/admin/builder/panels/class-settings.php:100
+msgid "Form Description"
+msgstr "Formularbeschreibung"
+
+#: includes/admin/builder/panels/class-settings.php:107
+msgid "Form CSS Class"
+msgstr "Formular-CSS-Klasse"
+
+#: includes/admin/builder/panels/class-settings.php:109
+msgid ""
+"Enter CSS class names for the form wrapper. Multiple class names should be "
+"separated with spaces."
+msgstr ""
+"Gib CSS-Klassennamen für den Formular-Wrapper ein. Mehrere Klassennamen "
+"bitte mit Leerzeichen trennen."
+
+#: includes/admin/builder/panels/class-settings.php:117
+msgid "Submit Button Text"
+msgstr "Absenden-Button-Text"
+
+#: includes/admin/builder/panels/class-settings.php:127
+msgid "Submit Button Processing Text"
+msgstr "Absenden-Button-Fortschritt-Text"
+
+#: includes/admin/builder/panels/class-settings.php:129
+msgid ""
+"Enter the submit button text you would like the button display while the "
+"form submit is processing."
+msgstr ""
+"Gib den Absenden-Button-Text ein, der angezeigt werden soll, während das "
+"Senden des Formulars stattfindet."
+
+#: includes/admin/builder/panels/class-settings.php:137
+msgid "Submit Button CSS Class"
+msgstr "Absenden-Button-CSS-Klasse"
+
+#: includes/admin/builder/panels/class-settings.php:139
+msgid ""
+"Enter CSS class names for the form submit button. Multiple names should be "
+"separated with spaces."
+msgstr ""
+"Gib CSS-Klassennamen für den Formular-absenden-Button ein. Mehrere Namen "
+"sollten mit Leerzeichen getrennt werden."
+
+#: includes/admin/builder/panels/class-settings.php:147
+msgid "Enable anti-spam honeypot"
+msgstr "Anti-Spam-Honeypot aktivieren"
+
+#: includes/admin/builder/panels/class-settings.php:158
+msgid "Enable Google Invisible reCAPTCHA"
+msgstr "Google Invisible reCAPTCHA aktivieren"
+
+#: includes/admin/builder/panels/class-settings.php:158
+msgid "Enable Google reCAPTCHA (v2)"
+msgstr "Google reCAPTCHA (v2) aktivieren"
+
+#: includes/admin/builder/panels/class-settings.php:166
+msgid "Enable dynamic fields population"
+msgstr "Dynamisches Feld-Ausfüllen aktivieren"
+
+#: includes/admin/builder/panels/class-settings.php:168
+msgid "How to use Dynamic Field Population"
+msgstr "So benutzt du dynamisches Feld-Ausfüllen"
+
+#: includes/admin/builder/panels/class-fields.php:22
+msgid "Fields"
+msgstr "Felder"
+
+#: includes/admin/builder/panels/class-fields.php:70
+msgid "Add Fields"
+msgstr "Felder hinzufügen"
+
+#: includes/admin/builder/panels/class-fields.php:77
+msgid "Field Options"
+msgstr "Feldoptionen"
+
+#: includes/admin/builder/panels/class-fields.php:105
+msgid ""
+"You need to <a href=\"#\" class=\"wpforms-panel-switch\" data-"
+"panel=\"setup\">setup your form</a> before you can manage the fields."
+msgstr ""
+"Du musst <a href=\"#\" class=\"wpforms-panel-switch\" data-"
+"panel=\"setup\">dein Formular einrichten</a> bevor du die Felder verwalten "
+"kannst."
+
+#: includes/admin/builder/panels/class-fields.php:163
+msgid "Standard Fields"
+msgstr "Standardfelder"
+
+#: includes/admin/builder/panels/class-fields.php:167
+msgid "Fancy Fields"
+msgstr "Fancy Fields"
+
+#: includes/admin/builder/panels/class-fields.php:171
+msgid "Payment Fields"
+msgstr "Zahlungs-Felder"
+
+#: includes/admin/builder/panels/class-fields.php:232
+msgid "You don't have any fields yet."
+msgstr "Du hast noch keine Felder."
+
+#: includes/admin/builder/panels/class-fields.php:264
+msgid "You don't have any fields yet. Add some!"
+msgstr "Du hast noch keine Felder. Füge welche hinzu!"
+
+#: includes/admin/builder/panels/class-fields.php:286
+#: includes/fields/class-base.php:1618
+msgid "Duplicate Field"
+msgstr "Feld duplizieren"
+
+#: includes/admin/builder/panels/class-fields.php:288
+#: includes/fields/class-base.php:1619
+msgid "Delete Field"
+msgstr "Feld löschen"
+
+#: includes/admin/builder/panels/class-fields.php:290
+#: includes/fields/class-base.php:1620
+msgid "Click to edit. Drag to reorder."
+msgstr "Klicken zum Bearbeiten. Ziehen zum Umordnen."
+
+#: includes/admin/builder/class-builder.php:315
+msgid "AND"
+msgstr "UND"
+
+#: includes/admin/builder/class-builder.php:317
+msgid "Add New Choices"
+msgstr "Neue Wahlmöglichkeiten hinzufügen"
+
+#: includes/admin/builder/class-builder.php:318
+#: includes/fields/class-base.php:767
+msgid "Bulk Add"
+msgstr "Massen-Hinzufügen"
+
+#: includes/admin/builder/class-builder.php:319
+msgid "Hide Bulk Add"
+msgstr "Massen-Hinzufügen verbergen"
+
+#: includes/admin/builder/class-builder.php:320
+msgid "Add Choices (one per line)"
+msgstr "Wahlmöglichkeiten hinzufügen (eine pro Zeile)"
+
+#: includes/admin/builder/class-builder.php:321
+msgid ""
+"Blue\n"
+"Red\n"
+"Green"
+msgstr ""
+"Blau\n"
+"Rot\n"
+"Grün"
+
+#: includes/admin/builder/class-builder.php:322
+msgid "Show presets"
+msgstr "Voreinstellungen anzeigen"
+
+#: includes/admin/builder/class-builder.php:323
+msgid "Hide presets"
+msgstr "Voreinstellungen verbergen"
+
+#: includes/admin/builder/class-builder.php:327
+msgid ""
+"The {source} {type} contains over {limit} items ({total}). This may make the"
+" field difficult for your visitors to use and/or cause the form to be slow."
+msgstr ""
+"Der {source} {type} enthält über {limit} Einträge ({total}). Dies kann dazu "
+"führen, dass das Feld für deine Besucher schwer zu benutzen ist und/oder das"
+" Formular langsam ist."
+
+#: includes/admin/builder/class-builder.php:331
+msgid ""
+"Due to form changes, conditional logic rules have been removed or updated:"
+msgstr ""
+"Wegen Änderungen bei dem Formular wurden Regeln bedingter Logik entfernt "
+"oder aktualisiert:"
+
+#: includes/admin/builder/class-builder.php:333
+msgid "Field"
+msgstr "Feld"
+
+#: includes/admin/builder/class-builder.php:334
+msgid "Field Locked"
+msgstr "Feld gesperrt"
+
+#: includes/admin/builder/class-builder.php:335
+msgid "This field cannot be deleted or duplicated."
+msgstr "Dieses Feld kann nicht gelöscht oder dupliziert werden."
+
+#: includes/admin/builder/class-builder.php:336
+msgid "Available Fields"
+msgstr "Verfügbare Felder"
+
+#: includes/admin/builder/class-builder.php:337
+msgid "No fields available"
+msgstr "Keine Felder verfügbar"
+
+#: includes/admin/builder/class-builder.php:341
+msgid "No email fields"
+msgstr "Keine E-Mail-Felder"
+
+#: includes/admin/builder/class-builder.php:342
+msgid "Are you sure you want to delete this notification?"
+msgstr "Bist du sicher, dass du diese Benachrichtigung löschen willst?"
+
+#: includes/admin/builder/class-builder.php:343
+msgid "Enter a notification name"
+msgstr "Gib einen Benachrichtigungs-Namen ein"
+
+#: includes/admin/builder/class-builder.php:344
+msgid "Eg: User Confirmation"
+msgstr "z. B: Benutzerbestätigung"
+
+#: includes/admin/builder/class-builder.php:345
+msgid "You must provide a notification name"
+msgstr "Du musst einen Benachrichtigungs-Namen angeben"
+
+#: includes/admin/builder/class-builder.php:346
+msgid ""
+"Form must contain one notification. To disable all notifications use the "
+"Notifications dropdown setting."
+msgstr ""
+"Formulare müssen eine Benachrichtigung beinhalten. Benutze die "
+"Benachrichtigungs-Dropdown-Einstellung, um alle Benachrichtigungen zu "
+"deaktivieren."
+
+#: includes/admin/builder/class-builder.php:348
+msgid "Are you sure you want to delete this confirmation?"
+msgstr "Bist du sicher, dass du diese Bestätigung löschen willst?"
+
+#: includes/admin/builder/class-builder.php:349
+msgid "Enter a confirmation name"
+msgstr "Gib einen Bestätigungs-Namen ein"
+
+#: includes/admin/builder/class-builder.php:350
+msgid "Eg: Alternative Confirmation"
+msgstr "z. B: Alternative Bestätigung"
+
+#: includes/admin/builder/class-builder.php:351
+msgid "You must provide a confirmation name"
+msgstr "Du musst einen Bestätigungs-Namen angeben"
+
+#: includes/admin/builder/class-builder.php:352
+msgid "Form must contain at least one confirmation."
+msgstr "Formular muss mindestens eine Bestätigung enthalten."
+
+#: includes/admin/builder/class-builder.php:354
+#: includes/admin/builder/class-builder.php:528
+msgid "Save"
+msgstr "Speichern"
+
+#: includes/admin/builder/class-builder.php:355
+msgid "Saving ..."
+msgstr "Speichern..."
+
+#: includes/admin/builder/class-builder.php:356
+msgid "Saved!"
+msgstr "Gespeichert!"
+
+#: includes/admin/builder/class-builder.php:357
+msgid "Save and Exit"
+msgstr "Speichern und verlassen"
+
+#: includes/admin/builder/class-builder.php:359
+#: includes/fields/class-base.php:1126
+msgid "Show Layouts"
+msgstr "Layouts anzeigen"
+
+#: includes/admin/builder/class-builder.php:360
+msgid "Hide Layouts"
+msgstr "Layouts verbergen"
+
+#: includes/admin/builder/class-builder.php:361
+msgid "Select your layout"
+msgstr "Dein Layout auswählen"
+
+#: includes/admin/builder/class-builder.php:362
+msgid "Select your column"
+msgstr "Deine Spalte auswählen"
+
+#: includes/admin/builder/class-builder.php:363
+#: includes/admin/builder/class-builder.php:487
+msgid "Loading"
+msgstr "Lädt"
+
+#: includes/admin/builder/class-builder.php:369
+msgid "Use Template"
+msgstr "Template benutzen"
+
+#: includes/admin/builder/class-builder.php:370
+msgid ""
+"Changing templates on an existing form will DELETE existing form fields. Are"
+" you sure you want apply the new template?"
+msgstr ""
+"Templates eines bestehenden Formulars zu ändern wird bestehende "
+"Formularfelder LÖSCHEN. Bist du sicher, dass du das neue Template anwenden "
+"willst?"
+
+#: includes/admin/builder/class-builder.php:371
+msgid ""
+"You are almost done. To embed this form on your site, please paste the "
+"following shortcode inside a post or page."
+msgstr ""
+"Du hast es fast geschafrft. Um das Formular auf deiner Website einzubetten, "
+"kopiere den folgenden Shortcode in einen Beitrag oder Seite."
+
+#: includes/admin/builder/class-builder.php:372
+msgid "Or you can follow the instructions in this video."
+msgstr "Oder du kannst den Anweisungen in diesem Video folgen."
+
+#: includes/admin/builder/class-builder.php:373
+#: includes/admin/builder/class-builder.php:533
+msgid "Exit"
+msgstr "Verlassen"
+
+#: includes/admin/builder/class-builder.php:375
+msgid "If you exit without saving, your changes will be lost."
+msgstr "Falls du ohne Speichern verlässt, gehen deine Änderungen verloren."
+
+#: includes/admin/builder/class-builder.php:376
+msgid "Are you sure you want to delete this field?"
+msgstr "Bist du sicher, dass du dieses Feld löschen willst?"
+
+#: includes/admin/builder/class-builder.php:377
+msgid "Are you sure you want to duplicate this field?"
+msgstr "Bist du sicher, dass du dieses Feld duplizieren willst?"
+
+#: includes/admin/builder/class-builder.php:378
+msgid "(copy)"
+msgstr "(kopieren)"
+
+#: includes/admin/builder/class-builder.php:379
+msgid "Please enter a form name."
+msgstr "Bitte gib einen Formularnamen ein."
+
+#: includes/admin/builder/class-builder.php:380
+msgid "This item must contain at least one choice."
+msgstr "Dieses Element muss mindestens eine Auswahl beinhalten."
+
+#: includes/admin/builder/class-builder.php:383
+msgid "or"
+msgstr "oder"
+
+#: includes/admin/builder/class-builder.php:384
+#: includes/admin/class-am-deactivation-survey.php:310
+#: includes/templates/class-suggestion.php:61
+msgid "Other"
+msgstr "Anderes"
+
+#: includes/admin/builder/class-builder.php:385
+#: includes/class-conditional-logic-core.php:412
+msgid "is"
+msgstr "ist"
+
+#: includes/admin/builder/class-builder.php:386
+#: includes/class-conditional-logic-core.php:413
+msgid "is not"
+msgstr "ist nicht"
+
+#: includes/admin/builder/class-builder.php:387
+#: includes/class-conditional-logic-core.php:414
+msgid "empty"
+msgstr "leer"
+
+#: includes/admin/builder/class-builder.php:388
+#: includes/class-conditional-logic-core.php:415
+msgid "not empty"
+msgstr "nicht leer"
+
+#: includes/admin/builder/class-builder.php:389
+#: includes/class-conditional-logic-core.php:424
+msgid "contains"
+msgstr "enthält"
+
+#: includes/admin/builder/class-builder.php:390
+#: includes/class-conditional-logic-core.php:425
+msgid "does not contain"
+msgstr "enthält nicht"
+
+#: includes/admin/builder/class-builder.php:391
+#: includes/class-conditional-logic-core.php:426
+msgid "starts with"
+msgstr "beginnt mit"
+
+#: includes/admin/builder/class-builder.php:392
+#: includes/class-conditional-logic-core.php:427
+msgid "ends with"
+msgstr "endet mit"
+
+#: includes/admin/builder/class-builder.php:393
+#: includes/class-conditional-logic-core.php:428
+msgid "greater than"
+msgstr "größer als"
+
+#: includes/admin/builder/class-builder.php:394
+#: includes/class-conditional-logic-core.php:429
+msgid "less than"
+msgstr "kleiner als"
+
+#: includes/admin/builder/class-builder.php:395
+msgid ""
+"Form entries must be stored to accept payments. Please enable saving form "
+"entries in the General settings first."
+msgstr ""
+"Formulareinträge müssen gespeichert werden, um Zahlungen zu akzeptieren. "
+"Bitte aktiviere zuerst Speichern von Einträgen in den Allgemeinen "
+"Einstellungen."
+
+#: includes/admin/builder/class-builder.php:396
+msgid "Previous"
+msgstr "Zurück"
+
+#: includes/admin/builder/class-builder.php:398
+#: includes/class-conditional-logic-core.php:494
+msgid "Create new rule"
+msgstr "Neue Regel erstellen"
+
+#: includes/admin/builder/class-builder.php:399
+msgid "Add new group"
+msgstr "Neue Gruppe hinzufügen"
+
+#: includes/admin/builder/class-builder.php:400
+#: includes/class-conditional-logic-core.php:495
+msgid "Delete rule"
+msgstr "Regel löschen"
+
+#: includes/admin/builder/class-builder.php:403
+msgid "Hide Smart Tags"
+msgstr "Smart Tags verbergen"
+
+#: includes/admin/builder/class-builder.php:404
+#: includes/class-conditional-logic-core.php:371
+#: src/Providers/Provider/Settings/FormBuilder.php:127
+#: src/Providers/Provider/Settings/FormBuilder.php:162
+msgid "--- Select Field ---"
+msgstr "--- Feld auswählen ---"
+
+#: includes/admin/builder/class-builder.php:405
+#: includes/class-conditional-logic-core.php:474
+msgid "--- Select Choice ---"
+msgstr "--- Auswahl treffen ---"
+
+#: includes/admin/builder/class-builder.php:408
+#: includes/fields/class-base.php:810 includes/fields/class-base.php:941
+msgid "Remove Image"
+msgstr "Bild entfernen"
+
+#: includes/admin/builder/class-builder.php:409
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: includes/admin/builder/class-builder.php:438
+msgid "Countries"
+msgstr "Länder"
+
+#: includes/admin/builder/class-builder.php:442
+msgid "Countries Postal Code"
+msgstr "Länder-Postleitzahl"
+
+#: includes/admin/builder/class-builder.php:446
+msgid "States"
+msgstr "Staaten"
+
+#: includes/admin/builder/class-builder.php:450
+msgid "States Postal Code"
+msgstr "Staaten-Postleitzahl"
+
+#: includes/admin/builder/class-builder.php:454
+msgid "Months"
+msgstr "Monate"
+
+#: includes/admin/builder/class-builder.php:458
+msgid "Days"
+msgstr "Tage"
+
+#: includes/admin/builder/class-builder.php:510
+msgid "Now editing"
+msgstr "Jetzt in Bearbeitung"
+
+#: includes/admin/builder/class-builder.php:521
+msgid "Embed Form"
+msgstr "Formular einbetten"
+
+#: includes/admin/builder/class-builder.php:523
+msgid "Embed"
+msgstr "Embed"
+
+#: includes/admin/builder/class-builder.php:526
+msgid "Save Form"
+msgstr "Formular speichern"
+
+#: includes/admin/class-settings.php:142
+msgid "Settings were successfully saved."
+msgstr "Einstellungen wurden erfolgreich gespeichert."
+
+#: includes/admin/class-settings.php:166 includes/admin/class-settings.php:171
+#: includes/admin/class-settings.php:176 includes/admin/class-settings.php:181
+#: includes/admin/class-settings.php:191
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: includes/admin/class-settings.php:169 includes/admin/class-settings.php:354
+#: includes/admin/class-settings.php:449
+#: includes/templates/class-subscribe.php:44
+#: includes/templates/class-suggestion.php:41
+#: includes/templates/class-contact.php:41 includes/fields/class-email.php:22
+#: includes/fields/class-email.php:69 includes/fields/class-email.php:303
+msgid "Email"
+msgstr "E-Mail"
+
+#: includes/admin/class-settings.php:174 includes/admin/class-settings.php:394
+msgid "reCAPTCHA"
+msgstr "reCAPTCHA"
+
+#: includes/admin/class-settings.php:179
+msgid "Validation"
+msgstr "Prüfung"
+
+#: includes/admin/class-settings.php:184 includes/admin/class-settings.php:470
+#: includes/admin/class-settings.php:477
+msgid "Integrations"
+msgstr "Integrationen"
+
+#: includes/admin/class-settings.php:189 includes/admin/class-settings.php:486
+msgid "Misc"
+msgstr "Sonstiges"
+
+#: includes/admin/class-settings.php:231
+msgid ""
+"reCAPTCHA is a free anti-spam service from Google which helps to protect "
+"your website from spam and abuse while letting real people pass through with"
+" ease."
+msgstr ""
+"reCAPTCHA ist ein kostenloser Anti-Spam-Dienst von Google, der dir hilft, "
+"deine Website vor Spam und Mißbrauch zu schützen, während echte Menschen mit"
+" Leichtigkeit voran kommen."
+
+#. translators: %1$s - Google reCAPTCHA Intro URL, %2$s - Google Invisible
+#. reCAPTCHA Intro URL.
+#: includes/admin/class-settings.php:237
+msgid ""
+"Google's original <a href=\"%1$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">v2 reCAPTCHA</a> prompts users to check a box to prove they're "
+"human, whereas <a href=\"%2$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">Invisible reCAPTCHA</a> uses advanced technology to detect real"
+" users without requiring any input."
+msgstr ""
+"Googles original <a href=\"%1$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">v2 reCAPTCHA</a> fordert den Benutzer auf, eine Box anzuhaken, "
+"um seine Menschlichkeit zu bestätigen, wohingegen <a href=\"%2$s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">Invisible reCAPTCHA</a> eine "
+"fortgeschrittene Tchnologie benutzt, die echte Benutzer ohne irgendeine "
+"erforderliche Eingabe identifiziert."
+
+#: includes/admin/class-settings.php:250
+msgid ""
+"Sites already using v2 reCAPTCHA will need to create new site keys before "
+"switching to the Invisible reCAPTCHA."
+msgstr ""
+"Websites, die bereits reCAPTCHA v2 benutzen, müssen neue Website-Schlüssel "
+"erstellen, bevor sie auf das unsichtbare Invisible reCAPTCHA umstellen."
+
+#. translators: %s = WPForms.com Setup Captcha URL.
+#: includes/admin/class-settings.php:256
+msgid ""
+"<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Read our walk "
+"through</a> to learn more and for step-by-step directions."
+msgstr ""
+"<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Lies unseren "
+"Walk-through</a>, um mehr zu erfahren und für eine Schritt-für-Schritt-"
+"Anleitung."
+
+#: includes/admin/class-settings.php:274
+msgid "License"
+msgstr "Lizenz"
+
+#: includes/admin/class-settings.php:274
+msgid "Your license key provides access to updates and addons."
+msgstr ""
+"Dein Lizenzschlüssel ermöglicht dir Zugriff auf Aktualisierungen und Add-"
+"ons."
+
+#: includes/admin/class-settings.php:281
+msgid "License Key"
+msgstr "Lizenzschlüssel"
+
+#: includes/admin/class-settings.php:293
+msgid "Include Form Styling"
+msgstr "Inklusive Formular-Styling"
+
+#. translators: %s = WPForms.com documentation URL.
+#: includes/admin/class-settings.php:297
+msgid ""
+"Determines which CSS files to load for the site (<a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">please see our tutorial for "
+"full details</a>). Unless experienced with CSS or instructed by support, "
+"\"Base and Form Theme Styling\" is recommended."
+msgstr ""
+"Legt fest, welche CSS-Dateien für diese Website geladen werden sollen (<a "
+"href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Bitte lies unser "
+"Tutorial für vollständige Details</a>). Falls du dich nicht mit CSS "
+"auskennst oder nicht vom Support angeleitet wurdest, empfehlen wir „Basis- "
+"und Theme-Styling“."
+
+#: includes/admin/class-settings.php:312
+msgid "Base and form theme styling"
+msgstr "Basis- und Theme-Styling"
+
+#: includes/admin/class-settings.php:313
+msgid "Base styling only"
+msgstr "Nur Basis-Styling"
+
+#: includes/admin/class-settings.php:314
+msgid "No styling"
+msgstr "Kein Styling"
+
+#: includes/admin/class-settings.php:319
+msgid "Load Assets Globally"
+msgstr "Assets global laden"
+
+#: includes/admin/class-settings.php:320
+msgid ""
+"Check this if you would like to load WPForms assets site-wide. Only check if"
+" your site is having compatibility issues or instructed to by support."
+msgstr ""
+"Wähle dies, falls du WPForms-Assets für die gesamte Website laden möchtest. "
+"Nur wählen, wenn deine Website Kompatibilitätsprobleme hat oder wenn der "
+"Support es so angibt."
+
+#: includes/admin/class-settings.php:325
+msgid "GDPR"
+msgstr "DSGVO"
+
+#: includes/admin/class-settings.php:332
+msgid "GDPR Enhancements"
+msgstr "DSGVO-Verbesserungen"
+
+#. translators: %s = WPForms.com GDPR documentation URL.
+#: includes/admin/class-settings.php:336
+msgid ""
+"Check this to turn on GDPR related features and enhancements. <a href=\"%s\""
+" target=\"_blank\" rel=\"noopener noreferrer\">Read our GDPR "
+"documentation</a> to learn more."
+msgstr ""
+"Wähle dies, um DSGVO-abhängige Funktionen und Erweiterungen zu aktivieren. "
+"<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Lies unsere "
+"DSGVO-Dokumentation</a>,um mehr zu erfahren."
+
+#: includes/admin/class-settings.php:361
+msgid "Template"
+msgstr "Template"
+
+#: includes/admin/class-settings.php:362
+msgid ""
+"Determines how email notifications will be formatted. HTML Templates are the"
+" default."
+msgstr ""
+"Legt fest, wie E-Mail-Benachrichtigungen formatiert werden. Standard sind "
+"HTML-Templates."
+
+#: includes/admin/class-settings.php:366
+msgid "HTML Template"
+msgstr "HTML-Template"
+
+#: includes/admin/class-settings.php:367
+msgid "Plain text"
+msgstr "Reiner Text"
+
+#: includes/admin/class-settings.php:372
+msgid "Header Image"
+msgstr "Header-Bild"
+
+#: includes/admin/class-settings.php:373
+msgid ""
+"Upload or choose a logo to be displayed at the top of email "
+"notifications.<br>Recommended size is 300x100 or smaller for best support on"
+" all devices."
+msgstr ""
+"Lade ein Logo hoch oder wähle eins, zur Anzeige am Anfang deiner E-Mail-"
+"Benachrichtigungen.<br>Empfohlene Größe ist 300x100 oder kleiner, für beste "
+"Unterstützung auf allen Geräten."
+
+#: includes/admin/class-settings.php:378
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#: includes/admin/class-settings.php:379
+msgid "Customize the background color of the HTML email template."
+msgstr "Die Hintergrundfarbe des HTML-E-Mail-Templates individualisieren."
+
+#: includes/admin/class-settings.php:385
+msgid "Carbon Copy"
+msgstr "Carbon Copy"
+
+#: includes/admin/class-settings.php:386
+msgid ""
+"Check this if you would like to enable the ability to CC: email addresses in"
+" the form notification settings."
+msgstr ""
+"Wähle dies, falls du die Möglichkeit von CC-E-Mail-Adressen in den Formular-"
+"Einstellungen aktivieren möchtest."
+
+#: includes/admin/class-settings.php:401
+msgid "Type"
+msgstr "Typ"
+
+#: includes/admin/class-settings.php:405
+msgid "v2 reCAPTCHA"
+msgstr "v2 reCAPTCHA"
+
+#: includes/admin/class-settings.php:406
+msgid "Invisible reCAPTCHA"
+msgstr "Invisible reCAPTCHA"
+
+#: includes/admin/class-settings.php:411
+msgid "Site Key"
+msgstr "Website Schlüssel"
+
+#: includes/admin/class-settings.php:416
+msgid "Secret Key"
+msgstr "Geheimer Schlüssel"
+
+#: includes/admin/class-settings.php:421
+msgid "No-Conflict Mode"
+msgstr "Anti-Konfliktmodus"
+
+#: includes/admin/class-settings.php:422
+msgid ""
+"When checked, other reCAPTCHA occurrences are forcefully removed, to prevent"
+" conflicts. Only check if your site is having compatibility issues or "
+"instructed to by support."
+msgstr ""
+"Wenn gewählt, werden andere reCAPTCHA-Vorkommnisse zwangsläufig entfernt, um"
+" Konflikte zu vermeiden. Nur wählen, wenn deine Website "
+"Kompatibilitätsprobleme hat oder wenn der Support es so angibt."
+
+#: includes/admin/class-settings.php:430
+msgid "Validation Messages"
+msgstr "Prüf-Nachrichten"
+
+#: includes/admin/class-settings.php:430
+msgid ""
+"These messages are displayed to the user as they fill out a form in real-"
+"time."
+msgstr ""
+"Diese Nachrichten werden dem Benutzer in Echtzeit angezeigt, während sie ein"
+" Formular ausfüllen."
+
+#: includes/admin/class-settings.php:437 includes/fields/class-base.php:717
+msgid "Required"
+msgstr "erforderlich"
+
+#: includes/admin/class-settings.php:443
+msgid "Website URL"
+msgstr "Website-URL"
+
+#: includes/admin/class-settings.php:455
+msgid "Number"
+msgstr "Nummer"
+
+#: includes/admin/class-settings.php:461
+msgid "Confirm Value"
+msgstr "Wert bestätigen"
+
+#: includes/admin/class-settings.php:470 includes/admin/class-settings.php:477
+msgid ""
+"Manage integrations with popular providers such as Constant Contact, "
+"MailChimp, Zapier, and more."
+msgstr ""
+"Verwalte Integrationen mit beliebten Anbietern wie Constant Contact, "
+"MailChimp, Zapier und mehr."
+
+#: includes/admin/class-settings.php:493
+msgid "Hide Announcements"
+msgstr "Ankündigungen ausblenden"
+
+#: includes/admin/class-settings.php:494
+msgid ""
+"Check this if you would like to hide plugin announcements and update "
+"details."
+msgstr ""
+"Wähle dies, falls du Plugin-Ankündigungen und Aktualisierungshinweise "
+"verbergen willst."
+
+#: includes/admin/class-settings.php:499
+msgid "Uninstall WPForms"
+msgstr "WPForms deinstallieren"
+
+#: includes/admin/class-settings.php:500
+msgid ""
+"Check this if you would like to remove ALL WPForms data upon plugin "
+"deletion. All forms, entries, and uploaded files will be unrecoverable."
+msgstr ""
+"Wähle dies, falls du ALLE WPForms-Daten beim Löschen des Plugins entfernen "
+"möchtest. Alle Formulare, Einträge und hochgeladene Dateien werden nicht "
+"wiederherstellbar sein."
+
+#: includes/admin/class-am-deactivation-survey.php:172
+msgid "Please select an option"
+msgstr "Bitte wählen Sie eine Option aus"
+
+#: includes/admin/class-am-deactivation-survey.php:297
+msgid "I no longer need the plugin"
+msgstr "Ich brauche das Plugin nicht mehr"
+
+#: includes/admin/class-am-deactivation-survey.php:300
+msgid "I'm switching to a different plugin"
+msgstr "Ich wechsele auf ein anderes Plugin"
+
+#: includes/admin/class-am-deactivation-survey.php:301
+msgid "Please share which plugin"
+msgstr "Bitte teile uns mit, welches Plugin"
+
+#: includes/admin/class-am-deactivation-survey.php:304
+msgid "I couldn't get the plugin to work"
+msgstr "Ich bekomme das Plugin nicht zum Laufen"
+
+#: includes/admin/class-am-deactivation-survey.php:307
+msgid "It's a temporary deactivation"
+msgstr "Es ist eine vorübergehende Deaktivierung"
+
+#: includes/admin/class-am-deactivation-survey.php:311
+msgid "Please share the reason"
+msgstr "Bitte teile uns den Grund mit"
+
+#: includes/admin/class-am-deactivation-survey.php:318
+msgid "Quick Feedback"
+msgstr "Schnelles Feedback"
+
+#. translators: %s - plugin name.
+#: includes/admin/class-am-deactivation-survey.php:323
+msgid "If you have a moment, please share why you are deactivating %s:"
+msgstr ""
+"Falls du einen Moment hast, teile uns bitte den Grund dafür mit, warum du %s"
+" deaktivierst:"
+
+#: includes/admin/class-am-deactivation-survey.php:342
+msgid "Submit & Deactivate"
+msgstr "Übermitteln und deaktivieren"
+
+#: includes/admin/class-am-deactivation-survey.php:343
+msgid "Skip & Deactivate"
+msgstr "Überspringen und deaktivieren"
+
+#: includes/class-smart-tags.php:34
+msgid "Site Administrator Email"
+msgstr "Website-Administrator-E-Mail"
+
+#: includes/class-smart-tags.php:35
+msgid "Entry ID"
+msgstr "Eintrags ID"
+
+#: includes/class-smart-tags.php:36
+msgid "Form ID"
+msgstr "Formular-ID"
+
+#: includes/class-smart-tags.php:38
+msgid "Embedded Post/Page Title"
+msgstr "Titel des eingebetteten Beitrags/Seite"
+
+#: includes/class-smart-tags.php:39
+msgid "Embedded Post/Page URL"
+msgstr "Eingebetteter Beitrag/Seiten-URL"
+
+#: includes/class-smart-tags.php:40
+msgid "Embedded Post/Page ID"
+msgstr "Eingebetteter Beitrag/Seiten-ID"
+
+#: includes/class-smart-tags.php:41
+msgid "Date"
+msgstr "Datum"
+
+#: includes/class-smart-tags.php:42
+msgid "Query String Variable"
+msgstr "Abfragezeichenfolge-Variable"
+
+#: includes/class-smart-tags.php:43
+msgid "User IP Address"
+msgstr "Benutzer-IP-Adresse"
+
+#: includes/class-smart-tags.php:44
+msgid "User ID"
+msgstr "Benutzer-ID"
+
+#: includes/class-smart-tags.php:45
+msgid "User Display Name"
+msgstr "Benutzer Anzeige-Name"
+
+#: includes/class-smart-tags.php:46
+msgid "User Full Name"
+msgstr "Vollständiger Benutzername"
+
+#: includes/class-smart-tags.php:47
+msgid "User First Name"
+msgstr "Benutzer-Vorname"
+
+#: includes/class-smart-tags.php:48
+msgid "User Last Name"
+msgstr "Benutzer-Nachname"
+
+#: includes/class-smart-tags.php:49
+msgid "User Email"
+msgstr "Benutzer E-Mail"
+
+#: includes/class-smart-tags.php:50
+msgid "User Meta"
+msgstr "Benutzer-Meta"
+
+#: includes/class-smart-tags.php:51
+msgid "Author ID"
+msgstr "Autor-ID"
+
+#: includes/class-smart-tags.php:52
+msgid "Author Name"
+msgstr "Autor-Name"
+
+#: includes/class-smart-tags.php:53
+msgid "Author Email"
+msgstr "Autor-E-Mail"
+
+#: includes/class-smart-tags.php:54
+msgid "Referrer URL"
+msgstr "Referrer URL"
+
+#: includes/class-smart-tags.php:55
+msgid "Login URL"
+msgstr "Anmelde-URL"
+
+#: includes/class-smart-tags.php:56
+msgid "Logout URL"
+msgstr "Abmelde-URL"
+
+#: includes/class-smart-tags.php:57
+msgid "Register URL"
+msgstr "Registrierungs-URL"
+
+#: includes/class-smart-tags.php:58
+msgid "Lost Password URL"
+msgstr "Passwort-verloren-URL"
+
+#: includes/class-conditional-logic-core.php:193
+msgid "this field if"
+msgstr "dieses Feld, wenn"
+
+#: includes/class-conditional-logic-core.php:197
+msgid "Show"
+msgstr "zeige"
+
+#: includes/class-conditional-logic-core.php:198
+msgid "Hide"
+msgstr "verberge"
+
+#: includes/class-conditional-logic-core.php:211
+#: includes/class-conditional-logic-core.php:286
+msgid "Enable conditional logic"
+msgstr "Bedingte Logik aktivieren"
+
+#: includes/class-conditional-logic-core.php:212
+#: includes/class-conditional-logic-core.php:288
+msgid "How to use Conditional Logic"
+msgstr "So benutzt du Bedingte Logik"
+
+#: includes/class-conditional-logic-core.php:244
+msgid "this connection if"
+msgstr "diese Verbindung, falls"
+
+#: includes/class-conditional-logic-core.php:248
+msgid "Process"
+msgstr "Fortschritt"
+
+#: includes/class-conditional-logic-core.php:249
+msgid "Don't process"
+msgstr "Nicht verarbeiten"
+
+#: includes/class-conditional-logic-core.php:494
+msgctxt "Conditional Logic: new rule logic."
+msgid "AND"
+msgstr "UND"
+
+#: includes/class-conditional-logic-core.php:504
+msgctxt "Conditional Logic: new rule logic."
+msgid "or"
+msgstr "oder"
+
+#: includes/class-conditional-logic-core.php:510
+msgid "Add rule group"
+msgstr "Regelgruppe hinzufügen"
+
+#: includes/templates/class-subscribe.php:21
+msgid "Newsletter Signup Form"
+msgstr "Newsletter-Anmeldeformular"
+
+#: includes/templates/class-subscribe.php:23
+msgid ""
+"Add subscribers and grow your email list with this newsletter signup form. "
+"You can add and remove fields as needed."
+msgstr ""
+"Füge Abonnenten hinzu und erweitere deine E-Mail-Liste mit diesem "
+"Newsletter-Anmeldeformular. Du kannst Felder je nach Bedarf hinzufügen und "
+"entfernen."
+
+#: includes/templates/class-subscribe.php:28
+msgid "Don&#39;t Forget"
+msgstr "Nicht vergessen"
+
+#: includes/templates/class-subscribe.php:29
+msgid "Click the marketing tab to configure your newsletter service provider"
+msgstr ""
+"Klicke den Marketing-Tab, um deinen Newsletter-Dienstanbieter zu "
+"konfigurieren"
+
+#: includes/templates/class-subscribe.php:52
+#: includes/templates/class-suggestion.php:91
+#: includes/templates/class-contact.php:66
+#: includes/templates/class-blank.php:34
+msgid "Sending..."
+msgstr "Senden..."
+
+#: includes/templates/class-suggestion.php:21
+msgid "Suggestion Form"
+msgstr "Vorschlags-Formular"
+
+#: includes/templates/class-suggestion.php:23
+msgid ""
+"Ask your users for suggestions with this simple form template. You can add "
+"and remove fields as needed."
+msgstr ""
+"Frag deine Benutzer nach Vorschlägen mit diesem einfachen Formular-Template."
+" Du kannst Felder je nach Bedarf hinzufügen und entfernen."
+
+#: includes/templates/class-suggestion.php:42
+msgid "Please enter your email, so we can follow up with you."
+msgstr "Bitte gib deine E-Mail ein, sodass wir in Kontakt bleiben können."
+
+#: includes/templates/class-suggestion.php:49
+msgid "Which department do you have a suggestion for?"
+msgstr "Für welchen Bereich hast du einen Vorschlag?"
+
+#: includes/templates/class-suggestion.php:52
+msgid "Sales"
+msgstr "Verkauf"
+
+#: includes/templates/class-suggestion.php:58
+msgid "Product Development"
+msgstr "Produktentwicklung"
+
+#: includes/templates/class-suggestion.php:69
+msgid "Subject"
+msgstr "Betreff (subject)"
+
+#: includes/templates/class-contact.php:21
+msgid "Simple Contact Form"
+msgstr "Einfaches Kontaktformular"
+
+#: includes/templates/class-contact.php:23
+msgid ""
+"Allow your users to contact you with this simple contact form. You can add "
+"and remove fields as needed."
+msgstr ""
+"Ermögliche deinen Benutzern, dich über dieses einfache Kontaktformular zu "
+"erreichen. Du kannst Felder nach Bedarf hinzufügen oder entfernen."
+
+#: includes/templates/class-contact.php:48
+msgid "Comment or Message"
+msgstr "Kommentar oder Nachricht"
+
+#: includes/templates/class-blank.php:21
+msgid "Blank Form"
+msgstr "Leeres Formular"
+
+#: includes/templates/class-blank.php:23
+msgid ""
+"The blank form allows you to create any type of form using our drag & drop "
+"builder."
+msgstr ""
+"Mit dem Drag-and-drop-Builder kannst du jede Art von Formular basierend auf "
+"einem leeren Formular erstellen."
+
+#: includes/fields/class-checkbox.php:22
+msgid "Checkboxes"
+msgstr "Checkboxen"
+
+#: includes/fields/class-checkbox.php:28 includes/fields/class-select.php:28
+#: includes/fields/class-radio.php:28
+msgid "First Choice"
+msgstr "Erste Auswahl"
+
+#: includes/fields/class-checkbox.php:34 includes/fields/class-select.php:33
+#: includes/fields/class-radio.php:34
+msgid "Second Choice"
+msgstr "Zweite Auswahl"
+
+#: includes/fields/class-checkbox.php:40 includes/fields/class-select.php:38
+#: includes/fields/class-radio.php:40
+msgid "Third Choice"
+msgstr "Dritte Auswahl"
+
+#: includes/fields/class-checkbox.php:146
+msgid "Checked"
+msgstr "Gewählt"
+
+#. translators: %s - choice number.
+#: includes/fields/class-checkbox.php:149
+msgid "Choice %s"
+msgstr "Wahlmöglichkeit %s"
+
+#: includes/fields/class-checkbox.php:289 includes/fields/class-radio.php:260
+msgid "Randomize Choices"
+msgstr "Wahlmöglichkeiten durchwürfeln"
+
+#: includes/fields/class-checkbox.php:290 includes/fields/class-radio.php:261
+msgid "Check this option to randomize the order of the choices."
+msgstr ""
+"Wähle diese Option für eine zufällige Reihenfolge der Wahlmöglichkeiten."
+
+#: includes/fields/class-checkbox.php:311 includes/fields/class-select.php:193
+#: includes/fields/class-radio.php:282
+msgid "Show Values"
+msgstr "Werte anzeigen"
+
+#: includes/fields/class-checkbox.php:312 includes/fields/class-select.php:194
+#: includes/fields/class-radio.php:283
+msgid "Check this to manually set form field values."
+msgstr "Wähle dies, um Formularfeld-Werte manuell zu setzen."
+
+#: includes/fields/class-checkbox.php:350
+msgid "Enable Disclaimer / Terms of Service Display"
+msgstr "Anzeige von Haftungsausschluss/Nutzungsbedingungen aktivieren"
+
+#: includes/fields/class-checkbox.php:351
+msgid ""
+"Check this option to adjust the field styling to support Disclaimers and "
+"Terms of Service type agreements."
+msgstr ""
+"Wähle diese Option, um das Styling der Felder anzupassen, um Vereinbarungen "
+"wie Disclaimer und Nutzungsbedingungen zu unterstützen."
+
+#: includes/fields/class-textarea.php:22
+msgid "Paragraph Text"
+msgstr "Textabsatz"
+
+#: includes/fields/class-select.php:22
+msgid "Dropdown"
+msgstr "Dropdown"
+
+#: includes/fields/class-base.php:693
+msgid ""
+"Enter text for the form field label. Field labels are recommended and can be"
+" hidden in the Advanced Settings."
+msgstr ""
+"Gib Text für die Formularfeld-Label ein. Feld-Label werden empfohlen und "
+"können in den Erweiterten Einstellungen verborgen werden."
+
+#: includes/fields/class-base.php:694
+msgid "Label"
+msgstr "Label"
+
+#: includes/fields/class-base.php:704
+msgid "Enter text for the form field description."
+msgstr "Gib Text für die Formularfeld-Beschreibung ein."
+
+#: includes/fields/class-base.php:705
+msgid "Description"
+msgstr "Beschreibung"
+
+#: includes/fields/class-base.php:716
+msgid ""
+"Check this option to mark the field required. A form will not submit unless "
+"all required fields are provided."
+msgstr ""
+"Wähle diese Option, um ein Feld als erforderlich zu markieren. Ein Formular "
+"wird solange nicht übertragen, bis alle erforderlichen Felder angegeben "
+"wurden."
+
+#: includes/fields/class-base.php:735
+msgid "Enter code for the form field."
+msgstr "Gib den Code für das Formularfeld ein."
+
+#: includes/fields/class-base.php:736
+msgid "Code"
+msgstr "Code"
+
+#: includes/fields/class-base.php:746
+msgid "Choices"
+msgstr "Wahlmöglichkeiten"
+
+#: includes/fields/class-base.php:766 includes/fields/class-base.php:897
+msgid "Add choices for the form field."
+msgstr "Wahlmöglichkeiten für das Formularfeld hinzufügen."
+
+#: includes/fields/class-base.php:896
+msgid "Items"
+msgstr "Elemente"
+
+#: includes/fields/class-base.php:984
+msgid ""
+"Images are not cropped or resized. For best results, they should be the same"
+" size and 250x250 pixels or smaller."
+msgstr ""
+"Bilder werden nicht beschnitten oder skaliert. Für beste Ergebnisse sollten "
+"sie gleich groß und höchstens 250x250 Pixel groß sein."
+
+#: includes/fields/class-base.php:994
+msgid "Use image choices"
+msgstr "Bild-Wahlmöglichkeiten benutzen"
+
+#: includes/fields/class-base.php:995
+msgid "Check this option to enable using images with the choices."
+msgstr ""
+"Wähle diese Option, um bei den Wahlmöglichkeiten die Benutzung von Bildern "
+"zu aktivieren."
+
+#: includes/fields/class-base.php:1023
+msgid "Image Choice Style"
+msgstr "Bild-Wahlmöglichkeit-Stil"
+
+#: includes/fields/class-base.php:1024
+msgid "Select the style for the image choices."
+msgstr "Stil für die Bild-Wahlmöglichkeiten auswählen. "
+
+#: includes/fields/class-base.php:1037
+msgid "Modern"
+msgstr "Modern"
+
+#: includes/fields/class-base.php:1038
+msgid "Classic"
+msgstr "Klassisch"
+
+#: includes/fields/class-base.php:1039
+msgid "None"
+msgstr "Keiner"
+
+#: includes/fields/class-base.php:1067
+msgid "Enter text for the default form field value."
+msgstr "Gib Text für den Standardwert des Formularfeldes ein."
+
+#: includes/fields/class-base.php:1069 includes/fields/class-name.php:275
+#: includes/fields/class-name.php:290 includes/fields/class-name.php:305
+#: includes/fields/class-name.php:320
+msgid "Default Value"
+msgstr "Standardwert"
+
+#: includes/fields/class-base.php:1080
+msgid "Select the default form field size."
+msgstr "Wähle die Standardgröße für das Formularfeld aus."
+
+#: includes/fields/class-base.php:1082
+msgid "Small"
+msgstr "klein"
+
+#: includes/fields/class-base.php:1083
+msgid "Medium"
+msgstr "mittel"
+
+#: includes/fields/class-base.php:1084
+msgid "Large"
+msgstr "groß"
+
+#: includes/fields/class-base.php:1086
+msgid "Field Size"
+msgstr "Feldgröße"
+
+#: includes/fields/class-base.php:1100
+msgid "Advanced Options"
+msgstr "Erweiterte Optionen"
+
+#: includes/fields/class-base.php:1112
+msgid "Enter text for the form field placeholder."
+msgstr "Gib Text für den Platzhalter des Formularfeldes ein."
+
+#: includes/fields/class-base.php:1113
+msgid "Placeholder Text"
+msgstr "Platzhaltertext"
+
+#: includes/fields/class-base.php:1124
+msgid ""
+"Enter CSS class names for the form field container. Class names should be "
+"separated with spaces."
+msgstr ""
+"Gib CSS-Klassennamen für den Formularfeld-Container ein. Klassennamen "
+"sollten mit Leerzeichen getrennt werden."
+
+#: includes/fields/class-base.php:1129
+msgid "CSS Classes"
+msgstr "CSS-Klassen"
+
+#: includes/fields/class-base.php:1139
+msgid "Check this option to hide the form field label."
+msgstr "Wähle diese Option, um die Formularfeld-Label zu verbergen."
+
+#: includes/fields/class-base.php:1141
+msgid "Hide Label"
+msgstr "Label verbergen"
+
+#: includes/fields/class-base.php:1150
+msgid "Check this option to hide the form field sub-label."
+msgstr "Wähle diese Option, um die Formularfeld-Sub-Label zu verbergen."
+
+#: includes/fields/class-base.php:1152
+msgid "Hide Sub-Labels"
+msgstr "Sub-Label verbergen"
+
+#: includes/fields/class-base.php:1161
+msgid "Select the layout for displaying field choices."
+msgstr "Layout für die Anzeige der Feld-Wahlmöglichkeiten auswählen."
+
+#: includes/fields/class-base.php:1163
+msgid "One Column"
+msgstr "Eine Spalte"
+
+#: includes/fields/class-base.php:1164
+msgid "Two Columns"
+msgstr "Zwei Spalten"
+
+#: includes/fields/class-base.php:1165
+msgid "Three Columns"
+msgstr "Drei Spalten"
+
+#: includes/fields/class-base.php:1166
+msgid "Inline"
+msgstr "Inline"
+
+#: includes/fields/class-base.php:1168
+msgid "Choice Layout"
+msgstr "Wahlmöglichkeit-Layout"
+
+#: includes/fields/class-base.php:1178
+msgid "Select auto-populate method to use."
+msgstr "Auto-Ausfüllen-Methode auswählen."
+
+#: includes/fields/class-base.php:1181 includes/fields/class-base.php:1203
+msgid "Post Type"
+msgstr "Beitragstyp"
+
+#: includes/fields/class-base.php:1182 includes/fields/class-base.php:1214
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: includes/fields/class-base.php:1184
+msgid "Dynamic Choices"
+msgstr "Dynamische Wahlmöglichkeiten"
+
+#. translators: %s - dynamic source type name.
+#: includes/fields/class-base.php:1225
+msgid "Select %s to use for auto-populating field choices."
+msgstr "%s als Auto-Ausfüllen-Methode für Feld-Wahlmöglichkeiten auswählen."
+
+#. translators: %s - dynamic source type name.
+#: includes/fields/class-base.php:1227
+msgid "Dynamic %s Source"
+msgstr "Dynamische %s-Quelle"
+
+#. translators: %d - total amount of choices.
+#: includes/fields/class-base.php:1548
+msgid ""
+"Showing the first 20 choices.<br> All %d choices will be displayed when "
+"viewing the form."
+msgstr ""
+"Anzeige der ersten 20 Wahlmöglichkeiten.<br> Alle %d Wahlmöglichkeiten "
+"werden beim Betrachten des Formulars angezeigt."
+
+#: includes/fields/class-base.php:1584
+msgid "No form ID found"
+msgstr "Keine Formular-ID gefunden"
+
+#: includes/fields/class-base.php:1589
+msgid "No field type found"
+msgstr "Kein Feldtyp gefunden"
+
+#: includes/fields/class-gdpr-checkbox.php:22
+msgid "GDPR Agreement"
+msgstr "DSGVO-Einverständnis"
+
+#: includes/fields/class-gdpr-checkbox.php:28
+msgid ""
+"I consent to having this website store my submitted information so they can "
+"respond to my inquiry."
+msgstr ""
+"Ich willige ein, dass diese Website meine übermittelten Informationen "
+"speichert, sodass meine Anfrage beantwortet werden kann."
+
+#: includes/fields/class-gdpr-checkbox.php:178
+msgid "Agreement"
+msgstr "Zustimmung"
+
+#: includes/fields/class-name.php:84 includes/fields/class-name.php:370
+msgid "First"
+msgstr "Vorname"
+
+#: includes/fields/class-name.php:105 includes/fields/class-name.php:375
+msgid "Middle"
+msgstr "zweiter Vorname"
+
+#: includes/fields/class-name.php:126 includes/fields/class-name.php:380
+msgid "Last"
+msgstr "Nachname"
+
+#: includes/fields/class-name.php:212
+msgid "Format"
+msgstr "Format"
+
+#: includes/fields/class-name.php:213
+msgid "Select format to use for the name form field"
+msgstr "Format zur Benutzung für das Name-Formularfeld auswählen"
+
+#: includes/fields/class-name.php:224
+msgid "Simple"
+msgstr "Einfach"
+
+#: includes/fields/class-name.php:225
+msgid "First Last"
+msgstr "Vorname Nachname"
+
+#: includes/fields/class-name.php:226
+msgid "First Middle Last"
+msgstr "Vorname Zweitname Nachname"
+
+#: includes/fields/class-name.php:268
+msgid "Name field advanced options."
+msgstr "Name-Feld Erweiterte Optionen."
+
+#: includes/fields/class-name.php:271 includes/fields/class-name.php:286
+#: includes/fields/class-name.php:301 includes/fields/class-name.php:316
+msgid "Placeholder"
+msgstr "Platzhalter"
+
+#: includes/fields/class-name.php:283
+msgid "First Name"
+msgstr "Vorname"
+
+#: includes/fields/class-name.php:283
+msgid "First name field advanced options."
+msgstr "Vorname-Feld Erweiterte Optionen."
+
+#: includes/fields/class-name.php:298
+msgid "Middle Name"
+msgstr "Zweitname"
+
+#: includes/fields/class-name.php:298
+msgid "Middle name field advanced options."
+msgstr "Zweitname-Feld Erweiterte Optionen."
+
+#: includes/fields/class-name.php:313
+msgid "Last Name"
+msgstr "Nachname"
+
+#: includes/fields/class-name.php:313
+msgid "Last name field advanced options."
+msgstr "Nachnname-Feld Erweiterte Optionen."
+
+#: includes/fields/class-email.php:92 includes/fields/class-email.php:308
+msgid "Confirm Email"
+msgstr "E-Mail bestätigen"
+
+#: includes/fields/class-email.php:204
+msgid "Enable Email Confirmation"
+msgstr "E-Mail-Bestätigung aktivieren"
+
+#: includes/fields/class-email.php:205
+msgid "Check this option to ask users to provide an email address twice."
+msgstr ""
+"Wähle diese Option, um Benutzer aufzufordern, ihre E-Mail-Adresse doppelt "
+"anzugeben."
+
+#: includes/fields/class-email.php:243
+msgid "Confirmation Placeholder Text"
+msgstr "Bestätigung-Platzhalter-Text"
+
+#: includes/fields/class-email.php:244
+msgid "Enter text for the confirmation field placeholder."
+msgstr "Gib Text für den Bestätigungs-Feld-Platzhalter ein."
+
+#: includes/fields/class-radio.php:22
+msgid "Multiple Choice"
+msgstr "Multiple Choice"
+
+#: includes/fields/class-number.php:22
+msgid "Numbers"
+msgstr "Zahlen"
+
+#: includes/fields/class-text.php:22
+msgid "Single Line Text"
+msgstr "Einzeiliger Text"
+
+#: includes/fields/class-text.php:142
+msgid "Input Mask"
+msgstr "Eingabemaske"
+
+#: includes/fields/class-text.php:143
+msgid "Enter your custom input mask."
+msgstr "Gib deine individuelle Eingabemaske ein."
+
+#: includes/fields/class-text.php:144
+msgid "See Examples & Docs"
+msgstr "Siehe Beispiele und Dokumentation"
+
+#: includes/class-process.php:101
+msgid "Invalid form."
+msgstr "Ungültiges Formular."
+
+#: includes/class-process.php:138
+msgid "Incorrect reCAPTCHA, please try again."
+msgstr "Ungültiges reCAPTCHA, bitte erneut versuchen."
+
+#: includes/class-process.php:141
+msgid "reCAPTCHA is required."
+msgstr "reCAPTCHA ist erforderlich."
+
+#: includes/class-process.php:161
+msgid "Uploaded files combined size exceeds allowed maximum."
+msgstr ""
+"Die Gesamtgröße der hochzuladenden Dateien übersteigt das erlaubte Maximum."
+
+#: includes/class-process.php:173 includes/class-process.php:234
+msgid "Form has not been submitted, please see the errors below."
+msgstr "Formular wurde nicht übertragen, bitte sieh dir die Fehler unten an."
+
+#: includes/class-process.php:185
+msgid "WPForms honeypot field triggered."
+msgstr "WPForms-Honeypot-Feld ausgelöst."
+
+#: includes/integrations.php:32
+msgid "Select a form to display"
+msgstr "Ein Formular zur Anzeige auswählen"
+
+#: includes/integrations.php:39
+msgid "No forms found"
+msgstr "Keine Formulare gefunden"
+
+#: includes/integrations.php:48
+msgid "Content"
+msgstr "Inhalt"
+
+#: includes/integrations.php:49
+msgid "Add your form"
+msgstr "Dein Formular hinzufügen"
+
+#: includes/integrations.php:53 src/Forms/Preview.php:120
+#: src/Integrations/Gutenberg/FormSelector.php:93
+msgid "Form"
+msgstr "Formular"
+
+#: includes/integrations.php:57
+msgid "Select a form to add it to your post or page."
+msgstr ""
+"Wähle ein Formular unten, um es zu deinem Beitrag oder Seite hinzuzufügen."
+
+#: includes/integrations.php:62
+msgid "Display Form Name"
+msgstr "Formularname anzeigen"
+
+#: includes/integrations.php:65 includes/integrations.php:80
+msgid "No"
+msgstr "Nein"
+
+#: includes/integrations.php:66 includes/integrations.php:81
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/integrations.php:69
+msgid "Would you like to display the forms name?"
+msgstr "Möchtest du den Formularnamen anzeigen?"
+
+#: includes/integrations.php:77
+msgid "Display Form Description"
+msgstr "Formularbeschreibung anzeigen"
+
+#: includes/integrations.php:84
+msgid "Would you like to display the form description?"
+msgstr "Möchtest du die Formularbeschreibung anzeigen?"
+
+#: includes/class-logging.php:38
+msgid "WPForms Logs"
+msgstr "WPForms-Berichte"
+
+#: includes/class-logging.php:38
+msgid "Logs"
+msgstr "Protokolle"
+
+#: wpforms.php:81
+msgid "Please deactivate WPForms Lite before activating WPForms."
+msgstr "Bitte deactiviere WPForms Lite, bevor du WPForms aktivierst."
+
+#. translators: %1$s - WPBeginner URL for recommended WordPress hosting.
+#: wpforms.php:111
+msgid ""
+"Your site is running an <strong>insecure version</strong> of PHP that is no "
+"longer supported. Please contact your web hosting provider to update your "
+"PHP version or switch to a <a href=\"%1$s\" target=\"_blank\" rel=\"noopener"
+" noreferrer\">recommended WordPress hosting company</a>."
+msgstr ""
+"Deine Website läuft mit einer <strong>unsicheren Version</strong> von PHP, "
+"die nicht länger unterstützt wird. Bitte kontaktiere deinen Hosting-"
+"Provider, um deine PHP-Version zu aktualisieren oder wechsel auf <a "
+"href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">einen "
+"empfohlenen WordPress-Hosting-Anbieter</a>."
+
+#. translators: %1$s - WPForms.com URL for documentation with more details.
+#: wpforms.php:129
+msgid ""
+"<strong>Note:</strong> WPForms plugin is disabled on your site until you fix"
+" the issue. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">Read more for additional information.</a>"
+msgstr ""
+"Hinweis:</strong> WPForms-Plugin ist auf deiner Website deaktiviert, bis du "
+"das Problem behebst. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">Weiterlesen für zusätzliche Informationen.</a>"
+
+#: src/Forms/Preview.php:119
+msgid "%s Preview"
+msgstr "%s-Voransicht"
+
+#: src/Forms/Preview.php:141
+msgid "This is a preview of your form. This page is not publicly accessible."
+msgstr ""
+"Dies ist eine Voransicht deines Formulars. Diese Seite ist nicht öffentlich "
+"einsehbar."
+
+#: src/Forms/Preview.php:144
+msgid "Close this window"
+msgstr "Dieses Fenster schließen"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:150
+msgid "Hide empty fields"
+msgstr "Leere Felder verbergen"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:152
+#: src/Pro/Admin/Entries/PrintPreview.php:195
+msgid "Show empty fields"
+msgstr "Leere Felder anzeigen"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:161
+msgid "Hide notes"
+msgstr "Notizen verbergen"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:163
+#: src/Pro/Admin/Entries/PrintPreview.php:196
+msgid "Show notes"
+msgstr "Notizen anzeigen"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:172
+msgid "Normal view"
+msgstr "Normale Anzeige"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:174
+#: src/Pro/Admin/Entries/PrintPreview.php:197
+msgid "Compact view"
+msgstr "Kompakte Anzeige"
+
+#. translators: %d - entry ID.
+#: src/Pro/Admin/Entries/PrintPreview.php:188
+msgid "Entry #%d"
+msgstr "Eintrag #%d"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:191
+msgid "Print"
+msgstr "Drucken"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:206
+msgid "This entry does not have any fields"
+msgstr "Dieser Eintrag hat keine Felder"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:224
+msgid "Empty"
+msgstr "Leer"
+
+#: src/Pro/Admin/Entries/PrintPreview.php:235
+msgid "Notes"
+msgstr "Notizen"
+
+#. translators: %1$s - user name; %2$s - date
+#: src/Pro/Admin/Entries/PrintPreview.php:248
+msgid "Added by %1$s on %2$s"
+msgstr "Hinzugefügt von %1$s am %2$s"
+
+#: src/Lite/Admin/DashboardWidget.php:136
+#: src/Lite/Admin/DashboardWidget.php:337
+msgid "Show More"
+msgstr "Mehr anzeigen"
+
+#: src/Lite/Admin/DashboardWidget.php:137
+msgid "Show Less"
+msgstr "Weniger anzeigen"
+
+#: src/Lite/Admin/DashboardWidget.php:213
+msgid "Create Your First Form to Start Collecting Leads"
+msgstr "Erstelle dein erstes Formular und beginne, Leads zu sammeln"
+
+#: src/Lite/Admin/DashboardWidget.php:214
+msgid ""
+"You can use WPForms to build contact forms, surveys, payment forms, and more"
+" with just a few clicks."
+msgstr ""
+"Mit WPForms kannst du Kontaktformulare, Umfragen, Zahlungsformulare und mehr"
+" mit nur ein paar Klicks erstellen."
+
+#: src/Lite/Admin/DashboardWidget.php:216
+msgid "Create Your Form"
+msgstr "Erstelle dein Formular"
+
+#: src/Lite/Admin/DashboardWidget.php:219
+#: src/Lite/Admin/DashboardWidget.php:362
+msgid "Learn More"
+msgstr "Mehr erfahren"
+
+#: src/Lite/Admin/DashboardWidget.php:238
+msgid "Total Entries"
+msgstr "Gesamteinträge"
+
+#: src/Lite/Admin/DashboardWidget.php:241
+msgid "Last 7 days"
+msgstr "Letzte 7 Tage"
+
+#: src/Lite/Admin/DashboardWidget.php:251
+msgid "View all Form Entries inside WordPress Dashboard"
+msgstr "Alle Formulareinträge innerhalb des WordPress-Dashboards anzeigen"
+
+#: src/Lite/Admin/DashboardWidget.php:252
+msgid "Form entries reports are not available."
+msgstr "Formular-Eintrags-Berichte sind nicht verfügbar."
+
+#: src/Lite/Admin/DashboardWidget.php:253
+msgid "Form entries are not stored in Lite."
+msgstr "Formulareinträge werden in Lite nicht gespeichert."
+
+#: src/Lite/Admin/DashboardWidget.php:254
+msgid "Upgrade to Pro and get access to the reports."
+msgstr "Führe ein Upgrade auf Pro durch und erhalte Zugang zu den Berichten."
+
+#: src/Lite/Admin/DashboardWidget.php:263
+msgid "Go to WPForms.com"
+msgstr "Gehe auf WPForms.com"
+
+#: src/Lite/Admin/DashboardWidget.php:273
+msgid "Total Entries by Form"
+msgstr "Gesamteinträge nach Formular"
+
+#: src/Lite/Admin/DashboardWidget.php:308
+msgid "No entries were submitted yet."
+msgstr "Es wurden noch keine Einträge übermittelt."
+
+#: src/Lite/Admin/DashboardWidget.php:336
+msgid "Show all forms"
+msgstr "Alle Formulare anzeigen"
+
+#: src/Lite/Admin/DashboardWidget.php:359
+msgid "Recommended Plugin:"
+msgstr "Empfohlenes Plugin:"
+
+#: src/Lite/Admin/DashboardWidget.php:361
+msgid "Install"
+msgstr "Installieren"
+
+#: src/Lite/Admin/Builder/Education.php:63
+msgid "is a PRO Feature"
+msgstr "ist eine PRO-Funktion"
+
+#: src/Lite/Admin/Builder/Education.php:64
+msgid ""
+"We're sorry, the %name% is not available on your plan. Please upgrade to the"
+" PRO plan to unlock all these awesome features."
+msgstr ""
+"Es tut uns leid, das %name% ist für deinen Tarif nicht verfügbar. Bitte "
+"führe ein Upgrade auf den PRO-Tarif durch, um all diese tollen Funktionen "
+"freizuschalten."
+
+#: src/Lite/Admin/Builder/Education.php:67
+msgid ""
+"<strong>Bonus:</strong> WPForms Lite users get <span>50% off</span> regular "
+"price, automatically applied at checkout."
+msgstr ""
+"<strong>Bonus:</strong> Benutzer von WPForms Lite erhalten <span>50% "
+"Rabatt</span>,dieser wird automatisch an der Kasse abgezogen."
+
+#: src/Lite/Admin/Builder/Education.php:109
+msgid "Request A Quote Form"
+msgstr "Angebotsformular anfordern"
+
+#: src/Lite/Admin/Builder/Education.php:111
+msgid ""
+"Start collecting leads with this pre-made Request a quote form. You can add "
+"and remove fields as needed."
+msgstr ""
+"Beginne mit dem Sammeln von Leads mit diesem vorgefertigten "
+"Angebotsformular. Du kannst Felder je nach Bedarf hinzufügen und entfernen."
+
+#: src/Lite/Admin/Builder/Education.php:114
+msgid "Donation Form"
+msgstr "Spendenformular"
+
+#: src/Lite/Admin/Builder/Education.php:116
+msgid ""
+"Start collecting donation payments on your website with this ready-made "
+"Donation form. You can add and remove fields as needed."
+msgstr ""
+"Beginne mit dem Sammeln von Spendenzahlungen mit diesem vorgefertigten "
+"Spendenformular. Du kannst Felder je nach Bedarf hinzufügen und entfernen."
+
+#: src/Lite/Admin/Builder/Education.php:119
+msgid "Billing / Order Form"
+msgstr "Rechnungs-/Bestellformular"
+
+#: src/Lite/Admin/Builder/Education.php:121
+msgid ""
+"Collect payments for product and service orders with this ready-made form "
+"template. You can add and remove fields as needed."
+msgstr ""
+"Sammle Zahlungen für Produkte und Dienstleistungen mit diesem vorgefertigten"
+" Formular-Template. Du kannst Felder je nach Bedarf hinzufügen und "
+"entfernen."
+
+#: src/Lite/Admin/Builder/Education.php:127
+msgid "Unlock Pre-Made Form Templates"
+msgstr "Vorgefertigte Formular-Templates freischalten"
+
+#: src/Lite/Admin/Builder/Education.php:131
+msgid "Upgrade"
+msgstr "Upgrade"
+
+#: src/Lite/Admin/Builder/Education.php:135
+msgid ""
+"While WPForms Lite allows you to create any type of form, you can speed up "
+"the process by unlocking our other pre-built form templates among other "
+"features, so you never have to start from scratch again..."
+msgstr ""
+"Während WPForms Lite dir das Erstellen jeden Typs von Formular ermöglicht, "
+"kannst du den Prozess beschleunigen, indem du unsere anderen vorgefertigten "
+"Formular-Templates und weitere Funktionen freischaltest, sodass du nie mehr "
+"ganz vorne anfangen musst..."
+
+#: src/Lite/Admin/Builder/Education.php:173
+msgid "Website / URL"
+msgstr "Website/URL"
+
+#: src/Lite/Admin/Builder/Education.php:180
+msgid "Address"
+msgstr "Anschrift"
+
+#: src/Lite/Admin/Builder/Education.php:187
+msgid "Password"
+msgstr "Passwort"
+
+#: src/Lite/Admin/Builder/Education.php:194
+msgid "Phone"
+msgstr "Telefon"
+
+#: src/Lite/Admin/Builder/Education.php:201
+msgid "Date / Time"
+msgstr "Datum/Zeit"
+
+#: src/Lite/Admin/Builder/Education.php:208
+msgid "Hidden Field"
+msgstr "Verborgenes Feld"
+
+#: src/Lite/Admin/Builder/Education.php:215
+msgid "HTML"
+msgstr "HTML"
+
+#: src/Lite/Admin/Builder/Education.php:222
+msgid "File Upload"
+msgstr "Datei hochladen"
+
+#: src/Lite/Admin/Builder/Education.php:236
+msgid "Section Divider"
+msgstr "Abschnitts-Trennzeichen"
+
+#: src/Lite/Admin/Builder/Education.php:243
+msgid "Rating"
+msgstr "Bewertung"
+
+#: src/Lite/Admin/Builder/Education.php:250
+msgid "Captcha"
+msgstr "Captcha"
+
+#: src/Lite/Admin/Builder/Education.php:257
+msgid "Signature"
+msgstr "Signatur"
+
+#: src/Lite/Admin/Builder/Education.php:264
+msgid "Likert Scale"
+msgstr "Likert-Skala"
+
+#: src/Lite/Admin/Builder/Education.php:271
+msgid "Net Promoter Score"
+msgstr "Net Promoter Score"
+
+#: src/Lite/Admin/Builder/Education.php:281
+msgid "Single Item"
+msgstr "Einzelnes Element"
+
+#: src/Lite/Admin/Builder/Education.php:288
+msgid "Multiple Items"
+msgstr "Mehrere Elemente"
+
+#: src/Lite/Admin/Builder/Education.php:295
+msgid "Checkbox Items"
+msgstr "Checkbox-Elemente"
+
+#: src/Lite/Admin/Builder/Education.php:302
+msgid "Dropdown Items"
+msgstr "Dropdown-Elemente"
+
+#: src/Lite/Admin/Builder/Education.php:309
+msgid "Total"
+msgstr "Summe"
+
+#. translators: %s - addon name
+#: src/Lite/Admin/Builder/Education.php:362
+#: src/Lite/Admin/Builder/Education.php:394
+msgid "%s addon"
+msgstr "%s Add-on"
+
+#: src/Providers/Provider/Settings/PageIntegrations.php:235
+msgid "You do not have permissions."
+msgstr "Du hast keine Berechtigung."
+
+#: src/Providers/Provider/Settings/PageIntegrations.php:243
+msgid "Missing required data in payload."
+msgstr "Erforderliche Daten fehlen in Payload."
+
+#: src/Providers/Provider/Settings/FormBuilder.php:111
+msgid "Custom Field Name"
+msgstr "benutzerdefinierter Feldname"
+
+#: src/Providers/Provider/Settings/FormBuilder.php:112
+msgid "Form Field Value"
+msgstr "Formularfeld-Wert"
+
+#: src/Providers/Provider/Settings/FormBuilder.php:122
+#: src/Providers/Provider/Settings/FormBuilder.php:157
+msgid "Field Name"
+msgstr "Feldname"
+
+#: src/Providers/Provider/Settings/FormBuilder.php:140
+#: src/Providers/Provider/Settings/FormBuilder.php:173
+msgid "Add Another"
+msgstr "Weiterer eintrag"
+
+#: src/Providers/Provider/Settings/FormBuilder.php:146
+msgid "Remove"
+msgstr "Entfernen"
+
+#: src/Providers/Provider/Settings/FormBuilder.php:189
+msgid "Map custom fields (or properties) to form fields values."
+msgstr "Individuelle Felder (oder Eigenschaften) Fomularfeld-Werten zuordnen."
+
+#: src/Providers/Provider/Settings/FormBuilder.php:255
+msgid "You do not have permission to perform this action."
+msgstr "Du hast keine Berechtigung, diese Aktion auszuführen."
+
+#: src/Providers/Provider/Settings/FormBuilder.php:261
+msgid "Something went wrong while performing an AJAX request."
+msgstr "Etwas ist schiefgelaufen bei der Ausführung einer AJAX-Anfrage."
+
+#: src/Providers/Provider/Settings/FormBuilder.php:384
+msgid "Add New Connection"
+msgstr "Neue Verbindung hinzufügen"
+
+#. translators: %1$d - Number of minutes; %2$s - Single or plural word
+#. 'minute'.
+#: src/Admin/Challenge.php:472
+msgid ""
+"Complete the <b>WPForms Challenge</b> and get up and running within "
+"%1$d&nbsp;%2$s."
+msgstr ""
+"Beende die <b>WPForms-Aufgabe</b> und sei einsatzbereit innerhalb "
+"%1$d&nbsp;%2$s."
+
+#: src/Admin/Challenge.php:474 src/Admin/Challenge.php:600
+#: src/Admin/Challenge.php:637
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "Minute"
+msgstr[1] "Minuten"
+
+#: src/Admin/Challenge.php:486 src/Admin/Challenge.php:538
+msgid "Name Your Form"
+msgstr "Benenne dein Formular"
+
+#: src/Admin/Challenge.php:488 src/Admin/Challenge.php:549
+msgid "Add Fields to Your Form"
+msgstr "Füge deinem Formular Felder hinzu"
+
+#: src/Admin/Challenge.php:489 src/Admin/Challenge.php:555
+msgid "Check Notification Settings"
+msgstr "Benachrichtigungs-Einstellungen prüfen"
+
+#: src/Admin/Challenge.php:490 src/Admin/Challenge.php:579
+msgid "Embed in a Page"
+msgstr "In eine Seite einbinden"
+
+#: src/Admin/Challenge.php:495
+msgid "Start Challenge"
+msgstr "Aufgabe starten"
+
+#: src/Admin/Challenge.php:497
+msgid "Skip Challenge"
+msgstr "Aufgabe überspringen"
+
+#: src/Admin/Challenge.php:501
+msgid "Cancel Challenge"
+msgstr "Aufgabe abbrechen"
+
+#: src/Admin/Challenge.php:508
+msgid "WPForms Challenge"
+msgstr "WPForms-Aufgabe"
+
+#. translators: %s - minutes in 2:00 format.
+#: src/Admin/Challenge.php:513
+msgid "%s remaining"
+msgstr "%s verbleibend"
+
+#: src/Admin/Challenge.php:539
+msgid "Give your form a name so you can easily identify it."
+msgstr ""
+"Gib deinem Formular einen Namen, damit du es leicht identifizieren kannst."
+
+#: src/Admin/Challenge.php:540 src/Admin/Challenge.php:551
+#: src/Admin/Challenge.php:557 src/Admin/Challenge.php:582
+msgid "Done"
+msgstr "Fertig"
+
+#: src/Admin/Challenge.php:545
+msgid "Build your form from scratch or use one of our pre-made templates."
+msgstr ""
+"Erstelle dein Formular ganz neu oder benutze eines unserer vorgefertigten "
+"Templates."
+
+#: src/Admin/Challenge.php:550
+msgid ""
+"You can add additional fields to your form, if you need them. This step is "
+"optional."
+msgstr ""
+"Du kannst deinem Formular zusätzliche Felder hinzufügen, falls nötig. Dieser"
+" Schritt ist optional."
+
+#: src/Admin/Challenge.php:556
+msgid ""
+"The default notification settings might be sufficient, but "
+"double&#8209;check to be sure."
+msgstr ""
+"Die Standard-Benachrichtigungs-Einstellungen sollten ausreichen, aber prüfe "
+"sie, um sicher zu gehen."
+
+#: src/Admin/Challenge.php:576
+msgid "Add a Block"
+msgstr "Einen Block hinzufügen"
+
+#: src/Admin/Challenge.php:577
+msgid "Click the “Add Block” button, search WPForms, select block to embed."
+msgstr ""
+"Klicke den „Block hinzufügen“-Button, durchsuche WPForms, einzubindenden "
+"Block auswählen."
+
+#: src/Admin/Challenge.php:580
+msgid ""
+"Click the “Add Form” button, select your form, then add the embed code."
+msgstr ""
+"Klicke den „Formular hinzufügen“-Button, Formular auswählen und den Embed-"
+"Code einfügen."
+
+#: src/Admin/Challenge.php:592
+msgid "Congrats, you did it!"
+msgstr "Gratulation, du hast es geschafft!"
+
+#. translators: %1$s - Number of minutes in HTML container; %2$s - Single or
+#. plural word 'minute'; %3$s - Number of seconds in HTML container; %4$s -
+#. Single or plural word 'second'; %5$s - 5 rating star symbols HTML.
+#: src/Admin/Challenge.php:598
+msgid ""
+"You completed the WPForms Challenge in <b>%1$s %2$s %3$s %4$s</b>. Share "
+"your success story with other WPForms users and help us spread the word "
+"<b>by giving WPForms a 5-star rating (%5$s) on WordPress.org</b>. Thanks for"
+" your support and we look forward to bringing more awesome features."
+msgstr ""
+"Du hast die WPForms-Aufgabe in <b>%1$s %2$s %3$s %4$s</b>beendet. Teile "
+"deinen Erfolg mit anderen WPForms-Benutzern und hilf uns, die Botschaft "
+"weiterzugeben <b>indem du WPForms eine 5-Sterne-Bewertung gibst (%5$s) auf "
+"WordPress.org</b>. Danke für deine Unterstützung und wir bemühen uns, "
+"weitere tolle Funktionen bereitzustellen."
+
+#: src/Admin/Challenge.php:602
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "Sekunde"
+msgstr[1] "Sekunden"
+
+#: src/Admin/Challenge.php:618
+msgid "Rate WPForms on WordPress.org"
+msgstr "WPForms auf WordPress.org bewerten"
+
+#: src/Admin/Challenge.php:629
+msgid "Help us improve WPForms"
+msgstr "Hilf uns, WPForms zu verbessern"
+
+#. translators: %1$d - Number of minutes; %2$s - Single or plural word
+#. 'minute'.
+#: src/Admin/Challenge.php:635
+msgid ""
+"We`re sorry that it took longer than %1$d %2$s to create a form. Our goal is"
+" to create the most beginner friendly WordPress form plugin. Please take a "
+"moment to let us know how we can improve WPForms."
+msgstr ""
+"Es tut uns leid, dass es länger als %1$d %2$s dauerte, um ein Formular zu "
+"erstellen. Unser Ziel ist es, das benutzerfreundlichste Formular-Plugin für "
+"WordPress anzubieten. Bitte nimm dir einen Moment, um uns mitzuteilen, wie "
+"wir WPForms verbessern können."
+
+#: src/Admin/Challenge.php:644
+msgid ""
+"Yes, I give WPForms permission to contact me for any follow up questions."
+msgstr ""
+"Ja, ich bin einverstanden, dass WPForms mich für jegliche folgende Fragen "
+"kontaktiert."
+
+#: src/Admin/Challenge.php:646
+msgid "Submit Feedback"
+msgstr "Feedback abgeben"
+
+#: src/Admin/Challenge.php:669
+msgid "Take the WPForms Challenge"
+msgstr "Die WPForms-Aufgabe annehmen"
+
+#: src/Admin/Challenge.php:670
+msgid ""
+"Create your first form with our guided setup wizard in less than 5 minutes "
+"to experience the WPForms difference."
+msgstr ""
+"Erstelle dein erstes Formular mit unserem geführten Einstellungs-Assistenten"
+" in weniger als 5 Minuten, um den Unterschied, den WPForms macht, zu "
+"erleben."
+
+#: src/Admin/Challenge.php:673
+msgid "Start the WPForms Challenge"
+msgstr "Die WPForms-Aufgabe beginnen"
+
+#: src/Integrations/Gutenberg/FormSelector.php:89
+msgid "Select and display one of your forms."
+msgstr "Eines deiner Formulare auswählen und anzeigen."
+
+#: src/Integrations/Gutenberg/FormSelector.php:90
+msgid "form"
+msgstr "Formular"
+
+#: src/Integrations/Gutenberg/FormSelector.php:91
+msgid "Select a Form"
+msgstr "Ein Formular auswählen"
+
+#: src/Integrations/Gutenberg/FormSelector.php:92
+msgid "Form Settings"
+msgstr "Formulareinstellungen"
+
+#: src/Integrations/Gutenberg/FormSelector.php:94
+msgid "Show Title"
+msgstr "Titel anzeigen"
+
+#: src/Integrations/Gutenberg/FormSelector.php:95
+msgid "Show Description"
+msgstr "Beschreibung anzeigen"
+
+#. translators: %s - URL WP Mail SMTP settings.
+#: src/Integrations/WPMailSMTP/Notifications.php:78
+msgid ""
+"This setting is disabled because you have the \"Force From Name\" setting "
+"enabled in <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">WP "
+"Mail SMTP</a>."
+msgstr ""
+"Diese Einstellung ist deaktiviert, weil du die Einstellung „Force From Name“"
+" in <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">WP Mail "
+"SMTP</a>aktiviert hast."
+
+#. translators: %s - URL WP Mail SMTP settings.
+#: src/Integrations/WPMailSMTP/Notifications.php:109
+msgid ""
+"This setting is disabled because you have the \"Force From Email\" setting "
+"enabled in <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">WP "
+"Mail SMTP</a>."
+msgstr ""
+"Diese Einstellung ist deaktiviert, weil du die Einstellung „Force From "
+"Email“ in <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">WP "
+"Mail SMTP</a>aktiviert hast."

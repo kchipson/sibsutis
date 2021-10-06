@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>Лабораторная работа 2.4</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script>
+    function startTime() {
+        var tm = new Date();
+        var h = tm.getHours();
+        var m = tm.getMinutes();
+        var s = tm.getSeconds();
+        var dt = new Date();
+        var day = dt.getDate();
+        var mon = dt.getMonth() + 1;
+        var yr = dt.getFullYear();
+        m = checkTime(m);
+        s = checkTime(s);
+        t = setTimeout('startTime()', 500);
+        console.log(h + ':' + m + ':' + s);
+        SetTime(h, m, s, day, mon, yr)
+    }
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    function SetTime(h, m, s, day, mon, yr) {
+        if (h > 12) {
+            h = (h - 12);
+            if (h < 10) {
+                h = '0' + h;
+            }
+            document.getElementById("dg9").src = 'img/dgpm.gif';
+        }
+        else{
+            h = '0' + h;
+            document.getElementById("dg9").src = 'img/dgam.gif';
+        }
+        hours = String(h).split("");
+        document.getElementById("dg1").src = 'img/' + hours[0] + '.gif';
+        document.getElementById("dg2").src = 'img/' + hours[1] + '.gif';
+        mins = String(m).split("");
+        document.getElementById("dg4").src = 'img/' + mins[0] + '.gif';
+        document.getElementById("dg5").src = 'img/' + mins[1] + '.gif';
+        secs = String(s).split("");
+        document.getElementById("dg7").src = 'img/' + secs[0] + '.gif';
+        document.getElementById("dg8").src = 'img/' + secs[1] + '.gif';
+        //
+        days = String(day).split("");
+        document.getElementById("dg10").src = 'img/0.gif';
+        document.getElementById("dg11").src = 'img/' + days[0] + '.gif';
+        mons = String(mon).split("");
+        document.getElementById("dg13").src = 'img/0.gif';
+        document.getElementById("dg14").src = 'img/' + mons[0] + '.gif';
+        yrs = String(yr).split("");
+        document.getElementById("dg16").src = 'img/' + yrs[0] + '.gif';
+        document.getElementById("dg17").src = 'img/' + yrs[1] + '.gif';
+        document.getElementById("dg18").src = 'img/' + yrs[2] + '.gif';
+        document.getElementById("dg19").src = 'img/' + yrs[3] + '.gif';
+    }
+    function startDate(){
+        var dt = new Date();
+        var day = dt.getDate();
+        var mon = dt.getMonth();
+        var yr = dt.getFullYear();
+    }
+</script>
+
+<body onload="startTime()">
+    <h1 id="time" align="center"></h1>
+    <div class="time" align="center">
+        <img id="dg1">
+        <img id="dg2">
+        <img id="dg3" src="img/dgc.gif">
+        <img id="dg4">
+        <img id="dg5">
+        <img id="dg6" src="img/dgc.gif">
+        <img id="dg7">
+        <img id="dg8">
+        <img id="dg9">
+    </div>
+    <div class="date" align="center">
+        <img id="dg10">
+        <img id="dg11">
+        <img id="dg12" src="img/dgp.gif">
+        <img id="dg13">
+        <img id="dg14">
+        <img id="dg15" src="img/dgp.gif">
+        <img id="dg16">
+        <img id="dg17">
+        <img id="dg18">
+        <img id="dg19">
+    </div>
+</body>
+
+</html>

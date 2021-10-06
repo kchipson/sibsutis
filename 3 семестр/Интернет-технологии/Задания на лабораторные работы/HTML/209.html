@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Таблицы стилей CSS.Примеры. </TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+
+<h2><A NAME="list">Визуальные свойства</A></h2>
+<UL>
+        <LI><A href="#1">cursor</a>
+        <LI><A href="#2">filter</a>
+        <LI><A href="#3">visibility</a>
+        <LI><A href="#4">display</a>
+        <LI><A href="#5">list-style-position</a>
+        <LI><A href="#6">list-style-type</a>
+        <LI><A href="#7">list-style-image</a>
+</UL>
+<UL>
+       <LI id=1><B>cursor</B><BR> 
+<br>Синтаксис: <span class=cod> <strong>селектор</strong> {cursor: <strong>hand</strong>} </span><br>
+
+Атрибут позволяет задать вид курсора, присвоив ему одно из значений:
+
+<ul>
+<li> <i>crosshair</i>
+<li> <i>hand</i>
+<li> <i>pointer</i>
+<li> <i>move</i>
+<li> <i>e-resize</i>
+<li> <i>ne-resize</i>
+<li> <i>nw-resize</i>
+<li> <i>n-resize</i>
+<li> <i>sw-resize</i>
+<li> <i>se-resize</i>
+<li> <i>s-resize</i>
+<li> <i>w-resize</i>
+<li> <i>text</i>
+<li> <i>wait</i>
+<li> <i>help</i>
+<li> <i>auto</i>
+<li> <i>default</i>
+</ul>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+      <LI id=2><B>filter</B><BR>
+<br>Синтаксис: <span class=cod> <strong>селектор</strong> {filter: <strong>fliph</strong>(<strong>параметры</strong>)} </span><br>
+
+
+Атрибут позволяет задать фильтр для текста или изображения, присвоив ему одно из значений:
+ <ul>
+<li><i>alpha</i> 
+<li><i>blur</i>
+<li><i>chroma</i>
+<li><i>dropshadow</i>
+<li><i>flipv</i> 
+<li><i>fliph</i>
+<li><i>glow</i>
+<li><i>gray</i>
+<li><i>invert</i>
+<li><i>light</i>
+<li><i>mask</i> 
+<li><i>shadow</i>
+<li><i>wave</i>
+<li><i>xray</i>
+
+</ul>
+      <LI id=3><B>visibility</B><BR>Атрибут позволяет задать видимость фрагмента документа, присвоив ему одно из значений:
+
+<br>Синтаксис: <span class=cod> <strong>селектор</strong> {visibility: <strong>inherit</strong>} </span>
+ <ul>
+<li><i>inherit</i>
+<li><i>none</i>
+<li><i>visible</i>
+
+</ul>
+     <LI id=4><B>display</B><BR>Атрибут позволяет задать видимость фрагмента документа, визуально отличается от <B>visibility</B> тем, 
+что сдвигает предыдущий и последующий элементы вместе: 
+
+<br>Синтаксис: <span class=cod> <strong>селектор</strong> {display: <strong>none</strong>} </span>
+ <ul>
+<li><i>inline</i>
+<li><i>list-item</i>
+<li><i>none</i>
+<li><i>block</i>
+</ul>
+      <LI id=5><B>list-style-position</B><BR>Атрибут позволяет задать то, как будет отображаться текст внутри списка, если текст элемента 
+списка по объему больше одной строки. 
+
+
+<br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-position: <strong>outside</strong>} </span>
+ <ul>
+<li><i>outside</i>
+<li><i>inside</i>
+
+</ul>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+       <LI id=6><B>list-style-type</B><BR> Атрибут определяет оформление маркеров в списках. 
+<br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: <strong>тип</strong>} </span>
+       <UL>
+            <LI><I>disc</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: disc} </span>
+            <LI><I>square</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: square} </span>
+            <LI><I>circle</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: circle} </span>
+            <LI><I>decimal</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: decimal} </span>
+            <LI><I>lower-roman</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type:lower-roman } </span>
+            <LI><I>upper-roman</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: upper-roman} </span>
+            <LI><I>lower-alpha</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: lower-alpha} </span>
+            <LI><I>upper-alpha</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: upper-alpha} </span>
+            <LI><I>none</I>.  <br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-type: none } </span>
+       </UL>
+       <LI id=7><B>list-style-image</B><BR> Атрибут определяет замену маркеров в списках на изображение. 
+<br>Синтаксис: <span class=cod> <strong>селектор</strong> {list-style-image: URL(<strong>file.gif</strong> ) } </span>
+<br>Пример: 
+<table><tr><td bgcolor=#2980b9>
+<div class=cod> &lt;UL STYLE="list-style-image:URL(<strong>ball.gif</strong>)"&gt; <br>
+&lt;LI&gt;<strong>текст</strong>  <br> 
+&lt;LI&gt;<strong>текст</strong> <br>
+&lt;LI&gt;<strong>текст</strong><br>
+&lt;/UL&gt;</div></table>
+Пример: <div class=cod><UL style="list-style-image:URL(ball.gif)">
+<LI><strong>текст</strong>   
+<LI><strong>текст</strong> 
+<LI><strong>текст</strong>
+</UL></div>
+</ul>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+</BODY>
+</HTML>

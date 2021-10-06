@@ -1,0 +1,28 @@
+body {
+    background-image: url(img/bg1.jpg);
+}
+
+button {
+    background: none;
+    color: #ccc;
+    width: 97px;
+    height: 30px;
+    border: 1px solid #338033;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    color: black;
+}
+
+button:hover {
+    background: #338033;
+    cursor: pointer;
+}

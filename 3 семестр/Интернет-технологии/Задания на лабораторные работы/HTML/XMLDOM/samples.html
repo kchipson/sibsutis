@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Sample</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+<script language="JavaScript" >
+ function LoadDoc()
+ {  var xmldoc=new ActiveXObject("Microsoft.XMLDOM");  
+        xmldoc.async=false;
+        xmldoc.load("samples.xml"); 
+    output="  Овощи и не только: \n";
+    vegetables=xmldoc.getElementsByTagName("vegetables");  
+    for(var i=0;i<vegetables.length;i++) output+=vegetables.item(i).text; 
+    document.all.textar.value=output;
+
+    output="  Овощи : \n";
+    vegetables=xmldoc.getElementsByTagName("vegetables") ;
+    product=vegetables.item(0).getElementsByTagName("product");
+    for(var i=0;i<product.length;i++) output+=product.item(i).text+" ";   
+    document.all.textat.value=output;
+ } 
+</script>
+
+</head>
+<body onLoad="LoadDoc()">
+<h3>Работа кода по извлечению значений:</h3>
+<hr color=aqua>
+ <table cellpadding=3>
+  <tr>
+   <td> Результат извлечения значения всех дочерних узлов, узла vegetables : </td>
+   <td> Результат извлечения значения заключенных в тег - product : </td>
+  </tr>
+  <tr>
+   <td> <textarea name="textar" rows=10 cols=40> </textarea> </td>
+   <td> <textarea name="textat" rows=10 cols=40> </textarea> </td>
+  </tr>
+ </table>  
+</body>
+</html>

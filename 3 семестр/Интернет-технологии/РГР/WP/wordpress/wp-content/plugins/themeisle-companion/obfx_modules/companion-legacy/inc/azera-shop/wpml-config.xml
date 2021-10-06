@@ -1,0 +1,13 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_themeisle-companion">
+            <key name="azera_shop_our_services_title" />
+            <key name="azera_shop_our_services_subtitle" />
+            <key name="azera_shop_our_team_title" />
+            <key name="azera_shop_our_team_subtitle" />
+            <key name="azera_shop_our_team_background" />
+            <key name="azera_shop_happy_customers_title" />
+            <key name="azera_shop_happy_customers_subttle" />
+        </key>
+    </admin-texts>
+</wpml-config>

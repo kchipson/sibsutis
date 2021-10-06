@@ -1,0 +1,893 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+<script>
+function openWin1() {
+  myWin= open("ex_close.html","displayWindow","width=240,height=220,status=no,toolbar=no,menubar=no");
+}
+function StringWin(){myWin= open("ex_string.html", "displayWindow","width=450,height=400,status=no,toolbar=no,menubar=no,scrollbars=no");}
+function DayWin1() {
+  myWin= open("Ex_Day.html","displayWindow","width=240,height=220,status=no,toolbar=no,menubar=no");
+}
+</script>
+</HEAD>
+<BODY text="Black" link="#336699" vlink="#6699cc" alink="#ff6600">
+<A NAME="list_fgColor">
+<H2>Свойство fgColor</H2> 
+<P>
+ Строка, определяющая цвет текста документа. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> Document.fgColor</PRE> </table>
+<H3>Свойство</H3> 
+<P>
+<A HREF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>fgColor</b> представлен в виде шестнадцатеричного триплет RGB или в виде строкового литерала, описанных в разделе <A HREF="colorV.html">Цвета в JavaScript</A>. Эта свойство - <font color="red"><i>JavaScript</i></font> отражение атрибута TEXT тега HTML &lt;BODY>.Это значение не может быть изменено после загрузки документа, для отдельных фрагментов текста можно изменить цвет с помощью метода <a href="f_g.html#list_fontcolor">fontcolor</a>
+<P>
+Вы можете отменять свойство <b>fgColor</b> следующим из способов: 
+<LI> Установить атрибут COLOR тега &lt;FONT. 
+<LI> Использовать метод <i>fontcolor</i>. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример устанавливает цвет текста в aqua при использование строкового литерала: 
+<table><tr><td bgcolor=aqua><PRE>  
+Document.fgColor = "aqua"
+</PRE> </table>
+<P>
+Следующий пример устанавливает цвет текста в aqua при использование шестнадцатеричного триплета: 
+<table><tr><td bgcolor=aqua><PRE>  
+Document.fgColor = "00FFFF"
+ </PRE> </table>
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="a.html#list_alinkColor">alinkColor</A>, <A HREF="b.html#list_bgColor">bgColor</A>, <A HREF="h_l.html#list_linkColor">linkColor</A>, и <A HREF="t_z.html#list_vlinkColor">vlinkColor</A> 
+<LI>Метод <A HREF="f_g.html#list_fontcolor">fontcolor</A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_fixed">
+<H2>Метод fixed</H2> 
+<P>
+ Выводит строку на экран шрифтом фиксированной ширины, аналогично применению тега HTML &lt;TT>. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>StringName</I>.fixed ()</PRE> </table>
+<P>
+<I>StringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>fixed</b> с методами <i>write</i> или </i>writeln</i>. 
+<H3> Примеры</H3> 
+Следующий пример использует метод <b>fixed</b>, чтобы изменить строку: 
+<table><tr><td bgcolor=aqua><PRE>  
+var worldString="Hello, world"
+ document.write(worldString.fixed())</pre></table>
+<P>
+Или по другому: 
+<table><tr><td bgcolor=aqua><xmp>  <TT>Hello, world</TT></xmp></table>
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_floor">
+<H2> Метод floor</H2> 
+<P>
+ Возвращает ближайшее целое число, меньшее или равное аргументу. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> Math.floor <I>(number)</I></PRE></table> 
+<P>
+<I>number</I> - любое числовое выражение. 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_Math">Math</A> 
+<H3> Примеры</H3> 
+<PRE>  
+// Возвращает значение 45 
+document.write ("floor 45.95 - " + Math.floor (45.95))
+// Возвращает значение -46 
+document.write (" floor -45.95 - " + Math.floor (-45.95))
+ </PRE> 
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="c.html#list_ceil">ceil</A> 
+<!------------------------------------------------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="list_focus">
+<H2> Метод focus</H2> 
+<FONT SIZE=-2><A HREF="introduction.html#1_focus">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Передает фокус указанному элементу формы. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>PasswordName</I>.focus () 
+2. <I>SelectName</I>.focus () 
+3. <I>TextName</I>.focus () 
+4. <I>TextareaName</I>.focus () </PRE> 
+<P>
+<I>PasswordName</I> является либо значением атрибута NAME объекта <i>password</i> либо элемента в массиве <I>elements</I>. <BR>
+<I>SelectName</I> является либо значением атрибута NAME объекта <i>select</i> либо элемента в массиве <I>elements</I>. <BR>
+<I>TextName</I> является либо значением атрибута NAME объекта <i>text </i> либо элемента в массиве <I>elements</I>. <BR>
+<I>TextareaName</I> является либо значением атрибута NAME объекта <i>textarea</i> либо элемента в массиве <I>elements</I>. 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_password">password</A>, <A HREF="s.html#list_selectob">select</A>, <A HREF="t_z.html#list_textob">text</A>, <A HREF="t_z.html#list_textarea">textarea</A> 
+<H3> Описание</H3> 
+<P>
+Используя имена формы и элемента, метод <b>focuse</b> передает фокус элементу. С этого момента можно программно ввести значение в элемент формы, либо пользователь может сделать это вручную. 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, функция <I>checkPassword</I> подтверждает, что пользователь правельно ввел password. Если password введен не правильно, то фокус возвращает метод <b>focuse</b> к объекту password, и методу select высвечивяя пользователю, что он может повторно ввести пароль. 
+<table><tr><td bgcolor=aqua><xmp>  
+function checkPassword(userPass) {   
+    if (badPassword) {
+      alert("Please enter your password again.")
+      userPass.focus()
+      userPass.select()   }}
+</xmp></table> 
+Этот пример выполнен когда password определен как: 
+<table><tr><td bgcolor=aqua><xmp><INPUT TYPE="password" NAME="userPass">
+</xmp> </table>
+<H3> Смотрите также</H3> 
+<LI> Методы  <A HREF="b.html#list_blur">blur</A>, <A HREF="s.html#list_selectmet">select</A>
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_fontcolor">
+<H2>Метод fontcolor</H2> 
+<P>
+Переопределяет цвет выводимого текста для строкового абъекта, анологично тегу &lt;FONT COLOR=<I>color</I>>. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>StringName</I>.fontcolor <I>(color)</I></PRE></table> 
+<P>
+<I>StringName</I> - любая строка или свойство существующего объекта. <BR>
+<I>color</I> - строка, выражющая цвет как шестнадцатеричный триплет RGB или как строковый литерал, описанных в разделе <A HREF="colorV.html">Цвета JavaScript</A>. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>fontcolor</b> с методами <i>write</i> или <i>writeln</i> для форматирования строки в документе. 
+<P>
+Метод <b>fontcolor</b> отменяет значение свойства <i>fgColor</i>. 
+<H3> Примеры</H3> 
+Следующий пример использует метод <b>fontcolor</b>, изменяя цвет строки 
+<table><tr><td bgcolor=aqua><xmp>
+var worldString="Hello, world"
+document.write(worldString.fontcolor("maroon") +
+   " is maroon in this line")
+document.write("<P>" + worldString.fontcolor("salmon") +
+   " is salmon in this line")
+document.write("<P>" + worldString.fontcolor("red") +
+   " is red in this line")
+document.write("<P>" + worldString.fontcolor("8000") +
+   " is maroon in hexadecimal in this line")
+document.write("<P>" + worldString.fontcolor("FA8072") +
+   " is salmon in hexadecimal in this line")
+document.write("<P>" + worldString.fontcolor("FF00") +
+   " is red in hexadecimal in this line")
+</xmp></table>
+
+<P>
+Следующий пример выглядит на экране анологично предыдущемк: 
+<table><tr><td bgcolor=aqua><xmp>
+<FONT COLOR="maroon">Hello, world</FONT> is maroon in this line
+<P><FONT COLOR="salmon">Hello, world</FONT> is salmon in this line
+<P><FONT COLOR="red">Hello, world</FONT> is red in this line
+<FONT COLOR="8000">Hello, world</FONT> is maroon in hexadecimal in this line
+<P><FONT COLOR="FA8072">Hello, world</FONT> is salmon in hexadecimal in this line
+<P><FONT COLOR="FF00">Hello, world</FONT> is red in hexadecimal in this line
+</xmp></table>
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_fontsize">
+<H2> Метод fontsize</H2> 
+<P>
+ Показывает строку в указанном размере шрифта, аналогично тегу HTML &lt;FONTSIZE=<I>size</I>>. 
+<H3> Синтаксис</H3> 
+< <tr><td bgcolor=aqua><PRE> <I>StringName</I>.fontsize <I>(size)</I></PRE></table>
+<P>
+<I>StringName</I> - любая строка или свойство существующего объекта. <BR>
+<I>size</I> - целое число расположенное в диапозоне между 1 и 7, или строка, представляющая целое число между 1 и 7. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>fontsize </b> с методами <i>write</i> или <i>writeln</i>, чтобы форматировать строку в документе. Когда вы определяете размер как целое число, вы изменяете размер <I>stringName</I> к одному из семи определенных размеров. Когда вы определяете размер как строку типа "-2", то вы изменяете размер шрифта <I>stringName</I> относительно размера установленног в теге &lt;BASEFONT>. 
+<H3> Примеры</H3> 
+Следующий пример использует методы <i>string</i> изменить размер строки: 
+<table><tr><td bgcolor=aqua><PRE>  
+var worldString = " Привет мир "
+Document.write (worldString.small ()) 
+document.write (worldString.big ()) 
+document.write (worldString.fontsize (7)) </PRE></table> 
+
+<P>
+Или по другома: 
+<table><tr><td bgcolor=aqua><xmp>
+<SMALL> Привет мир</SMALL>
+<BIG> Привет мир</BIG>
+<FONTSIZE=7> Привет мир</FONTSIZE>
+ </xmp></table> 
+<H3> Смотрите также</H3> 
+<LI> Методы <A HREF="b.html#list_big">big</A>, <A HREF="s.html#list_small">small</A> 
+<!------------------------------------------------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="list_formob">
+<H2> Объект form (массив <I>form</I>)</H2> 
+<FONT SIZE=-2><A HREF="introduction.html#list_formob">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Объект, предоставляющий форму в документе.
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить форму, используйте стандарт HTML синтаксис с использованием обработчика событий onSubmit: 
+<table><tr><td bgcolor=aqua><xmp>
+<FORM
+   NAME="formName"
+   TARGET="windowName"
+   ACTION="serverURL"
+   METHOD=GET | POST
+   ENCTYPE="encodingType"
+   [onSubmit="handlerText"]>
+</FORM>
+</xmp></table> 
+<P>
+<I>NAME = "formName"</I> определяет имя объекта формы. 
+<P>
+<I>TARGET = "windowName"</I> определяет окно, в которое идти. <I>WindowName</I> может быть существующее окно; это может быть имя фрейма указанное в теге &LT;FRAMESET>; это не может быть выражение <font color="red"><i>JavaScript</i></font> (например, это не может быть parent<I>.frameName</I> или <I>windowName.frameName</I>). Некоторые значения для этого атрибута могут требовать определенных значений для других атрибутов. Вы можете обращаться к этому значению, используя свойство target . 
+<P>
+<I>ACTION = "serverURL"</I> определяет URL- адрес сценарного приложения сервера, которое будет обрабатывать.
+<P>
+<I>METHOD=GET | POST</I> определяет, как информация послана серверу, указанному <I>ACTION</I>.
+<P>
+<I>ENCTYPE = "encodingType"</I> определяет кодирование MIME посланных данных: "application/x-www-form-urlencoded" (неплатеж) или "multipart/form-данные". Некоторые стоимости(значения) для этого атрибута могут требовать определенных стоимостей(значений) для других атрибутов. См. <A HREF="rfc1867.txt" TARGET="_top">RFC 1867</A> для деталей. Вы можете обращаться к этой стоимости(значению), используя собственность кодирования. 
+<P>
+Использование свойств объекта и метода <b>form</b>: 
+<PRE>  
+1. <I>FormName</I>.<I>propertyName </I>
+2. <I>FormName</I>.<I>methodName</I> <I>(параметры)</I> 
+3. forms[index].propertyName4. forms[index].methodName(parameters)
+</PRE> 
+<I>FormName</I> - значение атрибута NAAME объекта формы. <BR>
+<I>PropertyName</I> - один из свойствы, описанных ниже. <BR>
+<I>MethodName</I> - один из методов, описанных ниже. <BR>
+<I>index</I> - целое число, представляющее объект формы. 
+<H3> Свойство</H3> 
+<LI> <A HREF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Каждая форма в документе - различный объект. 
+<P>
+Вы можете ссылаться на элементы формы в вашем коде,  используя имя элемента (из атрибута NAME) или массива <A HREF="d_e.html#list_elementsob"><I>elements</I></A>. Таблица <I>элементов</I> содержит вход для каждого элемента (типа переключателя, радио, или текстового объекта(цели)) в форме. 
+<H4> Массив <I>form</I></H4> 
+<P>
+Вы можете ссылаться на формы в вашем коде,  используя массив <I>form</I>.
+<P>
+Использование массива <I>form</I>: 
+<PRE>  
+1. Document.forms <I>[index] </I>
+2. Document.forms.length </PRE> 
+<P>
+<I>index</I> - целое число, представляющее форму в документе. 
+<P>
+Чтобы получать число форм в документе, используйте свойство <i>lendth</i>:
+<table><tr><td bgcolor=aqua><TT>document.forms.length</TT>. </table>
+<P>
+Вы можете также обращаться к элементам формы,  используя массив <I>form</I>. Например, вы хотите обратиться к текстовому объекту <I>quantity </I> во второй форме как <TT>document.forms [1] .quantity</TT>. То вы обратились бы к свойству значения этого текстового объекта как <TT>document.forms [1] .quantity.value</TT>. 
+<P>
+Элементы в массиве <I>form</I> только для чтения. Например, утверждение <TT>document.forms [0] = "музыка"</TT> не имеет никакого результата. 
+<P>
+Значение каждого элемента в массиве <I>form</I> - <TT>&lt;object<I>NameAttribute</I>&gt;</TT>, где <I>nameAttribute</I> - атрибут NAME формы. 
+<h3>Связанные элементы</h3>
+<li type="circle"><H4>Cвойства</H4> 
+<P>
+Объект формы имеет следующие свойства: 
+<ul><LI> <A HREF="c.html#list_action">action</A> отражает атрибут ACTION 
+<LI> <A HREF="d_e.html#дшые_elementsob">elements</A> - массив, отражающий все элементы формы 
+<LI> <A HREF="d_e.html#list_encoding">encoding</A> отражает атрибут ENCTYPE  
+<LI> <A HREF="h_l.html#list_length">length</A> отражает число элементов формы 
+<LI> <A HREF="m_q.html#list_method">method</A> отражает атрибут METHOD 
+<LI> <A HREF="t_z.html#list_target">target</A> отражает атрибут TARGET</ul>
+<P>
+Следующие объекты - также свойства объекта формы: 
+<ul><LI> <A HREF="b.html#list_button">button</A> 
+<LI> <A HREF="c.html#list_checkbox">checkbox</A> 
+<LI> <A HREF="h_l.html#list_hidden">hidden</A> 
+<LI> <A HREF="m_q.html#list_password">password</A> 
+<LI> <A HREF="r.html#list_radio">radio</A> 
+<LI> <A HREF="r.html#list_reset">reset</A> 
+<LI> <A HREF="s.html#list_selectob">select</A> 
+<LI> <A HREF="s.html#list_submitob">submit</A> 
+<LI> <A HREF="t_z.html#list_textob">text</A> 
+<LI> <A HREF="t_z.html#list_textarea">textarea</A> </ul>
+<P>
+Массиве <I>form</I> имеет следующие свойства: 
+<ul><LI> <A HREF="h_l.html#list_length">length</A> отражает число форм в документе </ul>
+<li type="circle"><H4> Методы</H4> 
+<ul><LI> <A HREF="s.html#list_submitmet">submit</A> </ul>
+<li type="circle"><H4> Обработчики событий</H4> 
+<ul><LI> <A HREF="m_q.html#list_onSubmit">OnSubmit</A> </ul>
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1:</B> следующий пример создает форму <I>form1</I>, которая содержит текстовую область для имени и фамилии. Форма также содержит две кнопки, которые изменяют имена. Функция <I>setCase</I> показывает, как обращаться к форме при помощи ее именем. 
+<table><tr><td bgcolor=aqua><XMP>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE> Пример объекта формы</TITLE> 
+</HEAD> 
+<SCRIPT>
+function setCase (caseSpec){
+if (caseSpec == "upper") {
+   document.form1.firstName.value=document.form1.firstName.value.toUpperCase()
+   document.form1.lastName.value=document.form1.lastName.value.toUpperCase()}
+   else {
+   document.form1.firstName.value=document.form1.firstName.value.toLowerCase()
+   document.form1.lastName.value=document.form1.lastName.value.toLowerCase()}
+}
+</SCRIPT>
+<BODY>
+<FORM NAME="form1">  <B>Имя:</B> 
+<INPUT TYPE="text" NAME="firstName" SIZE=20>
+ <BR>
+<B>Фамилия:</B> 
+<INPUT TYPE="text" NAME="lastName" SIZE=20>
+<P>
+<INPUT TYPE="button" VALUE="Names to uppercase" NAME="upperButton" onClick="setCase('upper')">
+<INPUT TYPE="button" VALUE="Names to lowercase" NAME="lowerButton" onClick="setCase('lower')">
+</FORM>
+</BODY>
+</XMP></table>
+<B>Пример 2: </B>Обработчик событий OnLoad в следующем примере показывает имя первой формы в диалоговом окне. 
+<XMP>
+ <BODY onLoad="alert('You are looking at the ' + document.forms[0] + ' form!')">
+</XMP></font>
+<P>
+Если название(имя) формы - <I>musicType</I>, тревога показывает следующее сообщение: 
+<XMP>
+ Вы рассматриваете 
+<object musicType>
+ Форма! 
+</XMP>
+<P>
+<B>Пример 3:</B> следующий пример содержит обработчик событий onSubmit , который решает,  подчинить форму или нет. Форма содержит один текстовый объект, где пользователь вводит три знака. Обработчик событий OnSubmit вызывает функцию <I>checkData</I>, которая возвращает true если символов - три; иначе она возвращает false. Также onSubmit содержит утверждение <B>return</B>, которое возвращает значение, полученное обращением к функции. 
+<table><tr><td bgcolor=aqua><XMP>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE> Пример объекта Формы</TITLE> 
+</HEAD> 
+<SCRIPT>
+var dataOK=false
+function checkData (){
+if (document.form1.threeChar.value.length == 3) {
+   return true}
+   else {
+      alert("Enter exactly three characters. " + document.form1.threeChar.value + " is not valid.")
+      return false}
+}
+</SCRIPT>
+<BODY>
+ <FORM NAME="form1" onSubmit="return checkData()">  <B>Введите 3 знака:</B> 
+  <INPUT TYPE="text" NAME="threeChar" SIZE=3>
+   <P>
+  <INPUT TYPE="submit" VALUE="Done" NAME="submit1" onClick="document.form1.threeChar.value=document.form1.threeChar.value.toUpperCase()">
+ </FORM>
+</BODY>
+</XMP></table>
+<P>
+<B>Пример 4:</B> следующий пример подобен предыдущему, за исключением подчиненной формы, используя подчиненный метод вместо подчиненного объекта. Обработчик событий onSubmit формы не предотвращает форму от утверждения. Форма использует обработчик событий onClick кнопки, чтобы вызвать функцию <I>checkData</I>. Если значение верно, то функция <I>checkData</I> подчиняет форму. 
+<table><tr><td bgcolor=aqua><XMP>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Подчиненная форма</TITLE> 
+</HEAD> 
+<SCRIPT>
+var dataOK=false
+function checkData (){
+if (document.form1.threeChar.value.length == 3) {
+   document.form1.submit()}
+   else {
+      alert("Enter exactly three characters. " + document.form1.threeChar.value + " is not valid.")
+      return false}
+}
+</SCRIPT>
+<BODY>
+<FORM NAME="form1" onSubmit="alert('Form is being submitted.')">  <B>Войдите в 3 цифры(знака):</B> 
+<INPUT TYPE="text" NAME="threeChar" SIZE=3>
+<P>
+<INPUT TYPE="button" VALUE="Done" NAME="button1" onClick="checkData()">
+</FORM>
+</BODY>
+</XMP></table>
+<H3> Смотрите также</H3> 
+<LI> <A HREF="b.html#list_button">button</A>, <A HREF="c.html#list_checkbox">checkbox</A>, <A HREF="h_l.html#list_hidden">hidden</A>, <A HREF="m_q.html#list_password">password</A>, <A HREF="r.html#list_radio">radio</A>, <A HREF="r.html#list_reset">reset</A>, <A HREF="s.html#list_selectob">select</A>, <A HREF="s.html#list_submitobt">submit</A>, <A HREF="t_z.html#list_textob">text</A>, <A HREF="t_z.html#list_textarea">textarea</A>
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+<A NAME="list_formspr">
+<H2>Свойство form</H2> 
+<P>
+Массив объектов, соответствующих формам созданных в тегах HTML в том же порядкя. Смотрите объект <A HREF="f_g.html#list_formob">form</A>. 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_forward">
+<H2>Метод forward</H2> 
+<P>
+Загружает следующий документ из списка URL, просмотренных за текущий сеанс. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> History.forward ()</PRE></table>
+<H3> Метод</H3> 
+<P>
+<A HREF="h_l.html#list_history">history</A> 
+<H3> Описание</H3> 
+<P>
+Этот метод выполняет то же самое действие, что и выражение <TT>history.go (1)</TT>. 
+<H3> Примеры</H3> 
+Следующие кнопки custom выполняют те же самое действие, что и кнопки в Navigator Back и Forward: 
+<table><tr><td bgcolor=aqua><xmp>   
+<P><INPUT TYPE="button" VALUE="< Back"   
+    onClick="history.back()">
+<P><INPUT TYPE="button" VALUE="> Forward"
+    onClick="history.forward()">
+</xmP> </table>
+<H3> Смотрите также</H3> 
+<LI>Методы <A HREF="b.html#list_back">back</A>, <A HREF="f_g.html#list_go">go</A> 
+<!------------------------------------------------------------------------------------------------>
+ <HR align=center width=250>
+  <A NAME="list_frameob">
+<H2> Объект frame (массив <I>frames</I>)</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#list_frameob">Измененный в nAVIGATOR 3.0</A></FONT>  
+<P>
+Окно (кадр),содержащее независимо прокручиваемый субдокумент HTML. Фреймы могут указывать на различные URL и быть целенаправленными другими URL, все внутри того же самого экрана. 
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить объект фрейма, используйте стандарт HTML синтаксис. Обработчики событий OnLoad и onUnload определенные в теге &LT;FRAMESET&GT; - обработчики слбытий для объекта окна: 
+<table><tr><td bgcolor=aqua><xmP>   
+<FRAMESET
+   ROWS="rowHeightList"
+   COLS="columnWidthList"
+   [onLoad="handlerText"]
+   [onUnload="handlerText"]>
+   [<FRAME SRC="locationOrURL" NAME="frameName">]
+</FRAMESET>
+ </xmP></table> 
+<I>ROWS = "rowHeightList"</I> - атрибут для фреймов, расположенных друг над с другом. <BR>
+<I>COLS = "columnWidthList"</I> - атрибут для фреймов, расположенных друг рядом с другом. <BR>
+<I>&LT;FRAME&GT;</I> определяет фрейм. <BR>
+<I>SRC = "locationOrURL"</I> определяет URL документа, который будет показан в фрейме. URL не может включать имя якоря; например <TT>&LT;FRAME SRC="doc2.html#colors " NAME = " frame2 " &GT;</TT> является недопустимым. Более подробно смотрите объект <A HREF="h_l.html#list_location">location</A>. <BR>
+<I>NAME = "frameName"</I> определяет имя, которое нужно использовать для переходов гиперссылки. 
+<P>
+Использование свойств объекта <b>frame</b>: 
+<table><tr><td bgcolor=aqua><PRE>  
+1. <I>[WindowReference]</I>. <I>FrameName</I>.<I>propertyName </I>
+2. [<I><I>windowReference.]frames[index].propertyName</I></I> 
+3. <I>Window.propertyName </I>
+4. <I>Self.propertyName</I> 
+5. <I>Parent.propertyName</I>
+ </PRE> </table>
+<I>WindowReference</I> - переменная <I>windowVar</I> из определенного окна (смотрите объект <A HREF="t_z.html#list_windowob">window</A>). <BR>
+<I>FrameName</I> - значение атрибута NAME в теге &LT;FRAME &GT; объекта фрейма. <BR>
+<I>index</I> - целое число, представляющее объект фрейма. <BR>
+<I>PropertyName</I> - один из свойств, описанных ниже. 
+<H3> Свойства</H3> 
+<LI> Объект фрейма - свойство <A HREF="t_z.html#list_windowob">window</A> 
+<LI> Массив <I>frames</I> - свойство <A HREF="f_g.html#list_frameob">frame</A> и <A HREF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Тег &LT;FRAMESET &GT; используется в HTML документе, где единственная цель заключается в том, чтобы определить расположение фреймов, которые создает страницу. Каждый фрейм - это объект окна. 
+<P>
+Если тег &LT;FRAME&GT; содержит SRC и атрибут NAME, то вы можете обращаться к этому фрейму из соседнего фрейма,  используя <TT>parent.<I>frameName</I></TT> или <TT>parent.frames <I>[index]</I></TT>. Например, если четвертый фрейм имеет NAME = "homeFrame", то из соседнего фрейма можно обратиться к этому фрейму, используя <TT>parent.homeFrame</TT> или <TT>parent.frames [3]</TT>. 
+<P>
+Свойства Self и Window - синонимы для текущего фрейма, и вам необязательно использовать их, чтобы обратиться к текущему фрейму. Вы можете использовать это свойство, чтобы делать ваш код более читаемым. Смотрите свойства, описанные ниже в разделе примеров. 
+<P>
+Свойства Parent и Top - также синонимы, которые могут использоваться вместо имени фрейма. Смотрите свойства <A HREF="t_z.html#list_top">top</A> и <A HREF="m_q.html#list_parent">parent</A>. 
+<H4> Массив <I>frames</I></H4> 
+<P>
+Вы можете ссылаться на объекты фрейма в вашем коде,  используя массив <I>frames</I>. Этото массив содержит все фреймы. Например, если окно содержит три фрейма, то эти фреймы отражены в массиве как <TT>parent.frames [0]</TT>, <TT>parent.frames [1]</TT>, и <TT>parent.frames [2]</TT>. 
+<P>
+Использование массива <I>frames</I>: 
+<PRE>  
+1. <I>[FrameReference]</I>. Frames <I>[index] </I>
+2. <I>[FrameReference]</I>. Frames.length 
+3. <I>[WindowReference]</I>. Frames <I>[index] </I>
+4. <I>[WindowReference]</I>. Frames.length </PRE> 
+<P>
+<I>FrameReference</I> - способ только для фреймов, как описано в объекте <A HREF="f_g.html#list_frameob">frame</A>. <BR>
+<I>WindowReference</I> - переменная <I>windowVar</I> (смотрите объект <A HREF="t_z.html#list_windowob">window</A>). <BR>
+<I>Index</I> - целое число, представляющее фрейм в родительском окне. 
+<P>
+Чтобы получать число дочерних фреймов в окне или фрейме, используйте свойство <i>length</i>: 
+<table><tr><td bgcolor=aqua><PRE>  
+[ <I>WindowReference</I>.].frames.length 
+[<I>frameReference</I>.].frames.length </PRE></table> 
+<P>
+Элементы в массиве <I>frames</I> только для чтения. Например, утверждение <TT><I>windowReference</I>.frames [0] = "frame1"</TT> не имеет никакого результата. 
+<P>
+Значение каждого элемента в массиве <I>frames</I> -  <TT>&lt;object <I>NameAttribute</I> &gt;</TT>, где <I>nameAttribute</I> - атрибут NAME фрейма. 
+<h3>Связанные элементы</h3>
+<li type="circle"><H4>Свойства</H4> 
+<P>
+Объект <b>frame</b> имеет следующие свойства: 
+<ul><LI> <A HREF="f_g.html#list_frameob">frame</A> - массив, отражающий все фреймы в окне 
+<LI> <A HREF="m_q.html#list_name">name</A> отражает атрибут NAME тега &LT;FRAME &GT; 
+<LI> <A HREF="h_l.html#list_length">length</A> отражает число дочерних фреймов внутри фрейма
+<LI> <A HREF="m_q.html#list_parent">parent</A> - синоним для окна или фрейма, содержащий текущий frameset 
+<LI> <A HREF="s.html#list_self">self</A> - синоним для текущего фрейма
+<LI> <A HREF="t_z.html#list_windowpr">window</A> - синоним для текущего фрейма</ul>
+<P>
+Массиве <I>frames</I> имеет следующие свойства: 
+<ul><LI> <A HREF="h_l.html#list_length">length</A> отражает число дочерних фреймов внутри фрейма </ul>
+<li type="circle"><H4> Методы</H4> 
+<ul><LI> <A HREF="c.html#list_clearTimeout">ClearTimeout</A> 
+<LI> <A HREF="s.html#list_setTimeout">SetTimeout</A></ul>
+
+<li type="circle"><H4> Обработчики событий</H4> 
+<ul><LI> Отсутствуют. Обработчики событий OnLoad и onUnload определены в теге &LT;FRAMESET &GT; но - фактически обработчики событий для объекта окна. </ul>
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает два окна, каждый с четырьмя фреймами. В первом окне, первый фрейм содержит кнопки, которые изменяют цвет фона фреймов в обоих окнах. 
+<P>
+FRAMSET1.HTML - определяет,  фреймы для первого окна, содержат следующий кодекс: 
+<table><tr><td bgcolor=aqua><XMP>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE> Frame и Framesets: Окно 1</TITLE> 
+</HEAD> 
+<FRAMESET ROWS="50%,50%" COLS="40%,60%" onLoad="alert('Hello, World.')">
+<FRAME SRC=framcon1.html NAME="frame1">
+<FRAME SRC=framcon2.html NAME="frame2">
+<FRAME SRC=framcon2.html NAME="frame3">
+<FRAME SRC=framcon2.html NAME="frame4">
+</FRAMESET>
+</XMP></table>
+<P>
+FRAMSET2. HTML, который определяет,  фреймы для второго окна, содержат следующий кодекс: 
+<table><tr><td bgcolor=aqua><XMP>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE> Фреймы и Framesets: Окно 2</TITLE> 
+</HEAD> 
+<FRAMESET ROWS="50%,50%" COLS="40%,60%">
+<FRAME SRC=framcon2.html NAME="frame1">
+<FRAME SRC=framcon2.html NAME="frame2">
+<FRAME SRC=framcon2.html NAME="frame3">
+<FRAME SRC=framcon2.html NAME="frame4">
+</FRAMESET>
+</XMP></table>
+<P>
+FRAMCON1.HTML, который определяет,  содержание для первого фрейма в первом окне, содержит следующий кодекс: 
+<table><tr><td bgcolor=aqua><XMP>
+<BODY>
+ <A NAME="frame1">
+<H1> Frame1</H1> 
+<P>
+<A HREF="framcon3.htm" target=frame2>Нажмите в этом месте</A>, чтобы грузить различную картотеку(файл) в структуру(систему координат,фрейм) 2. 
+<SCRIPT>
+window2=open("framset2.htm","secondFrameset")
+</SCRIPT>
+<FORM>  
+<P>
+<INPUT TYPE="button" VALUE="Change frame2 to teal" 
+  onClick="parent.frame2.document.bgColor='teal'"><P>
+<INPUT TYPE="button" VALUE="Change frame3 to slateblue"
+  onClick="parent.frames[2].document.bgColor='slateblue'"><P>
+<INPUT TYPE="button" VALUE="Change frame4 to darkturquoise"
+  onClick="top.frames[3].document.bgColor='darkturquoise'"><P>
+<INPUT TYPE="button" VALUE="window2.frame2 to violet"
+  onClick="window2.frame2.document.bgColor='violet'"><P>
+<INPUT TYPE="button" VALUE="window2.frame3 to fuchsia"
+  onClick="window2.frames[2].document.bgColor='fuchsia'"><P>
+<INPUT TYPE="button" VALUE="window2.frame4 to deeppink"
+  onClick="window2.frames[3].document.bgColor='deeppink'">
+</FORM>
+</BODY>
+</XMP></table>
+<P>
+FRAMCON2. HTML - определяет,  содержание для остающихся фреймов: 
+<table><tr><td bgcolor=aqua><XMP>
+<BODY>
+ <P> Это - фрейм. 
+</BODY>
+</XMP></table>
+<P>
+FRAMCON3. HTML, который упомянут в объекте links в FRAMCON1. HTML, содержит следующий код: 
+<table><tr><td bgcolor=aqua><XMP>
+<BODY>
+ <P> Это - фрейм. Что Вы думаете? 
+</BODY>
+</XMP></table>
+<H3> Смотрите также</H3> 
+<LI>Объекты <A HREF="d_e.html#list_document">document</A> и <A HREF="t_z.html#list_windowob">window</A> 
+<li>Раздел <a href="win_fr.html#2">Использование окон и фреймов</a>
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_framespr">
+<H2> Свойство frames</H2> 
+<P>
+Массив объектов, соответствующий дочерним фреймам, созданным с помощью тега &lt;FRAMESET&gt;. Смотрите объект <A HREF="f_g.html#дшые_frameob">frame</A>. 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+<A NAME="list_getDate">
+<H2>Метод getDate</H2> 
+<P>
+ Возвращает число месяца. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getDate ()</PRE> </table>
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Значение, возвращенное getDate - это целое число между 1 и 31. 
+<H3> Примеры</H3> 
+<P>
+Второе уиверждениее ниже приведенного примера приписывает значение 25 переменному <I>day</I>. 
+<table><tr><td bgcolor=aqua><PRE>  
+Xmas95 = new Date("December 25, 1995 23:15:00")
+day = Xmas95.getDate()
+</PRE> </table>
+Следующий пример возвращает 11
+<table><tr><td bgcolor=aqua><PRE>
+endOfWorld = new Date("Januare 11, 1997 06:44:00")
+document.write(endOfTheWorld.getDate())</PRE> </table>
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="s.html#list_setDate">setDate</A> 
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_getDay">
+<H2> Метод getDay</H2> 
+<P>
+ Возвращает день недели как целое число от 0(воскресенье) до 6(суббота). 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getDay ()</PRE></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Значение, возвращенное <b>getDay</b> - целое число, соответствующее дню недели: ноль в течение воскресенья, один в течение понедельника, два в течение вторника, и так далее. 
+<p>Соответствующего метода <b>getDay</b> не существует, так как день недели автоматически вычисляется на основе значения объекта <i>Date</i>. 
+<H3> Примеры</H3> 
+<P>
+Второе утверждение ниже приведенного примера приписывает значение 1 <I>weekday </I>, основанному на значении даты объекта <I>Xmas95</I>.
+<table><tr><td bgcolor=aqua><PRE>  
+Xmas95 = new Date("December 25, 1995 23:15:00")
+weekday = Xmas95.getDay()
+</PRE></table> 
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_getHours">
+<H2>Метод getHours</H2> 
+<P>
+ Возвращает час суток. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getHours ()</PRE></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Значение, возвращенное <b>getHours</b> - целое число между 0 и 23. 
+<H3> Примеры</H3> 
+<P>
+ Второе утверждение ниже приведенного примера приписывает значение 23 переменной <I>hours</I>, основанным на значении даты объекта <I>Xmas95</I>. 
+<PRE>  
+<table><tr><td bgcolor=aqua>
+Xmas95 = new Date("December 25, 1995 23:15:00")
+hours = Xmas95.getHours() </PRE> </table>
+Следующий код показывает различные изображения на вашей странице, в зависимости от того сейчас утро или ночь (Замечание: Утро - от 12 до 12 пополудни).
+<table><tr><td bgcolor=aqua><xmp>
+<script>
+<!--
+/*
+Time of the day image script credit: Website Abstraction (www.wsabstract.com). 
+Your free JavaScripts archieve, with over 200+ free JavaScripts. 
+This script may be freely used as long as credit remains intact.
+*/
+var current= new Date()
+var day_night=current.getHours()
+if (day_night<=12)
+document.write("<img src='day.gif'>")
+else
+document.write("<img src='night.gif'>")
+//-->
+</script>
+</xmp></table>
+
+<H3> Смотрите также</H3> 
+<LI>Метод <A HREF="s.html#list_setHours">setHours</A>
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+<A NAME="list_getMinutes">
+<H2>Метод getMinutes</H2> 
+<P>
+ Возвращает минуты как целое число в диапозоне от 0 до 59. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getMinutes ()</PRE> </table>
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Метод <b>getMinutes</b> возвращает один из элементов времени. 
+<H3> Примеры</H3> 
+<P>
+ Второе утверждение ниже приведенного примера приписывает значение 15 переменной <I>minutes</I>, основанное на значении даты объекта <I>Xmas95</I>. 
+<table><tr><td bgcolor=aqua><PRE>  
+Xmas95 = new Date("December 25, 1995 23:15:00")
+minutes = Xmas95.getMinutes()
+</PRE> </table>
+<H3> См. также</H3> 
+<LI> <A HREF="ref_s-s.html#setMinutes_method">SetMinutes</A> метод 
+<!------------------------------------------------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="list_getMonth">
+<H2> Метод getMonth</H2> 
+<P>
+ Возвращает номер месяца в году. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getMonth ()</PRE> </table>
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта.
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Номер месяца возвращается как целое число в интервале между 0(январь) и 11(декабрь), а не как строка. Это значение может внести путанницу, так как не соответствует стандартному способу нумерации месяцев. Прежде чем вывести значение на экран или после получения данных, введенных пользователем в форму, надо произвести соответствующие преобразования. Рассмотрим эти преобразования ниже в разделе примеры.
+<H3> Примеры</H3> 
+<P>
+Второе утверждение ниже приведенного примера приписывает значение 11 переменному <I>month</I>, основанному на значении даты объекта <I>Xmas95</I>. 
+<table><tr><td bgcolor=aqua><PRE>  
+Xmas95 = new Date("December 25, 1995 23:15:00")
+month = Xmas95.getDate() </PRE> </table>
+Следующая функция <i>toReality</i> преобразует номер месяца в стандартную систему обозначений "1-12"
+<table><tr><td bgcolor=aqua><PRE> function toReality(){
+  this+=1
+}
+</PRE> </table>
+Следующая пример преобразует номер месяца в систему обозначений "0-11"
+<table><tr><td bgcolor=aqua><PRE> function toConvention(){
+  this-=1
+}
+</PRE> </table>
+<H3> Смотрите также</H3> 
+<LI> <A HREF="ref_s-s.html#setMonth_method">SetMonth</A> метод 
+<!------------------------------------------------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="list_getSeconds">
+<H2> Метод getSeconds</H2> 
+<P>
+ Возвращает число секунд текущего времени. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getSeconds ()</PRE> </table>
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта.
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Секунды возвращаются как целое число от 0 до 59. 
+<H3> Примеры</H3> 
+<P>
+Второе утверждение ниже приведенного примера приписывает значение 30 переменной <I>secs</I>, основанное на значении даты объекта <I>Xmas95</I>. 
+<table><tr><td bgcolor=aqua><PRE>  
+Xmas95 = new Date("December 25, 1995 23:15:30")
+secs = Xmas95.getSeconds() </PRE> </table>
+<H3> Смотрите также</H3> 
+<LI>Метод <A HREF="s.html#list_setSeconds">setSeconds</A> 
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_getTime">
+<H2>Метод getTime</H2> 
+<P>
+ Возвращает целое число, представляющее собой текущее значение объекта <i>Date</i>. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getTime ()</PRE> </table>
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Значение представляет собой количество миллисекунд, прошедших после полуночи 1 января 1970 00:00:00. Это значение может использоваться для сравнения двух дат.
+<H3> Примеры</H3> 
+<P>
+Следующий пример приписывает значение даты <I>theBigDay</I> к <I>sameAsBigDay</I>. 
+<table><tr><td bgcolor=aqua><PRE>  
+theBigDay = new Date("July 1, 1999")
+sameAsBigDay = new Date()
+sameAsBigDay.setTime(theBigDay.getTime())
+</PRE> </table>
+Для функций, включающих в себя вычисления дат, полезно создать набор переменных, определяющих минуты, чисы и дни в миллисекундах.
+<PRE> 
+var dayMillisec=1000*60*60*24
+//1000 миллисекунд*60 сек*60 мин*24 часа 
+var hourMillisec=1000*60*60
+//1000 миллисекунд*60 сек*60 мин
+var minuteMillisec=1000*60
+//1000 миллисекунд*60
+</PRE>
+<H3> Смотрите также</H3> 
+<LI>  Метод <A HREF="s.html#list_setTime">setTime</A>
+<!----------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_getTimezoneOffset">
+<H2> Метод getTimezoneOffset</H2> 
+<P>
+ Возвращает разницу в минутах между местным временем клиента и гринвическим (GMT).
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getTimezoneOffset ()</PRE> </table>
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Это значение является константой, за исключением случаев перехода на летнее/зимнее время.
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><PRE>  
+x = new Date()
+currentTimeZoneOffsetInHours = x.getTimezoneOffset()/60
+ </PRE> </table>
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_getYear">
+<H2>Метод getYear</H2> 
+<P>
+ Возвращает год указанной даты. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>DateObjectName</I>.getYear ()</PRE> </table>
+<P>
+<I>DateObjectName</I> является либо именем объекта даты либо свойством существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Возвращает год объекта Date минус 1900. Например, если год - 1976, возвращенное значение - 76. Несмотря на то что значение года может быть передано объекту date как 4-значное число в виде строки, возвращаемое методом <b>getYear</b> значение является 2-значным числом.
+<H3> Примеры</H3> 
+<P>
+Второе утверждение ниже приведенного примера приписывает значение 95 переменному <I>year</I>, основанному на значении даты объекта <I>Xmas95</I>. 
+<table><tr><td bgcolor=aqua><PRE>  
+Xmas95 = new Date("December 25, 1995 23:15:00")
+year = Xmas95.getYear() </PRE> </table>
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="s.html#list_setYear">setYear</A> 
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_go">
+<H2>Метод go</H2> 
+<P>
+ Загружает документ из списка страниц, посещенных за текущий сеанс работы с браузером. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> History.go (<I>delta | "location"</I>)</PRE></table> 
+<I>delta</I> - целое число. <BR>
+<I>location</I> - строка, представляя все или часть URL в списке страниц. 
+<H3> Метод</H3> 
+<P>
+<A HREF="h_l.html#list_history">history</A> 
+<H3> Описание</H3> 
+<P>
+Метод <b>go</b> может ссылаться на документы из списка history по URL или по относительной позиции в этом списке. Если указан неполный адрес URL, используется ближайшее соответствующее значение. Результат поиска не зависит от регистра.
+<P>
+Аргумент <I>delta</I> -  целое число. Если <I>delta</I> больше чем ноль, то метод <b>go</b> загружает URL. Если <I>delta</I> - 0, Navigator перезагружает текущую страницу. 
+<P>
+Аргумент <I>location</I> - строка.  Использование <I>location</I>  загружает самую ближайшую страницу в списка history, чей URL содержит <I>location</I> как подстроку. Каждый раздел URL содержит различную информацию. Смотрите объект <A HREF="h_l.html#list_location">location</A> для описания компонент URL. 
+<H3> Примеры</H3> 
+<P>
+Следующая кнопка переходит к самомой ближайшей странице в списке history, который содержит строку "home.netscape.com": 
+<table><tr><td bgcolor=aqua><xmp>   
+<P><INPUT TYPE="button" VALUE="Go"
+onClick="history.go('home.netscape.com')">
+  </xmp> </table>
+<P>
+</body>
+</HTML>

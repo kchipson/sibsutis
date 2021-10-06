@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Команды HTML - Использование шрифтов</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H2><A NAME="fonts">Использование шрифтов в HTML документе</A></H2>
+<ul>
+<li><a href="#1">Стили шрифтов</A>
+<ul>
+<li><a href="#phys">Физический стиль</A>
+<li><a href="#log">Логический стиль</A>
+</ul>
+<li><a href="#size">Размер шрифта</A>
+<li><a href="#font">Команда (FONT)</A>
+<li><a href="#name">Семейства шрифтов</A>
+<li><a href="#basefont">Базовое задание шрифта</A>
+</ul>
+
+<P>
+При стандартном просмотре документа через графический просмотрщик
+(под X-Windows или MS Windows) как правило используется
+два семейства графических шрифтов, установленных в используемой
+графической оболочке: это <b>пропорциональный шрифт</b>
+(обычно <i>Times Roman</i>) и <b>равноширинный шрифт</b>
+(обычно <i>Courier</i>).
+Просмотрщики, поддерживающие стандарт HTML 3.0 (Netscape и MS Internet
+Explorer) могут использовать
+и другие шрифты, установленные в системе.
+Считается стандартным, использование в качестве дополнительного
+шрифта третьего семейства шрифтов, которое называется <b>шрифт без
+надсечек</b> (обычно <i>Arial</i>). Принципиально допускается
+использование любого семейства шрифтов, если вам известно его
+имя на пользовательской машине
+(см. раздел <a href="#font">"Команда &lt;FONT&gt;"</a>).
+<P>
+<a name="1">
+В языке HTML предусмотрено два механизма определения стиля шрифтов
+в документе (выбор конкретного шрифта из семейства):
+механизм задания <a href="#phys">физических
+стилей</a> и <a href="#log">логических стилей</a> изображения текста.
+<P>
+<a href="#fonts"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="phys">
+<h3>Физические стили</h3></a>
+Обычно документ выводится пропорциональным шрифтом, включение
+равношириного шрифта производится командой
+<A href="html-gloss.html#htmlref2_0001000113004f00">&lt;TT&gt;</A>
+(teletype), соответственно выключение командой
+<A href="html-gloss.html#htmlref2_0001000113004f00">&lt;/TT&gt;</A>
+(см. также команду <a href="#font"> &lt;FONT&gt;</a>).
+<p>
+Переключение шрифтов также используют различные команды
+<a href="format.html#pre">форматирования</a> документа.
+<p>
+Задание физических стилей для всех семейств шрифтов,
+используемых на компьютере, определятся явным заданием вида шрифта,
+которым будет выводится текст:
+<center><table width=80% border=1>
+<COLGROUP ALIGN=CENTER>
+<COLGROUP ALIGN=CENTER>
+<tr><td>Шрифт</td><td>команда</td></tr>
+<tr><td>
+<b>Полужирный текст (bold)</b></td><td>
+<A HREF="html-gloss.html#htmlref2_0001000113000700" TARGET="contentFrame"> &lt;B&gt; </A></td></tr>
+<tr><td>
+<i>Курсив (italic)</i></td><td>
+<A HREF="html-gloss.html#htmlref2_0001000113002600" TARGET="contentFrame">&lt;I&gt; </A></td></tr>
+<tr><td><s>зачеркнутый текст (strike)</s></td><td>
+<A HREF="html-gloss.html#htmlref2_0001000113003c00" TARGET="contentFrame">&lt;S&gt; </A> или <br>
+<A HREF="html-gloss.html#htmlref2_0001000113004200" TARGET="contentFrame"> &lt;STRIKE&gt; </A></td></tr>
+<tr><td><u>подчеркнутый текст (underline)</u></td><td>
+<A HREF="html-gloss.html#htmlref2_0001000113005000" TARGET="contentFrame">&lt;U&gt; </A>
+</td></tr></table>
+</center>
+<p>
+<b>Пример:</B>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;P&gt;Этот &lt;B&gt;текст&lt;/B&gt; полужирный.
+Этот &lt;I&gt;текст&lt;/I&gt; курсивный.</PRE>
+</table>
+<p><b>Что даст:</b>
+<P>
+Этот <B>текст</B> полужирный.
+Этот <I>текст</I> курсивный.
+<p>
+(сравни с <a href="#log-bi">логическим</a> выделением).
+<br>
+Допускается совместное использование команд задания стиля, <b>например,</b>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;P&gt;Этот &lt;I&gt;&lt;B&gt;текст&lt;/B&gt;&lt;/I&gt; полужирный курсив.</PRE>
+</table>
+<p><b>Что даст:</b>
+<P>
+Этот <i><B>текст</B></i> полужирный курсив.
+<p>
+Однако не допускается перекрещивание стилей, например,
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;P&gt;&lt;B&gt;Этот &lt;I&gt;текст&lt;/B&gt; полужирный &lt;/I&gt; курсив.</PRE>
+</table>
+<p>
+данная запись считается неправильной, хотя некоторые просмотрщики
+покажут ее правильно.
+<p>
+Для изменения размера шрифта (как абсолютного, так и относительного)
+используется команда <a href="#font"> &lt;FONT&gt;</a>.
+<p><a name="rem"><b>Замечание.</B>
+Команды изменения стиля шрифтов действуют до тех пор пока не будут
+отменены. Единственное исключение составляю клетки
+<a href="tables.html#tables">таблиц.</a> Задание стиля шрифта,
+может быть отменено внутри клетки, а по выходу из таблицы опять восстановлено.
+<P>
+<a href="#fonts"><img src="icons/up.gif" border=0></a>
+<a name="log">
+<h3>Логические стили</h3>
+<P>
+Механизм задания логического стиля определяется командами:
+<A HREF="html-gloss.html#htmlref2_0001000113001c00" TARGET="contentFrame">EM</A>
+- простое выделение (обычно выводится курсивом) и
+<A HREF="html-gloss.html#htmlref2_0001000113004300" TARGET="contentFrame">STRONG</A>
+- сильное выделение (обычно выводится полужирным).
+<p><a name="log-bi"><b>Пример:</b></a>
+<table><tr><td bgcolor=aqua>
+</pre>&lt;P&gt; Этот &lt;STRONG&gt;текст &lt;/STRONG&gt; имеет сильное выделение.
+А этот &lt;EM&gt;текст&lt;/EM&gt; простое выделение.</PRE>
+</table>
+<P><b>Что даст:</b>
+<P>Этот
+<STRONG>текст</STRONG>  имеет сильное выделение.
+А этот <EM>текст</EM> простое выделение.
+<p>
+Принципиально такой способ выделения не является
+фиксированным и пользователь, вообще говоря имеет возможность
+его изменить, например использовать для выделения красный цвет.
+<p>
+Для логических стилей остается в силе <a href="#rem">замечание</a> по поводу таблиц.
+<P>
+<a href="#fonts"><img src="icons/up.gif" border=0></a>
+<p>
+<a name="size">
+<b>Размер шрифта.</b>
+Команды
+<A HREF="html-gloss.html#htmlref2_0001000113000b00" TARGET="contentFrame">BIG</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113004000" TARGET="contentFrame">SMALL</A>,
+изменяют относительной размер шрифта на одну единицу отсчета от
+базы (см. <a href="#basefont">базовый размер</a>).
+<p><b>Например:</b>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;P&gt;Использование увеличивает &lt;BIG&gt;BIG&lt;/BIG&gt;(BIG) на один пункт,
+двойное использование &lt;BIG&gt;>&lt;BIG&gt;BIG&lt;/BIG&gt;&lt;/BIG&gt;(BIG)
+на два пункта, использование &lt;SMALL&gt;SMALL&lt;/SMALL&gt;(SMALL)
+уменьшает на один пункт.</PRE></table>
+<P><b>Что даст:</b>
+<p>
+Использование <BIG>BIG</BIG>(BIG) увеличивает на один пункт, двойное
+использование <BIG><BIG>BIG</BIG></BIG>(BIG) на два пункта, использование
+<small>SMALL</small>(SMALL) уменьшает на один пункт.
+<p>
+Такого же эффекта можно добиться и используя команду <a href="#font">
+&lt;FONT&gt;</a>
+<P>
+<a href="#fonts"><img src="icons/up.gif" border=0></a>
+<p>
+<a name="font"><h3>Команда &lt;FONT&gt;</h3></a>
+<p>
+Команда
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>
+может изменять как логический (размер) так и физический стиль
+шрифта. Эта команда задает цвет, размер и вид семейства шрифтов.
+<p>
+<h4>Цвет шрифта.</h4>
+Определяется <b>атрибутом</b>
+<A href="html-gloss.html#htmlref2_0001000113001e01">
+COLOR=</A> согласно правилам
+задания <a href="color.html#color">цветов в HTML документе</a>.
+<p>
+<a name="size-font">
+<h4>Размер шрифта</h4></a>
+Определяется <b>атрибутом</b>
+<A href="html-gloss.html#htmlref2_0001000113001e03">SIZE=</A><I>n</I>.
+Размер может задаваться в абсолютным или относительным значением
+от <a href="#basefont">базового размера</a> шрифта в документе.
+<p>
+<B>Абсолютный размер.</B>
+Число <I>n</I> при абсолютном задании размера может принимать значения
+от 1 до 7.
+<p><b>Пример</b>
+<p>
+<font size=1>size=1</font>
+<font size=2>size=2</font>
+<font size=3>size=3</font>
+<font size=4>size=4</font>
+<font size=5>size=5</font>
+<font size=6>size=6</font>
+<font size=7>size=7</font>
+<P>
+<a href="#fonts"><img src="icons/up.gif" border=0></a>
+<P>
+<B>Относительный размер.</B>
+Число <I>n</I> при относительном задании размера может принимать значения
+от 1 до 7 со знаками плюс (+) - увеличение или минус (-) - уменьшение
+размера шрифта на <I>n</I> пунктов по отношению к
+<a href="#basefont">базовому размеру</a> шрифта в документе.
+По умолчанию базовый размер шрифта в документе считается равны 3 в абсолютных значения.
+<p><b>Пример</b><br>
+Относительное изменение размера шрифта при стандартном значении базового
+размера шрифта в документе (<I>n=3</I>).
+<p>
+<font size=-4>size=-4</font>
+<font size=-3>size=-3</font>
+<font size=-2>size=-2</font>
+<font size=-1>size=-1</font>
+<font size=+1>size=+1</font>
+<font size=+2>size=+2</font>
+<font size=+3>size=+3</font>
+<font size=+4>size=+4</font>
+<p><b>Пример</b><br>
+Относительное изменение размера шрифта при значении базового
+размера шрифта в документе <I>n=6</I>.
+<p><basefont size=6>
+<font size=-4>size=-4</font>
+<font size=-3>size=-3</font>
+<font size=-2>size=-2</font>
+<font size=-1>size=-1</font>
+<font size=+1>size=+1</font>
+<font size=+2>size=+2</font>
+<font size=+3>size=+3</font>
+<font size=+4>size=+4</font>
+<P>
+<a href="#fonts"><img src="icons/up.gif" border=0></a>
+<P><basefont size=3>
+<a name="name">
+<h4>Семейства шрифтов.</h4></a>
+Имя семейства шрифтов определяется <b>атрибутом</b>
+<A HREF="html-gloss.html#htmlref2_0001000113001e02" TARGET="contentFrame">FACE=</A>
+команды
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>
+или <b>атрибутом</b> <font color=red>NAME=</font> команды
+<A HREF="html-gloss.html#htmlref2_0001000113000900" TARGET="contentFrame"> BASEFONT</A>. (см. <a href="#basefont">Базовое задание шрифта</a>).
+Стандартные значения этого <b>атрибута</b>:
+<b><i>"Times New Roman"</i></b> (пропорциональный шрифт), <b><i>"Courier New"</i></b>
+(равноширинный шрифт) и <b><i>"Arial"</i></b> (шрифт без надсечек).
+Имена семейств шрифтов в настоящий момент пока не стандартизованы и
+в разных системах могут называться по разному. Например, семейство
+шрифтов, которое используется по умолчанию для пропорционального
+шрифта <b><i>"Times New Roman"</i></b>, может называться
+<b><i>"Times"</i></b>, <b><i>"Times Roman"</i></b>,
+<b><i>"Roman"</i></b> и т.д.
+<p>
+<b>Пример</b><br>
+Установка шрифта "Arial":
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;H1&gt;&lt;FONT FACE="ARIAL"&gt;Welcome to WWW!&lt;/FONT&gt;&lt;/H1&gt;</PRE></table>
+<p>
+<b>Что даст:</b>
+<H1><FONT FACE="ARIAL">Welcome to WWW!</FONT></H1>
+<P>
+Семейство шрифтов <b><i>"Arial"</i></b> может отсутствовать
+на конкретной машине пользователя, поэтому для задания <b><i>шрифта без
+надсечек</i></b> рекомендуется использовать несколько
+подходящих для этих целей имен, например,
+<b><i> "Arial", "Lucida Sans"</i></b>, или  <b><i>"Helvetica"</i></b>.
+Кстати, если просмотрщик не находит нужного шрифта, то использует,
+заданный по умолчанию  пропорциональный шрифт, как правило,
+<b><i>"Times Roman"</i></b>.
+<p><b>Пример</b><br>
+Установка шрифта "Arial":
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;FONT FACE="Arial,Lucida Sans,Helvetica"&gt;Данный текст выводится
+либо шрифтом Arial, либо Lucida Sans, или Helvetica, или Times Roman,
+в зависимости от наличия шрифтов, установленных в системе.&lt;/FONT&gt;
+</PRE></table>
+<p>
+<a name="basefont">
+<h3>Базовое задание шрифта</h3>
+Команда
+<A HREF="html-gloss.html#htmlref2_0001000113000900" TARGET="contentFrame"> BASEFONT</A>
+определяет (или изменяет) базовый шрифт документа.
+<p>
+<b>Атрибуты</b>
+<ul>
+<li>Размер шрифта
+<a href="html-gloss.html#htmlref2_0001000113000903">SIZE=</A><I>n</I>.
+Число <I>n</I>  может принимать значения от 1 до 7.
+<li>Цвет шрифта
+<a href="html-gloss.html#htmlref2_0001000113000901">COLOR=</A>
+<a href="color.html#color"><I>цвет</I></a>
+<li>Имя шрифта
+<a href="html-gloss.html#htmlref2_0001000113000902">NAME=</B></A><I>name</I>
+</ul>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;BASEFONT SIZE=3&gt; This sets the base font size to 3.
+&lt;FONT SIZE="+4"&gt; Now the font size is 7.
+&lt;FONT SIZE="-1"&gt; Now the font size is 2.
+</PRE></table>
+<P>
+<a href="#fonts"><img src="icons/up.gif" border=0></a>
+
+
+</BODY></HTML>
+

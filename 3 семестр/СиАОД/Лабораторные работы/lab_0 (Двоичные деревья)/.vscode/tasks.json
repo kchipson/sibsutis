@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compile lab_0",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "${fileDirname}\\somefunctions.cpp",
+                "${fileDirname}\\treecreate.cpp",
+                "${fileDirname}\\treeoutput.cpp",
+                "${fileDirname}\\treeproperties.cpp",
+                "-o",
+                "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+vector<sf::RectangleShape> rectangles();
+
+initRect () {
+    //чтота сделал
+rectangles.push_back(rectangle);
+
+}
+
+draw{
+    for (int i = 0; i < rectangles.size(); i++) {
+        window.draw(rectangle s[i]);
+    }
+}

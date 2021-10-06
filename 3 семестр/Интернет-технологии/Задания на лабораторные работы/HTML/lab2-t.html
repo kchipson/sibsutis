@@ -1,0 +1,446 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N 3</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H2><A NAME="tables">Таблицы - Форматирование документа</A></H2>
+<ul>
+<li><a href="#8">Команда TABLE</A>
+<ul>
+<li><a href="#1">Размещение содержимого в клетках (ALIGN,VALIGN)</A>
+<li><a href="#2">Атрибуты CELLPADDING,CELLSPACING</A>
+<li><a href="#3">Задание заголовка к таблице (CAPTION)</A>
+<li><a href="#4">Рамка (BORDER)</A>
+<li><a href="#5">Задание цвета фона клеток и рамки</A>
+<li><a href="#6">Изменение шрифтов</A>
+<li><a href="#7">Задание нестандартных таблиц</A>
+</ul>
+</ul>
+<P>
+<a name="8">
+Команда &lt;TABLE&gt; (задание и описание таблиц)
+является основной командой форматирования документа HTML.
+<P>
+Задание таблицы определяется двумя командами (и соответственно их
+атрибутами):
+<ul>
+<LI>&lt;TR&gt; (table row) - описание строки таблицы;
+<LI>&lt;TD&gt; (table detail)- описание ячейки таблицы;
+</ul>
+<b>Пример</b> простой таблицы:
+<P><table><tr><td bgcolor=aqua><PRE>&lt;TABLE&gt;
+&lt;TR&gt;
+  &lt;TD&gt;Яблоки&lt;/TD&gt;&lt;TD&gt;Огурцы&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;TR&gt;
+  &lt;TD&gt;Апельсины&lt;TD&gt;&lt;/TD&gt;Помидоры&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+</PRE></table>
+<p><b>Что даст:</b>
+<p><TABLE>
+<TR>
+<TD>Яблоки<TD>Огурцы
+<TR>
+<TD>Апельсины<TD>Помидоры
+</TABLE>
+<P>
+По умолчанию таблица прижимается (align) влево,
+ширина таблицы определяется наиболее длинным элементом в столбце,
+содержание каждой ячейки размещается в ее середине по высоте и
+прижимается к левому углу по ширине.
+<P>
+<a name="1">
+Ширина таблицы задается <b>атрибутом</b>
+<A HREF="html-gloss.html#htmlref2_000100011300460b" TARGET="contentFrame">WIDTH=</A>
+для команды
+<A HREF="html-gloss.html#htmlref2_0001000113004600" TARGET="">TABLE</A>.
+Значение ширины таблицы может задаваться в пикселях или в процентах от
+ширины экрана броузера.
+Содержание каждой клетки  может быть размещено с помощью <b>атрибутов</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004e01" TARGET="contentFrame">ALIGN=</A>
+(горизонтальное положение) и
+<A HREF="html-gloss.html#htmlref2_0001000113004e07" TARGET="contentFrame">VALIGN=</A>
+(вертикальное положение)
+для команд
+<A HREF="html-gloss.html#htmlref2_0001000113004e00" TARGET="contentFrame">TR</A> или
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A>.
+<P>
+<b>Атрибут</B> VALIGN может принимать следующие значения:
+<ul>
+<LI>top - прижать вверх
+<LI>bottom - прижать вниз
+<LI>middle - разместить по центу
+</ul>
+<b>Атрибут</B> ALIGN может принимать следующие значения:
+<ul>
+<LI>left - прижать влево
+<LI>right - прижать вправо
+<LI>center - разместить по центу
+</ul>
+<P>
+<a name="2">
+<b>Атрибуты</B>
+<a href="html-gloss.html#htmlref2_0001000113004608">CELLPADDING=</a> и
+<a href="html-gloss.html#htmlref2_0001000113004609">CELLSPACING=</a>
+определяют расстояние в пикселях между границей клетки и ее содержимым и
+между клетками соответственно.
+<P>
+Рассмотрим пример таблицы, занимающей весь экран броузера и
+содержащей клетки прижатые влево и вверх:
+
+<p><table><tr><td bgcolor=aqua><PRE>&lt;TABLE WIDTH="100%"&gt;
+&lt;TR VALIGN=TOP ALIGN=LEFT&gt;
+&lt;TD&gt;Яблоки&lt;/TD&gt;&lt;TD&gt;Огурцы&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR VALIGN=TOP ALIGN=LEFT&gt;
+&lt;TD&gt;Апельсины&lt;/TD&gt;&lt;TD&gt;Помидоры&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+</PRE></table>
+<p><b>Что даст:</b>
+<p><TABLE WIDTH=100%>
+<TR VALIGN=TOP ALIGN=LEFT>
+<TD>Яблоки<TD>Огурцы
+<TR VALIGN=TOP ALIGN=LEFT>
+<TD>Апельсины<TD>Помидоры
+</TABLE>
+<BR CLEAR=ALL><P>
+В этом примера ширина таблицы задана в процентах (100%) от ширины экрана.
+<P>
+<a name="3">
+<b>Команда</B>
+<A HREF="html-gloss.html#htmlref2_0001000113000f00" TARGET="contentFrame">CAPTION</A>
+после команды TABLE
+задает заголовок к таблице. По умолчанию заголовок центрируется относительно таблицы.
+При помощи <b>атрибутов</B> заголовок можно разместить
+<A HREF="html-gloss.html#htmlref2_0001000113000f01" TARGET="contentFrame">ALIGN=</A> или
+<A HREF="html-gloss.html#htmlref2_0001000113004b0a" TARGET="contentFrame">VALIGN=</A>
+вверху (top) или внизу (bottom) и в левом (left) или правом (right)
+углу таблицы.
+<P>
+Задание ячейки-заголовка, содержимое которой выделено жирным шрифтом,
+осуществляется при помощи <b>команды</B>
+<A HREF="html-gloss.html#htmlref2_0001000113004b00" TARGET="contentFrame">TH</A>,
+ здесь по умолчанию предусмотрено центрирование текста.
+
+<P>
+Внутри ячейки, задаваемой командой
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A>
+можно поместить текст или рисунок.
+<P>
+<a name="4">
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004604" TARGET="contentFrame">BORDER=</A>
+к команде
+<A HREF="html-gloss.html#htmlref2_0001000113004600" TARGET="contentFrame">TABLE</A>
+рисует рамку вокруг таблицы и каждой ячейки.
+<!--
+<b>Отметим,</b> что если ячейка является пустой, вокруг нее рамка рисоваться
+не будет, поэтому в пустые клетки в таблицах следует помещать любой
+непечатаемый символ (например, неразрывный пробел (&amp;nbsp;).
+-->
+Ширина рамки  задается в пикселях.
+<p>
+В следующем примере построена таблица с рамкой, заголовком и ячейками-заголовками.
+При этом ширина левого столбца составляет 30% от ширины таблицы:
+<p><table><TR><TD bgcolor=aqua>
+<PRE>&lt;TABLE BORDER=1 WIDTH="60%"&gt;
+&lt;CAPTION&gt;Фрукты и Овощи&lt;/CAPTION&gt;
+&lt;TR&gt;
+&lt;TH WIDTH="30%"&gt;Фрукты&lt;/TH&gt;&lt;TH&gt;Овощи&lt;/TH&gt;
+&lt;/TR&gt;
+&lt;TR&gt;
+&lt;TD ALIGN=right&gt;Яблоки&lt;/TD&gt;&lt;TD&gt;Огурцы&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;TR&gt;
+&lt;TD ALIGN=right&gt;Апельсины&lt;/TD&gt;&lt;TD&gt;Помидоры&lt;/TD&gt;
+&lt;/TR&gt;&lt;/TABLE&gt;
+</PRE></table>
+<p><b>Что даст:</b>
+<p><TABLE BORDER=1 WIDTH="60%">
+<CAPTION>Фрукты и Овощи</CAPTION>
+<TR>
+<TH WIDTH="30%">Фрукты<TH>Овощи
+<TR>
+<TD ALIGN=right>Яблоки<TD>Огурцы
+<TR>
+<TD ALIGN=right>Апельсины<TD>Помидоры
+</TABLE>
+
+<BR CLEAR=ALL>
+
+<p><b>Атрибуты</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004b01" TARGET="contentFrame">ALIGN=</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113004b0a" TARGET="contentFrame">VALIGN=</A>
+соответственным образом изменяют его горизонтальное и вертикальное расположение.
+
+<P>
+<a name="5">
+При формировании таблиц, можно задавать цвет фона клеток и цвет рамки,
+используя <b>атрибуты</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004603" TARGET="contentFrame">BGCOLOR=</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113004605" TARGET="contentFrame">BORDERCOLOR=</A>
+к командам
+<A HREF="html-gloss.html#htmlref2_0001000113004600" TARGET="contentFrame">TABLE</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113004e00" TARGET="contentFrame">TR</A>, и
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A>
+соответственно изменяя цвет фона во всей таблице, в строке или в клетке.
+<P>
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004603" TARGET="contentFrame">BGCOLOR=</A>
+устанавливает цвет фона для элементов таблицы.
+<P>
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004605" TARGET="contentFrame">BORDERCOLOR=</A>
+устанавливает цвет рамки.
+<P>
+В следующем примере использовано задание одинакового цвета фона для заголовков
+столбцов, и разное для клеток таблицы:
+<p><table bgcolor=aqua><tr><td>
+<PRE>&lt;TABLE BORDERCOLOR=FUCHSIA BORDER=3&gt;
+&lt;CAPTION&gt;Фрукты и Овощи&lt;/CAPTION&gt;
+&lt;TR BGCOLOR=GRAY&gt;
+&lt;TH&gt;Фрукты&lt;/TH&gt;&lt;TH&gt;Овощи&lt;/TH&gt;
+&lt;/TR&gt;
+&lt;TR&gt;
+&lt;TD BGCOLOR=LIME&gt;Яблоки&lt;/TD&gt;&lt;TD BGCOLOR=AQUA&gt;Огурцы&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;TR&gt;
+&lt;TD BGCOLOR=LIME&gt;Апельсины&lt;/TD&gt;&lt;TD BGCOLOR=AQUA&gt;Помидоры&lt;/TD&gt;
+&lt;/TR&gt;&lt;/TABLE&gt;
+</PRE></table>
+
+<p><b>Что даст:</b>
+<p><TABLE BORDERCOLOR=FUCHSIA BORDER=3>
+<CAPTION>Фрукты и Овощи</CAPTION>
+<TR BGCOLOR=GRAY>
+<TH>Фрукты<TH>Овощи
+<TR>
+<TD BGCOLOR=LIME>Яблоки<TD BGCOLOR=AQUA>Огурцы
+<TR>
+<TD BGCOLOR=LIME>Апельсины<TD BGCOLOR=AQUA>Помидоры
+</TABLE>
+<BR CLEAR=ALL>
+<P>
+<a name="6">
+Используя команды изменения
+текстовых шрифтов такие как, например,
+<A HREF="html-gloss.html#htmlref2_0001000113000700" TARGET="contentFrame">B</A>,
+(bold&nbsp;- жирный)
+<A HREF="html-gloss.html#htmlref2_0001000113002600" TARGET="contentFrame">I</A>,
+(italic&nbsp;- курсив) или
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>
+(команда задания вида шрифта)
+можно изменить начертание букв в тексте, однако эти команды правильно действуют
+(особенно команда
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>)
+только в пределах одной ячейки.
+При переходе в другую ячейку, при выходе из таблицы или при входе в таблицу
+эти команды <i>могут быть отменены, а могут и не отменены.</i>
+Для правильного их использования команды изменения шрифтов следует
+указывать в каждой клетке таблицы.
+<P>
+<a name="7">
+Как известно, таблицы далеко не всегда имеют правильную клеточную структуру.
+Для задания не стандартных таблиц используются дополнительные команды и атрибуты.
+<P><b>Атрибуты</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004b07" TARGET="contentFrame">COLSPAN=</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113004b09" TARGET="contentFrame">ROWSPAN=</A>
+команд
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A> и  
+<A HREF="html-gloss.html#htmlref2_0001000113004b00" TARGET="contentFrame">TH</A>
+позволяют объединять клетки таблицы в группы, вокруг которых рисуется рамка. 
+Ячейки таблицы формируются построчно. Если ячейка охватывает более одной строки 
+(атрибут ROWSPAN), то она размещается в соответствующих строках, 
+расположенных под первой, автоматически, при этом дополнительной команды 
+&lt;TD&gt; для представления ее в этих строках не требуется. 
+Атрибут COLSPAN позволяет объединить несколько столбцов.
+<P>
+Следующий <b>пример</b> показывает как это делается:
+
+<p><table bgcolor=aqua><tr><td>
+<PRE>&lt;TABLE BORDER=2 CELLSPACING=0 CELLPADDING=5&gt;
+&lt;CAPTION ALIGN=BOTTOM&gt;&lt;I&gt;Подпись к таблице&lt;/I&gt;&lt;/CAPTION&gt;
+&lt;TR&gt;
+   &lt;TH ROWSPAN=2&gt;&amp;nbsp; &lt;!-- Ячейка 1 пустая --&gt;&lt;/TH&gt;
+   &lt;TH ROWSPAN=2&gt;Ячейка 2&lt;BR&gt;занимает 2 строки&lt;/TH&gt;
+   &lt;TH COLSPAN=2&gt;Ячейка 3 занимает 2 столбца&lt;/TH&gt;
+&lt;/TR&gt;
+&lt;TR&gt;
+   &lt;TH&gt;Ячейка 4&lt;/TH&gt;&lt;TH&gt; Ячейка 5&lt;/TH&gt;
+&lt;/TR&gt;
+&lt;TR&gt;
+   &lt;TD ALIGN=LEFT&gt;Ячейка 6&lt;/TD&gt;
+   &lt;TD ALIGN=CENTER&gt;Ячейка 7&lt;/TD&gt;
+   &lt;TD ALIGN=CENTER&gt;Ячейка 8&lt;/TD&gt;
+   &lt;TD ALIGN=CENTER&gt;Ячейка 9&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+</PRE></table>
+<p><b>Что даст:</b>
+<p><TABLE BORDER=2 CELLSPACING=0 CELLPADDING=5>
+<CAPTION ALIGN=BOTTOM><I>Подпись к таблице</I></CAPTION>
+<TR>
+   <TH ROWSPAN=2>&nbsp; <!-- Ячейка 1 пустая --></TH>
+   <TH ROWSPAN=2>Ячейка 2<BR>занимает 2 строки</TH>
+   <TH COLSPAN=2>Ячейка 3 занимает 2 столбца</TH>
+</TR>
+<TR>
+   <TH>Ячейка 4</TH><TH> Ячейка 5</TH>
+</TR>
+<TR>
+   <TD ALIGN=LEFT>Ячейка 6</TD>
+   <TD ALIGN=CENTER>Ячейка 7</TD>
+   <TD ALIGN=CENTER>Ячейка 8</TD>
+   <TD ALIGN=CENTER>Ячейка 9</TD>
+</TR>
+</TABLE>
+
+<p><b>Важное замечание.</b> Если в ячейке таблицы ничего не содержится, то рамка вокруг ячейки
+<b>рисоваться не будет</b>, т.е. таблица будет выглядеть "кособоко". Чтобы этого 
+не происходило, обязательно необходимо в такую  ячейку заносить неразрывный пробел 
+(&amp;nbsp;), как в ячейке 1 в приведенном здесь примере. 
+<p>&nbsp;
+
+
+<h3>Графика и картинки</h3>
+<P>
+Графические файлы включаются в HTML документы с помощью команды
+<A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>.
+Допускается использование файлов в формате GIF или JPG/JPEG (для систем,
+работающих под MS Windows, допускаются файлы формата BMP).
+<p>
+Следующий пример демонстрирует, вставку в документ GIF файла:
+
+<p><table><tr><td bgcolor=aqua>
+<PRE>&lt;IMG SRC="icons/earth.gif" WIDTH=46 HEIGHT=46 ALT="Земля"&gt;</PRE>
+</table>
+<P><IMG SRC="icons/internet.gif" WIDTH="46" HEIGHT="46" ALT="Земля" >
+<P>
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_000100011300280a" TARGET="contentFrame">SRC=</A>
+определяет <a href="url.html#html">URL</a> адрес (имя) графического файла.
+В приведенном примере файл будет размещен в квадрате шириной 46 и высотой 46
+пикселей соответственно. Если размеры указанные <b>атрибутами</b>
+<A Href="html-gloss.html#htmlref2_0001000113002806">HEIGHT=</A> (высота) и
+<A NAME="html-gloss.html#htmlref2_000100011300280e">WIDTH=</B></A> (ширина),
+не совпадают с размерами графического файла, то последний масштабируется.
+Масштабирование может привести к резкому ухудшению качества вывода на экран графического
+файла, поэтому рекомендуется задавать размеры соответствующие размерам изображения в пикселях.
+<p>
+Рекомендуется для больших графических файлов (более 10 Kb) всегда задавать
+их размеры, для убыстрения работы броузера. Если размеры не заданы, то
+встретив графический файл броузер прекращает вывод текста и ждет пока
+перекачается вся картинка, чтоб определить ее размеры.
+<P>
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002802" TARGET="contentFrame">ALT=</A>
+содержит надпись, которая появляется при наведении мышки на изображение. 
+Этот же текст появится на месте рисунка, если в броузере включен режим "не показывать 
+картинки" или вследствие медленной скорости перекачки вы
+не получили файл по сети.
+<P>
+Если вы вставляете команду
+<A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>
+в документ, то броузер размещает следующий за ней текст внизу от картинки.
+Используя <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002801" TARGET="contentFrame">ALIGN=</A>
+можно переместить, следующий перед и за картинкой текст.
+<p>
+Допустимые значения <b>атрибута</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002801" TARGET="contentFrame">ALIGN=</A>
+<ul>
+<li>TOP
+<LI>BOTTOM
+<LI>MIDDLE
+</ul>
+<b>Примеры:</b>
+<dir>
+<li><IMG SRC="icons/internet.gif" WIDTH="46" HEIGHT="46" ALT="" ALIGN=TOP>
+&nbsp;&nbsp; Текст вверху.
+<li>Немного отступили вправо
+<IMG SRC="icons/internet.gif" WIDTH="46" HEIGHT="46" ALT="" ALIGN=MIDDLE>
+&nbsp;&nbsp; Текст по центру.
+<li>Еще раз немного немного отступили вправо
+<IMG SRC="icons/internet.gif" WIDTH="46" HEIGHT="46" ALT="" ALIGN=BOTTOM>
+&nbsp;&nbsp; Текст внизу.
+</dir>
+Каждый "уважающий" себя WEB-сервер  имеет свой базовый набор картинок 
+(иконок - icons) для вставки
+в документы, генерируемые по умолчанию (например, листинг директории), см.
+<a href="http://www-sbras.nsc.ru/icons/icon.sheet.gif" 
+target=new>список картинок WEB сервера Apache</a>, на
+котором размещен данный курс (стадарно эти картинки расположениы в виртуальной
+директории сервера <font size=+1><tt>icons</tt></font>).
+
+<P>
+<b>"Плавающие" картинки</b>
+<P>
+Используя <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002801" TARGET="contentFrame">ALIGN=</A>
+со значениями LEFT или  RIGHT можно создать "плавающую" картинку, которую
+будет обтекать текст.
+В конце "плавающего" объекта обязательно должна присутствовать команда
+<A HREF="html-gloss.html#htmlref2_0001000113000e00" TARGET="contentFrame">BR</A>
+с <b>атрибутом</b>
+<A HREF="html-gloss.html#htmlref2_0001000113000e01" TARGET="contentFrame">CLEAR=</A>,
+который прекращает обтекание картинки. После этой команды текст выводится
+ниже графического файла.
+<p>
+Рассмотрим следующий <b>пример</b>:
+<p>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;IMG SRC="picture.gif" ALIGN=LEFT HSPACE=4&gt;
+Здесь располагается текст, который следует поместить справа
+рядом с картинкой. Текст должен обтекать картинку
+&lt;BR CLEAR=LEFT&gt;Здесь располагается текст, который следует
+поместить ниже картинки.
+</PRE></table>
+<p>
+<b>Что даст:</b>
+<p>
+<IMG SRC="icons/88x31.gif" ALIGN=LEFT HSPACE=4 VSPACE=4>
+Здесь располагается текст, который следует поместить справа рядом с картинкой.
+Текст должен обтекать картинку
+<BR CLEAR=LEFT><p>Здесь располагается текст, который следует поместить ниже
+картинки.
+<P>
+<b>Атрибут</b>
+<A href="html-gloss.html#htmlref2_0001000113002807">HSPACE=</A> задает
+горизонтальный отступ между текстом и картинкой. Если данный <b>атрибут</b>
+не задан, то текст будет располагаться вплотную к картинке. (См. также
+<b>атрибут</b> <A href="html-gloss.html#htmlref2_000100011300280d">VSPACE=</A>).
+
+<p>
+<b>Несколько советов:</b>
+<p>
+<blockquote>
+Всегда использовать атрибуты задания размера картинки.
+В этом случае броузер, не дожидаясь пока перекачается вся картинка,
+будет подолжать показывать документ дальше.
+<P>
+Использовать картинки в формате JPEG/JPG для фотографий;  
+в формате GIF - для таблиц или графиков.
+<p>
+Если хотите чтобы пользователь с интересом читал ваши страницы, то
+не вставляйте в документ картинки объемом более 40 Kb. Для картинок большего
+размера следует использовать гиперссылку с обязательными указанием ее объема
+(наши каналы пока еще недостаточно быстры, чтоб перекачивать большой объем
+данных).
+<P>
+Для картинок высокой цветовой разрешимости желательно применять 
+<a href="http://www.artlebedev.ru/free/colors/" 
+target=new>универсальную палитру цветов</a>, «безопасных» при использовании в интернете.
+<P>
+Не злоупотребляте анимационными GIF'ам (такими как на этой странице),
+это сильно затрудняет просмотр web-страниц, особено для Netscape.
+</blockquote>
+
+<p>&nbsp;
+
+
+</BODY></HTML>
+

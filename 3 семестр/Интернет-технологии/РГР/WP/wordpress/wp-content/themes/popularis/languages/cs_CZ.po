@@ -1,0 +1,363 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Popularis\n"
+"POT-Creation-Date: 2019-12-09 09:52+0100\n"
+"PO-Revision-Date: 2019-12-09 09:58+0100\n"
+"Last-Translator: \n"
+"Language-Team: Popularis <info@themes4wp.com>\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:9
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Jejda! Tuto stránku nelze nalézt."
+
+#: 404.php:11
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Vypadá to, že tady opravdu nic není. Možná zkuste vyhledávání?"
+
+#: comments.php:15
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Jeden komentář k &ldquo;%s&rdquo;"
+
+#: comments.php:18
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s komentář k &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s komentáře k &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s komentářů k &ldquo;%2$s&rdquo;"
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr "Komentáře jsou uzavřeny."
+
+#: content-none.php:3
+msgid "Nothing Found"
+msgstr "Nic nenalezeno"
+
+#: content-none.php:10
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Jste připraveni publikovat svůj první příspěvek? <a href=\"%1$s\">Začněte "
+"zde</a>."
+
+#: content-none.php:16
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Omlouváme se, ale zadanému výrazu neodpovídá žádný obsah. Zkuste prosím "
+"zadat jiný výraz."
+
+#: content-none.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Zdá se, že nemůžete najít, co hledáte. Snad pomůže vyhledávání."
+
+#: functions.php:22
+msgid "Main Menu"
+msgstr "Hlavní menu"
+
+#: functions.php:71 inc/admin/customizer.php:31
+#, php-format
+msgid ""
+"To take full advantage of all the features this theme has to offer, please "
+"install and activate the %s plugin."
+msgstr ""
+"Chcete-li plně využít všech funkcí, které tato šablona nabízí, nainstalujte "
+"a aktivujte %s plugin."
+
+#: functions.php:77
+msgid "The most advanced frontend drag & drop page builder."
+msgstr "Nejpokročilejší vizuální tvůrce stránek."
+
+#: functions.php:83
+#, php-format
+msgid "To enable shop features, please install and activate the %s plugin."
+msgstr ""
+"Pro aktivování funkce obchodu, nainstalujte a aktivujte %s plugin prosím."
+
+#: functions.php:113
+msgctxt "Open Sans Condensed font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:233
+msgid "Sidebar"
+msgstr "Boční panel"
+
+#: functions.php:243
+msgid "Top Bar Section"
+msgstr "Horní panel"
+
+#: functions.php:253
+msgid "Footer Section"
+msgstr "Sekce zápatí"
+
+#: functions.php:283
+msgid "Skip to the content"
+msgstr "Přeskočit na obsah"
+
+#: inc/admin/customizer.php:35 inc/admin/dashboard.php:147
+#: inc/admin/dashboard.php:366
+#, php-format
+msgid "Welcome to %1$s - Version %2$s"
+msgstr "Vítejte v %1$s - verze %2$s"
+
+#: inc/admin/customizer.php:36
+msgid "Install now"
+msgstr "Instalovat"
+
+#: inc/admin/customizer.php:37
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:59
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:75
+#: inc/admin/dashboard.php:234
+msgid "Activate"
+msgstr "Aktivovat"
+
+#: inc/admin/customizer/customizer-notice/class-customizer-notice.php:144
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:110
+msgid "Activating"
+msgstr "Aktivuji"
+
+#: inc/admin/customizer/demo.php:14 inc/admin/dashboard.php:321
+#: inc/admin/dashboard.php:323
+msgid "One Click Demo Import"
+msgstr "Demo import na 1 kliknutí"
+
+#: inc/admin/customizer/demo.php:26 inc/admin/dashboard.php:466
+#, php-format
+msgid ""
+"You can import the demo content with just one click. For step-by-step video "
+"tutorial, see %1$s"
+msgstr ""
+"Můžete importovat demo obsah s pouhým jedním kliknutím. Pro podrobný video "
+"návod, navštivte %1$s"
+
+#: inc/admin/customizer/demo.php:26 inc/admin/customizer/info.php:29
+#: inc/admin/dashboard.php:466
+msgid "documentation"
+msgstr "dokumentaci"
+
+#: inc/admin/customizer/demo.php:41 inc/admin/customizer/demo.php:43
+#: inc/admin/dashboard.php:172 inc/admin/dashboard.php:176
+#: inc/admin/dashboard.php:457
+msgid "Import demo data"
+msgstr "Importovat demo data"
+
+#: inc/admin/customizer/info.php:10
+msgid "Video Documentation & Demo"
+msgstr "Videodokumentace & Demo"
+
+#: inc/admin/customizer/info.php:25
+#, php-format
+msgid "You can use this theme to create a website like these %1$s"
+msgstr "Tuto šablonu můžete použít k vytvoření webové stránky jako tyto %1$s"
+
+#: inc/admin/customizer/info.php:25
+msgid "demos"
+msgstr "dema"
+
+#: inc/admin/customizer/info.php:29
+#, php-format
+msgid "For step-by-step videos and text tutorials, see %1$s"
+msgstr "Pro podrobné video a textové výukové lekce přejděte na %1$s"
+
+#: inc/admin/customizer/info.php:153
+msgid "PRO version"
+msgstr "PRO verze"
+
+#: inc/admin/customizer/info.php:155
+msgid "View PRO version"
+msgstr "Zobrazit PRO verzi"
+
+#: inc/admin/dashboard.php:118
+#, php-format
+msgid "%1$s action required"
+msgid_plural "%1$s actions required"
+msgstr[0] "%1$s vyžadovaná akce"
+msgstr[1] "%1$s vyžadované akce"
+msgstr[2] "%1$s vyžadovaných akcí"
+
+#: inc/admin/dashboard.php:121
+#, php-format
+msgid "Popularis theme %s"
+msgstr "Popularis šablona %s"
+
+#: inc/admin/dashboard.php:123
+msgid "Popularis theme"
+msgstr "Popularis šablona"
+
+#: inc/admin/dashboard.php:126
+msgid "Popularis dashboard"
+msgstr "Popularis nástěnka"
+
+#: inc/admin/dashboard.php:154
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
+"our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome "
+"page</a>"
+msgstr ""
+"Vítej! Děkujeme vám, že jste si vybrali %1$s! Chcete-li plně využít naši "
+"šablonu a vše co nabízí ujistěte se prosím, že navštívíte naši <a href=\"%2$s"
+"\">úvodní stránku</a>"
+
+#: inc/admin/dashboard.php:162
+#, php-format
+msgid "Get started with %s"
+msgstr "Začínáme s %s"
+
+#: inc/admin/dashboard.php:169
+msgid ""
+"Save time by importing our demo data: your website will be set up and ready "
+"to be customized in minutes."
+msgstr ""
+"Ušetřete čas importem našich demo dat, Vaše webové stránky budou nastaveny a "
+"připraveny k úpravám během minut."
+
+#: inc/admin/dashboard.php:215
+msgid "Install Now"
+msgstr "Instalovat"
+
+#: inc/admin/dashboard.php:255
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: inc/admin/dashboard.php:302
+msgid "Recommended Actions"
+msgstr "Doporučené akce"
+
+#: inc/admin/dashboard.php:383
+msgid "Theme Customizer"
+msgstr "Úpravy šablony"
+
+#: inc/admin/dashboard.php:387
+#, php-format
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click \"Customize\" "
+"to personalize your site."
+msgstr ""
+"%s podporuje Customizer pro všechna nastavení šablony. Klepněte na tlačítko "
+"\"Přizpůsobit\" a začněte upravovat váš web."
+
+#: inc/admin/dashboard.php:391
+msgid "Start customizing"
+msgstr "Začněte upravovat"
+
+#: inc/admin/dashboard.php:395
+msgid "Theme documentation"
+msgstr "Dokumentace šablony"
+
+#: inc/admin/dashboard.php:399
+#, php-format
+msgid ""
+"Need help in setting up and configuring %s? Please take a look at our "
+"documentation page."
+msgstr ""
+"Potřebujete pomoc s nastavením a konfigurací %s? Podívejte se prosím na naše "
+"pokyny v dokumentaci."
+
+#: inc/admin/dashboard.php:406
+#, php-format
+msgid "%s Documentation"
+msgstr "%s dokumentace"
+
+#: inc/admin/dashboard.php:412
+msgid "Having trouble? Need support?"
+msgstr "Máte potíže? Potřebujete pomoct?"
+
+#: inc/admin/dashboard.php:414
+msgid "Contact us"
+msgstr "Napište nám"
+
+#: inc/admin/dashboard.php:420
+msgid "Theme Screenshot"
+msgstr "Obrázek šablony"
+
+#: inc/admin/dashboard.php:439
+msgid "Recommended plugins"
+msgstr "Doporučené pluginy"
+
+#: inc/admin/dashboard.php:448
+msgid "Hooray! There are no required actions for you right now."
+msgstr "Výborně! V současné době nejsou žádné požadované akce."
+
+#: inc/extra.php:56
+msgid "Tags"
+msgstr "Štítky"
+
+#: inc/extra.php:79
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Hrdě běží na CMS %s"
+
+#: inc/extra.php:79
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: inc/extra.php:84
+#, php-format
+msgid "Theme: %1$s"
+msgstr "Šablona: %1$s"
+
+#: inc/extra.php:101
+msgid "Previous Post"
+msgstr "Předchozí příspěvek"
+
+#: inc/extra.php:101
+msgid "Previous"
+msgstr "Předchozí"
+
+#: inc/extra.php:102
+msgid "Next Post"
+msgstr "Následující příspěvek"
+
+#: inc/extra.php:102
+msgid "Next"
+msgstr "Následující"
+
+#: inc/extra.php:117
+msgid "By"
+msgstr "Od"
+
+#: inc/woocommerce.php:6
+msgid "View your shopping cart"
+msgstr "Zobrazit nákupní košík"
+
+#: inc/woocommerce.php:45
+msgid "My Account"
+msgstr "Můj účet"
+
+#: inc/wp_bootstrap_navwalker.php:328
+msgid "Add a menu"
+msgstr "Přidat menu"
+
+#: search.php:8
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Výsledky hledání pro: %s"
+
+#: single.php:38
+msgid "About The Author"
+msgstr "O autorovi"
+
+#~ msgid "Select"
+#~ msgstr "Vyberte"

@@ -1,0 +1,1339 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+<script language="JavaScript">
+<!-- hide
+function Win_select(){
+myWin1=open("ex_onfocus.html","displayWindow1",
+"width=300,height=130,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_Selected(){
+myWin2=open("ex_selected.html","displayWindow2",
+"width=620,height=350,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setDate(){
+myWin3=open("ex_setdate.html","displayWindow3",
+"width=450,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setDate1(){
+myWin4=open("ex_setdate1.html","displayWindow4",
+"width=300,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setHours(){
+myWin5=open("ex_sethour.html","displayWindow5",
+"width=480,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setMinutes(){
+myWin6=open("ex_setmin.html","displayWindow6",
+"width=480,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setMonth(){
+myWin7=open("ex_setmonth.html","displayWindow7",
+"width=480,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setSeconds(){
+myWin8=open("ex_setsec.html","displayWindow8",
+"width=480,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setTime(){
+myWin9=open("ex_settime.html","displayWindow9",
+"width=480,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setTimeout(){
+myWin10=open("ex_settimeo.html","displayWindow10",
+"width=300,height=250,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setTimeout1(){
+myWin11=open("ex_settimeo1.html","displayWindow11",
+"width=300,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setTimeout2(){
+myWin12=open("ex_settimeo2.html","displayWindow12",
+"width=300,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_setYear(){
+myWin13=open("ex_setyear.html","displayWindow13",
+"width=400,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_sin(){
+myWin14=open("ex_sin.html","displayWindow14",
+"width=400,height=120,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_small(){
+myWin15=open("ex_big.html","displayWindow15",
+"width=600,height=200,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_sqrt(){
+myWin16=open("ex_sqrt.html","displayWindow16",
+"width=380,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_SQRT1_2(){
+myWin17=open("ex_sqrt1_2.html","displayWindow17",
+"width=300,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_SQRT2(){
+myWin18=open("ex_sqrt2.html","displayWindow18",
+"width=350,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_status(){
+myWin19=open("ex_status.html","displayWindow19",
+"width=400,height=100,status=yes,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_strike(){
+myWin20=open("ex_blink.html","displayWindow20",
+"width=320,height=180,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_String(){
+myWin21=open("ex_string1.html","displayWindow21",
+"width=300,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_sub(){
+myWin22=open("ex_sub.html","displayWindow22",
+"width=250,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_substring(){
+myWin23=open("ex_substring.html","displayWindow23",
+"width=400,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+//--> end of hide
+</script>
+</HEAD>
+<BODY text="Black" link="#336699" vlink="l#6699cc" alink="#ff6600">
+ <A NAME="list_search">
+<H2> Свойство search</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html# 1_search">Измененный в Navigator  3.0</A></FONT>  
+<P>
+ Возвращает строку, содержащую любую информацию запроса, присоединенную к URL. 
+<H3> Синтаксис</H3> 
+<pre>  
+1. link <I>[index]</I> .search 
+2. location.search </pre> 
+<P>
+<I>index </I> - целое число, представляющее объект связи. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="h_l.html#list_linkob">link</A>, <A HREF="h_l.html#list_location"> location</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b> search </b> определяет часть URL. 
+<br>Возвращает строку, содержащую любую информацию запроса, добавленную в конец URL. Данные запроса предваряются знаком вопроса и являются последним элементом в URL документа.
+<table><tr><td bgcolor=aqua><pre>?elementName=element+value</pre></table>
+Вы можете управлять свойство <b> search </b> в любое время.
+<H3> Примеры</H3> 
+<P>
+В следующем примере, утверждение <TT>window.open</TT> создает окно с именем <I>newWindow</I> и загружает указанный URL в это окно. Утверждение <TT>document.write</TT> показывает все свойства <TT>newWindow.location</TT> в окне с именем  <I>msgWindow</I>. 
+<table><tr><td bgcolor=aqua><xmp>  
+newWindow=window.open
+   ("http://guide-p.infoseek.com/WW/NS/Titles?qt=RFC+1738+&col=WW")
+msgWindow.document.write("newWindow.location.href =" +
+   newWindow.location.href +"<P>")
+msgWindow.document.write("newWindow.location.protocol =" +
+   newWindow.location.protocol +"<P>")
+msgWindow.document.write("newWindow.location.host =" +
+   newWindow.location.host +"<P>")
+msgWindow.document.write("newWindow.location.hostName =" +
+   newWindow.location.hostName +"<P>")
+msgWindow.document.write("newWindow.location.port =" +
+   newWindow.location.port +"<P>")
+msgWindow.document.write("newWindow.location.pathname =" +
+   newWindow.location.pathname +"<P>")
+msgWindow.document.write("newWindow.location.search =" +
+   newWindow.location.search +"<P>")
+msgWindow.document.write("newWindow.location.hash =" +
+   newWindow.location.hash +"<P>")
+msgWindow.document.close()
+ </xmp></table> 
+<P>
+Предыдущий пример на экране выглядет так: 
+<table><tr><td bgcolor=aqua><pre>  
+NewWindow.location.href = 
+     http://guide-p.infoseek.com/WW/NS/Titles?qt=RFC+1738+ &col=WW 
+newWindow.location.protocol = http:
+newWindow.location.host = guide-p.infoseek.com 
+newWindow.location.hostName = guide-p.infoseek.com 
+newWindow.location.port =
+newWindow.location.pathname = /WW/NS/Titles 
+newWindow.location.search =? Qt=RFC+1738 +&col=WW 
+newWindow.location.hash =
+ </pre></table> 
+<H3> Смотрите также</H3> 
+<LI>Свойства  <A HREF="h_l.html#list_hash"> hash </A>, <A HREF="h_l.html#list_host"> host </A>, <A HREF="h_l.html#list_hostname"> hostname </A>, <A HREF="h_l.html#list_hpr">href</A>, <A HREF="m_q.html#list_pathname"> pathname </A>, <A HREF="m_q.html#list_port"> port </A>, <A HREF="m_q.html#list_protocol"> protocol </A> 
+<!-------------------------->
+ <hr align=center width=250>
+ <A NAME="list_selectmet">
+<H2> Метод select </H2> 
+<P>
+ Выделяет область ввода указанного элемента формы (password, text, или textarea). 
+<H3> Синтаксис</H3> 
+<pre>  
+1. <I>passwordName</I>.select () 
+2. <I>textName</I>.select () 
+3. <I>textareaName</I>.select ()
+ </pre> 
+<P>
+<I>passwordName</I> является либо значением атрибута NAME объекта password либо элемента в массиве <I>elements</I>. <BR>
+<I>textName</I> является либо значением атрибута NAME объекта text либо элемента в массиве <I> elements </I>. <BR>
+<I>textareaName</I> является либо значением атрибута NAME объекта  textarea либо элемента в массиве <I> elements </I>. 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_password"> password </A>, <A HREF="t_z.html#list_textob">text</A>, <A HREF="t_z.html#list_textarea">textarea</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b> select </b>  для выделения области указанного элемента формы. Вы можете использовать метод <b> select </b> с методом <i>focus</i> чтобы выделить поле и установить курсор для ввода. 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, функция  <I>checkPassword</I> подтверждает, что пользователь ввел правильно пароль. Если пароль введен не правильно, то метод <b>select</b> высвечивает область пароля и метод <i>focus</i> возвращает фокус , так что пользователь может повторно ввести пароль. 
+<table><tr><td bgcolor=aqua><pre>  
+function checkPassword(userPass) {
+   if (badPassword) {
+      alert("Please enter your password again.")
+      userPass.focus()
+      userPass.select()
+   }
+}
+ </pre></table> 
+Этот пример выполняется, когда password определен как: 
+<table><tr><td bgcolor=aqua><pre>  &lt;INPUT TYPE = NAME"пароля" ="userPass" &gt;</pre></table> 
+Следующий пример, при использование обработчика событий onFocus, выделяет элемент и находящийся в нем текст:
+<table><tr><td bgcolor=aqua><xmp><script>
+<!-- hide
+function setFocus(){
+  document.first.text1.select();
+}
+//--> end of hide
+...
+<INPUT TYPE="text" value="INPUT TEXT" NAME="text1" onFocus="setFocus()"></xmp></table>
+<form>
+<input type="button" value="DEMO" onClick="Win_select()">
+</form>
+<H3> Смотрите также</H3> 
+<LI>Методы  <A HREF="b.html#list_blur">blur</A>, <A HREF="f_g.html#list_focus"> focus </A> 
+<!------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_selectob">
+<H2> Объект  select  (массив <I>select</I>)</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_selectob">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Список выбора или прокрутка списка на форме HTML. Список выбора допускает пользователя, выбирают один пункт(изделие) из списка. Список прокрутки допускает пользователя, выбирают один или большее количество пунктов(изделий) из списка. 
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить объект <b>select</b>, используйте стандарт HTML синтаксис с использованием обработчиков событий onBlur, onChange, и onFocus: 
+<table><tr><td bgcolor=aqua><xmp>   
+<SELECT 
+    NAME="selectName" 
+    [SIZE="integer"]
+    [MULTIPLE]
+    [onBlur="handlerText"]
+    [onChange="handlerText"]
+    [onFocus="handlerText"]>
+ <OPTION VALUE="optionValue" [SELECTED]> 
+      textToDisplay
+ [ ... <OPTION> textToDisplay]
+</SELECT>
+ </xmp></table> 
+<I>NAME ="selectName"</I> определяет имя выбранного объекта. Вы можете обращаться к этому значению, используя свойство имени. <BR>
+<I>SIZE ="intege"</I> определяет число видимых <b>select</b>, когда форма показана. <BR>
+<I> MULTIPLE </I> определяет, что объект <b>select</b> - список прокрутки (не список выбора). <BR>
+<I>SELECT</I> определяет элемент выбора в списке. Вы можете обращаться к выборам, использующим массив <b>select</b>. <BR>
+<I>VALUE="optionValue"</I> определяет значение, которое возвращено серверу, когда сделан выбор. Вы можете обращаться к этому значению, используя свойство value. <BR>
+<I> SELECTED </I> определяет, что выбор сделан по умолчанию. Вы можете обращаться к этой значению, используя свойство  defaultSelected. <BR>
+<I>TextToDisplay</I> определяет текст, который появится в списке. Вы можете обращаться к этому значению, используя свойство text. 
+<P>
+Использование свойства объекта и метода <b>select</b>: 
+<pre>  
+1. <I>SelectName</I>.<I>propertyName </I>
+2. <I>SelectName</I>.<I>methodName</I> <I>( parameters)</I> 
+3. <I>FormName</I>.elements <I>[индекс]</I> .<I>propertyName </I>
+4. <I><I>formName.elements[index].methodName(parameters)</I></I>  </pre> 
+<I>SelectName</I> - значение атрибута NAME объекта. <BR>
+<I>FormName</I> является либо значением атрибута NAME объекта формы либо элемента в массиве <I>form</I>. <BR>
+<I>Индекс</I> - целое число, представляющее объект <b>select</b> на форме. <BR>
+<I>PropertyName</I> - один из свойства, описанных ниже. <BR>
+<I>MethodName</I> - один из методов, описанных ниже. 
+<P>
+Использование свойства <b>select</b>: 
+<table><tr><td bgcolor=aqua><pre>  
+1. <I>SelectName</I>.options <I>[index1]</I> .<I>propertyName </I>
+2. <I><I>formName.elements[index2].options[index1].propertyName</I></I>  </pre></table> 
+<I>SelectName</I> - значение атрибута NAME объекта <b>select</b>. <BR>
+<I>Index1</I> - целое число, представляющее число выборов в объекте <b>select</b>. <BR>
+<I>FormName</I> является либо значением атрибута NAME объекта формы либо элемента в массиве <I>form</I>. <BR>
+<I>Index2</I> - целое число, представляющее объект <b>select</b> на форме. <BR>
+<I>PropertyName</I> - один из свойства, описанных ниже. 
+<H3> Свойство</H3> 
+<LI> Объект <b>select</b> - свойство <A HREF="f_g.html#list_formob">form</A> 
+<LI> Массив <b>select</b> - свойство <A HREF="s.html#list_selectob">select</A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>select</b> на форме выглядит следующим образом. Объект слева - список выбора, который позволяет пользователю, выбрать один из пункт; объект справа - список прокрутки, который позволяет пользователю, выбирать один или больше пунктов: 
+<FORM>  
+<SELECT NAME="music_type_single">
+<OPTION SELECTED>
+ R &B 
+<OPTION>
+ Джаз 
+<OPTION>
+ Блюз 
+<OPTION>
+ Новый век 
+</SELECT>
+<SELECT NAME="music_type_multi" MULTIPLE>
+<OPTION SELECTED>
+ R &B 
+<OPTION>
+ Джаз 
+<OPTION>
+ Блюз 
+<OPTION>
+ Новый век 
+</SELECT>
+</FORM>
+<P>
+Объект  <b>select</b> - элемент формы и должен быть определен внутри  тега &LT;FORM&GT;. 
+<H4> Массив <I>select</I></H4> 
+<P>
+Вы можете ссылаться на выборы объекта <b>select</b> в вашем коде,  используя массив  <I>select</I>. Этот массив содержит все выбора в объекте <b>select</b> (тега &LT;OPTION &GT;) в исходном построкаке. Например, если объект <b>select</b> с именем <I>musicStyle</I>, содержит три списка, то эти списки отражены следующим образом <TT>musicStyle.options [0]</TT>, <TT>musicStyle.options [1]</TT>, и <TT>musicStyle.options [2]</TT>. 
+<P>
+Использование массива  <I>select</I>: 
+<pre>  
+1. <I>selectName</I>.options 
+2. <I>selectName</I>.options <I>[index]</I> 
+3. <I>selectName</I>.options.length
+ </pre> <P>
+<I>selectName</I> является либо значением атрибута NAME объекта <b>select</b> либо элемента в массиве <I>elemets</I>. <BR>
+<I> index </I> - целое число, представляющее список в объекте <b>select</b>. 
+<P>
+Чтобы получить число списков в объекте <b>select</b>, используйте свойство <i>length</i> либо таблицы <i>select</i>  либо отобранного объекта: 
+<pre>  
+1. <I>SelectName</I>.length 
+2. <I>SelectName</I>.options.length </pre><P>
+Объект  <b>select</b>  имеет свойства, к которым вы можете обращаться только через массив <i> select </i>. Эти свойства описаны  ниже. 
+<P>
+Даже при том, что каждый элемент в массиве <I>select</I> представляет список <b>select</b>, значение списка <I>[index</I> - всегда пустой указатель. Значение, возвращенное  <I>selectName</I>.options представляет полное HTML утверждение в объекте <I>selectName</I>. 
+<P>
+Элементы в массиве <I>select</I> только для чтения. Например, утверждение <TT><I>selectName</I>.options [0] ="гитара"</TT> не имеет никакого результата. 
+<H3>Свойства</H3> 
+<P>
+Объект <b>select</b> имеет следующие свойства: 
+<LI> <A HREF="h_l.html#list_length"> length </A> отражает число списков 
+<LI> <A HREF="m_q.html#list_name"> name</A> отражает атрибут NAME 
+<LI> <A HREF="s.html#list_selectob">select</A> отражают тег &LT;OPTION&GT;
+<LI> <A HREF="s.html#list_selectedIndex">SelectedIndex</A> отражает индекс выбранного списка (или первый выбранный список) 
+<P>
+Массив  <I>select</I> имеет следующие свойства: 
+<LI> <A HREF="d_e.html#list_defaultSelected">DefaultSelected</A> отражает атрибут SELECT
+<LI> <A HREF="h_l.html#list_index"> index </A> отражает индекс списка 
+<LI> <A HREF="h_l.html#list_length"> length </A> отражает число списков в объекте <b> select </b> 
+<LI> <A HREF="m_q.html#list_name"> name</A> отражает атрибут NAME 
+<LI> <A HREF="s.html#list_selected"> selected </A> позволяет нам, запрограммировано выбирать списки 
+<LI> <A HREF="s.html#list_selectedIndex">selectedIndex</A> отражает индекс выбраного списка 
+<LI> <A HREF="t_z.html#list_textpr">text</A> отражает <I>textToDisplay</I>, который следует за тегу &LT;OPTION&GT; 
+<LI> <A HREF="t_z.html#list_value"> value </A> отражает атрибут VALUE
+<H3> Методы</H3> 
+<LI> <A HREF="b.html#list_blur"> blur </A> 
+<LI> <A HREF="f_g.html#list_focus"> focus </A> 
+<H3> Обработчики событий</H3> 
+<LI> <A HREF="m_q.html#list_onBlur">onBlur</A> 
+<LI> <A HREF="m_q.html#list_onChange">onChange</A> 
+<LI> <A HREF="m_q.html#list_onFocus">onFocus</A> 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1.</B> Следующий пример показывает список выбора и список прокрутки. 
+<table><tr><td bgcolor=aqua><xmp>
+ Choose the music type for your free CD:
+<SELECT NAME="music_type_single"> 
+<OPTION SELECTED>
+ R&B 
+<OPTION>
+ Jazz 
+<OPTION>
+ Blues
+ <OPTION>
+ New Age
+ </SELECT>
+<P>Choose the music types for your free CDs:
+ <BR><SELECT NAME="music_type_multi" MULTIPLE>
+ <OPTION SELECTED>
+ R&B
+ <OPTION> 
+Jazz 
+<OPTION>
+ Blues
+ <OPTION>
+ New Age
+</SELECT>
+</xmp></table>
+<P>
+<B>Пример 2.</B> Следующий пример показывает два списка выбора, которые позволяют пользователю, выбрать месяц и день. Эти списки выбора инициализированы к текущей дате. Пользователь может изменять месяц и день,  используя списки выбора или,  выбирая предварительно установленные даты в переключателях. Текстовые области в форме показывают значения свойства объекта <b>select</b> и указывают выбранную дат. 
+<table><tr><td bgcolor=aqua><xmp>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE> Отобранный пример объекта</TITLE> 
+</HEAD> 
+<BODY>
+<SCRIPT>
+var today = new Date()
+//---------------
+function updatePropertyDisplay(monthObj,dayObj) {
+   // Get date strings
+   var monthInteger, dayInteger, monthString, dayString
+   monthInteger=monthObj.selectedIndex
+   dayInteger=dayObj.selectedIndex
+   monthString=monthObj.options[monthInteger].text
+   dayString=dayObj.options[dayInteger].text
+   // Display property values
+   document.selectForm.textFullDate.value=monthString +"" + dayString
+   document.selectForm.textMonthLength.value=monthObj.length
+   document.selectForm.textDayLength.value=dayObj.length
+   document.selectForm.textMonthName.value=monthObj.name
+   document.selectForm.textDayName.value=dayObj.name
+   document.selectForm.textMonthIndex.value=monthObj.selectedIndex
+   document.selectForm.textDayIndex.value=dayObj.selectedIndex
+   // Is it Cinco de Mayo?
+   if (monthObj.options[4].selected && dayObj.options[4].selected)
+      document.selectForm.textCinco.value="Yes!"
+   else
+      document.selectForm.textCinco.value="No"
+}
+</SCRIPT>
+<!--------------->
+<FORM NAME="selectForm">  
+<P>
+<B>Выберите месяц и день:</B> Месяц: 
+<SELECT NAME="monthSelection" onChange="updatePropertyDisplay(this,document.selectForm.daySelection)">
+<OPTION> Январь <OPTION> Февраль 
+<OPTION> Март <OPTION> Апрель 
+<OPTION> Май <OPTION> Июнь 
+<OPTION> Июль <OPTION> Август 
+<OPTION> Сентябрь <OPTION> Октябрь 
+<OPTION> Ноябрь <OPTION> Декабрь 
+</SELECT>
+ День: 
+<SELECT NAME="daySelection" onChange="updatePropertyDisplay(document.selectForm.monthSelection,this)">
+<OPTION>  1 <OPTION>  2 <OPTION>  3 
+<OPTION>  4 <OPTION>  5 <OPTION>  6 
+<OPTION>  7 <OPTION>  8 <OPTION>  9 
+<OPTION> 10 <OPTION> 11 <OPTION> 12 
+<OPTION> 13 <OPTION> 14 <OPTION> 15 
+<OPTION> 16 <OPTION> 17 <OPTION> 18 
+<OPTION> 19 <OPTION> 20 <OPTION> 21 
+<OPTION> 22 <OPTION> 23 <OPTION> 24 
+<OPTION> 25 <OPTION> 26 <OPTION> 27 
+<OPTION> 28 <OPTION> 29 <OPTION> 30 
+<OPTION> 31 
+</SELECT>
+<P>
+<B>Установите дату:</B>  
+<INPUT TYPE="radio" NAME="dateChoice" onClick=" monthSelection.selectedIndex=0; daySelection.selectedIndex=0; updatePropertyDisplay(document.selectForm.monthSelection,document.selectForm.daySelection)">
+ New Year's Day
+<INPUT TYPE="radio" NAME="dateChoice" onClick=" monthSelection.selectedIndex=4; daySelection.selectedIndex=4; updatePropertyDisplay(document.selectForm.monthSelection,document.selectForm.daySelection)">
+ Cinco Mayo 
+<INPUT TYPE="radio" NAME="dateChoice" onClick=" monthSelection.selectedIndex=5; daySelection.selectedIndex=20; updatePropertyDisplay(document.selectForm.monthSelection,document.selectForm.daySelection)">
+ Летнее солнцестояние 
+<P>
+<B> Property values:</ B> <BR>
+Выбранная Дата: 
+<INPUT TYPE="text" NAME="textFullDate" VALUE="" SIZE=20"> <BR>monthSelection.length<INPUT TYPE="text" NAME="textMonthLength" VALUE="" SIZE=20">
+ <BR>
+DaySelection.length
+<INPUT TYPE="text" NAME="textDayLength" VALUE="" SIZE=20"> <BR>monthSelection.name<INPUT TYPE="text" NAME="textMonthName" VALUE="" SIZE=20">
+ <BR>
+DaySelection.name
+<INPUT TYPE="text" NAME="textDayName" VALUE="" SIZE=20"> <BR>monthSelection.selectedIndex<INPUT TYPE="text" NAME="textMonthIndex" VALUE="" SIZE=20">
+ <BR>
+DaySelection.selectedIndex
+<INPUT TYPE="text" NAME="textDayIndex" VALUE="" SIZE=20"> <BR>Is it Cinco de Mayo? <INPUT TYPE="text" NAME="textCinco" VALUE="" SIZE=20">
+ <SCRIPT>
+document.selectForm.monthSelection.selectedIndex=today.getMonth()
+document.selectForm.daySelection.selectedIndex=today.getDate()-1
+updatePropertyDisplay(document.selectForm.monthSelection,document.selectForm.daySelection)
+</SCRIPT>
+ </FORM>
+</BODY>
+</xmp></table>
+<form>
+<input type="button" value="Open window" onClick="Win_Selected()">
+</form>
+<P>
+Смотрите также примеры для свойства <A HREF="d_e.html#list_defaultSelected">defaultSelected</A>. 
+<H3> Смотрите также</H3> 
+<LI> Объекты <A HREF="f_g.html#list_formob">form</A> и  <A HREF="r.html#list_radio"> radio </A> 
+<!---------------------->
+<hr align=center width=250>
+ <A NAME="list_selected">
+<H2>Свойство selected </H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_selected">Измененный в Navigator 3.0</A></FONT>  
+<P>
+ Логическое значение, определяющее текущее параметра в объекте <i>select</i>. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>selectName</I>.options <I>[index]</I> .selected</pre></table> 
+<P>
+<I>selectName</I> является либо значением атрибута NAME объекта <i>select</i> либо элемента в массиве <I>elemets</I>. <BR>
+<I>index</I> - целое число, представляющее список  в объекте <i>select</i>. 
+<H3> Свойство</H3> 
+<P>
+Массив <A HREF="s.html#list_selectob"> select </A> 
+<H3> Описание</H3> 
+<P>
+Если список в объекте <i>select</i> выбран, значение свойства истинна, иначе ложно. 
+<br>
+Вы можете устанавливать свойство <b>selected</b> в любое время. Показ объекта <i>select</i>  модернизирует немедленно, когда Вы установили свойство <b>selected</b>. 
+<P>
+Вообще, свойство <b>selected</b> более полезна чем свойство <i>selectedIndex</i> для выбора, объекта, который создан с помощью атрибута MULTIPLE. <H3> Примеры</H3> 
+<P>
+Смотрите примеры для свойства <A HREF="d_e.html#list_defaultSelected">defaultSelected</A>. 
+<H3> Смотрите также</H3> 
+<LI>Свойства  <A HREF="d_e.html#list_defaultSelected">defaultSelected</A>, <A HREF="h_l.html#list_index"> index </A>, <A HREF="s.html#list_selectedIndex">selectedIndex</A> 
+<!------------------------>
+<hr align=center width=250>
+ <A NAME="list_selectedIndex">
+<H2> Свойство selectedIndex</H2> 
+<P>
+ Целое число, определяющее индекс выбранного элемента в объекте select. 
+<H3> Синтаксис</H3> 
+<pre>  
+1. <I>selectName</I>.selectedIndex 
+2. <I>selectName</I>.options.selectedIndex </pre>
+<P>
+<I>selectName</I> является либо значением атрибута NAME объекта select либо элемента в массиве <I>elemets</I>. 
+<H3> Свойство</H3> 
+<LI> <A HREF="s.html#list_selectob">select</A> 
+<LI> Массив <A HREF="s.html#list_selectob">select</A> 
+<H3> Описание</H3> 
+<P>
+Элементы в объекте select индексированы по построкаку, в котором они определены, начинающиеся с индекса 0. Вы можете исправлять свойство <b>selectedIndex</b> в любое время. 
+<P>
+Свойство <b>selectedlndex</b> удобно использовать с элементами select, созданными без использования атрибута MULTIPLE в теге &lt;SELECT>. Если <b>selectedlndex</b> определяется при установленном атрибуте MULTIPLE, свойство возвращает индекс только первого выделенного элемента. Установка этого свойства сбрасывает выделение любых других элементов.
+<H3> Примеры</H3> 
+<P>
+В следующем примере, функция <I>getSelectedIndex ()</I> возвращает выбранный индекс в объекте select <I>musicType</I>: 
+<table><tr><td bgcolor=aqua><pre>  
+function getSelectedIndex() {
+   return document.musicForm.musicType.selectedIndex
+}
+ </pre></table> 
+Предыдущий пример будет выполнен, если объект select определен следующим образом: 
+<table><tr><td bgcolor=aqua><xmp>   
+<SELECT NAME="musicType">
+   <OPTION SELECTED> R&B
+   <OPTION> Jazz
+   <OPTION> Blues
+   <OPTION> New Age
+</SELECT>
+ </xmp></table> 
+<H3> Смотрите также</H3> 
+<LI>Свойства <A HREF="d_e.html#list_defaultSelected">DefaultSelected</A>, <A HREF="h_l.html#list_index">index</A>, <A HREF="s.html#list_selected">selected</A> 
+<!------------------------->
+<hr align=center width=250>
+ <A NAME="list_self">
+<H2> Свойство self</H2> 
+<P>
+ Свойство <b>self</b> - ссылается на текущее окно или фрейму. 
+<H3> Синтаксис</H3> 
+<pre>  
+1. self.<I>propertyName </I>
+2. self.<I>methodName</I> </pre>
+<P>
+<I>propertyName</I> - свойства defaultStatus, status, length, или name, когда <b>self</b> обращается к объекту окна. <BR>
+<I>propertyName</I> - свойстваlength, или name, когда <b>self</b> обращается к объекту фрейма. <BR>
+<I>mthodName</I> - любой метод, связанный с объектом окна. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="f_g.html#list_frameob">frame</A>, <A HREF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>self</b> обращается к текущему окну или фрейму. 
+<P>
+Свойство <b>self</b> полезно для устранения неоднозначности свойств form и window с одним и тем же именем.
+<P>
+Сам свойство только для чтения. Значение свойство <b>self</b>
+<table><tr><td bgcolor=aqua><pre>&lt;object <I>NameAttribute</I>&gt;</pre></table> 
+Где <I>nameAttribute</I> - атрибут NAME, если <b>self</b> обращается к фрейму, или внутренняя ссылка, если <b>self</b> обращается к окну. 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, использование <TT>self.status</TT>, изменяет свойство status текущего окна. Это исполнение свойства disambiguates состояния текущего окна из формы или элемента формы назвало"состояние" внутри текущего окна. 
+<table><tr><td bgcolor=aqua><xmp>
+ <A HREF="" onClick="this.href=pickRandomURL()" 
+    onMouseOver="self.status='Pick a random URL' ; 
+     return true">Go!</A>
+</xmp></table>
+<H3> Смотрите также</H3> 
+<LI> Свойство <A HREF="t_z.html#list_windowpr">window</A> 
+<!---------------------->
+<hr align=center width=250>
+ <A NAME="list_setDate">
+<H2>Метод setDate</H2> 
+<P>
+ Устанавливает день месяца для указанной даты. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>DateObjectName</I>.setDate <I>(dayValue)</I></pre></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. <BR>
+<I>dayValue</I> - целое число от 1 до 31 или свойство существующего объекта, представляущие день месяца. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Примеры</H3> 
+<P>
+ Второе утверждение изменяет день для <I>theBigDay</I> к 24-ому июля из его первоначального значения. 
+<table><tr><td bgcolor=aqua><pre>  
+TheBigDay = new Date (" July 27, 1962 23:30:00") 
+theBigDay.setDate (24) </pre></table> 
+<form>
+<input type="button" value="Продемонстрировать пример" onClick="Win_setDate()">
+</form>
+Следующий пример возвращает 26:
+<table><tr><td bgcolor=aqua><pre>
+endOfTheWorld=new Date (" January 11, 1977 09:00:00") 
+endOfTheWorld.setDate (26)
+document.write(endOfTheWorld.setDate ())
+</pre></table> 
+<form>
+<input type="button" value="Show Example" onClick="Win_setDate1()">
+</form>
+<H3> Смотрите также</H3>  <LI> Метод <A HREF="f_g.html#list_getDate">getDate</A> 
+<!------------------>
+<hr align=center width=250>
+ <A NAME="list_setHours">
+<H2> Метод setHours</H2> 
+<P>
+Устанавливает час для текущего времени. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>DateObjectName</I>.setHours <I>(hoursValue)</I></pre></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. <BR>
+<I>hoursValue</I> - целое число между 0 и 23 или свойство существующего объекта, представляющие час. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><pre>  
+  TheBigDay.setHours (7)
+</pre></table> 
+<form>
+<input type="button" value="ПРИМЕР" onClick="Win_setHours()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Метод  <A HREF="f_g.html#list_getHours">getHours</A>
+<!------------------>
+<hr align=center width=250>
+ <A NAME="list_setMinutes">
+<H2> Метод setMinutes</H2> 
+<P>
+ Устанавливает минуты для текущего времени. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>DateObjectName</I>.setMinutes <I>(minutesValue)</I></pre></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. <BR>
+<I>minutesValue</I> - целое число между 0 и 59 или свойство существующего объекта, представляющие минуты. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><pre>  
+TheBigDay.setMinutes (45)
+ </pre></table> 
+<form>
+<input type="button" value="Открыть пример" onClick="Win_setMinutes()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Метод  <A HREF="f_g.html#list_getMinutes">getMinutes</A>
+<!------------------>
+<hr align=center width=250>
+ <A NAME="list_setMonth">
+<H2> Метод setMonth</H2> 
+<P>
+ Устанавливает месяц для обекта Date. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>DateObjectName</I>.setMonth <I>(monthValue)</I></pre></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. <BR>
+<I>MonthValue</I> - целое число от 0 (январь) до 11 (декабрь), или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3>Описание</H3> 
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><pre>  
+theBigDay.setMonth (6)
+ </pre></table>
+<form> 
+<input type="button" value="EXAMPLE" onClick="Win_setMonth()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Метод  <A HREF="f_g.html#list_getMonth">getMonth</A>
+<!------------------>
+ <hr align=center width=250>
+ <A NAME="list_setSeconds">
+<H2> Метод setSeconds метод</H2> 
+<P>
+ Устанавливает секунды для данного времени. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>DateObjectName</I>.setSeconds <I>(secondsValue)</I></pre></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. <BR>
+<I>secondsValue</I> - целое число от 0 до 59 или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><pre>  
+theBigDay.setSeconds (30)
+ </pre></table> 
+<form>
+<input type="button" value="Open it" onClick="Win_setSeconds()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="f_g.html#list_getSeconds">getSeconds</A>
+<!---------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_setTime">
+<H2> Метод setTime</H2> 
+<P>
+ Устанавливает значение объекта Date. 
+<H3> Синтаксис</H3> 
+<P>
+
+<table><tr><td bgcolor=aqua><pre> <I>DateObjectName</I>.setTime <I>(timevalue)</I> </pre></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. <BR>
+<I>timevalue</I> - целое число или свойство существующего объекта, представляющие число миллисекунд прошедших с 1 января 1970 00:00:00. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Описание</H3> 
+<P>
+Это основная форма объекта Date. Метод возвращает  КОЛИЧЕСТВО миллисекунд, прошедших с полуночи 1 января 1970 года. Хотя нет необходимости знать конкретное значение этого числа, оно может быть использовано как простейший метод копирования значения одного объекта типа Date в другой объекта. 
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><pre>  
+theBigDay = new Date("July 1, 1999")
+sameAsBigDay = new Date()
+sameAsBigDay.setTime(theBigDay.getTime())
+  </pre></table> 
+<form>
+<input type="button" value="Click now" onClick="Win_setTime()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="f_g.html#list_getTime">getTime</A>
+<!------------------>
+<hr align=center width=250>
+ <A NAME="list_setTimeout">
+<H2> Метод setTimeout</H2> 
+<P>Вычисляет выражение по истечении указанного в миллисекун-дах промежутка времени.
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>timeoutID</I>=setTimeout (<I>expression</I>, <I>msec</I>)</pre></table> 
+<P>
+<I>timeoutID</I> - идентификатор, который используется только, чтобы отменить вычисление с методом clearTimeout. <BR>
+<I>expression</I> - выражение или свойство существующего объекта. <BR>
+<I>Msec</I> - числовое значение, числовая строка, или свойство существующего объекта в  миллисекунды. 
+<H3> Метод</H3> 
+<P>
+<A HREF="f_g.html#list_frameob">frame</A>, <A HREF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Исполнение выражения происходит только один раз. Напри-мер, установка промежутка в 3 секунды приведет к однократ-ному исполнению выражения по истечении этих 3 секунд, а не к повторению каждые 3 секунды.
+Для рекурсивного вызова метода <b>setTimeout</b> достаточно вставить в вызываемую функцию новый вызов метода <b>setTimeout</b>. <H3> Примеры</H3> 
+<P>
+<B>Пример 1.</B> Следующий пример показывает сообщение alert через 5 секунды (5,000 миллисекунд) после того, как пользователь нажимает кнопку. Если пользователь нажимает вторую кнопку прежде, чем появилось сообщение, то блокировка по времени отменяется, и сообщение не показывается. 
+<table><tr><td bgcolor=aqua><xmp>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+function displayAlert() {
+   alert("5 seconds have elapsed since the button was clicked.")
+}
+</SCRIPT>
+<BODY>
+<FORM>
+Click the button on the left for a reminder in 5 seconds;
+click the button on the right to cancel the reminder before
+it is displayed.
+<P>
+<INPUT TYPE="button" VALUE="5-second reminder"
+   NAME="remind_button"
+   onClick="timerID=setTimeout('displayAlert()',5000)">
+<INPUT TYPE="button" VALUE="Clear the 5-second reminder"
+   NAME="remind_disable_button"
+   onClick="clearTimeout(timerID)">
+</FORM>
+</BODY></xmp></table>
+<form>
+<input type="button" value="Show now" onClick="Win_setTimeout()">
+</form><P>
+<B>Пример 2.</B> Вызов функции <I>startclock</i> в нижеприведенном примере запускает бесконечный цикл, который устанавливает промежуток времени в 1 секунду для вывода очередного значения времени.
+<table><tr><td bgcolor=aqua><xmp>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var timerID = null
+var timerRunning = false
+function stopclock(){
+    if(timerRunning)
+        clearTimeout(timerID)
+    timerRunning = false
+}
+function startclock(){
+     // Make sure the clock is stopped
+    stopclock()
+    showtime()
+}
+function showtime(){
+    var now = new Date()
+    var hours = now.getHours()
+    var minutes = now.getMinutes()
+    var seconds = now.getSeconds()
+    var timeValue ="" + ((hours > 12) ? hours - 12 : hours)
+    timeValue  += ((minutes < 10) ?":0" :":") + minutes
+    timeValue  += ((seconds < 10) ?":0" :":") + seconds
+    timeValue  += (hours >= 12) ?" P.M." :" a.M."
+    document.clock.face.value = timeValue
+    timerID = setTimeout("showtime()",1000)
+    timerRunning = true
+}
+//-->
+</SCRIPT>
+ </HEAD> 
+<BODY onLoad="startclock()">
+<FORM NAME="clock" onSubmit="0">  
+<INPUT TYPE="text" NAME="face" SIZE=12 VALUE ="">
+</FORM>
+</BODY>
+</xmp></table>
+<form>
+<input type="button" value="Open Clock" onClick="Win_setTimeout2()">
+</form>
+<B>Пример 3.</B> Вызов функции <I>startclock</i> в нижеприведенном примере запускает бесконечный цикл, в котором таймер сбрасывается, затем на экран выводится текущее время и, наконец, заново устанавливается промежуток времени в 1 секунду для вывода очередного значения времени.
+<table><tr><td bgcolor=aqua><xmp>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<SCRIPT> 
+var timerID = null;
+var timerRunning = false;
+function stopclock () {
+if(timerRunning) clearTimeout(timerID) ;
+timerRunning=false;
+} 
+function startclock () {
+stopclock () ;
+showtime() ;
+}
+function showtime () {
+   var now = new Date();
+document.clock.display.value = now.toLocaleString() ;
+timerID = setTimeout("startclock ()",1000);
+timerRunning=true;
+}
+</SCRiPT>
+<BODY onLoad="startclock ()">
+<FORM NAME="clock">
+<INPUT type="text" NAME="display" VALUE="Standby for the time">
+</FORM>                                         
+<form>
+<p>
+<center> 
+<INPUT TYPE="button" VALUE="Закрыть" onClick="window.close()">
+</FORM>
+</center>
+</BODY>
+</xmp></table>
+<form>
+<input type="button" value="Demonstration" onClick="Win_setTimeout1()">
+</form>
+<H3> Смотрите также</H3> 
+<LI>  Метод <A HREF="c.html#list_clearTimeout">clearTimeout</A>
+<!------------------>
+<hr align=center width=250>
+ <A NAME="list_setYear">
+<H2>Метод setYear</H2> 
+<P>
+ Устанавливает год для указанной даты. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>DateObjectName</I>.setYear <I>(yearValue)</I></pre></table> 
+<P>
+<I>DateObjectName</I> является либо именем объекта Date либо свойством существующего объекта. <BR>
+<I>yearValue</I> - целое число большее чем 1900 или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="d_e.html#list_Date">Date</A> 
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><pre>
+theBigDay = new Date("July 1, 1999")  
+theBigDay.setYear (96)
+ </pre></table> 
+<form>
+<input type="button" value="Look it me" onClick="Win_setYear()">
+</form>
+<H3> Смотрите также</H3> 
+<LI>Метод <A HREF="f_g.html#list_getYear">getYear</A>
+<!------------------>
+<hr align=center width=250>
+ <A NAME="list_sin">
+<H2> Метод sin</H2> 
+<P>
+ Возвращает синус аргумента. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math.sin <I>(argument)</I></pre></table> 
+<P>
+<I> argument </I> - числовое выражение или свойство существующего объекта, представляющие размер угла в радианах. 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_Math">Math</A> 
+<H3> Описание</H3> 
+<P>
+Метод sin возвращает числовое значение от -1 до 1, которое представляет синус угла. 
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><pre>  
+// Возвращает значение 1 
+document.write ("синус pi/2 радиан " + Math.sin (Math. PI/2))
+// Возвращает значение 1.224606353822377e-016 
+document.write ("синус pi радиан " + Math.sin (Math. PI))
+// Возвращает значение 0 
+document.write ("синус 0 радиан " + Math.sin (0)) </pre></table>
+<form>
+<input type="button" value="Открыть пример" onClick="Win_sin()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Методы <A HREF="a.html#list_acos">acos</A>, <A HREF="a.html#list_asin">asin</A>, <A HREF="a.html#list_atan">atan</A>, <A HREF="c.html#list_cos">cos</A>, <A HREF="t_z.html#list_tan">tan</A>
+<!------------------>
+<hr align=center width=250>
+ <A NAME="list_small">
+<H2> Метод small</H2> 
+<P>
+Метод <b>small</b> уменьшает шрифт, которым отображается объект string, аналогично используя тег HTML &lt;SMALL>.
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>stringName</I>.small ()</pre></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>small</b> с методами write или writeln для форматирования и вывода строки в документе. 
+<H3> Примеры</H3> 
+Следующий пример использует методы string, чтобы изменить размер строки: 
+<table><tr><td bgcolor=aqua><pre>  
+var worldString =" Привет, мир"
+document.write (worldString.small ()) 
+document.write (worldString.big ()) 
+document.write (worldString.fontsize (7)) </pre></table> 
+<P>
+<form>
+<input type="button" value="Click now" onClick="Win_small()">
+</form>
+Предыдущий пример производит тот же самый вывод как следование HTML: 
+<table><tr><td bgcolor=aqua><xmp>  
+<SMALL>Hello, world</SMALL>
+<P><BIG>Hello, world</BIG>
+<P><FONTSIZE=7>Hello, world</FONTSIZE>
+ </xmp></table> 
+<H3> Смотрите также</H3> 
+<LI> Методы  <A HREF="b.html#list_big">big</A>, <A HREF="f_g.html#list_fontsize">fontsize</A>
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_sqrt">
+<H2> Метод sqrt</H2> 
+<P>
+ Возвращает квадратный корень аргумента. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math.sqrt <I>(argument)</I></pre></table> 
+<I> argument </I> - любое неотрицательное числовое выражение или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_Math">Math</A> 
+<H3> Описание</H3> 
+<P>
+Если значение<I> argument </I> - находится вне предложенного диапазона, то возвращаемое значение - всегда 0. 
+<H3> Примеры</H3> 
+<table><tr><td bgcolor=aqua><pre>  
+// Возвращает значение3 
+document.write (" квадратный корень из 9 -" + Math.sqrt (9))
+// Возвращает значение1.414213562373095 
+document.write ("квадратный корень из 2 -" + Math.sqrt (2))
+// Возвращает значение0, потому что аргумент находится из вне диапазона 
+document.write ("квадратный корень из -1" + Math.sqrt (-1))
+ </pre></table> 
+<form>
+<input type="button" value="ПРИМЕР" onClick="Win_sqrt()">
+</form>
+<!------------------>
+<hr align=center width=250>
+ <A NAME="list_SQRT1_2">
+<H2> Свойство SQRT1_2</H2> 
+<P>
+ Квадратный корень из 0.5, приблизительно равно 0.707. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math. SQRT1_2</pre></table> 
+<H3> Свойство</H3> 
+<P>
+<A HREF="m_q.html#list_Math">Math</A> 
+<H3> Описание</H3> 
+<P>
+Так как SQRT1_2 константа, то это - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает 1/2 из квадратного корня: 
+<table><tr><td bgcolor=aqua><pre> document.write ("1/2 из квадратного корня" + Math. SQRT1_2)</pre></table> 
+<form>
+<input type="button" value="GO!" onClick="Win_SQRT1_2()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="d_e.html#list_E">E</A>, <A HREF="h_l.html#list_LN2">LN2</A>, <A HREF="h_l.html#list_LN10">LN10</A>, <A HREF="h_l.html#list_LOG2E">LOG2E</A>, <A HREF="h_l.html#list_LOG10E">LOG10E</A>, <A HREF="m_q.html#list_PI">PI</A>, <A HREF="s.html#list_SQRT2">SQRT2</A> 
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_SQRT2">
+<H2> Свойство SQRT2</H2> 
+<P>
+ Квадратный корень из числа два, приблизительно равно 1.414. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math. SQRT2</pre></table> 
+<H3> Свойство</H3> 
+<P>
+<A HREF="m_q.html#list_Math">Math</A> 
+<H3> Описание</H3> 
+<P>
+Так как SQRT2 константа, то это - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает квадратный корень из числа 2: 
+<table><tr><td bgcolor=aqua><pre> document.write (" квадратный корень из 2" + Math. SQRT2)</pre></table> 
+<form>
+<input type="button" value="Показать пример" onClick="Win_SQRT2()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="d_e.html#list_E">E</A>, <A HREF="h_l.html#list_LN2">LN2</A>, <A HREF="h_l.html#list_LN10">LN10</A>, <A HREF="h_l.html#list_LOG2E">LOG2E</A>, <A HREF="h_l.html#list_LOG10E">LOG10E</A>, <A HREF="m_q.html#list_PI">PI</A>, <A HREF="s.html#list_SQRT1_2">SQRT1_2</A> 
+<!------------------------------------------------------------------------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_status">
+<H2> Свойство status</H2> 
+<P>
+ Определяет текст основного или кратковременного сообщения в строке состояния внизу окна. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>windowReference</I>.status</pre></table> 
+<P>
+<I>windowReference</I> - только для окна, как описано в объекте <A HREF="t_z.html#list_windowob"> window </A>. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Не путайте свойство <b>status</b> со свойством defaultStatus. Свойство DefaultStatus отражает по умолчанию сообщение в строке состояния. 
+<P>
+Вы можете исправлять свойство <b>status</b> в любое время. Вы-зов временного сообщения должен быть вставлен в текст об-работчика события mouseOver из тега &lt; a... >. Чтобы вывести сообщение в строке состояния в тот момент, когда указатель мыши находится над гиперссылкой, надо сделать так:
+<table><tr><td bgcolor=aqua><xmp><А anchorDefinition опМоизеОvеr="window.status=' Your message.'; return true">link</A></xmp></table>
+Обратите внимание на вложенные кавычки и обязательное возвращаемое значение true.
+Однажды вызванное, сообщение остается в строке состояния до тех пор, пока указатель мыши не окажется над другой ги-перссылкой
+<H3> Примеры</H3> 
+<P>
+ Предположим, что вы создали <font color="red"><i>JavaScript</i></font> функцию, с именем pickRandomURL () которая позволяет вам, выбрать URL произвольно. Вы можете использовать обработчик событий onClick якоря, чтобы определить значение для атрибута HREF якоря динамически, и обработчик событий onMouseOver, чтобы определить сообщение для окна в свойстве status: 
+<table><tr><td bgcolor=aqua><xmp>
+ <A HREF="" onClick="this.href=pickRandomURL()" onMouseOver="self.status='Pick a random URL'; return true">Идите!</A>
+</xmp></table>
+<form>
+<input type="button" value="PRINT" onClick="Win_status()">
+</form>
+<P>
+<H3> Смотрите также</H3> 
+<LI>  Свойство <A HREF="d_e.html#list_defaultStatus">defaultStatus</A>
+<!------------------->
+<hr align=center width=250>
+ <A NAME="list_strike">
+<H2> Метод strike</H2> 
+<P>
+Форматирует строкау как зачеркнутый текст, аналогично использованию тега &lt;STRIKE&gt;. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>stringName</I>.strike ()</pre></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>strike</b> с методами write или writeln для форматирования и вывода строки в документе. 
+<H3> Примеры</H3> 
+Следующий пример используется методы string, чтобы изменить строку: 
+<table><tr><td bgcolor=aqua><pre>  
+var worldString =" Привет, мир"
+document.write (worldString.blink ()) 
+document.write ( worldString.bold ()) 
+document.write (worldString.italics ()) 
+document.write (worldString.strike ())
+ </pre></table> 
+<form>
+<input type="button" value="Open example" onClick="Win_strike()">
+</form>
+<P>
+Или в синтакси  HTML: 
+<table><tr><td bgcolor=aqua><xmp> <BLINK>Hello, world</BLINK>
+<P><B>Hello, world</B>
+<P><I>Hello, world</I>
+<P><STRIKE>Hello, world</STRIKE>
+ </xmp></table> 
+<H3> Смотрите также</H3> 
+<LI> Методы <A HREF="b.html#list_blink">blink</A>, <A HREF="b.html#list_bold">bold</A>, <A HREF="h_l.html#list_italics">italics</A> 
+<!------------------>
+ <hr align=center width=250>
+ <A NAME="list_string">
+<H2> Объект string</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_String">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Последовательность символов, ограниченная одинарными или двойными кавычками.
+<H3> Синтаксис</H3> 
+<P>
+Использование объект <b>string</b>: 
+<pre>  
+1. <I>stringName</I>.<I>propertyName </I>
+2. <I>stringName</I>.<I>methodName</I> <I>(parametrs)</I> </pre>
+<I>stringName</I> - имя переменной строки. <BR>
+<I>propertyName</I> - один из свойств, описанных ниже. <BR>
+<I>methodName</I> - один из методов, описанных ниже. 
+<H3> Свойство</H3> 
+<LI> Отсутствуют. 
+<H3> Описание</H3> 
+<P>
+Объект <b>string</b> - встроенный объект <font color="red"><i>JavaScript</i></font>. 
+<P>
+Строка может быть представлен как литерал, расположенный в одинарных или двойных кавычках; например,"Netscape" или 'Netscape'. 
+<H3> Свойства</H3> 
+<LI> <A HREF="h_l.html#list_length">length</A> отражает длину строки 
+<H3> Методы</H3> 
+<LI> <A HREF="a.html#list_anchormet">anchor</A> 
+<LI> <A HREF="b.html#list_big">big</A> 
+<LI> <A HREF="b.html#list_blink">blink</A> 
+<LI> <A HREF="b.html#list_bold">bold</A> 
+<LI> <A HREF="c.html#list_charAt">charAt</A> 
+<LI> <A HREF="f_g.html#list_fixed">fixed</A> 
+<LI> <A HREF="f_g.html#list_fontcolor">fontcolor</A> 
+<LI> <A HREF="f_g.html#list_fontsize">fontsize</A> 
+<LI> <A HREF="h_l.html#list_indexOf">indexOf</A> 
+<LI> <A HREF="h_l.html#list_italics">italics</A> 
+<LI> <A HREF="h_l.html#list_lastIndexOf">lastIndexOf</A> 
+<LI> <A HREF="h_l.html#list_link">link</A> 
+<LI> <A HREF="s.html#list_small">small</A> 
+<LI> <A HREF="s.html#list_strike">strike</A> 
+<LI> <A HREF="s.html#list_sub">sub</A> 
+<LI> <A HREF="s.html#list_substring">substring</A> 
+<LI> <A HREF="s.html#list_sup">sup</A> 
+<LI> <A HREF="t_z.html#list_toLowerCase">toLowerCase</A> 
+<LI> <A HREF="t_z.html#list_toUpperCase">toUpperCase</A> 
+<H3> Обработчики событий</H3> 
+<LI> Отсутствуют. Встроенные объекты не имеют обработчиков событий. 
+<H3> Примеры</H3> 
+<P>
+Следующее утверждение создает переменную <b>string</b>. 
+<table><tr><td bgcolor=aqua><xmp>
+ var last_name ="Schaefer" 
+</xmp></table>
+Следующие утверждения вычисляет 8,"SCHAEFER", и"schaefer": 
+<table><tr><td bgcolor=aqua><xmp>
+last_name.length 
+last_name.toUpperCase () 
+last_name.toLowerCase () 
+</xmp></table>
+<form>
+<input type="button" value="Example" onClick="Win_String()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Объекты <A HREF="t_z.html#list_textob">text</A> и <A HREF="t_z.html#list_textarea">textarea</A> 
+<!------------------------------------------------------------------------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_sub">
+<H2> Метод Sub</H2> 
+<P>
+Форматирует строковый объект как нижний индекс, аналогично использованию тега &lt;SUB&gt;. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>stringName</I>.sub ()</pre></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>sub</b> с методами write  или writeln, чтобы форматировать и выводить строку в документе. 
+<H3> Примеры</H3> 
+Следующий пример использует методы <b>sub</b> и sup для форматирования строки: 
+<table><tr><td bgcolor=aqua><pre>  
+var superText="superscript"
+var subText="subscript"
+document.write("This is what a" + superText.sup() +" looks like.")
+document.write("This is what a" + subText.sub() +" looks like.")
+ </pre></table> 
+<form>
+<input type="button" value="DEMO" onClick="Win_sub()">
+</form>
+<P>
+Предыдущий пример производит будет выглядеть аналогично в синтаксе HTML: 
+<table><tr><td bgcolor=aqua><xmp>  
+This is what a <SUP>superscript</SUP> looks like.
+<P>This is what a <SUB>subscript</SUB> looks like.
+ </xmp></table> 
+<H3> Смотрите также</H3> 
+<P>
+Метод <A HREF="s.html#list_sup">sup</A> 
+<!------------------------------------------------------------------------------------------------>
+ <hr align=center width=250>
+ <A NAME="list_submitmet">
+<H2>Метод submit</H2> 
+<P>
+Производит действие, аналогичное щелчку по кнопке Submit. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>formName</I>.submit ()</pre></table> 
+<P>
+<I>formName</I> - имя любой формы или элемента в массиве <i>form</i>. 
+<H3> Метод</H3> 
+<P>
+<A HREF="f_g.html#list_formob">form</A> 
+<H3> Описание</H3> 
+<P>
+Метод отсылки информации из формы зависит от значения аттрибута METHOD - get или post,как определено в свойстве <A HREF="m_q.html#list_method"> method </A>. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример подчиняется форму, названную <I>musicChoice</I>: 
+<table><tr><td bgcolor=aqua><pre>  
+document.musicChoice.submit ()
+ </pre></table> 
+<P>
+Если <I>musicChoice</I> - первая созданная форма, то вы также можете подчинить ее следующим образом: 
+<table><tr><td bgcolor=aqua><pre>  
+document.forms [0] .submit ()
+ </pre></table> 
+<P>
+Смотрите также пример для объекта <A HREF="f_g.html#list_formob">form</A>. 
+<H3> Смотрите также</H3> 
+<LI>  Объект <A HREF="s.html#list_submitob">submit</A>
+<LI> Обработчик событий  <A HREF="m_q.html#list_onSubmit">onSubmit</A>
+<!------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_submitob">
+<H2>Объект submit</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_submit">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Кнопка отправки данных на странице HTML.
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить кнопку <b> submit </b>, используйте стандарт HTML синтаксис с использованием обработчика событий onClick: 
+<table><tr><td bgcolor=aqua><pre>   
+&LT;INPUT 
+TYPE =" подчиняется" 
+NAME = <I>"submitName" </I>
+VALUE= <I>"buttonText"</I> 
+[onClick = <I>"handlerText"</I>] &GT;
+ </pre></table> 
+<I>NAME ="submitName"</I> определяет имя объекта <b> submit </b>. Вы можете обращаться к этому значению, используя свойство name. <BR>
+<I> VALUE ="buttonText"</I> определяет значение, которое появляется на экране кнопки. Вы можете обращаться к этому значению, используя свойство value. 
+<P>
+Использование свойства объекта и методы <b>submit</b>: 
+<pre>  
+1. <I>submitName</I>.<I>propertyName </I>
+2. <I>submitName</I>.<I>methodName</I> <I>(parameters)</I> 
+3. <I>formName</I>.elements <I>[index]</I> .<I>propertyName </I>
+4. <I><I>formName.elements[index].methodName(parameters)</I></I>  </pre> 
+<I>submitName</I> - значение атрибута NAME объекта <b> submit </b>. <BR>
+<I>formName</I> является либо значением атрибута NAME объекта form либо элемента в массиве <I>form</I>. <BR>
+<I>Индекс</I> - целое число, представляющее объект <b> submit </b> в форме. <BR>
+<I>PropertyName</I> - один из свойства, описанных ниже. <BR>
+<I>MethodName</I> - один из методов, описанных ниже. 
+<H3> Свойство</H3> 
+<LI> <A HREF="f_g.html#list_formob">form</A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>submit</b> в форме выглядит следующим образом: 
+<FORM>  
+<P>
+<INPUT TYPE="submit" VALUE="Done">
+</FORM>
+<P>
+Объект  <b>submit</b> - элемент формы и должен быть определен внутри тега &LT;FORM&GT;. 
+<P>
+Щелчок на кнопке заставляет форму отправить данные про-грамме, указанной в свойстве action. Кнопка создается внутри тега HTML &lt;FORM> и всегда загружает новую страницу, которая может оказаться той же, что и текущая, если свойство action не указано.
+<P>
+Обработчик событий оnClick кнопки <b>submit</b> не может предотвращать форму от утверждения; взамен, используйте обработчик событий onSubmit формы, или используйте метод submit вместо объекта <b>submit</b>. Смотрите примеры для объекта <A HREF="f_g.html#list_formob">form</A>. 
+<H3>Свойства</H3> 
+<LI> <A HREF="m_q.html#list_name">name</A> отражает атрибут NAME 
+<LI> <A HREF="t_z.html#list_value">value</A> отражает атрибут VALUE 
+<H3> Методы</H3> 
+<LI> <A HREF="c.html#list_click">click</A> 
+<H3> Обработчики событий</H3> 
+<LI> <A HREF="m_q.html#list_onClick">OnClick</A> 
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает объект <b>submit</b> с именем <I>submit_button</I>."Done" текст показаный на экране кнопки. 
+<table><tr><td bgcolor=aqua><xmp>
+ <INPUT TYPE="submit" NAME="submit_button" VALUE="Done">
+ </xmp></table>
+<P>
+Смотрите также примеры для объекта <A HREF="f_g.html#list_formob">form</A>. 
+<H3> Смотрите также</H3> 
+<LI>Объкты <A HREF="b.html#list_button">button</A>, <A HREF="f_g.html#list_formob">form</A>,  <A HREF="r.html#list_reset">reset</A> 
+<LI>  Метод <A HREF="s.html#list_submitmet">submit</A>
+<LI> Обработчик событий <A HREF="m_q.html#list_onSubmit">onSubmit</A> 
+<!---------------------->
+ <hr align=center width=250>
+ <A NAME="list_substring">
+<H2> Метод substring</H2> 
+<P>
+ Возвращает часть строкового объекта в зависимости от двух индексов. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>stringName</I>.substring (<I>indexA</I>, <I>indexB</I>)</pre></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. <BR>
+<I>indexA</I> - любое целое число от 0 до <I>stringName</I>.length - 1, или свойство существующего объекта. <BR>
+<I>indexB</I> - любое целое число от 0 до <I>stringName</I>.length - 1, или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Символы в строке индексированы слева направо. Индекс первого символа - 0, индекс последнего символа - <I>stringName</I>.length - 1. 
+<P>
+Если <I>indexA</I> - меньше чем <I>indexB</I>, то метод <b> substring </b> возвращает подмножество, начинающееся с символа с индексом <I>indexA</I> и заканчивающиеся символом с индексом <I>indexB</I>. Если <I>indexA</I> больше чем <I>indexB</I>, то метод <b> substring </b> возвращает подмножество, начинающееся с символа с индексом <I>indexB</I> и заканчивающийся символом с индексом <I>indexA</I>. Если <I>indexA</I> равен <I>indexB</I>, то метод <b> substring </b>  возвращает пустую строку. 
+<H3> Примеры</H3> 
+Следующий пример использует <b> substring </b>, чтобы показать символы из строки"Netscape". 
+<table><tr><td bgcolor=aqua><pre>  
+var anyString ="Netscape"
+// Показывает"Net" 
+document.write (anyString.substring (0,3)) 
+document.write (anyString.substring (3,0)) 
+//, показывает"cap" 
+document.write (anyString.substring (4,7)) 
+document.write (anyString.substring (7,4))
+ </pre></table> 
+<form>
+<input type="button" value="Show example" onClick="Win_substring()">
+</form>
+<!------------------>
+ <hr align=center width=250>
+ <A NAME="list_sup">
+<H2> Метод sup</H2> 
+<P>
+ Форматирует строковый объект как верхний индекс, аналогично использованию тега HTML &lt;SUP&gt;. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>stringName</I>.sup ()</pre></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b> sup </b>с методами write или writeln для форматирования и вывода строки в документе. 
+<H3> Примеры</H3> 
+Следующий пример использует методы sub и <b> sup </b>, чтобы форматировать строку: 
+<table><tr><td bgcolor=aqua><xmp>  
+var superText="superscript"
+var subText="subscript"
+document.write("This is what a" + superText.sup() +" looks like.")
+document.write("<P>This is what a" + subText.sub() +" looks like.")
+ </xmp></table>
+<form> 
+<input type="button" value="ПРИМЕР" onClick="Win_sub()">
+</form>
+<P>
+<HR align=center width=300>
+<HR align=center width=150>
+<P align=right><a href="#list_search">на начало страницы</a></P>
+</body>
+</HTML>

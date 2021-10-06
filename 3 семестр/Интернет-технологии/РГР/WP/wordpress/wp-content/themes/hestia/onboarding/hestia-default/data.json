@@ -1,0 +1,144 @@
+{
+  "content_file": "https://demo.themeisle.com/hestia-default/wp-content/uploads/sites/174/ti-demo-data/export.xml",
+  "theme_mods": {
+    "hestia_contact_form_shortcode": "[wpforms id=\"4228\"]",
+    "show_on_front": "page",
+    "hestia_feature_thumbnail": "https://mlxguv3ljvjp.i.optimole.com/dd03bc1a5d147448d653208d529d7f75/auto/auto/85/https/demo.themeisle.com/hestia-default/wp-content/themes/hestia/assets/img/contact.jpg",
+    "custom_css_post_id": -1,
+    "hestia_feature_thumbnail_buffer": "https://mlxguv3ljvjp.i.optimole.com/dd03bc1a5d147448d653208d529d7f75/auto/auto/85/https/demo.themeisle.com/hestia-default/wp-content/themes/hestia/assets/img/contact.jpg",
+    "hestia_ribbon_hide": false,
+    "hestia_about_hide": true,
+    "hestia_big_title_title": "Slick Material Design",
+    "hestia_big_title_text": "Beatiful, Elegantly Coded, One-Page WordPress Theme for Business",
+    "hestia_big_title_button_text": "See More",
+    "hestia_features_title": "Why our product is the best",
+    "hestia_features_subtitle": "You will find these qualities in all of our products",
+    "hestia_features_content": "[{\"icon_value\":\"fa-wechat\",\"color\":\"#e91e63\",\"text\":\"Showcase the same content across all devices. It can be a tablet, phone or laptop. Components used in the theme are designed to look good on smaller screen size too.\",\"link\":\"#\",\"text2\":\"undefined\",\"title\":\"Responsive\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5bf55c788fe77\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-check\",\"color\":\"#01bcd4\",\"text\":\"We frequently release updates for our products in order to add new features and keep it compatible with niche plugins.\",\"link\":\"#\",\"text2\":\"undefined\",\"title\":\"Quality\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5bf55c7808d99\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-support\",\"color\":\"#4caf50\",\"text\":\"A collection of docs can be found on our website to help you achieve what you need using our product. Assistance by email can be provided if you need it.\",\"link\":\"#\",\"text2\":\"undefined\",\"title\":\"Support\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5bf55c78cb922\",\"shortcode\":\"undefined\"}]",
+    "hestia_testimonials_content": "[{\"text\":\"&quot;We have no regrets! After using your product my business skyrocketed! I made back the purchase price in just 48 hours! I couldn&#039;t have asked for more than this.&quot;\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-default\\/wp-content\\/uploads\\/sites\\/174\\/2019\\/03\\/5.jpg\",\"title\":\"Inverness McKenzie\",\"subtitle\":\"Business Owner\",\"social_repeater\":\"undefined\",\"id\":\"customizer_repeater_56d7ea7f40d56\",\"shortcode\":\"undefined\"},{\"text\":\"&quot;Your company is truly upstanding and is behind its product 100 percent. Hestia is worth much more than I paid. I like Hestia more each day because it makes easier.&quot;\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-default\\/wp-content\\/uploads\\/sites\\/174\\/2019\\/03\\/6.jpg\",\"title\":\"Hanson Deck\",\"subtitle\":\"Independent Artist\",\"social_repeater\":\"undefined\",\"id\":\"customizer_repeater_56d7ea7f40d66\",\"shortcode\":\"undefined\"},{\"text\":\"&quot;Thank you for making it painless, pleasant and most of all hassle free! I am so pleased with this product. Dude, your stuff is great! I will refer everyone I know.&quot;\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-default\\/wp-content\\/uploads\\/sites\\/174\\/2019\\/03\\/7.jpg\",\"title\":\"Natalya Undergrowth\",\"subtitle\":\"Freelancer\",\"social_repeater\":\"undefined\",\"id\":\"customizer_repeater_56d7ea7f40d76\",\"shortcode\":\"undefined\"}]",
+    "hestia_team_content": "[{\"icon_value\":\"fa-facebook\",\"text\":\"Locavore pinterest chambray affogato art party, forage coloring book typewriter. Bitters cold selfies, retro celiac sartorial mustache.\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-default\\/wp-content\\/uploads\\/sites\\/174\\/2019\\/03\\/1.jpg\",\"title\":\"Desmond Purpleson\",\"subtitle\":\"CEO\",\"social_repeater\":\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb908674e06&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9148530ft&quot;,&quot;link&quot;:&quot;plus.google.com&quot;,&quot;icon&quot;:&quot;fa-google-plus&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9148530fc&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9150e1e89&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\",\"id\":\"customizer_repeater_56d7ea7f40c56\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-facebook\",\"text\":\"Craft beer salvia celiac mlkshk. Pinterest celiac tumblr, portland salvia skateboard cliche thundercats. Tattooed chia austin hell.\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-default\\/wp-content\\/uploads\\/sites\\/174\\/2019\\/03\\/2.jpg\",\"title\":\"Parsley Pepperspray\",\"subtitle\":\"Marketing Specialist\",\"social_repeater\":\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9155a1072&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9160ab683&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9160ab484&quot;,&quot;link&quot;:&quot;pinterest.com&quot;,&quot;icon&quot;:&quot;fa-pinterest&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb916ddffc9&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\",\"id\":\"customizer_repeater_56d7ea7f40c66\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-facebook\",\"text\":\"Pok pok direct trade godard street art, poutine fam typewriter food truck narwhal kombucha wolf cardigan butcher whatever pickled you.\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-default\\/wp-content\\/uploads\\/sites\\/174\\/2019\\/03\\/3.jpg\",\"title\":\"Desmond Eagle\",\"subtitle\":\"Graphic Designer\",\"social_repeater\":\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb917e4c69e&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb91830825c&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb918d65f2e&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb918d65f2x&quot;,&quot;link&quot;:&quot;dribbble.com&quot;,&quot;icon&quot;:&quot;fa-dribbble&quot;}]\",\"id\":\"customizer_repeater_56d7ea7f40c76\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-github-square\",\"text\":\"Small batch vexillologist 90&#039;s blue bottle stumptown bespoke. Pok pok tilde fixie chartreuse, VHS gluten-free selfies wolf hot.\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-default\\/wp-content\\/uploads\\/sites\\/174\\/2019\\/03\\/4.jpg\",\"title\":\"Ruby Von Rails\",\"subtitle\":\"Lead Developer\",\"social_repeater\":\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb925cedcg5&quot;,&quot;link&quot;:&quot;github.com&quot;,&quot;icon&quot;:&quot;fa-github-square&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb925cedcb2&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb92615f030&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9266c223a&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\",\"id\":\"customizer_repeater_56d7ea7f40c86\",\"shortcode\":\"undefined\"}]",
+    "hestia_clients_bar_content": "[{\"text\":\"undefined\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"\",\"title\":\"undefined\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5bf55c787ab4d\",\"shortcode\":\"undefined\"}]",
+    "hestia_shop_title": "Products",
+    "hestia_team_title": "Meet our team",
+    "hestia_ribbon_text": "Subscribe to our Newsletter",
+    "hestia_testimonials_title": "What clients say",
+    "hestia_blog_title": "Blog",
+    "hestia_contact_title": "Get in Touch",
+    "hestia_contact_content_new": "<div class=\"hestia-info info-horizontal\">\n<div class=\"icon icon-primary\"><i class=\"fa fa-map-marker\"></i></div>\n<div class=\"description\">\n<h4 class=\"info-title\" style=\"font-size: 18px\">Find us at the office</h4>\n<p style=\"color: #ccc\">Bld Mihail Kogalniceanu, nr. 8, 7652 Bucharest, Romania</p>\n\n</div>\n</div>\n<div class=\"hestia-info info-horizontal\">\n<div class=\"icon icon-primary\"><i class=\"fa fa-mobile\"></i></div>\n<div class=\"description\">\n<h4 class=\"info-title\" style=\"font-size: 18px\">Give us a ring</h4>\n<p style=\"color: #ccc\">Michael Jordan +40 762 321 762 Mon - Fri, 8:00-22:00</p>\n\n</div>\n</div>",
+    "hestia_big_title_button_link": "#",
+    "hestia_ribbon_button_url": "#",
+    "hestia_big_title_background": "https://demo.themeisle.com/hestia-default/wp-content/uploads/sites/174/2019/07/architecture-1.jpg",
+    "hestia_contact_background": "https://demo.themeisle.com/hestia-default/wp-content/uploads/sites/174/2019/07/architecture-1.jpg",
+    "hestia_ribbon_background": "https://demo.themeisle.com/hestia-default/wp-content/uploads/sites/174/2019/07/architecture-1.jpg",
+    "hestia_ribbon_button_text": "Subscribe",
+    "hestia_blog_sidebar_layout": "full-width",
+    "hestia_shop_subtitle": "Showcase your products in this beautiful shop section.",
+    "hestia_blog_subtitle": "Display the latest posts on the front page.",
+    "hestia_team_subtitle": "Provide basic info such as avatar, biography and contact links about your employees.",
+    "hestia_testimonials_subtitle": "People that are using our products are happy to share their experience.",
+    "hestia_shop_items": 4,
+    "hestia_contact_subtitle": "You need more information about us?",
+    "__ti_import_menus_location": {
+      "primary": "main-menu",
+      "footer": "footer-menu"
+    }
+  },
+  "wp_options": {
+    "obfx_data": {
+      "core_settings": [],
+      "module_status": {
+        "social-sharing": {
+          "showed_notices": []
+        },
+        "gutenberg-blocks": {
+          "showed_notices": [],
+          "active": false
+        },
+        "uptime-monitor": {
+          "showed_notices": []
+        },
+        "google-analytics": {
+          "showed_notices": []
+        },
+        "companion-legacy": {
+          "showed_notices": [],
+          "active": true
+        },
+        "elementor-widgets": {
+          "showed_notices": []
+        },
+        "template-directory": {
+          "showed_notices": [],
+          "active": false
+        },
+        "menu-icons": {
+          "showed_notices": [],
+          "active": false
+        },
+        "mystock-import": {
+          "showed_notices": [],
+          "active": false
+        },
+        "policy-notice": {
+          "showed_notices": []
+        },
+        "safe-updates": {
+          "showed_notices": []
+        }
+      },
+      "module_settings": {
+        "safe-updates": {
+          "auto_update_checks": "0"
+        }
+      }
+    }
+  },
+  "widgets": {
+    "sidebar-1": {
+      "search-2": {
+        "title": ""
+      },
+      "recent-posts-2": {
+        "title": "",
+        "number": 5
+      },
+      "recent-comments-2": {
+        "title": "",
+        "number": 5
+      },
+      "archives-2": {
+        "title": "",
+        "count": 0,
+        "dropdown": 0
+      },
+      "categories-2": {
+        "title": "",
+        "count": 0,
+        "hierarchical": 0,
+        "dropdown": 0
+      },
+      "meta-2": {
+        "title": ""
+      }
+    }
+  },
+  "recommended_plugins": {
+    "woocommerce": "WooCommerce"
+  },
+  "mandatory_plugins": {
+    "wpforms-lite": "Contact Form by WPForms &#8211; Drag &amp; Drop Form Builder for WordPress",
+    "themeisle-companion": "Orbit Fox by ThemeIsle"
+  },
+  "default_off_recommended_plugins": [
+    "woocommerce"
+  ],
+  "front_page": {
+    "front_page": "hestia-front",
+    "blog_page": "blog"
+  },
+  "shop_pages": {
+    "woocommerce_shop_page_id": "shop",
+    "woocommerce_cart_page_id": "cart",
+    "woocommerce_checkout_page_id": "checkout",
+    "woocommerce_myaccount_page_id": "my-account"
+  }
+}

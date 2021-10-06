@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Lists</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H2><A NAME="list">Списки и перечисления</A></H2>
+<UL>
+<LI><a href="#ul">Ненумерованный список (Bulleted Lists)<a>
+<LI><a href="#ol">Нумерованный (упорядоченный) список (Ordered Lists)</a>
+<LI><a href="#dir">Список описаний (Directory Lists)</a>
+<LI><a href="#menu">Список обозначений (Itemized Lists)</a>
+<LI><a href="#def-data">Список определений (Definition Lists)</a>
+</UL>
+
+<P>
+Подобно <font face="arial" size=3>T<sub><font size=3>E</font></sub>X</font>'у
+язык HTML имеет спецификации создания различных списков и перечислений.
+Для их создания используются команды (Tags):
+<A HREF="html-gloss.html#htmlref2_0001000113005100" TARGET="contentFrame">UL (Unodered List)</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113003600" TARGET="contentFrame">OL (Odered List)</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113003100" TARGET="contentFrame">MENU</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113001800" TARGET="contentFrame">DIR</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113001a00" TARGET="contentFrame">DL (Definition List)</A>.
+Элементы списка (item's) отмечаются командой
+<A HREF="html-gloss.html#htmlref2_0001000113002c00" TARGET="contentFrame">LI (List Item)</A>
+Допускаются вложенные списки любой глубины.
+Списки могут создаваться и по вашим определениям.
+<P><a name="ul">
+
+<h3>Ненумерованный список</h3></a>
+В качестве примера, задания ненумерованного списка (<i>unodered list</i> or
+<i> bulleted list</i>) и использования команд
+<A HREF="html-gloss.html#htmlref2_0001000113005100" TARGET="contentFrame">UL</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113002c00" TARGET="contentFrame">LI</A>,
+рассмотрим следующий пример:
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;UL&gt;
+  &lt;LI&gt;Ненумерованный список (Bulleted Lists)
+  &lt;LI&gt;Нумерованный (упорядоченный) список (Ordered Lists)
+  &lt;LI&gt;Список описаний (Directory Lists)
+  &lt;LI&gt;Список обозначений (Itemized Lists)
+  &lt;LI&gt;Список определений (Definition Lists)
+&lt;/UL&gt;
+</PRE></TABLE>
+даст:
+<UL>
+<LI>Ненумерованный список (Bulleted Lists)
+<LI>Нумерованный (упорядоченный) список (Ordered Lists)
+<LI>Список описаний (Directory Lists)
+<LI>Список обозначений (Itemized Lists)
+<LI>Список определений (Definition Lists)
+</UL>
+Для ненумерованного списка Netscape Navigator дополнительно может использовать
+атрибут <font color="red">TYPE=</font>.
+<p><b> TYPE=</b><i>type of bullet</i>
+<BLOCKQUOTE>
+TYPE=disc<br>
+TYPE=circle<br>
+TYPE=square
+</BLOCKQUOTE>
+Для вложенных списков Netscape Navigator самостоятельно меняет тип bullet.
+
+<BR CLEAR=ALL>
+<P>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+<P><a name="ol">
+<h3>Нумерованный список</h3></a>
+Используя
+<A HREF="html-gloss.html#htmlref2_0001000113003600" TARGET="contentFrame">OL</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113002c00" TARGET="contentFrame">LI</A>
+получим нумерованный список:
+<table><tr><td bgcolor=aqua><PRE>&lt;OL&gt;
+  &lt;LI&gt;Шаг первый.
+  &lt;LI&gt;Шаг второй.
+  &lt;LI&gt;Шаг третий.
+&lt;/OL&gt;
+</PRE></table>
+который даст:
+<OL>
+<LI>Шаг первый.
+<LI>Шаг второй.
+<LI>Шаг третий.
+</OL>
+По умолчанию нумерация дается арабскими цифрами, начиная с единицы.
+Используя атрибуты команды
+<A HREF="html-gloss.html#htmlref2_0001000113003600" TARGET="contentFrame">OL</A>
+можно изменить стиль оформления списка.
+Атрибут
+<A HREF="html-gloss.html#htmlref2_0001000113003602" TARGET="contentFrame">TYPE=</A>
+определяет стиль нумерации (буквы или цифры):
+<p>
+<b>TYPE</b>=<i>order-type</i>
+<BLOCKQUOTE>
+<i>order-type</i>=A  - использовать большие буквы (латинские);<BR>
+<i>order-type</i>=a  - использовать маленькие буквы;<BR>
+<i>order-type</i>=I  - использовать большие римские цифры;<BR>
+<i>order-type</i>=i  - использовать маленькие римские цифры;<BR>
+<i>order-type</i>=1  - использовать арабские цифры;<BR>
+</BLOCKQUOTE>
+Атрибут <A HREF="html-gloss.html#htmlref2_0001000113003601" TARGET="contentFrame">START=</A>
+определяет начальное значение списка (десятичное число)<BR>
+<b>START</b>=<i>n</i>
+<BR CLEAR=ALL>
+
+<P>
+<h4>Пример вложенного списка</h4>
+Рассмотрим следующий вложенний список:
+<table><tr><td bgcolor=aqua><PRE>&lt;OL&gt;
+&lt;LI&gt;Шаг первый.
+ &lt;UL&gt;
+ &lt;LI&gt;Второй список раз
+   &lt;UL&gt;
+   &lt;LI&gt;Третий список раз
+   &lt;LI&gt;Третий список два
+   &lt;LI&gt;Третий список три
+   &lt;/UL&gt;
+ &lt;LI&gt;Второй список два
+   &lt;OL TYPE=i START=3&gt;
+   &lt;LI&gt;Третий список римский раз
+   &lt;LI&gt;Третий список римский два
+   &lt;LI&gt;Третий список римский три
+   &lt;/OL&gt;
+ &lt;LI&gt;Второй список три
+ &lt;/UL&gt;
+&lt;LI&gt;Шаг второй.
+&lt;LI&gt;Шаг третий.
+&lt;/OL&gt;
+</PRE></table>
+<b>что даст:</b>
+<OL>
+<LI>Шаг первый.
+<UL>
+<LI>Второй список раз
+<UL>
+<LI>Третий список раз
+<LI>Третий список два
+<LI>Третий список три
+</UL>
+<LI>Второй список два
+<OL TYPE=i START=3>
+<LI>Третий список римский раз
+<LI>Третий список римский два
+<LI>Третий список римский три
+</OL>
+<LI>Второй список три
+</UL>
+<LI>Шаг второй.
+<LI>Шаг третий.
+</OL>
+<P>
+<BR CLEAR=ALL><a name="dir">
+<P>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+<h3>Список описаний</h3></a>
+Команды
+<A HREF="html-gloss.html#htmlref2_0001000113001800" TARGET="contentFrame">DIR</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113002c00" TARGET="contentFrame">LI</A>
+задают список описаний, каждый элемент которого содержит не более 20 символов.
+<p><a name="menu">
+<h3>Список выбора</h3></a>
+Команды
+<A HREF="html-gloss.html#htmlref2_0001000113003100" TARGET="contentFrame">MENU</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113002c00" TARGET="contentFrame">LI</A>
+задают компактное перечисление разделов содержащих не более одной строчки.
+<P>
+<P><a name="def-data">
+<h3>Список определений</h3></a>
+Список определений задается командами
+<A HREF="html-gloss.html#htmlref2_0001000113001a00" TARGET="contentFrame">DL</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113001b00" TARGET="contentFrame">DT</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113001600" TARGET="contentFrame">DD</A>.<br>
+Следующий пример показывает использование списка определений:
+<table><tr><td bgcolor=aqua><PRE>&lt;DL&gt;
+&lt;DT&gt;Кошка
+&lt;DD&gt;Маленькое хищное животное.
+&lt;DT&gt;Крокодил
+&lt;DD&gt;Большая рептилия.
+&lt;/DL&gt;
+</PRE></table>
+<b>Что даст:</b>
+<DL>
+<DT>Кошка
+<DD>Маленькое хищное животное.
+<DT>Крокодил
+<DD>Большая рептилия.
+</DL>
+<a href="#list"><img src="icons/up.gif" border=0></a>

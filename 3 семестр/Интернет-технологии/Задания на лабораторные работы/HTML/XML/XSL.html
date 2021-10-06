@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N </TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<h3>XML</h3>
+<P>
+<b>XML</b> (<i>Extensible Markup Language</i> — расширяемый язык разметки) – язык представляющий из себя свод общих синтаксических правил, для разметки текста.
+<p>
+<b>XML</b> – служит только лишь для хранения структурированной информации в текстовом виде, что делает  информацию платформо, программно и аппаратно независимой.<p>
+В формате <b>XML</b> могут быть описаны основные структуры данных — такие как записи, списки и деревья, что делает его пригодным для хранения информации практически любого типа
+<p>
+<H4>Синтаксис языка</h4>
+<ul>
+<li>XML-документы состоит из множества элементов, заключенных в тэги. Названия элементов определяются пользователем.<p>
+<ol>
+<li>Имена элементов состоять из букв цифр и других символов
+<li>Имена не могут начинаться с цифры или знака препинания
+<li>Имена не должны начинаться со последовательности xml (или XML, или Xml и т. д.)
+<li>Имена не могут содержать пробелов
+</ol>
+<p>Ниже приведен представления информации с помощью <b>XML</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+  &lt;message&gt;
+    &lt;from&gt; Леша &lt;/from&gt;
+      &lt;to&gt; Fest &lt;/to&gt;
+      &lt;to&gt; Максим &lt;/to&gt;
+      &lt;to&gt; Duke &lt;/to&gt;
+    &lt;subject&gt; Важное сообщение &lt;/subject&gt;
+    &lt;body&gt;Срочно зайти в деканат&lt;/body&gt;
+  &lt;/message&gt;
+
+</span></pre></td></tr></table>
+<p><li>Каждый открывающий тэг обязательно должен иметь закрывающий тэг. В отличае от <b>HTML</b> нельзя опускать закрывающие тэги.
+<br>Если элемент не содержит информации, то он записывается следующим образом<p>
+<p><table><tr><td bgcolor=aqua>
+<pre></span>&lt;subject/&gt;</pre></td></tr></table>
+<p><li>В заголовке документа помещается объявление <b>XML</b>, в котором указывается язык разметки документа, номер его версии и дополнительная информация.
+<p><table><tr><td bgcolor=aqua>
+<pre></span>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</pre></td></tr></table>
+<p><li>В <b>XML</b> учитывается регистр символов.
+<p><li>Вложенность тэгов в XML строго контролируется, поэтому необходимо следить за порядком следования открывающих и закрывающих тэгов
+<br>XML документ, содержащий следующий текст не будет формально неправильным
+<p><table><tr><td bgcolor=aqua>
+<pre></span>&lt;b&gt;&lt;i&gt;Текст&lt;/b&gt;&lt;/i&gt;</pre></td></tr></table>
+<p>Правильный вариант</p>
+<p><table><tr><td bgcolor=aqua>
+<pre></span>&lt;b&gt;&lt;i&gt;Текст&lt;/i&gt;&lt;/b&gt;</pre></td></tr></table>
+<p><li><b>XML</b> документ должен иметь <b>единственный</b> корневой элемент.
+<p><li>Любые значения атрибутов(в том числе числовые), используемых в определении тэгов, должны быть заключены в кавычки.
+<p><table><tr><td bgcolor=aqua>
+<pre></span>&lt;university name="СибГУТИ" students_ammount="5600"/&gt;</pre></td></tr></table>
+<p><li>Вся информация, располагающаяся между начальным и конечными тэгами, рассматривается в XML как данные и поэтому учитываются все символы форматирования ( т.е. пробелы, переводы строк, табуляции не игнорируются, как в <b>HTML</b>)
+<p><li>Зарезервированные символы, как и в HTML заменяются специальными последовательностями символов.
+<p>&amp;lt; - знак "меньше": &lt;
+<br>&amp;gt; - знак "больше": &gt;
+<br>&amp;amp; - амперсанд: &amp;
+<br>&amp;apos;  - апостроф: &apos;
+<br>&amp;quot;  - кавычки:  &quot;
+<p>В <b>XML</b> неразделимый пробел записывают &amp;#160;
+</ul>
+<p>XML-документ, записанный в соответствии с правилами синтаксиса является формально правильным. Ниже приведен пример формально правильного xml документа
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="Windows-1251" ?&gt;
+&lt;Recipe name="хлеб" prep_time="5 мин" cook_time="3 час"&gt;
+  &lt;name&gt;Простой хлеб&lt;/name&gt;
+  &lt;ingredient amount="3" unit="стакан"&gt;Мука&lt;/ingredient&gt;
+  &lt;ingredient amount="0.25" unit="грамм"&gt;Дрожжи&lt;/ingredient&gt;
+  &lt;ingredient amount="1.5" unit="стакан"&gt;Тёплая вода&lt;/ingredient&gt;
+  &lt;ingredient amount="1" unit="чайная ложка"&gt;Соль&lt;/ingredient&gt;
+  &lt;Instructions&gt;
+   &lt;step&gt;Смешать все ингредиенты и тщательно замесить.&lt;/step&gt;
+   &lt;step&gt;Закрыть тканью и оставить на один час в тёплом помещении.&lt;/step&gt;
+   &lt;step&gt;Замесить ещё раз, положить на противень и поставить в духовку.&lt;/step&gt;
+  &lt;/Instructions&gt;
+&lt;/Recipe&gt;
+</span></pre></td></tr></table>
+Формально правильный документ в большинстве браузеров отображается в виде древовидной структуры.
+<p><A HREF="recipe.xml" target="_blank">Демонстрация примера</a>
+<p>&nbsp</p><h3>Стилевые таблицы XSL</h3>
+<p>Для задания стиля и формата отображения XML данных в окне браузера использование специально предназначенного для этого средства - стилевых таблиц <b>XSL</b>(<i>Extensible Stylesheet Language</i>).
+<p>Задача XSL-таблиц - преобразовать дерево XML-файла в другое дерево, которое, например, будет соответствовать формату HTML
+<p>Использование разных таблиц стилей XSL позволяет по-разному отображать одни и те же xml-данные, в зависимости от накладываемого на эти данные шаблона <b>XSL</b> преобразований.
+<p>Ниже приведено содержимое <b>XML</b>-файла.
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+
+&lt;!-- Ссылка на таблицу XSL преобразований --&gt;
+&lt;?xml-stylesheet type="text/xsl" href="mystyle.xsl"?&gt;
+
+&lt;shop&gt;
+     &lt;product_type caption="Фрукты"&gt;
+       &lt;product&gt;Апельсины&lt;/product&gt;
+       &lt;product&gt;Мандарины&lt;/product&gt;
+       &lt;product&gt;Яблоки&lt;/product&gt;
+     &lt;/product_type&gt;
+
+     &lt;product_type caption="Овощи"&gt;
+       &lt;product&gt;Морковь&lt;/product&gt;
+       &lt;product&gt;Картофель&lt;/product&gt;
+       &lt;product&gt;Огурцы&lt;/product&gt;
+     &lt;/product_type&gt;
+&lt;/shop&gt;
+</span></pre></td></tr></table>
+<p>Накладывая разные таблицы стилей можно получит разное представление данных в Интернет браузере
+<p><table width="100%" border="0">
+    <tr>
+    <td><A HREF="ex1/ex1-1.xml" target="_blank">Представление данных в виде списка.</a><p>
+        <A HREF="ex1/ex1-1.xsl" target="_blank">Таблица XSL преобразований</a></td>
+    <td><A HREF="ex1/ex1-2.xml" target="_blank">Представление данных в виде таблицы.</a><p>
+        <A HREF="ex1/ex1-2.xsl" target="_blank">Таблица XSL преобразований</a></td>
+    </tr>
+   </table>
+<p>Также XSL позволяет сортировать, фильтровать данные, адресно обращаться к отдельным элементам XML документа и форматировать их в зависимости от их назначения
+<h4>Синтаксис</h4>
+<p>XSL-файл является одной из разновидностей XML-файлов. Он не содержит пользовательских данных, но формат его тот же самый. Файл содержит корневой элемент xsl:stylesheet, а далее идет дерево правил преобразования.<br>
+Атрибуты элемента xsl:stylesheet - номер версии и ссылка на пространство имен. Эти атрибуты элемента являются обязательными
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
+&lt;!—
+     XSL преобразования
+                      --&gt;
+&lt;/xsl:stylesheet&gt;
+</span></pre></td></tr></table>
+<p>В приведенном выше примере <span style="color='red'">http://www.w3.org/1999/XSL/Transform</span> – константное выражение – ссылка на пространство имен XSL элементов
+<p> Язык стилей XSL состоит из 3-х частей
+<OL>
+ <LI>Языка преобразования XML-документов - <b>XSLT</b>
+ <LI>Языка задания путей к элементам и группам элементов XML - <b>XPath</b>
+ <LI>Языка форматирования XML-документов - <b>XSL-FO</b>
+</OL>
+<h4>Подробнее об XSL</h4>
+<UL>
+   <LI> <a href="XSLT.html">Наиболее важные элементы XSLT</a>
+   <LI> <a href="XPATH.html">Функции и выражения XPath</a>
+</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- generator="WordPress/5.2.1" created="2019-08-07 10:40" -->
+<rss version="2.0"
+	 xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	 xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	 xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:wp="http://wordpress.org/export/1.2/"
+>
+
+	<channel>
+		<title>Vet Center</title>
+		<link>https://demo.themeisle.com/hestia-vet-center</link>
+		<description>Just another Demos Sites site</description>
+		<pubDate>Wed, 07 Aug 2019 10:40:23 +0000</pubDate>
+		<language>en-US</language>
+		<wp:wxr_version>1.2</wp:wxr_version>
+		<wp:base_site_url>https://demo.themeisle.com/</wp:base_site_url>
+		<wp:base_blog_url>https://demo.themeisle.com/hestia-vet-center</wp:base_blog_url>
+
+		<wp:category>
+			<wp:term_id>5</wp:term_id>
+			<wp:category_nicename><![CDATA[pet-care]]></wp:category_nicename>
+			<wp:category_parent><![CDATA[]]></wp:category_parent>
+			<wp:cat_name><![CDATA[Pet Care]]></wp:cat_name>
+		</wp:category>
+		<wp:category>
+			<wp:term_id>6</wp:term_id>
+			<wp:category_nicename><![CDATA[pets-world]]></wp:category_nicename>
+			<wp:category_parent><![CDATA[]]></wp:category_parent>
+			<wp:cat_name><![CDATA[Pets World]]></wp:cat_name>
+		</wp:category>
+		<wp:category>
+			<wp:term_id>1</wp:term_id>
+			<wp:category_nicename><![CDATA[uncategorized]]></wp:category_nicename>
+			<wp:category_parent><![CDATA[]]></wp:category_parent>
+			<wp:cat_name><![CDATA[Uncategorized]]></wp:cat_name>
+		</wp:category>
+		<wp:term>
+			<wp:term_id><![CDATA[2]]></wp:term_id>
+			<wp:term_taxonomy><![CDATA[elementor_library_type]]></wp:term_taxonomy>
+			<wp:term_slug><![CDATA[page]]></wp:term_slug>
+			<wp:term_parent><![CDATA[]]></wp:term_parent>
+			<wp:term_name><![CDATA[page]]></wp:term_name>
+		</wp:term>
+		<wp:term><wp:term_id>3</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[primary-menu]]></wp:term_slug><wp:term_name><![CDATA[Primary Menu]]></wp:term_name>
+		</wp:term>
+		<wp:term><wp:term_id>4</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[very-top-bar]]></wp:term_slug><wp:term_name><![CDATA[Very Top Bar]]></wp:term_name>
+		</wp:term>
+
+		<generator>https://wordpress.org/?v=5.2.1</generator>
+
+		<item>
+			<title>
+				Front			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/</link>
+			<pubDate>Mon, 09 Jul 2018 13:08:12 +0000</pubDate>
+			<guid isPermaLink="false">http://vetmedicaldemo.local/?page_id=21</guid>
+			<description></description>
+			<content:encoded><![CDATA[<p>Hi, meet your friend</p>
+			<h2>Medical center for pets</h2>
+		<p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. </p>
+										<img width="750" height="499" src="https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg" alt="" />
+			<p>we are using modern equipment</p>
+			<h3>Our equipment is amazing, and for a good reason.</h3>
+		<p>Have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat eat all the power cordsso mrow cat trophy for cat trophy sit in box hiss and stare at nothing then run suddenly away.</p>
+			<p>Our employees love pets</p>
+			<h3>We treat them with love</h3>
+		<p>Run in circles eat an easter feather as if it were a bird then jump victoriously, but tender yet chase mice</p>
+			<h3>Diagnostic</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc, quod agimus; Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. </p>
+			<h3>Surgery</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc, quod agimus; Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. </p>
+			<h3>Recovery</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc, quod agimus; Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. </p>
+			<a href="#" role="button">
+						our services
+					</a>
+			<p>our clients are happy</p>
+			<h3>Customer Reviews</h3>
+		<p>Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Bap-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Illa tamen simplicia.</p>
+							"...Gumbo beet greens corn soko endive gumbo gourd. Dandelion cucumber earthnut pea peanut soko zucchini....."
+							<img width="150" height="150" src="https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg" alt="" />
+													Melisa Dawshon
+																			Content Writer
+							"...Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato...."
+							<img width="150" height="150" src="https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg" alt="" />
+													John Spencer
+																			Jurnalist
+			<p>we are open 24/7</p>
+			<h3>Call us anytime</h3>
+		<p>We can help you with emergency even during the night or weekends.</p>
+			<a href="#" role="button">
+						see schedule
+					</a>
+			<p>extra services</p>
+			<h3>Need a vacation? <br>Bring your friend here</h3>
+		<p>Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed.</p>
+			<h4>Pet Hotel</h4>
+		<p>Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox.</p>
+			<h4>Wellness counceling</h4>
+		<p>The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game.</p>
+			<a href="#" role="button">
+						a nice action
+					</a>
+			<p>A section to highlight more features</p>
+			<h3>Why our clinic</h3>
+					<ul>
+							<li>
+										Premium equipment
+									</li>
+								<li>
+										Skilled doctors
+									</li>
+								<li>
+										Recovery
+									</li>
+								<li>
+										Pet Hotel
+									</li>
+						</ul>
+			<p>Hey you</p>
+			<h3>About us</h3>
+				65
+				%
+							positive reviews
+			<p>our services</p>
+			<h3>Get notified when we have new type of services and equipment.</h3>
+		<p>Find us on social networks.</p>
+							<a href="" target="_blank" rel="noopener noreferrer">
+					Facebook
+									</a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+					Twitter
+									</a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+					Google-plus
+									</a>
+			<p>our newsletter</p>
+			<h3>Sign up for updates</h3>
+			<fieldset><label for="data[457ce88][name]"></label></fieldset><fieldset><label for="data[457ce88][email]"></label></fieldset><fieldset><label for="data[457ce88][phone]"></label></fieldset><fieldset><label for="data[457ce88][message]"></label><textarea name="data[457ce88][message]" id="data[457ce88][message]" cols="30" rows="5"></textarea></fieldset><fieldset><button type="submit" name="submit" value="submit-contact-457ce88">Send message</button></fieldset>]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>21</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-09 13:08:12]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-09 13:08:12]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[vet-medical-demo-front]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[page]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page-templates/template-pagebuilder-full-width.php]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+				<wp:meta_value><![CDATA[builder]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[post]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
+				<wp:meta_value><![CDATA[[{"id":"28780ad","elType":"section","settings":{"structure":"20","background_background":"classic","background_color":"#7c5e92","padding":{"unit":"px","top":"160","right":"80","bottom":"160","left":"80","isLinked":""},"background_overlay_background":"gradient","background_overlay_image":{"id":"7","url":"http://s20206.pcdn.co/wp-content/uploads/2018/07/placeholder.png"},"background_overlay_position":"center right","background_overlay_repeat":"no-repeat","background_overlay_opacity":{"unit":"px","size":"0.2"},"heading_color":"#ffffff","color_text":"#ffffff","padding_tablet":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_mobile":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"reverse_order_mobile":"reverse-mobile","height":"min-height","custom_height":{"unit":"px","size":"166"},"content_position":"middle","background_position":"center right","background_repeat":"no-repeat","background_size":"auto","background_overlay_color":"#00a4fc","background_overlay_color_b":"#4d0091","background_overlay_gradient_angle":{"unit":"deg","size":"310"},"background_attachment":"fixed","background_overlay_color_b_stop":{"unit":"%","size":"52"},"shape_divider_bottom":"waves","shape_divider_bottom_width":{"unit":"%","size":"161"},"shape_divider_bottom_width_tablet":{"unit":"%","size":"139"},"shape_divider_bottom_width_mobile":{"unit":"%","size":"130"},"shape_divider_bottom_height":{"unit":"px","size":"123"},"shape_divider_bottom_height_tablet":{"unit":"px","size":"96"},"shape_divider_bottom_height_mobile":{"unit":"px","size":"50"}},"elements":[{"id":"3c48a709","elType":"column","settings":{"_column_size":"50","_inline_size":"45","padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"css_classes":"awp-pulse-hero","margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"background_background":"classic","background_size":"contain","background_overlay_background":"classic","background_overlay_size":"contain","_inline_size_tablet":"100","padding_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"}},"elements":[{"id":"31d8b6c","elType":"widget","settings":{"title":"Hi, meet your friend","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center","align_tablet":"center","_margin_mobile":{"unit":"px","top":"22","right":"0","bottom":"0","left":"0","isLinked":""}},"elements":[],"widgetType":"heading"},{"id":"77258c6c","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"268f5d88","elType":"widget","settings":{"title":"Medical center for pets","typography_typography":"custom","typography_font_size":{"unit":"px","size":"65"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"64"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"55"},"typography_font_size_mobile":{"unit":"px","size":"40"},"typography_line_height_mobile":{"unit":"px","size":"50"},"_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"align_tablet":"center"},"elements":[],"widgetType":"heading"},{"id":"5558709","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"6e420c9a","elType":"widget","settings":{"editor":"<p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.\u00a0<\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"18"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"28"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"10","bottom":"0","left":"0","isLinked":""},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"},"align_tablet":"center","text_color":"#ffffff"},"elements":[],"widgetType":"text-editor"}],"isInner":""},{"id":"2ad1213d","elType":"column","settings":{"_column_size":"50","_inline_size":"55","background_background":"classic","background_overlay_background":"classic","background_overlay_opacity":{"unit":"px","size":"0.15"},"margin_tablet":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"content_position":"center","_inline_size_tablet":"100","padding_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"background_image":{"url":"https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg","id":196},"background_size":"cover"},"elements":[{"id":"71b636d","elType":"widget","settings":{"space_tablet":{"unit":"px","size":"386"},"space_mobile":{"unit":"px","size":"136"},"_background_background":"classic"},"elements":[],"widgetType":"spacer"}],"isInner":""}],"isInner":""},{"id":"87cd847","elType":"section","settings":{"structure":"20","background_background":"classic","background_color":"#ffffff","padding":{"unit":"px","top":"80","right":"80","bottom":"80","left":"80","isLinked":""},"background_overlay_background":"classic","background_overlay_position":"center right","background_overlay_repeat":"no-repeat","background_overlay_opacity":{"unit":"px","size":"0.08"},"heading_color":"#263844","color_text":"#263844","background_overlay_size":"contain","padding_tablet":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_mobile":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"gap":"wider","height":"min-height","custom_height":{"unit":"px","size":""},"content_position":"top","shape_divider_top_height_tablet":{"unit":"px","size":"50"},"shape_divider_top_height_mobile":{"unit":"px","size":"0"},"shape_divider_top_flip":"yes","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""}},"elements":[{"id":"3ceb0eb9","elType":"column","settings":{"_column_size":"50","_inline_size":"","content_position":"top","padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"css_classes":"awp-pulse-hero","margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_inline_size_tablet":"100","background_background":"classic"},"elements":[{"id":"420eb44","elType":"widget","settings":{"image":{"url":"https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg","id":196}},"elements":[],"widgetType":"image"}],"isInner":""},{"id":"1339b702","elType":"column","settings":{"_column_size":"50","_inline_size":"","background_background":"classic","background_overlay_background":"classic","background_overlay_opacity":{"unit":"px","size":"0.15"},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"10","isLinked":""},"margin_mobile":{"unit":"px","top":"80","right":"0","bottom":"0","left":"0","isLinked":""},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"40","isLinked":""},"padding_tablet":{"unit":"px","top":"80","right":"80","bottom":"80","left":"80","isLinked":"1"},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100"},"elements":[{"id":"a3757bf","elType":"widget","settings":{"title":"we are using modern equipment","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center","align_tablet":"center"},"elements":[],"widgetType":"heading"},{"id":"69deb28a","elType":"widget","settings":{"title":"Our equipment is amazing, and for a good reason.","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"},"align_tablet":"center"},"elements":[],"widgetType":"heading"},{"id":"10396bc5","elType":"widget","settings":{"editor":"<p><span class=\"tooltiplink\" title=\"By: Anonymous \">Have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat<\/span><span>\u00a0<\/span><span class=\"tooltiplink\" title=\"By: Coulter \">eat all the power cords<\/span><span>so\u00a0<\/span><span class=\"tooltiplink\" title=\"By: Anonymous \">mrow<\/span><span>\u00a0<\/span><span class=\"tooltiplink\" title=\"By: Anonymous \">cat trophy<\/span><span>\u00a0for\u00a0<\/span><span class=\"tooltiplink\" title=\"By: Anonymous \">cat trophy<\/span><span>\u00a0<\/span><span class=\"tooltiplink\" title=\"By: Lilly \">sit in box<\/span><span>\u00a0<\/span><span class=\"tooltiplink\" title=\"By: Anonymous \">hiss and stare at nothing then run suddenly away<\/span><span>.<\/span><\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"18"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"28"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"},"align_tablet":"center"},"elements":[],"widgetType":"text-editor"},{"id":"76972771","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"}],"isInner":""}],"isInner":""},{"id":"14180646","elType":"section","settings":{"background_background":"classic","background_color":"#f3f3f3","padding":{"unit":"px","top":"80","right":"80","bottom":"80","left":"80","isLinked":"1"},"background_overlay_background":"classic","background_overlay_position":"center right","background_overlay_repeat":"no-repeat","background_overlay_opacity":{"unit":"px","size":"0.08"},"heading_color":"#263844","color_text":"#263844","background_overlay_size":"contain","padding_tablet":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_mobile":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"gap":"wider","height":"min-height","custom_height":{"unit":"px","size":""},"content_position":"top","shape_divider_top_height_tablet":{"unit":"px","size":"24"},"shape_divider_top_height_mobile":{"unit":"px","size":"49"},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"text_align":"center","shape_divider_top_width":{"unit":"%","size":"152"},"shape_divider_top_height":{"unit":"px","size":"77"}},"elements":[{"id":"7f18fb9e","elType":"column","settings":{"_column_size":"100","_inline_size":"","background_background":"classic","background_overlay_background":"classic","background_overlay_opacity":{"unit":"px","size":"0.15"},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"padding_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"}},"elements":[{"id":"3036ed2","elType":"section","settings":{"content_width":{"unit":"px","size":"700"},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""}},"elements":[{"id":"1e8bd3df","elType":"column","settings":{"_column_size":"100","_inline_size":""},"elements":[{"id":"7d9ba363","elType":"widget","settings":{"title":"Our employees love pets","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center"},"elements":[],"widgetType":"heading"},{"id":"45482ea1","elType":"widget","settings":{"title":"We treat them with love","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"}},"elements":[],"widgetType":"heading"},{"id":"6ac41f75","elType":"widget","settings":{"editor":"<p class=\"p1\"><span>Run in circles\u00a0<\/span><span class=\"tooltiplink\" title=\"By: Thomas Riesler\">eat an easter feather as if it were a bird then jump victoriously, but tender<\/span><span>\u00a0yet chase mice<\/span><\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"20"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"32"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"},"_css_classes":"awp-pulse-content-center"},"elements":[],"widgetType":"text-editor"}],"isInner":"1"}],"isInner":"1"},{"id":"31fd09f0","elType":"section","settings":{"structure":"30","padding_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""}},"elements":[{"id":"4463ba70","elType":"column","settings":{"_column_size":"33","_inline_size":"","background_background":"classic","padding":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":"1"},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100"},"elements":[{"id":"5aa4419","elType":"widget","settings":{"icon":"fa fa-wrench","primary_color":"#7c5e92","size":{"unit":"px","size":"150"}},"elements":[],"widgetType":"icon"},{"id":"5b4c73dc","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"521c0c62","elType":"widget","settings":{"image":{"url":"","id":""},"title_text":"Diagnostic","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc, quod agimus; Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. ","title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":"25"},"title_typography_font_family":"Playfair Display","title_typography_font_weight":"600","title_typography_letter_spacing":{"unit":"px","size":"-0.5"},"description_typography_typography":"custom","description_typography_font_size":{"unit":"px","size":"18"},"description_typography_font_family":"Muli","description_typography_line_height":{"unit":"px","size":"28"},"_padding":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"_background_background":"classic","_background_color":"#ffffff","_box_shadow_hover_box_shadow_type":"yes","_box_shadow_hover_box_shadow":{"horizontal":"0","vertical":"0","blur":"60","spread":"0","color":"rgba(0,0,0,0.09)"},"title_color":"#263844"},"elements":[],"widgetType":"image-box"}],"isInner":"1"},{"id":"7c5f9931","elType":"column","settings":{"_column_size":"33","_inline_size":"","margin_mobile":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100","margin_tablet":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""}},"elements":[{"id":"a1fa8ff","elType":"widget","settings":{"icon":"fa fa-hand-scissors-o","primary_color":"#7c5e92","size":{"unit":"px","size":"150"}},"elements":[],"widgetType":"icon"},{"id":"7de0d781","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"606e4b33","elType":"widget","settings":{"image":{"url":"","id":""},"title_text":"Surgery","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc, quod agimus; Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. ","title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":"25"},"title_typography_font_family":"Playfair Display","title_typography_font_weight":"600","title_typography_letter_spacing":{"unit":"px","size":"-0.5"},"description_typography_typography":"custom","description_typography_font_size":{"unit":"px","size":"18"},"description_typography_font_family":"Muli","description_typography_line_height":{"unit":"px","size":"28"},"_padding":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"_background_background":"classic","_background_color":"#ffffff","_box_shadow_hover_box_shadow_type":"yes","_box_shadow_hover_box_shadow":{"horizontal":"0","vertical":"0","blur":"60","spread":"0","color":"rgba(0,0,0,0.08)"},"title_color":"#263844"},"elements":[],"widgetType":"image-box"}],"isInner":"1"},{"id":"4dcb73ea","elType":"column","settings":{"_column_size":"33","_inline_size":"","margin_mobile":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100","margin_tablet":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""}},"elements":[{"id":"3b90867","elType":"widget","settings":{"icon":"fa fa-line-chart","primary_color":"#7c5e92","size":{"unit":"px","size":"150"}},"elements":[],"widgetType":"icon"},{"id":"6bb06f4","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"4dd4177b","elType":"widget","settings":{"image":{"url":"","id":""},"title_text":"Recovery","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc, quod agimus; Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. ","title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":"25"},"title_typography_font_family":"Playfair Display","title_typography_font_weight":"600","title_typography_letter_spacing":{"unit":"px","size":"-0.5"},"description_typography_typography":"custom","description_typography_font_size":{"unit":"px","size":"18"},"description_typography_font_family":"Muli","description_typography_line_height":{"unit":"px","size":"28"},"_padding":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"_background_background":"classic","_background_color":"#ffffff","_box_shadow_hover_box_shadow_type":"yes","_box_shadow_hover_box_shadow":{"horizontal":"0","vertical":"0","blur":"60","spread":"0","color":"rgba(0,0,0,0.08)"},"title_color":"#263844"},"elements":[],"widgetType":"image-box"}],"isInner":"1"}],"isInner":"1"},{"id":"5eec6254","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"5485a86d","elType":"widget","settings":{"text":"our services","typography_typography":"custom","typography_font_family":"Amiko","typography_font_weight":"600","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2"},"background_color":"#7c5e92","border_radius":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"text_padding":{"unit":"px","top":"20","right":"40","bottom":"20","left":"40","isLinked":""},"align_mobile":"justify","_animation":"fadeInUp"},"elements":[],"widgetType":"button"}],"isInner":""}],"isInner":""},{"id":"16603dbe","elType":"section","settings":{"background_background":"classic","background_color":"#ffffff","padding":{"unit":"px","top":"80","right":"80","bottom":"80","left":"80","isLinked":""},"background_overlay_background":"classic","background_overlay_position":"center right","background_overlay_repeat":"no-repeat","background_overlay_opacity":{"unit":"px","size":"0.08"},"heading_color":"#263844","color_text":"#263844","background_overlay_size":"contain","padding_tablet":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_mobile":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"gap":"wider","height":"min-height","custom_height":{"unit":"px","size":""},"content_position":"top","shape_divider_top_height_tablet":{"unit":"px","size":"50"},"shape_divider_top_height_mobile":{"unit":"px","size":"0"},"shape_divider_top_flip":"yes","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"text_align":"center"},"elements":[{"id":"edd0aa0","elType":"column","settings":{"_column_size":"100","_inline_size":"","content_position":"top","padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"css_classes":"awp-pulse-hero","margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""}},"elements":[{"id":"19d3f601","elType":"section","settings":{"content_width":{"unit":"px","size":"700"},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"}},"elements":[{"id":"509b55d","elType":"column","settings":{"_column_size":"100","_inline_size":""},"elements":[{"id":"5da54282","elType":"widget","settings":{"title":"our clients are happy","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center"},"elements":[],"widgetType":"heading"},{"id":"51219187","elType":"widget","settings":{"title":"Customer Reviews","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"}},"elements":[],"widgetType":"heading"},{"id":"7b1effee","elType":"widget","settings":{"editor":"<p class=\"p1\">Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Bap-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex.\u00a0Illa tamen simplicia.<\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"20"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"32"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"},"_css_classes":"awp-pulse-content-center"},"elements":[],"widgetType":"text-editor"}],"isInner":"1"}],"isInner":"1"},{"id":"62a6d34b","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"8becff5","elType":"section","settings":{"structure":"20"},"elements":[{"id":"753638f0","elType":"column","settings":{"_column_size":"50","_inline_size":"","padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100"},"elements":[{"id":"10b4297","elType":"widget","settings":{"testimonial_content":"\"...Gumbo beet greens corn soko endive gumbo gourd. Dandelion cucumber earthnut pea peanut soko zucchini.....\"","testimonial_name":"Melisa Dawshon","testimonial_job":"Content Writer","testimonial_image_position":"top","content_typography_typography":"custom","content_typography_font_size":{"unit":"px","size":"36"},"content_typography_font_size_tablet":{"unit":"px","size":"30"},"content_typography_font_size_mobile":{"unit":"px","size":"25"},"content_typography_font_family":"Playfair Display","image_size":{"unit":"px","size":"100"},"name_typography_typography":"custom","name_typography_font_size":{"unit":"px","size":"15"},"name_typography_font_family":"Muli","name_typography_font_weight":"800","name_typography_text_transform":"uppercase","name_typography_letter_spacing":{"unit":"px","size":"2"},"job_typography_typography":"custom","job_typography_font_family":"Muli","job_typography_letter_spacing":{"unit":"px","size":"2"},"_padding":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"_animation":"fadeIn","testimonial_image":{"id":196,"url":"https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg"},"testimonial_image_size":"thumbnail"},"elements":[],"widgetType":"testimonial"}],"isInner":"1"},{"id":"1447434f","elType":"column","settings":{"_column_size":"50","_inline_size":"","margin_mobile":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100"},"elements":[{"id":"2ad5729d","elType":"widget","settings":{"testimonial_content":"\"...Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato....\"","testimonial_name":"John Spencer","testimonial_job":"Jurnalist","testimonial_image_position":"top","content_typography_typography":"custom","content_typography_font_size":{"unit":"px","size":"36"},"content_typography_font_size_tablet":{"unit":"px","size":"30"},"content_typography_font_size_mobile":{"unit":"px","size":"25"},"content_typography_font_family":"Playfair Display","image_size":{"unit":"px","size":"100"},"name_typography_typography":"custom","name_typography_font_size":{"unit":"px","size":"15"},"name_typography_font_family":"Muli","name_typography_font_weight":"800","name_typography_text_transform":"uppercase","name_typography_letter_spacing":{"unit":"px","size":"2"},"job_typography_typography":"custom","job_typography_font_family":"Muli","job_typography_letter_spacing":{"unit":"px","size":"2"},"_padding":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"_animation":"fadeIn","testimonial_image":{"id":196,"url":"https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg"},"testimonial_image_size":"thumbnail"},"elements":[],"widgetType":"testimonial"}],"isInner":"1"}],"isInner":"1"}],"isInner":""}],"isInner":""},{"id":"604f2c36","elType":"section","settings":{"background_background":"classic","background_color":"#ffffff","padding":{"unit":"px","top":"80","right":"80","bottom":"80","left":"80","isLinked":""},"background_overlay_background":"classic","background_overlay_position":"center right","background_overlay_repeat":"no-repeat","background_overlay_opacity":{"unit":"px","size":"0.08"},"heading_color":"#ffffff","color_text":"#ffffff","background_overlay_size":"contain","padding_tablet":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_mobile":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"gap":"wider","height":"min-height","custom_height":{"unit":"px","size":""},"content_position":"top","shape_divider_top_height_tablet":{"unit":"px","size":"50"},"shape_divider_top_height_mobile":{"unit":"px","size":"0"},"shape_divider_top_flip":"yes","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"text_align":"center"},"elements":[{"id":"709daf8e","elType":"column","settings":{"_column_size":"100","_inline_size":"","content_position":"top","padding":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"css_classes":"awp-pulse-hero","margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"background_background":"classic","background_color":"#7c5e92","background_image":{"id":196,"url":"https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg"},"background_position":"center center","background_repeat":"no-repeat","background_size":"cover","background_overlay_background":"gradient","background_overlay_color":"#7c5e92","background_overlay_color_b":"#7c5e92","background_overlay_opacity":{"unit":"px","size":"0.8"},"padding_mobile":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"}},"elements":[{"id":"6bb464aa","elType":"section","settings":{"content_width":{"unit":"px","size":"700"},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"}},"elements":[{"id":"625b943c","elType":"column","settings":{"_column_size":"100","_inline_size":"","padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"}},"elements":[{"id":"17fd3975","elType":"widget","settings":{"title":"we are open 24\/7","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center"},"elements":[],"widgetType":"heading"},{"id":"39b95912","elType":"widget","settings":{"title":"Call us anytime","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"}},"elements":[],"widgetType":"heading"},{"id":"e906538","elType":"widget","settings":{"editor":"<p>We can help you with emergency even during the night or weekends.<\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"20"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"32"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"},"_css_classes":"awp-pulse-content-center","text_color":"#ffffff"},"elements":[],"widgetType":"text-editor"},{"id":"aec13d6","elType":"widget","settings":{"text":"see schedule","typography_typography":"custom","typography_font_family":"Amiko","typography_font_weight":"600","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2"},"background_color":"rgba(124,94,146,0)","border_radius":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"text_padding":{"unit":"px","top":"20","right":"40","bottom":"20","left":"40","isLinked":""},"align_mobile":"justify","_animation":"fadeInUp","button_text_color":"#ffffff","hover_color":"#7c5e92","button_background_hover_color":"#ffffff","hover_animation":"float","border_border":"solid","border_width":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":"1"},"border_color":"#ffffff"},"elements":[],"widgetType":"button"}],"isInner":"1"}],"isInner":"1"},{"id":"4194d7f6","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"}],"isInner":""}],"isInner":""},{"id":"5758876a","elType":"section","settings":{"background_background":"classic","background_color":"#f3f3f3","padding":{"unit":"px","top":"80","right":"80","bottom":"80","left":"80","isLinked":""},"background_overlay_background":"classic","background_overlay_position":"center right","background_overlay_repeat":"no-repeat","background_overlay_opacity":{"unit":"px","size":"1"},"heading_color":"#263844","color_text":"#263844","background_overlay_size":"contain","padding_tablet":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_mobile":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"gap":"wider","height":"min-height","custom_height":{"unit":"px","size":""},"content_position":"top","shape_divider_top_height_tablet":{"unit":"px","size":"50"},"shape_divider_top_height_mobile":{"unit":"px","size":"0"},"shape_divider_top_flip":"yes","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"text_align":"center","background_color_b_stop":{"unit":"%","size":"59"},"shape_divider_bottom":"waves","shape_divider_bottom_width":{"unit":"%","size":"162"},"shape_divider_bottom_width_tablet":{"unit":"%","size":"100"},"shape_divider_bottom_width_mobile":{"unit":"%","size":"100"},"shape_divider_bottom_height":{"unit":"px","size":"173"},"shape_divider_bottom_height_tablet":{"unit":"px","size":"49"},"shape_divider_bottom_height_mobile":{"unit":"px","size":"0"},"shape_divider_bottom_flip":"yes","shape_divider_bottom_color":"#7c5e92"},"elements":[{"id":"71736db0","elType":"column","settings":{"_column_size":"100","_inline_size":"","background_background":"classic","background_overlay_background":"classic","background_overlay_opacity":{"unit":"px","size":"0.15"},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"10","isLinked":""},"margin_mobile":{"unit":"px","top":"00","right":"0","bottom":"0","left":"0","isLinked":""},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"padding_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"}},"elements":[{"id":"29259dea","elType":"section","settings":{"content_width":{"unit":"px","size":"700"},"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"}},"elements":[{"id":"19be51","elType":"column","settings":{"_column_size":"100","_inline_size":""},"elements":[{"id":"797875e7","elType":"widget","settings":{"title":"extra services","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center"},"elements":[],"widgetType":"heading"},{"id":"6bfcf9ee","elType":"widget","settings":{"title":"Need a vacation? <br>Bring your friend here","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"}},"elements":[],"widgetType":"heading"},{"id":"60ab94b3","elType":"widget","settings":{"editor":"<p class=\"p1\">Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! \"Now fax quiz Jack!\" my brave ghost pled.\u00a0Five quacking zephyrs jolt my wax bed.<\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"20"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"32"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"},"_css_classes":"awp-pulse-content-center"},"elements":[],"widgetType":"text-editor"}],"isInner":"1"}],"isInner":"1"},{"id":"1eecbbe0","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"fa10768","elType":"section","settings":{"content_position":"middle","structure":"20","text_align":"left","reverse_order_mobile":"reverse-mobile"},"elements":[{"id":"48a71ae","elType":"column","settings":{"_column_size":"50","_inline_size":"","background_background":"classic","background_color":"#ffffff","box_shadow_box_shadow":{"horizontal":"0","vertical":"0","blur":"70","spread":"0","inset":"","color":"rgba(0,0,0,0.1)"},"padding":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_tablet":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"box_shadow_hover_box_shadow_type":"yes","box_shadow_hover_box_shadow":{"horizontal":"0","vertical":"0","blur":"60","spread":"0","color":"rgba(0,0,0,0.07)"},"_inline_size_tablet":"50"},"elements":[{"id":"fe8d8d5","elType":"widget","settings":{"title":"Pet Hotel","typography_typography":"custom","typography_font_size":{"unit":"px","size":"30"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"25"},"typography_font_size_mobile":{"unit":"px","size":"25"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h4","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"}},"elements":[],"widgetType":"heading"},{"id":"72143e8","elType":"widget","settings":{"editor":"<p>Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls.\u00a0Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox.<\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"18"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"28"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"}},"elements":[],"widgetType":"text-editor"}],"isInner":"1"},{"id":"5111ac3","elType":"column","settings":{"_column_size":"50","_inline_size":"","background_background":"classic","background_image":{"url":"https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg","id":196},"background_position":"center center","background_size":"cover"},"elements":[{"id":"394f7a2","elType":"widget","settings":{"space":{"unit":"px","size":"390"}},"elements":[],"widgetType":"spacer"}],"isInner":"1"}],"isInner":"1"},{"id":"728a152","elType":"section","settings":{"content_position":"middle","structure":"20","text_align":"left"},"elements":[{"id":"829626d","elType":"column","settings":{"_column_size":"50","_inline_size":"","background_background":"classic","background_image":{"url":"https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg","id":196},"background_size":"cover"},"elements":[{"id":"1bb7dea","elType":"widget","settings":{"space":{"unit":"px","size":"390"}},"elements":[],"widgetType":"spacer"}],"isInner":"1"},{"id":"d13c990","elType":"column","settings":{"_column_size":"50","_inline_size":"","background_background":"classic","background_color":"#ffffff","box_shadow_box_shadow":{"horizontal":"0","vertical":"0","blur":"70","spread":"0","inset":"","color":"rgba(0,0,0,0.1)"},"padding":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_tablet":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"box_shadow_hover_box_shadow_type":"yes","box_shadow_hover_box_shadow":{"horizontal":"0","vertical":"0","blur":"60","spread":"0","color":"rgba(0,0,0,0.09)"}},"elements":[{"id":"fa32201","elType":"widget","settings":{"title":"Wellness counceling","typography_typography":"custom","typography_font_size":{"unit":"px","size":"30"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"25"},"typography_font_size_mobile":{"unit":"px","size":"25"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h4","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"}},"elements":[],"widgetType":"heading"},{"id":"0b87b44","elType":"widget","settings":{"editor":"<p>The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard\u2019s job is to vex chumps quickly in fog. Watch \"Jeopardy!\", Alex Trebek's fun TV quiz game.<\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"18"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"28"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"}},"elements":[],"widgetType":"text-editor"},{"id":"4650457","elType":"widget","settings":{"text":"a nice action","typography_typography":"custom","typography_font_family":"Amiko","typography_font_weight":"600","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2"},"background_color":"#7c5e92","border_radius":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"text_padding":{"unit":"px","top":"20","right":"40","bottom":"20","left":"40","isLinked":""},"align_mobile":"justify","size":"xs"},"elements":[],"widgetType":"button"}],"isInner":"1"}],"isInner":"1"},{"id":"48795f4a","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"}],"isInner":""}],"isInner":""},{"id":"de10e63","elType":"section","settings":{"structure":"20","background_background":"classic","background_color":"#7c5e92","padding":{"unit":"px","top":"80","right":"80","bottom":"80","left":"80","isLinked":""},"background_overlay_background":"classic","background_overlay_position":"center right","background_overlay_repeat":"no-repeat","background_overlay_opacity":{"unit":"px","size":"0.08"},"heading_color":"#ffffff","color_text":"#ffffff","background_overlay_size":"contain","padding_tablet":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_mobile":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"gap":"wider","height":"min-height","custom_height":{"unit":"px","size":""},"content_position":"top","shape_divider_top_height_tablet":{"unit":"px","size":"50"},"shape_divider_top_height_mobile":{"unit":"px","size":"0"},"shape_divider_top_flip":"yes","margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"text_align":"left"},"elements":[{"id":"30b22534","elType":"column","settings":{"_column_size":"50","_inline_size":"","content_position":"top","padding":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"css_classes":"awp-pulse-hero","margin_mobile":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""},"background_background":"classic","animation":"fadeIn","padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100"},"elements":[{"id":"72601642","elType":"widget","settings":{"title":"A section to highlight more features","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center","align_tablet":"center"},"elements":[],"widgetType":"heading"},{"id":"67276d2b","elType":"widget","settings":{"title":"Why our clinic","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"},"align":"left","align_tablet":"center"},"elements":[],"widgetType":"heading"},{"id":"360c54c1","elType":"widget","settings":{"icon_list":[{"text":"Premium equipment","icon":"fa fa-check","_id":"yvb6df1","link":{"url":"","is_external":"","nofollow":""},"selected_icon":{"value":"fas fa-check","library":"fa-solid"}},{"text":"Skilled doctors","icon":"fa fa-check","link":{"url":"","is_external":"","nofollow":""},"_id":"zeqjsnn","selected_icon":{"value":"fas fa-check","library":"fa-solid"}},{"text":"Recovery","icon":"fa fa-check","link":{"url":"","is_external":"","nofollow":""},"_id":"razc4r5","selected_icon":{"value":"fas fa-check","library":"fa-solid"}},{"text":"Pet Hotel","icon":"fa fa-check","link":{"url":"","is_external":"","nofollow":""},"_id":"dzspdgc","selected_icon":{"value":"fas fa-check","library":"fa-solid"}}],"space_between":{"unit":"px","size":"24"},"divider":"yes","divider_weight":{"unit":"px","size":"2"},"divider_color":"rgba(255,255,255,0.24)","icon_typography_typography":"custom","icon_typography_font_size":{"unit":"px","size":"20"},"icon_typography_font_size_mobile":{"unit":"px","size":"18"},"icon_typography_font_family":"Muli","icon_typography_line_height":{"unit":"em","size":"1"},"_margin":{"unit":"px","top":"040","right":"0","bottom":"0","left":"0","isLinked":""},"icon_color":"#ffffff","text_color":"#ffffff"},"elements":[],"widgetType":"icon-list"}],"isInner":""},{"id":"1fecf9ff","elType":"column","settings":{"_column_size":"50","_inline_size":"","content_position":"top","padding":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"css_classes":"awp-pulse-hero","margin_mobile":{"unit":"px","top":"80","right":"0","bottom":"0","left":"0","isLinked":""},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100","margin_tablet":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""}},"elements":[{"id":"78d1b71f","elType":"widget","settings":{"title":"Hey you","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center","align":"center"},"elements":[],"widgetType":"heading"},{"id":"2efa5da8","elType":"widget","settings":{"title":"About us","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"},"align":"center"},"elements":[],"widgetType":"heading"},{"id":"5bbc83e7","elType":"widget","settings":{"starting_number":"65","ending_number":"97","suffix":"%","duration":"300","title":"positive reviews","number_color":"#ffffff","typography_number_typography":"custom","typography_number_font_size":{"unit":"px","size":"165"},"typography_number_font_size_tablet":{"unit":"px","size":"80"},"typography_number_font_family":"Muli","typography_number_font_weight":"900","title_color":"#ffffff","typography_title_typography":"custom","typography_title_font_size":{"unit":"px","size":"13"},"typography_title_font_family":"Muli","typography_title_font_weight":"700","typography_title_text_transform":"uppercase","typography_title_line_height":{"unit":"em","size":"1.2"},"typography_title_letter_spacing":{"unit":"px","size":"1.3"}},"elements":[],"widgetType":"counter"}],"isInner":""}],"isInner":""},{"id":"6f2390cf","elType":"section","settings":{"structure":"20","background_background":"classic","background_color":"#ffffff","padding":{"unit":"px","top":"80","right":"80","bottom":"80","left":"80","isLinked":""},"background_overlay_background":"classic","background_overlay_position":"center right","background_overlay_repeat":"no-repeat","background_overlay_opacity":{"unit":"px","size":"0.08"},"heading_color":"#263844","color_text":"#263844","background_overlay_size":"contain","padding_tablet":{"unit":"px","top":"80","right":"40","bottom":"80","left":"40","isLinked":""},"padding_mobile":{"unit":"px","top":"40","right":"20","bottom":"40","left":"20","isLinked":""},"gap":"wider","height":"min-height","custom_height":{"unit":"px","size":""},"content_position":"top","shape_divider_top_height_tablet":{"unit":"px","size":"50"},"shape_divider_top_height_mobile":{"unit":"px","size":"0"},"shape_divider_top_flip":"yes","margin":{"unit":"px","top":"0","right":"0","bottom":"-80","left":"0","isLinked":""},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"text_align":"left"},"elements":[{"id":"56278642","elType":"column","settings":{"_column_size":"50","_inline_size":"","content_position":"top","padding":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"css_classes":"awp-pulse-hero","margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100"},"elements":[{"id":"7aedd814","elType":"widget","settings":{"title":"our services","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center","align_tablet":"center"},"elements":[],"widgetType":"heading"},{"id":"7f593489","elType":"widget","settings":{"title":"Get notified when we have new type of services and equipment.","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"},"align":"left","align_tablet":"center"},"elements":[],"widgetType":"heading"},{"id":"5f201c2d","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"4cf5db8c","elType":"widget","settings":{"editor":"<p class=\"p1\">Find us on social networks.<\/p>","typography_typography":"custom","typography_font_size":{"unit":"px","size":"20"},"typography_font_family":"Muli","typography_line_height":{"unit":"px","size":"32"},"typography_letter_spacing":{"unit":"px","size":"0"},"align_mobile":"center","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_font_size_mobile":{"unit":"px","size":"18"},"typography_line_height_mobile":{"unit":"px","size":"28"},"_css_classes":"awp-pulse-content-center","align_tablet":"center"},"elements":[],"widgetType":"text-editor"},{"id":"7947f597","elType":"widget","settings":{"social_icon_list":[{"social":"fa fa-facebook","_id":"nqaoskp","link":{"url":"","is_external":"true","nofollow":""},"social_icon":{"value":"fab fa-wordpress","library":"fa-brands"},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""},{"social":"fa fa-twitter","_id":"ujqokkv","link":{"url":"","is_external":"true","nofollow":""},"social_icon":{"value":"fab fa-wordpress","library":"fa-brands"},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""},{"social":"fa fa-google-plus","_id":"4vioqwv","link":{"url":"","is_external":"true","nofollow":""},"social_icon":{"value":"fab fa-wordpress","library":"fa-brands"},"item_icon_color":"default","item_icon_primary_color":"","item_icon_secondary_color":""}],"shape":"square","align":"left","align_tablet":"center","icon_spacing":{"unit":"px","size":"15"},"align_mobile":"center"},"elements":[],"widgetType":"social-icons"},{"id":"3a5c4f81","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"}],"isInner":""},{"id":"6a083381","elType":"column","settings":{"_column_size":"50","_inline_size":"","content_position":"top","padding":{"unit":"px","top":"20","right":"20","bottom":"20","left":"20","isLinked":"1"},"css_classes":"awp-pulse-hero","margin_mobile":{"unit":"px","top":"40","right":"0","bottom":"0","left":"0","isLinked":""},"background_background":"classic","animation":"fadeIn","padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"_inline_size_tablet":"100"},"elements":[{"id":"56930fd8","elType":"widget","settings":{"title":"our newsletter","header_size":"p","typography_typography":"custom","typography_font_size":{"unit":"px","size":"13"},"typography_font_family":"Muli","typography_font_weight":"700","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"px","size":"2.5"},"align_mobile":"center","align":"center"},"elements":[],"widgetType":"heading"},{"id":"6a1184ba","elType":"widget","settings":{"title":"Sign up for updates","typography_typography":"custom","typography_font_size":{"unit":"px","size":"45"},"typography_font_family":"Playfair Display","typography_font_weight":"700","typography_line_height":{"unit":"px","size":"55"},"typography_letter_spacing":{"unit":"px","size":"-1.5"},"align_mobile":"center","typography_font_size_tablet":{"unit":"px","size":"35"},"typography_font_size_mobile":{"unit":"px","size":"35"},"typography_line_height_mobile":{"unit":"px","size":"45"},"header_size":"h3","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":""},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":"1"},"typography_line_height_tablet":{"unit":"px","size":"45"},"align":"center"},"elements":[],"widgetType":"heading"},{"id":"31112397","elType":"widget","settings":{"space":{"unit":"px","size":"20"},"_css_classes":"awp-vertical-space","space_tablet":{"unit":"px","size":"20"},"space_mobile":{"unit":"px","size":"10"}},"elements":[],"widgetType":"spacer"},{"id":"457ce88","elType":"widget","settings":{"form_fields":[{"key":"name","type":"text","label":"","requirement":"","placeholder":"Your Name","field_width":"50","_id":"49ad121","field_width_tablet":"","field_width_mobile":""},{"key":"email","type":"email","label":"","requirement":"","placeholder":"Email address","field_width":"50","_id":"f2e5add","field_width_tablet":"","field_width_mobile":""},{"key":"phone","type":"number","label":"","requirement":"optional","placeholder":"Subject","field_width":"100","_id":"428006b","field_width_tablet":"","field_width_mobile":""},{"key":"message","type":"textarea","label":"","requirement":"","placeholder":"Your message","field_width":"100","_id":"732fc45","field_width_tablet":"","field_width_mobile":""}],"to_send_email":"firends@themeisle.com","submit_label":"Send message","align_submit":"right","row_gap":{"unit":"px","size":"20"},"field_border_width":{"unit":"px","top":"0","right":"0","bottom":"1","left":"0","isLinked":""},"button_background_color":"#7c5e92","button_text_padding":{"unit":"px","top":"14","right":"28","bottom":"14","left":"28","isLinked":""},"align_submit_tablet":"right","align_submit_mobile":"center","align_field_text_tablet":"left","align_field_text_mobile":"center"},"elements":[],"widgetType":"content_form_contact"}],"isInner":""}],"isInner":""}]]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2.6.2]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_oembed_8a352b206a807f2304d5668664cef2cb]]></wp:meta_key>
+				<wp:meta_value><![CDATA[<iframe width="750" height="563" src="https://www.youtube.com/embed/ok7UVREw5JI?feature=oembed&enablejsapi=1&origin=https://demo.themeisle.com" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_oembed_time_8a352b206a807f2304d5668664cef2cb]]></wp:meta_key>
+				<wp:meta_value><![CDATA[1553612388]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[90]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_opengraph-image]]></wp:meta_key>
+				<wp:meta_value><![CDATA[https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2018/09/hestia-vet.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_twitter-image]]></wp:meta_key>
+				<wp:meta_value><![CDATA[https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2018/09/hestia-vet.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_title]]></wp:meta_key>
+				<wp:meta_value><![CDATA[%%sitename%%]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_metadesc]]></wp:meta_key>
+				<wp:meta_value><![CDATA[Medical center for pets. Our equipment is amazing, and for a good reason.]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_opengraph-image-id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[149]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_elements_usage]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:14:{s:7:"heading";i:22;s:6:"spacer";i:17;s:11:"text-editor";i:9;s:6:"column";i:25;s:7:"section";i:16;s:5:"image";i:1;s:4:"icon";i:3;s:9:"image-box";i:3;s:6:"button";i:3;s:11:"testimonial";i:2;s:9:"icon-list";i:1;s:7:"counter";i:1;s:12:"social-icons";i:1;s:20:"content_form_contact";i:1;}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Blog			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/vet-medical-demo-blog/</link>
+			<pubDate>Mon, 09 Jul 2018 14:59:02 +0000</pubDate>
+			<guid isPermaLink="false">http://vetmedicaldemo.local/?page_id=83</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>83</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-09 14:59:02]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-09 14:59:02]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[vet-medical-demo-blog]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[page]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[89713]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Healthy food			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/healthy-food/</link>
+			<pubDate>Fri, 20 Jul 2018 12:30:01 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=122</guid>
+			<description></description>
+			<content:encoded><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>122</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-20 12:30:01]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-20 12:30:01]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[healthy-food]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="pet-care"><![CDATA[Pet Care]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[119919]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[60]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[5]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[healthy-food__trashed]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				How many times do they eat per a day			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/many-times-eat-day/</link>
+			<pubDate>Fri, 20 Jul 2018 12:38:03 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=129</guid>
+			<description></description>
+			<content:encoded><![CDATA[A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>129</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-20 12:38:03]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-20 12:38:03]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[many-times-eat-day]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="pet-care"><![CDATA[Pet Care]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[119919]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[5]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[many-times-eat-day__trashed]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Take care of their physical condition			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/take-care-physical-condition/</link>
+			<pubDate>Fri, 20 Jul 2018 12:38:26 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=130</guid>
+			<description></description>
+			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>130</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-20 12:38:26]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-20 12:38:26]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[take-care-physical-condition]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="pet-care"><![CDATA[Pet Care]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[119919]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[5]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[196]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[take-care-physical-condition__trashed]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				How long do they live			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/how-long-do-they-live/</link>
+			<pubDate>Fri, 20 Jul 2018 12:38:54 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=131</guid>
+			<description></description>
+			<content:encoded><![CDATA[Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>131</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-20 12:38:54]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-20 12:38:54]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[how-long-do-they-live]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="pets-world"><![CDATA[Pets World]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[119919]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[6]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[how-long-do-they-live__trashed]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Can you grow one next to a baby			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/can-raise-one-baby/</link>
+			<pubDate>Fri, 20 Jul 2018 12:39:21 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=132</guid>
+			<description></description>
+			<content:encoded><![CDATA[But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>132</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-20 12:39:21]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-20 12:39:21]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[can-raise-one-baby]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="pets-world"><![CDATA[Pets World]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[119919]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[6]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[can-raise-one-baby__trashed]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Watch out for the plants			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/watch-the-plants/</link>
+			<pubDate>Fri, 20 Jul 2018 12:39:50 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=133</guid>
+			<description></description>
+			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mihi, inquam, qui te id ipsum rogavi? Et harum quidem rerum facilis est et expedita distinctio. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Tu quidem reddes; Comprehensum, quod cognitum non habet? Illa tamen simplicia, vestra versuta. Nam de summo mox, ut dixi, videbimus et ad id explicandum disputationem omnem conferemus. Duo Reges: constructio interrete.
+
+Haec para/doca illi, nos admirabilia dicamus. Quid ergo aliud intellegetur nisi uti ne quae pars naturae neglegatur? At quicum ioca seria, ut dicitur, quicum arcana, quicum occulta omnia? Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. Id enim volumus, id contendimus, ut officii fructus sit ipsum officium. Scaevolam M. Ita prorsus, inquam;]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>133</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-20 12:39:50]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-20 12:39:50]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[watch-the-plants]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="pets-world"><![CDATA[Pets World]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[119919]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[6]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[60]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[watch-the-plants__trashed]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				They can have passport			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/they-can-have-passport/</link>
+			<pubDate>Fri, 20 Jul 2018 12:40:25 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=134</guid>
+			<description></description>
+			<content:encoded><![CDATA[Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>134</wp:post_id>
+			<wp:post_date><![CDATA[2018-07-20 12:40:25]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2018-07-20 12:40:25]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[they-can-have-passport]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="pets-world"><![CDATA[Pets World]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[119919]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[6]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[they-can-have-passport__trashed]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/185/</link>
+			<pubDate>Tue, 26 Mar 2019 15:17:15 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=185</guid>
+			<description></description>
+			<content:encoded><![CDATA[ ]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>185</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-26 15:17:15]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-26 15:17:15]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[185]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>2</wp:menu_order>
+			<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="nav_menu" nicename="very-top-bar"><![CDATA[Very Top Bar]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[83]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[obfx_menu_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/187/</link>
+			<pubDate>Tue, 26 Mar 2019 15:17:41 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-vet-center/?p=187</guid>
+			<description></description>
+			<content:encoded><![CDATA[ ]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>187</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-26 15:17:41]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-26 15:17:41]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[187]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>2</wp:menu_order>
+			<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="nav_menu" nicename="primary-menu"><![CDATA[Primary Menu]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[83]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[obfx_menu_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				placeholder-image			</title>
+			<link>https://demo.themeisle.com/hestia-vet-center/placeholder-image/</link>
+			<pubDate>Tue, 02 Apr 2019 14:57:53 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg]]></guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>196</wp:post_id>
+			<wp:post_date><![CDATA[2019-04-02 14:57:53]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-04-02 14:57:53]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[placeholder-image]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-vet-center/wp-content/uploads/sites/156/2019/04/placeholder-image.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/04/placeholder-image.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1200;s:6:"height";i:900;s:4:"file";s:29:"2019/04/placeholder-image.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:29:"placeholder-image-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:29:"placeholder-image-300x225.jpg";s:5:"width";i:300;s:6:"height";i:225;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:29:"placeholder-image-768x576.jpg";s:5:"width";i:768;s:6:"height";i:576;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:30:"placeholder-image-1024x768.jpg";s:5:"width";i:1024;s:6:"height";i:768;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:29:"placeholder-image-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+	</channel>
+</rss>
+

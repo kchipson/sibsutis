@@ -1,0 +1,346 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Popularis\n"
+"POT-Creation-Date: 2019-12-11 09:09+0100\n"
+"PO-Revision-Date: 2015-12-08 20:48+0100\n"
+"Last-Translator: Popularis <info@themes4wp.com>\n"
+"Language-Team: Popularis <info@themes4wp.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:9
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:11
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: comments.php:15
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:18
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:10
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:16
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: functions.php:22
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:71 inc/admin/customizer.php:31
+#, php-format
+msgid ""
+"To take full advantage of all the features this theme has to offer, please "
+"install and activate the %s plugin."
+msgstr ""
+
+#: functions.php:77
+msgid "The most advanced frontend drag & drop page builder."
+msgstr ""
+
+#: functions.php:83
+#, php-format
+msgid "To enable shop features, please install and activate the %s plugin."
+msgstr ""
+
+#: functions.php:113
+msgctxt "Open Sans Condensed font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:233
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:243
+msgid "Top Bar Section"
+msgstr ""
+
+#: functions.php:253
+msgid "Footer Section"
+msgstr ""
+
+#: functions.php:283
+msgid "Skip to the content"
+msgstr ""
+
+#: inc/admin/customizer.php:35 inc/admin/dashboard.php:147
+#: inc/admin/dashboard.php:366
+#, php-format
+msgid "Welcome to %1$s - Version %2$s"
+msgstr ""
+
+#: inc/admin/customizer.php:36
+msgid "Install now"
+msgstr ""
+
+#: inc/admin/customizer.php:37
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:59
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:75
+#: inc/admin/dashboard.php:234
+msgid "Activate"
+msgstr ""
+
+#: inc/admin/customizer/customizer-notice/class-customizer-notice.php:144
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:110
+msgid "Activating"
+msgstr ""
+
+#: inc/admin/customizer/demo.php:14 inc/admin/dashboard.php:321
+#: inc/admin/dashboard.php:323
+msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/admin/customizer/demo.php:26 inc/admin/dashboard.php:466
+#, php-format
+msgid ""
+"You can import the demo content with just one click. For step-by-step video "
+"tutorial, see %1$s"
+msgstr ""
+
+#: inc/admin/customizer/demo.php:26 inc/admin/customizer/info.php:29
+#: inc/admin/dashboard.php:466
+msgid "documentation"
+msgstr ""
+
+#: inc/admin/customizer/demo.php:41 inc/admin/customizer/demo.php:43
+#: inc/admin/dashboard.php:172 inc/admin/dashboard.php:176
+#: inc/admin/dashboard.php:457
+msgid "Import demo data"
+msgstr ""
+
+#: inc/admin/customizer/info.php:10
+msgid "Video Documentation & Demo"
+msgstr ""
+
+#: inc/admin/customizer/info.php:25
+#, php-format
+msgid "You can use this theme to create a website like these %1$s"
+msgstr ""
+
+#: inc/admin/customizer/info.php:25
+msgid "demos"
+msgstr ""
+
+#: inc/admin/customizer/info.php:29
+#, php-format
+msgid "For step-by-step videos and text tutorials, see %1$s"
+msgstr ""
+
+#: inc/admin/customizer/info.php:153
+msgid "PRO version"
+msgstr ""
+
+#: inc/admin/customizer/info.php:155
+msgid "View PRO version"
+msgstr ""
+
+#: inc/admin/dashboard.php:118
+#, php-format
+msgid "%1$s action required"
+msgid_plural "%1$s actions required"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/dashboard.php:121
+#, php-format
+msgid "Popularis theme %s"
+msgstr ""
+
+#: inc/admin/dashboard.php:123
+msgid "Popularis theme"
+msgstr ""
+
+#: inc/admin/dashboard.php:126
+msgid "Popularis dashboard"
+msgstr ""
+
+#: inc/admin/dashboard.php:154
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
+"our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome "
+"page</a>"
+msgstr ""
+
+#: inc/admin/dashboard.php:162
+#, php-format
+msgid "Get started with %s"
+msgstr ""
+
+#: inc/admin/dashboard.php:169
+msgid ""
+"Save time by importing our demo data: your website will be set up and ready "
+"to be customized in minutes."
+msgstr ""
+
+#: inc/admin/dashboard.php:215
+msgid "Install Now"
+msgstr ""
+
+#: inc/admin/dashboard.php:255
+msgid "Details"
+msgstr ""
+
+#: inc/admin/dashboard.php:302
+msgid "Recommended Actions"
+msgstr ""
+
+#: inc/admin/dashboard.php:383
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/admin/dashboard.php:387
+#, php-format
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click \"Customize"
+"\" to personalize your site."
+msgstr ""
+
+#: inc/admin/dashboard.php:391
+msgid "Start customizing"
+msgstr ""
+
+#: inc/admin/dashboard.php:395
+msgid "Theme documentation"
+msgstr ""
+
+#: inc/admin/dashboard.php:399
+#, php-format
+msgid ""
+"Need help in setting up and configuring %s? Please take a look at our "
+"documentation page."
+msgstr ""
+
+#: inc/admin/dashboard.php:406
+#, php-format
+msgid "%s Documentation"
+msgstr ""
+
+#: inc/admin/dashboard.php:412
+msgid "Having trouble? Need support?"
+msgstr ""
+
+#: inc/admin/dashboard.php:414
+msgid "Contact us"
+msgstr ""
+
+#: inc/admin/dashboard.php:420
+msgid "Theme Screenshot"
+msgstr ""
+
+#: inc/admin/dashboard.php:439
+msgid "Recommended plugins"
+msgstr ""
+
+#: inc/admin/dashboard.php:448
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: inc/extra.php:56
+msgid "Tags"
+msgstr ""
+
+#: inc/extra.php:79
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: inc/extra.php:79
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: inc/extra.php:84
+#, php-format
+msgid "Theme: %1$s"
+msgstr ""
+
+#: inc/extra.php:101
+msgid "Previous Post"
+msgstr ""
+
+#: inc/extra.php:101
+msgid "Previous"
+msgstr ""
+
+#: inc/extra.php:102
+msgid "Next Post"
+msgstr ""
+
+#: inc/extra.php:102
+msgid "Next"
+msgstr ""
+
+#: inc/extra.php:117
+msgid "By"
+msgstr ""
+
+#: inc/woocommerce.php:6
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/woocommerce.php:45
+msgid "My Account"
+msgstr ""
+
+#: inc/wp_bootstrap_navwalker.php:328
+msgid "Add a menu"
+msgstr ""
+
+#: search.php:8
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:38
+msgid "About The Author"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Select"
+#~ msgstr ""
+#~ "Vyberte stránku, která zobrazí podmínky používání pro registraci partnerů"

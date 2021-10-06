@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- generator="WordPress/5.2.1" created="2019-08-07 10:43" -->
+<rss version="2.0"
+	 xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	 xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	 xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:wp="http://wordpress.org/export/1.2/"
+>
+
+	<channel>
+		<title>Zelle Travel Agency</title>
+		<link>https://demo.themeisle.com/hestia-zelle</link>
+		<description>Just another Demos Sites site</description>
+		<pubDate>Wed, 07 Aug 2019 10:43:29 +0000</pubDate>
+		<language>en-US</language>
+		<wp:wxr_version>1.2</wp:wxr_version>
+		<wp:base_site_url>https://demo.themeisle.com/</wp:base_site_url>
+		<wp:base_blog_url>https://demo.themeisle.com/hestia-zelle</wp:base_blog_url>
+
+		<wp:category>
+			<wp:term_id>5</wp:term_id>
+			<wp:category_nicename><![CDATA[early-bird]]></wp:category_nicename>
+			<wp:category_parent><![CDATA[]]></wp:category_parent>
+			<wp:cat_name><![CDATA[Early Bird]]></wp:cat_name>
+		</wp:category>
+		<wp:category>
+			<wp:term_id>3</wp:term_id>
+			<wp:category_nicename><![CDATA[last-minute]]></wp:category_nicename>
+			<wp:category_parent><![CDATA[]]></wp:category_parent>
+			<wp:cat_name><![CDATA[Last Minute]]></wp:cat_name>
+		</wp:category>
+		<wp:category>
+			<wp:term_id>4</wp:term_id>
+			<wp:category_nicename><![CDATA[special-deals]]></wp:category_nicename>
+			<wp:category_parent><![CDATA[]]></wp:category_parent>
+			<wp:cat_name><![CDATA[Special Deals]]></wp:cat_name>
+		</wp:category>
+		<wp:category>
+			<wp:term_id>6</wp:term_id>
+			<wp:category_nicename><![CDATA[tips]]></wp:category_nicename>
+			<wp:category_parent><![CDATA[]]></wp:category_parent>
+			<wp:cat_name><![CDATA[Tips]]></wp:cat_name>
+		</wp:category>
+		<wp:category>
+			<wp:term_id>1</wp:term_id>
+			<wp:category_nicename><![CDATA[uncategorized]]></wp:category_nicename>
+			<wp:category_parent><![CDATA[]]></wp:category_parent>
+			<wp:cat_name><![CDATA[Uncategorized]]></wp:cat_name>
+		</wp:category>
+		<wp:term>
+			<wp:term_id><![CDATA[2]]></wp:term_id>
+			<wp:term_taxonomy><![CDATA[elementor_library_type]]></wp:term_taxonomy>
+			<wp:term_slug><![CDATA[page]]></wp:term_slug>
+			<wp:term_parent><![CDATA[]]></wp:term_parent>
+			<wp:term_name><![CDATA[page]]></wp:term_name>
+		</wp:term>
+		<wp:term><wp:term_id>7</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[menu]]></wp:term_slug><wp:term_name><![CDATA[menu]]></wp:term_name>
+		</wp:term>
+
+		<generator>https://wordpress.org/?v=5.2.1</generator>
+
+		<item>
+			<title>
+				neve-zelle-hero-image.jpg			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/neve-zelle-hero-image-jpg/</link>
+			<pubDate>Mon, 25 Mar 2019 15:40:10 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/neve-zelle-hero-image.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>6</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:40:10]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:40:10]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[neve-zelle-hero-image-jpg]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/neve-zelle-hero-image.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/03/neve-zelle-hero-image.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1920;s:6:"height";i:1080;s:4:"file";s:33:"2019/03/neve-zelle-hero-image.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:33:"neve-zelle-hero-image-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:33:"neve-zelle-hero-image-300x169.jpg";s:5:"width";i:300;s:6:"height";i:169;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:33:"neve-zelle-hero-image-768x432.jpg";s:5:"width";i:768;s:6:"height";i:432;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:34:"neve-zelle-hero-image-1024x576.jpg";s:5:"width";i:1024;s:6:"height";i:576;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:33:"neve-zelle-hero-image-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_source_image_hash]]></wp:meta_key>
+				<wp:meta_value><![CDATA[6ab1cdd45ec669cb9be8b20f31f2781fbc961b16]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-expert1.jpg			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-expert1-jpg/</link>
+			<pubDate>Mon, 25 Mar 2019 15:40:11 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert1.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>7</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:40:11]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:40:11]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-expert1-jpg]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert1.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/03/zelle-expert1.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:350;s:6:"height";i:350;s:4:"file";s:25:"2019/03/zelle-expert1.jpg";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:25:"zelle-expert1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:25:"zelle-expert1-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:25:"zelle-expert1-350x240.jpg";s:5:"width";i:350;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_source_image_hash]]></wp:meta_key>
+				<wp:meta_value><![CDATA[db9d4bb311dc718208bf59bbf8a9e257257eca17]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-expert2.jpg			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-expert2-jpg/</link>
+			<pubDate>Mon, 25 Mar 2019 15:40:11 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert2.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>8</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:40:11]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:40:11]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-expert2-jpg]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert2.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/03/zelle-expert2.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:350;s:6:"height";i:350;s:4:"file";s:25:"2019/03/zelle-expert2.jpg";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:25:"zelle-expert2-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:25:"zelle-expert2-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:25:"zelle-expert2-350x240.jpg";s:5:"width";i:350;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_source_image_hash]]></wp:meta_key>
+				<wp:meta_value><![CDATA[6b6bb4b1ffd750f2c4689087e2e234fb0fd82464]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-expert3.jpg			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-expert3-jpg/</link>
+			<pubDate>Mon, 25 Mar 2019 15:40:11 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert3.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>9</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:40:11]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:40:11]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-expert3-jpg]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert3.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/03/zelle-expert3.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:350;s:6:"height";i:350;s:4:"file";s:25:"2019/03/zelle-expert3.jpg";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:25:"zelle-expert3-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:25:"zelle-expert3-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:25:"zelle-expert3-350x240.jpg";s:5:"width";i:350;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_source_image_hash]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a20c4d34257079a8252dc38d31f55965db2c2526]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-testimonial.jpg			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-testimonial-jpg/</link>
+			<pubDate>Mon, 25 Mar 2019 15:40:11 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>10</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:40:11]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:40:11]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-testimonial-jpg]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/03/zelle-testimonial.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:134;s:6:"height";i:134;s:4:"file";s:29:"2019/03/zelle-testimonial.jpg";s:5:"sizes";a:0:{}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_source_image_hash]]></wp:meta_key>
+				<wp:meta_value><![CDATA[5971a73aeea6f24aa58ad14fe7b77084e542ea6a]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-testimonial2.jpg			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-testimonial2-jpg/</link>
+			<pubDate>Mon, 25 Mar 2019 15:40:11 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial2.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>11</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:40:11]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:40:11]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-testimonial2-jpg]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial2.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/03/zelle-testimonial2.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:134;s:6:"height";i:134;s:4:"file";s:30:"2019/03/zelle-testimonial2.jpg";s:5:"sizes";a:0:{}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_source_image_hash]]></wp:meta_key>
+				<wp:meta_value><![CDATA[f0719350a0c31a7a87103354b145310107f0b716]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-testimonial3.jpg			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-testimonial3-jpg/</link>
+			<pubDate>Mon, 25 Mar 2019 15:40:11 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial3.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>12</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:40:11]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:40:11]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-testimonial3-jpg]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial3.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/03/zelle-testimonial3.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:134;s:6:"height";i:134;s:4:"file";s:30:"2019/03/zelle-testimonial3.jpg";s:5:"sizes";a:0:{}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_source_image_hash]]></wp:meta_key>
+				<wp:meta_value><![CDATA[022565263eb00be655be6453cc9c166f414e7a4c]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-pet-friendly1			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/02/07/10-pet-friendly-place-to-visit-this-summer/zelle-pet-friendly1/</link>
+			<pubDate>Mon, 25 Mar 2019 15:53:42 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-pet-friendly1.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>109</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:53:42]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:53:42]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-pet-friendly1]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>105</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-pet-friendly1.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/02/zelle-pet-friendly1.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1071;s:6:"height";i:1071;s:4:"file";s:31:"2019/02/zelle-pet-friendly1.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:31:"zelle-pet-friendly1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:31:"zelle-pet-friendly1-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:31:"zelle-pet-friendly1-768x768.jpg";s:5:"width";i:768;s:6:"height";i:768;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:33:"zelle-pet-friendly1-1024x1024.jpg";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:31:"zelle-pet-friendly1-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-ny1			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-ny1/</link>
+			<pubDate>Mon, 25 Mar 2019 15:57:30 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-ny1.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>112</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:57:30]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:57:30]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-ny1]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-ny1.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/02/zelle-ny1.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:764;s:6:"height";i:509;s:4:"file";s:21:"2019/02/zelle-ny1.jpg";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:21:"zelle-ny1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:21:"zelle-ny1-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:21:"zelle-ny1-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/03/25/117/</link>
+			<pubDate>Mon, 25 Mar 2019 16:05:50 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-zelle/?p=117</guid>
+			<description></description>
+			<content:encoded><![CDATA[ ]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>117</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 16:05:50]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 16:05:50]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[117]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>6</wp:menu_order>
+			<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="nav_menu" nicename="menu"><![CDATA[menu]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[5]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[obfx_menu_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				What we do			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/03/25/what-we-do/</link>
+			<pubDate>Mon, 25 Mar 2019 16:05:50 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-zelle/?p=118</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>118</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 16:05:50]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 16:05:50]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[what-we-do]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>1</wp:menu_order>
+			<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="nav_menu" nicename="menu"><![CDATA[menu]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[118]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+				<wp:meta_value><![CDATA[https://demo.themeisle.com/hestia-zelle/#focus]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[obfx_menu_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				About us			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/03/25/about-us/</link>
+			<pubDate>Mon, 25 Mar 2019 16:05:50 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-zelle/?p=119</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>119</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 16:05:50]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 16:05:50]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[about-us]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>2</wp:menu_order>
+			<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="nav_menu" nicename="menu"><![CDATA[menu]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[119]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+				<wp:meta_value><![CDATA[https://demo.themeisle.com/hestia-zelle/#about]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[obfx_menu_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Agents			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/03/25/agents/</link>
+			<pubDate>Mon, 25 Mar 2019 16:05:50 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-zelle/?p=120</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>120</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 16:05:50]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 16:05:50]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[agents]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>3</wp:menu_order>
+			<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="nav_menu" nicename="menu"><![CDATA[menu]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[120]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+				<wp:meta_value><![CDATA[https://demo.themeisle.com/hestia-zelle/#team]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[obfx_menu_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Testimonials			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/03/25/testimonials/</link>
+			<pubDate>Mon, 25 Mar 2019 16:05:51 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-zelle/?p=121</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>121</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 16:05:51]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 16:05:51]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[testimonials]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>4</wp:menu_order>
+			<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="nav_menu" nicename="menu"><![CDATA[menu]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[121]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+				<wp:meta_value><![CDATA[https://demo.themeisle.com/hestia-zelle/#testimonials]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[obfx_menu_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-asia1			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-asia1/</link>
+			<pubDate>Tue, 02 Apr 2019 15:06:49 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-asia1.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>129</wp:post_id>
+			<wp:post_date><![CDATA[2019-04-02 15:06:49]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-04-02 15:06:49]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-asia1]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-asia1.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/04/zelle-asia1.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1045;s:6:"height";i:1045;s:4:"file";s:23:"2019/04/zelle-asia1.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:23:"zelle-asia1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:23:"zelle-asia1-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:23:"zelle-asia1-768x768.jpg";s:5:"width";i:768;s:6:"height";i:768;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:25:"zelle-asia1-1024x1024.jpg";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:23:"zelle-asia1-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"1";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-places-europe1			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-places-europe1/</link>
+			<pubDate>Tue, 02 Apr 2019 15:07:03 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-places-europe1.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>130</wp:post_id>
+			<wp:post_date><![CDATA[2019-04-02 15:07:03]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-04-02 15:07:03]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-places-europe1]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-places-europe1.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/04/zelle-places-europe1.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1033;s:6:"height";i:1030;s:4:"file";s:32:"2019/04/zelle-places-europe1.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:32:"zelle-places-europe1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:32:"zelle-places-europe1-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:32:"zelle-places-europe1-768x766.jpg";s:5:"width";i:768;s:6:"height";i:766;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:34:"zelle-places-europe1-1024x1021.jpg";s:5:"width";i:1024;s:6:"height";i:1021;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:32:"zelle-places-europe1-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"1";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-uk1			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-uk1/</link>
+			<pubDate>Tue, 02 Apr 2019 15:07:07 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-uk1.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>131</wp:post_id>
+			<wp:post_date><![CDATA[2019-04-02 15:07:07]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-04-02 15:07:07]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-uk1]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-uk1.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/04/zelle-uk1.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1132;s:6:"height";i:1135;s:4:"file";s:21:"2019/04/zelle-uk1.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:21:"zelle-uk1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:21:"zelle-uk1-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:21:"zelle-uk1-768x770.jpg";s:5:"width";i:768;s:6:"height";i:770;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:23:"zelle-uk1-1021x1024.jpg";s:5:"width";i:1021;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:21:"zelle-uk1-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"1";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-camper1			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-camper1/</link>
+			<pubDate>Tue, 02 Apr 2019 15:07:08 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-camper1.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>132</wp:post_id>
+			<wp:post_date><![CDATA[2019-04-02 15:07:08]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-04-02 15:07:08]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-camper1]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-camper1.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/04/zelle-camper1.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1027;s:6:"height";i:1026;s:4:"file";s:25:"2019/04/zelle-camper1.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:25:"zelle-camper1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:25:"zelle-camper1-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:25:"zelle-camper1-768x767.jpg";s:5:"width";i:768;s:6:"height";i:767;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:27:"zelle-camper1-1024x1024.jpg";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:25:"zelle-camper1-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"1";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				zelle-safari1			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/zelle-safari1/</link>
+			<pubDate>Tue, 02 Apr 2019 15:07:15 +0000</pubDate>
+			<guid isPermaLink="false">https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-safari1.jpg</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>133</wp:post_id>
+			<wp:post_date><![CDATA[2019-04-02 15:07:15]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-04-02 15:07:15]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[zelle-safari1]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/04/zelle-safari1.jpg]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2019/04/zelle-safari1.jpg]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1042;s:6:"height";i:1044;s:4:"file";s:25:"2019/04/zelle-safari1.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:25:"zelle-safari1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:25:"zelle-safari1-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:25:"zelle-safari1-768x769.jpg";s:5:"width";i:768;s:6:"height";i:769;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:27:"zelle-safari1-1022x1024.jpg";s:5:"width";i:1022;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/jpeg";}s:11:"hestia-blog";a:4:{s:4:"file";s:25:"zelle-safari1-360x240.jpg";s:5:"width";i:360;s:6:"height";i:240;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"1";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Blog			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/blog-hestia-zelle/</link>
+			<pubDate>Mon, 25 Mar 2019 15:30:50 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-zelle/blog/</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>5</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:30:50]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:30:50]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[blog-hestia-zelle]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[page]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[full-width]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Home			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/</link>
+			<pubDate>Mon, 25 Mar 2019 15:40:50 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-zelle/?page_id=14</guid>
+			<description></description>
+			<content:encoded><![CDATA[<h1>vacations are all about having the time of your life!</h1>
+			<a href="#focus" role="button">
+						Get the best offer
+					</a>
+			<h2>Taking you on great journeys</h2>
+			<h4>Pick your destination and we'll handle the rest.</h4>
+			<h3>city breaks</h3>
+		<p style="text-align: center;">If a City Break is a flight + accommodation, why would you need an agency? Because we offer you accommodation at a discounted price.</p>
+			<h3>Experience Nature</h3>
+		<p style="text-align: center;">Reconnect with nature, feel its freedom and enjoy the peace and quiet. See places untouched by the human hand and reflect on nature's beauty.</p>
+			<h3>mountain adventures</h3>
+		<p style="text-align: center;">You'll certainly remember the traditional villages, incredibly beautiful landscapes with white mountains and huge ski areas.</p>
+			<h2>Discover the world with us</h2>
+			<h4>For those who want vacations done the right way</h4>
+			12 Years Of Successful Vacation Planning
+		<p>On a constantly changing tourism market, it can sometimes be difficult to find a trusted partner. And when you analyze the services of an agency, you have to take into account several aspects - experience, diversity, prices, opinions of other tourists.</p><p>With over 12 years of experience, we offer both "traditional" and some more special destinations. Whether you want a vacation at the sea or skiing, a circuit in the country or abroad, an escape from the daily or a team building, Neve Agency consultants are ready to offer you irreproachable services at affordable prices.</p>
+				<h3>
+					Always available for assistance
+				</h3>
+				<p></p>
+				<h3>
+					Affordable exotic vacations
+				</h3>
+				<p></p>
+				<h3>
+					Customers are the core of our mission
+				</h3>
+				<p></p>
+			<h2>MEET OUR TRAVEL EXPERTS</h2>
+			<h4>They are the people working to provide you the best experiences.</h4>
+										<img width="350" height="350" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert1.jpg" alt="" srcset="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert1.jpg 350w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert1-150x150.jpg 150w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert1-300x300.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" />
+			<h3>TIMOTHY SPRAY</h3>
+		<p style="text-align: center;">City Break Expert</p><p style="text-align: center;">Hockey fan, foodie, audiophile, vintage furniture lover and passionate about urban photography. Working to provide the best city break offers so you don't have to stress about it. <em>"You should enjoy the city, not worry about the trip's details."</em></p>
+										<img width="350" height="350" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert2.jpg" alt="" srcset="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert2.jpg 350w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert2-150x150.jpg 150w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert2-300x300.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" />
+			<h3>ASHLEY SIMMONS</h3>
+		<p style="text-align: center;">Nature Trips Expert</p><p style="text-align: center;">Nature enthusiast, animal lover and passionate mountaineer. Your journey must be safe, efficient and convenient. <em>"My mission is to create an unforgettable holiday because time has an essential role in everyone's life."</em></p>
+										<img width="350" height="350" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert3.jpg" alt="" srcset="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert3.jpg 350w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert3-150x150.jpg 150w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert3-300x300.jpg 300w" sizes="(max-width: 350px) 100vw, 350px" />
+			<h3>Tony garcia</h3>
+		<p style="text-align: center;">Exotic Destinations Expert</p><p style="text-align: center;">Skydiver, rock climber, surfer, kiter and lover of exotic fruits. <em>"A "special" category of clients that I like is the newly married young people, whom I like to offer the journey of their lives in their honeymoon. A little something to help them get started."</em></p>
+			<h2>Happy Memories from our Travelers</h2>
+			<h4>Our extensive expertise will make sure that yours is a SUCCESS STORY!</h4>
+		<p style="text-align: left;">A wonderful experience, attentive staff and always at the disposal of tourists / clients. During the stay, we had only beautiful things, attentive staff, impeccable accommodation, food and beverages, from varied categories, for all tastes. Performances and evening entertainment both on the beach at the ocean and at the pools during the day.</p>
+		<p>David Lorem</p>
+										<img width="134" height="134" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial.jpg" alt="" />
+		<p style="text-align: left;">I had an unexpectedly successful holiday. The choice of hotel was very good, being one that offers everything you need for a pleasant holiday. The staff was very receptive, kind and attentive. The food was great for everyone. Transport to the most important points of interest was free of charge. Thank you Neve Agency for a wonderful holiday.</p>
+		<p>Linda Guthrie</p>
+										<img width="134" height="134" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial2.jpg" alt="" />
+		<p style="text-align: left;">I always stayed away from the Swiss resorts. Every winter I went to local slopes or the ones in Austria. I never wanted to spend a fortune on skiing. Out of curiosity I turned to Neve Agency and I spent for skiing in Switzerland as much as I did in Austria, although the Swiss alpine décor would have deserved spending much more.</p>
+		<p>Cynthia Henry</p>
+										<img width="134" height="134" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial3.jpg" alt="" />
+			<h2>Travel Tips</h2>
+			<h4>Be inspired by our blog</h4>
+			<article>
+						<a href="https://demo.themeisle.com/hestia-zelle/2019/02/07/top-5-places-to-visit-in-europe/" title="Top 5 places to visit in Europe">
+							<img width="764" height="509" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-places-europe1.jpg" alt="zelle-places-europe1" srcset="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-places-europe1.jpg 764w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-places-europe1-300x200.jpg 300w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-places-europe1-360x240.jpg 360w" sizes="(max-width: 764px) 100vw, 764px" />						</a>
+							<h2>
+							<a href="https://demo.themeisle.com/hestia-zelle/2019/02/07/top-5-places-to-visit-in-europe/" title="Top 5 places to visit in Europe">
+					Top 5 places to visit in Europe				</a>
+							</h2>
+			<!-- .obfx-grid-col-content --></article><article>
+						<a href="https://demo.themeisle.com/hestia-zelle/2019/02/07/avoid-rainy-season-in-uk/" title="Avoid rainy season in UK">
+							<img width="764" height="509" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-uk1.jpg" alt="zelle-uk1" srcset="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-uk1.jpg 764w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-uk1-300x200.jpg 300w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-uk1-360x240.jpg 360w" sizes="(max-width: 764px) 100vw, 764px" />						</a>
+							<h2>
+							<a href="https://demo.themeisle.com/hestia-zelle/2019/02/07/avoid-rainy-season-in-uk/" title="Avoid rainy season in UK">
+					Avoid rainy season in UK				</a>
+							</h2>
+			<!-- .obfx-grid-col-content --></article><article>
+						<a href="https://demo.themeisle.com/hestia-zelle/2019/02/07/the-3-safaris-you-must-experience/" title="The 3 Safaris you must experience">
+							<img width="764" height="509" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-safari1.jpg" alt="zelle-safari1" srcset="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-safari1.jpg 764w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-safari1-300x200.jpg 300w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-safari1-360x240.jpg 360w" sizes="(max-width: 764px) 100vw, 764px" />						</a>
+							<h2>
+							<a href="https://demo.themeisle.com/hestia-zelle/2019/02/07/the-3-safaris-you-must-experience/" title="The 3 Safaris you must experience">
+					The 3 Safaris you must experience				</a>
+							</h2>
+			<!-- .obfx-grid-col-content --></article><article>
+						<a href="https://demo.themeisle.com/hestia-zelle/2019/02/07/10-pet-friendly-place-to-visit-this-summer/" title="10 pet friendly places to visit this summer">
+							<img width="1071" height="1071" src="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-pet-friendly1.jpg" alt="zelle-pet-friendly1" srcset="https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-pet-friendly1.jpg 1071w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-pet-friendly1-150x150.jpg 150w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-pet-friendly1-300x300.jpg 300w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-pet-friendly1-768x768.jpg 768w, https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/02/zelle-pet-friendly1-1024x1024.jpg 1024w" sizes="(max-width: 1071px) 100vw, 1071px" />						</a>
+							<h2>
+							<a href="https://demo.themeisle.com/hestia-zelle/2019/02/07/10-pet-friendly-place-to-visit-this-summer/" title="10 pet friendly places to visit this summer">
+					10 pet friendly places to visit this summer				</a>
+							</h2>
+			<!-- .obfx-grid-col-content --></article><!-- .obfx-grid-container --><!-- .obfx-grid -->
+			<h2>Any inquiries?</h2>
+			<h4>We are here for you, 24/7, to help you and reply within the hour.</h4>
+			<form action="https://demo.themeisle.com/hestia-zelle/wp-admin/admin-post.php" method="post" name="content-form-7ea85fed" id="content-form-7ea85fed"><input type="hidden" id="_wpnonce_contact" name="_wpnonce_contact" value="84b917b417" /><input type="hidden" name="_wp_http_referer" value="/hestia-zelle/wp-admin/admin-ajax.php" /><input type="hidden" name="action" value="content_form_submit" /><input type="hidden" name="form-type" value="contact" /><input type="hidden" name="form-builder" value="elementor" /><input type="hidden" name="post-id" value="105" /><input type="hidden" name="form-id" value="7ea85fed" />
+        <fieldset>
+            <label for="data[7ea85fed][name]"
+				>
+				            </label>
+			                    <input type="text" name="data[7ea85fed][name]" id="data[7ea85fed][name]"
+						  placeholder="Name">
+					        </fieldset>
+        <fieldset>
+            <label for="data[7ea85fed][email]"
+				>
+				            </label>
+			                    <input type="text" name="data[7ea85fed][email]" id="data[7ea85fed][email]"
+						  placeholder="Email (@)">
+					        </fieldset>
+        <fieldset>
+            <label for="data[7ea85fed][phone]"
+				>
+				            </label>
+			                    <input type="text" name="data[7ea85fed][phone]" id="data[7ea85fed][phone]"
+						  placeholder="Phone (+4...)">
+					        </fieldset>
+        <fieldset>
+            <label for="data[7ea85fed][message]"
+				>
+				            </label>
+			                    <textarea name="data[7ea85fed][message]" id="data[7ea85fed][message]"
+												                              placeholder="I&#039;d like to know what are your offers for..."
+                              cols="30" rows="5"></textarea>
+					        </fieldset>
+		        <fieldset>
+            <button type="submit" name="submit" value="submit-contact-7ea85fed">
+	            Send message                            </button>
+        </fieldset>
+		</form>
+			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=povernei%2020%2C%20Bucharest&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" aria-label="povernei 20, Bucharest"></iframe>
+		<p>AGENCY LOCATION<br />Downtown Bucharest </p><p>MON-FRI: 10 - 17<br />SAT: 10 - 14</p>
+		<p>GET OUR LATEST OFFERS</p>
+		<p>24/7 ASSISTANCE<br />+40 332 548 987</p>
+							<a href="" target="_blank">
+					Facebook
+				</a>
+							<a href="" target="_blank">
+					Twitter
+				</a>
+							<a href="" target="_blank">
+					Linkedin
+				</a>
+							<a href="" target="_blank">
+					Behance
+				</a>
+							<a href="" target="_blank">
+					Dribbble
+				</a>
+							<a href="" target="_blank">
+					Instagram
+				</a>
+		<p style="text-align: center;">© 2019 Travel Agency</p>]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>14</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 15:40:50]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 15:40:50]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[home-hestia-zelle]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[page]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[page-templates/template-pagebuilder-full-width.php]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[full-width]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+				<wp:meta_value><![CDATA[builder]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[post]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
+				<wp:meta_value><![CDATA[[{"id":"7f088533","elType":"section","settings":{"content_position":"middle","background_background":"classic","background_image":{"id":6,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/neve-zelle-hero-image.jpg"},"background_position":"top center","background_attachment":"fixed","background_overlay_background":"classic","background_overlay_color":"#000000","margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":true},"padding":{"unit":"px","top":"175","right":"0","bottom":"200","left":"0","isLinked":false},"background_size":"auto","padding_mobile":{"unit":"px","top":"90","right":"0","bottom":"100","left":"0","isLinked":false},"content_width":{"unit":"px","size":1140},"background_overlay_opacity":{"unit":"px","size":0.6}},"elements":[{"id":"5266d922","elType":"column","settings":{"_column_size":100},"elements":[{"id":"4160a406","elType":"widget","settings":{"title":"vacations are all about having the time of your life!","title_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":55},"typography_text_transform":"uppercase","_css_classes":"intro-text","align":"center","header_size":"h1","typography_font_family":"Montserrat","typography_font_weight":"700","typography_line_height":{"unit":"px","size":65},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"typography_font_size_mobile":{"unit":"px","size":32},"typography_line_height_mobile":{"unit":"px","size":37},"_margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"_margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"_padding_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"_padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"heading"},{"id":"76fbc88c","elType":"section","settings":{"margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":true},"padding":{"unit":"px","top":"30","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"c06d0c9","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"1eb921ae","elType":"widget","settings":{"text":"Get the best offer","align":"center","size":"lg","typography_typography":"custom","typography_font_size":{"unit":"px","size":14},"typography_text_transform":"uppercase","background_color":"#e96656","button_background_hover_color":"#cb4332","align_mobile":"center","typography_font_weight":"300","button_text_color":"#ffffff","hover_color":"#ffffff","link":{"url":"#focus","is_external":"","nofollow":""},"icon":"fa fa-angle-right","icon_indent":{"unit":"px","size":10}},"elements":[],"widgetType":"button"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"3d182178","elType":"section","settings":{"margin":{"unit":"px","top":"","right":0,"bottom":"","left":0,"isLinked":true},"background_background":"classic","padding":{"unit":"px","top":"100","right":"0","bottom":"100","left":"0","isLinked":false},"background_color":"#ffffff","margin_mobile":{"unit":"px","top":"","right":0,"bottom":"","left":0,"isLinked":true},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"content_width":{"unit":"px","size":1140}},"elements":[{"id":"4d4d2ccb","elType":"column","settings":{"_column_size":100},"elements":[{"id":"5def010a","elType":"widget","settings":{"anchor":"focus"},"elements":[],"widgetType":"menu-anchor"},{"id":"70e41003","elType":"widget","settings":{"title":"Taking you on great journeys","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":45},"typography_text_transform":"uppercase","align":"center","typography_font_family":"Montserrat","typography_font_weight":"700","typography_line_height":{"unit":"px","size":""},"typography_font_size_mobile":{"unit":"px","size":22},"typography_line_height_mobile":{"unit":"px","size":40},"_margin_tablet":{"unit":"px","top":"50","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"heading"},{"id":"5816cec9","elType":"widget","settings":{"title":"Pick your destination and we'll handle the rest.","header_size":"h4","title_color":"#000000","typography_typography":"custom","typography_font_size":{"unit":"px","size":16},"_margin":{"unit":"px","top":"0","right":"0","bottom":"50","left":"0","isLinked":false},"align":"center","typography_font_family":"Lato","typography_font_weight":"400","typography_font_size_mobile":{"unit":"px","size":16},"typography_line_height_mobile":{"unit":"px","size":24}},"elements":[],"widgetType":"heading"},{"id":"4a776bcd","elType":"section","settings":{"structure":"30","animation_duration":"slow","gap":"extended"},"elements":[{"id":"7de9028b","elType":"column","settings":{"_column_size":33,"_inline_size":null,"_inline_size_tablet":50,"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"1275fcf1","elType":"widget","settings":{"icon":"fa fa-plane","view":"framed","primary_color":"#e96656","size":{"unit":"px","size":55},"border_width":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true}},"elements":[],"widgetType":"icon"},{"id":"4e7f29e","elType":"widget","settings":{"title":"city breaks","header_size":"h3","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":17},"typography_font_weight":"bold","typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"-5","left":"0","isLinked":false},"align":"center"},"elements":[],"widgetType":"heading"},{"id":"572eed58","elType":"widget","settings":{"weight":{"unit":"px","size":2},"color":"#e96656","width":{"unit":"px","size":110},"gap":{"unit":"px","size":2},"align":"center","_margin_tablet":{"unit":"px","top":"037","right":"0","bottom":"0","left":"0","isLinked":false},"_margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true}},"elements":[],"widgetType":"divider"},{"id":"7328c299","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">If a City Break is a flight + accommodation, why would you need an agency? Because we offer you accommodation at a discounted price.<\/p>","text_color":"#808080","typography_typography":"custom","typography_font_size":{"unit":"px","size":14},"align":"left"},"elements":[],"widgetType":"text-editor"}],"isInner":true},{"id":"36c5f089","elType":"column","settings":{"_column_size":33,"_inline_size":null,"_inline_size_tablet":50,"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"49c35f91","elType":"widget","settings":{"icon":"fa fa-leaf","view":"framed","primary_color":"#34d293","size":{"unit":"px","size":55},"border_width":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true}},"elements":[],"widgetType":"icon"},{"id":"7ebac448","elType":"widget","settings":{"title":"Experience Nature","header_size":"h3","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":17},"typography_font_weight":"bold","typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"-5","left":"0","isLinked":false},"align":"center"},"elements":[],"widgetType":"heading"},{"id":"b241bea","elType":"widget","settings":{"weight":{"unit":"px","size":2},"color":"#34d293","width":{"unit":"px","size":110},"gap":{"unit":"px","size":2},"align":"center","_margin_tablet":{"unit":"px","top":"37","right":"0","bottom":"0","left":"0","isLinked":false},"_margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true}},"elements":[],"widgetType":"divider"},{"id":"6594aaec","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">Reconnect with nature, feel its freedom and enjoy the peace and quiet. See places untouched by the human hand and reflect on nature's beauty.<\/p>","text_color":"#808080","typography_typography":"custom","typography_font_size":{"unit":"px","size":14}},"elements":[],"widgetType":"text-editor"}],"isInner":true},{"id":"67882994","elType":"column","settings":{"_column_size":33,"_inline_size":null,"_inline_size_tablet":100,"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"margin_tablet":{"unit":"%","top":"0","right":"25","bottom":"0","left":"25","isLinked":false},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"6b8a2a20","elType":"widget","settings":{"icon":"fa fa-tree","view":"framed","primary_color":"#3ab0e2","size":{"unit":"px","size":55},"border_width":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true}},"elements":[],"widgetType":"icon"},{"id":"336dd7f0","elType":"widget","settings":{"title":"mountain adventures","header_size":"h3","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":17},"typography_font_weight":"bold","typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"-5","left":"0","isLinked":false},"align":"center"},"elements":[],"widgetType":"heading"},{"id":"4c7b44ba","elType":"widget","settings":{"weight":{"unit":"px","size":2},"color":"#3ab0e2","width":{"unit":"px","size":110},"gap":{"unit":"px","size":2},"align":"center","width_tablet":{"unit":"px","size":100},"_margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true}},"elements":[],"widgetType":"divider"},{"id":"2d8aaa35","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">You'll certainly remember the traditional villages, incredibly beautiful landscapes with white mountains and huge ski areas.<\/p>","text_color":"#808080","typography_typography":"custom","typography_font_size":{"unit":"px","size":14}},"elements":[],"widgetType":"text-editor"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"38d9953e","elType":"section","settings":{"layout":"full_width","background_background":"classic","background_color":"#272727","padding":{"unit":"px","top":"80","right":"0","bottom":"70","left":"0","isLinked":false},"margin_mobile":{"unit":"px","top":"","right":0,"bottom":"","left":0,"isLinked":true},"padding_mobile":{"unit":"px","top":"40","right":"0","bottom":"35","left":"0","isLinked":false},"background_image":{"id":6,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/neve-zelle-hero-image.jpg"},"background_position":"top center","background_attachment":"fixed","background_repeat":"no-repeat","background_size":"cover","background_overlay_background":"gradient","background_overlay_color":"rgba(0,0,0,0)","background_overlay_color_b":"#272727","background_overlay_color_b_stop":{"unit":"%","size":0},"background_overlay_opacity":{"unit":"px","size":0.8}},"elements":[{"id":"75a87727","elType":"column","settings":{"_column_size":100},"elements":[{"id":"11012ce7","elType":"widget","settings":{"anchor":"about"},"elements":[],"widgetType":"menu-anchor"},{"id":"3181b393","elType":"section","settings":{"margin_mobile":{"unit":"px","top":"","right":0,"bottom":"","left":0,"isLinked":true}},"elements":[{"id":"44ab1f7b","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"459cb675","elType":"widget","settings":{"title":"Discover the world with us","title_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":45},"typography_text_transform":"uppercase","align":"center","typography_font_family":"Montserrat","typography_font_weight":"700","typography_line_height":{"unit":"px","size":""},"typography_font_size_mobile":{"unit":"px","size":22}},"elements":[],"widgetType":"heading"},{"id":"37cd35ac","elType":"widget","settings":{"title":"For those who want vacations done the right way","header_size":"h4","title_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":16},"_margin":{"unit":"px","top":"0","right":"0","bottom":"50","left":"0","isLinked":false},"align":"center","typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":24},"_margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true}},"elements":[],"widgetType":"heading"}],"isInner":true}],"isInner":true},{"id":"78b71b8d","elType":"section","settings":{"structure":"30"},"elements":[{"id":"3a619653","elType":"column","settings":{"_column_size":33,"_inline_size":null},"elements":[{"id":"230a71e6","elType":"widget","settings":{"title":"12 Years Of Successful Vacation Planning","header_size":"div","align":"right","title_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":60},"typography_font_weight":"300","align_mobile":"center","_animation":"fadeInLeft","typography_font_size_tablet":{"unit":"px","size":45},"typography_font_family":"Lato","typography_font_size_mobile":{"unit":"px","size":27},"typography_line_height_mobile":{"unit":"px","size":35},"typography_line_height":{"unit":"px","size":70}},"elements":[],"widgetType":"heading"}],"isInner":true},{"id":"460a6ffb","elType":"column","settings":{"_column_size":33,"_inline_size":null},"elements":[{"id":"7797f0e2","elType":"widget","settings":{"editor":"<p>On a constantly changing tourism market, it can sometimes be difficult to find a trusted partner. And when you analyze the services of an agency, you have to take into account several aspects - experience, diversity, prices, opinions of other tourists.<\/p><p>With over 12 years of experience, we offer both \"traditional\" and some more special destinations. Whether you want a vacation at the sea or skiing, a circuit in the country or abroad, an escape from the daily or a team building, Neve Agency consultants are ready to offer you irreproachable services at affordable prices.<\/p>","align":"left","text_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":14},"typography_line_height":{"unit":"px","size":25},"align_mobile":"center","_animation":"fadeInUp","typography_font_size_tablet":{"unit":"px","size":13},"typography_font_family":"Lato","typography_font_weight":"400","typography_font_size_mobile":{"unit":"px","size":14}},"elements":[],"widgetType":"text-editor"}],"isInner":true},{"id":"220c54b6","elType":"column","settings":{"_column_size":33,"_inline_size":null,"animation":"fadeInRight","content_position":"top"},"elements":[{"id":"66597a7f","elType":"widget","settings":{"icon":"fa fa-volume-control-phone","title_text":"Always available for assistance","description_text":"","primary_color":"#e96656","icon_space":{"unit":"px","size":5},"icon_size":{"unit":"px","size":30},"content_vertical_alignment":"bottom","title_color":"#ffffff","title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":16},"title_typography_font_weight":"bold","title_typography_text_transform":"uppercase","view":"framed","icon_padding":{"unit":"px","size":10},"text_align_mobile":"center"},"elements":[],"widgetType":"icon-box"},{"id":"29b2949b","elType":"widget","settings":{"icon":"fa fa-dollar","title_text":"Affordable exotic vacations","description_text":"","primary_color":"#34d293","icon_space":{"unit":"px","size":5},"icon_size":{"unit":"px","size":30},"content_vertical_alignment":"bottom","title_color":"#ffffff","title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":16},"title_typography_font_weight":"bold","title_typography_text_transform":"uppercase","view":"framed","icon_padding":{"unit":"px","size":10},"text_align_mobile":"center"},"elements":[],"widgetType":"icon-box"},{"id":"6c1e761a","elType":"widget","settings":{"icon":"fa fa-user","title_text":"Customers are the core of our mission","description_text":"","primary_color":"#3ab0e2","icon_space":{"unit":"px","size":5},"icon_size":{"unit":"px","size":30},"content_vertical_alignment":"bottom","title_color":"#ffffff","title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":16},"title_typography_font_weight":"bold","title_typography_text_transform":"uppercase","view":"framed","icon_padding":{"unit":"px","size":10},"text_align_mobile":"center"},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"96699c4","elType":"section","settings":{"margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"background_hover_transition":{"unit":"px","size":""},"padding":{"unit":"px","top":"100","right":"0","bottom":"120","left":"0","isLinked":false},"margin_mobile":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"padding_mobile":{"unit":"px","top":"50","right":"0","bottom":"60","left":"0","isLinked":false},"background_background":"classic","background_color":"#ffffff"},"elements":[{"id":"4d4b4aa1","elType":"column","settings":{"_column_size":100,"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true}},"elements":[{"id":"490eaee2","elType":"widget","settings":{"anchor":"team"},"elements":[],"widgetType":"menu-anchor"},{"id":"5981aa39","elType":"widget","settings":{"title":"MEET OUR TRAVEL EXPERTS","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":45},"typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"align":"center","typography_font_family":"Montserrat","typography_font_weight":"700","typography_font_size_mobile":{"unit":"px","size":22}},"elements":[],"widgetType":"heading"},{"id":"5df08d47","elType":"widget","settings":{"title":"They are the people working to provide you the best experiences.","header_size":"h4","title_color":"#000000","typography_typography":"custom","typography_font_size":{"unit":"px","size":16},"_margin":{"unit":"px","top":"0","right":"0","bottom":"50","left":"0","isLinked":false},"align":"center","typography_font_family":"Lato","typography_font_weight":"400","typography_line_height_mobile":{"unit":"px","size":24}},"elements":[],"widgetType":"heading"},{"id":"2898bbc4","elType":"section","settings":{"structure":"30","animation":"slideInLeft","animation_duration":"fast","text_align":"center","margin_mobile":{"unit":"px","top":"","right":0,"bottom":"","left":0,"isLinked":true}},"elements":[{"id":"3964c75","elType":"column","settings":{"_column_size":33,"_inline_size":null,"text_align":"center"},"elements":[{"id":"4fe5ef8f","elType":"widget","settings":{"image":{"id":7,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert1.jpg"},"image_size":"full","image_border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"image_border_color":"#ececec","image_border_radius":{"unit":"%","top":"50","right":"50","bottom":"50","left":"50","isLinked":true},"_margin":{"unit":"px","top":"0","right":"40","bottom":"30","left":"40","isLinked":false},"_border_hover_color":"#e96656","_margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"_margin_mobile":{"unit":"px","top":"0","right":"60","bottom":"0","left":"60","isLinked":false},"_border_color":"#ececec","align":"center","align_tablet":"center","align_mobile":"center","width":{"unit":"px","size":175},"image_border_border":"solid"},"elements":[],"widgetType":"image"},{"id":"5534fa60","elType":"widget","settings":{"title":"TIMOTHY SPRAY","header_size":"h3","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":17},"typography_font_weight":"700","typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"typography_font_family":"Lato","typography_line_height":{"unit":"px","size":26}},"elements":[],"widgetType":"heading"},{"id":"5678452d","elType":"widget","settings":{"weight":{"unit":"px","size":2},"color":"#e96656","width":{"unit":"px","size":105},"gap":{"unit":"px","size":0},"_margin":{"unit":"px","top":"-15","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"divider"},{"id":"2df2ba01","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">City Break Expert<\/p>","text_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":13},"_margin":{"unit":"px","top":"-20","right":"0","bottom":"0","left":"0","isLinked":false},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":""}},"elements":[],"widgetType":"text-editor"},{"id":"60d92dcc","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">Hockey fan, foodie, audiophile, vintage furniture lover and passionate about urban photography. Working to provide the best city break offers so you don't have to stress about it. <em>\"You should enjoy the city, not worry about the trip's details.\"<\/em><\/p>","text_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":13},"typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":""}},"elements":[],"widgetType":"text-editor"}],"isInner":true},{"id":"b4cbb32","elType":"column","settings":{"_column_size":33,"_inline_size":null,"text_align":"center"},"elements":[{"id":"16ccd55d","elType":"widget","settings":{"image":{"id":8,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert2.jpg"},"image_size":"full","image_border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"image_border_color":"#ececec","image_border_radius":{"unit":"%","top":"100","right":"100","bottom":"100","left":"100","isLinked":true},"_margin":{"unit":"px","top":"0","right":"40","bottom":"30","left":"40","isLinked":false},"_border_hover_color":"#e96656","_margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"_margin_mobile":{"unit":"px","top":"0","right":"60","bottom":"0","left":"60","isLinked":false},"_border_color":"#ececec","align":"center","align_tablet":"center","align_mobile":"center","width":{"unit":"px","size":175},"image_border_border":"solid"},"elements":[],"widgetType":"image"},{"id":"2f63c2e6","elType":"widget","settings":{"title":"ASHLEY SIMMONS","header_size":"h3","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":17},"typography_font_weight":"700","typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"typography_font_family":"Lato","typography_line_height":{"unit":"px","size":26}},"elements":[],"widgetType":"heading"},{"id":"4ade6cf0","elType":"widget","settings":{"weight":{"unit":"px","size":2},"color":"#34d293","width":{"unit":"px","size":100},"gap":{"unit":"px","size":0},"_margin":{"unit":"px","top":"-15","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"divider"},{"id":"37fcedcd","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">Nature Trips Expert<\/p>","text_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":13},"_margin":{"unit":"px","top":"-20","right":"0","bottom":"0","left":"0","isLinked":false},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":""}},"elements":[],"widgetType":"text-editor"},{"id":"59cae6f5","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">Nature enthusiast, animal lover and passionate mountaineer.\u00a0Your journey must be safe, efficient and convenient. <em>\"My mission is to create an unforgettable holiday because time has an essential role in everyone's life.\"<\/em><\/p>","text_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":13},"typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":""}},"elements":[],"widgetType":"text-editor"}],"isInner":true},{"id":"2e4506b1","elType":"column","settings":{"_column_size":33,"_inline_size":null,"text_align":"center"},"elements":[{"id":"5c5d2d67","elType":"widget","settings":{"image":{"id":9,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-expert3.jpg"},"image_size":"full","image_border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"image_border_color":"#ececec","image_border_radius":{"unit":"%","top":"100","right":"100","bottom":"100","left":"100","isLinked":true},"_margin":{"unit":"px","top":"0","right":"40","bottom":"30","left":"40","isLinked":false},"_border_hover_color":"#e96656","_margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"_margin_mobile":{"unit":"px","top":"0","right":"60","bottom":"0","left":"60","isLinked":false},"_border_color":"#ececec","align":"center","align_tablet":"center","align_mobile":"center","width":{"unit":"px","size":175},"image_border_border":"solid"},"elements":[],"widgetType":"image"},{"id":"348cbb9d","elType":"widget","settings":{"title":"Tony garcia","header_size":"h3","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":17},"typography_font_weight":"700","typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"typography_font_family":"Lato","typography_line_height":{"unit":"px","size":26}},"elements":[],"widgetType":"heading"},{"id":"63d9d228","elType":"widget","settings":{"weight":{"unit":"px","size":2},"color":"#3ab0e2","width":{"unit":"px","size":95},"gap":{"unit":"px","size":0},"_margin":{"unit":"px","top":"-15","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"divider"},{"id":"76d34cb7","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">Exotic Destinations Expert<\/p>","text_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":13},"_margin":{"unit":"px","top":"-20","right":"0","bottom":"0","left":"0","isLinked":false},"_padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":""}},"elements":[],"widgetType":"text-editor"},{"id":"5cd97e03","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">Skydiver, rock climber, surfer, kiter and lover of exotic fruits. <em>\"A \"special\" category of clients that I like is the newly married young people, whom I like to offer the journey of their lives in their honeymoon. A little something to help them get started.\"<\/em><\/p>","text_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":13},"typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":""}},"elements":[],"widgetType":"text-editor"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"41a6217d","elType":"section","settings":{"background_background":"classic","background_color":"#e96656","margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"padding":{"unit":"px","top":"100","right":"0","bottom":"100","left":"0","isLinked":false},"_element_id":"testimonials","margin_mobile":{"unit":"px","top":"","right":0,"bottom":"","left":0,"isLinked":true},"padding_mobile":{"unit":"px","top":"50","right":"0","bottom":"45","left":"0","isLinked":false}},"elements":[{"id":"2c485036","elType":"column","settings":{"_column_size":100,"_inline_size":null,"animation_duration":"slow","animation_delay":700,"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding_mobile":{"unit":"px","top":"0","right":"30","bottom":"0","left":"30","isLinked":false}},"elements":[{"id":"47581d40","elType":"widget","settings":{"anchor":"testimonials"},"elements":[],"widgetType":"menu-anchor"},{"id":"3c2339b0","elType":"widget","settings":{"title":"Happy Memories from our Travelers","title_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":45},"typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"align":"center","typography_font_family":"Montserrat","typography_font_weight":"700","typography_font_size_mobile":{"unit":"px","size":22}},"elements":[],"widgetType":"heading"},{"id":"3d310ab4","elType":"widget","settings":{"title":"Our extensive expertise will make sure that yours is a SUCCESS STORY!","header_size":"h4","title_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":16},"_margin":{"unit":"px","top":"0","right":"0","bottom":"75","left":"0","isLinked":false},"align":"center","typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":""},"typography_line_height_mobile":{"unit":"px","size":24}},"elements":[],"widgetType":"heading"},{"id":"254cf93b","elType":"section","settings":{"structure":"30","animation":"fadeInRight","gap":"no"},"elements":[{"id":"12f82845","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#ffffff","border_radius":{"unit":"px","top":"4","right":"4","bottom":"4","left":"4","isLinked":true},"margin":{"unit":"px","top":"0","right":"13","bottom":"0","left":"13","isLinked":false},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"15","left":"0","isLinked":false},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true},"_inline_size_tablet":50},"elements":[{"id":"688287d2","elType":"widget","settings":{"editor":"<p style=\"text-align: left;\">A wonderful experience, attentive staff and always at the disposal of tourists \/ clients. During the stay, we had only beautiful things, attentive staff, impeccable accommodation, food and beverages, from varied categories, for all tastes. Performances and evening entertainment both on the beach at the ocean and at the pools during the day.<\/p>","text_color":"#000000","typography_typography":"custom","typography_font_size":{"unit":"px","size":15},"typography_line_height":{"unit":"em","size":1.5},"_padding":{"unit":"px","top":"0","right":"0","bottom":"30","left":"0","isLinked":false},"_background_background":"classic","typography_font_family":"Lato","typography_font_weight":"400"},"elements":[],"widgetType":"text-editor"},{"id":"638906ed","elType":"widget","settings":{"icon":"fa fa-quote-left","align":"left","align_tablet":"left","primary_color":"#e96656","_margin":{"unit":"px","top":"0","right":"0","bottom":"-80","left":"0","isLinked":false},"_margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"-65","left":"0","isLinked":false}},"elements":[],"widgetType":"icon"},{"id":"6538a670","elType":"widget","settings":{"editor":"<p>David Lorem<\/p>","align":"center","text_color":"#404040","typography_typography":"custom","typography_font_family":"Homemade Apple","typography_font_size":{"unit":"px","size":16},"typography_font_weight":"400"},"elements":[],"widgetType":"text-editor"},{"id":"10f03d69","elType":"widget","settings":{"image":{"id":10,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial.jpg"},"align":"right","width":{"unit":"px","size":67},"image_border_border":"solid","image_border_width":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":true},"image_border_color":"#f6f6f6","image_border_radius":{"unit":"%","top":"100","right":"100","bottom":"100","left":"100","isLinked":true},"_margin":{"unit":"px","top":"-60","right":"0","bottom":"0","left":"0","isLinked":false},"image_size":"full"},"elements":[],"widgetType":"image"}],"isInner":true},{"id":"3ab5d282","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#ffffff","border_radius":{"unit":"px","top":"4","right":"4","bottom":"4","left":"4","isLinked":true},"margin":{"unit":"px","top":"0","right":"13","bottom":"0","left":"13","isLinked":false},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"15","left":"0","isLinked":false},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true},"_inline_size_tablet":50},"elements":[{"id":"330b0f","elType":"widget","settings":{"editor":"<p style=\"text-align: left;\">I had an unexpectedly successful holiday. The choice of hotel was very good, being one that offers everything you need for a pleasant holiday. The staff was very receptive, kind and attentive. The food was great for everyone. Transport to the most important points of interest was free of charge. Thank you Neve Agency for a wonderful holiday.<\/p>","text_color":"#000000","typography_typography":"custom","typography_font_size":{"unit":"px","size":15},"typography_line_height":{"unit":"em","size":1.5},"_padding":{"unit":"px","top":"0","right":"0","bottom":"30","left":"0","isLinked":false},"_background_background":"classic","typography_font_family":"Lato","typography_font_weight":"400"},"elements":[],"widgetType":"text-editor"},{"id":"1537a44e","elType":"widget","settings":{"icon":"fa fa-quote-left","align":"left","align_tablet":"left","primary_color":"#e96656","_margin":{"unit":"px","top":"0","right":"0","bottom":"-80","left":"0","isLinked":false},"_margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"-65","left":"0","isLinked":false}},"elements":[],"widgetType":"icon"},{"id":"dd66437","elType":"widget","settings":{"editor":"<p>Linda Guthrie<\/p>","align":"center","text_color":"#404040","typography_typography":"custom","typography_font_family":"Homemade Apple","typography_font_size":{"unit":"px","size":16},"typography_font_weight":"400"},"elements":[],"widgetType":"text-editor"},{"id":"2629d05a","elType":"widget","settings":{"image":{"id":11,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial2.jpg"},"align":"right","width":{"unit":"px","size":67},"image_border_border":"solid","image_border_width":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":true},"image_border_color":"#f6f6f6","image_border_radius":{"unit":"%","top":"50","right":"50","bottom":"50","left":"50","isLinked":true},"_margin":{"unit":"px","top":"-60","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"image"}],"isInner":true},{"id":"536b3a27","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#ffffff","border_radius":{"unit":"px","top":"4","right":"4","bottom":"4","left":"4","isLinked":true},"margin":{"unit":"px","top":"0","right":"13","bottom":"0","left":"13","isLinked":false},"margin_mobile":{"unit":"px","top":"0","right":"0","bottom":"15","left":"0","isLinked":false},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true},"_inline_size_tablet":100,"margin_tablet":{"unit":"%","top":"3","right":"25","bottom":"0","left":"25","isLinked":false}},"elements":[{"id":"7698bc00","elType":"widget","settings":{"editor":"<p style=\"text-align: left;\">I always stayed away from the Swiss resorts. Every winter I went to local slopes or the ones in Austria. I never wanted to spend a fortune on skiing. Out of curiosity I turned to Neve Agency and I spent for skiing in Switzerland as much as I did in Austria, although the Swiss alpine d\u00e9cor would have deserved spending much more.<\/p>","text_color":"#000000","typography_typography":"custom","typography_font_size":{"unit":"px","size":15},"typography_line_height":{"unit":"em","size":1.5},"_padding":{"unit":"px","top":"0","right":"0","bottom":"30","left":"0","isLinked":false},"_background_background":"classic","typography_font_family":"Lato","typography_font_weight":"400"},"elements":[],"widgetType":"text-editor"},{"id":"3302542a","elType":"widget","settings":{"icon":"fa fa-quote-left","align":"left","align_tablet":"left","primary_color":"#e96656","_margin":{"unit":"px","top":"0","right":"0","bottom":"-80","left":"0","isLinked":false},"_margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"-65","left":"0","isLinked":false}},"elements":[],"widgetType":"icon"},{"id":"b48d2ef","elType":"widget","settings":{"editor":"<p><span>Cynthia Henry<\/span><\/p>","align":"center","text_color":"#404040","typography_typography":"custom","typography_font_family":"Homemade Apple","typography_font_size":{"unit":"px","size":16},"typography_font_weight":"400"},"elements":[],"widgetType":"text-editor"},{"id":"5752a93","elType":"widget","settings":{"image":{"id":12,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/zelle-testimonial3.jpg"},"align":"right","width":{"unit":"px","size":67},"image_border_border":"solid","image_border_width":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":true},"image_border_color":"#f6f6f6","image_border_radius":{"unit":"%","top":"50","right":"50","bottom":"50","left":"50","isLinked":true},"_margin":{"unit":"px","top":"-60","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"image"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"3e82470d","elType":"section","settings":{"margin":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"background_hover_transition":{"unit":"px","size":""},"padding":{"unit":"px","top":"100","right":"0","bottom":"120","left":"0","isLinked":false},"margin_mobile":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":false},"padding_mobile":{"unit":"px","top":"50","right":"0","bottom":"60","left":"0","isLinked":false},"background_background":"classic","background_color":"#ffffff"},"elements":[{"id":"133affa0","elType":"column","settings":{"_column_size":100,"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true}},"elements":[{"id":"38f20a3","elType":"widget","settings":{"anchor":"tips"},"elements":[],"widgetType":"menu-anchor"},{"id":"5b0f9bd","elType":"widget","settings":{"title":"Travel Tips","title_color":"#404040","typography_typography":"custom","typography_font_size":{"unit":"px","size":45},"typography_text_transform":"uppercase","_margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"align":"center","typography_font_family":"Montserrat","typography_font_weight":"700","typography_font_size_mobile":{"unit":"px","size":22}},"elements":[],"widgetType":"heading"},{"id":"1681c4ee","elType":"widget","settings":{"title":"Be inspired by our blog","header_size":"h4","title_color":"#000000","typography_typography":"custom","typography_font_size":{"unit":"px","size":16},"_margin":{"unit":"px","top":"0","right":"0","bottom":"50","left":"0","isLinked":false},"align":"center","typography_font_family":"Lato","typography_font_weight":"400","typography_line_height_mobile":{"unit":"px","size":24}},"elements":[],"widgetType":"heading"},{"id":"6fafe11","elType":"widget","settings":{"grid_items":4,"grid_columns":"4","grid_order_by":"rand","grid_meta_display":[],"grid_content_hide":"yes","grid_content_default_btn":"","grid_content_default_btn_text":"Read more","grid_content_alignment":"center","grid_image_style_border_radius":{"unit":"%","top":"","right":"","bottom":"","left":"","isLinked":true},"grid_title_style_typography_typography":"custom","grid_title_style_typography_font_family":"Lato","grid_title_style_typography_font_size":{"unit":"px","size":16},"grid_title_style_typography_font_weight":"700","grid_title_style_typography_text_transform":"uppercase","grid_title_style_color":"#404040","grid_post_categories":"tips","_animation":"slideInLeft","animation_duration":"fast"},"elements":[],"widgetType":"obfx-posts-grid"}],"isInner":false}],"isInner":false},{"id":"ce19823","elType":"section","settings":{"background_background":"classic","background_image":{"id":6,"url":"https://s20206.pcdn.co/hestia-zelle/wp-content/uploads/sites/191/2019/03/neve-zelle-hero-image.jpg"},"background_position":"top center","background_attachment":"fixed","background_repeat":"no-repeat","background_size":"auto","background_overlay_background":"classic","background_overlay_color":"#000000","margin":{"unit":"px","top":"","right":0,"bottom":"","left":0,"isLinked":true},"padding":{"unit":"px","top":"100","right":"0","bottom":"95","left":"0","isLinked":false},"_element_id":"contact","padding_mobile":{"unit":"px","top":"50","right":"0","bottom":"45","left":"0","isLinked":false}},"elements":[{"id":"70bc2e9d","elType":"column","settings":{"_column_size":100,"_inline_size":null,"animation_duration":"slow","animation_delay":700,"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false},"margin":{"unit":"px","top":"0","right":"50","bottom":"0","left":"50","isLinked":false},"margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"21077a07","elType":"widget","settings":{"anchor":"contact"},"elements":[],"widgetType":"menu-anchor"},{"id":"57e74740","elType":"widget","settings":{"title":"Any inquiries?","title_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":45},"typography_text_transform":"uppercase","align":"center","typography_font_family":"Montserrat","typography_font_weight":"700","typography_font_size_mobile":{"unit":"px","size":22}},"elements":[],"widgetType":"heading"},{"id":"48029a3c","elType":"widget","settings":{"title":"We are here for you, 24\/7, to help you and reply within the hour.","header_size":"h4","title_color":"#ffffff","typography_typography":"custom","typography_font_size":{"unit":"px","size":16},"_margin":{"unit":"px","top":"0","right":"0","bottom":"50","left":"0","isLinked":false},"align":"center","typography_font_family":"Lato","typography_font_weight":"400","typography_line_height":{"unit":"px","size":2},"typography_line_height_mobile":{"unit":"px","size":24}},"elements":[],"widgetType":"heading"},{"id":"7ea85fed","elType":"widget","settings":{"form_fields":[{"key":"name","type":"text","label":"","requirement":"","placeholder":"Name","width":"100","_id":"d62c7cd","field_width":"33","field_width_tablet":"","field_width_mobile":""},{"key":"email","type":"email","label":"","requirement":"","placeholder":"Email (@)","width":"100","_id":"0c70b95","field_width":"33","field_width_tablet":"","field_width_mobile":""},{"key":"phone","type":"number","label":"","requirement":"","placeholder":"Phone (+4...)","width":"100","_id":"b13a638","field_width":"33","field_width_tablet":"","field_width_mobile":""},{"key":"message","type":"textarea","label":"","requirement":"","placeholder":"I'd like to know what are your offers for...","width":"100","_id":"f19d07f","field_width":"100","field_width_tablet":"","field_width_mobile":""}],"to_send_email":"friends@themeisle.com","submit_label":"Send message","align_submit":"right","column_gap":{"unit":"px","size":30},"row_gap":{"unit":"px","size":15},"field_typography_typography":"custom","field_background_color":"#fefefe","field_focus_background_color":"#fefefe","field_focus_border_color":"#66afe9","field_focus_border_style":"solid","field_focus_border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"button_background_color":"#e96656","button_background_hover_color":"cb4332","_margin":{"unit":"px","top":"0","right":"50","bottom":"0","left":"50","isLinked":false},"align_submit_mobile":"center","field-text-padding":{"unit":"px","top":"9","right":"15","bottom":"9","left":"15","isLinked":false},"field_border_radius":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":true},"_margin_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"content_form_contact"}],"isInner":false}],"isInner":false},{"id":"c4ac828","elType":"section","settings":{"layout":"full_width"},"elements":[{"id":"26d854c","elType":"column","settings":{"_column_size":100,"padding":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"3323eba","elType":"widget","settings":{"address":"povernei 20, Bucharest","zoom":{"unit":"px","size":15},"_margin":{"unit":"px","top":"0","right":"0","bottom":"-20","left":"0","isLinked":false},"height":{"unit":"px","size":425}},"elements":[],"widgetType":"google_maps"}],"isInner":false}],"isInner":false},{"id":"36ceabc3","elType":"section","settings":{"structure":"40","background_background":"classic","background_color":"#272727","margin_mobile":{"unit":"px","top":"0","right":0,"bottom":"0","left":0,"isLinked":true},"padding_mobile":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"0","right":"270","bottom":"0","left":"270","isLinked":false},"gap":"no","padding_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[{"id":"7355d998","elType":"column","settings":{"_column_size":25,"_inline_size":25.964,"space_between_widgets":0,"padding":{"unit":"px","top":"67","right":"0","bottom":"30","left":"0","isLinked":false},"padding_mobile":{"unit":"px","top":"30","right":"0","bottom":"15","left":"0","isLinked":false}},"elements":[{"id":"4ef5fe48","elType":"widget","settings":{"icon":"fa fa-map-marker","size":{"unit":"px","size":26},"primary_color":"#e96656"},"elements":[],"widgetType":"icon"},{"id":"61061e4c","elType":"widget","settings":{"editor":"<p>AGENCY LOCATION<br \/>Downtown Bucharest\u00a0<\/p><p>MON-FRI: 10 - 17<br \/>SAT: 10 - 14<\/p>","align":"center","text_color":"#939393","typography_typography":"custom","typography_font_family":"Lato","typography_font_size":{"unit":"px","size":14},"typography_font_weight":"400","typography_line_height":{"unit":"px","size":20}},"elements":[],"widgetType":"text-editor"}],"isInner":false},{"id":"5ca6b31c","elType":"column","settings":{"_column_size":25,"_inline_size":23.989,"space_between_widgets":0,"padding":{"unit":"px","top":"67","right":"0","bottom":"30","left":"0","isLinked":false},"padding_mobile":{"unit":"px","top":"30","right":"0","bottom":"15","left":"0","isLinked":false}},"elements":[{"id":"63962bfe","elType":"widget","settings":{"icon":"fa fa-envelope","size":{"unit":"px","size":26},"primary_color":"#34cd8c"},"elements":[],"widgetType":"icon"},{"id":"d3c353f","elType":"widget","settings":{"editor":"<p>GET OUR LATEST OFFERS<\/p>","align":"center","text_color":"#939393","typography_typography":"custom","typography_font_family":"Lato","typography_font_size":{"unit":"px","size":14},"typography_font_weight":"400","typography_line_height":{"unit":"px","size":20},"_padding_tablet":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},"elements":[],"widgetType":"text-editor"},{"id":"52e23a18","elType":"widget","settings":[],"elements":[],"widgetType":"shortcode"}],"isInner":false},{"id":"6cf6fcf5","elType":"column","settings":{"_column_size":25,"_inline_size":22.154,"space_between_widgets":0,"padding":{"unit":"px","top":"67","right":"0","bottom":"30","left":"0","isLinked":false},"padding_mobile":{"unit":"px","top":"30","right":"0","bottom":"15","left":"0","isLinked":false}},"elements":[{"id":"63d468c7","elType":"widget","settings":{"icon":"fa fa-phone-square","primary_color":"#3ca8dc","size":{"unit":"px","size":26}},"elements":[],"widgetType":"icon"},{"id":"2f21a02c","elType":"widget","settings":{"editor":"<p>24\/7 ASSISTANCE<br \/>+40 332 548 987<\/p>","align":"center","text_color":"#939393","typography_typography":"custom","typography_font_family":"Lato","typography_font_size":{"unit":"px","size":14},"typography_font_weight":"400","typography_line_height":{"unit":"px","size":20},"_padding":{"unit":"px","top":"0","right":"20","bottom":"0","left":"20","isLinked":false}},"elements":[],"widgetType":"text-editor"}],"isInner":false},{"id":"123a703","elType":"column","settings":{"_column_size":25,"_inline_size":27.893,"content_position":"center","background_background":"classic","background_color":"#171717","padding_mobile":{"unit":"px","top":"30","right":"0","bottom":"15","left":"0","isLinked":false}},"elements":[{"id":"16de1bf8","elType":"widget","settings":{"social_icon_list":[{"social":"fa fa-facebook","_id":"5e5d300","link":{"url":"","is_external":"true","nofollow":""}},{"social":"fa fa-twitter","_id":"e053ebc","link":{"url":"","is_external":"true","nofollow":""}},{"social":"fa fa-linkedin","_id":"5026287","link":{"url":"","is_external":"true","nofollow":""}},{"social":"fa fa-behance","link":{"url":"","is_external":"true","nofollow":""},"_id":"01bb77a"},{"social":"fa fa-dribbble","link":{"url":"","is_external":"true","nofollow":""},"_id":"97496cc"},{"social":"fa fa-instagram","link":{"url":"","is_external":"true","nofollow":""},"_id":"0586fe1"}],"icon_color":"custom","icon_primary_color":"rgba(147,147,147,0.02)","icon_secondary_color":"#939393","icon_size":{"unit":"px","size":18},"icon_padding":{"unit":"em","size":0.2},"icon_spacing":{"unit":"px","size":0},"hover_secondary_color":"#e96656"},"elements":[],"widgetType":"social-icons"},{"id":"7abf31e5","elType":"widget","settings":{"editor":"<p style=\"text-align: center;\">\u00a9 2019 Travel Agency<\/p>","text_color":"#939393","typography_typography":"custom","typography_font_family":"Lato","typography_font_size":{"unit":"px","size":14},"typography_font_weight":"400","typography_line_height":{"unit":"px","size":20}},"elements":[],"widgetType":"text-editor"}],"isInner":false}],"isInner":false}]]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0.4]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Top 5 places to visit in Europe			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/02/07/top-5-places-to-visit-in-europe/</link>
+			<pubDate>Thu, 07 Feb 2019 12:50:38 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/neve-zelle/?p=97</guid>
+			<description></description>
+			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Ita multo sanguine profuso in laetitia et in victoria est mortuus.
+
+<b>Proclivi currit oratio.</b> Laboro autem non sine causa; <i>Quae cum dixisset, finem ille.</i> Si sapiens, ne tum quidem miser, cum ab Oroete, praetore Darei, in crucem actus est. Age, inquies, ista parva sunt. Morbo gravissimo affectus, exul, orbus, egens, torqueatur eculeo: quem hunc appellas, Zeno? Consequens enim est et post oritur, ut dixi.
+
+<b>Quod equidem non reprehendo;</b> Duo Reges: constructio interrete. <b>Minime vero, inquit ille, consentit.</b> <mark>Pugnant Stoici cum Peripateticis.</mark> <b>Velut ego nunc moveor.</b> <a href="http://loripsum.net/" target="_blank" rel="noopener">Sequitur disserendi ratio cognitioque naturae;</a> <a href="http://loripsum.net/" target="_blank" rel="noopener">Hunc vos beatum;</a> Atque ab his initiis profecti omnium virtutum et originem et progressionem persecuti sunt.]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>97</wp:post_id>
+			<wp:post_date><![CDATA[2019-02-07 12:50:38]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-02-07 12:50:38]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[top-5-places-to-visit-in-europe]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="tips"><![CDATA[Tips]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[neve_meta_content_width]]></wp:meta_key>
+				<wp:meta_value><![CDATA[70]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[60]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[sidebar-right]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[133]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Avoid rainy season in UK			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/02/07/avoid-rainy-season-in-uk/</link>
+			<pubDate>Thu, 07 Feb 2019 12:54:29 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/neve-zelle/?p=99</guid>
+			<description></description>
+			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Respondeat totidem verbis.</i> Ergo ita: non posse honeste vivi, nisi honeste vivatur? Tum Lucius: Mihi vero ista valde probata sunt, quod item fratri puto. Duo Reges: constructio interrete. Ut in geometria, prima si dederis, danda sunt omnia. Nam diligi et carum esse iucundum est propterea, quia tutiorem vitam et voluptatem pleniorem efficit. Scrupulum, inquam, abeunti;
+
+Recte, inquit, intellegis. Vides igitur te aut ea sumere, quae non concedantur, aut ea, quae etiam concessa te nihil iuvent. <i>Quae ista amicitia est?</i> <i>Haec quo modo conveniant, non sane intellego.</i> Quae similitudo in genere etiam humano apparet. Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Ita finis bonorum existit secundum naturam vivere sic affectum, ut optime is affici possit ad naturamque accommodatissime. Et harum quidem rerum facilis est et expedita distinctio.
+<dl>
+ 	<dt><dfn>Quid enim?</dfn></dt>
+ 	<dd>Quae adhuc, Cato, a te dicta sunt, eadem, inquam, dicere posses, si sequerere Pyrrhonem aut Aristonem.</dd>
+ 	<dt><dfn>Confecta res esset.</dfn></dt>
+ 	<dd>Vide, ne etiam menses! nisi forte eum dicis, qui, simul atque arripuit, interficit.</dd>
+ 	<dt><dfn>Quis negat?</dfn></dt>
+ 	<dd>Maximus dolor, inquit, brevis est.</dd>
+ 	<dt><dfn>Facete M.</dfn></dt>
+ 	<dd>Septem autem illi non suo, sed populorum suffragio omnium nominati sunt.</dd>
+</dl>
+Quid est igitur, cur ita semper deum appellet Epicurus beatum et aeternum? <b>An nisi populari fama?</b> <b>Que Manilium, ab iisque M.</b> Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. <i>At eum nihili facit;</i> Scaevola tribunus plebis ferret ad plebem vellentne de ea re quaeri. Philosophi autem in suis lectulis plerumque moriuntur. Huius, Lyco, oratione locuples, rebus ipsis ielunior. <i>Optime, inquam.</i> Hanc quoque iucunditatem, si vis, transfer in animum; <b>Certe, nisi voluptatem tanti aestimaretis.</b>
+<ul>
+ 	<li>Ita enim vivunt quidam, ut eorum vita refellatur oratio.</li>
+ 	<li>Quae autem natura suae primae institutionis oblita est?</li>
+ 	<li>Dic in quovis conventu te omnia facere, ne doleas.</li>
+ 	<li>In his igitur partibus duabus nihil erat, quod Zeno commutare gestiret.</li>
+ 	<li>Piso, familiaris noster, et alia multa et hoc loco Stoicos irridebat: Quid enim?</li>
+</ul>]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>99</wp:post_id>
+			<wp:post_date><![CDATA[2019-02-07 12:54:29]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-02-07 12:54:29]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[avoid-rainy-season-in-uk]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="tips"><![CDATA[Tips]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[neve_meta_content_width]]></wp:meta_key>
+				<wp:meta_value><![CDATA[70]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[30]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[sidebar-right]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[131]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Beautiful itinerary in Asia			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/02/07/beautiful-itinerary-in-asia/</link>
+			<pubDate>Thu, 07 Feb 2019 12:55:45 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/neve-zelle/?p=101</guid>
+			<description></description>
+			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis enim redargueret? Sint modo partes vitae beatae. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. <b>Primum divisit ineleganter;</b> Duo Reges: constructio interrete. Bona autem corporis huic sunt, quod posterius posui, similiora. Quis animo aequo videt eum, quem inpure ac flagitiose putet vivere? Si quicquam extra virtutem habeatur in bonis. Sed haec in pueris; Hoc etsi multimodis reprehendi potest, tamen accipio, quod dant.
+
+Quid ergo aliud intellegetur nisi uti ne quae pars naturae neglegatur? Illa sunt similia: hebes acies est cuipiam oculorum, corpore alius senescit; <b>Sed haec omittamus;</b> Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. Quod autem satis est, eo quicquid accessit, nimium est; Illud mihi a te nimium festinanter dictum videtur, sapientis omnis esse semper beatos; Illa videamus, quae a te de amicitia dicta sunt. <b>Sed fac ista esse non inportuna;</b> Quid ait Aristoteles reliquique Platonis alumni?
+
+Quod ea non occurrentia fingunt, vincunt Aristonem; Quid enim ab antiquis ex eo genere, quod ad disserendum valet, praetermissum est? <a href="http://loripsum.net/" target="_blank" rel="noopener">Utilitatis causa amicitia est quaesita.</a> <a href="http://loripsum.net/" target="_blank" rel="noopener">Eam stabilem appellas.</a>]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>101</wp:post_id>
+			<wp:post_date><![CDATA[2019-02-07 12:55:45]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-02-07 12:55:45]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[beautiful-itinerary-in-asia]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="tips"><![CDATA[Tips]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[neve_meta_content_width]]></wp:meta_key>
+				<wp:meta_value><![CDATA[70]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[60]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[sidebar-right]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[129]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				3 circuits with a Camper Van			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/02/07/3-circuits-with-a-camper-van/</link>
+			<pubDate>Thu, 07 Feb 2019 12:57:37 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/neve-zelle/?p=103</guid>
+			<description></description>
+			<content:encoded><![CDATA[<span> </span>Quid est enim aliud esse versutum? Duo Reges: constructio interrete.<span> </span><b>Nihil enim hoc differt.</b><span> </span><i>Sed nimis multa.</i><span> </span>An tu me de L. De illis, cum volemus. Quid affers, cur Thorius, cur Caius Postumius, cur omnium horum magister, Orata, non iucundissime vixerit?<span> </span><mark>Huius ego nunc auctoritatem sequens idem faciam.</mark><span> </span>Quod autem meum munus dicis non equidem recuso, sed te adiungo socium. Quid, si non sensus modo ei sit datus, verum etiam animus hominis?
+<ul>
+ 	<li>Nam si quae sunt aliae, falsum est omnis animi voluptates esse e corporis societate.</li>
+ 	<li>Sed non sunt in eo genere tantae commoditates corporis tamque productae temporibus tamque multae.</li>
+ 	<li>Ergo ita: non posse honeste vivi, nisi honeste vivatur?</li>
+ 	<li>Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest.</li>
+ 	<li>Eaedem enim utilitates poterunt eas labefactare atque pervertere.</li>
+ 	<li>Levatio igitur vitiorum magna fit in iis, qui habent ad virtutem progressionis aliquantum.</li>
+</ul>
+Nos paucis ad haec additis finem faciamus aliquando; Portenta haec esse dicit, neque ea ratione ullo modo posse vivi; Satisne ergo pudori consulat, si quis sine teste libidini pareat? Ut enim consuetudo loquitur, id solum dicitur honestum, quod est populari fama gloriosum. Et si in ipsa gubernatione neglegentia est navis eversa, maius est peccatum in auro quam in palea.<span> </span><i>Restatis igitur vos;</i><span> </span>Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt.
+
+Illum mallem levares, quo optimum atque humanissimum virum, Cn. Ita graviter et severe voluptatem secrevit a bono. Quis istud possit, inquit, negare?<span> </span><i>Idem adhuc;</i><span> </span>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>103</wp:post_id>
+			<wp:post_date><![CDATA[2019-02-07 12:57:37]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-02-07 12:57:37]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[3-circuits-with-a-camper-van]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="tips"><![CDATA[Tips]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[neve_meta_content_width]]></wp:meta_key>
+				<wp:meta_value><![CDATA[70]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[60]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[sidebar-right]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[130]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				10 pet friendly places to visit this summer			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/02/07/10-pet-friendly-place-to-visit-this-summer/</link>
+			<pubDate>Thu, 07 Feb 2019 13:11:11 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/neve-zelle/?p=105</guid>
+			<description></description>
+			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vidit Homerus probari fabulam non posse, si cantiunculis tantus irretitus vir teneretur; Neque enim disputari sine reprehensione nec cum iracundia aut pertinacia recte disputari potest. Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. An est aliquid, quod te sua sponte delectet? Duo Reges: constructio interrete.
+
+Quae animi affectio suum cuique tribuens atque hanc, quam dico. <mark>Nobis aliter videtur, recte secusne, postea;</mark> Si enim ita est, vide ne facinus facias, cum mori suadeas. Ad corpus diceres pertinere-, sed ea, quae dixi, ad corpusne refers?
+<ul>
+ 	<li>Eodem modo is enim tibi nemo dabit, quod, expetendum sit, id esse laudabile.</li>
+ 	<li>Conferam tecum, quam cuique verso rem subicias;</li>
+ 	<li>Est enim tanti philosophi tamque nobilis audacter sua decreta defendere.</li>
+ 	<li>Apud ceteros autem philosophos, qui quaesivit aliquid, tacet;</li>
+</ul>
+Totum autem id externum est, et quod externum, id in casu est. Teneo, inquit, finem illi videri nihil dolere. Vide, ne etiam menses! nisi forte eum dicis, qui, simul atque arripuit, interficit. Cur deinde Metrodori liberos commendas? Bona autem corporis huic sunt, quod posterius posui, similiora. Nunc reliqua videamus, nisi aut ad haec, Cato, dicere aliquid vis aut nos iam longiores sumus. Ego vero volo in virtute vim esse quam maximam;]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>105</wp:post_id>
+			<wp:post_date><![CDATA[2019-02-07 13:11:11]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-02-07 13:11:11]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[10-pet-friendly-place-to-visit-this-summer]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="tips"><![CDATA[Tips]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[neve_meta_content_width]]></wp:meta_key>
+				<wp:meta_value><![CDATA[70]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[60]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[109]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[sidebar-right]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				The 3 Safaris you must experience			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/02/07/the-3-safaris-you-must-experience/</link>
+			<pubDate>Thu, 07 Feb 2019 13:14:30 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/neve-zelle/?p=107</guid>
+			<description></description>
+			<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Summus dolor plures dies manere non potest?</i> Est tamen ea secundum naturam multoque nos ad se expetendam magis hortatur quam superiora omnia. Duo Reges: constructio interrete. Quamquam id quidem licebit iis existimare, qui legerint. Hunc vos beatum; Tamen a proposito, inquam, aberramus. Ne in odium veniam, si amicum destitero tueri. Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Quae est igitur causa istarum angustiarum?
+
+Quae similitudo in genere etiam humano apparet. Nos paucis ad haec additis finem faciamus aliquando; An hoc usque quaque, aliter in vita? Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim. An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia? Oratio me istius philosophi non offendit; Atque his de rebus et splendida est eorum et illustris oratio. His enim rebus detractis negat se reperire in asotorum vita quod reprehendat.
+<ul>
+ 	<li>Quam vellem, inquit, te ad Stoicos inclinavisses! erat enim, si cuiusquam, certe tuum nihil praeter virtutem in bonis ducere.</li>
+ 	<li>Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit;</li>
+</ul>
+Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. Sine ea igitur iucunde negat posse se vivere? Hoc est dicere: Non reprehenderem asotos, si non essent asoti. Cur iustitia laudatur? Duo enim genera quae erant, fecit tria.]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>107</wp:post_id>
+			<wp:post_date><![CDATA[2019-02-07 13:14:30]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-02-07 13:14:30]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[open]]></wp:ping_status>
+			<wp:post_name><![CDATA[the-3-safaris-you-must-experience]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[post]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="category" nicename="tips"><![CDATA[Tips]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+				<wp:meta_value><![CDATA[440]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+				<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[neve_meta_content_width]]></wp:meta_key>
+				<wp:meta_value><![CDATA[70]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+				<wp:meta_value><![CDATA[60]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[hestia_layout_select]]></wp:meta_key>
+				<wp:meta_value><![CDATA[sidebar-right]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[132]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+		<item>
+			<title>
+				Contact us			</title>
+			<link>https://demo.themeisle.com/hestia-zelle/2019/03/25/contact-us/</link>
+			<pubDate>Mon, 25 Mar 2019 16:05:51 +0000</pubDate>
+			<guid isPermaLink="false">https://demo.themeisle.com/hestia-zelle/?p=122</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded>			<wp:post_id>122</wp:post_id>
+			<wp:post_date><![CDATA[2019-03-25 16:05:51]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2019-03-25 16:05:51]]></wp:post_date_gmt>
+			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[contact-us]]></wp:post_name>
+			<wp:status><![CDATA[publish]]></wp:status>
+			<wp:post_parent>0</wp:post_parent>
+			<wp:menu_order>5</wp:menu_order>
+			<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<category domain="nav_menu" nicename="menu"><![CDATA[menu]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+				<wp:meta_value><![CDATA[0]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+				<wp:meta_value><![CDATA[122]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+				<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+				<wp:meta_value><![CDATA[https://demo.themeisle.com/hestia-zelle/#contact]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[obfx_menu_icon]]></wp:meta_key>
+				<wp:meta_value><![CDATA[]]></wp:meta_value>
+			</wp:postmeta>
+		</item>
+	</channel>
+</rss>

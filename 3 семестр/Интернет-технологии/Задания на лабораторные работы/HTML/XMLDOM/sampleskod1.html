@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>код примера</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<h3>Код извлечения</h3>
+<hr color=black>
+<p>
+&lt;html&gt; <br>
+&lt;head&gt;<br>
+&lt;title&gt;Sample&lt;/title&gt;<br><br>
+
+
+&lt;script language="JavaScript" &gt;<br>
+ function LoadDoc()<br>
+ {  var xmldoc=new ActiveXObject("Microsoft.XMLDOM"); <br> 
+        xmldoc.async=false;<br>
+        xmldoc.load("samples.xml"); <br>
+    // загружаем документ в память<br>
+    output=" Овощи : \n";<br>
+    // требуется извлечь из документа - список всех овощей<br>
+    // т.е. продукты, заключены в тег &lt;product&gt; &lt;/product&gt; элемента &lt;vegetables&gt;&lt;/vegetables&gt;<br>
+   nodes=xmldoc.documentElement.childNodes; <br>
+   //получаем все дочерние узлы корневого узла<br> <br>
+   for(i=0;i&lt;nodes.length;i++)<br>
+   { eL=nodes.item(i); <br>
+// получаем i element списка<br>
+     if(eL.nodeName=="vegetables") <br>
+// находим овощи<br>
+     { child=eL.childNodes;<br>
+ // получаем все дочерние элементы<br>
+       break;<br>
+     } <br>
+   }<br><br>
+  
+    eL=child.item(0); <br>
+   // так как дочерних елементов может быть несколько, то неоходимо обратиться к тому, который требуется <br><br>
+   
+   while(true)<br>
+   { <br>
+     if (eL.nodeName=="product") output+=eL.text+" "; <br>
+     eL=eL.nextSibling; // получаем следующий дочерний узел <br>
+     if(!eL) break; <br>
+   } <br><br>
+ 
+   document.all.textar.value=output;<br>    
+ } <br><br>
+&lt;/script&gt;<br><br>
+
+&lt;/head&gt;<br>
+&lt;body onLoad="LoadDoc()"&gt;<br>
+&lt;h3>Работа кода по извлечению значений:<&lt;/h3&gt;<br>
+&lt;hr color=black&gt;<br><br>
+ 
+ Результат извлечения значения узлa &lt;product&gt;, элемента vegetables :<br>
+  
+ &lt;textarea name="textar" rows=10 cols=40> &lt;/textarea&gt;<br> 
+     
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+
+<p>
+</BODY>
+</HTML>

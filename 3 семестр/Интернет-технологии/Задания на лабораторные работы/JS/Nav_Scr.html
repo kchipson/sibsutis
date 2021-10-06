@@ -1,0 +1,413 @@
+<HTML>
+<HEAD>
+       <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>Справочное руководство по JavaScript</TITLE>
+<script>
+function DisplayWin() {
+  myWin= open("display.html", "displayWindow", 
+ "width=250,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function FormOnClick() {
+  myWin= open("form_1.html", "displayWindow", 
+ "width=250,height=200,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function FormOnChange() {
+  myWin= open("form_2.html", "displayWindow", 
+ "width=350,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Funct2() {
+  myWin= open("Twofunct.html", "displayWindow", 
+ "width=250,height=200,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+</script>
+</HEAD>
+<BODY text="Black" link=" #336699" vlink=" #6699cc" alink="#ff6600">
+<h1>Создание сценариев</h1>
+<ul>
+	<li><a href="#1">Использование JavaScript в HTML</a>
+	<li><a href="#2">Создание скриптов обработки событий</a>
+	<li><a href="#3">Советы и методы</a>
+</ul>
+<h2><a name="1">Использование JavaScript в HTML</a></h2>
+
+Чтобы запускать скрипты, написанные на языке <font color="red"><I>JavaScript</i></font> вам понадобится браузер, способный работать с <font color="red"><I>JavaScript</i></font> - например Netscape Navigator или Microsoft Internet Explorer (MSIE). С тех пор, как оба этих браузера стали широко распространеными, множество людей получили возможность работать со скриптами, написанными на языке JavaScript. Несомненно, это важный аргумент в пользу выбора языка JavaScript, как средства улучшения ваших Web-страниц.
+Перед изучением языка <font color="red"><i>JavaScript</i></font> вы должны познакомиться с основами другого языка - HTML. При этом, возможно, Вы обнаружите, что много хороших средств диалога можно создать, пользуясь лишь командами HTML.<p>
+Скрипт-программа размещается непосредственно на HTML странице, как правило внутри тега <head> HTML файла.Она загружается в браузер вместе с файлом.<p>
+А именно <font color="red"><i>JavaScript</i></font> может быть внедрен в HTML документе двумя способами:<br>
+<ul> 
+Как утверждение и функция, использующие тег <b>SCRIPT</b>. <br>
+Как обработчики результата, использующие тег HTML. 
+</ul>
+<h3>Тег SCRIPT</h3>
+Сценарий, внедренный в web-страничу,использующий тег <b>SCRIPT</b> имеет следующий формат: 
+<table><tr><td bgcolor=aqua> <pre>
+&lt;SCRIPT>
+   JavaScript statements...
+&lt;/SCRIPT>
+ </pre></table>
+Необязательный атрибут <b>LANGUAGE</b> определяет язык создания сценария следующим образом: 
+<table><tr><td bgcolor=aqua>
+<pre>
+&lt;SCRIPT LANGUAGE="JavaScript">
+   JavaScript statements...
+&lt;/SCRIPT>
+</pre> 
+</table>
+В документе HMTL теги &lt;SCRIPT>, и закрывающий тег &lt;/SCRIPT> могут содержать  любое количество утверждений 
+<font color="red"><i>JavaScript</i></font>. 
+Чтобы наглядно увидить как пишутся скрипты на языке <font color="red"><i>JavaScript</i></font> рассмотрим простой пример  скрипт-программы расположенной на сторанице HTML:
+<P>
+<table><tr><td bgcolor=aqua><I>
+<pre>
+&lt;html>
+  &LT;head>&lt;title>Скрипт-программа&lt;/title>
+   &lt;script language="JavaScript">
+    &LT;!Здесь располагаются строки скрипт-программы!>
+   &LT;/script>
+  &LT;head> 
+ &LT;body onload="scroll_start();"onunload="scroll_stop();">
+   &LT;!А здесь распологаются теги HTML страницы!>
+ &LT;/body>
+&LT;/html>
+</pre>
+</i>
+</table> 
+<P>
+В этом примере внутри тега &lt;BODY> указано событие ONLOAD, по которому скрипт-программа запускается сразу после загрузки. Событиями также могут являться щелчком или перемещение указателя мышки.<p>
+Скрипты могут размещаться внутри области комментария, чтобы ваше   утверждение <font color="red"><i>JavaScript</i></font> не просматривалось старыми окнами браузера, которые не распознают <font color="red"><i>JavaScript</i></font>. Тогда весь сценарий спрятан в HTML- страницу тегами комментария: 
+<table><tr><td bgcolor=aqua><pre> 
+&lt;!-- Begin to hide script contents from old browsers.
+// End the hiding here. -->
+</pre></table> 
+<h3>Определение и запрос функций</h3><p>
+<font color="red"><i>JavaScript</i></font> загружается в браузер вместе с файлом. Запуск программы присходит тогда, когда совершается некоторое событие, на которое указано в файле. Функции сохранены, но не выполнены. Они будут  выполнены тогда, когда в странице указано события его выполнения. <br>
+Важно понять разность между определением функции и запроса функции. Определение функции просто называет функцию и определяет, что и когда делать. Запрос функции фактически выполняет указанные действия в определении функции. Следующий пример демонстрирует скрипт с функцией и комментариями:
+<table><tr><td bgcolor=aqua><xmp>
+<HEAD>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+  <META HTTP-EQUIV="Translator" CONTENT="Promt98 TranslationSystem">  
+ <SCRIPT LANGUAGE="JavaScript">
+   <!--  to hide script contents from old browsers
+    function square(i) {
+    document.write("Запрос был ", i ," В функции.","&lt;BR&gt;")
+    return i * i  
+   } 
+   document.write("Функция возвратила",square(5),".")
+  // end hiding contents from old browsers  -->
+ </SCRIPT> 
+</HEAD> 
+ <BODY> 
+<BR>
+Документ готов. 
+ </BODY>
+</xmp></table>
+<form>
+<input type="button" value="Demo" onClick="DisplayWin()">
+</form>
+<p><h3>Тег HTML</h3>
+<p>
+Вы должны определить функции на странице в теги <b>HTML</b> документа. Так как HTML грузится сначала, что гарантирует функции загрузиться прежде, чем пользователь вызовет функцию.
+<br>
+Пример скрипта с двумя функциями:
+<table><tr><td bgcolor=aqua>
+<xmp>
+<HEAD>
+ <SCRIPT>
+ <!--- hide script from old browsers
+   function bar() {
+   document.write("<HR ALIGN='center' WIDTH=25%>")
+                  }
+   function output(head, level, string) {
+   document.write("<H" + level + ">" + head + "</H" + level + "><P>" + string)
+                  }
+ // end hiding from old browsers -->
+ </SCRIPT>
+</HEAD>
+<BODY>
+  <SCRIPT>
+   <!--- hide script from old browsers
+   document.write(bar(),output("Make Me Big",3,"Make me ordinary."))
+   // end hiding from old browsers -->
+ </SCRIPT>
+ <P>
+ Thanks.
+</BODY>
+</xmp>
+</table>
+<form>
+<input type="button" value="See the example" onClick="Funct2()">
+</form>
+<p>
+<h3>Кавычки</h3>
+Использeйте оденочные ковычки ('), чтобы разграничить литералы ряда так, чтобы скрипты могли отличать литералы от атрибутов, расположенные в двойных кавычках. В предыдущем примере, функция содержит литерал 'center' внутри  атрибута, находящийся в двойных кавычках. Рассмотрим другой пример: 
+<table><tr><td bgcolor=aqua><xmp>
+ <INPUT TYPE="button" VALUE="Press Me" onClick="myfunc('astring')">
+</xmp></table>
+<p>
+<h2><a name="2">Создание скриптов обработчиков событий</a></h2>
+<p>
+Приложениями <font color="red"><i>JavaScript</i></font> мы в основном управляем событиями. События (<i>Events</i>)- это действия, которые происходят, обычно в результате чего - нибудь, что делает  пользователь (например, щелчок кнопки мышки). Имеется определенный набор событий, которые обозреватель распознает. Вы можете определить обработчики результатов скриптов, которые автоматически выполняются, когда происходит результат. <br>
+Обработчик Результата записываются в документ как атрибут тега <b>HTML</b>, к которому вы приписываете код JavaScript, для выполнения. Общий вид:
+<table><tr><td bgcolor=aqua><xmp>
+  <TAG eventHandler="JavaScript Code">
+</xmp></table>
+Где <b>TAG</b> - это тег HTML, и eventHandler - имя обработчика результата.<br>
+Например вы создали функцию <font color="red"><i>JavaScript</i></font>, и назвали ее <i>compute</i>. Вы можете заставить обозреватель выполнять эту функцию, когда пользователь нажимает на кнопку,в которой к onClick приписан обработчик результата кнопки: 
+<table><tr><td bgcolor=aqua><xmp>
+   <INPUT TYPE="button" VALUE="Calculate" onClick="compute(this.form)"> 
+</xmp></table>
+<p>
+Вы можете помещать любые утверждения <font color="red"><i>JavaScript</i></font> внутри ковычек onClick. Эти утверждения будут выполнены, когда пользователь нажмет на кнопку. Если Вы хотите включить больше чем одно утверждение, отдельные утверждения записываются через точкой с запятой (;).<p>
+Вообще, это - хорошая идея определить функцию для ваших обработчиков результата потому что: 
+<ul><li>
+Это делает ваш код мобильным, так как вы можете использовать ту же самую функцию во многих различных местах.
+<li> 
+Это делает ваше утверждение более легким для чтения. 
+</ul> 
+<p>
+ В этом примере используется this.form, чтобы обратиться к текущей форме. Ключевое слово обращается к текущему объекту - в вышеупомянутом примере, объекту кнопки. Затем конструкция this.form обращается к форме, содержащей кнопку. Там же, onClick обработчик результата - запрос к функции <i>compute()</i>, с this.form, текущей формой, как параметр функции. 
+<p>
+ События обращаются к тегам HTML следующим образом: 
+<ul>
+ 
+<li> События Focus, Blur, Change: text fields, textareas, и selections  
+<li> События Щелчка: buttons, radio buttons, checkboxes, submit buttons, reset buttons, links 
+<li> Событие Select: text fields, textareas 
+<li> Событие MouseOver: links  
+</ul>
+<p>
+ Если события обращаются к тегам HTML, то для этого вы можете определять обработчик событий. Вообще, обработчик событий имеет имя события, прещедствующее "on". Например, обработчик результата для результата Focus - onFocus. 
+<p>
+ Много объектов также имеют методы, которые подражают событиям. Например, кнопка имеет метод щелчка, который подражает нажимаемой кнопке. Заметьте: методы подражаемые событиям не вызывают обработчика событий. Так, например, метод щелчка не вызывает обработчика результата onClick. Однако, Вы можете всегда вызывать обработчик результата (например, Вы можете вызывать onClick явно в сценарие). 
+<p>
+<table BORDER>  
+<tr>  
+<th>
+Метод
+</th>
+<th>
+Происходит когда ...
+</th>
+<th>
+Обработчик Результата
+</th>
+<tr>  
+<td>Blur</td> 
+<td> Пользователь удаляет строку фокус из элемента формы</td> 
+<td> OnBlur</td> 
+</tr> 
+<tr>  
+<td> click </td> 
+<td> Пользователь нажимает на элемент формы или link</td> 
+<td> OnClick</td> 
+</tr> 
+<tr>  
+<td> change</td> 
+<td> Пользователь изменяет значение text, textarea, или select элемента</td> 
+<td> OnChange</td> 
+</tr> 
+<tr>  
+<td> Focus</td> 
+<td> Пользователь передает фокус указанному элементу формы</td> 
+<td> OnFocus</td> 
+</tr> 
+<tr>  
+<td> load</td> 
+<td> Пользователь загружает страницу</td> 
+<td> OnLoad</td> 
+</tr> 
+<tr>  
+<td> Mouseover</td> 
+<td> Происходит, когда пользователь помещает указатель мышки над гиперссылкой</td> 
+<td> OnMouseOver</td> 
+</tr> 
+<tr>  
+<td> Select</td> 
+<td> Пользователь выделяет область ввода указанного элемента формы</td> 
+<td> OnSelect</td> 
+</tr> 
+<tr>  
+<td> Submit</td> 
+<td> Пользователь подчиняет форму</td> 
+<td> OnSubmit</td> 
+</tr> 
+<tr>  
+<td>Unload</td> 
+<td> Пользователь выходит из страницы</td> 
+<td> OnUnload</td> 
+</tr> 
+</table> 
+<hr>
+ 
+<p>
+ Приведем сценарий "калькулятор" с формой и атрибутом обработчика результата. 
+<table><tr><td bgcolor=aqua><xmp>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<META HTTP-EQUIV="Translator" CONTENT="Promt98 Translation System">  
+<SCRIPT LANGUAGE="JavaScript">
+function compute(form) {
+   if (confirm("Вы уверены?"))
+      form.result.value = eval(form.expr.value)
+   else
+      alert("Please come back again.")
+}
+</SCRIPT>
+ </HEAD> 
+<BODY>
+ 
+<FORM>  Введите выражение: 
+<INPUT TYPE="text" NAME="expr" SIZE=15 >
+ 
+<INPUT TYPE="button" VALUE="Calculate" ONCLICK="compute(this.form)">
+ <BR>
+Результат: 
+<INPUT TYPE="text" NAME="result" SIZE=15 >
+ <BR>
+</FORM>
+</BODY>
+</xmp></table>
+<p>
+<form>
+<input type="button" value="Просмотр примера" onClick="FormOnClick()">
+</form><P>
+Сценарий с формой и атрибутом обработчика результата внутри тега <b>BODY</b>. 
+<table><tr><td bgcolor=aqua><xmp>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<SCRIPT LANGUAGE="JavaScript">
+<!--- hide script from old browsers
+function checkNum(str, min, max) {
+    if (str == "") {
+        alert("Enter a number in the field, please.")
+        return false
+    }
+    for (var i = 0; i < str.length; i++) {
+        var ch = str.substring(i, i + 1)
+        if (ch < "0" || ch > "9") {
+            alert("Попробуйте еще, пожайлуста.")
+            return false
+        }
+    }
+    var val = parseInt(str, 10)
+    if ((val < min) || (val > max)) {
+        alert("Введите число от 1 до 10.")
+        return false
+    }
+    return true
+}
+
+function thanks() {
+    alert("Спасибо.")
+}
+// end hiding from old browsers -->
+</SCRIPT>
+</HEAD> 
+<BODY>
+<FORM NAME="ex5">  Пожалуйста введите маленькое число: 
+<INPUT NAME="num" onChange="if (!checkNum(this.value, 1, 10)) {this.focus();this.select();} 
+else {thanks()}">
+</FORM>
+</BODY>
+</xmp></table>
+<p>
+<form>
+<input type="button" value="Press here" onClick="FormOnChange()">
+</form><P> 
+</form>
+<hr>
+<p><h2><a name="3">Советы и методы</a></h2><p>
+ Этот раздел описывает различные полезные методы создания сценария. 
+<p>
+<h3> Модифицирование Страниц</h3> 
+<p>
+ Результаты <font color="red"><i>JavaScript</i></font> вызываются из вершины загруженной страницы. Если вы хотите что-нибудь форматировать,то вы не можете изменить это без перезагрузки страницы. В настоящее время, Вы не можете модернизировать частную часть страницы без модифицирования всей страницы. Хотя, вы можете модернизировать "sub-window" (незначительную часть окна)  в фрейме отдельно. 
+<p>
+<h3> Печать</h3> 
+<p>
+Вы не можете в настоящее время напечатать вывод, созданный с <font color="red"><i>JavaScript</i></font>. Например, если у вас есть следующее в странице: 
+<table><tr><td bgcolor=aqua><xmp>
+<P>
+This is some text. 
+<SCRIPT>
+document.write("<P>And some generated text")
+</SCRIPT>
+</xmp></font>
+И вы напечатали его, вы получите только "This is some text", даже если вы видели бы обе экранные линии. 
+<p>
+<h3>Использование кавычек</h3> 
+<p>
+ Убедитесь, что бы чередовали двойные котировки с одиночными ковычками. Так как обработчики событий в HTML должны быть расположены в кавычках, вы должны использовать одиночные ковычки, чтобы разграничить аргументы. Например 
+<font color="purple"><xmp>
+<FORM NAME="myform">  
+<INPUT TYPE="button"
+  NAME="Button1"
+  VALUE="Open Sesame!" 
+  onClick="window.open('stmtsov.html', 'newWin', 'toolbar=no,directories=no')">
+</FORM>
+</xmp></table>
+<p>
+В качестве альтернативы, вы можете выйте из ковычек,  предшествуя им наклонной чертой влево (\). 
+<h3> Определение Функций</h3> 
+<p>
+Хорошо определять все ваши функции в HEAD вашей HTML страницы. Потому, что все функции будут определены прежде, чем любое содержание показано. Иначе, пользователь может выполнять какое - нибудь действие, в то время как страница все еще загружается, которое вызывает обработчик событий и вызывает неопределенную функцию, ведя к ошибке. 
+<h3> Создание Массивов</h3> 
+<p>
+ Массив - упорядоченное множество значений, на которые вы ссылаетесь через имя массива и индекс. Например, у вас есть массив, с именем emp, который содержит имена служащих, индексированные их номером служащего. Так emp [1] будет служащий номер один, emp [2] служащий номер два, и так далее. 
+<p>
+<font color="red"><i>JavaScript</i></font> не имеет явный тип данных массива, но из-за близкой связи между массивами и объектами свойств (смотрите <a href="ob_mod.html">Объектная Модель JavaScript</a>). Вы можете определять тип объекта массива, следующим образом: 
+<table><tr><td bgcolor=aqua><pre>
+function MakeArray(n) {
+   this.length = n;
+   for (var i = 1; i <= n; i++) {
+     this[i] = 0 }
+     return this
+     }
+}
+</pre></table>
+<p>
+Здесь определяется массив такой что первое свойство, длина, (с индексом ноля), представляет число элементов в массиве. 
+Оставшиеся свойства имеют индекс целого числа один или больше, и инициализированы к нолю.
+<p>
+Вы можете создавать массив вызывая new с именем массива, определяя число элементов, которые имеет. Например:
+<font color="purple"><pre> emp = new MakeArray(20); </pre> </font>
+<p>
+Здесь создается массив, с именем emp с 20 элементами, и элементы инициализируется к нолю. 
+<h4> Начальная загрузка Массива</h4> 
+<p>
+ Вы можете заполнять массив,  просто присваивая значения к ее элементам. Например: 
+<table><tr><td bgcolor=aqua><pre> 
+emp[1] = "Casey Jones"
+emp[2] = "Phil Lesh"
+emp[3] = "August West"
+</pre></table> 
+И так далее. 
+<p>
+ Вы можете также создавать массивы объектов. Например, пусть вы определяете тип объекта, именованный Employees, следующим образом: 
+<table><tr><td bgcolor=aqua><pre>
+function Employee(empno, name, dept) {
+   this.empno = empno;
+   this.name = name;
+   this.dept = dept;
+}
+</pre></table> 
+<p>
+Затем следующие утверждения определяет массив этих объектов: 
+<table><tr><td bgcolor=aqua><pre>
+emp = new MakeArray(3)
+emp[1] = new Employee(1, "Casey Jones", "Engineering")
+emp[2] = new Employee(2, "Phil Lesh", "Music")
+emp[3] = new Employee(3, "August West", "Admin")
+ </pre></table> 
+<p>
+Затем Вы можете легко показывать объекты в этом массиве, используя функцию show_props (определенную в разделе <a href="ob_mod.html">Объектная Модель JavaScript</a>) следующим образом: 
+<table><tr><td bgcolor=aqua><pre>
+ for (var n =1; n <= 3; n++) {
+   document.write(show_props(emp[n], "emp") + "
+");
+}
+</pre></table>
+<p>
+<hr align=center width=250>
+</BODY>
+</HTML>

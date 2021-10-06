@@ -1,0 +1,4763 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+ <link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+	<TITLE>РАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+<script>
+function Even_H(){
+myWin1= open("ex_im1.html", "displayWin1", 
+"width=500,height=310,status=yes,toolbar=no,menubar=no,scrollbars=no");
+}
+function Open_color(){
+myWin2= open("ex_fon.html", "displayWin2", 
+"width=400,height=210,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Open_border(){
+myWin3= open("ex_border.html", "displayWin3", 
+"width=350,height=250,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_complit(){
+myWin4= open("ex_complit.html", "displayWin4", 
+"width=350,height=320,status=no,toolbar=no,menubar=no,scrollbars=no");
+} 
+function Win_fileUpload(){
+myWin5= open("ex_upload.html", "displayWin5", 
+"width=350,height=250,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_ShowImageSize(){
+myWin6= open("ex_imgsize.html", "displayWin6", 
+"width=350,height=250,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_join(){
+myWin7= open("ex_join.html", "displayWin7", 
+"width=250,height=200,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_OnBlur1(){
+myWin8= open("ex_onblur.html", "displayWin8", 
+"width=350,height=300,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_OnBlur2(){
+myWin9= open("ex_onblur1.html", "displayWin9", 
+"width=350,height=300,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_OnClick(){
+myWin9a= open("ex_onclick.html", "displayWin9a", 
+"width=200,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_OnError(){
+myWin10= open("ex_onerror.html", "displayWin10", 
+"width=300,height=200,status=no,toolbar=no,menubar=no,scrollbars=no");
+} 
+function Win_OnError1(){
+myWin12= open("ex_onerror1.html", "displayWin12", 
+"width=200,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_OnLoad(){
+myWin11= open("ex_onload.html", "displayWin11", 
+"width=250,height=350,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_OnReset(){
+myWin13= open("ex_onreset.html", "displayWin13", 
+"width=250,height=250,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_resetMet(){
+myWin14= open("ex_resetm.html", "displayWin14", 
+"width=250,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_reverse(){
+myWin15= open("ex_reverse.html", "displayWin15", 
+"width=250,height=200,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_scroll(){
+myWin16= open("ex_scroll.html", "displayWin16", 
+"status=no,toolbar=no,menubar=no");
+}
+function Win_sort(){
+myWin17= open("ex_sort.html", "displayWin17", 
+"width=400,height=400,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_split(){
+myWin18= open("ex_split.html", "displayWin18", 
+"width=650,height=350,status=no,toolbar=no,menubar=no,scrollbars=no");
+} 
+function Win_src(){
+myWin19= open("ex_src.html", "displayWin19", 
+"width=350,height=400,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_str(){
+myWin20= open("ex_str.html", "displayWin20", 
+"width=200,height=200,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_tostring(){
+myWin21= open("ex_tstr.html", "displayWin21", 
+"width=250,height=100,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_tostring1(){
+myWin22= open("ex_tstr1.html", "displayWin22", 
+"width=200,height=300,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_typeof(){
+myWin23= open("ex_typeof.html", "displayWin23", 
+"width=300,height=250,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_typeof1(){
+myWin24= open("ex_typeof1.html", "displayWin24", 
+"width=300,height=200,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_typeof2(){
+myWin25= open("ex_typeof2.html", "displayWin25", 
+"width=300,height=180,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_typeof3(){
+myWin26= open("ex_typeof3.html", "displayWin26", 
+"width=300,height=180,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_typeof4(){
+myWin27= open("ex_typeof4.html", "displayWin27", 
+"width=300,height=180,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function Win_typeof5(){
+myWin28= open("ex_typeof5.html", "displayWin28", 
+"width=300,height=180,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+</script>
+</HEAD>
+<BODY text="Black" link=" #336699" vlink="#6699cc" alink=" #ff6600">
+<h1><b><a name="1_end">Введение</a></b></h1><BR>
+<ul>
+	<li><a href="#1_1">Язык JavaScript</a>
+	<li><a href="#1_2">JavaScript и Java</a>
+      <li><a href="#1_3">JavaScript в Navigator 3.0</a>
+      <li><a href="#1_5">Ссылки</a>
+</ul>
+<BR>
+<h2><a name="1_1">Язык JavaScript</a></h2>
+<BR>
+Сегодня Всемирная сеть - это среда информационного обмена для миллионов людей. Они размещают текст, видео, звук и информацию, и все более и более они усложняют свои страницы, делая их интерактивными в сети. 
+<font color="red"><I>JavaScript</i></font> - это язык программирования, используемый в составе страниц HTML для увеличения функциональности и возможностей взаимодействия с пользователями. Он был разработан фирмой Netscape  в сотрудничестве с Sun Microsystems на базе языка Sun's Java. С помощью <font color="red"><I>JavaScript</i></font> на Web-странице можно сделать то, что невозможно сделать стандартными тегами HTML. Скрипты выполняются в результате наступления каких-либо событий, инициированных действиями пользователя. Создание Web- документов, включающих программы на <font color="red"><I>JavaScript</i></font>, требует наличие текстового редактора и подходящего браузера. Некоторые просмотрщики включают в себе встроенные редакторы, поэтому  необходимость во внешнем редакторе отпадает.<p>
+Несмотря на отсутствие прямой связи с языком Java, <font color="red"><I>JavaScript</i></font> может обращаться к внешним свойствам и методам Java- апплетов, встроенных в страницу HTML. Разница сводится к тому, что апплеты существуют вне браузера, в то время как программы <font color="red"><I>JavaScript</i></font> могут работать только внутри браузера.
+На первый взгляд кажется, что найти информацию по JavaScript несложно. Сначала создается впечатление, что ее можно увидеть везде: на сервере Natscape, в виде электронных руководств и примеров, во многих других местах. Тем не менее, разыскать информацию об объектах, операторах, цветах и всем прочем в одном источнике, чтобы она была всегда под рукой, трудно.
+<BR>
+<h2><a name="1_2">JavaScript и Java</a></h2>  
+<BR>
+<font color="red"><I>JavaScript</i></font> и Java- это два разных языка программирования. Java- это объектно-ориентированный язык программирования и запускается при помощи компилятора и вспомогательных файлов. 
+Разрабатываемые с помощью Java программы могут работать как законченные приложения либо как встроенные в Web-страницу <I>апплеты</i>. И хотя они встроены в страницу HTML, они хранятся на клиентской машине как отдельные файлы.
+<P>
+Напротив, <font color="red"><i>JavaScript</i></font> размещаются внутри HTML страницы и не могут существовать как отдельные программы. Они функционируют, будучи запущенными в браузерах типа Netscape Navigator или Internet Explorer.<p>
+<p>
+Следующая таблица сравнивает <font color="red"><i>JavaScript</i></font> и Java<P>. 
+<TABLE BORDER>  
+<TR>  
+<TH>
+JavaScript
+</TH>
+<TH Width=50%>
+Java
+</TH>
+ </TR> 
+<TR>  
+<TD> Не компилируемый клиентом. 
+<TD> Компилируемая клиентом перед запуском программы. </TR> 
+<TR>  
+<TD> Объектный язык.
+<TD> Объектно-ориентированный.</TR> 
+<TR>  
+<TD> Внедренный в HTML - страницу. 
+<TD> Небольшие приложения, отделенные от HTML - страниц. </TR> 
+<TR>  
+<TD> Переменные типы данных, не объявляются. 
+<TD> Переменные типы данных должны быть объявлены (строгий контроль типов). </TR> 
+<TR>  
+<TD> Динамическое закрепление. Ссылки объекта проверяются во время выполнения. 
+<TD> Статическое закрепление. Ссылки объекта проверяются во время компиляции. </TR> 
+</TABLE>
+
+<a name="1_3"><H1>  JavaScript в Navigator 3.0</H1> 
+</a> 
+<UL>
+ <LI> <A HREF="#1_4">Резюме новых особенностей JavaScript</A> 
+ <LI> <A HREF="#1_5">Ссылки</A> 
+</UL>
+<a name="1_4"><h2>Резюме новых особенностей JavaScript</h2></a>
+<H3> Навигатор JavaScript описывает</H3>
+ <H4> Java аплеты, plug-ins и надежность</H4> 
+<H4> Новые объекты</H4> 
+<UL>
+ <LI> Объект <A HREF="#1_area"><I>area </I></A> определяет отображения изображения 
+ <LI> Объект <A HREF="#1_function"><I>function </I></A> определяет ряд кодов <font color="red"><i>JavaScript</i></font>, которые нужно компилировать как функция 
+ <LI> Объект <A HREF="#1_image"><I>image </I></A> отражает изображения 
+</UL>
+<H4> Новые свойства</H4> 
+<UL>
+<LI> Свойство <A HREF="#1_opener"><I>opener</I></A> определяет окно вызывающего документа 
+<LI> Свойство <A HREF="#1_type"><I>type </I></A> определяет тип элемента формы 
+</UL>
+<H4> Новые методы</H4> 
+<UL>
+<LI>Методы <A HREF="#1_blur"><B>blur </B></A> и <A HREF="#1_focus"><B>focus</B></A> теперь работают для окон 
+<LI> Метод <A HREF="#1_close"><B>close</B></A> имеет новые расширения безопасности
+<LI>Метод <A HREF="#1_javaEnabled"><B>javaEnabled</B></A> определяет, открыт ли Java 
+<LI> Метод <A HREF="#1_reload"><B>reload</B></A> вынуждает перезагрузку текущего документа окна 
+<LI>Метод <A HREF="#1_replace"><B>replace </B></A>, загружает указанный URL по текущему входу хронологии 
+<LI> Метод <A HREF="#1_reset"><B>reset </B></A> моделирует щелчок мыши на кнопке восстановления 
+<LI> Метод <A HREF="#1_scroll"><B>scroll </B></A> прокручивает окно 
+<LI>Метод <A HREF="#1_split"><B>split </B></A> раскалывается объект <I>String</I> в таблицу рядов 
+</UL>
+<H4> Формы и элементы формы</H4> 
+<UL>
+<LI>Объект <A HREF="#1_select"><I>Select</I></A> позволяет пользователю выбрать один из элементов списка
+<LI> Свойство элемента формы <A HREF="#1_type"><I>type</I></A> 
+<LI>Объект <A HREF="#1_fileUpload"><I>FileUpload</I></A> 
+</UL>
+<H4> События и обработчики событий</H4> 
+<UL>
+<LI>Обработчик результата <A HREF="#1_onAbort">OnAbort</A> выполняется  загрузка прерванных пользователем изображений 
+<LI>Обработчики результата <A HREF="#1_onBlur">OnBlur</A> и <A HREF="#1_onFocus">onFocus</A> теперь обращаются к окнам и framesets 
+<LI>Обработчик результата <A HREF="#1_onError">OnError</A> выполняется <form color="red"><i>JavaScript</i></form>, когда образуется ошибка при загрузке документа или изображения 
+<LI>Обработчик результата <A HREF="#1_onMouseOut">OnMouseOut</A> выполняется, когда указатель мыши помещается над гиперссылкой 
+<LI>Обработчик результата <A HREF="#1_onReset">OnReset</A> выполняется, когда происходит результат восстановления
+<LI><A HREF="#1_callingEvents_dg">Запрос обработчиков результата </A> 
+<LI> <A HREF="#1_onClick">Отмена событий в onClick</A> 
+</UL>
+<H4>Теги HTML и атрибуты</H4> 
+<UL>
+<LI><A HREF="#1_entities_dg">Объекты JavaScript</A> для атрибутов HTML 
+<LI><A HREF="#1_script_dg">Атрибут SRC тега &LT;SCRIPT></A>  позволяет вам использовать коды <font color="red"><i>JavaScript</i></font>
+<LI><A HREF="#1_noscript_dg">Тег &LT;NOSCRIPT></A> не показывает скрипты для старых браузеров или когда пользователь блокировал JavaScript в Navigator. 
+</UL>
+<H3>Особенности языка  JavaScript 1.1</H3> 
+<P>
+<UL>
+<LI>Объекты <A HREF="#1_array"><I>Array</I></A>: стандартные массивы, теперь встроены в язык. Они имеют некоторые методы: <A HREF="#1_join"><B>join</B></A>, <A HREF="#1_reverse"><B>reverse</B></A>, и <A HREF="#1_sort"><B>sort</B></A>. 
+<LI>Метод <A HREF="#1_random"><B>random</B></A> объекта <i>Math</i>  работает на всех платформах. 
+<LI> Новые особенности объекта <A HREF="#1_String"><I>String</I></A>, и новый метод <A HREF="#1_split"><B>split </B></A> string. 
+<LI>Функции <A HREF="#1_isNaN"><B>isNaN</B></A>, <A HREF="#1_parseFloat"><B>parseFloat</B></A>, и <A HREF="#1_parseInt"><B>parseInt</B></A> работают на всех платформах. 
+<LI> <A HREF="#1_prototype">Объект prototypes</A>: можно использовать совместно со всеми свойствами объекта того же самого типа. 
+<LI> <A HREF="#1_objectProperties_dg">Индексация свойств объекта</A>: Или используйте индекс числа или строки, но не оба для того же самого свойства. 
+<LI>Оператор <A HREF="#1_typeof"><B>Typeof</B></A>: возвращает тип данных его операнда. 
+<LI>Оператор <A HREF="#1_void"><B>void</B></A>: определяет выражение, которое будет выражено в числах без возвращения значения. 
+<LI>Метод <A HREF="#1_toString"><B>ToString</B></A> преобразовывает объект в <i>string</i> 
+</UL>
+<A NAME="1_5">
+<H1>Ссылки</H1> 
+<P>
+<P><TABLE WIDTH=100%>
+<TR VALIGN=BOTTOM>
+<TH ALIGN=left>Новые особенности JavaScript 
+<TH ALIGN=left>Измененные особенности JavaScript 
+</TR>
+<TR VALIGN=TOP>
+<TD>
+<LI><A HREF="#1_applet">Applet</A>
+<LI><A HREF="#1_area">Area</A>
+<LI><A HREF="#1_arguments">arguments</A>
+<LI><A HREF="#1_array">array</A>
+<LI><A HREF="#1_atan2">atan2</A>
+<LI><A HREF="#1_blur">blur</A>
+<LI><A HREF="#1_border">border</A>
+<LI><A HREF="#1_button">button</A>
+<LI><A HREF="#1_complete">complete</A>
+<LI><A HREF="#1_checkbox">checkbox</A>
+<LI><A HREF="#1_close_window">close (window object)</A>
+<LI><A HREF="#1_Date">Date</A>
+<LI><A HREF="#1_defaultSelected">defaultSelected</A>
+<LI><A HREF="#1_description">description</A>
+<LI><A HREF="#1_document">document</A>
+<LI><A HREF="#1_enabledPlugin">enabledPlugin</A>
+<LI><A HREF="#1_filename">filename</A>
+<LI><A HREF="#1_fileUpload">fileUpload</A>
+<LI><A HREF="#1_focus">focus</A>
+<LI><A HREF="#1_form">form</A>
+<LI><A HREF="#1_frame">frame</A>
+<LI><A HREF="#1_function">function</A>
+<LI><A HREF="#1_hash">hash</A>
+<LI><A HREF="#1_height">height</A>
+<LI><A HREF="#1_hidden">hidden</A>
+<LI><A HREF="#1_host">host</A>
+<LI><A HREF="#1_hostname">hostname</A>
+<LI><A HREF="#1_href">href</A>
+<LI><A HREF="#1_hspace">hspace</A>
+<LI><A HREF="#1_image">Image</A>
+<LI><A HREF="#1_index">index</A>
+<LI><A HREF="#1_isNaN">isNaN</A>
+<LI><A HREF="#1_javaEnabled">javaEnabled</A>
+<LI><A HREF="#1_join">join</A>
+<LI><A HREF="#1_length">length</A>
+<LI><A HREF="#1_link">link (<I>links</I> array)</A>
+<LI><A HREF="#1_location">location</A>
+<LI><A HREF="#1_lowsrc">lowsrc</A> 
+<LI><A HREF="#1_Math">Math</A>
+<LI><A HREF="#1_mimeType">mimeTypes</A>
+<LI><A HREF="#1_name">name</A>
+<LI><A HREF="#1_navigator">navigator</A>
+<LI><A HREF="#1_onAbort">onAbort</A>
+<LI><A HREF="#1_onBlur">onBlur</A>
+<LI><A HREF="#1_onClick">onClick</A>
+<LI><A HREF="#1_onError">onError</A>
+</TD>
+<TD>
+<LI><A HREF="#1_onFocus">onFocus</A>
+<LI><A HREF="#1_onLoad">onLoad</A>
+<LI><A HREF="#1_onMouseOut">onMouseOut </A>
+<LI><A HREF="#1_onMouseOver">onMouseOver</A>
+<LI><A HREF="#1_onReset">onReset</A>
+<LI><A HREF="#1_onSubmit">onSubmit</A>
+<LI><A HREF="#1_opener">opener</A>
+<LI><A HREF="#1_Option">Option</A>
+<LI><A HREF="#1_password">Password</A>
+<LI><A HREF="#1_pathname">pathname</A>
+<LI><A HREF="#1_plugin">Plugin</A>
+<LI><A HREF="#1_plugins">plugins array</A>
+<LI><A HREF="#1_port">port</A>
+<LI><A HREF="#1_protocol">protocol</A>
+<LI><A HREF="#1_prototype">prototype</A>
+<LI><A HREF="#1_radio">Radio</A>
+<LI><A HREF="#1_random">random</A>
+<LI><A HREF="#1_reload">reload</A>
+<LI><A HREF="#1_replace">replace</A>
+<LI><A HREF="#1_resetmet">reset (метод)</A>
+<LI><A HREF="#1_resetob">reset (объект)</A>
+<LI><A HREF="#1_reverse">reverse</A>
+<LI><A HREF="#1_scroll">scroll</A>
+<LI><A HREF="#1_search">search</A>
+<LI><A HREF="#1_select">Select</A>
+<LI><A HREF="#1_selected">selected</A>
+<LI><A HREF="#1_sort">sort</A>
+<LI><A HREF="#1_split">split</A>
+<LI><A HREF="#1_src">src</A>
+<LI><A HREF="#1_String">String</A>
+<LI><A HREF="#1_submit">submit</A>
+<LI><A HREF="#1_suffixes">suffixes</A>
+<LI><A HREF="#1_taint">taint</A>
+<LI><A HREF="#1_target">target</A>
+<LI><A HREF="#1_textob">text object</A>
+<LI><A HREF="#1_textpr">text property</A>
+<LI><A HREF="#1_textarea">textarea</A>
+<LI><A HREF="#1_toString">toString</A>
+<LI><A HREF="#1_type">type</A>
+<LI><A HREF="#1_typeof">typeof</A>
+<LI><A HREF="#1_untaint">untaint</A>
+<LI><A HREF="#1_value">value</A>
+<LI><A HREF="#1_void">void</A>
+<LI><A HREF="#1_vspace">vspace</A>
+<LI><A HREF="#1_width">width</A>
+<LI><A HREF="#1_window">window</A>
+</TD>
+</TR>
+</TABLE>
+<a name="1_applet"><h2>Applet</h2></a>
+<P>
+ &LT;&LT;New.&GT;&GT 
+<P>
+Объект. Включает Java аплеты в web - страницу. 
+<H3> HTML синтаксис</H3> 
+<table><tr><td bgcolor=aqua><table><tr><td bgcolor=aqua><XMP>
+<APPLET
+    CODE=classFileName
+     HEIGHT=height
+      WIDTH=width
+       MAYSCRIPT
+       [NAME=appletName]
+      [CODEBASE=classFileDirectory]
+     [ALT=alternateText]
+    [ALIGN="left"|"right"|
+           "top"|"absmiddle"|"absbottom"|
+           "texttop"|"middle"|"baseline"|"bottom"]           [HSPACE=spaceInPixels]
+      [VSPACE=spaceInPixels]>  
+      [<PARAM NAME=parameterName VALUE=parameterValue>]
+    [ ... <PARAM>]
+</APPLET>
+</XMP></table></table>   
+<H3> HTML атрибуты</H3> 
+<P>
+<I>CODE=classFileName</I> определяет имя файла апплета, которое вы хотите загрузить. Это имя файла должно иметь расширение <TT>.class</TT>. 
+<P>
+<I>HEIGHT=height</I>  внутри браузера определяет высоту апплета в пикселях. 
+<P>
+<I>WIDTH=width</I> определяет ширину апплета в пикселях. 
+<P>
+<I>MAYSCRIPT</I> позволяет апплету обращаться к <font color="red"><i>JavaScript</i></font>.
+<P>
+<I>NAME=appletName</I> определяет имя апплета. вы можете обращаться к этому значению, используя свойство <I>name</I>. 
+<P>
+<I>CODEBASE=classFileDirectory</I> определяет направление файла <TT>.class</TT>, если это отличается от направления, которое содержит HTML страницу. 
+<P>
+<I>ALT=alternateText</I> определяет текст, чтобы показать браузерам, которые не поддерживают тег &LT;APPLET>. 
+<P>
+<I>ALIGN=alignment</I> определяет выравнивание небольшого приложения на HTML странице. 
+<P>
+<I>HSPACE=spaceInPixels</I> определяет в пикселях интервал по горизонтали апплета внутри окна. 
+<P>
+<I>VSPACE=spaceInPixels</I> определяет в пикселях интервал по вертикали апплета внутри окна. 
+<P>
+<I>&LT;PARAM></I> Определяет параметры апплета. 
+<P>
+<I>NAME=parameterName</I> определяет имя параметра. 
+<P>
+<I>VALUE=parameterValue</I> определяет значение параметра. 
+<H3> Синтаксис</H3> 
+<P>
+Использование объекта апплет: 
+<PRE>  
+1. <I>AppletName</I>.<I>propertyName </I>
+2. Document.applets <I>[index]</I> .<I>propertyName</I> </PRE> 
+<H3> Параметры</H3> 
+<P>
+<I>AppletName</I> - значение атрибута NAME объекта <I>applet</I>. 
+<P>
+<I>index</I> - целое число, представляющее апплет в документе, содержащем имя объекта <I>applet</I>. 
+<P>
+<I>PropertyName</I> - одно из свойств, внесенных в список ниже. 
+<H3>Свойства</H3> 
+<P>
+<A HREF="#1_document">document</A> 
+<H3> Выполненный в</H3> 
+<P>
+Навигатор 3.0 
+<H3> Описание</H3> 
+<P>
+Автор HTML страницы должен разрешить апплету обращаться к <font color="red"><i>JavaScript</i></font>,  определяя атрибут MAYSCRIPT тега APPLET. Это предотвращает апплет от доступа <font color="red"><i>JavaScript</i></font> на странице без ведома автора страницы. Например, чтобы допустить апплет <I>musicPicker.class</I> к <font color="red"><i>JavaScript</i></font> на вашей странице, определите следующее: 
+<table><tr><td bgcolor=aqua><table><tr><td bgcolor=aqua><XMP>
+<APPLET 
+  CODE = "musicPicker.class" 
+    WIDTH=200
+    HEIGHT=35
+  NAME="musicApp"
+MAYSCRIPT>
+</XMP></table></table>
+<P>
+<H4>Массив <I>applet</I></H4> 
+<P>
+вы можете ссылаться на апплеты,  используя массив <I>applet</I>. Этот массив содержит все объекты <I>Applet</I> (тег &LT;APPLET>) в документе в исходном порядке. Например, если документ содержит три апплета, то эти апплеты отражены как <TT>document.applets [0]</TT>, <TT>document.applets [1]</TT>, и <TT>document.applets [2]</TT>. 
+<P>
+Использование массива <I>applet</I>: 
+<table><tr><td bgcolor=aqua><PRE>  
+1. Document.applets <I>[index] </I>
+2. Document.applets.length 
+</PRE></table>
+<I>index</I> - целое число, представляющее апплет в документе, содержащем имя объекта <I>Applet</I>. 
+<P>
+Чтобы получить число апплетов в документе, используйте свойство <I>length</I>:
+<p><table><tr><td bgcolor=aqua>
+<TT>document.applets.length</TT></table> 
+<P>
+Элементы в массиве <I>applets</I> только для чтения. Например, утверждение <TT>document.applets [0] = "myApplet.class"</TT> не имеет никакого результата. 
+<H3>Свойства</H3> 
+<P>
+Объект <I>Applet</I> имеет следующие свойства: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_name">name</A> 
+<TD> Отражает атрибут NAME 
+<TD>  </TR> 
+</TABLE> 
+<H3> Методы</H3> 
+<LI> Отсутствуют. 
+<H3> Обработчики Результата</H3> 
+<LI> Отсутствуют. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример запускает апплет "musicApp": 
+<table><tr><td bgcolor=aqua><XMP>
+<APPLET 
+ CODE="musicSelect.class" 
+  WIDTH=200
+   HEIGHT=35
+  NAME="musicApp"
+ MAYSCRIPT>
+</APPLET>
+</XMP></table>
+<P>
+<H3>Смотрите также</H3> 
+<P>
+Объекты <A HREF="#1_mimeType">MimeTypes</A>, <A HREF="#1_plugin">Plugin</A> <HR align=center width=250>
+<A NAME="1_area">
+<H2>Area</H2> 
+<P>
+ &LT;&LT;New.>> 
+<P>
+Объект. Определяет область изображения как отображение изображения. Когда пользователь нажимает область, ссылка гипертекста области загрузится в ее целевое окно. 
+<H3> HTML синтаксис</H3> 
+<P>
+Чтобы определять область, используйте стандарт HTML синтаксис с добавлением обработчиков событий onMouseOut и onMouseOver: 
+<table><tr><td bgcolor=aqua><XMP>   
+ <MAP NAME="mapName">
+   <AREA
+      [NAME="areaName"]
+       COORDS="x1,y1,x2,y2,..."|"x-center,y-center,radius"
+        HREF="location"
+         [SHAPE="rect"|"poly"|"circle"|"default"]
+        [TARGET="windowName"]
+       [onMouseOut="handlerText"]
+      [onMouseOver="handlerText"]>
+ </MAP>
+</XMP></table> 
+<H3> HTML атрибуты</H3> 
+<P>
+<I>NAME = "mapName"</I> определяет имя отображения. вы можете определить это имя отображения в атрибуте USEMAP тега &LT;IMG>. 
+<P>
+<I>AREA</I> определяет область изображения как отображение изображения. 
+<P>
+<I>NAME = "areaName"</I> определяет имя объекта <I>Area </I>. Этот атрибут не отражен в <font color="red"><i>JavaScript</i></font> (вы не можете обратиться к объекту <I>Area</I> по имени). 
+<P>
+<I>COORDS</I> определяет координаты отображения изображения. 
+<P>
+<I>HREF = "location"</I> определяет URL документа, чтобы загрузить, когда пользователь нажимает область. Любая область изображения, которая не имеет атрибута HREF, не делает функцию как гиперсвязь. Этот атрибут требуется, если вы включаете обработчики результата onMouseOut и onMouseOver. 
+<P>
+<I>SHAPE</I> определяет форму отображения. Если опущено,  используется "rect". 
+<P>
+<I>TARGET = "windowName"</I> определяет окно, в которое будет загружена связь. <I>windowName</I> может быть существующее окно; это может быть имя фрейма, указанное в теге &LT;FRAMESET>; или это может быть один из литералов фрейма name _top, _parent, _self, или _blank; это не может быть выражение <font color="red"><i>JavaScript</I></font> (например, это не может быть parent<I>.frameName</I> или <I>windowName.frameName</I>). 
+<H3> Синтаксис</H3> 
+Использование свойств объекта <I>Area</I>: 
+<table><tr><td bgcolor=aqua><PRE>  
+1. <I>AreaName</I>.<I>propertyName </I>
+2. Document.links <I>[index]</I> .<I>propertyName</I> </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>AreaName</I> - значение атрибута NAME объекта <I>Area</I>. 
+<P>
+<I>index</I> - целое число, представляющее область в документе, содержащее имя объекта <I>Area</I> 
+<P>
+<I>PropertyName</I> - один из свойств, описанных ниже. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="d_e.html#list_document">document</A> 
+<H3> Выполненный в</H3> 
+<P>
+Навигатор 3.0 
+<H3> Описание</H3> 
+<P>
+Объекты <I>Area</I> находятся в массиве <I>links</I>. вы не можете обратиться к объекту <I>Area</I> по имени; вы должны использовать массив <I>links</I>. Например, если документ содержит три объекта области, эти объекты отражены как <TT>document.links [0]</TT>, <TT>document.links [1]</TT>, и <TT>document.links [2]</TT>. Для информации относительно массива <I>links</I>, смотрите объект <A HREF="h_l.html#list_link"><I>Link</I></A>. 
+<P>
+Атрибут HREF требуется для объекта <I>Area</I> чтобы использовать обработчики результата onMouseOut или onMouseOver. Однако, если вы создаете <I>Area</I> для изображения и не хотите, чтобы  изображение связалось с ссылкой гипертекста, когда нажато, определите <font color="red"><i>JavaScript</i></font> функцию в области атрибута HREF, используя <TT>javascript:</TT> URL протокол. Например, если пользователь нажимает следующий объект <I>Area</I>, выполняется функция <I>onTop</I>. 
+<table><tr><td bgcolor=aqua><XMP>
+<MAP 
+  NAME="worldMap">
+ <AREA 
+  NAME="topWorld"
+   COORDS="0,0,50,25"
+    HREF="javascript-onTop()"
+    onMouseOver="self.status='You are on top of the world';
+   return true" 
+  onMouseOut="self.status='You have left the top of the world';
+ return true">
+</MAP>
+</XMP></table>
+<P>
+Если вы хотите, чтобы связь области ничего не делала, используйте <TT>javascript:void (0)</TT> в атрибуте HREF. Когда пользователь нажимает следующий объект <I>Area</I>, ничего не случиться: 
+<table><tr><td bgcolor=aqua><XMP>
+<MAP NAME="worldMap">
+ <AREA 
+  NAME="topWorld" 
+   COORDS="0,0,50,25"
+    HREF="javascript-void(0)"
+    onMouseOver="self.status='You are on top of the world';
+   return true" 
+  onMouseOut="self.status='You have left the top of the world';
+ return true">
+</MAP>
+</XMP></table>
+<H3>свойства</H3> 
+<P>
+Объект <I>Area</I> имеет следующие свойства: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_hash">hash</A> 
+<TD> Определяет имя якоря в URL 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_host">host</A> 
+<TD> Определяет хост и имя области, или адрес IP, сетевого хоста 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_hostname">hostname</A> 
+<TD> Определяет хост части URL 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_href_property">href</A> 
+<TD> Определяет целый URL 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_pathname">pathname</A> 
+<TD> Определяет часть пути URL 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_port">port</A> 
+<TD> Определяет порт связи, который сервер использует для связи 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_protocol">protocol</A> 
+<TD> Определяет начало URL, включая двоеточие (:) 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_search">search</A> 
+<TD> Определяет запрос 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_target">target</A> 
+<TD> Отражает атрибут TARGET
+<TD>  </TR> 
+</TABLE> 
+<H3> Методы</H3> 
+<P>
+<li>Отсутствуют
+<H3>Обработчики событий</H3> 
+<LI> <A HREF="#1_onMouseOut">OnMouseOut</A> 
+<LI> <A HREF="#1_onMouseOver">OnMouseOver</A> 
+<H3> Примеры</H3> 
+<P>
+Пример 1.Обработчики событий OnMouseOver и onMouseOut.Следующий пример показывает изображение <TT>globe.gif</TT>. Изображение использует отображение изображения, которое определяет области для верхней и нижней половин изображения. OnMouseOver и onMouseOut обработчики событий показывают различные сообщения строки состояния в зависимости от местоположения мыши,  и оставляет либо верхнюю либо нижнюю половины изображения. Атрибут HREF требуется при использовании обработчиков событий onMouseOver и onMouseOut, но в этом примере,  изображение не нуждается в гипертекстовой связи, так что атрибут HREF выполняет <TT>javascript:void (0)</TT>, который ничего не делает (для получения дополнительной информации смотрите оператор <A HREF="#1_void"><B>void</B></A>). 
+<table><tr><td bgcolor=aqua><XMP>
+<MAP NAME="worldMap">
+ <AREA
+   NAME="topWorld"
+   COORDS="0,0,50,25"
+   HREF="javascript:void(0)"
+   onMouseOver="self.status='You are on top of the world';
+   return true" 
+   onMouseOut="self.status='You have left the top of the world';
+   return true">
+ <AREA
+   NAME="bottomWorld"
+   COORDS="0,25,50,50"
+   HREF="javascript:void(0)"
+   onMouseOver="self.status='You are on the bottom of the world';
+   return true"
+   onMouseOut="self.status='You have left the bottom of the    
+       world';
+   return true">
+</MAP>
+<IMG SRC="globe.gif" ALIGN="top" HEIGHT="150" WIDTH="150"   USEMAP="#worldMap">  
+</XMP></table>
+<P>
+<form>
+ <input type=button value="Start" onClick="Even_H()">
+</form><p>
+Пример 2. Обращение к объекту через массив <i>link</i>.</B> Следующий пример обращается к свойству <I>href</I> первого объекта <I>Area</I>, показанного в Примере 1. 
+<table><tr><td bgcolor=aqua><XMP>
+  Document.links [0] .href 
+</XMP></table>
+<P>
+Пример 3. Использование onClick с атрибутом HREF. Следующий пример использует атрибут HREF объекта <I>Area</I>, чтобы выполнить <font color="red"><i>JavaScript</i></font> функцию. Продемонстрированное изображение <TT>colors.gif</TT>, показывает два типовых цвета. Верхняя половина изображения - цветом "antiquewhite", а нижняя половина белая. Когда пользователь нажимает на верхнюю или нижнюю половины изображения, функция <I>setBGColor</I> изменяет цвет фона документа в цвет, выбранному пользователем. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+   function setBGColor(theColor) {
+       document.bgColor=the Color
+   }
+</SCRIPT>
+ Выберите цвет фона этого документа
+<MAP NAME="colorMap">
+ <AREA NAME="topColor"COORDS="0,0,50,25"HREF="javascript:setBGColor('antiquewhite')">
+ <AREA NAME="bottomColor" COORDS="0,25,50,50"HREF="javascript:setBGColor('white')">
+</MAP>
+ <IMG SRC="colors.gif" 
+  ALIGN="top" 
+   HEIGHT="50" 
+   WIDTH="50"   
+  USEMAP="#colorMap">  
+</XMP></table>
+<form>
+ <input type=button value="Фон документа" onClick="Open_color()">
+</form><p>
+<H3> Смотрите также</H3> 
+<P>
+Объект <A HREF="#1_image">image</A>
+Оператор <A HREF="#1_void">void</A> 
+<!---------------------------------------------------------------->
+<HR align=center width=250>
+ <!-- Common -->
+ <A NAME="1_arguments">
+<H2> arguments </H2> 
+<P>
+ &LT;&LT; Измененный. &GT;&GT; 
+<P>
+Свойство <i>arguments</i> - свойство объекта <I>function</I>. 
+<H3> Синтаксис</H3> 
+<P>
+Определять массив <I> arguments </I> изнутри объекта <I>function</I>: 
+<table><tr><td bgcolor=aqua><PRE>  
+this.arguments <I>[index]</I>
+</PRE> </table>
+<H3> Собственность</H3> 
+<LI> <A HREF="#function_object">Объект Функции</A> 
+<!--------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <!-- Common -->
+ <A NAME="1_array">
+<H2> array </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Объект. Позволяет вам создавать массивы и работу с ними. 
+<H3> Синтаксис</H3>
+Создание объекта <I> array </I>: 
+<PRE>  
+1. <I>arrayObjectName</I> = new Array () 
+2. <I>arrayObjectName</I> = new Array <I>(arrayLength)</I> </PRE> 
+Использование объекта <I> array </I>: 
+<PRE>  
+1. <I>arrayObjectName</I>.<I>propertyName </I>
+2. <I>arrayObjectName</I>.<I>methodName</I> <I>( parameters)</I> </PRE> 
+<H3> Параметры</H3> 
+<P>
+<I>arrayObjectName</I> является либо именем нового объекта либо свойством существующего объекта. 
+<P>
+<I>arrayLength</I> - начальная длина массива. вы можете обращаться к этому значению, используя свойство <I>length</I> 
+<P>
+<I>propertyName</I> - один из свойств, описанных ниже. 
+<P>
+<I>methodName</I> - один из методов, описанных ниже. 
+<H3> Свойства</H3> 
+<P>
+Отсутствуют. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0
+<H3> Описание</H3> 
+<P>
+Объект <I>array</I> - встроенный объект <font color="red"><i>JavaScript</i></font>. 
+<P>
+вы можете определять начальную длину, когда создаете массив. Следующий код создает массив из пяти элементов: 
+<table><tr><td bgcolor=aqua><XMP>
+billingMethod = new array(5) 
+</XMP></table>
+<P>
+Когда вы создаете массив, все его элементы первоначально недействительны. Следующий код создает массив из 25 элементов, затем присваивает значения первым трем элементам: 
+<table><tr><td bgcolor=aqua><XMP>
+ musicTypes = new Array(25)
+musicTypes[0] = "R&B"
+musicTypes[1] = "Blues"
+musicTypes[2] = "Jazz
+</XMP></table>
+<P>
+Длина массива увеличивается, если вы приписываете значение элементу больше чем текущая длина массива. Следующий код создает массив нулевой длины, затем присваивает значение элементу 99, изменяя длину массива до 100. 
+<table><tr><td bgcolor=aqua><XMP>
+colors = new Array()
+colors[99] = "midnightblue"
+</XMP></table>
+<P>
+вы можете создавать <I>плотный</I> массив из двух или больше элементов, начинающихся с индекса 0, если вы определяете начальные значения для всех элементов. Плотный массив - это массив, в котором каждый элемент имеет значение. Следующий код создает плотный массив с тремя элементами:
+<table><tr><td bgcolor=aqua><XMP>
+ myArray = new Array("Hello", myVar, 3.14159)
+</XMP></table>
+<H3>Свойства</H3> 
+<P>
+Объект <I>array</I> имеет следующие свойства: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_length"> length </A> 
+<TD> Отражает число элементов в массиве
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_prototype"> prototype </A> 
+<TD> Позволяет вам, добавлять свойства к объекту <I> array</I>. 
+<TD>  </TR> 
+</TABLE> 
+<H3> Методы</H3> 
+<LI> <A HREF="#1_join"> join </A> 
+<LI> <A HREF="#1_reverse"> reverse </A> 
+<LI> <A HREF="#1_sort"> sort </A> 
+<H3> Обработчики событий</H3> 
+<LI> Отсутствуют. Встроенные объекты не имеют обработчиков событий. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает массив, <I>msgArray</I>, нулевой длины, затем присваивает значения msgArray [0] и msgArray [99], изменяя длину массива до 100. 
+<table><tr><td bgcolor=aqua><XMP>
+ msgArray = new Array()
+msgArray [0] = "Hello"
+msgArray [99] = "world"
+if (msgArray .length == 100)
+// This is true, because defined msgArray [99] element.
+   document.write("The length is 100.")</XMP></table>
+<P>
+Смотрите также примеры для обработчика событий <A HREF="#1_onError">onError</A>. 
+<H3> Смотрите также</H3> 
+<P>
+Объект <A HREF="#1_image"> image </A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+<!-- Common -->
+ <A NAME="1_atan2">
+<H2>atan2</H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Метод. Возвращает угол полярной координаты (r, тета) который соответствует указанной декартовой координате (x, y). 
+<P>
+<B>Замечание:</B> Этот метод существовал в 2.0, но не был описан. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  
+Math.atan2 (<I>x</I>, <I>y</I>)
+ </PRE></table>
+<H3> Параметры</H3> 
+<P>
+<I>x</I> является либо числовым выражением либо свойством существующего объекта, представляющим декартову координату x. 
+<P>
+<I>y</I> является либо числовым выражением либо свойством существующего объекта, представляющим декартову координату y. 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_Math"> Math </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 2.0
+<H3> Описание</H3> 
+<!-- xxx Further description needed? Value between xxx and xxx? -->
+ <P>
+Метод <B>atan2</B> возвращает числовое значение. 
+<H3> Примеры</H3> 
+<P>
+Следующая функция возвращает угол полярной координаты: 
+<table><tr><td bgcolor=aqua><XMP>
+ function getAtan2(x,y) {
+   return Math.atan2(x,y)
+} </XMP></table>
+<P>
+Если выполняется <I>getAtan2</I> значения (90,15), то возвращается 1.4056476493802699; если выполняется значение (15,90), то возвращается 0.16514867741462683. 
+<H3> Смотрите также</H3> 
+<P>
+Методы 
+<A HREF="a.html#list_acos">acos</A>, <A HREF="a.html#list_asin">asin</A>, <A HREF="a.html#list_atan">atan</A>, <A HREF="c.html#list_cos"> cos </A>, <A HREF="s.html#list_sin"> sin </A>, <A HREF="t_z.html#list_tan"> tan </A> 
+<!-------------------------->
+<HR align=center width=250>
+ <A NAME="1_blur">
+<H2> blur </H2> 
+<P>
+ &LT;&LT;Changed. &GT;&GT; 
+<P>
+Метод <B> blur </B> -  метод объектов <I>window</I> и <I>frame</I>. Метод <B> blur </B>  удаляет фокус из окна или фрейма. Передвижение фокуса посылает окно к фону в большинстве систем управления окнами. 
+<H3> Синтаксис</H3> 
+<P>
+<table><tr><td bgcolor=aqua><PRE>  <I>
+frameReference</I>.focus () 
+<I>windowReference</I>.blur () </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>frameReference</I> - способ только для фреймов, как описано в объекте <A HREF="f_g.html#list_frameob">frame</A>. 
+<P>
+<I>windowReference</I> - способ только для окон, как описано в объекте <A HREF="t_z.html#list_windowob"> window </A>. 
+<H3> Метод</H3> 
+<LI> <A HREF="#1_frame"> frame </A> 
+<LI> <A HREF="#1_window"> window </A> 
+<!----------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <!-- Client -->
+ <A NAME="1_border">
+<H2> border </H2> 
+<P>
+ &LT; &LT;New. &GT; &GT; 
+<P>
+Свойство. Строка, определяющая ширину, в пикселях, границы изображения. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+imageName</I>.border
+ </PRE></table> 
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является либо именем объекта <I>image</I> либо элементом в массиве <I>image</I>. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="#1_image"> image </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Свойств <I>border</I> отражает атрибут BORDER тега &LT;IMG &GT;. Для изображений, созданных при image (), значение свойства <I> border</I> - 0. 
+<P>
+<I> border </I> - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующая функция показывает значение свойства <I> border </I> изображения, если значение - не ноль. 
+<table><tr><td bgcolor=aqua><XMP>
+ function checkBorder(theImage) {
+   if (theImage.border==0) {
+      alert('The image has no border!')
+   }
+   else alert('The image's border is ' + theImage.border)
+} </XMP></table>
+<form>
+<input type="button" value="Border Image" onClick="Open_border()">
+</form>
+<H3> Смотрите также</H3> 
+<P>Свойства 
+<A HREF="#1_height"> height </A>, <A HREF="#1_hspace">hspace</A>, <A HREF="#1_vspace">vspace</A>, <A HREF="#1_width"> width </A> 
+<!-------------------------------->
+<HR align=center width=250>
+<A NAME="1_button">
+<H2> button </H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<P>
+Следующие свойства были добавлены к объекту <I>button</I>: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD> Отражает атрибут TYPE 
+<TD>  </TR> 
+</TABLE> 
+<!------------------------------>
+ <HR align=center width=250>
+ <A NAME="1_checkbox">
+<H2> checkbox </H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<P>
+Следующие свойства были добавлены к объекту <I> checkbox </I>: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type</A> 
+<TD> Отражает атрибут TYPE 
+<TD>  </TR> 
+</TABLE> 
+<!-------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_close_window">
+<H2> close (объект окна)</H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<P>
+Метод <B>close</B> закрывает только окна, открытые <table><tr><td bgcolor=aqua><i>JavaScript</i></table> использующие метод <B>close</B>. Если вы хотите закрыть любое другое окно, которое допускает пользователя, выбирают, закрывается ли окно. Это - элемент(размер элемента) безопасности(акции), чтобы предотвратить " бомбы почты " содержащий self.close (). Однако, если окно имеет только один документ (текущий) в его истории сеанса, завершение допускается без, любой подтверждает. Это - частный случай для одноразовых окон, которые должны открыться другие окна и затем распорядиться собой. 
+<!------------------------------>
+<HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_complete">
+<H2> complete </H2> 
+<P>
+ &LT; &LT;New. &GT; &GT; 
+<P>
+Свойство. Логическое значение, которое указывает закончила ли Navigator загружать изображение. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+imageName</I>.complete
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является либо именем объекта <I>image</I> либо элементом в массиве <I>image</I>. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="#1_image ">image</A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+<I>complete</I> - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает изображение и три переключателя. Пользователь может щелкать переключатели, чтобы выбрать, какое изображение показано. Щелчок другой кнопки позволяет пользователю, смотреть текущее значение <I> complete </I> собственности. 
+<!-- xxx might need to include height and width properties for all images, to avoid layout bugs, but this is supposed to be fixed by ship -->
+ <table><tr><td bgcolor=aqua><XMP>
+<B>Choose an image:</B>
+<BR><INPUT TYPE="radio" NAME="imageChoice" VALUE="image1" CHECKED
+   onClick="document.images[0].src='f15e.gif'">F-15 Eagle
+<BR><INPUT TYPE="radio" NAME="imageChoice" VALUE="image2"
+   onClick="document.images[0].src='f15e2.gif'">F-15 Eagle 2
+<BR><INPUT TYPE="radio" NAME="imageChoice" VALUE="image3"
+   onClick="document.images[0].src='ah64.gif'">AH-64 Apache
+
+<BR><INPUT TYPE="button" VALUE="Is the image completely loaded?"
+   onClick="alert('The value of the complete property is '
+      + document.images[0].complete)">
+<BR>
+<IMG NAME="aircraft" SRC="f15e.gif" ALIGN="left" VSPACE="10"><BR>
+</XMP></table>
+<form>
+<input type="button" value="Example" onClick="Win_complit()">
+</form>
+<H3> Смотрите также</H3> 
+<P>Свойства 
+<A HREF="#1_lowsrc">lowsrc</A>, <A HREF="#1_src">src</A>
+<!------------------------------------------------------------------------->
+ <!-- xxx <HR align=center width=250> -->
+ <!-- Common -->
+ <!-- xxx this is used with prototype. Needs to be documented -->
+ <!-- <A NAME="1_constructor"><H2>constructor</H2></A>
+<P>&LT;&LT;New.&GT;&GT;
+<P>Property. xxx
+<H3>Syntax</H3>
+<PRE>
+xxx
+</PRE>
+<H3>Property of</H3>
+<P>xxx
+<H3>Implemented in</H3>
+<P>Navigator 3.0
+<H3>Description</H3>
+<P>xxx to be supplied
+<H3>Examples</H3>
+<P>xxx to be supplied
+<H3>See also</H3>
+<P>xxx to be supplied
+-->
+<!--------------------------------->
+<HR align=center width=250>
+ <A NAME="1_Date">
+<H2> Date </H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<P>
+Следующие свойства были добавлены к объекту <I> Date </I>: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_prototype"> prototype </A> 
+<TD> Позволяет вам, добавлять свойства к объекту <I>Date</I>. 
+<TD>  </TR> 
+</TABLE> 
+<!------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="1_defaultSelected">
+<H2> defaultSelected</H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<P>
+Свойство <I>defaultSelected</I>  - свойство объекта <I> Option </I>. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I>defaultSelected</I>: 
+<table><tr><td bgcolor=aqua><PRE> <I>
+optionName</I>.defaultSelected
+ </PRE> </table>
+<H3> Параметры</H3> 
+<I>optionName</I> - имя <I> Select </I> созданного при использование Option(). 
+<H3> Свойства</H3> 
+<LI> <A HREF="#1_select">Объект Option </A> 
+<!------------------------------------------------------------------->
+<!-- xxx Client or Common? -->
+ <A NAME="1_description">
+<H2> description </H2> 
+<P>
+ &LT; &LT;New. &GT; &GT; 
+<!-- xxx Needs further description -->
+ <!-- xxx Remove -->
+ <P>
+Свойство. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. navigator.mimeTypes <I>[index]</I> .description 
+2. <I>navigator.mimeTypes[mimeTypeName].description</I> 
+3. <I>navigator.plugins [index]</I> .description 
+4. navigator.plugins[pluginName].description  </PRE> 
+<!-- xxx Need parameter descriptions -->
+<!-- xxx 
+<H3>Property of</H3>
+<LI><A HREF="#1_mimeType">mimeTypes</A>
+<LI><A HREF="#1_plugin">Plugin</A>
+-->
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<!-- xxx 
+<H3>Description</H3>
+<P>xxx to be supplied
+<H3>Examples</H3>
+<P>xxx to be supplied
+<H3>See also</H3>
+<P>xxx to be supplied
+ -->
+ <!--------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_document">
+<H2> document </H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для объекта <I> document </I>: 
+<table><tr><td bgcolor=aqua><PRE>   
+&LT;BODY &GT; ... 
+[onBlur = <I>"handlerText"</I>] 
+[onFocus = <I>"handlerText"</I>] ... 
+&LT/BODY &GT </PRE></table> 
+<H3> Описание</H3> 
+<P>
+Обработчики событий OnBlur и onFocus определены в теге &LT;BODY &GT;, но - фактически обработчики событий для объекта window. 
+<H3>Свойства</H3> 
+<P>
+Следующие свойства были добавлены к объекту <I> document </I>: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_applet"> applet </A> 
+<TD> Массив, отражающий все applet в документе 
+<TD>  </TR> 
+<!-- xxx
+<TR VALIGN=TOP>
+<TD><A HREF="#1_domain">domain</A>
+<TD>xxx to be supplied
+<TD>
+</TR>
+-->
+ <TR VALIGN=TOP>  
+<TD> <A HREF="#1_plugin"> plugin </A> 
+<TD> Массив, отражающий все plugins в документе 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_image"> image </A> 
+<TD> Массив, отражающий все image в документе 
+<TD>  </TR> 
+</TABLE> 
+<P>
+Следующие объекты - свойства объекта <I>document</I> 
+<LI> <A HREF="#1_applet"> applet </A> 
+<LI> <A HREF="#1_area"> area </A> 
+<LI> <A HREF="#1_image "> image </A> 
+<LI> <A HREF="#1_plugin"> plugin </A> 
+<H3> Дополнительное описание</H3> 
+<P>
+Не используйте локализацию как свойство объекта <I> document </I>; используйте вместо свойство<I> document.URL</I>. Свойство <I>document.location</I>, которое является синонимом для <I> document.URL</I>, в будущем будет удален. 
+<P>
+вы можете очищать подокна документа (и устранять текст, формы элемента, и так далее, не восстанавливая изображение) используя document.close (); document.open (); document.write ().
+<!---------------------------------------------------------------------->
+ <!-- <HR align=center width=250> -->
+ <!-- xxx Client or Common? -->
+ <!-- xxx <A NAME="domain_property"><H2>domain</H2></A>
+<P>&LT&LTNew.&GT&GT
+<P>Property. xxx
+<H3>Syntax</H3>
+<PRE>
+xxx
+</PRE>
+<H3>Property of</H3>
+<P><A HREF=#document_object>Document</A>
+<H3>Implemented in</H3>
+<P>Navigator 3.0
+<H3>Description</H3>
+<P>xxx to be supplied
+<H3>Examples</H3>
+<P>xxx to be supplied
+<H3>See also</H3>
+<P>xxx to be supplied
+ -->
+<!------------------------------------------------------------------>
+ <HR align=center width=250>
+ <!-- xxx Client or Common? -->
+ <A NAME="1_enabledPlugin">
+<H2> enabledPlugin</H2> 
+<P>
+ &LT; &LT;New. &GT; &GT; 
+<!-- xxx Needs further description -->
+ <P>
+Свойство. Возвращает ссылку к объекту <I> Plugin </I> для plug-in, который обращается к типу MIME, или NULL, если никакой plug-in не обращается к типу MIME. 
+<!-- xxx Remove -->
+<!-- xxx <H3>Syntax</H3>
+<PRE>
+xxx to be supplied
+</PRE>
+<H3>Property of</H3>
+<P><A HREF="#mimeType_object">mimeType</A>
+<H3>Implemented in</H3>
+<P>Navigator 3.0
+<H3>Description</H3>
+<P>xxx to be supplied
+xxx This all came from Chris Bingham; need to rework it.
+<P>Each Navigator plug-in may handle multiple MIME types. Thus, each MIME type could potentially be handled by multiple plug-ins, helper apps, or by the Navigator itself. (On Macintosh and Unix, the handler for each MIME type can be configured by the user; on Windows, the handler is determined at Navigator start-up time.)
+<P>Without the <I>enabledPlugin</I> property, a script writer could determine if the user had a particular plug-in installed, and that their Navigator can handle a particular MIME type, but not if the MIME type is handled by a plug-in. The latter information is important because they may want to dynamically emit an EMBED tag on the page if they have a plug-in configured for their data type.
+<H3>Examples</H3>
+<P>xxx to be supplied
+<XMP>
+// Can we display Shockwave movies?
+mimetype = navigator.mimeTypes["application/x-director"]
+if (mimetype)
+{
+   // Yes, so can we display with a plug-in?
+   plugin = mimetype.enabledPlugin
+   if (plugin)
+      // Yes, so show the data in-line
+      document.writeln("Here's a movie: <EMBED SRC=mymovie.dir HEIGHT=100
+WIDTH=100>")
+   else
+      // No, so provide a link to the data
+      document.writeln("<A HREF="mymovie.dir">Click here</A> to see a movie.")
+}
+else
+{
+   // No, so tell them where to get the plug-in
+   document.writeln("Sorry, can't show you this cool movie.")
+}</XMP>
+<H3>See also</H3>
+<P>xxx to be supplied
+ -->
+<!-------------------------------------------------------------->
+<HR align=center width=250>
+<!-- xxx Client or Common? -->
+ <A NAME="1_filename">
+<H2> filename </H2> 
+<P>
+ &LT; &LT;New. &GT; &GT; 
+<!-- xxx Needs further description -->
+<!-- xxx Remove -->
+<P>
+Свойство. Имя файла plug-in. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. navigator.plugins <I>[ index]</I> .filename 
+2. navigator.plugins <I>[pluginName]</I> .filename </PRE> 
+<!-- xxx Need parameter descriptions -->
+ <H3> Свойство</H3> 
+<P>
+<A HREF="#1_plugin"> plugin </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<!-- xxx 
+<H3>Description</H3>
+<P>xxx to be supplied
+<H3>Examples</H3>
+<P>xxx to be supplied
+<H3>See also</H3>
+<P>xxx to be supplied
+ -->
+<!--------------------------------------------------------------------------->
+<HR align=center width=250>
+<!-- Client -->
+<A NAME="1_fileUpload">
+<H2> fileUpload</H2> 
+<P>
+ &LT; &LT;New. &GT; &GT; 
+<P>
+Объект. Файл загружает элемент в форму HTML. Файл загружает элемент, позволяет пользователю, обеспечивая файл как вход. 
+<H3> HTML синтаксис</H3> 
+Чтобы определять объект <I>FileUpload</I>, используйте стандарт HTML синтаксис: 
+<table><tr><td bgcolor=aqua><PRE>   
+&LT;INPUT 
+TYPE = "file" 
+NAME = <I>"fileUploadName"</I> &GT;
+ </PRE> </table>
+<H3> HTML атрибуты</H3> 
+<P>
+<I>NAME = "fileUploadName"</I> определяет имя объекта <I>fileUpload</I> (это - не имя файла, которое загружено). вы можете обращаться к этому значению, используя свойство <I>name</I>. 
+<H3> Синтаксис</H3> 
+Использование свойства объекта FileUpload: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+fileUploadName</I>.<I>propertyName</I>
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>fileUploadName</I> - значение атрибута NAME объекта <I>FileUpload</I>. 
+<P>
+<I>propertyName</I> - один из свойств, описанных ниже. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="f_g.html#list_formob">form</A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+вы можете размещать объект <I>FileUpload</I> в форме, но вы не можете использовать <font color="red"><i>JavaScript</i></font>, чтобы изменить его в любое время. 
+<H3>Свойства</H3> 
+<P>
+Объект <I>FileUpload</I> имеет следующие свойства: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_name"> name </A> 
+<TD> Отражает атрибут NAME </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_value"> value </A> 
+<TD> Отражает текущее значение файла загруженной области элемента; это соответствует имени файла. Это - свойство только для чтения. </TR> 
+</TABLE> 
+<H3> Методы</H3> 
+<LI> Отсутствуют. 
+<H3> Обработчики событий</H3> 
+<LI> Отсутствуют. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример размещает объект <I>FileUpload</I> в форму и обеспечивает две кнопки, которые позволяют пользователю, показывать текущие значения свойств <I>name</I> и <I> value</I>. 
+<table><tr><td bgcolor=aqua><XMP>
+ <FORM NAME="form1">
+File to send: <INPUT TYPE="file" NAME="myUploadObject">
+<P>Get properties<BR>
+<INPUT TYPE="button" VALUE="name"
+   onClick="alert('name: ' + document.form1.myUploadObject.name)">
+<INPUT TYPE="button" VALUE="value"
+   onClick="alert('value: ' + document.form1.myUploadObject.value)"><BR>
+</FORM> 
+</XMP></table>
+<form>
+<input type="button" value="Пример" onclick="Win_fileUpload()">
+</form>
+<H3> Смотрите также</H3> 
+<P>Объект 
+<A HREF="t_z.html#list_textob">text</A>
+<!----------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="1_focus">
+<H2> focus </H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<P>
+Метод <B> focus </B> - метод объектов <I>window</I> и <I>frame</I>. Метод <B> focus</B> дает фокус окну или фрейму.
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для метода <B>focus</B>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+frameReference</I>.focus () 
+<I>windowReference</I>.focus () </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>frameReference</I> - способ только для фрейма, как описано в объекте <A HREF="f_g.html#list_frameob">frame</A>. 
+<P>
+<I>windowReference</I> - способ только для окна, как описано в объекте <A HREF="t_z.html#list_windowob">window</A>. 
+<H3> Метод</H3> 
+<LI> <A HREF="#1_frame"> frame </A> 
+<LI> <A HREF="#1_window">window</A>
+<!---------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="1_form">
+<H2> form </H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<P>
+Следующее было добавлено к синтаксису объекта <I> form </I>: 
+<table><tr><td bgcolor=aqua><PRE>  
+[ OnReset = <I>"handlerText"</I>]
+ </PRE></table> 
+<P>
+Следующие объекты -  свойства объекта <I> form </I> 
+<LI> <A HREF="#1_fileUpload">fileUpload</A> 
+<P>
+Следующие методы были добавлены к объекту <I> form</I> 
+<LI> <A HREF="#1_reset"> reset</A> 
+<P>
+Следующие обработчики событий были добавлены к объекту <I> reset </I> 
+<LI> <A HREF="#1_onReset">onReset</A> 
+<!----------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="1_frame">
+<H2> frame </H2> 
+<P>
+ &LT; &LT;Changed. &GT; &GT; 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для определения обработчика событий onBlur, или onFocus для frameset (framesets - окна, которые имеют не-пустые массивы <I>frame</I>): 
+<table><tr><td bgcolor=aqua><PRE>   
+&LT;FRAMESET &GT; ... 
+[&LT;FRAME SRC = "locationOrURL" NAME="frameName" &GT;] 
+[onBlur = <I>"handlerText"</I>] 
+[onFocus = <I>"handlerText"</I>] ... 
+&LT;FRAMESET &GT;
+ </PRE></table> 
+<P>
+Следующий синтаксис был добавлен для определения обработчика событий onBlur или onFocus для фрейма (для фреймов, вы не можете определять эти обработчики результата в HTML): 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+frameReference</I>.onblur=<I>errorHandler </I>
+<I>frameReference</I>.onfocus=<I>errorHandler</I> </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>frameReference</I> - только для фрейма, как описано в объекте <A HREF="f_g.html#list_frameob"> frame </A>. 
+<P>
+<I>errorHandler</I> - нулевое ключевое слово, имя функции обработки ошибок, либо переменная либо свойство, которое содержит нулевой или имеющий силу справочник по функциям. 
+<H3> Описание</H3> 
+<P>
+Чтобы создавать обработчик событий onBlur или onFocus для фрейма, вы должны управлять свойством <I>onblur</I> или <I>onfocus</I> и определять их во всех нижних регистрах (вы не можете определять их в HTML). 
+<H3> Обработчики событий</H3> 
+<P>
+Следующие обработчики событий были добавлены к framesets и объекту <I>frame</I>: 
+<LI> <A HREF="#1_onBlur">onBlur</A> 
+<LI> <A HREF="#1_onFocus">onFocus</A> 
+<!---------------------------------------------------------------->
+<HR align=center width=250>
+<!-- Common -->
+ <A NAME="1_function">
+<H2> function </H2> 
+<P>
+ &LT; &LT;New. &GT; &GT; 
+<P>
+Объект. Определяет строку код <font color="red"><i>JavaScript</i></font>, которую нужно компилировать как функция. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+functionTarget</I> = new Function ([<I>arg1, arg2, ... argn</I>], <I>functionBody</I>)
+ </PRE> </table>
+<H3> Параметры</H3> 
+<!-- xxx functionTarget is not a very good term -->
+<P>
+<I>functionTarget</I> - имя переменной или свойство существующего объекта. Это может также быть объект, сопровождаемый именем обработчика событий нижнего регистра, типа window.onerror. 
+<P>
+<I>arg1, arg2, ... argn</I> - строковые аргументы, которые нужно использовать функцией как формальные имена аргумента. 
+<P>
+<I>functionBody</I> - строка, определяющая код <font color="red"><i>JavaScript</i></font>, который нужно компилировать как тело функции. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<!-- xxx It's common, so some examples are probably not appropriate -->
+<P>
+Объекты <I>function</I> оцениваются, каждый раз когда они используются. Это менее эффективно чем объявление функции и запроса внутри вашего кода, потому что объявленные функции компилируются. 
+<!-- xxx but explain some benefits of Function objects here -->
+<H4> Определение переменной значения с объектом <I> Function </I></H4> 
+<P>
+Следующий код присваивает функцию переменной <I>setBGColor</I>. Эта функция устанавливает цветовой фон текущего документа. 
+<table><tr><td bgcolor=aqua><XMP>
+ var setBGColor = new Function("document.bgColor='antiquewhite'") 
+</XMP></table>
+<P>
+Чтобы вызывать объект <I> Function </I>, вы можете определить переменное имя, так если бы это была функция. Следующий код выполняет функцию, определенная как переменная <I>setBGColor</I>: 
+<table><tr><td bgcolor=aqua><XMP>
+ var colorChoice="antiquewhite"
+if (colorChoice=="antiquewhite") {setBGColor()} 
+</XMP></table>
+<P>
+вы можете присваивать функцию обработчику событий следующими способами: 
+<XMP>
+1. document.form1.colorButton.onclick=setBGColor 
+2. <INPUT NAME="colorButton" TYPE="button" VALUE="Change background color" onClick="setBGColor()">
+</XMP>
+<P>
+Создание переменной <I>setBGColor</I> показанный выше подобно объявлению следующей функции: 
+<table><tr><td bgcolor=aqua><XMP>
+function setBGColor() {
+   document.bgColor='antiquewhite'
+} 
+</XMP></table>
+<P>
+Назначение функцию как переменную подобно объявлению функции, но они имеют разногласия: 
+<UL>
+ <LI> Когда вы приписываете функцию переменной, используя var setBGColor= new Function("..."), <I>setBGColor</I> - переменная, для которой текущая значение является ссылкой на функцию, созданную с new Function(). 
+<LI> Когда вы создаете функцию, используя функцию setBGColor () {...}, <I>setBGColor</I> - не переменная, это - имя функции. 
+</UL>
+<H4> Определение аргументов в объекте <I>function</I></H4> 
+<P>
+Следующий код определяет объект <I> function </I>,который принимает два аргумента. 
+<table><tr><td bgcolor=aqua><XMP>
+ Вар multFun = новая Функция ("x", "y", " возвращают x * y ") 
+</XMP></table>
+<P>
+Остроковые аргументы "x" и "y" - формальные имена аргумента, которые используются в теле функции, " возвращают x * y ". 
+<P>
+Следующий код показывает различные способы как вызвать функцию <I>multFun</I>: 
+<table><tr><td bgcolor=aqua><XMP>
+ var theAnswer = multFun (7,6) document.write (" 15*2 = " + multFun (15,2)) 
+<INPUT NAME="operand1" TYPE="text" VALUE="5" SIZE=5>
+<INPUT NAME="operand2" TYPE="text" VALUE="6" SIZE=5>
+<INPUT NAME="result" TYPE="text" VALUE="" SIZE=10>
+<INPUT NAME="buttonM" TYPE="button" VALUE="Multiply" onClick="document.form1.result.value= multFun(document.form1.operand1.value, document.form1.operand2.value)">
+</XMP></table>
+<!-- xxx awkward. could use rewrite -->
+<P>
+вы не можете вызывать функцию <I>multFun</I> в свойстве обработчика событий, потому что эти свойства не могут брать аргументы. Например, вы не можете вызвать функцию <I>multFun</I> следующим образом: 
+<table><tr><td bgcolor=aqua><XMP>
+  document.form1.button1.onclick=multFun(5,10)  
+</XMP></table>
+<H4> Определение обработчика событий с объектом <I>function</I></H4> 
+<P>
+Следующий код присваивает функцию onFocus обработчику событий окна: 
+<table><tr><td bgcolor=aqua><XMP>
+window.onfocus = new Function("document.bgColor='antiquewhite'")  
+</XMP></table>
+<P>
+Если вы имеете только ссылку на объект функции, то вы можете использовать его одноименную функцию, и преобразует от объекта до функции: 
+<table><tr><td bgcolor=aqua><XMP>
+ Window.onfocus () 
+</XMP></table>
+<H3>Свойства</H3> 
+<P>
+Объект <I>function</I> имеет следующие свойства: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<!-- xxx also has a caller property -->
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_arguments"> arguments </A> 
+<TD> Соответствует элементам функции. 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_prototype"> prototype </A> 
+<TD> Позволяет вам, прибавлять свойства к объекту <I>function</I>. 
+<TD>  </TR> 
+</TABLE> 
+<!-- xxx true? -->
+<H3> Методы</H3> 
+<LI> Отсутствуют. 
+<!-- xxx true? -->
+ <H3> Обработчики Событий</H3> 
+<LI> Отсутствуют.
+<H3> Примеры</H3> 
+<!-- xxx Could use more examples, although there are a lot above -->
+<!-- xxx Include an example of assigning them to a property if time -->
+<P>
+Следующий пример создает обработчики событий onFocus и onBlur для фрейма. Этот код существует в том же самом файле, который содержит тег &LT;FRAMESET&GT;. Заметьте, что это - единственный способ создания обработчиков событий onFocus и onBlur для фрейма, потому что вы не можете определять обработчики событий в теге &LT;FRAME&GT;. 
+<table><tr><td bgcolor=aqua><XMP>
+frames[0].onfocus = new Function("document.bgColor='antiquewhite'")
+frames[0].onblur  = new Function("document.bgColor='lightgrey'") 
+</XMP></table>
+<!------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="1_hash">
+<H2> hash </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Свойство <I> hash </I> - свойство объекта <I> Area</I>. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для  свойства <I> hash </I>:
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.hash
+</PRE></table> 
+<H3> Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта <I> Area </I>. 
+<H3> Свойства</H3> 
+<LI> <A HREF="#1_area">Объект Area</A> 
+<H3> Описание</H3> 
+<P>
+вы можете управлять свойством <I> hash </I> в любое время. 
+<!------------------------------------------------------------------->
+<HR align=center width=250>
+<!-- Client -->
+<A NAME="1_height">
+<H2> height </H2> 
+<P>
+ &LT; &LT;New.&GT; &GT ;
+<P>
+Свойство. Строка, определяющая высоту изображения или в пикселях или в процентах от высоты окна. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+imageName</I>.height
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является либо именем объекта <I>image</I> либо элемента в массиве <I>image</I>. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="#1_image"> image </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Свойство <I> height </I> отражает атрибут HEIGHT тега &LT;IMG&GT;. 
+<P>
+<I> height </I> - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующая функция показывает значения свойства изображения <I> height </I>, <I>width</I>, <I>hspace</I>, и <I>vspace</I>. 
+<table><tr><td bgcolor=aqua><XMP>
+ function showImageSize(theImage) {
+   alert('height=' + theImage.height+
+       '; width=' + theImage.width  +
+       '; hspace=' + theImage.hspace +
+       '; vspace=' + theImage.vspace)
+}
+</XMP></table>
+<form>
+<input type="button" value="Image Size" onClick="Win_ShowImageSize()">
+</form>
+<H3> Смотрите также</H3> 
+<P>Свойства 
+<A HREF="#1_border"> border </A>, <A HREF="#1_hspace">hspace</A>, <A HREF="#1_vspace ">vspace</A>, <A HREF="#1_width"> width </A> 
+<!--------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_hidden">
+<H2> hidden </H2> 
+<P>
+ &LT; &LT;Changed.&GT; &GT; 
+<P>
+Следующие свойства были добавлены к объекту <I> hidden </I>: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD> Отражает атрибут TYPE 
+<TD>  </TR> 
+</TABLE> 
+<!------------------------------------------------------------------------->
+<HR align=center width=250>
+<A NAME="1_host">
+<H2> host </H2> 
+<P>
+ &LT; &LT;Changed.&GT; &GT; 
+<P>
+Свойство <I> host </I> - свойство объекта <I> Area </I>. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I> host </I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.host
+ </PRE></table> 
+<H3> Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта <I> Area </I>.
+<H3> Свойства</H3> 
+<LI> <A HREF="#1_area">Объект area </A> 
+<H3> Описание</H3> 
+<P>
+вы можете управлять свойством <I> host </I> в любое время. 
+<!------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="1_hostname">
+<H2> hostname</H2> 
+<P>
+ &LT; &LT;Changed.&GT; &GT; 
+<P>
+Свойство <I>hostname</I> - свойство объекта <I> Area </I>. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I>hostname</I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.hostname
+ </PRE></table> 
+<H3> Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта <I> Area </I>. 
+<H3> Свойства</H3> 
+<LI> <A HREF="#1_area">Объект area </A> 
+<H3> Описание</H3> 
+<P>
+вы можете управлять свойством <I>hostname</I> в любое время. 
+<!---------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_href">
+<H2> href</H2> 
+<P>
+ &LT; &LT;Changed.&GT; &GT; 
+<P>
+Свойство <I>href</I> - свойство объекта <I> Area </I>. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I>href</I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.href
+ </PRE></table> 
+<H3> Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта <I> Area </I>. 
+<H3> Свойства</H3> 
+<LI> <A HREF="#1_area">Объект area </A> 
+<H3> Описание</H3> 
+<P>
+вы можете управлять свойством <I>href</I> в любое время. 
+<!---------------------------------------------------------------->
+<HR align=center width=250>
+<!-- Client -->
+<A NAME="1_hspace">
+<H2> hspace</H2> 
+<P>
+ &LT ;&LT;New.&GT; &GT; 
+<P>
+Свойства. Строка, определяющая поле в пикселях между левыми и правильными гранями изображения и текста окружения. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+imageName</I>.hspace
+ </PRE></table> 
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является либо именем объекта <I>image</I> либо элемента в массиве <I>image</I>. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="#1_image"> image </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Свойство <I>hspace</I> отражает атрибут HSPACE тега &LT;IMG&GT.
+<P>
+<I>Hspace</I> - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для свойства <A HREF="#1_height"> height </A>. 
+<H3> Смотрите также</H3> 
+<P>Свойства
+<A HREF="#1_border "> border </A>, <A HREF="#1_height"> height </A>, <A HREF="#1_vspace">vspace</A>, <A HREF="#1_width"> width </A> 
+<!------------------------------------------------------------->
+<HR align=center width=250>
+<!-- Client -->
+<A NAME="1_image">
+<H2> Image (массив <I> image </I>)</H2> 
+<P>
+ &LT; &LT;New.&GT; &GT; 
+<P>
+Объект. Изображение на форме HTML. 
+<H3> HTML синтаксис</H3> 
+<P>
+Чтобы определить изображение, используйте стандарт HTML синтаксис с использованием обработчиков событий onAbort и onLoad: 
+<table><tr><td bgcolor=aqua><PRE>   
+&LT;IMG 
+[NAME = <I>"imageName"</I>] 
+SRC = <I>" Location " </I>
+[LOWSRC = <I>" Location "</I>] 
+[HEIGHT = <I>" Pixels "</I> |<I>"Value"% </I>] 
+[WIDTH = <I>" Pixels "</I> | <I>"Value"%</I>] 
+[HSPACE = <I>" Pixels "</I>] 
+[VSPACE = <I>" Pixels "</I>] 
+[BORDER = <I>" Pixels "</I>] 
+[ALIGN="left"|"right"|
+      "top"|"absmiddle"|"absbottom"|
+      "texttop"|"middle"|"baseline"|"bottom"] 
+[ISMAP] 
+[<I>USEMAP="Location#MapName</I> "]
+[onAbort <I>= " handlerText</I> "] 
+[onError <I>= " handlerText</I> "]
+[onLoad <I>= " handlerText</I> "] &GT;
+ </PRE></table> 
+<H3> HTML атрибуты</H3> 
+<P>
+<I>NAME = "imageName"</I> определяет имя объекта <I>image</I>. Чтобы обратиться к этому значению, используйте свойство <I>name</I>. 
+<P>
+<I>SRC = </i>" Location "</I> определяет URL изображения, которое будет показано в документе. Чтобы обратиться к этому значению, используйте свойство <I>src</I>. 
+<P>
+LOWSRC = <i>" Location "</I> определяет URL версии низкого разрешения изображения, которое будет показано в документе. вы можете обращаться к этому значению, используя свойство <I>lowsrc</I>. 
+<P>
+HEIGHT = <I>" Pixels "</I> |<I>"Value"% </I> определяет высоту изображения или в пикселях или в процентах от высоты окна. вы можете обращаться к этому значению, используя свойство <I>height</I>. 
+<P>
+ WIDTH = <I>" Pixels "</I> | <I>"Value"%</I> определяет ширину изображения или в пикселях или в процент от ширины окна. вы обращаться к этому значению, используя свойство <I>width</I>. 
+<P>
+HSPACE = <I>" Pixels "</I> определяют расстояние в пикселях между левыми и правыми гранями изображения и текста окружения. Этот атрибут применяется только к изображениям, которые используют "левый" или "правые" как значения атрибута ALIGN. вы можете обращаться к этому значению, используя свойство <I>hspace</I>. 
+<P>
+VSPACE = <I>" Pixels "</I> определяют расстояние в пикселях между верхними и нижними гранями изображения и текста окружения. Этот атрибут применяется только к изображениям, которые используют "левый" или "правый" как значение атрибута ALIGN. вы можете обращаться к этому значению, используя свойство <I>vspace</I>. 
+<P>
+BORDER = <I>" Pixels "</I> определяет ширину, в пикселях, границы изображения. вы можете обращаться к этому значению, используя свойство <I>border</I>. 
+<P>
+<I> ALIGN </I> определяет выравнивание изображения относительно текста окружения. Если опущено, используется "bottom". 
+<P>
+<I>ISMAP</I> определяет изображение как отображение изображения стороны сервера. 
+<P>
+ <I>USEMAP="Location#MapName</I> " Определяет изображение как отображение изображения стороны клиента. Этот атрибут должен определить URL файла, который содержит формирование рисунка отображения, сопровождаемое Символом #, и затем имя отображения. Например, <table><tr><td bgcolor=aqua>USEMAP="http://www.HomeWorld.com/Maplist.html#areamap". </table> 
+<H3> Синтаксис</H3> 
+<P>
+Создание объект <I>Image</I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+imageName</I> = new Image([<i>width</i>,<i> height</i>])
+ </PRE></table> 
+<P>
+Использование свойства объекта <I> Image</I>: 
+<PRE>  
+1. <I>ImageName</I>.<I>propertyName </I>
+2. Document.images <I>[index]</I> .<I>propertyName</I> 
+3. <I>FormName</I>.elements <I>[index]</I> .<I>propertyName</I>
+ </PRE> 
+<P>
+Определим обработчик событий для объекта <I> Image </I>, созданного при помощи Image(): 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+imageName</I>.onabort = <I>handlerFunction </I>
+<I>imageName</I>.onerror = <I>handlerFunction</I> <I>
+imageName</I>.onload = <I>handlerFunction</I>
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является либо именем нового объекта либо свойством существующего объекта. При использовании свойства объекта <I>image</I>, <I>imageName</I> - значение атрибута NAME объекта <I>image </I> 
+<P>
+<I>width</I> - ширина изображения, в пикселях. 
+<P>
+<I>heigt</I> - высота изображения, в пикселях. 
+<P>
+<I>formName</I> является либо значением атрибута NAME объекта <I>form</I> либо элементом в массиве <I>form</I>. 
+<P>
+<I>index</I>, когда используется с массивом <I>image</I> - целое число или строка, представляющая объект <I> image </I>. <I>index</I>, когда используется с массивом <I> elements</I>, является целым числом, представляющим объект <I>image</I> на форме. 
+<P>
+<I>propertyName</I> - один из свойств, описанных ниже. 
+<P>
+<I>handlerFunction</I> - основное ключевое слово, имя функции, или переменной или свойство, которое содержит основное или имеющий силу функции. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="d_e.html#list_document"> document </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Положение и размер изображения в документе установлены, когда документ отображен в Navigator и не может быть изменен. вы можете изменять изображение, показанное как свойства <I>src</I> и <I>lowsrc</I>. (Смотрите описания <A HREF="#1_src"><I>src</I></A> и <A HREF="#1_lowsrc"><I>lowsrc</I></A>.) 
+<P>
+вы можете использовать <font color="red"><i>JavaScript</i></font>, чтобы создать анимацию с объектом <I>image</I> многократно устанавливая свойство <I>src</I>, как показано в Примере 4. <font color="red"><i>JavaScript</font></i> анимация медленнее чем GIF анимация, потому что с GIF анимацией полная анимация находится в одном файле; с <font color="red"><i>JavaScript</font></i> анимацией, каждый фрейм находится в отдельном файле. 
+<P>
+Объекты <I>image</I> не имеют обработчиков событий onClick, onMouseOut, и onMouseOver. Но, если вы определяете объект <I>Area</I> для изображения или размещаете тег &LT;IMG&GT; внутри объекта <I>Link</I>, вы можете использовать обработчики событий объектов <I> Area </I> или <I> Link </I>. Смотрите объекты <A HREF="#1_link"><I> link </I></A> и <A HREF="#1_area"><I> area </I></A>. 
+<H4>Построение image()</H4> 
+<P>
+Первичное использование для объекта <I> image</I>, созданного при помощи image() должен загружать изображение из сети прежде, чем это фактически необходимо для показа. Затем, когда вы должны показать изображение внутри существующей ячейки изображения, устанавливая свойство <I>src</I> показанного изображения к тому же самому значению, поскольку оно использовало для предвыбранного изображения, следующим образом. 
+<table><tr><td bgcolor=aqua><XMP>
+ myImage = new Image()
+myImage.src = "seaotter.gif"
+...
+document.images[0].src = myImage.src 
+</XMP></table>
+<P>
+Возникающее в результате изображение будет получено из кэша, скорее чем загруженный сетью. вы можете использовать эту методику, чтобы создать гладкие анимации, или вы можете отображать одно из отдельных изображений, основанных на вводе формы. 
+<H4> Массив <I>image</I></H4> 
+<P>
+вы можете ссылаться на изображения в вашем код,  используя массив <I> image </I>. Этот массив содержит все объекты <I> image </I> (тег &LT;IMG&GT;) в документе в исходном порядке (изображения, созданные при помощи image() не включены в массив <I> image </I>). Например, если документ содержит три изображения, то эти изображения отражены как document.images[0], document.images[1], и document.images[2]. 
+<P>
+Использование массива <I> image</I>: 
+<PRE>  
+1. document.images <I>[index] </I>
+2. document.images.length </PRE> 
+<!-- xxx Could show an example of indexing by name -->
+ <I> index </I> - целое число, представляющее изображение в документе или строка, содержащая имя объекта <I>image</I>. 
+<P>
+Чтобы получать число изображений в документе, используйте свойство <I>length</I>: document.images.length. 
+<!-- xxx This is kind of misleading. You can modify the properties or elements in the array. Global. -->
+<P>
+Элементы в массиве <I>image</I> только для чтения. Например, утверждение document.images [0] = "logo.gif" не имеет никакого действия. 
+<H3>Свойства</H3> 
+<P>
+Объект <I>image</I> имеет следующие свойства: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_border"> border</A> 
+<TD> Отражает атрибут BORDER </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_complete"> complete </A> 
+<TD> Логическое значение, указывающее, закончил ли Navigator загружать изображение </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_height"> height </A> 
+<TD> Отражает атрибут HEIGHT</TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_hspace_property">hspace</A> 
+<TD> Отражает атрибут HSPACE </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_lowsrc">lowsrc</A> 
+<TD> Отражает атрибут LOWSRC </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_name"> name </A> 
+<TD> Отражает атрибут NAME</TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_prototype"> prototype</A> 
+<TD> Позволяет вам, добавлять свойства к объекту <I>image</I>. 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_src">src</A> 
+<TD> Отражает атрибут SRC 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_vspace">vspace</A> 
+<TD> Отражает атрибут VSPACE </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_width"> width </A> 
+<TD> Отражает атрибут WIDTH</TR> 
+</TABLE> 
+<P>
+<B>Замечание:</B> <I>border</I>, <I>hspace</I>, <I>name</I>, и <I>vspace</I> свойства не обязательны для изображений, созданных при помощи image(). 
+<P>
+Массив <I>image</I> имеет следующие свойства: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойства 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_length"> length </A> 
+<TD> Отражает число изображений в документе </TR> 
+</TABLE> 
+<H3> Методы</H3> 
+Отсутствуют. 
+<H3> Обработчики событий</H3> 
+<LI> <A HREF="#1_onAbort">onAbort</A> 
+<LI> <A HREF="#1_onError">onError</A> 
+<LI> <A HREF="#1_onLoad">onLoad</A> 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1. Обращение к изображению его имени.</B> Если вы обращаетесь к изображению его имени, вы должны включить имя формы, если изображение находится в форме. Например, пусть следующее изображение определено так: 
+<table><tr><td bgcolor=aqua><XMP>
+ <IMG NAME="aircraft" SRC="f15e.gif" ALIGN="left" VSPACE="10">  
+</XMP></table>
+<P>
+Следующий код обращается к изображению, если он расположен на форме: 
+<table><tr><td bgcolor=aqua><XMP>
+ document.myForm.aircraft.src ='f15e.gif ' 
+</XMP></table>
+<P>
+Следующий код обращается к изображению, если он расположен не на форме: 
+<table><tr><td bgcolor=aqua><XMP>
+ document.aircraft.src ='f15e.gif ' 
+</XMP></table>
+<P>
+<B>Пример 2. Создание изображения при помощи Image().</B> Следующий пример создает объект <I>Image</I>, <I>myImage</I>, который имеет размеры 70 пикселей в  ширину и 50 пикселей в высоту. Если источник URL, seaotter.gif, не имеет размерностей 70x50 пикселей, то масштабируется к этому размеру. 
+<table><tr><td bgcolor=aqua><XMP>
+myImage = new Image(70, 50)
+myImage.src = "seaotter.gif"
+</XMP></table>
+<P>
+Если вы опускаете параметры ширину и высоту в Image(), <I>myImage</I> создается размерами, равными этому изображения, именованного в источнике URL. 
+<table><tr><td bgcolor=aqua><XMP>
+ myImage = new Image()
+ myImage.src = "seaotter.gif" 
+</XMP></table>
+<P>
+<B>Пример 3. Показывает изображение, основанное на вводе формы.</B> В следующем примере, пользователь выбирает, какое изображение показывать. Пользователь заказывает рубашку,  заполняя форму. Показанное изображение зависит от цвета рубашки и размера, который пользователь выбирает. Все возможные выборы изображения предварительно загружены, чтобы ускорить время ответа Когда пользователь нажимает кнопку, чтобы упорядочить(заказать) рубашку, функция <i>allShirts</i> отображает изображения всех рубашек. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+shirts = new Array()
+shirts[0] = "R-S"
+shirts[1] = "R-M"
+shirts[2] = "R-L"
+shirts[3] = "W-S"
+shirts[4] = "W-M"
+shirts[5] = "W-L"
+shirts[6] = "B-S"
+shirts[7] = "B-M"
+shirts[8] = "B-L"
+doneThis = 0
+shirtImg = new Array()
+// Preload shirt images
+for(j = 0; j < 3; j++) {
+   for(k = 0; k < 3; k++) {
+      idx = j*3 + k
+      shirtImg[idx] = new Image()
+      shirtImg[idx].src = "shirt-" + shirts[idx] + ".gif"
+    }
+}
+function changeShirt(form)
+{
+   shirtColor = form.color.options[form.color.selectedIndex].text
+   shirtSize  = form.size.options[form.size.selectedIndex].text
+   newSrc = "shirt-" + shirtColor.charAt(0) + "-" + shirtSize.charAt(0) + ".gif"
+   document.shirt.src = newSrc
+}
+function allShirts()
+{
+   document.shirt.src = shirtImg[doneThis].src
+   doneThis++   if(doneThis != 9)setTimeout("allShirts()", 500)
+   else doneThis = 0
+   return
+}
+</SCRIPT>
+ <FONT SIZE=+2><B>Netscape Рубашки Поло!</B></FONT> 
+<TABLE CELLSPACING=20 BORDER=0>  
+<TR>  
+<TD> <IMG name="shirt" SRC="shirt-W-L.gif"> </TD> 
+<TD>  
+<FORM>  <B>Цвет</B> 
+<SELECT SIZE=3 NAME="color" onChange="changeShirt(this.form)">
+ 
+<OPTION>
+ Красный 
+<OPTION SELECTED>
+ Белый 
+<OPTION>
+ Голубой
+</SELECT>
+<P>
+ <B>Размер</B> 
+<SELECT SIZE=3 NAME="size" onChange="changeShirt(this.form)">
+<OPTION>
+ Маленький 
+<OPTION>
+ Средний 
+<OPTION SELECTED>
+ Большой 
+</SELECT>
+ <P>
+<INPUT type="button" name="buy" value="Buy This Shirt!" onClick="allShirts()">
+</FORM>
+</TD> 
+</TR> 
+</TABLE> 
+</XMP></table>
+<P>
+<B>Пример 4. <font color="red"><i>JavaScript</i></font> анимация.</B> Следующий пример использует <font color="red"><i>JavaScript</font></i>, чтобы создать анимацию с объектом <I>Image</I>,  многократно изменяя значение свойства <I>src</I>. Сценарий начинается,  предварительно загрузив десять изображений, которые создают анимацию (! Image1.gif,! Image2.gif,! Image3.gif, и так далее). Когда объект <I>Image</I> размещается на документе с тегом &LT;IMG&GT;,! показывается Image1.gif, и обработчик событий onLoad начинает анимацию,  вызывая функцию <i>animate </i>. Обратите внимание, что функция <i>animate </i> не вызывается после изменения свойства <i>src</i> объекта <i>Image</i>. Это - то, потому что, когда <i>src</i> изменения свойство, обработчик события onLoad изображения вызван, и функция <i>animate </i> вызывается. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+delay = 100
+imageNum = 1
+// Preload animation images
+theImages = new Array()
+for(i = 1; i < 11; i++) {
+   theImages[i] = new Image()
+   theImages[i].src = "!image" + i + ".gif"
+   }
+function animate() {
+   document.animation.src = theImages[imageNum].src
+   imageNum++   if(imageNum > 10) {
+   imageNum = 1
+   }
+}
+function slower() {
+   delay+=10
+   if(delay > 4000) delay = 4000
+}
+function faster() {
+   delay-=10
+   if(delay < 0) delay = 0
+}
+</SCRIPT>
+<BODY BGCOLOR="white">
+ <IMG NAME="animation" SRC="!image1.gif" ALT="[Анимация]" onLoad="setTimeout('animate()', delay)">  
+<FORM>  
+<INPUT TYPE="button" Value="Slower" onClick="slower()">
+<INPUT TYPE="button" Value="Faster" onClick="faster()">
+</FORM>
+</BODY>
+</XMP></table>
+<P>
+Смотрите также примеры для обработчиков событий <A HREF="#1_onAbort">onAbort</A>, <A HREF="#1_onError">onError</A>, и <A HREF="#1_onLoad">onLoad</A>. 
+<H3> Смотрите также</H3> 
+<P>Объекты
+<A HREF="#1_area">Область</A>, <A HREF="#1_link"> link </A>;Обработчики событий <A HREF="#1_onClick">onClick</A>, <A HREF="#1_onMouseOut">onMouseOut</A>, <A HREF="#1_onMouseOver">onMouseOver</A> 
+<!------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="1_index">
+<H2> index </H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Свойство <I>index</I>  - свойство объекта Option. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I>index</I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+optionName</I>.index
+ </PRE></table> 
+<H3> Параметры</H3> 
+<I>optionName</I> - имя созданной опции объекта Select, при использовании Option(). 
+<H3> Свойства</H3> 
+<LI> <A HREF="#1_select">Объект Option </A> 
+<!------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_isNaN">
+<H2> isNaN</H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Функция <B>isNaN</B> теперь работает на всех платформах. 
+<P>
+Для информации относительно <B>isNaN</B>, смотрите функцию <A HREF="h_l.html#list_isNaN">isNaN</A>. 
+<!------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <!-- Client -->
+ <A NAME="1_javaEnabled">
+<H2> javaEnabled</H2> 
+<P>
+ &LT; &LT;New.&GT;&GT; 
+<P>
+Метод. Определяет, допускается ли Java. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  
+navigator.javaEnabled ()
+ </PRE></table> 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_navigator"> navigator </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+<B>javaEnabled</B> возвращает true, если Java допускается, иначе false. Пользователь имеет возможность или отключать Java,  выбирая Network Preferences из меню Navigator's Options. 
+<H3> Примеры</H3> 
+<P>
+Следующий код выполняет <I>function1</I>, если Java допускается; иначе  выполняет <I>function2</I>. 
+<table><tr><td bgcolor=aqua><XMP>
+ if (navigator.javaEnabled()) {
+   function1()
+}
+else function2() 
+</XMP></table>
+<H3> Смотрите также</H3> 
+<P>Свойства
+<A HREF="a.html#list_appName">appName</A>, <A HREF="a.html#list_appCodeName">appCodeName</A>, <A HREF="t_z.html#list_userAgent">userAgent</A> 
+<!--------------------------------------------------------->
+ <HR align=center width=250>
+ <!-- Common -->
+ <A NAME="1_join">
+<H2> join </H2> 
+<P>
+ &LT; &LT;New.&GT;&GT; 
+<P>
+Метод. Соединяет все элементы массива в строку. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+arrayName</I>.join <I>( separator) </I>
+ </PRE></table> 
+<H3> Параметры</H3> 
+<P>
+<I>arrayName</I> - имя объекта Array или свойство существующего объекта. 
+<P>
+<I> separator </I> определяет строку, которая отделяет каждый элемент массива. <I> separator </I> преобразован в строку в случае необходимости. Если опущен, то элементы массива отделяются запятой (,). 
+<H3> Метод</H3> 
+<P>
+<A HREF="#1_array"> array </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Строковое преобразование всех элементов массива соединено в одну строку. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает массив, с тремя элементами, затем соединяет массив три раза: используя заданного по умолчанию разделителя, затем запятую и пробел, и затем плюс. 
+<table><tr><td bgcolor=aqua><XMP>
+a = new Array("Wind","Rain","Fire")
+document.write(a.join() +"<BR>")
+document.write(a.join(", ") +"<BR>")
+document.write(a.join(" + ") +"<BR>") </XMP></table>
+<P>
+Этот код выглядит следующим образом: 
+<form>
+<input type="button" value="Click here" onClick="Win_join()">
+</form>
+<H3> Смотрите также</H3> 
+<P>Методы
+<A HREF="#1_reverse"> reverse </A>, <A HREF="#1_sort"> sort </A> 
+<!------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <!-- xxx Common for Array -->
+ <!-- xxx Client for images -->
+ <A NAME="1_length">
+<H2> length </H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Свойства <I> length </I> - свойство следующих: 
+<LI> <A HREF="#1_array">объект array </A> 
+<LI> <A HREF="#1_image">массив image </A> 
+<LI> <A HREF="#1_plugin"> plugin объект</A> 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <i>length</i>: 
+<PRE>  
+1. <I>arrayName</I>.length 
+2. images.length 
+3. navigator.plugins <I>[index]</I> .length 
+4. navigator.plugins <I>[pluginName]</I> .length </PRE> 
+<H3> Параметры</H3> 
+<I>arrayName</I> - имя объекта Array. 
+<H3> Описание</H3> 
+Свойство <i>length</i> - целое число, которое определяет один из следующих: 
+<UL>
+ <LI> Число элементов в массиве. 
+<LI> Число изображений в документе. 
+</UL>
+<P>
+Для массивов, вы можете устанавливать свойства <i>length</i>, чтобы урезать массив в любое время. вы не можете расширять массив; например, если вы устанавливаете длину 3, когда - в настоящее время 2, массив будет все еще содержать только 2 элемента. Для информации относительно других способов изменять длины массива, смотрите объект Array.
+{<A HREF="#1_array"> array </A>} 
+<H3> Примеры</H3> 
+Следующий код укорачивает массив <I>statesUS</I> до длины 50, если текущая длина большая чем 50. 
+<table><tr><td bgcolor=aqua><XMP>
+ if (statesUs.length > 50) {
+   statesUs.length=50
+   alert("The U.s. has only 50 states. New length is " + statesUs.length)
+} 
+</XMP></table>
+<H3> Свойства</H3> 
+<LI> <A HREF="#1_array">объект array </A> 
+<LI> <A HREF="#1_image">массив image </A> 
+<LI> <A HREF="#1_plugin"> plugin объект</A> 
+<!-------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_link">
+<H2> link (массив <I> links </I>)</H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Массив <I> links </I> теперь содержит объекты Area, которые созданы с &LT;AREA HREF = "..."&GT;. 
+<P>
+Следующие обработчики события были добавлены к объекту <i>Link</i>: 
+<LI> <A HREF="#onMouseOut_event">OnMouseOut</A> 
+<H3> Дополнительное описание</H3> 
+<P>
+Следующее обсуждение будет добавлено к документации для объекта <i>Link</i>; однако, это - не новые функциональные возможности. 
+<P>
+вы можете использовать объект <i>Link</i>, чтобы выполнить функцию <font color="red"><i>JavaScript</font></i> быстрее чем связь с гиперссылкой,  определяя javascript: URL протокол для HREF атрибута связи. вы можете делать это, если связь окружает объект Image, и вы хотите выполнять <font color="red"><i>JavaScript</font></i> код, когда изображение нажато. Или вы можете использовать связь вместо кнопки, чтобы выполнить <font color="red"><i>JavaScript</i></font> код. 
+<P>
+Например, когда пользователь нажимает на следующие связи, <I> slower </I> и <I> faster </I> выполняются функции: 
+<table><tr><td bgcolor=aqua><XMP>
+ <A HREF="javascript-slower()">Slower</A>
+<A HREF="javascript-faster()">Faster</A> 
+</XMP></table>
+<P>
+вы можете использовать объект Link, чтобы не делать ничто скорее чем связь с гиперссылкой,  определяя javascript:void (0) URL протокол для HREF атрибута связи. вы можете делать это, если связь окружает объект Image, и вы хотите использовать обработчики события связи с изображением. Когда пользователь нажимает следующую связь или изображение, ничего не происходит: 
+<table><tr><td bgcolor=aqua><XMP>
+ <A HREF="javascript-void(0)">Click here to do nothing</A>
+ <A HREF="javascript-void(0)">
+   <IMG SRC="globe.gif" ALIGN="top" HEIGHT="50" WIDTH="50">
+</A> 
+</XMP></table>
+<H3> Смотрите также</H3> 
+<P>
+<A HREF="#1_void"> void </A> 
+<!------------------------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="1_location">
+<H2> location </H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен к объекту <i>Location</i>: 
+<PRE>  
+[ <I><I>windowReference.]location.methodName(parameters)</I></I>
+  </PRE> 
+<H3> Методы</H3> 
+<P>
+Следующие методы были добавлены к объекту <i>Location</i>: 
+<LI> <A HREF="#1_reload"> reload </A> 
+<LI> <A HREF="#1_replace"> replace </A> 
+<H3> Дополнительное описание</H3> 
+<P>
+Следующее обсуждение будет добавлено к документации для объекта <i>Location</i>; однако, это - не новые функциональные возможности. 
+<P>
+В обработчиках события, вы должны определить window.location вместо просто использования <i>location</i>. Из-за обзора статических объектов в <font color="red"><i>JavaScript</font></i>, обращение к <i>location</i> без определения объектного имени эквивалентно document.location, который является синонимом для документа URL. 
+<P>
+Не используйте <i>location </i> как свойство объекта Document; используйте вместо этого свойство<I> document. URL</I>. Свойство <I>Document.location</I>, которое является синонимом для <I> document.URL</I>, будет удален в будущем. 
+<!------------------------------------------------------------->
+ <HR align=center width=250>
+ <!-- Client -->
+ <A NAME="1_lowsrc">
+<H2> lowsrc</H2> 
+<P>
+ &LT; &LT;New.&GT;&GT; 
+<P>
+Свойство. Строка, определяющая URL версии низкого разрешения изображения, которое нужно отобразить в документе. 
+<H3> Синтаксис</H3> 
+<PRE>  <I>
+imageName</I>.lowsrc
+ </PRE> 
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является либо именем объекта Image либо элемента в массиве <I>Image</I>. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="#1_image"> image </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Свойство <I>Lowsrc</I> первоначально отражает атрибут LOWSRC тега &LT;IMG&GT;. Navigator загружает меньшее изображение, определенное <I>lowsrc</I> и затем заменяет его на большее изображение, определенное свойством <I>src</I>. вы можете изменять свойства <I>lowsrc</I> в любое время. 
+<H3> Примеры</H3> 
+<P> Свойства 
+Смотрите примеры для <A HREF="#1_src">src</A>. 
+<H3> Смотрите также</H3> 
+<P> Свойства 
+<A HREF="#1_complete"> complete </A>, <A HREF="#1_src">src</A> 
+<!----------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_Math">
+<H2> Math </H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Следующие методы были добавлены к объекту <i>Math</i>: 
+<LI> <A HREF="#1_atan2">atan2</A> 
+<!------------------------------------------------------------>
+ <HR align=center width=250>
+ <!-- xxx Client or Common? -->
+ <!-- xxx This might be mimeType, not mimeTypes (which is the array name) -->
+ <!-- xxx If it turns out to be mimeTypes, tell DG about it -->
+ <A NAME="1_mimeType">
+<H2> mimeTypes</H2> 
+<P>
+ &LT; &LT;New.&GT;&GT; 
+<!-- xxx Need complete section here -->
+<!-- xxx Remove -->
+<P>
+Массив всех типов MIME, обеспечиваемых клиентом. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="m_q.html#list_navigator"> navigator </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<!-- xxx 
+<H3>Properties</H3>
+<P>The <I>mimeType</I> object has the following properties:
+<P><TABLE BORDER=1>
+<TR VALIGN=TOP>
+<TH ALIGN=left>Property
+<TH ALIGN=left>Description
+</TR>
+<TR VALIGN=TOP>
+<TD><A HREF="#description_property">description</A>
+<TD>xxx
+</TR>
+<TR VALIGN=TOP>
+<TD><A HREF="#enabledPlugin_property">enabledPlugin</A>
+<TD>xxx
+</TR>
+<TR VALIGN=TOP>
+<TD><A HREF="#type_property">type</A>
+<TD>xxx
+</TR>
+<TR VALIGN=TOP>
+<TD><A HREF="#suffixes_property">suffixes</A>
+<TD>xxx
+</TR>
+</TABLE>
+<H3>Methods</H3>
+<LI>None.
+<H3>Event handlers</H3>
+<LI>None.
+<H3>Examples</H3>
+<P>xxx to be supplied
+<H3>See also</H3>
+<P><A HREF="#plugin_object">Plugin</A> object, <A HREF="#plugins_array">plugins</A> array
+ -->
+<!----------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_name">
+<H2> name </H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Свойства <I> name </I> - свойства только для чтения следующих объектов: 
+<LI> <A HREF="#1_applet"> applet </A> 
+<LI> <A HREF="#1_fileUpload">fileUpload</A> 
+<LI> <A HREF="#1_image"> image </A> 
+<LI> <A HREF="#1_plugin"> plugin </A> 
+<H3> Синтаксис</H3> 
+<!-- xxx add syntax for applets -->
+<P>
+Следующий синтаксис был добавлен для свойства <I> name </I>: 
+<PRE>  
+1. <I>fileUploadName</I>.name 
+2. <I>imageName</I>.name 
+3. navigator.plugins <I>[index]</I> .name 
+4. navigator.plugins <I>[pluginName]</I> .name </PRE> 
+<H3> Параметры</H3> 
+<I>fileUploadName</I> является либо значением атрибута NAME объекта FileUpload либо элемента в массиве <I> elements </I>. 
+<P>
+<I>imageName</I> является либо значением атрибута NAME объекта Image либо элемента в массиве <I>images</I>. 
+<P>
+<I>index</I> - целое число, представляющее plug-in документа или строка, содержащая имя объекта Plugin 
+<H3> Описание</H3> 
+<!-- xxx mention applet and plugin objects -->
+<P>
+Для объекта FileUpload, <I>name</I> - свойство только для чтения. 
+<P>
+Для изображений, созданных при помощи image(), значение свойства <I>name</I> пусто. 
+<H3> Свойства</H3> 
+<LI> <A HREF="#1_fileUpload"> объект fileUpload </A> 
+<LI> <A HREF="#1_image"> image </A> 
+<LI> <A HREF="#1_plugin"> plugin </A> 
+<H3> Смотрите также</H3> 
+Объекты 
+<A HREF="#1_applet"> applet </A>, <A HREF="#1_plugin"> plugin </A> 
+<------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_navigator">
+<H2> navigator </H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Следующие объекты - свойства объекта <I> navigator </I> 
+<LI> <A HREF="#1_mimeType">mimeType</A> 
+<LI> <A HREF="#1_plugins">plugins</A> 
+<P>
+Следующие методы были добавлены к объекту <I> navigator </I> 
+<LI> <A HREF="#1_javaEnabled">javaEnabled</A> 
+<!------------------------------------------------------------>
+ <HR align=center width=250>
+ <!-- Client -->
+ <A NAME="1_onAbort">
+<H2> onAbort</H2> 
+<P>
+ &LT; &LT;New.&GT;&GT; 
+<P>
+Обработчик событий. Событие аварийного прекращения работы происходит, когда пользователь прерывает загрузку изображения (например,  нажимая связь или нажимая Кнопку остановки). Обработчик события OnAbort выполняет <font color="red"><i>JavaScript</font></i> код, когда происходит событие аварийного прекращения работы. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Обработчики событий</H3> 
+<LI> <A HREF="#1_image"> image </A> 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, обработчик <i> onAbort </i> в объекте Image отображает сообщение, когда пользователь прерывает загрузку изображения: 
+<table><tr><td bgcolor=aqua><XMP>
+ <IMG NAME="aircraft" SRC="f15e.gif" 
+    onAbort="alert('You didn\'t get to see the image!')">  
+</XMP></table>
+<H3> Смотрите также</H3> 
+<P> Обработчики событий 
+<A HREF="#1_onError">onError</A>, <A HREF="#1_onLoad">onLoad</A> 
+<!----------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_onBlur">
+<H2> OnBlur</H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Обработчик события <i> OnBlur </i> - обработчик события окон, фреймов, и framesets. 
+<H3> Обработчик События</H3> 
+<LI> <A HREF="#1_window"> window </A> 
+<LI> <A HREF="#1_frame"> frame </A> 
+<H3> Описание</H3> 
+<P>
+Для окон, фреймов, и framesets, обработчик события <i> onBlur </i> определяет <font color="red"><i>JavaScript</font></i> код, который выполниться, когда окно теряет фокус. 
+<P>
+Обработчик события <i> OnBlur </i> фрейма отменяет обработчик события <i> onBlur </i> в теге &LT;BODY&GT; документа, загруженного в фрейм. 
+<P>
+<!-- xxx If this gets into the release notes, change "Windows" to "some platforms" and add this: Please see the release notes (after starting Netscape, choose Release Notes from the Help menu). -->
+<P>
+<B>Обратите внимание:</B> На платформах Windows, помещая обработчик события <i> onBlur </i> в тег &LT;FRAMESET&GT; не имеет никакого действия. 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1. Изменение фона окна.</B> В следующем примере, обработчики события onBlur окна и onFocus изменяют фоновый цвет окна в зависимости от того, имеет ли окно фокус. 
+<table><tr><td bgcolor=aqua><XMP>
+<BODY BGCOLOR="lightgrey" 
+onBlur="document.bgColor='lightgrey'" 
+onFocus="document.bgColor='antiquewhite'">
+</XMP></table>
+<P>
+<B>Пример 2. Изменение фонового цвета фрейма.</B> Следующий пример создает четыре фрейма. Источник для каждого фрейма, Oonblur2.html имеет тег &LT;BODY&GT; с обработчиками события onBlur и onFocus, показанными в Примере 1. Когда документ загружен, все фреймы - "lightgrey". Когда пользователь нажимает фрейм, обработчик события onFocus изменяет фоновый цвет фрейма на "antiquewhite". Фрейм, который теряет фокус,  изменен на "lightgrey". Обратите внимание, что обработчики события onBlur и onFocus - внутри тега &LT;BODY&GT;, а не тега &LT;FRAME&GT;. 
+<table><tr><td bgcolor=aqua><XMP>
+ <FRAMESET ROWS="50%,50%" COLS="40%,60%">
+ <FRAME SRC=Onblur2.html NAME="frame1">
+ <FRAME SRC=Onblur2.html NAME="frame2">
+ <FRAME SRC=Onblur2.html NAME="frame3">
+ <FRAME SRC=Onblur2.html NAME="frame4">
+ </FRAMESET>
+ </XMP></table>
+<P>
+<form>
+<input type="button" value="Нажми здесь" onClick="Win_OnBlur1()">
+</form>
+Следующий код имеет тот же самый эффект что и предыдущий код, но выполнен по-другому. Обработчики события  onFocus и onBlur связаны с фреймом, а не с документом. Обработчики события onBlur и onFocus для фрейма определены,  устанавливая свойства <I>onblur</I> и <I>onfocus</I>. Для информации относительно использования <B> new </B> определяющий строку <font color="red"><i>JavaScript</i></font> кода, который нужно компилировать как функция, смотрите объект Function.
+{<A HREF="#1_function"> function </A>} 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+function setUpHandlers() {
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].onfocus = new Function("document.bgColor='antiquewhite'")
+    frames[i].onblur  = new Function("document.bgColor='lightgrey'")
+  }
+}
+</SCRIPT>
+<FRAMESET ROWS="50%,50%" COLS="40%,60%" onLoad=setUpHandlers()>
+<FRAME SRC=Onblur2.html NAME="frame1">
+<FRAME SRC=Onblur2.html NAME="frame2">
+<FRAME SRC=Onblur2.html NAME="frame3">
+<FRAME SRC=Onblur2.html NAME="frame4">
+</FRAMESET>
+</XMP></table>
+<form>
+<input type="button" value="DEMO" onClick="Win_OnBlur2()">
+</form>
+<P>
+<B>Пример 3. Закрытие окон.</B> В следующем примере, обработчик события onBlur окна закрывает окно, когда окно теряет фокус. 
+<table><tr><td bgcolor=aqua><XMP>
+<BODY onBlur="window.close()">
+Здесь - некоторый текст 
+</BODY>
+</XMP></table>
+<!------------------------------------------------------>
+ <HR align=center width=250>
+ <A NAME="1_onClick">
+<H2> onClick</H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Для checkboxes, links, radio buttons, reset buttons, и submit buttons , обработчик события onClick может теперь возвращать false, чтобы отменить действие, обычно связываемое с событием щелчка. Возвращение false в обработчике события onClick для кнопки не имеет никакого действия. 
+<!-- xxx If this gets into the release notes, change "Windows" to "some platforms" and add this: Please see the release notes (after starting Netscape, choose Release Notes from the Help menu). -->
+<P>
+<B>Обратите внимание:</B> На платформах Windows, возвращая false в обработчике события onClick для кнопки reset не имеет никакого действия. 
+<P>
+Например, нажмите на следующую гиперссылку, и затем выберите Отмену. Когда вы выбираете Отмену, новая страница не загрузиться. 
+<P>
+<A HREF = "index-1.htm" onClick="return confirm('Load Netscape home page?')">Netscape</A> 
+<P>
+Код для этого примера выглядит следующим образом: 
+<table><tr><td bgcolor=aqua><XMP>
+ <A HREF = "index-1.htm" 
+onClick="return confirm('Load Netscape home page?')">Netscape</A> 
+</XMP></table>
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает checkbox с обработчиком события onClick. Обработчик события отображает подтверждение, которое предупреждает пользователя, что проверка checkbox очищает все файлы. Если пользователь выбирает Отмену, обработчик события onClick возвращает false, и checkbox не отмечен. 
+<table><tr><td bgcolor=aqua><XMP>
+<INPUT TYPE="checkbox" NAME="check1" VALUE="check1" onClick="return confirm('This purges all your files. Are you sure?')">
+ Удалить файлы 
+</XMP></table>
+<form>
+<input type="button" value="Открыть Пример" onClick="Win_OnClick()">
+</form>
+<!----------------------------------------------------------->
+ <HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_onError">
+<H2> onError</H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Обработчик События. Событие ошибки происходит, когда загрузка документа или изображения вызывает ошибку. Обработчик события onError выполняет <font color="red"><i>JavaScript</i></font> код, когда происходит событие ошибки. 
+<P>
+Обработчик события onError может быть любым из следующих: 
+<UL>
+<LI> Пустой указатель, чтобы подавить все диалоги ошибки. Установка window.onerror к пустому указателю означает что ваши пользователи, не будет видеть <font color="red"><i>JavaScript</font></i> ошибки, вызванные вашим собственным кодом. 
+<LI> Имя функции, которая обрабатывает ошибки (параметры - текст сообщения, URL, номер строки ошибки). Чтобы скрыть стандартную диалоговую ошибку <font color="red"><i>JavaScript</font></i>, функция должна возвратить true. Смотрите нижеприведенный Пример 3.
+<LI> Переменная или свойство, которое содержит пустой указатель или допустимая ссылка к функциям. 
+</UL>
+<P>
+Если вы записываете функцию обработчика событий, то вы имеете три параметра для сообщения ошибок: 
+<UL>
+ <LI> Ошибки Следа, который позволяет диалоговому стандарту <font color="red"><i>JavaScript</font></i> сообщать их (используйте функцию обработчика событий, который не возвращает true) 
+<LI> Ошибки Отчета самостоятельны и отключают стандартную диалоговую ошибку (используйте функцию обработчика событий, которая возвращает true) 
+<LI> Выключите все сообщающуюся ошибку (установите onError обработчик события к пустому указателю) 
+</UL>
+<P>
+Событие ошибки происходит только, когда происходят синтаксис <font color="red"><i>JavaScript</font></i> или ошибка во время выполнения программы, но не, когда происходит ошибка Navigator. Например, если вы пытаетесь установить window.location.href ='Notthere.html ', причем Notthere.html не существует, в результате возникает сообщение об ошибках - есть Navigator сообщения об ошибках; следовательно, обработчик события onError не прервал бы это сообщение. 
+<P>
+Смотрите релевантные объекты для синтаксиса onError. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Обработчик События</H3> 
+<LI> <A HREF="#1_image"> image </A> 
+<LI> <A HREF="#1_window"> window </A> 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1. Обработчик События с нулевой вероятностью.</B> В следующем теге &LT;IMG&GT;, код <i>onError = "null"</i> скрывает сообщения об ошибках, если ошибки происходят, когда изображение загружается. 
+<table><tr><td bgcolor=aqua><xmp>
+ <IMG NAME="imageBad1" SRC="corrupt.gif" ALIGN="left" BORDER="2" onError="null">  
+</XMP></table>
+<P>
+<B>Пример 2. Обработчик События с нулевой вероятностью для окна.</B> Обработчик события OnError для окон не может быть выражен в HTML. Следующий код приписывает null обработчику onError для всего окна, а не только для объект <i>Image</i>. Это скроет все <font color="red"><i>JavaScript</font></i> сообщения об ошибках. 
+<table><tr><td bgcolor=aqua><xmp>
+<SCRIPT>
+  window.onerror=null
+</SCRIPT>
+ <IMG NAME="imageBad1" SRC="corrupt.gif" ALIGN="left" BORDER="2">  
+</XMP></table>
+<P>
+В следующем примере, окно onerror=null скрывает все сообщения об ошибки. Без onerror=null, иначе код вызвал бы ошибку (stack overflow error). 
+<table><tr><td bgcolor=aqua><xmp>
+<SCRIPT>
+ window.onerror = null;
+ function testErrorFunction() {
+   testErrorFunction();
+ }
+ </SCRIPT>
+<BODY onload="testErrorFunction()">
+ Сообщение теста 
+</BODY>
+</XMP></table>
+<P>
+<B>Пример 3. Функция Обработки ошибок.</B> Следующий пример определяет функцию <I>myOnError</I>, которая прерывает <font color="red"><i>JavaScript</font></i> ошибки. Функция использует три массива, чтобы сохранить сообщение, URL, и номер строки для каждой ошибки. Когда пользователь нажимает кнопку Display Error Report, функция <I>displayErrors</I> открывает окно и создает отчет ошибки в этом окне. 
+<table><tr><td bgcolor=aqua><xmp> <SCRIPT>
+ window.onerror = myOnError
+ msgArray = new Array()
+ urlArray = new Array()
+ lnoArray = new Array()
+ function myOnError(msg, url, lno) {
+   msgArray[msgArray.length] = msg
+   urlArray[urlArray.length] = url
+   lnoArray[lnoArray.length] = lno
+   return true
+}
+function displayErrors() {
+   win2=window.open('','window2','scrollbars=yes')
+   win2.document.writeln('<B>Error Report</B><P>')
+   for (var i=0; i < msgArray.length; i++) {
+      win2.document.writeln('<B>Error in file:</B> ' + urlArray[i] + '<BR>')
+      win2.document.writeln('<B>Line number:</B> ' + lnoArray[i] + '<BR>')
+      win2.document.writeln('<B>Message:</B> ' + msgArray[i] + '<P>')
+   }
+   win2.document.close()
+}
+</SCRIPT>
+<BODY onload="noSuchFunction()">
+<FORM>  <BR>
+<INPUT TYPE="button" VALUE="This button has a syntax error" onClick="alert('unterminated string)">
+<P>
+<INPUT TYPE="button" VALUE="Display Error Report" onClick="displayErrors()">
+</FORM>
+</XMP></table>
+<P>
+<form>
+<input type="button" value="Вывести ошибки" onClick="Win_OnError()">
+</form>
+<B>Пример 4. Обработчик События вызывающий функцию.</B> В следующем теге &LT;IMG&GT;, обработчик события onError вызывает функцию <I>badImage</I>, если существуют ошибки, когда изображение загружается. 
+<table><tr><td bgcolor=aqua><xmp>
+ <SCRIPT>
+function badImage(theImage) {
+   alert('Error: ' + theImage.name + ' did not load properly.')
+}
+ </SCRIPT>
+<FORM>  <IMG NAME="imageBad2" SRC="orca.gif" ALIGN="left" BORDER="2" onError="badImage(this)">  
+</FORM>
+</XMP></table>
+<form>
+<input type="button" value="Показать пример" onClick="Win_OnError1()">
+</form>
+<H3> Смотрите также</H3> 
+<P>
+Обработчик события <A HREF="#1_onLoad">OnLoad</A>
+<!----------------------------->
+<HR align=center width=250>
+ <A NAME="1_onFocus">
+<H2> OnFocus</H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Обработчик события OnFocus - теперь это обработчик события window, frame, и frameset. 
+<H3> Обработчик События</H3> 
+<LI> <A HREF="#1_window"> window </A> 
+<LI> <A HREF="#1_frame"> frame </A> 
+<H3> Описание</H3> 
+<P>
+Для window, frame, и framesets, обработчик события onFocus определяет код <font color="red"><i>JavaScript</font></i>, который выполниться, когда окно получает фокус. 
+<P>
+Обработчик события OnFocus frame отменяет обработчик события onFocus в теге &LT;BODY&GT; документа, загруженного в frame. 
+<P>
+Обратите внимание, что размещение alert в обработчике события onFocus приводит к рекуррентным сообщениям: когда вы нажимаете OK, чтобы игнорировать сообщение, основное окно получает снова фокус и происходит другое событие фокуса. 
+<P>
+Смотрите релевантные объекты для синтаксиса onFocus. 
+<P>
+<B>Обратите внимание:</B> На платформах Windows, помещая обработчик события onFocus в теге &LT;FRAMESET&GT; не имеет никакого эффекта. 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для обработчика события <A HREF="#1_onBlur">onBlur</A>. 
+<!------------------------>
+ <HR align=center width=250>
+ <A NAME="1_onLoad">
+<H2> OnLoad</H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Обработчик события OnLoad - теперь обработчик события: 
+<LI> <A HREF="#1_image"> image </A>  
+<H3> Обработчик События</H3> 
+<LI> <A HREF="#1_image"> image </A> 
+<H3> Описание</H3> 
+<P>
+Для image, обработчик события onLoad указывает на код, который выполниться, когда изображение отображается. Не путайте отображение изображения с загрузкой изображения. вы можете загружать несколько изображений, и затем отображать их один за другим в том же самом объекте Image,  устанавливая свойство <I>src</I> объекта. Если вы изменяете изображение, отображаемое таким образом, обработчик события onLoad выполняется каждый раз, когда изображение отображается, а не только, когда изображение загружено в память. 
+<P>
+Если вы определяете обработчик события onLoad для объекта Image, который отображает выполнение цикла GIF анимации (multi-image GIF), каждый цикл анимации вызывает событие onLoad, и обработчик события выполняется один раз для каждого цикла. 
+<P>
+вы можете использовать обработчик события onLoad, чтобы создать <font color="red"><i>JavaScript</font></i> анимацию,  надо несколько раз устанавливать свойство  <I>src</I> объекта Image. Смотрите объект Image для более подробной информации. {<A HREF="#1_image"> image </A>} 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1. Alert Дисплея, когда загружено изображение.</B> Следующий пример создает два объекта Image, один при помощи image(), а один при помощи тега  &LT;IMG&GT;. Каждый объект Image имеет обработчик события onLoad, который вызывает функцию <I>displayAlert</I>, выводящая сообщение. Для изображения, созданного в теге &LT;IMG&GT;, alert отображает имя изображения. Для изображения, созданного, как Image(), alert отображает сообщение без имени изображения. Потому что обработчик onLoad для объекта, созданного, как  Image() должен иметь имя функции, а это не может определять параметры для функции <I>displayAlert</I>. 
+<table><tr><td bgcolor=aqua><xmp>
+ <SCRIPT>
+imageA = new Image(50,50)
+imagea.onload=displayAlert
+imagea.src="cyanball.gif"
+function displayAlert(theImage) {
+   if (theImage==null) {
+      alert('An image loaded')
+   }
+   else alert(theImage.name + ' has been loaded.')
+}
+</SCRIPT>
+ <IMG NAME="imageB" SRC="greenball.gif" ALIGN="top" onLoad=displayAlert(this)> <BR>
+</XMP></table>
+<form>
+<input type="button" value="Open Example" onClick="Win_OnLoad()">
+</form>
+<P>
+<B>Пример 2. Выполнение цикла GIF анимации.</B> Следующий пример отображает изображение <i>birdie.gif</i>, который выполняет цикла GIF анимации. Обработчик события OnLoad изображения увеличивает переменные <I> cycles </I>, которые содержат сколько раз анимация имела цикл. Чтобы видеть значение <I> cycles </I>, пользователь нажимает кнопку с именем Счет Цикла. 
+<table><tr><td bgcolor=aqua><xmp>
+ 
+<SCRIPT>
+var cycles=0
+</SCRIPT>
+ <IMG ALIGN="top" SRC="birdie.gif" BORDER=0 onLoad="++cycles">  
+<INPUT TYPE="button" VALUE="Count Loops" onClick="alert('The animation has looped ' + cycles + ' times.')">
+ 
+</XMP></table>
+<P>
+<B>Пример 3. Изменение GIF анимации.</B> Следующий пример использует обработчик события onLoad, который поворачивает шесть GIF анимаций. Каждая анимация отображается в последовательности в одном объекте Image. Когда документ загружен, отображается !Anim0.html. Когда загрузка анимации завершена, обработчик события onLoad вызывает следующий файл !Anim1.html, который загружается вместо первого файла. После загрузки последней анимации !Anim5.html, снова отображается первый файл. Обратите внимание, что функция <I>changeAnimation</I> не вызывается после изменения свойства <I>src</I> объекта Image. Потому что, когда изменяется свойство <I>src</I>, обработчик события onLoad вызывает изображение, и вызывается функция <I>changeAnimation</I>. 
+<table><tr><td bgcolor=aqua><xmp>
+<SCRIPT>
+var whichImage=0
+var maxImages=5
+function changeAnimation(theImage) {
+   ++whichImage
+   if (whichImage <= maxImages) {
+      var imageName="!anim" + whichImage + ".gif"
+      theImage.src=imageName   } else {
+      whichImage=-1
+      return
+   }
+}
+</SCRIPT>
+ <IMG NAME="changingAnimation" SRC="!anim0.gif" BORDER=0 ALIGN="top" onLoad="changeAnimation(this)">  
+</XMP></table>
+<P>
+Смотрите также примеры для объекта Image.
+{<A HREF="#image_object">Изображение</A>} 
+<H3> Смотрите также</H3> 
+<P>
+<A HREF="#onAbort_event">OnAbort</A>, <A HREF="#onError_event">onError</A> обработчики события 
+<!------------------->
+<HR align=center width=250>
+<!-- Client -->
+<A NAME="1_onMouseOut">
+<H2>onMouseOut </H2> 
+<P>
+ &LT; &LT;New.&GT;&GT; 
+<P>
+Обработчик События. Событие MouseOut происходит, каждый раз, когда указатель мыши выходит из определенной области или когда внутри той области или связи. Обработчик события OnMouseOut выполняет <font color="red"><i>JavaScript</font></i> код, событие когда происходит mouseOut. 
+<P>
+Если мышь перемещается из одной области в другую, то для первой области происходит событие onMouseOut, а для второй событие onMouseOver. 
+<P>
+Объекты <I>area</I>, которые используют обработчик события onMouseOut, должны включить атрибут HREF внутри тега &LT;AREA&GT;.
+<P>
+Внутри обработчик события должен возвращать true, если вы хотите устанавливать свойства <I> status </I> или <I>defaultStatus</I> с обработчиком события onMouseOver. 
+<P>
+Смотрите релевантные объекты для синтаксиса onMouseOut. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Обработчик События</H3> 
+<LI> <A HREF="#1_area"> area </A> 
+<LI> <A HREF="h_l.html#list_link"> link </A> 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для объекта Area.{<A HREF="#1_area"> area </A>} 
+<H3> Смотрите также</H3> 
+<P>
+Обработчик события <A HREF="#1_onMouseOver">OnMouseOver</A> 
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_onMouseOver">
+<H2> onMouseOver</H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Обработчик События. Обработчик события OnMouseOver - это обработчик события: 
+<LI> <A HREF="#1_area"> area </A> 
+<P>
+Событие mouseOver происходит каждый раз, когда указатель мыши появляется над объектом или областью, или снаружи того объекта или области. Обработчик события OnMouseOver выполняет <font color="red"><i>JavaScript</font></i> код, когда происходит событие mouseOver. 
+<P>
+Если мышь перемещается из одной области в другой, то для первой области вы получите событие onMouseOut, а для второй onMouseOver. 
+<P>
+Объекты <I>area</I>, которые используют обработчик события onMouseOver, должны включить атрибут HREF внутри тега &LT;AREA&GT;. 
+<P>
+Внутри обработчика события вы должны возвращать true, если вы хотите установить свойства <I>status</I> или <I>defaultStatus</I> с обработчиком события onMouseOver. 
+<P>
+Смотрите релевантные объекты для синтаксиса onMouseOver. 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для объекта Area.
+{<A HREF="#1_area"> area </A>} 
+<H3> Смотрите также</H3> 
+<P>
+Обработчик события <A HREF="#1_onMouseOut">onMouseOut</A>
+<!------------------->
+<HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_onReset">
+<H2> OnReset</H2> 
+<P>
+ &LT; &LT;New.&GT;&GT; 
+<P>
+Обработчик События. Событие Reset происходит, когда пользователь нажимает кнопку Reset. Обработчик события OnReset выполняет <font color="red"><i>JavaScript</font></i> код, когда происходит событие Reset. 
+<P>
+Смотрите релевантные объекты для синтаксиса onReset. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Обработчик События</H3> 
+<P>
+<A HREF="f_g.html#list_formob">form</A> 
+<H3> Примеры</H3> 
+<P>
+Следующий пример отображает объект Text со значением по умолчанию "ПРИБЛИЗИТЕЛЬНО" и кнопку Reset. Если пользователь печатает сокращение состояния в объекте Text и затем нажимает кнопку сброса, первоначальное значение "ПРИБЛИЗИТЕЛЬНО" восстановлено. OnReset обработчик события формы отображает сообщение, указывающее, что значения по умолчанию были восстановлены. 
+<table><tr><td bgcolor=aqua><xmp>
+ 
+<FORM NAME="form1" onReset="alert('Defaults have been restored.')">  Состояние: 
+<INPUT TYPE="text" NAME="state" VALUE="CA" SIZE="2">
+<P>
+ 
+<INPUT TYPE="reset" VALUE="Clear Form" NAME="reset1">
+ 
+</FORM>
+</XMP></table>
+<form>
+<input type="button" value="Show example" onClick="Win_OnReset()">
+</form>
+<H3> Смотрите также</H3> 
+<P>
+Объект <A HREF="r.html#list_reset"> reset </A> и метод <A HREF="#1_reset"> reset </A> 
+<!-------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="1_onSubmit">
+<H2>onSubmit</H2> 
+<P>
+ &LT; &LT;Changed.&GT;&GT; 
+<P>
+Пример для обработчика события onSubmit будет изменен на следующий. Это - не новые функциональные возможности. 
+<table><tr><td bgcolor=aqua><xmp>
+ <FORM onSubmit="return validate(this)">  ... 
+ </FORM>
+</XMP></table>
+<!-------------------------------------------------------->
+<HR align=center width=250>
+<!-- Client -->
+<A NAME="1_opener">
+<H2> opener </H2> 
+<P>
+ &LT;&LT;New. &GT; &GT; 
+<P>
+Свойство. Определяет окно вызванного документа, когда окно открыто, используя метод <B>open</B>. 
+<H3> Синтаксис</H3> 
+<PRE>  
+window.opener
+ </PRE> 
+<H3> Свойство</H3> 
+<P>
+<A HREF="t_z.html#list_windowob"> window </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Когда исходный документ открывает окно,  вызывая метод <B>open</B>, Свойство <I> opener </I> определяет окно исходного документа
+<P>
+вы можете изменять свойство <I> opener </I> в любое время. 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1: закрытие opener.</B> Следующий код закрывает окно, которое было открыто текущем окном. 
+<XMP>
+window.opener.close () 
+</XMP>
+<P>
+<B>Пример 2: имя opener.</B> Окно может определять имя его opener следующим образом: 
+<XMP>
+document.write ("<BR> свойство opener - " + window.opener.name) 
+</XMP>
+<P>
+<B>Пример 3: изменение значения opener.</B> Следующий код изменяет значение свойства <I> opener </I> к пустому указателю. После того, как этот код выполниться, вы не можете закрывать окно opener как показано в Примере 1. 
+<XMP>
+ window.opener=null 
+</XMP>
+<P>
+<B>Пример 4: изменение свойство opener.</B> Следующий код изменяет фоновый цвет окна, определенного свойством <I> opener </I>. 
+<XMP>
+window.opener.document.bgColor ='bisque ' 
+</XMP>
+<H3> Смотрите также</H3> 
+<P>
+Методы <A HREF="c.html#list_closewin"> close </A>, <A HREF="m_q.html#list_openwin">open</A> 
+<!------------------->
+<HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_Option">
+<H2> Option </H2> 
+<P>
+ &LT;;&LT;New. &GT; &GT; 
+<P>
+Объект. Опция объекта Select создается при использование конструктора Option(). Для более подробной информации, смотрите объект Select.{<A HREF="#1_select"> select</A>} 
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_parseFloat">
+<H2>parseFloat</H2> 
+<P>
+ &LT;;&LT;Changed. &GT; &GT; 
+<P>
+<B>ParseFloat</B> теперь возвращает "NaN" на всех платформах, если первый символ строки, определенной в parseFloat<I>(string)</I> не может быть преобразован в номер. 
+<P>
+Относительно информации о <B>parseFloat</B>, смотрите функцию <A HREF="m_q.html#list_parseFloat">parseFloat</A>. 
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_parseInt">
+<H2>parseInt</H2> 
+<P>
+ &LT;;&LT;Changed. &GT; &GT; 
+<P>
+<B>ParseInt</B> теперь возвращает "NaN" на всех платформах, если первый символ строки, определенной в parseInt<I>(string)</I> не может быть преобразован в номер. 
+<P>
+Относительно информации о <B>parseInt</B>, смотрите функцию <A HREF="m_q.html#list_parseInt">parseInt</A>. 
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_password">
+<H2> password </H2> 
+<P>
+ &LT;;&LT;Changed. &GT; &GT; 
+<P>
+Следующие свойства были добавлены к объекту password: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD> Отражает атрибут TYPE 
+<TD>  </TR> 
+</TABLE> 
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_pathname">
+<H2> pathname </H2> 
+<P>
+ &LT;;&LT;Changed. &GT; &GT; 
+<P>
+Свойство <I> pathname </I> - теперь свойство объекта Area. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I> pathname </I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.pathname
+</PRE> </table>
+<H3> Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта area .. 
+<H3> Свойство</H3> 
+<LI> <A HREF="#1_area">Объект area </A> 
+<H3> Описание</H3> 
+<P>
+вы можете устанавливать свойство <I>pathname</I> в любое время. 
+<!------------------->
+<HR align=center width=250>
+<!-- xxx Client or Common? -->
+<A NAME="1_plugin">
+<H2> plugin </H2> 
+<P>
+ &LT;;&LT;New. &GT; &GT; 
+<P>
+Объект. Собирает вводы из приложения plug-in. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>   
+&LT;EMBED 
+SRC=<I>source</I> 
+NAME=<I>appletName </I>
+HEIGHT=<I>height</I> 
+WIDTH=<I>width</I> &GT; 
+[&LT;PARAM NAME=<I>parameterName</I> VALUE=<I>parameterValue</I> &GT;] 
+[... &LT;PARAM &GT;] 
+&LT;/EMBED &GT; </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+SRC=source определяет URL. 
+<P>
+<I>NAME=appletName</I> определяет имя объекта расположенного в документе. 
+<P>
+<I>HEIGHT=height</I> определяет высоту небольшого приложения в пикселях внутри окна браузера. 
+<P>
+<I>WIDTH=width</I> определяет ширину небольшого приложения в пикселях внутри окна браузера. 
+<P>
+ <I>&LT;PARAM &GT;</I> определяет параметр для объекта. 
+<P>
+<I>NAME=parameterName</I> определяет имя параметра. 
+<P>
+<I>VALUE=parameterValue</I> определяет значение для параметра. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="d_e.html#list_document"> document </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<!-- xxx to be supplied -->
+ 
+<H4> <I> embeds  </I> массив</H4> 
+<P>
+вы можете ссылаться на plugins в вашем коде,  используя<I>, embeds  </I> массив. Этот массив содержит все объекта Plugin (тег &LT;EMBED&GT;) в документе в исходном порядке. Например, если документ содержит три plugins, эти plugins отражены следующим образом document.embeds[0], document.embeds[1], и document.embeds[2]. 
+<P>
+Использование <I> embeds  </I> массив: 
+<PRE>  
+1. document.embeds <I>[index] </I>
+2. document.embeds.length </PRE> 
+<!-- xxx Could show an example of indexing by name -->
+ <I> index </I> - целое число, содержащее имя объекта Plugin. 
+<P>
+Чтобы получить номер plugins в документе, используйте свойство <I>lenght</I>: <table><tr><td bgcolor=aqua>document.embeds.length.</table> 
+<P>
+Элементы в массиве <I> embeds </I>,  только для чтения. Например, утверждение document.embeds[0] = "myavi.avi" не имеет никакого эффекта. 
+<a name="1_plugins_array">
+<H4> Массив <I>plugins</I> </H4> 
+</a>
+<P>
+<font color="red"><i>JavaScript</i></font> имеет массив <I>plugins</I>, который позволяет Вам определять, установил ли пользователь plug-in. Не путайте массив <I>plugins</I> с объектом plugin, и массивом <I> embeds </I>. 
+<H3> Свойства</H3> 
+<!-- xxx Are there any? -->
+ <LI> Отсутствуют. 
+<H3> Методы</H3> 
+<!-- xxx Are there any? -->
+
+<LI> Отсутствуют. 
+<H3> Обработчики События</H3> 
+<LI> Отсутствуют. 
+<H3> Примеры</H3> 
+<!-- xxx to be supplied -->
+<P>
+Следующий HTML включает AVI plug-in в документе: 
+<table><tr><td bgcolor=aqua><XMP>
+<EMBED SRC="train.au" HEIGHT=50 WIDTH=250>
+</XMP></table>
+<H3> Смотрите также</H3> 
+<P>
+<A HREF="#1_applet"> applet </A>, <A HREF="#1_mimeType">mimeType</A> объекты 
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_plugins">
+<H2> Plugins</H2> 
+<P>
+ &LT;;&LT;New.&GT;&GT; 
+<!-- xxx Need complete section here -->
+<!-- xxx Remove -->
+<P>
+Массив всего plug-ins, постоянно установлен у клиента. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="m_q.html#list_navigator">navigator</A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_port">
+<H2> port </H2> 
+<P>
+ &LT;;&LT;Changed.&GT;&GT; 
+<P>
+Свойство <I> port </I> - теперь свойство объекта Area. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I> port </I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.port
+ </PRE> </table>
+<H3>Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта Area .. 
+<H3> Свойство</H3> 
+<LI> <A HREF="#1_area">Объект area</A> 
+<H3> Описание</H3> 
+<P>
+вы можете устанавливать свойство <I>port</I> в любое время. 
+<!------------------->
+ <HR align=center width=250>
+ <A NAME="1_protocol">
+<H2> protocol </H2> 
+<P>
+ &LT;;&LT;Changed.&GT;&GT; 
+<P>
+Свойство <I> protocol </I> - теперь свойство объекта Area. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I> protocol </I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.protocol
+ </PRE> </table>
+<H3> Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта Area .. 
+<H3> Свойство</H3> 
+<LI> <A HREF="#1_area">Объект area</A> 
+<H3> Описание</H3> 
+<P>
+вы можете устанавливать свойство <I> protocol </I> в любое время. 
+<!------------------->
+<HR align=center width=250>
+ <!-- Common -->
+ <A NAME="1_prototype">
+<H2> prototype </H2> 
+<P>
+ &LT;;&LT;New.&GT;&GT; 
+<P>
+Свойство. Определяет свойство, которое разделяет все объекты определенного типа. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+objectType</I>.prototype.<I>propertyName</I> = <I> value </I>
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>objectType</I> - имя конструктора, определяющего тип объекта. 
+<P>
+<I>propertyName</I> - имя свойства, которое будет создано. 
+<P>
+<I> value </I> - значение свойства, первоначально определенного для всех объектов типа <I>objectType</I>. 
+<H3> Свойство</H3> 
+<P>
+<I> prototype </I> - свойство любого объекта, созданного с <B>new</B>, таких как: 
+<LI> <A HREF="#1_array"> array </A> 
+<LI> <A HREF="d_e.html#list_Date"> Date </A> 
+<LI> <A HREF="#1_function"> function </A> 
+<LI> <A HREF="#1_image"> image </A> 
+<LI> <A HREF="#1_select">Опция select </A> 
+<LI> <A HREF="#1_String"> String </A> 
+<LI> <A HREF="statm.html#new_statement">Определяемые пользователем объекты</A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<!-- xxx Lynn: see construct.html -->
+<P>
+Используйте свойство <I> prototype </I>, чтобы добавить свойства к объектам, созданным с оператором <B>new</B>. 
+<P>
+Например, вы можете создавать объекты Date,  используя конструкцию Date() и оператор <B>new</B>. Date.prototype относится к объекту prototype конструкции Date(). Если вы устанавливаете свойство для prototype, типа Date.prototype.description, то все объекты, созданные как Date() будут иметь свойство <I> description </I>, даже если объекты уже существуют. 
+<table><tr><td bgcolor=aqua><XMP>
+var today = new Date() 
+var birthday = new Date(95,12,17)
+Date.prototype.description=null 
+today.description="Oh what a beautiful mornin\'" 
+birthday.description="The day you were born"
+</XMP></table>
+<P>
+После того, как вы установили свойство для prototype, все последующие объекты, созданные с Date() будут иметь свойство: 
+<table><tr><td bgcolor=aqua><XMP>
+startDate=new Date() 
+startDate.description="Started the daily grind"
+ </XMP></table>
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1. Добавление свойство к определяемому пользователем объекту.</B> Следующий пример использует функцию Car, чтобы определить тип объекта <I> Car </I>. Затем используется <B> new </B>, чтобы создать объекта <I>myCar</I>. Код Car prototype.wheels=4 добавляет свойство <I> wheels </I> ко всем объектам Car. 
+<table><tr><td bgcolor=aqua><XMP>
+ function Car(make, model, year) { 
+    this.make = make 
+    his.model = model 
+    this.year = year
+}
+var myCar = new Car("Acura", "Integra", 1987)
+Car.prototype.wheels = 4 // no 3-wheelers please!if (myCar.wheels == 4) document.write("The car myCar has ", myCar.wheels, " wheels.")
+ </XMP></table>
+<!-- <P><B>Example 2. Objects created with String() constructor.</B>
+<table><tr><td bgcolor=aqua><XMP>
+var s1 = new String("a"), s2 = new String("b")
+
+// add a repeat-string-N-times method to all strings:
+function str_rep(n) {
+   var s = "", t = this.toString()
+   while (--n >= 0) s += t
+   return s
+}
+
+String.prototype.rep = str_rep        // add a rep() method to String
+
+s1.rep(3) == "aaa"
+s2.rep(5) == "bbbbb"
+
+var s3 = new String("c")
+s3.rep(2) == "cc"
+
+function fake_rep(n) { return "repeat " + this + " n times." }
+s1.rep = fake_rep
+s1.rep(1) == "repeat a 1 times."
+
+s2.rep(4) == "bbbb"          // still works!
+s3.rep(6) == "cccccc"
+</XMP></table>
+
+
+ -->
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_radio">
+<H2> radio </H2> 
+<P>
+ &LT;;&LT;Changed.&GT;&GT; 
+<P>
+Следующие свойства были добавлены к объекту Radio: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD> Отражает атрибут TYPE 
+<TD>  </TR> 
+</TABLE> 
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_random">
+<H2> random </H2> 
+<P>
+ &LT;;&LT;Changed.&GT;&GT; 
+<P>
+<B>Math.random</B> метод теперь работает на всех платформах. Генератор случайных чисел с текущего времени выбран, как в Java. 
+<!------------------->
+<HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_reload">
+<H2> reload </H2> 
+<P>
+ &LT;;&LT;New.&GT;&GT; 
+<P>
+Метод. Перезагружает текущий документ окна. 
+<H3> Синтаксис</H3> 
+<PRE>  
+location.reload ([true])
+ </PRE> 
+<H3> Параметры</H3> 
+<I> true </I> вынуждает безусловный HTTP GET  документа из сервера. Не используйте это, если вы не имеете причину полагать, что диск и кэш памяти выключены или разбиты, или сервер имеет новую версию документа (возможно это сгенерировано на каждом запросе CGI). 
+<H3> Метод</H3> 
+<P>
+<A HREF="h_l.html#list_location"> location </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Метод <B>reload</B> вынуждает перезагрузку документа, определенного URL в свойстве <I>location.href</I>. 
+<P>
+Этот метод производит тот же самый эффект что и использования кнопки Navigator's Reload. Пользователь устанавливает значение по умолчанию этой стратегии,  выбирая из меню Options, и определение Проверяет Документы на метке табуляции Кэша диалогового окна Preferences. 
+<P>
+Метод <B>reload</B> не вынуждает транзакцию с сервером, если пользователь не установил предпочтение для Каждый раз, когда это делает " условное выражение, ПОЛУЧАЮТ " запрос, используя " если изменяется с тех пор " HTTP заголовок, просить, чтобы  сервер возвратил документ только, если его в последний раз-изменяемое время более новое чем время,  клиент хранит в его КЭШе. Другими словами, <B>перезагрузка</B> перезагрузит из КЭШа, если пользователь не определил, каждый раз <I>и</I> документ изменился на сервере, так как это было последнее загружено и сохранено в КЭШе. 
+<P>
+В обработчиках события, вы должны определить window.location.reload () вместо просто использования location.reload (). Из-за обзора статических объектов в <font color="red"><i>JavaScript</i></font>, обращение к расположению без того, чтобы определять объектное имя эквивалентно document.location, который является синонимом для документа. URL. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример отображает изображение и три "радио" кнопки. Пользователь может нажимать "радио" кнопки, чтобы выбрать, которое изображение отображается. Нажатие другой кнопки позволяет пользователю перезагружать документ. 
+<table><tr><td bgcolor=aqua><XMP>
+ 
+<SCRIPT>
+function displayImage(theImage) {
+   document.images[0].src=theImage
+}
+</SCRIPT>
+ 
+<FORM NAME="imageForm">  <B>Выберите изображение:</B> <BR>
+<INPUT TYPE="radio" NAME="imageChoice" VALUE="image1" CHECKED onClick="displayImage('seaotter.gif')">
+Морская выдра <BR>
+<INPUT TYPE="radio" NAME="imageChoice" VALUE="image2" onClick="displayImage('orca.gif')">
+Кит Подавителя <BR>
+<INPUT TYPE="radio" NAME="imageChoice" VALUE="image3" onClick="displayImage('humpback.gif')">
+Кит Горба <BR>
+<IMG NAME="marineMammal" SRC="seaotter.gif" ALIGN="left" VSPACE="10">  
+<P>
+<INPUT TYPE="button" VALUE="Click here to reload" onClick="window.location.reload()">
+</FORM>
+</XMP></table>
+<H3> Смотрите также</H3> 
+<P>
+Метод <A HREF="#replace_method">замены</A> 
+<!------------------->
+<HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_replace">
+<H2> Замена</H2> 
+<P>
+<P>
+Метод. Загружает определенный URL над текущим входом хронологии. 
+<H3> Синтаксис</H3> 
+<PRE>  
+Location.replace (<I>"URL"</I>)
+ </PRE> 
+<H3> Параметры</H3> 
+<I>URL</I> определяет URL, чтобы загрузиться. 
+<H3> Метод</H3> 
+<P>
+<A HREF="h_l.html#list_location"> location </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Метод <B>замены</B> загружает определенный URL над текущим входом хронологии, так после того, как метод <B>замены</B> используется, пользователь не может перемещаться к предыдущему URL,  используя кнопку Navigator's Back. 
+<P>
+В обработчиках события, вы должны определить window.location.replace () вместо просто использования location.replace (). Из-за обзора статических объектов в <font color="red"><i>JavaScript</i></font>, обращение к расположению без того, чтобы определять объектное имя эквивалентно document.location, который является синонимом для документа. URL. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример позволяет пользователю выбирать среди нескольких каталогов, чтобы отобразить. Пример отображает два набора "радио" кнопок, которые позволяют пользователю выбирать сезон и категорию, например Вес&amp; / лето, одевающая каталог или Начало Падения / зимы и каталог Сада. Когда пользователь нажимает кнопку Go, функция <I>displayCatalog</I> выполняет метод <B>замены</B>, заменяя поток(текущего) URL с URL, соответствующим для каталога,  пользователь выбрал. Обратите внимание, что после того, как метод <B>замены</B> используется, пользователь не может перемещаться к предыдущему URL (список каталогов) используя кнопку Navigator's Back. 
+<table><tr><td bgcolor=aqua><XMP>
+ 
+<SCRIPT>
+function displayCatalog() {
+   var seaName=""
+   var catName=""
+
+   for (var i=0; i < document.catalogForm.season.length; i++) {
+      if (document.catalogForm.season[i].checked) {
+         seaName=document.catalogForm.season[i].value
+         i=document.catalogForm.season.length
+      }
+   }
+
+   for (var i in document.catalogForm.category) {
+      if (document.catalogForm.category[i].checked) {
+         catName=document.catalogForm.category[i].value
+         i=document.catalogForm.category.length
+      }
+   }
+   fileName=seaName + catName + ".html"
+   location.replace(fileName)
+}
+</SCRIPT>
+ 
+<FORM NAME="catalogForm">  <B>Который каталог вы хотите видеть?</B> 
+<P>
+<B>Сезон</B> <BR>
+<INPUT TYPE="radio" NAME="season" VALUE="q1" CHECKED>
+Вес&amp; / лето <BR>
+<INPUT TYPE="radio" NAME="season" VALUE="q3">
+Падение / зима 
+<P>
+<B>Категория</B> <BR>
+<INPUT TYPE="radio" NAME="category" VALUE="clo" CHECKED>
+Одежда <BR>
+<INPUT TYPE="radio" NAME="category" VALUE="lin">
+Полотна <BR>
+<INPUT TYPE="radio" NAME="category" VALUE="hom">
+Начало и Сад 
+<P>
+
+<INPUT TYPE="button" VALUE="Go" onClick="displayCatalog()">
+ 
+</FORM>
+
+</XMP></table>
+<H3> Смотрите также</H3> 
+<P>
+Метод <A HREF="#reload_method">перезагрузки</A> 
+<!------------------->
+ 
+<HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_reset">
+<H2>Метод reset</H2> 
+<P>
+ &LT;&LT;New. &GT; &GT; 
+<P>
+Метод. Кнопка для возвращения всем объектам form значение по умолчанию. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+formName</I>.reset ()
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>formName</I> - имя любой формы или элемента в массиве <I>form</I>. 
+<H3> Метод</H3> 
+<P>
+<A HREF="f_g.html#list_formob"> form </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Метод <B>reset</B> восстанавливает значения по умолчанию элемента формы. Кнопка reset не нужно определять для формы. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример отображает объект Text, в котором пользователь должен напечатать "CA" или "AZ". Обработчик события onChange объекта text вызывает функцию, которая выполняет метод <B>reset</B> формы если пользователь, неправильно ввел. Когда метод <B>reset</B> выполняется, значения по умолчанию восстанавливаются, и обработчик события onReset формы отображает сообщение. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+function verifyInput(textObject) {
+   if (textObject.value == 'CA' || textObject.value == 'AZ') {
+      alert('Nice input')
+   }
+   else { document.form1.reset() }
+}
+</SCRIPT>
+<FORM NAME="form1" onReset="alert('Please enter CA or AZ.')">  Введите CA или AZ: 
+<INPUT TYPE="text" NAME="state" SIZE="2" onChange=verifyInput(this)>
+<P>
+</FORM>
+</XMP></table>
+<form>
+<input type="button" value="See the example" onClick="Win_resetMet()">
+</form>
+<H3> Смотрите также</H3> 
+<P>
+Обработчик события  <A HREF="#1_onReset">onReset</A>, объект Reset
+{<A HREF="r.html#list_reset"> reset </A>} 
+<!------------------->
+ <HR align=center width=250>
+ <A NAME="1_resetob">
+<H2> Сбросьте объект</H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Следующие свойства были добавлены к объекту reset: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD> Отражает атрибут TYPE 
+<TD>  </TR> 
+</TABLE> 
+<H3> Смотрите также</H3> 
+<P>
+Обработчик события <A HREF="#1_onReset">OnReset</A>, и метод <A HREF="#1_reset">reset</A>
+<!------------------->
+ <HR align=center width=250>
+ <!-- Common -->
+ <A NAME="1_reverse">
+<H2> reverse </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Метод. Перемещает элементы массива: первый элемент массива становится последним, и последний становится первым. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+arrayName</I>.reverse ()
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>arrayName</I> - имя объекта Array или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="#1_array"> array </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+метод <B>reverse</B> перемещает элементы вызванного объекта массива. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает массив <I>myArray</I>, содержащий три элемента, и затем перемещает массив. 
+<table><tr><td bgcolor=aqua><XMP>
+ myArray = new Array ("один", "два", "три")
+ myArray.reverse () 
+</XMP></table>
+<form>
+<input type="button" value="Click here" onClick="Win_reverse()">
+</form>
+<P>
+<H3> Смотрите также</H3> 
+<P>
+Методы <A HREF="#1_join"> join </A>, <A HREF="#1_sort"> sort </A> 
+<!------------------->
+<HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_scroll">
+<H2> scroll </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Метод. Пролистывает окно до определенной координаты. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>   
+<I><I>windowReference.scroll(x-coordinate,y-coordinate)</I></I>
+  </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>windowReference</I> - этот способ допустимый для окна, как описано в объекте Window. {<A HREF="t_z.html#list_windowob"> window </A>} 
+<P>
+<I> x-coordinate </I> - целое число, представляющее x-координату в пикселях. 
+<P>
+<I> y-coordinate </I> - целое число, представляющее y-координату в пикселях. 
+<H3> Метод</H3> 
+<P>
+<A HREF="t_z.html#list_windowob"> window </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+<font color="red"><i>JavaScript</i></font> не отображает размерности документа в пикселях, поэтому при использовании метода <B>scroll</B>, вы должны высчитывать координаты y и x. Верхние левые координаты документа - 0,0. 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1. Пролистывание текущего окна.</B> Следующий пример пролистывает текущее окно до координат 50,100. 
+<table><tr><td bgcolor=aqua><XMP>
+ window.scroll (50,100) 
+</XMP></table>
+<P>
+<B>Пример 2. Пролистывает любое окно.</B> Следующий код, который существует в одном фрейме, пролистывает второй фрейм. Два объекта text позволяют пользователю определять координаты y и x. Когда пользователь нажимает кнопку Go, документ в <I>frame2</I> прокручивается к определенным координатам. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+function scrollIt(form) {
+   var x = parseInt(form.x.value)
+   var y = parseInt(form.y.value)
+   parent.frame2.scroll(x,y)
+}
+</SCRIPT>
+<BODY>
+<FORM NAME="myForm">  
+<P>
+<B>Введите координаты, чтобы пролистать до:</B> <BR>
+Горизонтальной: 
+<INPUT TYPE="text" NAME=x VALUE="0" SIZE=4>
+ <BR>
+Вертикальной: 
+<INPUT TYPE="text" NAME=y VALUE="0" SIZE=4>
+ <BR>
+<INPUT TYPE="button" VALUE="Go" onClick="scrollIt(document.myForm)">
+</FORM>
+</XMP></table>
+<form>
+<input type="button" value="Открыть пример" onClick="Win_scroll()">
+</form>
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_search">
+<H2>search</H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Свойство <I> search </I> - теперь Свойство объекта Area. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I>search</I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.search
+ </PRE> </table>
+<H3> Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта Area .. 
+<H3> Свойство</H3> 
+<LI> <A HREF="#1_area">Объект area</A> 
+<H3> Описание</H3> 
+<P>
+вы можете устанавливать Свойство <I>search</I> в любое время. 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_select">
+<H2> select </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+вы можете теперь изменять текст Option в объекте Select, и вы можете создавать Option, использующие конструктор new Option(). 
+<H3> Изменения текста Option</H3> 
+<P>
+Чтобы изменить текст Option, используйте Свойство <I>text</I> массива <I>Option</I>. Например, пусть форма имеет следующий объект Select: 
+<table><tr><td bgcolor=aqua><XMP>
+<SELECT name="userChoice">
+<OPTION>
+ Выбор 1 
+<OPTION>
+ Выбор 2 
+<OPTION>
+ Выбор 3 
+</SELECT>
+</XMP></table>
+<P>
+вы можете устанавливать текст <I>i<sup>ую</sup></I> единицу выбора, основанное на тексте, введенное в текстовом поле <I>whatsNew</I> следующим образом: 
+<table><tr><td bgcolor=aqua><XMP>
+myform.userChoice.options[i].text = myform.whatsNew.value 
+</XMP></table>
+<P>
+Например, введите какой-нибудь текст в первое текстовое поле, а затем введите номер между 0 и 2 во второе текстовое поле. Когда вы нажимаете кнопку, текст будет изменен выбранного номера option. 
+<SCRIPT>
+function doit(theform, i) {
+   theform.userChoice.options[i].text = theform.whatsNew.value
+}
+</SCRIPT>
+<FORM>  
+<SELECT name="userChoice">
+<OPTION>
+Выбор 1 
+<OPTION>
+Выбор 2 
+<OPTION>
+Выбор 3 
+</SELECT>
+ <BR>
+Введите текст, на который заменять: 
+<INPUT TYPE="text" NAME="whatsNew">
+ <BR>
+Номер Опции, которую изменить: 
+<INPUT TYPE="text" NAME="idx">
+ <BR>
+<INPUT TYPE="button" VALUE="Change Selection" onClick="doit(this.form,this.form.idx.value)">
+</FORM>
+Код для этого примера выглядит следующим образом: 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+function doit(theform,i) {
+   theform.userChoice.options[i].text = theform.whatsNew.value
+}
+</SCRIPT>
+<FORM>  
+<SELECT name="userChoice">
+<OPTION>
+Выбор 1 
+<OPTION>
+Выбор 2 
+<OPTION>
+Выбор 3 
+</SELECT>
+<BR>
+Введите текст, на который заменять: 
+<INPUT TYPE="text" NAME="whatsNew">
+ <BR>
+Номер Опции, которую изменить:
+<INPUT TYPE="text" NAME="idx">
+ <BR>
+<INPUT TYPE="button" VALUE="Change Selection" onClick="doit(this.form, this.form.idx.value)"> 
+</FORM>
+</XMP></table>
+<H3> Добавление опций, использующих конструктор Option()</H3> 
+<H4> Синтаксис</H4> 
+<P>
+Добавляйте опции к существующему объекту Select: 
+<table><tr><td bgcolor=aqua><PRE>
+<I>optionName</I> = new Option ([<I>optionText</I>, <I>optionValue</I>, <I>defaultSelected</I>, <I>selected</I> ])
+ </PRE> </table>
+<P>
+Добавление new Option к существующему объекту Select: 
+<table><tr><td bgcolor=aqua><PRE> 
+<I>selectName</I>.options <I>[index]</I> =<I>optionName</I>
+ </PRE> </table>
+<H4> Параметры</H4> 
+<P>
+<I>optionName</I> является или именем нового объекта или свойством существующего объекта. 
+<P>
+<I>optionText</I> определяет текст, который будет отображен в списке select. вы можете обращаться к этому значению, используя Свойство <I>text</I>. 
+<P>
+<I>optionValue</I> определяет значение, которое будет возвращено серверу, когда опция выбрана, и форма подчинена. вы можете обращаться к этому значению, используя Свойство <I>value</I>. 
+<P>
+<I>defaultSelected</I> определяет, выбрана ли опция первоначально (истина или ложь). вы можете обращаться к этому значению, используя Свойство <I>defaultSelected</I>. 
+<P>
+<I>selected</I> определяет текущее состояние опции select (истина или ложь). вы можете обращаться к этому значению, используя Свойство <I>selected</I>. 
+<P>
+<I>selectName</I> - имя существующего объекта Select. 
+<!-- xxx or a string containing the name of an <I>Option</I> object? -->
+<P>
+<I>index</I> - целое число, представляющее опцию в объекте Select. вы можете обращаться к этому значению, используя Свойство <I>index</I>. 
+<H4> Описание</H4> 
+<P>
+Каждая опция созданная при использование конструктора Option()- объект и имеет те же самые свойства, что и элементы массива <I>options</I>. 
+<P>
+После того, как вы создали опции и добавили их к объекту Select, вы должны обновить документ,  используя history.go(0). Это утверждение должно быть последнее. Когда документ перезагружается, то переменные теряются, если не сохранены в cookies или значении элемента form. 
+<H4>Примеры</H4> 
+Следующий пример создает два объекта Select, один без атрибута MULTIPLE, а один с атрибута MULTIPLE. Никакие опции первоначально не определены для любого объекта. Когда пользователь нажимает кнопку, связанную с объектом Select, функция <I> populate </I> создает четыре опции для объекта Select и выбирает первую опцию. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+function populate(inForm) {
+   colorArray = new Array("Red", "Blue", "Yellow", "Green")
+   var option0 = new Option("Red", "color_red")
+   var option1 = new Option("Blue", "color_blue")
+   var option2 = new Option("Yellow", "color_yellow")
+   var option3 = new Option("Green", "color_green")
+   for (var i=0; i < 4; i++) {
+      eval("inForm.selectTest.options[i]=option" + i)
+      if (i==0) {
+         inForm.selectTest.options[i].selected=true
+      }
+   }
+   history.go(0)
+}
+</SCRIPT>
+<H3> Select конструктора Option()</H3> 
+<FORM>  
+<SELECT NAME="selectTest">
+</SELECT>
+<P>
+<INPUT TYPE="button" VALUE="Populate Select List" onClick="populate(this.form)">
+<P>
+</FORM>
+<HR align=center width=250>
+<H3> Опция конструктора multiple select()</H3> 
+<FORM>  
+<SELECT NAME="selectTest" multiple>
+</SELECT>
+<P>
+<INPUT TYPE="button" VALUE="Populate Select List" onClick="populate(this.form)">
+</FORM>
+</XMP></table>
+<H3> Удаление опций</H3> 
+<H4> Синтаксис</H4> 
+Удаление опций из объекта Select: 
+<PRE>  <I>
+selectName</I>.options <I>[index]</I> = null
+</PRE> 
+<H4> Параметры</H4> 
+<P>
+<I>selectName</I> - имя существующего объекта Select. 
+<P>
+<I>index</I> - целое число, представляющее опцию в объекте Select. 
+<H4> Описание</H4> 
+<P>
+Стирание сжимает массив <I>options</I>. Например, если вы удаляете options[0], существующие options[1] становятся options[0]. Поэтому лучше удалять сначала опции в конце массива. 
+<H4> Примеры</H4> 
+<P>
+Следующая функция удаляет опцию из объекта Select. 
+<table><tr><td bgcolor=aqua><XMP>
+function deleteAnItem(theList,itemNo) {
+ theList.options[itemNo]=null
+ history.go(0)}
+ </XMP></table>
+<H3>Изменение состояния select</H3> 
+<P>
+Следующее утверждения будут добавлено к документации для объекта Select; однако, это - не новые функциональные возможности. 
+<P>
+вы можете использовать свойства <I>selected</I> и <I>selectedIndex</I>, чтобы изменить состояние опций select в объекте Select. 
+<UL>
+<LI> <I>selectedIndex</I> Свойство для объекта Select - целое число, определяющее индекс выбранной опции. Это наиболее полезно для объектов Select, которые созданы без атрибута MULTIPLE. Следующее утверждение устанавливает Свойство <I>selectedIndex</I> объекта Select: 
+<table><tr><td bgcolor=aqua><XMP>
+document.myForm.musicTypes.selectedInde x = i 
+</XMP></table>
+<LI> <I>selected</I> Свойство для option - значение Boolean, определяющее текущее состояние выбора опции в объекте Select. Если опция выбрана, то ее Свойство <I>selected</I> true; иначе false. Это более полезно для объектов Select, которые созданы с атрибутом MULTIPLE. Следующее утверждение устанавливает Свойство <I>selected</I> опции равное true: 
+<table><tr><td bgcolor=aqua><XMP>
+  document.myForm.musicTypes.options[i].selected = true
+</XMP></table>
+
+</UL>
+<H3>Свойства</H3> 
+<P>
+Следующие свойства были добавлены к объекту Select: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_text"> text </A> 
+<TD> Это не новое Свойство, теперь оно может быть изменено и текст, отображаемый опцией изменен в объекте Select 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD> Определяет, что объект - это объект Select и указывает, определен ли MULTIPLE 
+<TD>  </TR> 
+</TABLE> 
+<P>
+Объекты, созданные при использование конструктора Option(), имеют следующие свойства: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_defaultSelected">defaultSelected</A> 
+<TD> Определяет начальное состояние выбора опции 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_index"> index </A> 
+<TD> Определяет индекс опции в объекте Select 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_prototype"> prototype </A> 
+<TD> Позволяет Вам добавлять свойства к опции. 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_selected"> selected </A> 
+<TD> Определяет текущее состояние выбора опции 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_text"> text </A> 
+<TD> Определяет текст для опции 
+<TD>  </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_value"> value </A> 
+<TD> Определяет значение, которое возвращено серверу, когда опция выбрана, и форма подчинена 
+<TD>  </TR> 
+</TABLE> 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_selected">
+<H2> selected </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Свойство <I> selected </I> - теперь Свойство объекта Option. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I> selected </I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+optionName</I>.selected
+ </PRE> </table>
+<H3> Параметры</H3> 
+<I>optionName</I> - имя созданной опции объекта Select, при использование конструктора Option(). 
+<H3> Свойство</H3> 
+<LI> <A HREF="#1_select">Объект select</A> 
+<!------------------->
+<HR align=center width=250>
+<!-- Common -->
+ <A NAME="1_sort">
+<H2> sort </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Метод. Сортирует элементы массива. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+arrayName</I>.sort<I>(compareFunction)</I>
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>arrayName</I> - имя объекта Array или свойство существующего объекта. 
+<P>
+<I>compareFunction</I> определяет функцию, которая определяет порядок сортировки. Если опущена, то массив сортируется лексикографически (в порядке словаря) согласно строковому преобразованию каждого элемента. 
+<H3> Метод</H3> 
+<P>
+<A HREF="#1_array"> array </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Если <I>compareFunction</I> не обеспечен, элементы сортируются,  преобразуя(конвертируя) их к строкам и сравнивая строки в лексикографическом ("словарь" или " телефонная книга, " <I>не</I> числовой) упорядочивают(заказывают). Например, "80" приходит, прежде "9" в лексикографическом порядке, но если вы сравниваете числа 9 потребностей прийти прежде 80. 
+<P>
+Если отсутствует <I>compareFunction</I>, то элементы массива сортируются согласно строковому значению строковой функции. Если a и b - два сравниваемые элемента, то: 
+<UL>
+<LI> Если <I>compareFunction(a,b)</I> - меньше чем нуль, то sort b имеет индекс меньше чем a. 
+<LI> Если <I>compareFunction(a,b)</I> возвращает нуль, то оставляет a и b без изменения относительно друг друга, но сортирует относительно всех остальных элементов. 
+<LI> Если <I>compareFunction(a,b)</I> больше чем нуль, то sort b имеет индекс  выше чем a. 
+</UL>
+<P>
+Поэтому сравнивающаяся функция имеет следующую форму: 
+<table><tr><td bgcolor=aqua><XMP>
+ function compare(a, b) {
+ if (a is less than b by some ordering criterion)
+ return -1
+ if (a is greater than b by the ordering criterion)
+ return 1
+ // a must be equal to b
+ return 0 }
+ </XMP></table>
+<P>
+Чтобы сравнивать числа вместо строк, сравнивающаяся функция может просто вычитать b из a: 
+<table><tr><td bgcolor=aqua><XMP>
+ function compareNumbers(a, b) {
+ return a - b
+}
+ </XMP></table>
+<P>
+<font color="red"><i>JavaScript</i></font> использует устойчивый sort: индексный частичный порядок a и b не изменяется, если a и b равен. Если индекс a был меньше чем b, то перед сортировкой, это будет и после сортировки, независимо от того, как a и b будут расположены после сортировки. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает четыре массива и отображает первоначальный массив, затем сортируемые массивы. Числовые массивы сортируются без, а затем со, сравнивающейся функция. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+stringArray = new Array("Blue","Humpback","Beluga")
+numericStringArray = new Array("80","9","700")
+numberArray = new Array(40,1,5,200)
+mixedNumericArray = new Array("80","9","700",40,1,5,200)
+function compareNumbers(a, b) {
+   return a - b
+}
+document.write("<B>stringArray:</B> " + stringArray.join() +"<BR>")
+document.write("<B>Sorted:</B> " + stringArray.sort() +"<P>")
+document.write("<B>numberArray:</B> " + numberArray.join() +"<BR>")
+document.write("<B>Sorted without a compare function:</B> " + numberArray.sort() +"<BR>")
+document.write("<B>Sorted with compareNumbers:</B> " + numberArray.sort(compareNumbers) +"<P>")
+document.write("<B>numericStringArray:</B> " + numericStringArray.join() +"<BR>")
+document.write("<B>Sorted without a compare function:</B> " + numericStringArray.sort() +"<BR>")
+document.write("<B>Sorted with compareNumbers:</B> " + numericStringArray.sort(compareNumbers) +"<P>")
+document.write("<B>mixedNumericArray:</B> " + mixedNumericArray.join() +"<BR>")
+document.write("<B>Sorted without a compare function:</B> " + mixedNumericArray.sort() +"<BR>")
+document.write("<B>Sorted with compareNumbers:</B> " + mixedNumericArray.sort(compareNumbers) +"<BR>")
+</SCRIPT>
+</XMP></table>
+<form>
+<input type="button" value="Open example" onClick="Win_sort()">
+</form>
+<P>
+<H3> Смотрите также</H3> 
+<P>
+Методы <A HREF="#1_join"> join </A>, <A HREF="#1_reverse"> reverse </A> 
+<!------------------->
+<HR align=center width=250>
+<!-- Common -->
+<A NAME="1_split">
+<H2> split </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Метод. Разбивает объект String в массив строк,  разделяя строку в подстроки. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+stringName</I>.split ([<I>separator</I>])
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>stringName</I> - любая строка или Свойство существующего объекта. 
+<P>
+<I> separator</I> определяет символ, который используется для разделения строки. <I> separator</I> обрабатывается как строка. Если <I>separator</I> опущен, то возвращенный массив содержит один элемент, состоящий из всей строки. 
+<H3> Метод</H3> 
+<P>
+<A HREF="#1_String"> String </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Метод <B>split</B> возвращает новый массив. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример определяет функцию, которая разбивает строку в массив строки, используя определенный разделитель. После разбивания строки, функциональные сообщения дисплеев, указывающие строку оригинала (прежде, чем разбиение), используемый разделитель, число элементов в массиве, и индивидуальных элементах массива. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+function splitString (stringToSplit,separator) {
+   arrayOfStrings = stringToSplit.split(separator)
+   document.write ('<P>The original string is: "' + stringToSplit + '"')
+   document.write ('<BR>The separator is: "' + separator + '"')
+   document.write ("<BR>The array has " + arrayOfStrings.length + " elements: ")
+   for (var i=0; i < arrayOfStrings.length; i++) {
+      document.write (arrayOfStrings[i] + " / ")   }}
+var tempestString="Oh brave new world that has such people in it."
+var monthString="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+var space=" "
+var comma=","
+splitString(tempestString,space)
+splitString(tempestString)
+splitString(monthString,comma)
+</SCRIPT> </XMP></table>
+<form>
+<input type="button" value="See here" onClick="Win_split()">
+</form>
+<P>
+<H3> Смотрите также</H3> 
+<P>
+Методы <A HREF="a.html#list_charAt">charAt</A>, <A HREF="h_l.html#list_indexOf">indexOf</A>, <A HREF="h_l.html#list_lastIndexOf">lastIndexOf</A> 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_src">
+<H2>src</H2> 
+<!-- Client -->
+<P>
+&LT;&LT;New.&GT;&GT; 
+<P>
+Свойство. Строка, определяющая URL изображения, которое нужно отобразить в документе. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>
+<I>imageName</I>.src
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является или именем объекта Image или элемента в массиве <I>images</I>. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="#1_image">image </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Свойство <I>src</I> первоначально отражает атрибут SRC тега &LT;IMG&GT;. Установка свойства <I>src</I> начинается с загрузки нового URL в область изображения (и прерывает передачу любых данных изображения, который уже загружены в ту же самую область). Следовательно, если вы хотите изменить свойство <I>lowsrc</I>, то вы должны делать это перед установкой свойства <I>src</I>. Если URL в свойстве <I>src</I> ссылается на изображение, которое - не имеет тот же самый размер, что и размер изображения в которое загружается, то исходное изображение масштабируется. 
+<P>
+Когда вы изменяете  Свойство <I>src</I> отображаемого изображения, новое изображение, которое вы определяете,  отображается в области, определенной для первоначального изображения. Например, предположим, что объект Image первоначально отображает файл beluga.gif: 
+<table><tr><td bgcolor=aqua><XMP>
+ <IMG NAME="myImage" SRC="beluga.gif" ALIGN="left">  
+</XMP></table>
+<P>
+Если вы устанавливаете myImage.src ='seaotter.gif ', изображение seaotter.gif отображается в том же самом место, которое первоначально использовало beluga.gif, даже если seaotter.gif - не имеет тот же самый размер, что и beluga.gif. 
+<P>
+вы можете изменять Свойство <I>src</I> в любое время. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример отображает изображение и три переключателя. Пользователь может нажимать переключатели, чтобы выбрать, какое изображение отображать. Каждое изображение использует Свойство <I>lowsrc</I>, чтобы отобразить изображение низкого разрешения. 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+function displayImage(lowRes,highRes) {
+   document.images[0].lowsrc=lowRes
+   document.images[0].src=highRes
+}
+</SCRIPT>
+<FORM NAME="imageForm">  <B>Выберите изображение:</B> <BR>
+<INPUT TYPE="radio" NAME="imageChoice" VALUE="image1" CHECKED onClick="displayImage('f15el.gif','f15e.gif')">
+F-15 Орел <BR>
+<INPUT TYPE="radio" NAME="imageChoice" VALUE="image2" onClick="displayImage('f15e2l.gif','f15e2.gif')">
+F-15 Орел 2 <BR>
+<INPUT TYPE="radio" NAME="imageChoice" VALUE="image3" onClick="displayImage('ah64l.gif','ah64.gif')">
+АХ -64 Apache <BR>
+<IMG NAME="aircraft" SRC="f15e.gif" LOWSRC="f15el.gif" ALIGN="left" VSPACE="10"> <BR>
+</FORM>
+</XMP></table>
+<form>
+<input type="button" value="Click me" onClick="Win_src()">
+</form>
+<P>
+Смотрите также примеры для объекта <A HREF="#1_image"> image </A>.
+<H3> Смотрите также</H3> 
+<P>
+Свойства <A HREF="#1_complete"> complete </A>, <A HREF="#1_lowsrc">lowsrc</A> 
+<!------------------->
+<HR align=center width=250>
+ <!-- Common -->
+ <A NAME="1_String">
+<H2> String </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Объекты <I> String </I> - теперь объекты "real". В предыдущих версиях, вы создавали строки, используя некоторые символы, а если вы хотели использовать строку как объект, то вы следовали за строковой ссылкой свойства или имени метода типа <i>.length</i> или <i>.indexOf</i> ("sub"). Теперь вы можете создавать объекты String, при использование конструктора String(). 
+<H3> Синтаксис</H3> 
+<P>
+Создание объекта String: 
+<table><tr><td bgcolor=aqua><PRE>
+stringObjectName = new String(string) 
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>stringObjectName</I> - имя нового объекта String. 
+<P>
+<I>string</I> - любая строка. 
+<H3> Описание</H3> 
+<P>
+Строки теперь могут быть расположены среди скриптов в различных окнах или фреймах. В Navigatorе 2.0, вы должны были добавлять пустую строку к строке другого окна, чтобы сослаться на нее следующим образом: 
+<table><tr><td bgcolor=aqua><XMP>
+var myString = otherWindow.theirString + ""  // 2.x: needed empty string
+var myString = otherWindow.theirString       // 3.x: no empty string required </XMP></table>
+<H3>Свойства</H3> 
+<P>
+Следующие свойства были добавлены к объекту String: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_prototype"> prototype </A> 
+<TD> Позволяет Вам добавлять свойства к объекту String. 
+<TD>  </TR> 
+</TABLE> 
+<H3> Методы</H3> 
+<P>
+Следующие методы были добавлены к объекту String: 
+<LI> <A HREF="#1_split"> split </A> 
+<H3> Примеры</H3> 
+<P>
+Следующий код создает две строковые переменные и открывает второе окно: 
+<table><tr><td bgcolor=aqua><XMP>
+var lastName = new String("Schaefer")
+var firstName = new String ("Jesse")
+empWindow=window.open('string2.html','window1','width=300,height=300') 
+</XMP></table>
+<P>
+Если HTML - источник второго окно (string2.html) создает две строковые переменные: <I>empLastName</I> и <I>empFirstName</I>, то следующий код в первом окне, присваивает значения переменным второго окна: 
+<table><tr><td bgcolor=aqua><XMP>
+ empWindow.empFirstName=firstName
+ empWindow.empLastName=lastName 
+</XMP></table>
+<P>
+Следующий код в первом окне показывает значения переменных второго окна: 
+<table><tr><td bgcolor=aqua><XMP>
+ alert('empFirstName in empWindow is ' + empWindow.empFirstName)
+alert('empLastName in empWindow is ' + empWindow.empLastName) 
+</XMP></table>
+<form>
+<input type="button" value="Show it" onClick="Win_str()">
+</form>
+<!------------------->
+<HR align=center width=250>
+ <A NAME="1_submit">
+<H2>submit</H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Следующие свойства были добавлены к объекту Submit: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD> Отражает атрибут TYPE 
+<TD>  </TR> 
+</TABLE> 
+<!------------------->
+<HR align=center width=250>
+<!-- xxx Client or Common? -->
+ <A NAME="1_suffixes">
+<H2> suffixes </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<!-- xxx Needs further description -->
+<!-- xxx Remove -->
+<P>
+Свойство. 
+<!------------------->
+<HR align=center width=250>
+<!-- xxx Client or Common? -->
+<A NAME="1_taint">
+<H2> taint </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Функция. Добавляет tainting к свойству. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  
+taint<I>(propertyName)</I>
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>propertyName</I> - Свойство taint. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<!-- xxx Remove -->
+<P>
+Эта функция в настоящее время зарегистрирована в <A HREF="#1_taint_dg">данные tainting</A>. 
+<!-- xxx 
+<H3>Examples</H3>
+<P>xxx to be supplied -->
+<H3> Смотрите также</H3> 
+<P>
+Функция <A HREF="#1_untaint"> untaint </A> 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_target">
+<H2> target </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Свойство <I>target</I> - теперь Свойство объекта Area. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен к свойству <I> target </I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+areaName</I>.target
+ </PRE> </table>
+<H3> Параметры</H3> 
+<I>areaName</I> - значение атрибута NAME объекта Area . 
+<H3> Свойство</H3> 
+<LI> <A HREF="#1_area">Объект area</A> 
+<H3> Описание</H3> 
+<P>
+<I>target</I> - строка, определяющая имя окна, которое отображает содержание нажатой области. 
+<P>
+Свойство <I>target</I> первоначально отражает атрибут  TARGET  
+тега &lt;AREA>; хотя, если вы установили target, то этот атрибут отменяется. 
+<P>
+Свойству <I>target</I> не может быть присвоено значение выражения <font color="red"><i>JavaScript</i></font> или переменной. 
+<P>
+Вы можете устанавливать свойство <I>target</I> в любое время. 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_textob">
+<H2> Text </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Следующие свойства были добавлены к объекту Text: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD> Отражает атрибут TYPE 
+<TD>  </TR> 
+</TABLE> 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_textpr">
+<H2> text </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Свойство <I>text</I> массива <I>option</I> теперь может быть изменен и изменен текст, отображаемый option в объекте Select. В предыдущих версиях, вы могли установить свойство <I>text</I>, но новое значение не отражалось в объекте Select. 
+<P>
+Свойство <I>text</I> - теперь свойство объекта Option. 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен к свойству <I>text</I>: 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+optionName</I>.text
+ </PRE> </table>
+<H3> Параметры</H3> 
+<I>optionName</I> - имя созданной опции объекта Select, при использование конструктора Option(). 
+<H3> Свойство</H3> 
+<LI> <A HREF="#1_select">Объект select</A> 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_textarea">
+<H2> Textarea </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Следующие свойства были добавлены к объекту Textarea: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_type"> type </A> 
+<TD>  Определяет, что объект - это объект Textarea 
+<TD>  </TR> 
+</TABLE> 
+<!------------------->
+<HR align=center width=250>
+<!-- xxx Client or Common? -->
+<A NAME="1_toString">
+<H2> toString</H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Метод. Преобразовывает объект в строку. 
+<P>
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+objectName</I>.toString ([<I> radix </I>])
+</PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>objectName</I> - объект, который преобразовывается в строку. 
+<P>
+<I> radix </I> определяет основание, которое используется для представления числовых значений. 
+<H3> Метод</H3> 
+<P>
+<B>toString</B> - метод всех объектов. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 2.0 (<I> radix </I>, добавлено в 3.0) 
+<H3> Описание</H3> 
+<P>
+Каждый объект имеет метод <B>toString</B>, который вызывается, когда нужно представить его, как текстовое значение. <B>ToString</B> также используется, когда объект вызван в строковой конкатенации. Вы можете также использовать <B>toString</B> внутри вашего собственного кода, чтобы преобразовать объект в строку. 
+<P>
+Если объект не имеет никакого строкового значения, его метод <B>toString</B> возвращает " <I> [object type] </I> " где <I>type</I> - тип объекта. Например, если существует следующий объект Image с именем "sealife", то sealife.toString() возвращает [object Image]. 
+<table><tr><td bgcolor=aqua><XMP>
+ <IMG NAME="sealife" SRC="seaotter-1.gif" ALIGN="left" VSPACE="10">  
+</XMP></table>
+<P>
+Когда используется с массивом, <B>toString</B> соединяет массив и возвращает одну строку, содержащую каждый элемент массива, отделяемый запятыми. Например, следующий код создает массив и преобразовывает массив к строке. 
+<table><tr><td bgcolor=aqua><XMP>
+ var monthNames = new Array("Jan","Feb","Mar","Apr")
+document.write("monthNames.toString() is " + monthNames.toString()) 
+</XMP></table>
+<form>
+<input type="button" value="пример" onClick="Win_tostring()">
+</form><P>
+Для объектов Function, <B>toString</B> декомпилирует функцию обратно в каноническую исходную строку. 
+<H3> Примеры</H3> 
+<!-- xxx More examples would be good. This just shows radix -->
+<P>
+Следующий пример печатает строковые эквиваленты чисел от 0 до 9 в десятичном и двоичном исчислении. 
+<table><tr><td bgcolor=aqua><XMP>
+for (x = 0; x < 10; x++) {
+   document.write("Decimal: ", x.toString(10), " Binary: ", x.toString(2), "<BR>")
+}
+</XMP></table>
+<P>
+<form>
+<input type="button" value="looks on a screen" onClick="Win_tostring1()">
+</form>
+</XMP></table>
+<!------------------->
+<HR align=center width=250>
+<!-- xxx Client or Common? -->
+<A NAME="1_type">
+<H2> type </H2> 
+<P>
+&LT;&LT;New.&GT;&GT; 
+<P>
+Свойство. Для элементов формы, созданных тегами &LT;INPUT&GT;, &LT;SELECT&GT; или &LT;TEXTAREA &GT;, строка, определяющая тип элемента формы. Для объектов <I>mimeType</I>, имя типа MIME. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>objectName</I>.type
+2. mimeTypes <I>[index]</I>.type
+ </PRE> 
+<H3> Параметры</H3> 
+<P>
+<I>objectName</I> является или значением атрибута NAME объекта элемента формы (button, checkbox, hidden, password, radio, reset, select, submit, text, или textarea) или элемент в массиве <I>элементов</I>. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="b.html#list_button"> button </A>, <A HREF="c.html#list_checkbox"> checkbox </A>, <A HREF="#1_fileUpload">fileUpload</A>, <A HREF="h_l.html#list_hidden"> hidden </A>, <A HREF="#1_mimeType">mimeType</A>, <A HREF="m_q.html#list_password"> password </A>, <A HREF="r.html#list_radio"> radio </A>, <A HREF="r.html#list_reset"> reset </A>, <A HREF="s.html#list_select"> select </A>, <A HREF="s.html#list_submitob"> submit </A>, <A HREF="t_z.html#list_textob"> text </A>, <A HREF="t_z.html#list_textarea">textarea</A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Значение свойства <I>type</I> присваивается элементам формы следующим образом: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+HTML элемент 
+<TH ALIGN=left>
+Значение свойства type</TR> 
+<TR VALIGN=TOP>  
+<TD> NPUT TYPE="button" 
+<TD> "button" </TR> 
+<TR VALIGN=TOP>  
+<TD>NPUT TYPE= "checkbox" 
+<TD> "checkbox" </TR> 
+<TR VALIGN=TOP>  
+<TD>  NPUT TYPE= "file"
+<TD> "file" </TR> 
+<TR VALIGN=TOP>  
+<TD> NPUT TYPE= "hidden" 
+<TD> "hidden" </TR> 
+<TR VALIGN=TOP>  
+<TD>  NPUT TYPE= "password" 
+<TD> "password" </TR> 
+<TR VALIGN=TOP>  
+<TD>  NPUT TYPE= "radio" 
+<TD> "radio" </TR> 
+<TR VALIGN=TOP>  
+<TD>  NPUT TYPE= "reset" 
+<TD> "reset" </TR> 
+<TR VALIGN=TOP>  
+<TD>  NPUT TYPE= "submit" 
+<TD> "submit" </TR> 
+<TR VALIGN=TOP>  
+<TD>  NPUT TYPE= "text" 
+<TD> "text" </TR> 
+<TR VALIGN=TOP>  
+<TD> SELECT 
+<TD> "select-one" </TR> 
+<TR VALIGN=TOP>  
+<TD> SELECT MULTIPLE 
+<TD> "select-multiple" </TR> 
+<TR VALIGN=TOP>  
+<TD> TEXTAREA 
+<TD> "textarea" </TR> 
+</TABLE> 
+<!------------------->
+<HR align=center width=250>
+<!-- Common -->
+ <A NAME="1_typeof">
+<H2>typeof</H2> 
+<P>
+&LT;&LT;New.&GT;&GT; 
+<!-- xxx Could use more description if time -->
+<P>
+Оператор. Возвращает строку, указывающая тип неоцененного операнда. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. typeof <I> operand </I>
+2. typeof <I>( operand)</I> </PRE> 
+<H3> Параметры</H3> 
+<I> operand</I> - строка, переменная, ключевое слово, или объект, для которого тип должен быть возвращен. Круглые скобки произвольны. 
+<H3> Примеры</H3> 
+<P>
+Предположим, что вы определяете переменные следующие образом: 
+<table><tr><td bgcolor=aqua><XMP>
+ var myFun = new Function("5+2")
+ var shape="round"
+ var size=1
+ var today=new Date() 
+</XMP></table>
+<P>
+<form>
+<input type="button" value="Show example" onClick="Win_typeof()">
+</form>
+<P>
+Для слов true и null, оператор typeof возвращает следующие результаты: 
+<form>
+<input type="button" value="Go" onClick="Win_typeof1()">
+</form><P>
+Для числа или строки, оператор typeof возвращает следующие результаты: 
+<form>
+<input type="button" value="Go" onClick="Win_typeof2()">
+</form>
+<P>
+Для значений свойств, оператор typeof возвращает тип значения, содержащего свойства: 
+<form>
+<input type="button" value="Go" onClick="Win_typeof3()">
+</form>
+<P>
+Для методов и функций, оператор typeof возвращает следующие результаты: 
+<form>
+<input type="button" value="Go" onClick="Win_typeof4()">
+</form>
+<P>
+Для объектов, оператор typeof возвращает следующие результаты: 
+<form>
+<input type="button" value="Go" onClick="Win_typeof5()">
+</form>
+<!------------------->
+<HR align=center width=250>
+<!-- xxx Client or Common? -->
+<A NAME="1_untaint">
+<H2> untaint </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Функция. Удаляет tainting из свойства. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  
+untaint<I>(propertyName)</I>
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>propertyName</I> - свойство, из которого  удалить tainting. 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<!-- xxx Remove -->
+<P>
+Эта функция в настоящее время зарегистрирована в <A HREF="#1_taint_dg">Данные tainting </A>. 
+<H3> Примеры</H3> 
+<!-- xxx need more examples -->
+<P>
+В следующем примере, переменная <I>untainted</I> может быть отправлена в URL или формой post другими скриптами: 
+<table><tr><td bgcolor=aqua><XMP>
+ untainted = untaint(document.form1.input3)
+</XMP></table>
+<H3> Смотрите также</H3> 
+<P>
+Функцию <A HREF="#1_taint"> taint </A> 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_value">
+<H2> value </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<P>
+Свойство <I> value </I> - теперь свойство следующих объектов: 
+<LI> <I>FileUpload</I> 
+<LI> <I>Option</I> 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен для свойства <I> value </I>: 
+<PRE>
+<I>fileUploadName</I>.value 
+<I>optionName</I>.value </PRE> 
+<H3> Параметры</H3> 
+<I>fileUploadName</I> является или значением атрибута NAME объекта FileUpload или элементом в массиве <I>elements</I>. 
+<P>
+<I>optionName</I> - имя созданной опции объекта Select, при использование конструктора Option(). 
+<H3> Описание</H3> 
+<H4>Опции объекта Select</H4> 
+Поскольку опции объекта Select создаются при помощи конструктора option(), то свойство значения - строка, которая первоначально отражает атрибут VALUE. Это значение не отображается на экране, но возвращает серверу, если опция выбрана. Значение этого свойства может изменяться, когда программа изменяет его. 
+<P>
+Вы можете устанавливать свойство <I>value</I> в любое время. 
+<H4> Объекты FileUpload </H4> 
+<P>
+Свойство <I>value</I> - строка, которая отражает текущее значение поля объекта FileUpload. Используйте свойство <I>value</I>, чтобы получить имя файла, который пользователь, печатает в объект FileUpload. 
+<P>
+<I>value</I> - свойство только для чтения. 
+<H3> Свойство</H3> 
+<LI> <A HREF="#1_fileUpload">fileUpload</A> 
+<LI> <A HREF="#1_select">Объект Select</A> 
+<!------------------->
+<HR align=center width=250>
+<!-- Common -->
+ <A NAME="1_void">
+<H2> void </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Оператор. Определяет выражение, которое оценивается без возвращение значения. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. JavaScript:void <I> (expression). </I>
+<I>JavaScript:void expression </I> </PRE> 
+<H3> Параметры</H3> 
+<I>expression</I> - выражение <font color="red"><i>JavaScript</i></font>, которое оценивается. Круглые скобки, окружающие выражение, произвольны, но если вы хотите, что бы ваш код выглядел красиво используйте их. 
+<H3> Описание</H3> 
+<P>
+Используйте оператор <i>void</i>, чтобы определить выражение как гиперссылку. Выражение будет оценено, но не загружено в текущем документе. 
+<P>
+Следующий код создает гиперссылку, которая ничего не делает, когда пользователь нажимает на нее. Когда пользователь нажимает на ссылку, void(0) оценивается к 0, и поэтому не имеет никакого эффекта в <font color="red"><i>JavaScript</i></font>. 
+<table><tr><td bgcolor=aqua><XMP>
+<A HREF="javascript:void(0)">Нажмите здесь</A> 
+</XMP></table>
+Как это выглядит на экране
+<p>
+<A HREF="javascript:void(0)">Нажмите здесь</A> 
+<P>
+Следующий код создает гиперссылку, которая представляет на рассмотрение форму, когда пользователь нажимает на нее. 
+<table><tr><td bgcolor=aqua><XMP>
+ <A HREF="javaScript:void(document.form.submit())">Нажмите здесь</A> 
+</XMP></table>
+<H3> Смотрите также</H3> 
+<P>
+Объекты <A HREF="#1_area">area</A>, <A HREF="#1_link"> link </A> 
+<!------------------->
+<HR align=center width=250>
+<!-- Client -->
+<A NAME="1_vspace">
+<H2>vspace</H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Свойство. Строка, определяющая поле в пикселях между верхними и нижними гранями изображения и окружающего текста 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+imageName</I>.vspace
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является или именем объекта Image или элементом в массиве <I>image</I>. 
+<H3>Свойство</H3> 
+<P>
+<A HREF="#1_image"> image </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Свойство <I>vspace</I> отражает атрибут VSPACE тега &LT;IMG&GT;. Для изображений, созданных при помощи конструктора Image(), значение свойства <I>vspace</I> - 0. 
+<P>
+<I>vspace</I> - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для свойства <A HREF="#1_height"> height </A>. 
+<H3> Смотрите также</H3> 
+<P>
+Свойства <A HREF="#1_border"> border </A>, <A HREF="#1_height"> height </A>, <A HREF="#1_hspace">hspace</A>, <A HREF="#1_width"> width </A> 
+<!------------------->
+<HR align=center width=250>
+<!-- Client -->
+ <A NAME="1_width">
+<H2> width </H2> 
+<P>
+ &LT;&LT;New.&GT;&GT; 
+<P>
+Свойство. Строка, определяющая ширину изображения или в пикселях или в процентах от ширины окна. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE>  <I>
+imageName</I>.width
+ </PRE> </table>
+<H3> Параметры</H3> 
+<P>
+<I>imageName</I> является или именем объекта Image или элементом в массиве <I>image</I>. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="#1_image"> image </A> 
+<H3> Выполненный в</H3> 
+<P>
+Navigator 3.0 
+<H3> Описание</H3> 
+<P>
+Свойство <I>width</I> отражает атрибут WIDTH тега &LT;IMG&GT;. Для изображений, созданных при помощи конструктора Image(), значение свойства <I>width</I> фактическая, не отображенная, ширина изображения. 
+<P>
+<I>width</I> - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для свойства <A HREF="#1_height"> height </A>. 
+<H3> Смотрите также</H3> 
+<P>
+Свойства <A HREF="#1_border"> border </A>, <A HREF="#1_height"> height </A>, <A HREF="#1_hspace">hspace</A>, <A HREF="#1_vspace">vspace</A> 
+<!------------------->
+<HR align=center width=250>
+<A NAME="1_window">
+<H2> Window </H2> 
+<P>
+ &LT;&LT;Changed.&GT;&GT; 
+<H3> Свойства</H3> 
+<P>
+Следующие свойства были добавлены к объекту Window: 
+<P>
+<TABLE BORDER=1>  
+<TR VALIGN=TOP>  
+<TH ALIGN=left>
+Свойство 
+<TH ALIGN=left>
+Описание </TR> 
+<TR VALIGN=TOP>  
+<TD> <A HREF="#1_opener"> opener </A> 
+<TD> Определяет имя окна вызванного документа, когда окно открыто при использование метода <B> open </B> 
+<TD>  </TR> 
+</TABLE> 
+<H3> Методы</H3> 
+<P>
+Следующие методы были добавлены к объекту Window: 
+<LI> <A HREF="#1_blur"> blur </A> 
+<LI> <A HREF="#1_focus"> focus </A> 
+<LI> <A HREF="#1_scroll"> scroll </A> 
+<H3> Обработчики События</H3> 
+<P>
+Следующие обработчики события были добавлены к объекту Window: 
+<LI> <A HREF="#1_onBlur">onBlur</A> 
+<LI> <A HREF="#1_onError">onError</A> 
+<LI> <A HREF="#1_onFocus">onFocus</A> 
+<H3> Синтаксис</H3> 
+<P>
+Следующий синтаксис был добавлен к тегам &LT;BODY&GT; И &LT;FRAMESET&GT;: 
+<table><tr><td bgcolor=aqua><PRE>   
+&LT;BODY &GT; ... 
+[onBlur = <I>"handlerText"</I>] 
+[onFocus = <I>"handlerText"</I>] 
+... 
+&LT;/BODY &GT;<p> 
+&LT;FRAMESET&GT; ... 
+[&LT;FRAME SRC = "locationOrURL" NAME = "frameName" &GT;]
+[onBlur = <I>"handlerText"</I>] 
+[onFocus = <I>"handlerText"</I>] 
+... 
+&LT;/FRAMESET &GT;
+ </PRE></table> 
+<P>
+<B>Обратите внимание:</B> На платформах Windows, размещение обработчиков событий onBlur или onFocus в тег &LT;FRAMESET&GT;  не имеет никакого эффекта. 
+<P>
+<H3> Синтаксис</H3> 
+Следующий синтаксис был добавлен к объекту Window для определения обработчика события onError объекта Window: 
+<table><tr><td bgcolor=aqua><PRE>  
+<I>window.onerror=errorHandler</I>
+ </PRE> </table>
+<P>
+<H3> Параметры</H3> 
+<I>errorHandler</I> -  слово null, имя функции обработчика событий, или переменной или свойства, которое содержит null или допустимую ссылку по функциям. 
+<P>
+Для информации относительно определения обработчика события onError, смотрите обработчик события <A HREF="#1_onError">onError</A>. 
+<H3> Дополнительное описание</H3> 
+<P>
+Когда вы ссылаетесь на объект Location внутри обработчика события, вы должны определить window.location вместо просто использования location. При рассмотрении статических объектов в <font color="red"><i>JavaScript</i></font>, обращение к location без определения имени объекта эквивалентно document.location, который является синонимом для документа URL. 
+<!------------------------->
+<p>
+<HR align=center width=250>
+<HR align=center width=300>
+<HR align=center width=250>
+<a name="1_callingEvents_dg">
+<h2>Вызов обработчиков события</h2>
+Вы можете сбрасывать обработчик события, определенный HTML внутри <font color="red"><i>JavaScript</i></font>, например:
+<table><tr><td bgcolor=aqua><xmp>
+<SCRIPT LANGUAGE="JavaScript">
+function fun1() { ... }
+function fun2() { ... }
+</SCRIPT>
+<FORM NAME="myForm">
+<INPUT TYPE="button" NAME="myButton" onClick="fun1()">
+</FORM>
+<SCRIPT>
+document.myForm.myButton.onclick = fun2
+</SCRIPT>
+</xmp></table>
+Обратите внимание, что обработчики события - ссылаются на функции, поэтому вы должны присвоить <b>fun2</b>, а не <b>fun2()</b> (последние вызывает <b>fun2</b> и имеете любой тип и возвращает значения). <p>
+Также, так как обработчик события HTML атрибуты - литеральные функциональные тела, вы не можете использовать &lt;INPUT onClick=fun1> в HTML источнике, чтобы выполнить fun1 обработчиком onClick для ввода; вы должны вызвать fun1 вместо, как показано в примере. <P>
+В заключение, так как HTML не чувствителен к регистру, в то время как <font color="red"><i>JavaScript</i></font> чувствителен к регистру, поэтому вы должны записывать имена обработчиков событий в <font color="red"><i>JavaScript</i></font> в нижнем регистре. 
+<p>
+<!------------------------->
+<HR align=center width=250>
+<a name="1_objectProperties_dg">
+<h2>Индексация свойств объекта</h2>
+Когда Вы определяете свойства объекта с именами свойств, то вы не можете обратиться к этим свойствам их порядковым индексом, как вы могли в Navigator 2.0. Это применяется, когда вы создаете объект и его свойства при использование конструктора функций, как в вышеупомянутом примере <i>Car</I> типа объекта, и когда вы определяете индивидуальные свойства явно (например, myCar.color = "red").<P> 
+Если Вы определяете объектные свойства первоначально с индексом, например,
+<table><tr><td bgcolor=aqua><xmp>
+myCar[5] = "25 mpg"
+</xmp></table> 
+то затем впоследствии вы можете обратиться к свойству как myCar[5]. <P>
+Правило: если вы первоначально определяете свойство его именем, то вы всегда должны обращаться к нему по его имени. Если вы первоначально определяете свойство индексом, то вы всегда должны обращаться к нему по его индексу.<P>
+Исключение из этого правила - объекты, отраженные в HTML: например, фреймы, формы, элементы, и массивы якорей. Вы можете всегда обращаться к этим объектам по их порядковому числу (основанный на том, в каком порядке они расположены в документе) и по их имени (если оно определено). Например, вы можете обратиться ко второй форме в документе как document.forms[1] или как document.myform, если второй тег &LT;FORM> имеет атрибут NAME = "myform". 
+<p>
+<!------------------------->
+<HR align=center width=250>
+<a name="1_entities_dg">
+<h2> Объекты JavaScript </h2>
+<P>
+<font color="red"><I>JavaScript</I></font> объекты позволяют вам использовать выражение <font color="red"><I>JavaScript</I></font>  как значение для HTML атрибута. Это позволяет вам создавать более гибкие конструкции HTML. <P>
+Вы может быть уже знакомы с объектами символа HTML,  которыми вы можете определять символы со специальными числовыми кодами или именами,  предшествуя имени с символом амперсанта и завершая его с точкой запятой. Например, вы можете включить символ "больше чем" (&GT;) с символьным объектом &GT И символом " меньше чем " (&LT;) с &LT. <p>
+<font color="red"><I>JavaScript</I></font>  объекты также начинаются с символа амперсанта и в конце с точкой запятой. Вместо имени или номера, вы используете выражение <font color="red"><I>JavaScript</I></font>, заключенное в фигурные скобки {}. Вы можете использовать <font color="red"><I>JavaScript</I></font>  объекты только, там где HTML атрибут со значением шел бы обычно. Например, предположим, что вы определяете переменную barWidth. Вы можете создать горизонтальную линию с определенной шириной в процентах следующим образом:
+<table><tr><td bgcolor=aqua><xmp>
+<HR WIDTH="&{barWidth};%">
+</xmp></table> 
+Так, например, если бы переменная barWidth была бы ровна 50, то на экране это выглядело бы следующим образом:
+<HR WIDTH="&{50};%">
+И как всегда, если вы изменили вашу страницу, то дисплей страницы может измениться только, тогда когда вы перезагрузите вашу страницу.
+<p>
+<!------------------------->
+<HR align=center width=250>
+<a name="1_script_dg">
+<h2>Атрибут SRC тега SCRIPT </H2>
+
+Тег &LT;SCRIPT> HTML имеет новый атрибут SRC, который позволяет вам определять файл как <font color="red"><I>JavaScript</I></font>   источник. Например:
+<table><tr><td bgcolor=aqua><XMP>
+<HEAD><TITLE>My Page</TITLE>
+<SCRIPT SRC="common.js">
+...
+</SCRIPT>
+</HEAD>
+<BODY>
+...
+</xmp></table>
+<P>Любые утверждения <font color="red"><I>JavaScript</I></font> в теге SCRIPT с атрибутом SRC игнорируются. Обратите внимание, однако, что требуется заключительный тег &LT;/SCRIPT>. <P>
+Атрибут SRC со значением может быть любой URL, относительный или абсолютный. Например:
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT SRC="jsfuncs.js">
+</xmp></table>
+<P>Внешние <font color="red"><I>JavaScript</I></font>  файлы особенно полезно использовать совместно с функциями во многих различных страниц. <font color="red"><I>JavaScript</I></font>   - файлы не содержащие любые теги HTML: они должны содержать только утверждения <font color="red"><I>JavaScript</I></font>   и функциональные определения. <P>
+<font color="red"><I>JavaScript</I></font>  - файлы должны иметь имя файла с расширением .js, и сервер должен отображать .js в MIME, напечатает "application/x-javascript", который сервер посылает обратно в HTTP заголовок. Если сервер не отображает .js имени файла в application/x-javascript типа MIME, Navigator не будет загружать <font color="red"><I>JavaScript</I></font>  файл, определенный атрибутом SRC правильно. <P>
+<B>Обратите внимание:</b> Это требование не применяется, если вы используете локальные файлы. <P>
+<!------------------------->
+<HR align=center width=250>
+<a name="1_noscript_dg">
+<h2>Тег NOSCRIPT</h2> 
+<P>
+Тег &LT;NOSCRIPT> подобен тегу NOFRAMES для фреймов. HTML включенный внутри тега отображается как non-JavaScript браузера; код, включенный внутри тега hiden, игнорируется Navigator. Используйте этот тег, чтобы определить альтернативное содержание для браузера, который не поддерживают <font color="red"><I>JavaScript</I></font>, или в случае, если пользователь отключил <font color="red"><I>JavaScript</I></font> в Options | Network Preferences. 
+<P>
+Например:
+<table><tr><td bgcolor=aqua><XMP>
+<NOSCRIPT>
+<B>This page uses JavaScript, so you need to get Netscape Navigator 2.0 or later!
+<BR><A HREF="index.html">
+<IMG SRC="NSNow.gif"></A>
+If you are using Navigator 2.0 or later, and you see this message, you need to enable JavaScript by choosing Options | Network Preferences.
+</NOSCRIPT>
+...
+</xmp></table>
+<P>
+<!------------------------->
+<HR align=center width=250>
+<a name="1_taint_dg">
+<h2>Данные tainting</h2>
+<P>
+Navigator (версия 2.02 и позже) автоматически прекращает скрипты на одном сервере из доступных свойств документов на различных серверах. Это ограничение прекращает скрипты от выборки частной информации типа структур каталога или хронологии сеанса пользователя. Однако, это ограничение также воздействует на некоторые законные приложения, типа сценарии "navigation helper", которые используют фреймы и должны видеть содержание других фреймов, независимо от их происхождения. 
+<P>
+<font color="red"><I>JavaScript</I></font> теперь имеет возможность, называемую данными tainting, которая сохраняет ограничение защиты, но обеспечивает механизм работы для законных приложений. Когда данные tainting активны, то <font color="red"><I>JavaScript</I></font> в одном окне будет способен видеть свойства другого окна, независимо с какого сервера документ другого окна был загружен. Однако, если <font color="red"><I>JavaScript</I></font> в первом окне пытается посылать данные, полученные от свойства другого окна, то отображается диалоговое окно подтверждения, так что пользователь может отменить или подтвердить операцию. По умолчанию, все свойства в втором окне заражаются так, что они не могут быть посланы серверу другого документа в исходном окне. 
+<P>
+Возможность данных tainting:
+<ul>
+ <li>На Unix, используйте команду setenv. 
+ <LI>На Windows, используйте множества. 
+ <LI>На Macintosh, установите переменную среды NS_ENABLE_TAINT. Редактируйте ресурс с типом 'Envi' и номером 128 в приложении Netscape,  удаляя два ascii наклонные черты вправо "//" перед NS_ENABLE_TAINT текстом в конце ресурса. </ul>
+<P>
+Вы можете управлять tainting свойств двумя функциями: <B>taint</b> добавляет tainting к свойству, и <B>untaint</b> удаляет tainting из свойства. Эти функции каждая принимает свойство, как параметр. 
+<P>
+Например, чтобы удалить taint из формы ввода элемента так, чтобы сценарий мог посылать это другому серверу, используйте: 
+<table><tr><td bgcolor=aqua><XMP>
+untainted = untaint(document.form1.input3)
+// now untainted can be sent in a URL or form post by other scripts
+</xmp></table><P>
+Ни <B>taint</b> и ни <B>untaint</b> не изменяют ее параметр; скорее, обе функции возвращают отмеченную или немаркированную ссылку к объекту параметра, или копии примитивного значения типа (номер или булево значение). Вы используете <B>untaint</b>, чтобы очистить "код taint" который отмечает данные как принадлежность к серверу, и следовательно не может быть послан другими сценариями различным серверам. Вы используете <B>taint</b>, чтобы отметить данные, который иначе не taint вашим сценарием "код инфекции". Сценарий может untaint только данные, которые имеет его свойство "код taint ", или имеет тождество (null) кода <B>taint</B>. Данные с любым другим сценарием "кода taint" скопированы и возвращены <B>untaint</B> без изменения или ошибки. 
+<P>
+wwwwwwwwwwwwwwwwwwwwwЧтобы обрабатывать случаи, где поток управления скорее чем поток данных несет tainting taint, каждое окно, связывают сумматор инфекции с этим. Сумматор taint задерживает инфекцию, проверенную в части условия того, если, поскольку, и в то время как утверждения, и смеси различные коды инфекции, чтобы создать, новые коды который идентифицируют комбинацию происхождения данных (serverA, serverB, serverC, и т.д.). 
+<P>
+Сумматор инфекции сброшен к тождеству только, если это содержит точно код происхождения текущего(актуального) документа. Иначе это накапливается, пока документ не разгружен. Все окна, загружающие документы из того же самого происхождения совместно используют одиночный сумматор инфекции. 
+<P>
+Если сценарий вызывает инфекцию без параметра, это смешает его собственный код инфекции в его сумматор. Если это вызывает неинфекцию без параметра, и только, если его хранения сумматора точно его код инфекции (не смесь), то сумматор сброшен, чтобы задержать(провести) код тождества. 
+<P>
+Если сумматор окна задерживает(проводит) инфекцию, заданные сценарием действия, инициализированные из контекста того окна (представление формы; установка расположения, даже расположения другого окна) проверена. Только, если накопленная инфекция сценария, код инфекции целенаправленного сервера, и кода инфекции данных,  посылаемых совместима, будет операция продолжаться(переходить). Совместимый здесь означает двоичное отношение: или это, два кода инфекции являются равными, или что по крайней мере каждый является кодом инфекции тождества. Код тождества - подобно нулю для добавления, следовательно его имя. 
+<P>Если сценарий, сервер, и инфекции данных несовместимы, диалог подтверждения зарегистрирован к подробности(подробному) находящееся в противоречии происхождение URL префиксы, и позволять пользователю отменять или ХОРОШО загрузку URL или пост формы. 
+<P>
+Накопленная taint распространяется поперек setTimeout и в оценку первого параметра к setTimeout. Это распространяется через document.write в сгенерированные отметки, так, чтобы злонамеренный сценарий не мог сообщать о частной информации типа хронологии сеанса,  генерируя отметку HTML с неявно-загруженным параметром URL SRC: 
+<table><tr><td bgcolor=aqua><XMP>
+Document.write (" < img src=fake-img - +
+   Кодируйте (хронологию) + ">")
+</xmp></table>
+<P>
+<!------------------------->
+<HR align=center width=300>
+<HR align=center width=150>
+<P align=right><a href="#1_end">на начало страницы</a></P>
+</BODY>
+</HTML>

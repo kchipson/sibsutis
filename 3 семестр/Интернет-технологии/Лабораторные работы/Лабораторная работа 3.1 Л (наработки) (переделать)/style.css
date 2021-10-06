@@ -1,0 +1,34 @@
+div {
+    display: flex;
+}
+
+span {
+    padding: 5px;
+}
+
+.sub {
+    padding-right: 23px;
+    padding-left: 22px;
+    background: darkgrey;
+}
+
+li {
+    display: block;
+    padding: 10px 5px;
+}
+
+span.Sub {
+    background: yellow;
+}
+
+#id1 {
+    opacity: 0;
+}
+
+#id2 {
+    opacity: 0;
+}
+
+#id3 {
+    opacity: 0;
+}

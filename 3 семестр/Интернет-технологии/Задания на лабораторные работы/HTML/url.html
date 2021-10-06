@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>HTTP address - URI</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<A NAME="uri"><P>
+<H3><A NAME="url">Адрес URL - Uniform Resource Locator</A></H3>
+Система адресации и собственно сами адреса в HTML документах называются URL
+.
+Что такое URL?  URL - это аббревиатура от  <b>Uniform Resource Locator</b>.
+Адрес URL является сетевым расширением понятия полного имени файла в операционной системе
+(пути к файлу <i>filename</i>).<br> <table><tr><td bgcolor=aqua>
+<PRE>http://www.ict.nsc.ru/win/docs/html/url.html</PRE>
+</table>
+В этой адресации кроме имени файла &nbsp;&nbsp; <tt>"url.html"</tt> &nbsp;&nbsp;и директории,&nbsp;&nbsp; <tt>"/win/docs/html/"</tt> &nbsp;&nbsp; где он находится указывается сетевое имя машины
+ &nbsp;&nbsp;<tt>"www.ict.nsc.ru"</tt> &nbsp;&nbsp;,
+на которой этот файл расположен и
+метод доступа к файлу &nbsp;&nbsp;<tt>"http"</tt> &nbsp;&nbsp;, который можно использовать для его просмотра или загрузки.
+
+<p><a name="access">
+<h3>Методы доступа</h3></a>
+С помощью URL, описывающих различные методы доступа к удаленным системам,
+можно запускать удаленные программы и передавать им значения.
+На этом принципе построены шлюзы в другие интернетовские сервисы, например,
+<i>finger,
+archie,..... и др.</i>
+<P>
+Рассмотрим несколько наиболее часто используемых типов URL адресов и методов доступа.
+<a name="file">
+<H3>Файлы</H3></a>
+<p>
+Допустим, файл с именем &nbsp;&nbsp; <tt>"internet.zip"</tt> &nbsp;&nbsp;
+лежит на FTP-сервере &nbsp;&nbsp; <tt>ftp.ict.nsc.ru</tt> &nbsp;&nbsp;
+в директории &nbsp;&nbsp; <tt>/pub/winsite/www/</tt>. &nbsp;&nbsp;
+Тогда <b>URL адрес</b> этого файла будет
+выглядеть так:
+<table><tr><td bgcolor=aqua><PRE>file://ftp.ict.nsc.ru/pub/winsite/www/internet.zip</PRE></table>
+<P>
+Пример URL адреса директории, в которой лежит файл:
+<table><tr><td bgcolor=aqua>
+<PRE>file://ftp.ict.nsc.ru/pub/winsite/www/</PRE></table>
+<p>
+Понятно, что URL адрес корневой директории FTP сервера
+&nbsp;&nbsp;
+<tt>ftp.ict.nsc.ru</tt> &nbsp;&nbsp; выглядит вот так:
+<table><tr><td bgcolor=aqua><PRE>file://ftp.ict.nsc.ru/</PRE></table>
+<P>
+Кстати вместо
+ сетевого имени машины
+&nbsp;&nbsp; <tt>ftp.ict.nsc.ru</tt> &nbsp;&nbsp;
+можно указать ее IP-адрес 
+&nbsp; <tt>193.124.243.76</tt>. &nbsp;
+Это часто бывает полезно для ускорения работы с удаленными системами при невысокой
+скорости передачи данных, поскольку в этом случае нет необходимости обращаться к
+службе DNS для поиска сетевого адреса, по которому идет
+маршрутизация IP-пакетов.
+<P>
+<a href="#uri"><img src="icons/up.gif" border=0></a><a name="ftp">
+<h3>FTP адрес</H3></a>
+Если вам необходимо явно указать, что выбранный вами файл следует
+загрузить с FTP сервера на машину клиента,
+то в URL адресе файла следует явно указать
+тип протокола, например:
+<table><tr><td bgcolor=aqua><PRE>ftp://ftp.ict.nsc.ru/pub/winsite/www/internet.zip</table></PRE>
+<p><a name="http">
+<H3>HTTP URLs</H3></a>
+<p>
+HTTP -- HyperText Transport Protocol
+(протокол передачи гипертекста).
+HTTP сервера обычно используются для предоставления гипертекстовых
+документов. Такие документы, в отличие от обычных, имеют ссылки на
+другие документы (не обязательно расположенных на этом же сервере) и состоят
+из текста, графики, звуков, анимации.
+<P>
+Для вызова документа &nbsp; <tt>"url.html"</tt>, &nbsp; который находится в
+директории <tt>/win/docs/html/</tt> WWW сервера
+<tt>www.ict.nsc.ru</tt> необходим следующий URL адрес:
+<table><tr><td bgcolor=aqua>
+<PRE>http://www.ict.nsc.ru/win/docs/html/url.html</PRE></table>
+<P>
+По умолчанию все программы по протоколу HTTP ищут WWW сервер на 80 порту,
+но можно и явно указать порт (также как и в gopher'e).
+<table><tr><td bgcolor=aqua>
+<PRE>http://www.weblab.com:1234/pub/files/foobar.html</PRE></table>
+<P><a href="#uri"><img src="icons/up.gif" border=0></a>
+<a name="mini-url">
+<H2>Частичные URL</H2></a>
+Частичные URL используются только при протоколом передачи гипертекста
+(HTTP).
+Если вы внимательно посмотрите на исходники какого-нибудь гипертекстового
+документа и обратите внимание на то, как указаны ссылки на другие URL,
+то заметите, что встречаются два вида:
+<p>
+<table><tr><td bgcolor=aqua>
+<pre>&lt;A Href="http://www.w3c.net/WWW/url.html"&gt;URL&lt;/A&gt;</pre>
+
+<p>
+<pre>&lt;A Href="docs.html"&gt;Документация&lt;/A&gt;</pre>
+</table>
+<p>
+Первый пример - это полный URL, а второй - частичный. Частичный
+URL указывает на документ, который находится на том же сервере и
+в той же директории, где и документ, в котором встречается эта ссылка.
+Так, например, если документ, где вы нашли эти две строчки,
+имел URL
+<tt>http://www.w3c.net/WWW/foo.html</tt>, то полный
+URL у второго частичного должен выглядеть как
+<tt>http://www.w3c.net/WWW/docs.html</tt>.
+<p>
+Сокращенные URL адреса определяются по правилам, принятым в операционной системе
+ UNIX.
+Например, адрес  <tt>../win/file.html</tt>  означает переход на
+одну директорию вверх и выбор файла из поддиректории &nbsp; <tt> win</tt> &nbsp;
+с именем <tt>file.html</tt> или адрес  <tt>/docs/ball.gif</tt> - переход в корневую директорию и выбор файла с полным именем
+<tt>/docs/ball.gif</tt>.
+<p>
+<a name="other-url">
+<h3>Другие URL адреса</h3>
+<p>
+Приведем несколько других типов задание доступа к удаленным системам:
+<dl>
+<dt><b><tt>&lt;A HREF="mailto:..."&gt;</tt></b>
+<dd> Задание адреса электронной почты для автоматической отправки сообщения
+через просмотрщик:
+<pre>&lt;A HREF="mailto:root@ict.nsc.ru"&gt; root@ict.nsc.ru&lt;/a&gt;</pre>
+<dt><b><tt>&lt;A HREF="news:..."&gt;</tt></b>
+<dd>Задание связи с севером NewsGroup
+<dt><B><tt>&lt;A HREF="telnet://..."&gt;</tt></b>
+<dd> Задание связи через &nbsp; <tt>TELNET</tt>.
+<dt><B><tt>&lt;A HREF="wais://..."&gt;</tt></b>
+<dd>Задание связи с сервером WAIS.
+</dl>
+Это, конечно, не полный список возможных URL адресов, ввиду того, что
+постоянно вводятся в обращения новые методы доступа к данным
+<p>
+
+<a href="#uri"><img src="icons/up.gif" border=0></a>

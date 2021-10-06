@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Теория к лаб. работе N </TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<h3>COOKIE</h3>
+<P>
+<b>COOKIE</b> - это механизм хранения данных на клиенте в файле cookies.txt
+<p>Cookie представляют собой это небольшой блок информации, иногда имеющий строк действия и добавляемый в cookie-файл в следующем формате:
+<br><br>
+name=value;expires=expDate;<br><br>
+<b>name</b> - имя хранимых данных;<br> 
+<b>value</b> - значение данных. <br><br>
+Если <b>name</b> и <b>value</b> содержат одну запятую, точку с запятой или пробелы, обязательно использовать функцию <b>escape</b> для 
+их кодирования и функцию <b>unescape</b> - для декодирования.
+<br><br>
+<b>expDate</b> - дата окончания срока действия в GMT-формате даты:<br>
+<b>Wdy, DD-Mon-YY HH:MM:SS GMT</b><br><br>
+Для установки срока действия куки можно использовать  использовать метод toGMTString.<br><br>
+Пример установки срока дейсткия <b>cookie</b>:
+<p><table><tr><td bgcolor=aqua>
+<pre>
+	var today = new Date()
+	var expires = new Date()
+	expires.setTime(today.getTime() + 1000*60*60*24*365)
+</pre></td></tr></table>
+Таким образом переменная <b>expires</b> получает значение времени, на год больше текущего. <br>
+Установив такое значение времени, получаем <b>cookie</b>, хранимую в течение одного года.<br>
+Дата-срок действия является необязательным параметром, указывающим срок действия куки. Если <b>expDate</b> не указан, 
+<b>cookie</b> перестаёт действовать после выхода пользователя из текущей сессии браузера. <br>
+<h4>Ограничения</h4><p>
+<p>На использование <b>cookie</b> накладываются следующие ограничения:
+<ul>
+<li>Не более 300 cookie в одном файле
+<li>4 Kb на одну cookie (в сумме на имя имени и значение)
+<li>Не более 20 cookie на домен или сервер<p>
+</ul>
+<h4>Использование cookie</h4><p>
+Свойство <i>document.cookie</i> - это строка, содержащая имена и значения всех <b>cookies</b> браузера. <p>
+Ниже приведены примеры фунеций, устанавливающих и получающих значение <b>cookie</b>:
+<p><table><tr><td bgcolor=aqua>
+<pre>
+function setCookie(name, value, expire) {  
+	document.cookie = name + "=" + escape(value) +
+		<i>//В строку дописывается имя устанавливаемой cookie</i>
+	((expire == null) ? "" : ("; expires=" + expire.toGMTString()))
+		<i>//Устанавливается время действия</i>
+}
+
+function getCookie(Name) {   
+	var search = Name + "="
+		<i>//Создается строка для поиска в document.cookie</i>
+	if (document.cookie.length > 0) {
+		offset = document.cookie.indexOf(search)
+			<i>//Поиск cookie по ее имени</i>
+		if (offset != -1) {
+			offset += search.length
+			end = document.cookie.indexOf(";", offset)
+				<i>//Определили положение нужной cookie, и по индексам вырежем ее</i>
+			if (end == -1)
+				end = document.cookie.length
+			return unescape(document.cookie.substring(offset, end))
+				<i>//Вернули подстроку, содержащюю нужное значение cookie</i>
+		}
+	}
+}
+</pre></td></tr></table><p>
+
+
+</BODY>
+</HTML>

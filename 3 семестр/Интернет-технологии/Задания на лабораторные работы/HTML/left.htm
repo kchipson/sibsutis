@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE> </TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" CONTENT="ru">
+  <SCRIPT LANGUAGE="JavaScript">
+    <!--
+
+    function ToggleSubMenu(id,TheoryB,Theory,TaskB,Task,QB,Q) {
+      s='';s1='';s2='';s3='';
+      if (document.getElementById(id).innerHTML=='') {
+      if (TheoryB) s1='&nbsp;&nbsp;&nbsp;&#149;&nbsp;<a href="'+Theory+'" TARGET="right" class="c">Теория</a><br>';
+      if (TaskB) s2='&nbsp;&nbsp;&nbsp;&#149;&nbsp;<a href="'+Task+'" TARGET="_blank" class="c">Задание</a><br>';
+      if (QB) s3='&nbsp;&nbsp;&nbsp;&#149;&nbsp;<a href="'+Q+'" TARGET="right" class="c">Вопросы</a><br>';
+      s='<br>'+s1+s2+s3;
+      document.getElementById(id).innerHTML=s;
+      }
+      else document.getElementById(id).innerHTML='';
+   
+    }
+    -->
+  </SCRIPT>
+
+<STYLE>
+BODY 
+{
+	BACKGROUND-COLOR: #34495e;
+	CURSOR: default;
+	FONT-FAMILY: Roboto, Tahoma, Verdana, Arial, sans-serif;
+	COLOR: #FFFFFF; 
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: normal;
+	MARGIN-TOP: 5px;
+	MARGIN-LEFT: 5px
+}
+A:link
+{
+	COLOR: #FFFFFF;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none
+}
+A:visited
+{
+	COLOR: #FFFFcc;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none
+}
+A:hover
+{
+	COLOR: #ffcc33;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none
+}
+
+A.c:link
+{
+	COLOR: #FFFFFF;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none
+}
+A.c:visited
+{
+	COLOR: #FFFFcc;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: normal;
+	TEXT-DECORATION: none
+}
+A.c:hover
+{
+	COLOR: #ffcc33;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: normal;
+	TEXT-DECORATION: none
+}
+
+</STYLE>
+</HEAD>
+<BODY>
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab11',11,'lab1-t.html',1,'Example/Lab1.html',1,'q1.html')"><b>Лаб. работа №&nbsp;1.1</b></a>
+<span id="lab11"></span>
+<br>
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab12',1,'lab2-t.html',1,'Example/Lab2.html',1,'q2.html')"><b>Лаб. работа №&nbsp;1.2</b></a>
+<span id="lab12"></span>
+<br>
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab13',1,'lab3-t.html',1,'Example/Lab3.html',1,'q3.html')"><b>Лаб. работа №&nbsp;1.3</b></a>
+<span id="lab13"></span>
+<br>
+
+
+<A HREF="Java/theory/JavaScript_Intro.html" TARGET="right" style="line-height: 20px" class="c"><b>Введение в JavaScript</b></a>
+<br>
+
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab22',1,'Java/theory/lab2.1-t.html',1,'Java/works/lab2.1.html',0,'')"><b>Лаб. работа №&nbsp;2.1</b></a>
+<span id="lab22"></span>
+<br>
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab23',1,'Java/theory/lab2.2-t.html',1,'Java/works/lab2.2.html',1,'Java/questions/lab2.3-q.html')"><b>Лаб. работа №&nbsp;2.2</b></a>
+<span id="lab23"></span>
+<br>
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab24',1,'Java/theory/lab2.3-t.html',1,'Java/works/lab2.3.html',1,'Java/questions/lab2.4-q.html')"><b>Лаб. работа №&nbsp;2.3</b></a>
+<span id="lab24"></span>
+<br>
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab25',1,'Java/theory/lab2.4-t.html',1,'Java/works/lab2.4.html',0,'3.html')"><b>Лаб. работа №&nbsp;2.4</b></a>
+<span id="lab25"></span>
+<br>
+
+
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab31',1,'MENU/theory.html',1,'MENU/task.html',0,'3.html')"><b>Лаб. работа №&nbsp;3.1</b></a>
+<span id="lab31"></span>
+<br>
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab32',1,'KUKI/kuki_t.html',1,'KUKI/laba.html',0,'3.html')"><b>Лаб. работа №&nbsp;3.2</b></a>
+<span id="lab32"></span>
+<br>
+<a href="javascript:void(0)" style="color: white; line-height: 20px" onClick="ToggleSubMenu('lab33',1,'XML/XSL.html',1,'XML/xml1.html',0,'3.html')"><b>Лаб. работа №&nbsp;3.3</b></a>
+<span id="lab33"></span>
+<br>
+
+
+<A HREF="curs.html" TARGET="contentFrame" style="line-height: 20px" class="c"><b>CURS</b></a>
+
+
+
+</BODY>
+</HTML>

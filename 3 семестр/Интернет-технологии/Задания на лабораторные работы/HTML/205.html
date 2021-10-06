@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Таблицы стилей CSS.Примеры. </TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+
+
+<h2><A NAME="list">Свойства текста </A></h2>
+<UL>
+        <LI><A href="#1">word-spacing</a>
+        <LI><A href="#2">letter-spacing</a> 
+        <LI><A href="#3">white-space</a>
+        <LI><A href="#4">line-height</a>
+        <LI><A href="#5">text-decoration</a>
+        <LI><A href="#6">text-indent</a>
+        <LI><A href="#7">text-align</a>
+        <LI><A href="#8">text-transform</a>
+
+</UL>
+
+<UL>
+
+       <LI id=1><B>word-spacing</B><BR> Атрибут определяет оформление интервала между слов. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {word-spacing: <strong>тип</strong>} </span>
+       <UL>
+            <LI><I>normal</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {word-spacing:normal } </span>
+            <LI><I>em</I>. <br>К обычному пробелу прибавляется ширина одной буквы <b>m</b> или нескольких 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {word-spacing:3em } </span>
+
+       </UL>
+       <LI id=2><B>letter-spacing</B><BR> Атрибут определяет оформление интервала между символами. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {letter-spacing: <strong>значение</strong>} </span>
+       либо <I>normal</I>.  
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {letter-spacing:normal } </span>
+            
+       <LI id=3><B>white-space</B><BR> Атрибут определяет оформление пробелов в тексте. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {white-space: <strong>значение</strong>} </span> <br>
+       может принимать значения:
+<UL>
+            <LI><I>normal</I>. 
+            <LI><I>pre</I>.  
+            <LI><I>nowrap</I>.  
+       </UL>
+
+       <LI id=4><B>line-height</B><BR> Атрибут определяет межстрочный интервал при помощи одной из пяти размерностей: 
+       <UL>
+            <LI><I>Пункты</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {line-heigh: <strong>12</strong>pt} </span>
+            <LI><I>Дюймы</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {line-heigh: <strong>12</strong>in} </span>
+            <LI><I>Сантиметры</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {line-heigh: <strong>12</strong>cm} </span>
+            <LI><I>Пиксели</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {line-heigh: <strong>12</strong>px} </span>
+            <LI><I>Проценты</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {line-heigh: <strong> 50</strong>%} </span>           
+       </UL>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+       <LI id=5><B>text-decoration</B><BR> Атрибут определяет оформление начертания шрифта. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-decoration: <strong>тип</strong>} </span>
+       <UL>
+            <LI><I>Упрощённый</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-decoration: none } </span>
+            <LI><I>Подчеркнутый</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-decoration: underline } </span>
+            <LI><I>Надчеркнутый</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-decoration: overline } </span>
+            <LI><I>Наклонный</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-decoration: italic } </span>
+            <LI><I>Линия насквозь</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-decoration: line-through } </span>
+       </UL>
+
+       <LI id=6><B>text-indent</B><BR> Атрибут определяет отступ текста.
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-indent: <strong>число</strong>} </span>
+       <UL>
+            <LI><I>Пункты</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-indent: <strong> 12</strong>pt} </span>
+            <LI><I>Дюймы</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-indent: <strong>12</strong>in} </span>
+            <LI><I>Сантиметры</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-indent: <strong>12</strong>cm} </span>
+            <LI><I>Пиксели</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-indent: <strong>12</strong>px} </span>
+       </UL>
+Браузер <B>Internet Explorer</B> поддерживает отрицательные значения атрибутов полей и отступа. Эта функциональная особенность позволяет добиваться 
+интересных и необычных эффектов, что положительно сказывается на читабельности страницы. 
+       <LI id=7><B>text-align</B><BR> Атрибут позволяет изменить режим выравнивания текста. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-align: <strong>расположение</strong>} </span>
+       
+          <UL>
+            <LI><I>По правому краю</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-align: right } </span>
+            <LI><I>По левому краю</I>. <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-align: left } </span> 
+            <LI><I>По центру</I>.  <br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-align: center } </span>    
+       </UL>
+       <LI id=8><B>text-transform</B><BR> Атрибут позволяет изменить регистр шрифта текста. 
+<br>Синтаксис:<span class=cod> <strong>селектор</strong> {text-transform: <strong>none</strong>} </span><br>
+
+       так же может принимать значения:
+     <UL>
+            <LI><I>capitalize</I>. 
+            <LI><I>uppercase</I>.  
+            <LI><I>lowercase</I>.  
+       </UL>
+Выравнивание больших фрагментов по левому краю является единственно разумным решением с точки зрения читабельности. Выравнивание по правому краю 
+логичнее всего назначать небольшим фрагментам текста,  например, выноскам. Хотя с помощью атрибута <B>BODY</B> определяются значения полей для
+ всей страницы, атрибут поля можно включать в любой элемент <B>HTML</B>, например, в заголовки или абзацы. 
+</UL>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+</BODY>
+</HTML>

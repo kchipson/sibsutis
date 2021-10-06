@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Броузер</title>
+</head>
+<body bgcolor=ffffff>
+<p align=center>
+<table border=1>
+<tr><td>Имя броузера</td>
+<td><script language="JavaScript">
+document.write(navigator.appName);</script></td></tr>
+<tr><td>Версия броузера</td>
+<td><script language="JavaScript">
+document.write(navigator.appVersion);</script></td></tr>
+<tr><td>Кодовое название броузера</td>
+<td><script language="JavaScript">
+document.write(navigator.appCodeName);</script></td>
+<tr><td>Заголовок пользовательского<br>агента</td>
+<td valign=top><script language="JavaScript">
+document.write(navigator.userAgent);</script>
+</td></tr></table>
+
+<p align=center><form>
+   <input type="button" value="Закрыть окно" 
+   onClick='window.close()'>
+  </form>
+
+</body></html>

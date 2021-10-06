@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<!-- saved from url=(0081)file:///C:/Users/Admin/Downloads/InTeh_lab_19/InTeh_lab_19/HTML/Example/blank.htm -->
+<HTML>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+        <title>Лабораторая работа №2.1 | JS</title>
+        <style type="text/css">
+            /* КНОПКА */
+            a.button {
+                display: inline-block;
+                text-decoration: none;
+                color: #fff;
+                width: 5em;
+                text-align: center;
+                margin-bottom: 1em;
+                padding: 0.7em 1.5em;
+                border: 1px solid rgb(80, 32, 0);
+                border-radius: 10%;
+                background: rgb(147, 80, 36) linear-gradient(rgb(106, 58, 26), rgb(147, 80, 36) 80%);
+                box-shadow: 0 6px rgb(86, 38, 6), 0 3px 15px rgba(0, 0, 0, 0.4),
+                    inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 3px rgba(255, 255, 255, 0.5);
+            }
+            .button:hover {
+                background: rgb(167, 91, 41) linear-gradient(rgb(126, 69, 31), rgb(167, 91, 41) 80%);
+                box-shadow: 0 6px rgb(214, 108, 37);
+            }
+            .button:active {
+                background: rgb(120, 63, 25) linear-gradient(rgb(120, 63, 25) 20%, rgb(167, 91, 41));
+                box-shadow: none;
+                -webkit-transform: translate(0, 4px);
+                transform: translate(0, 4px);
+            }
+            .qwe {
+                margin-top: 30vh;
+            }
+            /* КОНЕЦ КНОПКИ */
+        </style>
+        <script>
+            var started = true;
+            delay = 200;
+            imageNum = 1; // стартовый номер картинки
+            theImages = new Array();
+
+            for (i = 1; i < 13; i++) {
+                theImages[i] = new Image();
+                theImages[i].src = "img/s" + i + ".gif";
+            }
+
+            function animate() {
+                document.animation.src = theImages[imageNum].src;
+                imageNum++;
+                if (imageNum > 12) {
+                    imageNum = 1;
+                }
+            }
+            function slower() {
+                delay += 10;
+                if (delay > 4000) delay = 4000;
+            }
+            function faster() {
+                delay -= 10;
+                if (delay < 0) delay = 0;
+            }
+            function stop() {
+                started = false;
+            }
+            function start() {
+                if (!started) {
+                    started = true;
+                    animate();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="qwe" align="center">
+            <img
+                name="animation"
+                class="displayed"
+                width="800"
+                height="120"
+                src="img/s1.gif"
+                alt="[Анимация]"
+                onLoad="if (started)
+                            setTimeout('animate()', delay);"
+            />
+            <div>
+                <a href="#" class="button" onclick="start()">Старт</a>
+                <a href="#" class="button" onclick="faster()">Быстрее</a><br />
+                <a href="#" class="button" onclick="stop();">Стоп</a>
+                <a href="#" class="button" onclick="slower()">Медленнее</a>
+            </div>
+        </div>
+    </body>
+</HTML>

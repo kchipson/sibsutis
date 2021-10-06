@@ -1,0 +1,81 @@
+                                                                                                           /*User stick note*/
+h3.sticky_title {  
+  margin-top: 12px;
+  margin-bottom: 11px;
+}
+
+span.sticky_info_row {
+  display: block;
+  line-height: 23px;
+}
+
+label.row-element {
+  font-weight: bold;
+}
+
+label.row-element.more-detail{
+  color: #ff0000;
+}
+
+.customize-text_editor{
+    font-size: 16px;
+    font-weight: bold;    
+}
+
+.customize-text_editor_desc a {
+  background-color: #0089BD;
+  padding: 4px;
+  color: #fff;
+  border-radius: 7px;
+  margin: 2px 0;
+  display: inline-block;
+  transition:all ease 0.3s;
+  -webkit-transition:all ease 0.3s;
+  -moz-transition:all ease 0.3s;
+}
+.customize-text_editor_desc a:hover {
+  background-color: #fff;
+  color: #0089BD;
+}
+.customize-text_editor_desc .download-link{
+  display: block;
+}
+.customize-text_editor_desc span {  
+  padding: 2px;
+  margin: 0;
+  display: inline-block;
+}
+
+.customize-text_editor_desc .upgrade-pro{
+  color: #FFF !important;
+  font-size: 12px;
+  line-height: 1;  
+  text-align: center;
+  width: 90%;
+  margin-top: 10px;  
+}
+
+#accordion-section-theme_info{
+    color: #0089BD;
+}
+
+.control-section-pro-section .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 700;
+	margin-left: 8px;
+  background: #f89300;
+  color: #fff;
+  border-color: #f89300;
+  padding: 0 20px 1px;
+}
+
+.control-section-pro-section .accordion-section-title .button:hover,
+.control-section-pro-section .accordion-section-title .button:focus{
+  background: #dc8200;
+  border-color: #dc8200;
+}
+
+.rtl .control-section-pro-section .accordion-section-title .button {
+	margin-left:  0;
+	margin-right: 8px;
+}

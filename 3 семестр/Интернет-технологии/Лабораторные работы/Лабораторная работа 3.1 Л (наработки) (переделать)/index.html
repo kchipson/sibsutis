@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>Лабораторная работа 3.1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="menu" class="main-menu">
+        <span id="one" class="sub">Menu1</span>
+        <span id="two" class="sub">Menu2</span>
+        <span id="three" class="sub">Menu3</span>
+    </div>
+    <div>
+        <span id="id1" class="Sub">
+            <li>
+                <a href="#">SubMenu1</a>
+            </li>
+            <li>
+                <a href="#">SubMenu2</a>
+            </li>
+            <li>
+                <a href="#">SubMenu3</a>
+            </li>
+        </span>
+        <span id="id2" class="Sub">
+            <li>
+                <a href="#">SubMenu1</a>
+            </li>
+            <li>
+                <a href="#">SubMenu2</a>
+            </li>
+            <li>
+                <a href="#">SubMenu3</a>
+            </li>
+        </span>
+        <span id="id3" class="Sub">
+            <li>
+                <a href="#">SubMenu1</a>
+            </li>
+            <li>
+                <a href="#">SubMenu2</a>
+            </li>
+            <li>
+                <a href="#">SubMenu3</a>
+            </li>
+        </span>
+    </div>
+    <script>
+        menu.onmouseover = Drop;
+        menu.onmouseout = Coll;
+
+        function Drop(event) {
+            switch (event.target.id) {
+                case "one":
+                    el = document.getElementById("id1");
+                    el.style.opacity = 100;
+                    break;
+                case "two":
+                    el = document.getElementById("id2");
+                    el.style.opacity = 100;
+                    break;
+                case "three":
+                    el = document.getElementById("id3");
+                    el.style.opacity = 100;
+                    break;
+            }
+        }
+
+        function Coll(event) {
+            sleep(500);
+            switch (event.target.id) {
+                case "one":
+                    el = document.getElementById("id1");
+                    el.style.opacity = 0;
+                    break;
+                case "two":
+                    el = document.getElementById("id2");
+                    el.style.opacity = 0;
+                    break;
+                case "three":
+                    el = document.getElementById("id3");
+                    el.style.opacity = 0;
+                    break;
+            }
+        }
+
+        function sleep(millis) {
+            var t = (new Date()).getTime();
+            var i = 0;
+            while (((new Date()).getTime() - t) < millis) {
+                i++;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

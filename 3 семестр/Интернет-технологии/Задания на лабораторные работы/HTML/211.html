@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Таблицы стилей CSS.Примеры. </TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+
+<h2><A NAME="list">Группирование стилей, назначение классов и псевдоклассов</A></h2>
+<UL>
+        <LI><A href=#1>Группирование стилей</a>
+        <LI><A href=#2>Назначение классов</a>
+        <LI><A href=#3>Назначение псевдоклассов</a>
+</UL>
+<H3>Группирование стилей</h3>
+<P id=1>Существуют дополнительные методы, которые расширяют функциональные возможности таблиц стилей.
+Стили можно сгруппировать, что позволяет уменьшить количество необходимых атрибутов и аргументов, путем создания логических групп.
+Группирование таблиц стилей может происходить по одинаковым тэгам, или по атрибутам одного семейства. Порядок атрибутов
+играет важную роль: насыщенность шрифта и стиль начертания должны находиться перед остальными атрибутами - кегль должен быть задан до межстрочного
+ интервала, и только потом в строку можно добавить дополнительную информацию. В случае группирования атрибутов - между ними запятые не ставятся,
+исключение составляет атрибут семейства шрифта, перед ним ставится запятая.</p> 
+<p>Пример группирования по тэгам:<br>
+
+До группирования:
+<table><tr><td bgcolor=aqua>
+<div class=cod>
+H1  {font-family: arial;font-size: 14pt}
+<BR>H2  {font-family: arial;font-size: 14pt}
+<BR>H3  {font-family: arial;font-size: 14pt}
+</div></table>
+<p>После группирования: 
+<table><tr><td bgcolor=aqua>
+<div class=cod>
+H1,H2,H3  {font-family: arial;font-size: 14pt}
+ </div> </p></table>
+<p>
+Пример группирования по атрибутам одного семейства: <BR>
+До группирования:
+<table><tr><td bgcolor=aqua>
+<div class=cod>
+BODY  {margin-top: 12pt;margin-right: 10pt;margin-left: 15pt}
+</div></table>
+<p>
+После группирования
+<table><tr><td bgcolor=aqua>
+<div class=cod>
+BODY  {margin: 12pt 10pt 15pt}
+</div>
+</p></table>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+<H3>Назначение классов</h3>
+<P id=2>
+Для того, чтобы сделать работу  более универсальной, можно создать несколько вариантов - <I> классов</I> свойств стилей и применять их 
+к элементам поочередно.
+Сгруппировав  стили по свойствам, необходимо дать им названия ввиде расширения к элементу.
+<BR>Синтаксис: <br><span class=cod>H1.left  {text-align: left}
+ <br> H1.right  {text-align: right}</span>
+<BR>Далее в документе указывается либо <B>&lt;H1 class=left&gt;</B>, либо <B>&lt;H1 class=right&gt;</b>
+<p>
+Аналогично можно создать универсальный класс и применять его потом к различным элементам:
+<br>Синтаксис:<div class=cod>.left  {text-align: left}
+  <br>.right  {text-align: right}</div>
+<BR>Далее в документе указывается либо <span class=cod> &lt;<strong>тэг</strong> class=left&gt;</span>, либо <span class=cod>&lt;<strong>тэг</strong> class=right&gt;</span>
+</P> 
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+<H3>Назначение псевдоклассов</h3>
+<P id=3>
+Псевдоклассы позволяют задавать стиль  элемента по его характеристикам, которые не являются именем, атрибутом или содержимым. 
+Элемент может приобрести псевдокласс или 
+лишиться его во время работы пользователя с  документом. 
+<ul>
+<li><i>A:link </i> - не просмотренные ссылки 
+<li><i>A:visited </i> - просмотренные ссылки
+<li><i>A:hover </i> - выбранная, но не активизированная ссылка 
+<li><i>A:active </i> - активизированная ссылка
+</ul>
+</P>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+</BODY>
+</HTML>

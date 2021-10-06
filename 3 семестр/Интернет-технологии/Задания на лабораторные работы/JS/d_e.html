@@ -1,0 +1,629 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+<script>
+function ClockWin() {
+  myWin= open("Ex_clock1.html", "displayWindow", 
+ "width=247,height=221,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+function ClockWin2() {
+  myWin= open("Ex_clock2.html", "displayWindow", 
+ "width=247,height=221,status=no,toolbar=no,menubar=no,scrollbars=no");
+}
+</script>
+</HEAD>
+<BODY text="Black" link="#336699" vlink="#6699cc" alink=" #ff6600">
+ <A NAME="list_Date">
+<H2>Объект Date</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_Date">Измененный в Навигаторе 3.0</A></FONT>  
+<P>
+Предоставляет набор методов для работы с датами и временами. 
+<H3> Синтаксис</H3> 
+<P>
+Создание объекта <b>Date</b>: 
+<PRE>  
+1. <I>DateObjectName</I> = new Date () 
+2. <I>DateObjectName</I> = new Date (" <I>month day, year hours:minutes:seconds</I> ") 
+3. <I>DateObjectName</I> = new Date (<I>year, month, day</I>) 
+4. <I>DateObjectName</I> = new Date (<I>year, month, day, hours, minutes, seconds</I>) </PRE> 
+<I>DateObjectName</I> является именем нового объекта. <BR>
+<I>year, month, day, hours, minutes ,seconds</I> - строковое значение для 2. Для 3 и 4 - это значения целого числа. 
+<P>
+Использование методы Date: 
+<table><tr><td bgcolor=aqua><PRE>  
+<I>DateObjectName.methodName (параметры)</I>
+ </PRE> </table>
+<I>DateObjectName</I> является именем существующего объекта <b>Date</b> <BR>
+<I>MethodName</I> - один из методов, описанных ниже. 
+<P>
+Исключения: синтаксический анализ объекта <b>Date</b> и UTC методы - статические методы, которые вы используете следующим образом: 
+<table><tr><td bgcolor=aqua><PRE>  
+Date. UTC <I>(параметры) </I>
+Date.parse <I>(параметры)</I> </PRE></table>
+<H3> Свойства</H3> 
+<LI> Отсутствуют. 
+<H3> Описание</H3> 
+<P>
+Объект <b>Date</b> - встроенный объект <font color="red"><i>JavaScript</i></font>. 
+<P>
+Несмотря на отсутсьвие каких - либо свойств, объект <b>Date</b> имеет несколько методов для установки и изменения своего значения.
+<br>
+Хотя значения даты возвращаются в стардатной форме, фактическое значение хранится как количество миллисекунд, прошедших после полуночи 1 января 1970 года. Применение этого соглашения запрещает использование дат до 1970 года.<br>
+Если при создании объект <b>Date</b> опустить компонент, указывающий время, оно по умолчанию будет установлено в 00:00:00. Методы для установки и получения значения даты и времени деляться на четыре основных категории: set, get, to и parse/UTC.<br>
+За исключением номера дня в месяце, все числовые представления даты нумеруются с нуля. Это не должно составлять проблемы, за исключением месяцев (0(январь)-11(декабрь)).<br>
+Стандартный синтаксис даты таков: "Thu, 11 Jan 1996 06:33:09 GMT". Принятые в США аббревиатуры временных поясов воспринимаются корректно, но для универсальности лучше указывать сдвиг поясного времени относительно Гринвичского меридеана. Например, "Thu, 11 Jan 1996 06:33:09 GMT+0530" указывает пояс, находящийся на 5:30 западнее Гринвича.
+<P>
+<h3>Связанные элементы</h3>
+<li type="circle"><H4> Свойства</H4> 
+<ul><LI> Отсутствуют. </ul>
+<li type="circle"><H3> Методы</H3> 
+<ul><LI> <A HREF="f_g.html#list_getDate">GetDate</A> 
+<LI> <A HREF="f_g.html#list_getDay">GetDay</A> 
+<LI> <A HREF="f_g.html#list_getHours">GetHours</A> 
+<LI> <A HREF="f_g.html#list_getMinutes">GetMinutes</A> 
+<LI> <A HREF="f_g.html#list_getMonth">GetMonth</A> 
+<LI> <A HREF="f_g.html#list_getSeconds">GetSeconds</A> 
+<LI> <A HREF="f_g.html#list_getTime">GetTime</A> 
+<LI> <A HREF="f_g.html#list_getTimezoneOffset">GetTimezoneOffset</A> 
+<LI> <A HREF="f_g.html#list_getYear">GetYear</A> 
+<LI> <A HREF="m_q.html#list_parse">parse</A> 
+<LI> <A HREF="s.html#list_setDate">SetDate</A> 
+<LI> <A HREF="s.html#list_setHours">SetHours</A> 
+<LI> <A HREF="s.html#list_setMinutes">SetMinutes</A> 
+<LI> <A HREF="s.html#list_setMonth">SetMonth</A> 
+<LI> <A HREF="s.html#list_setSeconds">SetSeconds</A> 
+<LI> <A HREF="s.html#list_setTime">SetTime</A> 
+<LI> <A HREF="s.html#list_setYear">SetYear</A> 
+<LI> <A HREF="t_z.html#list_toGMTString">ToGMTString</A> 
+<LI> <A HREF="t_z.html#list_toLocaleString">ToLocaleString</A> 
+<LI> <A HREF="t_z.html#list_UTC">UTC</A> </ul>
+<li type="circle"><H4> Обработчики Результата</H4> 
+<ul><LI> Отсутствуют. Встроенные объекты не имеют обработчиков событий. </ul>
+<H3> Примеры</H3> 
+<P>
+Следующий скрипт, пичатает текущее дату и время. 
+<table><tr><td bgcolor=aqua><XMP>
+<script language="JavaScript">
+<!-- hide
+
+now= new Date();
+
+document.write("Time: " + now.getHours() + ":" + now.getMinutes() + "<br>");
+document.write("Date: " + (now.getMonth() + 1) + "/" + now.getDate() + "/" + 
+                (1900 + now.getYear()));
+
+// -->
+</script>
+</XMP></table>
+<form>
+<input type="button" value="demo" onclick="ClockWin()">
+</form>
+Здесь мы пользуемся такими методами, как getHours(), чтобы вывести на экран время и дату, указанные в
+объекте Date с именем now. Можно видеть, что мы добавляем к записи года еще число 1900. Дело в том, что
+метод getYear() указывает количество лет, прошедших после 1900 года. А стало быть, если сейчас 1997 год, то
+будет выдано значение 97, а если 2010 год - то 110, а не 10! Если мы так и будем всякий раз добавлять 1900, то
+у нас не будет проблемы 2000 года. Помните также, что мы обязаны увеличивать на единицу значение,
+получаемое от метода getMonth(). <br>
+В данном скрипте не выполняется проверки на тот случай, если количество минут окажется меньше, чем 10.
+Это значит, что Вы можете получить запись времени примерно в следующем виде: 14:3, что на самом деле
+должно было бы означать 14:03. Решение этой проблемы мы рассмотрим в следующем примере.
+Рассмотрим теперь скрипт, создающий на экране изображение работающих часов:
+<table><tr><td bgcolor=aqua><xmp>
+<script Language="JavaScript">
+var timeStr, dateStr;
+function clock() {
+        now = new Date();
+
+        // время 
+        hours = now.getHours();
+        minutes = now.getMinutes();
+        seconds = now.getSeconds();
+        timeStr = "" + hours;
+        timeStr += ((minutes < 10) ? ":0" : ":") + minutes;
+        timeStr += ((seconds < 10) ? ":0" : ":") + seconds;
+        document.clock.time.value = timeStr;
+
+        // дата 
+        date= now.getDate();
+        month= now.getMonth()+1;
+        year= now.getYear();
+        dateStr= "" + month;
+        dateStr+= ((date<10) ? "/0" : "/") + date;
+        dateStr+= "/" + year;
+        document.clock.date.value = dateStr;
+
+        Timer = setTimeout("clock()",1000);
+}
+</script>
+</xmp></table>
+<form>
+<input type="button" value="See the example" onclick="ClockWin2()">
+</form>
+Здесь для ежесекундной коррекции времени и даты мы пользуемся методом setTimeout(). Фактически это сводится к кому, что мы каждую секунду создаем новый объект Date, занося туда текущее время. 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_defaultChecked">
+<H2>Свойство DefaultChecked</H2> 
+<P>
+Логическое значение(true или false), указывающее состояние флажка или переключателя по умолчанию. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>CheckboxName</I>.defaultChecked 
+2. <I>RadioName</I> <I>[index]</I> .defaultChecked </PRE> 
+<P>
+<I>CheckboxName</I> является либо значением атрибута NAME объекта переключателя либо элемента в массиве <I>elements</I>. <BR>
+<I>RadioName</I> - значение атрибута NAME объекта radio. <BR>
+<I>index</I> - целое число, представляющее переключатель в объекте radio. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="a_c.html#list_checkboxt">checkboxt</A>, <A HREF="r.html#list_radio">radio</A> 
+<H3> Описание</H3> 
+<P>
+Если переключатель выбраны по умолчанию, то значение свойства <b>defaultChecked</b> истинна; иначе ложно. Установка значения свойства <b>DefaultChecked</b> может перекрывать атрибут CHECKED тега, создавшего элемент формы.
+<P>
+Вы можете управлять свойством <b>defaultChecked</b> в любое время.
+<H3> Примеры</H3> 
+<P>
+Следующий пример вновь устанавливает массив переключателей, названных <I>musicType</I> в форме <I>musicForm</I>. 
+<table><tr><td bgcolor=aqua><PRE>  
+function radioResetter() {
+   var i=""
+   for (i in document.musicForm.musicType) {
+      if (document.musicForm.musicType[i].defaultChecked==true) {
+         document.musicForm.musicType[i].checked=true
+      }
+   }
+}
+</PRE></table>
+Следующий фрагмент программы возвращает группу переключателей к их исходному состоянию путем поиска и установки переключателя в положение по умолчанию:
+<table><tr><td bgcolor=aqua><PRE>  
+   for (var i in menuForm.choices) {
+      if (menuForm.choices[i].defaultChecked==true) {
+         menuForm.choices[i].defaultChecked=true
+      }
+   }</pre></table>
+<H3> Смотрите также</H3> 
+<LI>Свойство <A HREF="a_c.html#list_checked">checked</A>
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_defaultSelected">
+<H2>Свойство DefaultSelected</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_defaultSelected">Измененный в Навигаторе 3.0</A></FONT>  
+<P>
+Логическое значение, указывающее элемента формы select по умолчанию. 
+<H3> Синтаксис</H3> 
+<PRE>  selectName.options[index].defaultSelected </PRE> 
+<P>
+<I>SelectName</I> является либо значением атрибута NAME объекта select либо элемента в массиве <I>elements</I>. <BR>
+<I>index</I> - целое число, представляющее выбор в объекте select. 
+<H3> Свойства</H3> 
+<P>
+Массив <A HREF="s.html#list_selectob">select</A> 
+<H3> Описание</H3> 
+<P>
+Если выбор в объекте select отобран по умолчанию, то значение свойства <b>defaultSelected</b> истинна; иначе ложно. Программная установка значения свойства <b>DefaultSelected</b> перекрывает наличие наличие или отсутствие атрибута SELECTED тега &lt;OPTION>.  
+<P>
+Поведение аналогично свойству defaultChecked
+<H3> Примеры</H3> 
+<P>
+В следующем примере, функция <I>restoreDefault ()</I> возвращает объекту select <I>musicType</I>  его состояние. Цикл <i>for</i> использует массив выбора, чтобы вычислить каждый выбор в объекте select. Оператор <i>if</i> устанавливает свойство selected, если <b>defaultSelected</b> истинен. 
+<table><tr><td bgcolor=aqua><PRE>  
+function restoreDefault() {
+   for (var i = 0; i < document.musicForm.musicType.length; i++) {
+      if (document.musicForm.musicType.options[i].defaultSelected == true) {
+         document.musicForm.musicType.options[i].selected=true
+      }
+   }
+}
+</PRE></table>
+<H3> Смотрите также свойства</H3> 
+ <A HREF="h_l.html#list_index">index</A><br> <A HREF="s.html#list_selected">selected</A><br> <A HREF="s.html#list_selectedIndex">selectedIndex</A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_defaultStatus">
+<H2>Свойство defaultStatus</H2> 
+<P>
+ Выводимое сообщение показанное в строке состояния внизу окна браузера. 
+<H3> Синтаксис</H3> 
+<PRE> <I>WindowReference</I>.defaultStatus</PRE> 
+<P>
+<I>WindowReference</I> - путь обращенный к окна, как описано в объекте <A HREF="t_z.html#List_windowob">window</A>. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+<b>DefaultStatus</b> устанавливает сообщение, выводимое в строке состония, когда браузер не выдает своих сообщений.Это сообщение вытесняется более приоритетными или временными сообщениями, подобными сообщению, инициируемому обработчиком событий mouseOver.
+<P>
+Вы можете регулировать свойством <b>defaultStatus</b> в любое время. Вы должны возвращать истинну, если Вы хотите регулировать свойством <b>defaultStatus</b> в обработчике событий onMouseOver . 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, функция <I>statusSetter ()</I> устанавливает, как  состояние так и свойство <b>defaultStatus</b> в обработчике событий onMouseOver: 
+<table><tr><td bgcolor=aqua><xmp>  
+function statusSetter() {
+   window.defaultStatus = "Click the link for the Netscape home page"
+   window.status = "Netscape home page"
+}
+<A HREF="http://www.netscape.com"
+   onMouseOver = "statusSetter(); 
+   return true">Netscape
+</A>
+ </xmp></table> 
+<H3> Смотрите также свойства</H3> 
+<LI><A HREF="s.html#list_status">status</A> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_defaultValue">
+<H2>Свойство defaultValue</H2> 
+<P>
+ Первоначальное содержимое текстовых элементов формы.
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>PasswordName</I>.defaultValue 
+2. <I>TextName</I>.defaultValue 
+3. <I>TextareaName</I>.defaultValue
+ </PRE> 
+<P>
+<I>PasswordName</I> является либо значением атрибута NAME объекта password либо элемента в массиве <I>elements</I>. <BR>
+<I>TextName</I> является либо значением атрибута NAME текстового объекта либо элемента в массиве <I>elements</I>. <BR>
+<I>TextareaName</I> является либо значением атрибута NAME объекта textarea либо элемента в массиве <I>elements</I>. 
+<H3> Свойства</H3> 
+<P>
+<li><A HREF="m_q.html#list_password">password</A><br><li> <A HREF="t_z.html#list_textob">text</A><br> <li><A HREF="t_z.html#list_textarea">textarea</A> 
+<H3> Описание</H3> 
+<P>
+Начальное значение <b>defaultValue</b> отличается для каждого объекта: 
+<LI> Для объектов text, это первоначально отражает значение атрибута VALUE. 
+<LI> Для объектов textarea, это первоначально отражает значение, указанное между тегами &lt;TEXTAREA> и &lt;/TEXTAREA>. 
+<LI> Для объектов password, это первоначально пустое (из соображения безопасности), независимо от значения атрибута VALUE. 
+<P>
+Вы можете регулировать свойством <b>defaultValue</b> в любое время. Показ связанного объекта не модернизируется, когда вы регулируете свойством <b>defaultValue</b>, а модернизируется только тогда, когда вы регулируете свойством значения. 
+<H3> Примеры</H3> 
+<P>
+Следующая функция вычисляет свойство <b>defaultValue</b> объекта в форме <I>surfCity</I> и показывает значение в окне <I>msgWindow</I>: 
+<table><tr><td bgcolor=aqua><xmp>  
+function defaultGetter() {
+   msgWindow=window.open("")
+   msgWindow.document.write("hidden.defaultValue is " +
+      document.surfCity.hiddenObj.defaultValue + "<BR>")
+   msgWindow.document.write("password.defaultValue is " +
+      document.surfCity.passwordObj.defaultValue + "<BR>")
+   msgWindow.document.write("text.defaultValue is " +
+      document.surfCity.textObj.defaultValue + "<BR>")
+   msgWindow.document.write("textarea.defaultValue is " +
+      document.surfCity.textareaObj.defaultValue + "<BR>")
+   msgWindow.document.close()
+}
+ </xmp></table> 
+<H3> Смотрите также свойство</H3> 
+<LI><A HREF="t_z.html#list_value">value</A> 
+<!------------------------------------------------------------------------------------------------->
+ <HR align=center width=250>
+ <A NAME="list_document">
+<H2> Объект document</H2> 
+<FONT SIZE=-2><A HREF="introduction.html#1_document">Измененный в Навигаторе 3.0</A></FONT>  
+<P>
+Содержит информацию относительно текущего документа, и с помощью методов позволяет также выводит для пользователя на экран текст HTML. 
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определbть объект <b>document</b>, используйте стандарт HTML синтаксис: 
+<table><tr><td bgcolor=aqua><xmp>   
+<BODY
+   BACKGROUND="backgroundImage"
+   BGCOLOR="backgroundColor"
+   TEXT="foregroundColor"
+   LINK="unfollowedLinkColor"
+   ALINK="activatedLinkColor"
+   VLINK="followedLinkColor"
+   [onLoad="handlerText"]
+   [onUnload="handlerText"]>
+</BODY>
+</xmp> </table>
+<I>BACKGROUND</I> определяет фон документа. <BR>
+<I>BGCOLOR</I>, <I>TEXT</I>, <I>LINK</I>, <I>ALINK</I>, и <I>VLINK</I> - специфичиские цвета, выраженные как шестнадцатеричный триплет RGB  (в формате "rrggbb" или "#rrggbb") или так как это один из строковых литералов, внесенных в список <A HREF="colorV.html">Цвета в JavaScript</A>. 
+<P>
+Использование свойства объекта и методы <b>document</b>: 
+<PRE>  
+1. Document.<I>propertyName </I>
+2. Document.<I>methodName</I> <I>(параметры)</I> </PRE> 
+<I>PropertyName</I> - один из свойствы, описанных ниже. <BR>
+<I>MethodName</I> - один из методов, описанных ниже. 
+<H3> Свойство</H3> 
+<LI> <A HREF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+HTML документ состоит из тегов &LT;HEAD> И &LT;BODY>. &LT;HEAD>  включает информацию относительно заголовка документа. Тег &LT;BODY> содержит тело документа, который определен текущим URL. Все тело документа (все другие HTML элементы для документа) находятся внутри тега &LT;BODY>. 
+<P>
+Вы можете загрузить новый документ используя объект <A HREF="h_l.html#list_location">location</A>. 
+<P>
+Вы можете ссылаться на документа,  используя <I>anchors, forms</I> или массив <I>links</I>. Этот массив содержат все каждого anchor, form, или link в документе. 
+<h3>Связанные элементы</h3>
+<li type="circle"><H4> Свойства</H4> 
+<ul><LI> <A HREF="a.html#list_alinkColor_property">AlinkColor</A> отражает атрибут ALINK 
+<LI> <A HREF="a.html#list_anchorob">anchor</A> - массив, содержащий все якоря в документе 
+<LI> <A HREF="b.html#list_bgColor">BgColor</A> отражает атрибут BGCOLOR
+<LI> <A HREF="c.html#list_cookie">cookie</A> определяет cookie 
+<LI> <A HREF="f_g.html#list_fgColor">FgColor</A> отражает атрибут TEXT
+<LI> <A HREF="f_g.html#list_formob">form</A> - массив, содержащий все формы в документе 
+<LI> <A HREF="h_l.html#list_lastModified">LastModified</A> отражает дату, когда последний раз  документ был изменен 
+<LI> <A HREF="h_l.html#list_linkColor">LinkColor</A> отражает атрибут LINKS
+<LI> <A HREF="h_l.html#list_linkob">link</A> - массив, содержащий все links в документе 
+<LI> <A HREF="r.html#list_referrer">Referrer</A> отражает URL вызывающего документа 
+<LI> <A HREF="t_z.html#list_title">title</A> отражает содержание тега &LT;TITLE &GT; 
+<LI> <A HREF="t_z.html#list_URL">URL</A> отражает полный URL документа 
+<LI> <A HREF="t_z.html#list_vlinkColor">VlinkColor</A> отражает атрибут VLINK </ul>
+<P>
+Следующие объекты - то же свойства объекта <b>document</b>: 
+<ul><LI> <A HREF="a.html#list_anchorob">anchor</A> 
+<LI> <A HREF="f_g.html#list_formob">form</A> 
+<LI> <A HREF="h_l.html#list_history">history</A> 
+<LI> <A HREF="h_l.html#list_linkob">link</A> </ul>
+<li type="circle"><H4> Методы</H4> 
+<ul><LI> <A HREF="c.html#list_closedoc">close</A> 
+<LI> <A HREF="m_q.html#list_opendoc">open</A> 
+<LI> <A HREF="t_z.html#list_write">write</A> 
+<LI> <A HREF="t_z.html#list_writeln">writeln</A> </ul>
+<li type="circle"><H3> Обработчики событий</H3> 
+<ul><LI>Отсутствуют. Обработчики событий OnLoad и onUnload определены в теге &LT;BODY>, хотя фактически они для объекта window. </ul>
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает два фрейма, каждый содержит по одному документу. Документ в первой фрейме содержит ссылки к якорям в документе относительно второго фрейма.
+<P>
+DOC0. HTML, который определяет фреймы, содержат следующий код: 
+<table><tr><td bgcolor=aqua><XMP>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE> Пример объекта Документа</TITLE> 
+</HEAD> 
+<FRAMESET COLS="30%,70%">
+<FRAME SRC="doc1.html" NAME="frame1">
+<FRAME SRC="doc2.html" NAME="frame2">
+</FRAMESET>
+</XMP></table>
+<P>
+DOC1. HTML, который определяет,  содержание первого фрейма, содержит следующий код: 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+</SCRIPT>
+<BODY BGCOLOR="antiquewhite" TEXT="darkviolet" LINK="fuchsia" ALINK="forestgreen" VLINK="navy">
+<P>
+<B>Некоторые связи</B> 
+<LI> <A HREF="doc2.html#numbers" TARGET="frame2">Числа</A> 
+<LI> <A HREF="doc2.html#colors" TARGET="frame2">Цвета</A> 
+<LI> <A HREF="doc2.html#musicTypes" TARGET="frame2">Типы Музыки</A> 
+<LI> <A HREF="doc2.html#countries" TARGET="frame2">Страны</A> 
+</BODY>
+</XMP></table>
+<P>
+DOC2. HTML, который определяет,  содержание второго фрейма, содержит следующий код: 
+<table><tr><td bgcolor=aqua><XMP>
+<SCRIPT>
+</SCRIPT>
+<BODY BGCOLOR="oldlace" onLoad="alert('Hello, World.')" TEXT="navy">
+<P>
+<A NAME="numbers"><B>Некоторые числа</B></A> 
+ <LI> Один 
+ <LI> Два 
+ <LI> Три 
+ <LI> Четыре 
+ <LI> Пять 
+ <LI> Шесть 
+ <LI> Семь 
+ <LI> Восемь 
+ <LI> Девять 
+<P>
+<A NAME="colors"><B>Некоторые цвета</B></A> 
+ <LI> Красный 
+ <LI> Оранжевый 
+ <LI> Желтый 
+ <LI> Зеленый 
+ <LI> Синий 
+ <LI> Фиолетовый 
+ <LI> Коричневый 
+ <LI> Черный 
+<P>
+<A NAME="countries"><B>Некоторые страны</B></A> 
+ <LI> Афганистан 
+ <LI> Бразилия 
+ <LI> Канада 
+ <LI> Финляндия 
+ <LI> Индия 
+ <LI> Италия 
+ <LI> Япония 
+ <LI> Кения 
+ <LI> Мексика 
+ <LI> Нигерия 
+</BODY>
+</XMP></table>
+<H3> Смотрите также</H3> 
+<LI> Объекты <A HREF="f_g.html#list_frameob">frame</A> и <A HREF="t_z.html#list_windowob">window</A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+ <A NAME="list_E">
+<H2>Свойство E</H2> 
+<P>
+Основание натуральных логарифмов, значение приблизительно равно 2.718. Иногда ее еще называют Эйлеровой константой. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> Math. E</PRE> </table>
+<H3> Свойство</H3> 
+<P>
+<A HREF="m_q.html#list_Math">Math</A> 
+<H3> Описание</H3> 
+<P>
+Поскольку E постоянен, то это - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает Эйлерову постоянную: 
+<table><tr><td bgcolor=aqua><PRE>
+document.write("Euler's constant is " + Math.E)</PRE></table> 
+<H3> Смотрите также</H3> 
+<LI>Свойства <A HREF="h_l.html#list_LN2">LN2</A>, <A HREF="h_l.html#list_LN10">LN10</A>, <A HREF="h_l.html#list_LOG2E">LOG2E</A>, <A HREF="h_l.html#list_LOG10E">LOG10E</A>, <A HREF="m_q.html#list_PI">PI</A>, <A HREF="s.html#list_SQRT1_2">SQRT1_2</A>, <A HREF="s.html#list_SQRT2">SQRT2</A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+<A NAME="list_elementsob">
+<H2> Массив <I>elements</I></H2> 
+<P>
+Массив объектов, соответствующих элементам формы (типа объектов checkbox, radio, и text) в исходном порядке. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>FormName</I>.elements <I>[index] </I>
+2. <I>FormName</I>.elements.length </PRE> 
+<P>
+<I>FormName</I> является либо именем формы либо элемента в массиве <I>form</I>. <BR>
+<I>index</I> - целое число, представляющее объект в форме. 
+<H3> Свойство</H3> 
+<LI> <A HREF="f_g.html#list_formob">form</A> 
+<H3> Описание</H3> 
+<P>
+Вы можете ссылаться на элементы формы в вашем коде,  используя массив <b>elements</b>. Этот массив содержит все объекта (button, checkbox, hidden, password, radio, reset, select, submit, text, или textarea object). Например, если форма имеет text область и два checkbox, эти элементы отражены так <TT><I>formName</I>.elements [0]</TT>, <TT><I>formName</I>.elements [1]</TT>, и <TT><I>formName</I>.elements [2]</TT>. 
+<P>
+<table><tr><td bgcolor=aqua><PRE>  
+UserInfo.userName.value 
+userInfo.elements [0] .value </PRE> </table>
+<P>
+Чтобы получить число элементов в форме, используйте свойство length: <TT><I>formName</I>.elements.length</TT>. Каждая "радио" кнопка в объекте(цели) радио появляется как отдельный элемент в таблице <I>элементов</I>. 
+<P>
+Элементы в таблице <I>элементов</I> только для чтения. Например, утверждение(заявление) <TT><I>formName</I>.elements [0] = "музыка"</TT> не имеет никакого результата(воздействия). 
+<H3>Свойства</H3> 
+<LI> <A HREF="h_l.html#list_length">length</A> отражает число элементов в форме 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для свойства <A HREF="m_q.html#list_name">name</A>. 
+<H3> Смотрите также</H3> 
+<LI> Объект <A HREF="f_g.html#list_formob">form</A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+<A NAME="list_elementspr">
+<H2> Свойство elements</H2> 
+<P>
+Массив объектов, соответствующих элементов формы (типа объектов checkbox, radio, и text ) в исходном порядке. Смотрите массив <A HREF="d_e.html#list_elementsob"><I>elements</I></A>. 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+<A NAME="list_encoding">
+<H2>Свойство encoding</H2> 
+<P>
+Возвращает строку с типом кодирования MIME. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>FormName</I>.encoding</PRE> </table>
+<P>
+<I>FormName</I> является либо именем формы либо элемента в массиве <I>form</I>. 
+<H3> Свойство</H3> 
+<P>
+<A HREF="f_g.html#list_formob">form</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>encoding</b> первоначально отражает атрибут ENCTYPE тега &lt;FORM &gt;, однако, управляя <b>encoding</b> отменяет атрибут ENCTYPE. 
+<P>
+Вы можете управлять свойством <b>encoding</b> в любое время. 
+<P>
+Некоторые значения свойства <b>encoding</b> могут требовать определенных значений для других свойствы формы.
+<H3> Примеры</H3> 
+<P>
+Следующая функция возвращает значение <I>musicForm</I> свойству <b>encoding</b>: 
+<table><tr><td bgcolor=aqua><PRE>  
+function getEncoding() {  
+ return document.musicForm.encoding
+}
+ </PRE> </table>
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="a.html#list_action">action</A>, <A HREF="m_q.html#list_method">method</A>, <A HREF="t_z.html#list_target">target</A> 
+<!------------------------------------------------------------------------------------------------->
+<HR align=center width=250>
+<A NAME="list_escape">
+<H2> Функция escape</H2> 
+<P>
+ Возвращает ASCII-код своего аргумента в наборе символов ISO Latin-1. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> escape (<I>"string"</I>)</PRE> </table>
+<P>
+<I>string</I> - не-алфавитно-цифровой строка в наборе символов ISO Latin-1. 
+<H3> Описание</H3> 
+<P>
+Функция Escape - не метод, связанный с любым объектом(целью), но - часть языка непосредственно. 
+<P>
+Значение, возвращенная функцией Escape - строка вида "%xx", где <I>xx</I> - десятичное число, представляющее код ASCII.<br>
+<H3> Примеры</H3> 
+<P>
+Следующий пример возвращает "%26" 
+<table><tr><td bgcolor=aqua><PRE>escape("&")  </PRE> </table>
+Возвращает Hi%21
+<table><tr><td bgcolor=aqua><PRE>
+document.write(escape("Hi!"))
+</PRE> </table>
+<P>
+Следующий пример возвращается "%21%23" 
+<table><tr><td bgcolor=aqua><PRE> escape("!#")
+</PRE> </table>
+<H3> Смотрите также</H3> 
+<LI> Функцию <A HREF="t_z.html#list_unescape">unescape</A> 
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+<A NAME="list_eval"> 
+<H2>Функция eval</H2> 
+<P>
+Функция <b>eval</b> вычисляет строку как числовое выражение. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> eval <I>(string)</I></PRE> </table>
+<I>string</I> - любая строка, представляющая выражение <font color="red"><i>JavaScript</i></font>, утверждение, или последовательность утверждений. Выражение может включать переменные и свойства существующих объектов. 
+<H3> Описание</H3> 
+<P>
+Функция <b>eval</b> - встроенная <font color="red"><i>JavaScript</i></font> функция. Это - не метод, связанный с любым объектом, но - часть языка непосредственно. 
+<P>
+Аргумент функции <b>eval</b> - строка. Не вызовайте <b>eval</b>, чтобы вычислить арифметическое выражение. <font color="red"><i>JavaScript</i></font> вычисляет арифметические выражения автоматически. Если аргумент представляет выражение, eval вычисляет выражение.
+<P>В случае получения строки функция <b>eval</b> пытается преобразовать ее в числовое  выражение, затем вычисляет это выражение и возвращает получившийся результат.
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1.</B> Оба из ниже приведенных утверждений показывают 42. Первый вычисляет строку " x + y + 1 ", а второй вычисляет строку "42". 
+<table><tr><td bgcolor=aqua><PRE>  
+var x = 2
+var y = 39
+var z = "42"
+document.write(eval("x + y + 1"))
+document.write(eval(z))
+</PRE> </table>
+<P>
+<B>Пример 2.</B> В следующем примере, функция <I>getFieldName (n)</I> возвращает имя энного элемента формы как строку. Первое утверждение присваевает значение строке третьего элемента формы к переменной <I>field</I>. Второе утверждение использует eval, чтобы показать значение элемента формы. 
+<table><tr><td bgcolor=aqua><PRE>  
+var field = getFieldName(3)
+document.write("The field named ", field, " has value of ",
+   eval(field + ".value"))
+ </PRE> </table>
+<P>
+<B>Пример 3.</B> Следующий пример использует eval, чтобы вычислить строку <I>str</I>. Эта строка состоит из <font color="red"><i>JavaScript</i></font> утверждений, которые открывают диалоговое окно alert и присваивают z значение 42, если x - пять, и ноль иначе. Когда второе утверждение выполнено, то утверждения выполняються, и вычисляют набор утверждений и возвращают значение, которое присвоено z.
+<table><tr><td bgcolor=aqua><PRE>  
+var str = "if (x == 5) {alert('z is 42'); z = 42;} 
+           else z = 0; "
+document.write("<P>z is ", eval(str)) </PRE> </table>
+<P>
+<B>Пример 4.</B> В следующем примере, функция <I>setValue ()</I> использует eval, чтобы присвоить значение переменному <I>newValue</I> в текстовой области <I>textObject</I>. 
+<table><tr><td bgcolor=aqua><PRE>  
+function setValue (textObject, newValue) {
+  eval ("document.forms[0]." + textObject + ".value") = newValue
+}
+ </PRE> </table>
+<!------------------------------------------------------------------------------------------------>
+<HR align=center width=250>
+ <A NAME="list_exp">
+<H2Метод exp</H2> 
+<P>
+ Возвращает значение e
+<SUP>
+<I>number</I>
+</SUP>
+, где <I>number</I> - аргумент, и <I>e</I> - постоянная Эйлера, основание натуральных логарифмов. 
+<H3> Синтаксис</H3> 
+<PRE> Math.exp <I>(number)</I></PRE> 
+<I>number</I> - любое числовое выражение. 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_Math">Math</A> 
+<H3> Примеры</H3> 
+<PRE>  
+// Возвращает значение 2.718281828459045 
+document.write("The value of e<SUP>1</SUP> is " + Math.exp(1))
+</PRE> 
+<H3> Смотрите также</H3> 
+<LI> <A HREF="h_l.html#дшые_log">log</A>
+</body>
+</HTML>

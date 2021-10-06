@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Изображения и мультимедия в HTML документах</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<H2><A NAME="command">Изображения и мультимедия в HTML</A></H2>
+<ul>
+<li><a href="#img">Графика и картинки</a>
+<li><a href="#float">"Плавающие" картинки</a>
+<li><a href="#link-map">Гиперссылки и активные рисунки</a>
+<li><a href="#sound">Звуки</a>
+<li><a href="#clip">Видео клипы</a>
+<li><a href="#ani-text">Движущийся текст</a>
+</ul>
+<P>
+В документах HTML может использоваться изображения и графика, звук, а также
+мультипликации и видеоизображения.
+Для передачи изображений и звука используются команды:
+<A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113000a00" TARGET="contentFrame">BGSOUND</A>.
+<p>
+Простой движущийся текст можно задать, используя команду
+<A HREF="html-gloss.html#htmlref2_0001000113003000" TARGET="contentFrame">MARQUEE</A>
+(эта команда поддерживается пока только MS Internet Explorer).
+<br>
+<b>Например:</b>
+<MARQUEE BGCOLOR=aqua DIRECTION=LEFT BEHAVIOR=SCROLL SCROLLAMOUNT=10 SCROLLDELAY=200>Это движущийся текст для MS_IE.</MARQUEE>
+<p>
+<a name=img><h3>Графика и картинки</h3></a>
+<P>
+Графические файлы включаются в HTML документы с помощью команды
+<A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>.
+Допускается использование файлов в формате GIF или JPG/JPEG (для систем,
+работающих под MS Windows, допускаются файлы формата BMP).
+<p>
+Следующий пример демонстрирует, вставку в документ GIF файла:
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;IMG SRC="icons/earth.gif" WIDTH=46 HEIGHT=46 ALT="Земля"&gt;</PRE>
+</table>
+<P><IMG SRC="icons/internet.gif" WIDTH="46" HEIGHT="46" ALT="" >
+<P>
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_000100011300280a" TARGET="contentFrame">SRC=</A>
+определяет <a href="url.html#html">URL</a> адрес (имя) графического файла.
+В приведенном примере файл будет размещен в квадрате шириной 46 и высотой 46
+пикселей соответственно. Если размеры указанные <b>атрибутами</b>
+<A Href="html-gloss.html#htmlref2_0001000113002806">HEIGHT=</A> (высота) и
+<A NAME="html-gloss.html#htmlref2_000100011300280e">WIDTH=</B></A> (ширина),
+не совпадают с размерами графического файла, то последний масштабируется.
+Масштабирование может привести к резкому ухудшению качества графического
+файла, поэтому рекомендуется задавать размеры соответствующие размерам графического
+файла.
+<p>
+Рекомендуется для больших графических файлов (более 10 Kb) всегда задавать
+их размеры, для убыстрения работы просмотрщика. Если размеры не заданы, то
+встретив графический файл просмотрщик прекращает вывод текста и ждет пока
+перекачается вся картинка, чтоб определить ее размеры.
+<P>
+<a href="#command"><img src="icons/up.gif" border=0></a>
+<P>
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002802" TARGET="contentFrame">ALT=</A>
+указывает, что ставить на место рисунка, если ваш просмотрщик не умеет
+показывать графические файлы или вследствие медленной скорости перекачки вы
+не получили файл по сети.
+<P>
+Если вы вставляете команду
+<A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>
+в документ, то просмотрщик размещает следующий за ней текст внизу от картинки.
+Используя <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002801" TARGET="contentFrame">ALIGN=</A>
+можно переместить, следующий перед и за картинкой текст.
+<p>
+Допустимые значения <b>атрибута</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002801" TARGET="contentFrame">ALIGN=</A>
+<ul>
+<li>TOP
+<LI>BOTTOM
+<LI>MIDDLE
+</ul>
+<b>Примеры:</b>
+<dir>
+<li><IMG SRC="icons/internet.gif" WIDTH="46" HEIGHT="46" ALT="" ALIGN=TOP>
+&nbsp;&nbsp; Текст вверху.
+<li>Немного отступили вправо
+<IMG SRC="icons/internet.gif" WIDTH="46" HEIGHT="46" ALT="" ALIGN=MIDDLE>
+&nbsp;&nbsp; Текст по центру.
+<li>Еще раз немного немного отступили вправо
+<IMG SRC="icons/internet.gif" WIDTH="46" HEIGHT="46" ALT="" ALIGN=BOTTOM>
+&nbsp;&nbsp; Текст внизу.
+</dir>
+Каждый "уважающий" себя WEB сервер (программы, поддерживающя протокол передачи
+гипертекста) имеет свой базовый набор картинок (иконок - icons) для встаки
+в документы, генерируемые по умолчанию (например, листинг директории), см.
+<a href="http://www-sbras.nsc.ru/icons/icon.sheet.gif" 
+target=new>список картинок WEB сервера Apache</a>, на
+котором размещен данный курс (стадарно эти картинки расположениы в виртуальной
+директории сервера <font size=+1><tt>icons</tt></font>).
+<P>
+<a href="#command"><img src="icons/up.gif" border=0></a>
+
+<P>
+<a name="float"><u><b>"Плавающие" картинки</b></u></a>
+<P>
+Используя <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002801" TARGET="contentFrame">ALIGN=</A>
+со значениями LEFT или  RIGHT можно создать "плавающую" картинку, которую
+будет обтекать текст.
+В конце плавающего объекта обязательно должна присутствовать команда
+<A HREF="html-gloss.html#htmlref2_0001000113000e00" TARGET="contentFrame">BR</A>
+с <b>атрибутом</b>
+<A HREF="html-gloss.html#htmlref2_0001000113000e01" TARGET="contentFrame">CLEAR=</A>,
+который прекращает обтекание картинки. После этой команды текст выводится
+ниже графического файла.
+<p>
+Рассмотрим следующий <b>пример</b>:
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;IMG SRC="picture.gif" ALIGN=LEFT HSPACE=4&gt;
+Здесь располагается текст, который следует поместить справа
+рядом с картинкой. Текст должен обтекать картинку
+&lt;BR CLEAR=LEFT&gt;Здесь располагается текст, который следует
+поместить ниже картинки.
+</PRE></table>
+<b>Что даст:</b>
+<p>
+<IMG SRC="icons/88x31.gif" ALIGN=LEFT HSPACE=4 VSPACE=4>
+Здесь располагается текст, который следует поместить справа рядом с картинкой.
+Текст должен обтекать картинку
+<BR CLEAR=LEFT><p>Здесь располагается текст, который следует поместить ниже
+картинки.
+<P>
+<b>Атрибут</b>
+<A href="html-gloss.html#htmlref2_0001000113002807">HSPACE=</A> задает
+горизонтальный отступ между текстом и картинкой. Если данный <b>атрибут</b>
+не задан, то текст будет располагаться вплотную к картинке. (См. также
+<b>атрибут</b> <A href="html-gloss.html#htmlref2_000100011300280d">VSPACE=</A>).
+<P>
+<a href="#command"><img src="icons/up.gif" border=0></a>
+
+<p>
+<b>Несколько советов:</b>
+<p>
+<blockquote>
+Всегда использовать атрибуты задания размера картинки.
+В этом случае просмотрщик, не дожидаясь пока перекачается вся картинка,
+будет подолжать паказывать документ дальше.
+<P>
+Использовать картинки в формате JPEG/JPG для фотографий;  
+в формате GIF - для таблиц или графиков.
+<p>
+Если хототе чтобы пользователь с интересом читал ваши страницы, то
+не вставляйте в документ картинки более 40 Kb. Для картинок большего
+размера использовать гиперссылку с обязательными указанием ее объема
+(наши каналы пока еще недостаточно быстры, чтоб перекачивать большой объем
+данных).
+<P>
+Картинки высокой цветовой разрешимости желательно использовать 
+<a href="http://www.artlebedev.ru/free/colors/" 
+target=new>универсальную палитру цветов</a>, «безопасных» при использовании в интернете.
+<P>
+Не злоупотребляте анимационными GIF'ам (такими как на этой странице),
+это сильно затрудняет управление на слабой машине, особено для Netscape.
+</blockquote>
+
+<P>
+<a href="#command"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="link-map"><h3>Гиперссылки и активные рисунки</h3></a>
+<P>
+Картинка может быть средством задания и управления выбором гиперссылок
+в HTML документе.
+В этом случае на команду
+<A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>
+должна указывать гиперссылка, определяемая командой
+<A HREF="html-gloss.html#htmlref2_0001000113000300" TARGET="contentFrame">A</A>.
+<p>
+По умолчанию просмотрщик рисует рамку вокруг картинки, которая отмечена как
+гиперссылка. Вы можете убрать отрисовку рамки, использовав <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002803" TARGET="contentFrame">BORDER=</A>
+в команде <A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>
+с значением ноль.
+<p>
+Кроме этого вы имеете возможность создать "активную" (с гиперссылками) картинку,
+в которой разные части картинки имеют разные ссылки, что является достаточно
+мощным аппаратом навигации в WWW. 
+<P>
+Для задания информации о гиперссылках в рисунке, которая включается в HTML документ,
+используется <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_000100011300280c" TARGET="text">USEMAP=</A>
+в команде
+<A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="text">IMG</A>.
+Сама информация о гиперссылках определяется командами
+<A HREF="html-gloss.html#htmlref2_0001000113002f00" TARGET="text">MAP</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113000600" TARGET="text">AREA</A>,
+как это показано ниже:
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;MAP NAME="map1"&gt;
+&lt;AREA SHAPE="RECT" COORDS="0, 0, 16, 16" HREF="S1.html"&gt;
+&lt;AREA SHAPE="RECT" COORDS="16, 0, 16, 16" NOHREF&gt;
+&lt;AREA SHAPE="RECT" COORDS="0, 16, 16, 16" HREF="S2.html"&gt;
+&lt;AREA SHAPE="RECT" COORDS="16, 16, 16, 16" HREF="S3.html"&gt;
+&lt;AREA SHAPE=default HREF="other.html"&gt;
+&lt;/MAP&gt;
+&lt;IMG BORDER=0 SRC="map1.gif" USEMAP="#map1"&gt;</PRE>
+</table>
+<p>
+Чтобы увидеть <b>пример</b> работы активной картинки
+<a href="Example/activ-img-map.html" target="new">нажми здесь.</a>
+<P>
+В этом примере картика была размечена равными прямоугольниками (rectangular areas).
+Одна область является непомеченной, остальные три помечены документами &nbsp;
+<TT>S1.html, S2.html, S3.html</TT> &nbsp; соответсвенно.
+<P>
+Команда
+<A HREF="html-gloss.html#htmlref2_0001000113000600" TARGET="text">AREA</A>
+позволяет также помечать области кругами (CIRCLES) и ломаными (POLYGONS).
+<P>
+Если две или боле областей пересекаются, то просмотрщик выбирает первую из
+тех, что описаны в команде
+<A HREF="html-gloss.html#htmlref2_0001000113002f00" TARGET="text">MAP</A>,
+непомеченные области никак не отвечают на вызов.
+<p>
+<b>Замечание</b><br>
+MS Internet Exporer не обрабатывет команду "ответ по умолчанию"
+несмотря на команду
+<pre>&lt;AREA SHAPE=default HREF="other.html"&gt;</pre>
+
+
+<P>
+<a href="#command"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="sound"><h3>Звуки</h3></a>
+<P>
+<b>Команда</b>
+<A HREF="html-gloss.html#htmlref2_0001000113000a00" TARGET="contentFrame">BGSOUND</A>
+задает фоновые звуки или музыку при просмотре документа.
+<b>Атрибут</b>  SRC= должен указывать на URL соответствующего звукового файла
+(<tt>.WAV, .AU, MIDI</tt>).
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113000a02" TARGET="contentFrame">LOOP=</A>
+указывает на частоту проигрывания звукового файла.
+<p>
+<b>Пример:</B>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;BGSOUND SRC="boing.wav" LOOP=5&gt;
+Вы будете слышать звук 5 раз.
+</PRE></table>
+<p>
+Если LOOP=INFINITE (или LOOP=-1) то звук играется непрерывно.
+<P>
+Для проигрывания звуковых файлов компьютер пользователя должен быть оборудован
+звуковой картой.
+
+<P>
+<a href="#command"><img src="icons/up.gif" border=0></a>
+<p>
+<a name="clip"><h3>Видео клипы</h3></a>
+<P>
+Используя команду
+<A HREF="html-gloss.html#htmlref2_0001000113002800" TARGET="contentFrame">IMG</A>
+можно вставить в документ видео-клип (видео файл типа &nbsp; <tt>.avi</tt>
+&nbsp; - Audio Video Interleave).
+Для задание видео фрагмента используется <b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002805" TARGET="contentFrame">DYNSRC=</A>.
+<P>
+<b>Пример:</b>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;IMG DYNSRC="TheEarth.avi" SRC="TheEarth.gif"
+WIDTH=46 HEIGHT=46 LOOP=INFINITE ALIGN=RIGHT&gt;</PRE>
+</table>
+<P>
+В этом примере видео-клип будет демонстрироваться непрерывно:
+<b>атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002809" TARGET="contentFrame">LOOP=</A>
+имеет значение LOOP=INFINITE.
+<b>Атрибуты</b>
+<A HREF="html-gloss.html#htmlref2_0001000113002804" TARGET="contentFrame">CONTROLS</A> и
+<A HREF="html-gloss.html#htmlref2_000100011300280b" TARGET="contentFrame">START=</A>
+управляют способом проигрывания клипа (клип может стартовать сразу после
+загрузки документа или после того как пользователь нажмет на изображение
+заданное <b>атрибутом</b>
+<A HREF="html-gloss.html#htmlref2_000100011300280a" TARGET="contentFrame">SRC=</A>.
+<p>
+Использование видео-клипов в документах пока существенно сдерживается
+скоростью передачи данных по сети (размер файла с клипом как правило
+больше мегабайта) и тем, что далеко не все средства просмотра имеет
+возможность показывать видео-фрагменты или требуют загрузки
+специальных пакетов для поддержки видео.
+
+<P>
+<a name="ani-text"><h3>Движущийся текст</h3></a>
+Команда <A HREF="html-gloss.html#htmlref2_0001000113003000" TARGET="contentFrame">MARQUEE</A>
+позволяет задать движущийся текст (эта команда поддерживается пока только MS Internet
+Explorer).
+<p><b>Пример:</b>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;B&gt;&lt;FONT COLOR=GREEN&gt;
+&lt;MARQUEE DIRECTION=RIGHT BEHAVIOR=SCROLL SCROLLAMOUNT=10
+SCROLLDELAY=200&gt;Движущийся текст.&lt;/MARQUEE&gt;
+&lt;/FONT&gt;&lt;/B&gt;</PRE></table>
+<P>
+<b>Что даст:</b>
+<P>
+<B><FONT COLOR=GREEN>
+<MARQUEE DIRECTION=RIGHT BEHAVIOR=SCROLL SCROLLAMOUNT=10
+SCROLLDELAY=200>Движущийся текст.</MARQUEE></FONT></B>
+<BR CLEAR=ALL>
+<P>
+В этом примере текст <B><FONT COLOR=GREEN>Движущийся текст.</FONT></B>
+двигается слева направо со скоростью 10 пикселов с задержкой 200
+миллисекунд.
+<P>
+Для команды <b>MARQUEES</b> применяются <b>атрибуты</b>
+ALIGN (LEFT или RIGHT), подобно картинкам (IMG), установка BACKGROUND COLOR,
+HEIGHT, WIDTH, и горизонтальные и вертикальные отступы.
+<P>
+<a href="#command"><img src="icons/up.gif" border=0></a>
+

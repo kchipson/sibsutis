@@ -1,0 +1,43 @@
+body {
+    background: #151519;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-family: 'Arial'
+}
+
+img {
+    width: 31px;
+    height: 42px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+button {
+    background: none;
+    color: #ccc;
+    width: 97px;
+    height: 30px;
+    border: 1px solid #338033;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    color: black;
+}
+
+button:hover {
+    background: #338033;
+    cursor: pointer;
+}

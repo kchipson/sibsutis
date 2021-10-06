@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Admin Form Builder - providers panel (Providers)
+   ========================================================================== */
+
+#wpforms-panel-providers {
+
+}
+
+#wpforms-panel-providers .wpforms-provider-connections-wrap {
+}
+
+#wpforms-panel-providers .wpforms-provider-connections-header {
+	background-color: #ddd;
+	padding: 10px 20px;
+}
+
+#wpforms-panel-providers .wpforms-provider-connections-add {
+	background-color: #0e6cad;
+	color: #fff;
+	border: none;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	font-size: 14px;
+	font-weight: 500;
+	float: right;
+	padding: 10px;
+	margin-top: -10px;
+	cursor: pointer;
+}
+
+#wpforms-panel-providers .wpforms-provider-connection-delete {
+	background-color: transparent;
+	cursor: pointer;
+	-webkit-appearance: none;
+	border: none;
+	font-size: 16px;
+	color: #d22222;
+	line-height: 1;
+	margin-top: -2px;
+	float: right;
+}
+
+#wpforms-panel-providers .wpforms-provider-connections-header h5 {
+	float: left;
+	margin: 0;
+	font-size: 18px;
+	padding: 5px 0 0;
+}
+
+#wpforms-panel-providers .wpforms-provider-connection {
+	border: 1px solid #d3d3d3;
+	margin: 0 0 20px 0;
+}
+
+#wpforms-panel-providers .wpforms-provider-connection-header {
+	background-color: #f1f1f1;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+#wpforms-panel-providers .wpforms-connection-block {
+	padding: 10px 20px;
+}
+
+#wpforms-panel-providers .wpforms-connection-block h4 {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+#wpforms-panel-providers .wpforms-provider-account-add input[type=text] {
+	display: block;
+	max-width: 350px;
+	width: 99%;
+	border: 1px solid #d6d6d6;
+	padding: 6px 8px;
+	line-height: 18px;
+	box-shadow: none;
+	margin: 0 0 5px 0;
+}
+
+#wpforms-panel-providers .wpforms-provider-account-add button {
+	display: block;
+	width: 100%;
+	max-width: 350px;
+	background-color: #0e6cad;
+	color: #fff;
+	font-size: 13px;
+	border: none;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+
+#wpforms-panel-providers .wpforms-provider-groups-list p {
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#wpforms-panel-providers .wpforms-provider-groups-list span {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 4px;
+}
+
+#wpforms-panel-providers .wpforms-provider-groups-list input {
+	margin-right: 8px
+}
+
+#wpforms-panel-providers .wpforms-provider-fields table {
+	width: 100%;
+	border:1px solid #eee;
+}
+
+#wpforms-panel-providers .wpforms-provider-fields .required {
+	color: red;
+	font-weight: 700;
+}
+
+#wpforms-panel-providers .wpforms-provider-fields table select {
+	width: 100%;
+}
+
+#wpforms-panel-providers .wpforms-provider-fields table thead {
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#wpforms-panel-providers .wpforms-provider-fields table tbody td {
+	border-top: 1px solid #eee;
+	padding: 5px 10px;
+}
+
+#wpforms-panel-providers .wpforms-conditional-block {
+	padding: 10px 20px;
+}
+
+#wpforms-panel-providers .wpforms-conditional-block.wpforms-conditional-block {
+	margin: 0;
+}
+
+#wpforms-panel-providers .wpforms-conditional-block .value input:disabled,
+#wpforms-panel-providers .wpforms-conditional-block .value select:disabled {
+	background-color: #f1f1f1;
+	cursor:not-allowed
+}
+
+#wpforms-panel-providers .wpforms-provider-options label.block {
+	display: block;
+	margin: 0 0 5px 0;
+}
+
+#wpforms-panel-providers .wpforms-provider-options input[type=text] {
+	display: block;
+	width: 100%;
+	padding: 6px 8px;
+	box-shadow: none;
+}

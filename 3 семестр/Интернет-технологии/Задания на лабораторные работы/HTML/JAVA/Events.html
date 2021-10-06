@@ -1,0 +1,158 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>События</TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+<a href="javabook.html"><img src="icons/home.gif" border=0 alt="Домой" width=64 height=64></a>
+<P>Название обработчика соотвествующего события получается из названия события + приставки "on"
+<H2><A NAME="start">События</A></H2>
+<UL>
+    <LI><A href="#blur">Blur</A>
+    <LI><A href="#change">Change</A>
+    <LI><A href="#click">Click</A>
+    <LI><A href="#dblclick">DblClick</A>
+    <LI><A href="#focus">Focus</A>
+    <LI><A href="#keypress">KeyPress</A>
+    <LI><A href="#load">Load</A>
+    <LI><A href="#mousemove">MouseMove</A>
+    <LI><A href="#mouseout">MouseOut</A>
+    <LI><A href="#mouseover">MouseOver</A>
+    <LI><A href="#resize">Resize</A>
+    <LI><A href="#select">Select</A>
+</UL>
+<H3><A NAME="blur">Blur</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает при потери фокуса данным объектом.
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="change">Change</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает при изменении значения данного объекта
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="click">Click</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает после щелчка мышью на данном объекте
+<P>Пример работы с данным событием
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;form name="myForm"&gt;
+         &lt;input type="button" name="myButton"&gt;
+      &lt;/form&gt;
+      <Font color="green">&lt;script language="JavaScript&gt;
+         document.myForm.myButton.onclick= message;
+         function message() {
+            alert('Кнопка myButton была нажата');
+         }
+      &lt;/script&gt;</Font>
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="dblclick">DblClick</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает после двойного щелчка мышью на данном объекте
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="focus">Focus</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает при приобретении фокуса данным объектом
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="keypress">KeyPress</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает при нажатии клавиши
+<P>Пример работы с данным событием
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   <font color="green">&lt;script language="JavaScript"&gt;
+      window.captureEvents(Event.KEYPRESS);
+      window.onkeypress = pressed;
+      function pressed(e) {
+          alert("Клавиша нажата! ASCII-код: " + e.which);
+      }
+   &lt;/script&gt;</Font>
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="load">Load</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает при загрузки окна
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="mousemove">MouseMove</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает при движении указателя мыши
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="mouseout">MouseOut</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает, если указатель мыши уходит с объекта
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="mouseover">MouseOver</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает, если указатель мыши переходит на объект
+<P>Пример работы с данным событием:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;HTML&gt;
+   &lt;BODY&gt;
+      &lt;a href="dontclck.htm" onMouseOver="window.status='Don\'t click me!'; return true;"&gt;link&lt;/a&gt;
+   &lt;/BODY&gt;
+&lt;/HTML&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Заметьте, что в onMouseOver мы возвращаем результат true. На самом деле это означает, что браузер не должен вслед за этим выполнять свой собственный код обработки события MouseOver. Как правило, в строке состояния браузер показывает URL соответствующей ссылки. Если же мы не возвратим значение true, то сразу же после того, как наш код был выполнен, браузер перепишет строку состояния на свой лад - то есть наш текст будет тут же затерт и читатель не сможет его увидеть.
+<P>В общем случае, мы всегда можем отменить дальнейшую обработку события браузером, возвращая true в своей собственной процедуре обработки события.
+<P>В этом скрипте Вы можете видеть еще одну вещь - в некоторых случаях Вам понадобится печатать символы кавычек.
+Чтобы разрешить эту проблему, Вам достаточно лишь поставить обратный слэш \ перед символом кавычки - это означает,
+что данный символ предназначен именно для печати. (То же самое Вы можете делать и с двойными кавычками - ").
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="resize">Resize</A></H3>
+<BLOCKQUOTE>
+<P>Данное событие возникает при изменении размера окна.
+<P>Пример работы с этим событием:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;head&gt;
+   <Font color="green">&lt;script language="JavaScript"&gt;
+      window.onresize= message;
+      function message() {
+         alert("Размер окна изменен!");
+      }
+   &lt;/script&gt;</Font>
+   &lt;/head&gt;
+   &lt;body&gt;
+      Пожалуйста, измените размер этого окна.
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>В строке <B>window.onresize= message;</B> мы задаем процедуру обработки такого события. Точнее, функция message() будет вызываться всякий раз, как только пользователь изменит размер окна.
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+
+<H3><A NAME="select">Select</A></H3>
+<BLOCKQUOTE>
+<P>Событие возникает, когда мы выделяем объект
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+</BODY>
+</HTML>

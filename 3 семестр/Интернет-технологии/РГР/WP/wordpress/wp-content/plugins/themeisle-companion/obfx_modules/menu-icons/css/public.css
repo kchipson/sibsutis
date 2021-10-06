@@ -1,0 +1,13 @@
+.obfx-menu-icon.fa,
+.obfx-menu-icon.dashicons,
+.obfx-menu-icon {
+    margin-top: -3px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+#nv-primary-navigation .obfx-menu-icon.dashicons,
+#nv-primary-navigation .obfx-menu-icon.dashicons::before {
+    display: inline-flex;
+    align-self: center;
+}

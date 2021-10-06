@@ -1,0 +1,52 @@
+.ui-buttonset{
+    text-align: center;
+}
+.ui-buttonset label {
+    display: inline-block;
+    padding: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    width: 33.3%;
+    height: auto;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.ui-buttonset label img{
+    max-width: 100%;
+}
+
+.ui-buttonset img { border: 1px solid #e7e8eb; }
+.ui-buttonset .ui-state-active img {
+    border-color: #00b6ff;
+    -webkit-box-shadow: 0 0 1px #3ec8ff;
+    box-shadow: 0 0 5px #3EC8FE;
+}
+
+.ui-buttonset span.ui-button-text{
+    padding: 0;
+}
+.ui-buttonset label.ui-button{
+    margin-right: 0;
+}
+.reset-data-wrapper{
+  padding: 0 2px 0;
+}
+
+.reset-data {
+    transition: .3s ease-out;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.reset-data .dashicons:before {
+    font-size: 14px;
+}
+
+.reset-data:after {
+    content: "Reset to default value";
+    font-size: 12px;
+}

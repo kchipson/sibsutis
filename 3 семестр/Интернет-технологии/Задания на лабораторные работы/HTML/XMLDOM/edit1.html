@@ -1,0 +1,41 @@
+<body>
+<h3>Пример</h3>
+<hr color=black>
+<p> 
+  Ниже приведен xml-документ,  
+  из которого требуется извлечь Овощи (vegetables). 
+</p>
+<p><table> <tr> <td bgcolor="aqua">
+  <pre>
+&lt;note&gt; 	
+
+	&lt;fruits&gt;
+		&lt;product&gt; Виноград &lt;/product&gt;
+		&lt;product&gt; Лимоны &lt;/product&gt;
+		&lt;product&gt; Мандарины &lt;/product&gt;
+	&lt;/fruits&gt;
+<font color="#CC0000" face="Arial" size="3">
+	&lt;vegetables&gt;</font>
+		&lt;drink&gt; Сок &lt;/drink&gt;
+		&lt;drink&gt; Лимонад &lt;/drink&gt;
+		&lt;product&gt; Капуста &lt;/product&gt;
+		&lt;product&gt; Морковь &lt;/product&gt;
+		&lt;product&gt; Баклажаны &lt;/product&gt;<font color="#CC0000" face="Arial" size="3">
+	&lt;/vegetables&gt;</font>
+
+&lt;/note&gt; 
+</pre>
+ </td> </tr></table></p>
+ 
+ <h4> Вариант обращения к узлам через childNodes и nextSibling</h4>
+ <p>Для получение всех дочерних узлов любого узла можно воспользоваться свойством объекта Node - childNodes,
+который возвратит нам список всех дочерних узлов (NodeList). Например чтобы извлечь все дочерние узлы 
+корневого элемента можно воспользоваться командой x=xmldoc.documentElement.childNodes.И затем обращаться
+к дочерним узлам, как x.item(i), где i-номер дочернего узла.  
+
+ </p>
+ <p> <a href="samples1.html"target="_blank"> Работа кода по извлечению узла <product> </a></p>
+ <p> <a href="sampleskod1.html"target="_blank"> Код</a></p>
+
+</body>
+</html>

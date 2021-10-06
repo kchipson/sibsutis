@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Команды HTML - TAG's</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H2><A NAME="start">Структура команд языка HTML</A></H2>
+<UL>
+<li><a href="#command">Команды</a>
+<li><a href="#atribut">Атрибуты</a>
+</UL>
+<H3><A NAME="command">Команды</A></H3>
+<P>
+Команды или тэги (TAG) языка HTML как правило имеют следующую структуру:
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;COMMAND&gt;   - начало команды
+                    поле действия команды
+&lt;/COMMAND&gt;  - конец команды
+</PRE></table>
+<P>
+Хотя существует некоторое количество команд состоящих только из
+<b>tag</b> <i>начало команды</i>. В этих командах
+<b>tag</b> <i>конец команды</i> игнорируется просмотрщиком.
+Стандарт языка HTML требует обязательного присутствия <b>tag</b> <i>конец команды</i>.
+<b>Замечание:</b> Язык HTML не чувствителен к регистру. Команды языка
+могут набираться как прописными так и строчными буквами, т.е.
+команда &nbsp; <tt>&lt;title&gt;</tt> &nbsp; эквивалентна команде &nbsp;
+<tt>&lt;TITLE&gt;</tt> &nbsp; или &nbsp; <tt>&lt;TiTlE&gt;.</tt>
+<p>
+Не все команды (<b>tag</b>) поддерживаются всеми World Wide Web просмоторщиками.
+Если просмоторщик не поддерживает команду, он ее просто игнорирует.
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="atribut"><h3>Атрибуты</h3>
+Команды могут иметь параметры, которые называются <b>атрибутами</b>.
+Атрибуты модифицируют исполнение команды или переопределяют ее стиль.
+<p>
+Атрибуты ставятся сразу после команды и имеют следующий формат:
+<table><tr><td bgcolor=aqua><PRE>АТРИБУТ="значение атрибута"
+</PRE></table>
+Если <i>значение атрибута</i> состоит из одного слова, то ставить кавычки
+не обязательно, но не рекомендуется. Если же <i>значение атрибута</i>
+содержит пробелы или небуквенные символы, то кавычки обязательны.
+<p>
+В качестве примера, использования <b>атрибутов</b> рассмотрим
+команду
+<A HREF="html-gloss.html#htmlref2_0001000113000d00" TARGET="contentFrame">BODY</A>,
+определяющую содержательную часть документа.
+<P><a name="structure">
+<b>Структура HTML документа</b> имеет следующий вид:</a>
+<table><tr><td bgcolor=aqua>
+<PRE>&lt;HTML&gt;          - начало документа (обязательная команда в HTML 3.0)
+   &lt;HEAD&gt;       - заголовок документа (может отсутствовать)
+
+   &lt;/HEAD&gt;      - конец заголовка документа
+
+   &lt;BODY&gt;
+                      - тело документа
+   &lt;/BODY&gt;
+&lt;/HTML&gt;  - конец документа
+</PRE></TABLE>
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="body"><b>Команда
+<A HREF="html-gloss.html#htmlref2_0001000113000d00" TARGET="contentFrame">BODY</A></b>
+определяет начало и конец тела документа. При помощи <b>атрибутов</b>
+эта команда позволяет определить:
+<ul>
+<LI>Цвет (BGCOLOR) или рисунок (BACKGROUND) фона.
+<LI>Цвет (TEXT) текста.
+<LI>Верхний (TOPMARGIN) и левый (LEFTMARGIN) отступ (поддерживается только
+MS Internet Explorer).
+<li>Цвет, которым обозначаются непросмотренные (LINK),
+просмотренные (VLINK) и активные (ALINK) гиперсвязи в документе.
+</ul>
+Пример использования атрибутов
+<table><tr><td bgcolor=aqua>
+<pre>&lt;BODY BACKGROUND="bgpicture.gif" BGPROPERTIES=FIXED BGCOLOR=#FFFFFF
+                               TEXT=#000000 LINK=#ff6600 VLINK=#330099&gt;
+</pre></table>
+
+Атрибуты для команды <font color="red">BODY</font> могут принимать
+следующие значения:
+<PRE>
+BACKGROUND=<a href="url.html#url">url</a>    - адрес или путь к файлу
+BGCOLOR=<a href="color.html#color">color</a>     - имя или номер цвета
+BGPROPERTIES=FIXED
+LINK=color        - имя или номер цвета
+VLINK=color       - имя или номер цвета
+TEXT=color        - имя или номер цвета
+TOPMARGIN=n       - значение отступа в пикселях или в процентах
+LEFTMARGIN=n      - значение отступа в пикселях или в процентах
+</PRE>
+<P>
+<a href="#start"><img src="icons/up.gif" border=0></a>
+
+</BODY></HTML>
+

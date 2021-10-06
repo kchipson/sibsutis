@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+        <title>Лабораторная работа 2.3</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <script>
+            function sq(elem) {
+                var side = elem.value;
+                var sqrt = side * side;
+                document.getElementById("square").value = sqrt;
+            }
+        </script>
+        <h1>Вычисление площади</h1>
+        <p>Автоматически</p>
+        <form>
+            <p>
+                Сторона:
+                <input id="side" type="text" oninput="sq(this);" autocomplete="off" />
+                <br />
+            </p>
+
+            <p>
+                Площадь:
+                <input id="square" type="text" readonly />
+            </p>
+        </form>
+    </body>
+</html>

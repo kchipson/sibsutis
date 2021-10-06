@@ -1,0 +1,983 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+<script>
+</script>
+</HEAD>
+<BODY text="Black" link=" #336699" vlink="#6699cc" alink="#ff6600">
+ <A NAME="list_hash">
+<H2> Свойство hash</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html# 1_hash">Измененный в Navigator 3.0</A></FONT>  
+<P>
+ Возвращает часть URL, начинающуюся с символа (#). 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. link <I>[index]</I> .hash 
+2. location.hash </PRE> 
+<P>
+<I> index </I> - целое число, представляющее объект связи. 
+<H3>Свойство</H3> 
+<P>
+<A HREF="h_l.html#list_linkob">link</A>, <A HREF="h_l.html#list_location"> location </A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>hash</b> определяет часть URL. 
+<P>
+Свойство <b>hash</b> ссылается на имя, созданное в теге &lt;A NAME...>. Вы можете управлять свойства <b>hash</b> в любое время. Изменяя это свойство, можно изменять часть URL, начинающуюся с символа #, хотя безопаснее менять весь URL, с помощью свойства href. Если имя, указанное в свойстве <b>hash</b> данного URL, не удается найти, возвращается ошибка.
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для объекта <A HREF="a.html#list_anchorob">anchor</A> и свойства <A HREF="h_l.html#list_hpr">href</A>. 
+<H3> Смотрите также</H3> 
+<LI> Свойства  <A HREF="h_l.html#list_host">host</A>, <A HREF="h_l.html#list_hostname">hostname</A>, <A HREF="h_l.html#list_hpr">href</A>, <A HREF="m_q.html#list_pathname">pathname</A>, <A HREF="m_q.html#list_port">port</A>, <A HREF="m_q.html#list_protocol">protocol</A>, <A HREF="s.html#list_search">search</A>
+<!------------------------------------------------------------------------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_hidden">
+<H2>Объект hidden</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_hidden">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+Текстовый объект в форме HTML, не отражаемый на экране.
+<H3> Синтаксис</H3> 
+<P>
+<table><tr><td bgcolor=aqua><xmp>   
+<INPUT
+   TYPE="hidden"
+   NAME="hiddenName"
+   [VALUE="textValue"]>
+ </xmp></table> 
+<I>NAME ="hiddenName"</I> определяет имя скрытого объекта. Вы можете обращаться к этому значению, используя свойство name. <BR>
+<I>VALUE ="textValue"</I> определяет начальное значение скрытого объекта. 
+<P>
+Использование свойства объекта <b>hidden</b>: 
+<PRE>  
+1. <I>hiddenName</I>.<I>propertyName </I>
+2. <I>formName</I>.elements <I>[index]</I> .<I>propertyName</I> </PRE> 
+<I>hiddenName</I> - значение атрибута NAME скрытого объекта. <BR>
+<I>formName</I> является либо значением атрибута NAME объекта формы либо элемента в массиве <I>form</I>. <BR>
+<I>index</I> - целое число, представляющее скрытый объект в форме. <BR>
+<I>propertyName</I> - один из свойств, описанных ниже. 
+<H3> Свойства</H3> 
+<LI> <A HREF="f_g.html#list_formob">form</A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>hidden</b> - элемент формы и должен быть определен внутри тега &LT;FORM&GT;. 
+<br>
+Объект <b>hidden</b> может применяться на ряду с cookie для передачи пар имя/значение для клиент-серверного взаимодействия. Разница в том, что cookie постоянно существует на клиентском компьюторе в течение сессии, в то время как объект <b>hidden</b> относится к конкретной форме. Первоначальное содержание объект <b>hidden</b> может быть изменено внутри функции путем присвоения нового значения своству value этого объекта. Первоначальное значение объекта представляет собой строку. Несмотря на это, когда программа встречает математический оператор, она пытается преобразовать значения объекта в целое число.
+<H3> Свойства</H3> 
+<LI> <A HREF="m_q.html#list_name">name</A> отражает атрибут NAME 
+<LI> <A HREF="t_z.html#list_value">value</A> отражает текущую значение объекта <b>hidden</b>
+<H3> Методы</H3> 
+<LI> Отсутствуют. 
+<H3> Обработчики событий</H3> 
+<LI> Отсутствуют. 
+<H3> Примеры</H3> 
+Следующий пример использует объект <b>hidden</b>, чтобы сохранить значение последнего объекта. Форма содержит кнопку"Display hidden value", которую пользователь может нажимать, чтобы показать значение объекта <b>hidden</b> в диалоговом окне Alert. 
+<table><tr><td bgcolor=aqua><xmp>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<TITLE>Пример объекта hidden</TITLE> 
+</HEAD> 
+<BODY>
+ <B>Нажмите некоторые из этих объектов, затем нажмите кнопка"Display hidden value"</B> <BR>
+<B>Посмотрите последнее значение нажатого объекта.</B> 
+<FORM NAME="form1">  
+<INPUT TYPE="hidden" NAME="hiddenObject" VALUE="None">
+<P>
+<INPUT TYPE="button" VALUE="Click me" NAME="button1" 
+    onClick="document.form1.hiddenObject.value=this.value">
+<P>
+<INPUT TYPE="radio" NAME="musicChoice" VALUE="soul-and-r&b" onClick="document.form1.hiddenObject.value=this.value">
+ Soul и R&B 
+<INPUT TYPE="radio" NAME="musicChoice" VALUE="jazz" onClick="document.form1.hiddenObject.value=this.value">
+Jazz 
+<INPUT TYPE="radio" NAME="musicChoice" VALUE="classical" onClick="document.form1.hiddenObject.value=this.value">
+ Classical 
+<P>
+<SELECT NAME="music_type_single" 
+onFocus="document.form1.hiddenObject.value=this.options[this.selectedIndex].text">
+<OPTION SELECTED>
+ Красный 
+<OPTION>
+ Оранжевый 
+<OPTION>
+ Желтый 
+</SELECT>
+<P>
+<INPUT TYPE="button" VALUE="Display hidden value" NAME="button2" 
+onClick="alert('Last object clicked: ' + document.form1.hiddenObject.value)">
+</FORM>
+</BODY>
+</xmp></table>
+В следующем примере каждый раз, когда вызывается функция setRetry, значение объекта  типа <b>hidden</b>, названного failedTries, увеличевается на единицу. Это один из примеров гибкости типов переменных в </font color="red"><i>JavaScript</i></font>.
+<table><tr><td bgcolor=aqua><xmp>
+<INPUT TYPE="hidden" NAME="failedTries" VALUE="0">
+...строки кода...
+function setRetry(){
+document.userPasswordForm.FailedTries.value++
+}
+</xmp></table>
+<H3> Смотрите также</H3> 
+<LI> Свойство <A HREF="c.html#list_cookie">cookie</A> 
+<!------------------------------------------------------------------------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_history">
+<H2> Объект history</H2> 
+<P>
+Список ранее просмотренных страниц, аналогично пункту меню Go браузера.
+<H3> Синтаксис</H3> 
+<P>
+Использование объект <b>history</b>: 
+<PRE>  
+1. history.<I>propertyName </I>
+2. history.<I>methodName</I> <I>(parameters)</I> </PRE> 
+<I>propertyName</I> - один из свойств, описанных ниже. <BR>
+<I>methodName</I> - один из методов, описанных ниже. 
+<H3> Свойства</H3> 
+<LI> <A HREF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>history</b> унаследован из меню Go браузера и содержит список ранее просмотренных страниц. Методы объекта служат для навигации к любому элементу списка. Для определения количества элементов объекта служит свойство length: document.history.length. <br>
+<H3> Свойства</H3> 
+<LI> <A HREF="h_l.html#list_length">length</A> отражает количество элементов объекта
+<H3> Методы</H3> 
+<LI> <A HREF="b.html#list_back">back</A> 
+<LI> <A HREF="f_g.html#list_forward">forward</A> 
+<LI> <A HREF="f_g.html#list_go">go</A> 
+<H3> Обработчики событий</H3> 
+<LI> Отсутствуют. 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1.</B>Метод go допускает и более сложные, чем просто перемещение к следующей странице, переходы по списку, подобно выбору адреса прямо из меню Go.
+<table><tr><td bgcolor=aqua><xmp>
+History.go (-3)
+</xmp></table>
+<P>
+<B>Пример 2.</B>Навигация представляет собой относительное перемещение по списку вперед или назад, подобно использованию кнопок на панели инструментов.
+<table><tr><td bgcolor=aqua><xmp>
+Window2.history.back ()
+</xmp></table>
+<P>
+<B>Пример 3.</B> Следующий пример заставляет второй фрейм в frameset вернуться на один пункт назад: 
+<table><tr><td bgcolor=aqua><xmp>
+Parent.frames [1] .history.back ()
+</xmp></table>
+<P>
+<B>Пример 4.</B> Следующий пример заставляет фрейм, названный <I>frame1</I> в frameset, чтобы вернуться на один пункт назад: 
+<table><tr><td bgcolor=aqua><xmp>
+Родитель frame1.history.back ()
+</xmp></table>
+<P>
+<B>Пример 5.</B> Следующий пример заставляет фрейм, названный <I>frame2</I> в <I>window2</I>, чтобы вернуться на один пункт назад: 
+<table><tr><td bgcolor=aqua><xmp>
+Window2.frame2.history.back ()
+</xmp></table>
+<H3> Смотрите также</H3> 
+<LI> Объект <A HREF="h_l.html#list_location">location</A> 
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_host">
+<H2> Свойство host</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_host">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+Строка, определяющая свойства URL hostname и port. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. links <I>[index]</I> .host 
+2. location.host </PRE> 
+<P>
+<I>index</I> - целое число, представляющее объект связи. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="h_l.html#list_linkob">link</A>, <A HREF="h_l.html#list_location">location</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>host</b> определяет часть URL. Свойство <b>host</b> - совмещает свойства hostname и port, отделенные двоеточием. Когда свойство port не указан, свойства <b>host</b> и hostname одинаковы. 
+<br>
+Вы можете устанавливать свойством <b>host</b> в любое время, хотя более надежно изменять свойства href. Если <b>host</b>, который вы определили, не найден, то вы получите ошибку.
+<H3> Примеры</H3>
+<table><tr><td bgcolor=aqua><xmp>
+location.host="www.montana.com:80"
+</xmp> </table>
+<P>
+Смотрите примеры для свойства <A HREF="h_l.html#list_hpr">href</A>. 
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="h_l.html#list_hash">hash</A>, <A HREF="h_l.html#list_hostname">hostname</A>, <A HREF="h_l.html#list_hpr">href</A>, <A HREF="m_q.html#list_pathname">pathname</A>, <A HREF="m_q.html#list_port">port</A>, <A HREF="m_q.html#list_protocol">protocol</A>, <A HREF="s.html#list_search">search</A>
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+<A NAME="list_hostname">
+<H2> Свойство hostname</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_hostname">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+Строка, определяющая имя домена или IP-адрес URL. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. links <I>[index]</I> .hostname 
+2. location.hostname </PRE> 
+<P>
+<I>index</I> - целое число, представляющее объект links. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="h_l.html#list_linkob">link</A>, <A HREF="h_l.html#list_location">location</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>hostname</b> определяет часть URL. Это свойство схоже со свойством host, за исключением того, что не включает в себя информацию о номере порта. Если свойство port имеет значение null, то свойства host и <b>hostname</b> одинаковы.
+<br>
+Вы можете изменить свойство <b>hostname</b> в любое время, хотя рекомендуется изменять весь URL. Если имя <b>hostname</b>, которое вы определили, не найдено, то вы получите ошибку. 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для свойства <A HREF="h_l.html#list_hpr">href</A>. 
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="h_l.html#list_hash">hash</A>, <A HREF="h_l.html#list_host">host</A>, <A HREF="h_l.html#list_hpr">href</A>, <A HREF="m_q.html#list_pathname">pathname</A>, <A HREF="m_q.html#list_port">port</A>, <A HREF="m_q.html#list_protocol">protocol</A>, <A HREF="s.html#list_search">search</A>
+<!------------------------------------------------------------------------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_hpr">
+<H2>Свойство  href</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_hpr">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+Строка, определяющая полный URL текущего документа. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1.links <I>[index]</I> .href 
+2. location.href </PRE> 
+<P>
+<I>index</I> - целое число, представляющее объект links. 
+<H3> Свойства</H3> 
+<P>
+<A HREF="h_l.html#list_linkob">link</A>, <A HREF="h_l.html#list_location">location</A> 
+<H3> Описание</H3> 
+<P>
+Свойство  <b>href</b> определяет полный URL. Другие свойства объекта location - подстрока свойства <b>href</b>. Вы можете изменять Свойство  <b>href</b> в любое время. 
+<P>
+Опущение свойства name из объекта location эквивалентно определению <TT>location.href</TT>. Например, следующие два утверждения эквивалентны и устанавливают URL текущего окна в Netscape home page: 
+<table><tr><td bgcolor=aqua><xmp>
+  window.location.href="http://www.netscape.com/" 
+  window.location="http://www.netscape.com/"  
+</xmp></table>
+<P>
+<H3> Примеры</H3> 
+<P>
+В следующем примере,  утверждение <TT>window.open</TT> создает окно с именем <I>newWindow</I> и загружает в него указанный URL. Утверждение <TT>document.write</TT> показываtт все свойства <TT>newWindow.location</TT> в окне с именем <I>msgWindow</I>. 
+<table><tr><td bgcolor=aqua><pre>  
+NewWindow=window.open 
+    (" http://home.netscape.com/comprod/products/navigator/ 
+    version_2.0/script/script_info/objects.html#list_checkbox")
+msgWindow.document.write("newWindow.location.href ="+ 
+    newWindow.location.href +" &lt;P&gt;") 
+msgWindow.document.write("newWindow.location.protocol =" +
+    newWindow.location.protocol +" &lt;P&gt;")
+msgWindow.document.write("newWindow.location.host =" +
+    newWindow.location.host +" &lt;P&gt;") 
+msgWindow.document.write("newWindow.location.hostName =" +
+    newWindow.location.hostName +"&lt;P&gt;") 
+msgWindow.document.write("newWindow.location.port =" +
+    newWindow.location.port +" &lt;P&gt;") 
+msgWindow.document.write("newWindow.location.pathname =" + 
+    newWindow.location.pathname +" &lt;P&gt;") 
+msgWindow.document.write("newWindow.location.search =" +
+    newWindow.location.search +" &lt;P&gt;") 
+msgWindow.document.write("newWindow.location.hash =" + 
+    newWindow.location.hash +" &lt;P&gt;")
+msgWindow.document.close () </pre></table> 
+<P>
+Следующий пример выводит на экран анологичный результат предыдущего: 
+<table><tr><td bgcolor=aqua><pre>  
+newWindow.location.href = 
+    http://home.netscape.com/comprod/products/navigator/ 
+    version_2.0/script/script_info/objects.html#list_checkbox_object 
+newWindow.location.protocol = http: 
+newWindow.location.host = home.netscape.com 
+newWindow.loctation.hostName = home.netscape.com 
+newWindow.location.port = 
+newWindow.location.pathname =
+     /comprod/products/navigator/version_2.0/script/ 
+     script_info/objects.html newWindow.location.search = 
+newWindow.location.hash = #list_checkbox_object  </pre></table> 
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="h_l.html#list_hash">hash</A>, <A HREF="h_l.html#list_host">host</A>, <A HREF="h_l.html#list_hostname">hostname</A>, <A HREF="m_q.html#list_pathname">pathname</A>, <A HREF="m_q.html#list_port">port</A>, <A HREF="m_q.html#list_protocol">protocol</A>, <A HREF="s.html#list_search">search</A>
+<!------------------------------------------------------------------------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_index">
+<H2> Свойство index</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_index">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+ Целое число, представляющее индекс элемента в объекте select. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre>  
+<I>SelectName</I>.options <I>[indexValue]</I> .index
+ </pre></table> 
+<P>
+<I>selectName</I> является либо значением атрибута NAME объекта select либо элемента в массиве <I>elements</I>. <BR>
+<I>indexValue</I> - целое число, представляющее элемент в объекте select. 
+<H3> Свойства</H3> 
+<P>
+Массив <A HREF="s.html#list_selectob">opthions</A> 
+<H3> Описание</H3> 
+<P>
+Положение элемента в объекте select нумеруется начиная с нуля. 
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="d_e.html#list_defaultSelected">defaultSelected</A>, <A HREF="s.html#list_selected">selected</A>, <A HREF="s.html#list_selectedIndex">selectedIndex</A>
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_indexOf">
+<H2>Метод indexOf</H2> 
+<P>
+ Возвращает позицию определенного символа или подстрки. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> 
+<I>stringName</I>.indexOf (<I>searchValue</I> [, <I>fromIndex</I>])</pre></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. <BR>
+<I>searchValue</I> - строка или свойство существующего объекта, представляющие значение, которое нужно искать. <BR>
+<I>fromIndex</I> - поиск начинается с этой позиции. Это может быть любое целое число от 0 до <I>stringName</I>.length - 1 или свойство существующего объекта. 
+<H3>Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Символы в строке индексированы слева направо. Индекс первого символа - 0, индекс последнего символа - <I>stringName</I>.length - 1. 
+<br>
+Если вы не определили значение для <I>fromIndex</I>, то <font color="red"><i> JavaScript</i></font> принимает значение 0 по умолчанию. Если <I>searchValue</I> не найден, то <font color="red"><i>  JavaScript</i></font> возвращается -1. 
+<H3> Примеры</H3> 
+Следующий пример использует indexOf, и lastIndexOf, чтобы разместить значение в строке"Brave new world". 
+<xmP>  
+var anyString="Brave new world"//Displays 8
+document.write("<P>The index of the first w from the beginning is" +
+   anyString.indexOf("w"))
+//Displays 10
+document.write("<P>The index of the first w from the end is" +
+   anyString.lastIndexOf("w"))
+//Displays 6
+document.write("<P>The index of 'new' from the beginning is" +
+   anyString.indexOf("new"))
+//Displays 6
+document.write("<P>The index of 'new' from the end is" +
+   anyString.lastIndexOf("new")) </xmp>
+<H3> Смотрите также</H3> 
+<LI> Методы <A HREF="c.html#list_charAt">charAt</A>, <A HREF="h_l.html#list_lastIndexOf">lastIndexOf</A>
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_isNaN">
+<H2>Функция isNaN</H2> 
+<FONT SIZE=-2><A HREF="introduction.html#1_isNaN">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+На Unix платформах, вычисляет является ли аргумент"NaN" (не числом). 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> isNaN <I>(testValue)</I></pre></table> 
+<P>
+<I>testValue</I> - значение, которое вы хотите вычислять. 
+<H3> Описание</H3> 
+<P>
+Функция <b>isNaN</b> - встроенная <font color="red"><i> JavaScript</i></font> функция. Это - не метод, связанный с любым объектом, а - часть языка непосредственно. <b>IsNaN</b> доступен на только Unix платформах. 
+<br>
+На всех платформах за исключением Windows, функции parseFloat и parseInt возвращают"NaN", когда вычисляют значение, которое - не является числом. Значение"NaN" - не число в любом основании системы счисления. Вы можете вызывать функцию <b>isNaN</b>, чтобы определить,является ли результат parseFloat или parseInt"NaN".
+<P>
+Функция <b>isNaN</b> возвращается значение истинна, если аргумент не является числом или ложь в противном случае. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример вычисляет <I>floatValue</I>, чтобы определить,является ли он числом, а затем соответственно вызывает процедуру. 
+<table><tr><td bgcolor=aqua><pre>  
+floatValue=parseFloat (toFloat)
+if isNaN (floatValue) {
+notFloat ()
+} 
+else {
+isFloat ()
+} </pre></table> 
+<H3> Смотрите также</H3> 
+<LI> Функции <A HREF="m_q.html#list_parseFloat">parseFloat</A>, <A HREF="m_q.html#list_parseInt">parseInt</A>
+<!------------------------------------------------------------------------------------------------>
+ <hr align=center width=250>
+ <A NAME="list_italics">
+<H2> Метод italics</H2> 
+<P>
+Страка форматируется в курсивный шрифт, подобно тегу &lt;I&gt;. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>stringName</I>.italics ()</pre></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>italics</b> с методами write или writeln для форматирования и вывода строки в документе. 
+<H3> Примеры</H3> 
+Следующий пример использует методы string, чтобы изменить строку: 
+<table><tr><td bgcolor=aqua><pre>  
+var worldString =" Привет, мир"
+document.write (worldString.blink ()) 
+document.write (" &lt;P&gt;" + worldString.bold ()) 
+document.write (" &lt;P&gt;" + worldString.italics ()) 
+document.write (" &lt;P&gt;" + worldString.strike ())
+</pre></table> 
+<P>
+Следующий пример выглядит на экране анологично выше приведенному: 
+<table><tr><td bgcolor=aqua><xmp>
+BLINK>Hello, world</BLINK>
+<P><B>Hello, world</B>
+<P><I>Hello, world</I>
+<P><STRIKE>Hello, world</STRIKE>
+ </xmp></table> 
+<H3> Смотрите также</H3> 
+<LI> Методы  <A HREF="b.html#list_blink">blink</A>, <A HREF="b.html#list_bold">bold</A>, <A HREF="s.html#list_strike">strike</A>
+<!------------------------------------------------------------------------------------------------>
+ <hr align=center width=250>
+ <A NAME="list_lastIndexOf">
+<H2>Метод lastIndexOf</H2> 
+<P>
+ Возвращает позицию символа или подстраки в строке, начиная поиск с конца. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> <I>stringName</I>.lastIndexOf (<I>searchValue</I> [, <I>fromIndex</I>])</pre></table> 
+<P>
+<I>stringName</I> - любая строка или свойство существующего объекта. <BR>
+<I>searchValue</I> -строка или свойство существующего объекта, представляющие значение, которое нужно искать. <BR>
+<I>fromIndex</I> - начинае поиск с этого параметра. Это может быть любое целое число от 0 до <I>stringName</I>.length - 1 или свойство существующего объекта. 
+<H3>Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Символы в строке пронумерованы слева направо. Номер первого символа - 0, а номер последнего символа - <I>stringName</I>.length - 1. 
+<br>
+Если вы не определили значение для <I>fromIndex</I>, то <font color="red"><i> JavaScript</i></font> принимает <I>stringName</I>.length - 1 (конец строки) по умолчанию. Если <I>searchValue</I> не найден, то <font color="red"><i> JavaScript</i></font> возвращается -1. 
+<H3> Примеры</H3> 
+Следующий пример использует indexOf, и lastIndexOf, чтобы установить значения в строке" Brave new world". 
+<PRE>
+var anyString="Brave new world"  
+//Displays 8
+document.write("<P>The index of the first w from the beginning is" +
+   anyString.indexOf("w"))
+//Displays 10
+document.write("The index of the first w from the end is" +
+   anyString.lastIndexOf("w"))
+//Displays 6
+document.write("The index of 'new' from the beginning is" +
+   anyString.indexOf("new"))
+//Displays 6
+document.write("The index of 'new' from the end is" +
+   anyString.lastIndexOf("new"))
+ </pre></table> 
+<H3> Смотрите также</H3> 
+<LI>  Методы <A HREF="c.html#list_charAt">charAt</A>, <A HREF="h_l.html#list_indexOf">indexOf</A>
+<!------------------------------------------------------------------------------------------------>
+ 
+<hr align=center width=250>
+ <A NAME="list_lastModified">
+<H2>Свойство lastModified</H2> 
+<P>
+Строка, представляющая дату, когда документ был последний раз изменен. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> document.lastModified</pre></table> 
+<H3> Свойства</H3> 
+<P>
+<A HREF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Это свойство опирается на атрибуты файла-источника. Строка форматируется стандартным для <font color="red"><i>JavaScript</i></font> образом (смотрите объект <a href="d_e.html#list_Date">Date</a>).<b>LastModified</b> - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, свойство <b>lastModified</b> используется в теге &lt;SCRIPT&gt; в конце файла HTML, чтобы показать дату изменения страницы: 
+<table><tr><td bgcolor=aqua><pre>  
+Document.write (" Эта страница, была модифицируема последний раз" + document.lastModified)
+ </pre></table> 
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_length">
+<H2> Свойство length</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_length">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+ Целое число, которое определяет связанную длиной особенность вызывающего объекта или таблицы. 
+<H3> Синтаксис</H3> 
+<P>
+Когда свойство <b>length</b> используется с объектами: 
+<PRE>  
+1. <I>formName</I>.length 
+2. <I>frameReference</I>.length 
+3. history.length 
+4. <I>radioName</I>.length 
+5. <I>selectName</I>.length 
+6. <I>stringName</I>.length 
+7. <I>windowReference</I>.length
+ </PRE> 
+<P>
+Когда используется со свойством массива: 
+<PRE>  
+8. anchors.length 
+9. elements.length 
+10. forms.length 
+11. <I>frameReference</I>.frames.length 
+12. <I>windowReference</I>.frames.length 
+13. links.length 
+14. <I>selectName</I>.options.length
+ </PRE> 
+<P>
+<I>formName</I> является либо именем формы либо элемента в массиве <i>form</i>. <BR>
+<I>frameReference</I> является либо значением атрибута  NAME фрейма либо элемента в массиве <I>frames</I>. <BR>
+<I>radioName</I> является либо значением атрибута  NAME объекта radio либо элемента в массиве <I>elements</I>. <BR>
+<I>selectName</I> является либо значением атрибута  NAME объекта select либо элемента в массиве <I>elements</I>. <BR>
+<I>stringName</I> - любая строка либо свойство существующего объекта. <BR>
+<I>windowReference</I> - только для окон, как описано в объекте <A HREF="t_z.html#list_windowob">window</A>. 
+<H3> Свойства</H3> 
+<LI>Объекты <A HREF="f_g.html#list_frameob">frame</A>, <A HREF="h_l.html#list_history">history</A>, <A HREF="r.html#list_radio">radio</A>, <A HREF="s.html#list_selectob">select</A>, <A HREF="s.html#list_string">string</A>, <A HREF="t_z.html#list_windowob">window</A> 
+<LI>Массивы <A HREF="a.html#list_anchorob">anchor</A>, <A HREF="d_e.html#list_elementsob">elements</A>, <A HREF="f_g.html#list_formob">form</A>, <A HREF="f_g.html#list_frameob">frame</A>, <A HREF="h_l.html#list_linkob">link</A>, <A HREF="s.html#list_selectob">select</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>length</b> - целое число, которое определяет одно из следующих: 
+<LI> Число элементов в форме (форма 1 из пункта синтаксис). 
+<LI> Число фреймов внутри фрейма (фора 2 из пункта синтаксис). Фрейм, который не загружен в документ, содержащий тег &lt;FRAMESET&gt; всегда, имеет длину 0. 
+<LI> Число элементов в объекте history (форма 3 из пункта синтаксис). 
+<LI> Число переключателей в объекте radio (форма 4 из пункта синтаксис). 
+<LI> Число элементов в объекте select (форма 5 из пункта синтаксис). 
+<LI> Длина объекта string (форма 6 из пункта синтаксис). 
+<LI> Число фреймов в родительском окне (форма 7 из пункта синтаксис). 
+<LI> Число элементов в одном из свойств массива (все другие формы из пункта синтаксис). 
+<P>
+<b>length</b> - это свойство только для чтения. 
+<P>
+Для пустой строки, <b>length</b> - ноль. Для объекта select, значение, возвращенное формой 5 и формой 14 из пункта синтаксиса - тот же самое. Для окна, содержащего фреймы, значения, возвращенное формой 7 и формой 12 из пункта синтаксис - то же самое. Для объекта form, значения, возвращенное формой 1 и формой 9 из пункта синтаксис - то же самое. Для фрейма, содержащий фреймы, значения, возвращенные формой 2 и формой 11 из пункта синтаксис - то же самое. 
+<H3> Примеры</H3> 
+<P>
+В следующем примере, функция <I>getChoice ()</I> использует свойство <b>length</b>, чтобы повторить каждый элемент в массиве <I>musicType</I>. <I>MusicType</I> - выбранный элемент в форме <I>musicForm</I>. 
+<table><tr><td bgcolor=aqua><pre>  
+function getChoice() {
+   for (var i = 0; i < document.musicForm.musicType.length; i++) {
+      if (document.musicForm.musicType.options[i].selected == true) {
+         return document.musicForm.musicType.options[i].text
+      }
+   }
+}
+
+</pre></table>
+
+<P>
+Следующий пример показывает 8 в диалоговом окне alert:
+<table><tr><td bgcolor=aqua><pre>
+var x="Netscape"
+alert("The string length is" + x.length)
+ </pre></table> 
+<!------------------------------------------------------------------------------------------------->
+ 
+<hr align=center width=250>
+ <A NAME="list_link">
+<H2> Метод link</H2> 
+<P>
+ Создает новую гиперссылку, которая переходит к другому URL. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre>
+ <I>linkText</I>.link <I>(hrefAttribute)</I></pre></table> 
+<P>
+<I>linkText</I> - любая строка или свойство существующего объекта. <BR>
+<I>hrefAttribute</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>link</b> с методами write или writeln, которые создают и показывают гиперссылки в документе.
+<br>
+В синтаксисе, строка <I>linkText</I> представляет литеральный текст, который вы хотите, чтобы  пользователь видел. <I>HrefAttribute</I> строка представляет атрибут HREF тега &lt;A&gt;. Каждый раздел URL содержит различную информацию. Смотрите для описания URL объект <A HREF="h_l.html#list_location">location</A>. 
+<br>
+Гиперссылки, созданные при помощи метода <b>link</b> станут элементами в массиве <i>link</i>. Смотрите информацию для массива <i>link</i> объект <A HREF="h_l.html#list_linkob">link</A>. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает слово"Netscape" как гиперссылку, которая возвращает пользователю Netscape home page: 
+<table><tr><td bgcolor=aqua><pre>  
+var hotText="Netscape"
+var URL="http://www.netscape.com"
+document.open()
+document.write("Click to return to" + hotText.link(URL))
+document.close()</pre></table>
+<P>
+Следующий пример анологичен предыдушему, только в синтакси HTML: 
+<P>
+<table><tr><td bgcolor=aqua><pre> <TT>Click to return to &lt;A HREF="http://www.netscape.com"&gt;Netscape &lt;/A&gt;</TT> </pre></table>
+<H3> Смотрите также</H3> 
+<LI> Метод <A HREF="a.html#list_anchormet">anchor</A> 
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_linkob">
+<H2> Объект link (массив <I>link</I>)</H2> 
+ <FONT SIZE=-2><A HREF="introduction.html#1_linkob">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+Часть текста или изображения, идентифицированного как гиперссылка на другой URL.
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить <b>link</b>, используйте стандарт HTML синтаксис с использованием обработчиков событий  onClick и onMouseOver: 
+<table><tr><td bgcolor=aqua><pre>   
+&LT;A HREF=<I>locationOrURL </I>
+[NAME = <I>"anchorName"</I>] 
+[TARGET = <I>"windowName"</I>] 
+[onClick = <I>"handlerText"</I>] 
+[onMouseOver = <I>"handlerText"</I>] &GT; 
+<I>linkText</I> 
+&LT;A&GT;
+ </pre></table> 
+<I>HREF=locationOrURL</I> идентифицирует расположение якоря или URL. <BR>
+<I>NAME ="anchorName"</I> определяет тег, который становится доступной целью гипертекста внутри текущего документа. Если этот атрибут присутствует, объект связи - также объект якоря. Смотрите <A HREF="a.html#list_anchorob">anchor</A> для деталей. <BR>
+<I>TARGET ="windowName"</I> определяет окно, в которое загружается. <I>WindowName</I> может быть существующее окно; это может быть имя фрейма, указанное в теге &LT;FRAMESET&GT;; или это может быть однин из литералов фрейма, с именем _top, _parent, _self, или _blank; это не может быть выражение <font color="red"><i>JavaScript</i></font> (например, это не может быть parent<I>.frameName</I> или <I>windowName.frameName</I>). <BR>
+<I>linkText</I> представлен как гиперссылка к URL. 
+<P>
+Вы можете также определить ссылку, используя метод <A HREF="h_l.html#list_link">link</A>. 
+<P>
+Использовать свойства объекта связи: 
+<table><tr><td bgcolor=aqua><pre>  
+document.links <I>[index]</I> .<I>propertyName</I>
+ </pre></table> 
+<I>index</I> - целое число, представляющее объект связи. <BR>
+<I>propertyName</I> - один из свойствы, описанных ниже. 
+<H3> Свойства</H3> 
+<LI> <A HREF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Каждый объект <b>link</b> - объект location, и имеет те же самые свойства, что и объект location. 
+<br>
+Если объект <b>link</b> - является объектом anchor, объект входит и в массив <I>links</I> и <I>anchor</I>. 
+<br>
+Когда пользователь нажимает на объект <b>link</b> и перемещается к документу (указанный <I>HREF=LOCATIONORURL</I>), свойство referrer указанного документа содержит URL исходного документа.
+<H4> Массив <I>link</I></H4> 
+<P>
+Вы можете ссылаться на объекты <b>link</b> в вашем коде,  используя массив <I>link</I>. Этот массив содержит все объекты <b>link</b> (теги &LTA HREF =""&GT;) в документе в исходном порядке. Например, если документ содержит три объекта <b>link</b>, то эти <b>link</b> отображены как <TT>document.links [0]</TT>, <TT>document.links [1]</TT>, и <TT>document.links [2]</TT>. 
+<P>
+Использование массив <I>link</I>: 
+<PRE>  
+1. document.links <I>[index] </I>
+2. document.links.length </PRE> 
+<P>
+<I>index</I> - целое число, представляющее ссылку в документе. 
+<br>
+Чтобы получать число сслок в документе, используйте свойство length: <TT>document.links.length</TT>. 
+<br>
+Элементы в массиве <I>link</I> только для чтения. Например, утверждение <TT>document.links [0] ="link1"</TT> не имеет никакого результата. 
+<H3> Свойства</H3> 
+<P>
+Объект <b>link</b> имеет следующие свойства: 
+<LI> <A HREF="h_l.html#list_hash">hash</A> определяет имя якоря в URL 
+<LI> <A HREF="h_l.html#list_host">host</A> определяет hostname:port
+<LI> <A HREF="h_l.html#list_hostname">hostname</A> определяет host и имя области, или IP адрес, сетевого host 
+<LI> <A HREF="h_l.html#list_hpr">Href</A> определяет весь URL 
+<LI> <A HREF="m_q.html#list_pathname">pathname</A> определяет ту часть URL, которая содержит путь 
+<LI> <A HREF="m_q.html#list_port">port</A> определяет ту часть URL, которая содержит номер порта
+<LI> <A HREF="m_q.html#list_protocol">protocol</A> определяет начало URL, включая двоеточие 
+<LI> <A HREF="s.html#list_search">search</A> определяет запрос 
+<LI> <A HREF="t_z.html#list_target">target</A> отражает атрибут TARGET
+<P>
+Массив <I>link</I> имеет следующие свойства: 
+<LI> <A HREF="h_l.html#list_length">length</A> отражает число ссылок в документе 
+<H3> Методы</H3> 
+<LI> Отсутствуют. 
+<H3> Обработчики событий</H3> 
+<LI> <A HREF="m_q.html#list_onClick">onClick</A> 
+<LI> <A HREF="m_q.html#list_onMouseOver">onMouseOver</A> 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1.</B> Следующий пример создает гиперссылку к якорю с именем <I>javascript_intro</I>. 
+<table><tr><td bgcolor=aqua><xmp>
+ <A HREF="#javascript_intro">Введение в JavaScript</A> 
+</xmp></table>
+<P>
+<B>Пример 2.</B> Следующий пример создает гиперссылку к якорю с именем <I>numbers</I> в файле DOC3.HTML в окне <I>window2</I>.
+<table><tr><td bgcolor=aqua><xmp>
+<LI> <A HREF="doc3.html#numbers" TARGET="window2">numbers</A> 
+</xmp></table>
+<P>
+<B>Пример 3.</B> Следующий пример берет пользователя, поддерживают <I>x</I> входы в списке хронологии: 
+<table><tr><td bgcolor=aqua><xmp>
+ <A HREF="javascript-history.go(-1 - x)">Нажмите здесь</A> 
+</xmp></table>
+<P>
+<B>Пример 4.</B> Следующий пример создает гиперссылку к URL. Набор переключателей позволяют пользователя, выбирать между тремя URL. Обработчик событий OnClick ссылки устанавливает URL (href свойство link). Сслка также имеет обработчик событий onMouseOver, который изменяет свойства состояния окна. Как показанный пример, вы должны вернуть истинну, чтобы установить window.status свойства в обработчике событий onMouseOver. 
+<table><tr><td bgcolor=aqua><xmp>
+<SCRIPT>
+var destHREF="'http://www.netscape.com/"
+</SCRIPT>
+<FORM NAME="form1">
+<B>Choose a destination from the following list, then click"Click me" below.</B>
+<BR><INPUT TYPE="radio" NAME="destination" VALUE="netscape"
+   onClick="destHREF='http://www.netscape.com/'"> Netscape home page
+<BR><INPUT TYPE="radio" NAME="destination" VALUE="sun"
+   onClick="destHREF='http://www.sun.com/'"> Sun home page
+<BR><INPUT TYPE="radio" NAME="destination" VALUE="rfc1867"
+   onClick="destHREF='http://www.ics.uci.edu/pub/ietf/html/rfc1867.txt'"> RFC 1867
+<P><A HREF=""
+   onMouseOver="window.status='Click this if you dare!'; return true"
+   onClick="this.href=destHREF">   <B>Click me</B></A></FORM>
+</xmp></table>
+<P>
+<B>Пример 5: </B> Следующий пример открывает Netscape home page в окне <I>newWindow</I>. Функция <I>linkGetter ()</I> использует массив <i>links</i>, чтобы показать значение каждой из ее ссылок. 
+<table><tr><td bgcolor=aqua><xmp>
+ newWindow=window.open("http://www.netscape.com")
+function linkGetter() {
+   msgWindow=window.open("")
+   for (var i = 0; i < newWindow.document.links.length; i++) {
+   msgWindow.document.write(newWindow.document.links[i] +"<BR>")
+   }
+}
+</xmp></table>
+<H3> Смотрите также</H3> 
+<LI> Объект <A HREF="a.html#list_anchorob">anchor</A> 
+<LI> Метод <A HREF="h_l.html#list_link">link</A> 
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_linkColor">
+<H2>Свойство linkColor</H2> 
+<P>
+Строка, определяющая цвет гиперссылки документа. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> document.linkColor</pre></table> 
+<H3> Свойства</H3> 
+<P>
+<A HREF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>linkColor</b> выражено как шестнадцатеричный триплет RGB или как строковый литерал, описынные в разделе <A HREF="colorV.html">Цвета JavaScript</A>. Это свойство - <font color="red"><i> JavaScript</i></font> анологично атрибуту LINK тега &lt;BODY&gt;. Вы не можете изменять это свойство после того, как HTML - страница была загружена. 
+<P>
+Если Вы выражаете цвет как шестнадцатеричный триплет RGB, вы должны использовать формат rrggbb. Например, шестнадцатеричное значение RGB для salmon - red=FA, green=80, и blue=72,следовательно триплет для salmon -"FA8072". 
+<H3> Примеры</H3> 
+<P>
+Следующий пример устанавливает цвет сслки документа в aqua при использование строкового литерала: 
+<table><tr><td bgcolor=aqua><pre>  
+document.linkColor ="aqua"
+</pre></table> 
+<P>
+Следующий пример устанавливает цвет сслки документа в aqua при использование шестнадцатеричного триплета: 
+<table><tr><td bgcolor=aqua><pre>  
+document.linkColor ="00FFFF"
+ </pre></table> 
+<H3> Смотрите также</H3> 
+<LI>  Свойства <A HREF="a.html#list_alinkColor">alinkColor</A>, <A HREF="b.html#list_bgColor">bgColor</A>, <A HREF="f_g.html#list_fgColor">fgColor</A>, и <A HREF="t_z.html#list_vlinkColor">vlinkColor</A>
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+<A NAME="list_links">
+<H2> Свойство links</H2> 
+<P>
+Массив объектов link. Смотрите объект <A HREF="h_l.html#list_linkob">link</A>. 
+<h2>Синтаксис</h2>
+document.links[index]
+<h2>Описание</h2>
+Ссылки определяются в HTML с помощью тега &lt;A HREF=URL>. Они отражаются в свойстве links, первая ссылка представленна как <tt>document.links[0]</tt>.
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_LN2">
+<H2>Свойство LN2</H2> 
+<P>
+Константа определяющая натуральный логарифм числа 2, приблизительно равна 0.693. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math. LN2</pre></table> 
+<H3> Свойства</H3> 
+<P>
+<A HREF="m_q.html#list_Math"> Math </A> 
+<H3> Описание</H3> 
+<P>
+Так как <b>LN2</b> константа, то это - свойства только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает натуральный логарифм числа 2: 
+<table><tr><td bgcolor=aqua><pre>
+document.write ("натуральный логарифм числа 2" + Math. LN2)</pre></table> 
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="d_e.html#list_E">E</A>, <A HREF="h_l.html#list_LN10">LN10</A>, <A HREF="h_l.html#list_LOG2E">LOG2E</A>, <A HREF="h_l.html#list_LOG10E">LOG10E</A>, <A HREF="m_q.html#list_PI">PI</A>, <A HREF="s.html#list_SQRT1_2">SQRT1_2</A>, <A HREF="s.html#list_SQRT2">SQRT2</A>
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_LN10">
+<H2>Свойство LN10</H2> 
+<P>
+Константа определяющая натуральный логарифм числа десять, приблизительно равна 2.302. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math. LN10</pre></table> 
+<H3> Свойства</H3> 
+<P>
+<A HREF="m_q.html#list_Math"> Math </A> 
+<H3> Описание</H3> 
+<P>
+Так как LN10 константа, то это - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает натуральный логарифм числа 10: 
+<table><tr><td bgcolor=aqua><pre> 
+document.write (" натуральный логарифм числа 10" + Math.LN10)</pre></table> 
+<H3> Смотрите также</H3> 
+<LI> Свойства <A HREF="d_e.html#list_E">E</A>, <A HREF="h_l.html#list_LN2">LN2</A>, <A HREF="h_l.html#list_LOG2E">LOG2E</A>, <A HREF="h_l.html#list_LOG10E">LOG10E</A>, <A HREF="m_q.html#list_PI">PI</A>, <A HREF="s.html#list_SQRT1_2">SQRT1_2</A>, <A HREF="s.html#list_SQRT2">SQRT2</A> 
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_location">
+<H2> Объект location</H2> 
+  <FONT SIZE=-2><A HREF="introduction.html#1_location">Измененныйв Navigator 3.0</A></FONT>  
+<P>
+Содержит информацию относительно URL текущего документа. 
+<H3> Синтаксис</H3> 
+<P>
+Использование объект <b>location</b>: 
+<table><tr><td bgcolor=aqua><pre>  
+[ <I>windowReference</I>.] location <I>[.propertyName]</I>
+ </pre></table> 
+<I>windowReference</I> - переменная <I>windowVar</I> из определения окна (Смотрите объект <A HREF="t_z.html#list_windowob">window</A>). <BR>
+<I>propertyName</I> - один из свойств, описанных ниже.
+<H3> Свойства</H3> 
+<LI> <A HREF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>location</b> используется для определения URL любого активного документа, включая документы в других окнах или кадрах навигатора. Если объект window не указан подразумевается текущее окно. Каждое свойство объекта <b>location</b> представляет разлиную часть URL. 
+<P>
+Следующий список URL показывает связи между свойствами <b>location</b>: 
+<table><tr><td bgcolor=aqua><pre> 
+<I>protocol</I> // <I>hostname</I>:<I>port</I> <I>pathname</I> <I>search</I> <I>hash</I></pre></table> 
+<P>
+<I>protocol</I> строка, содержащая начальную часть URL, до двоеточия включительно. <BR>
+<I>hostname</I> строка с именем домена или IP адрес <BR>
+<I>port</I> часть URL, содержащая номер порта <BR>
+<I>pathname</I> часть URL, содержащая путь <BR>
+<I>search</I> строка, содержащая любую информацию запроса, присоединенную к URL, начинающийся с вопросительного знака. <BR>
+<I>hash</I> часть URL, начинающуюся с символа (#).  
+<P>
+Смотрите свойства (описанные ниже) для подробного анализа частей URL, или свойство <A HREF="h_l.html#list_hpr">href</A> для примеров. 
+<P>
+Объект локализации имеет два других реквизита(свойства), не показанные в графике выше: 
+<P>
+<I>Href</I> представляет полный URL. <BR>
+<I>host</I> представляет сочетание <I>hostname</I>:<I>port</I>. 
+<P>
+Объект <b>location</b> содержится в объекте window, и действует внутри его области. Если вы ссылаетесь на объект <b>location</b> без определения окна, то объект <b>location</b> представляет текущую <b>location</b>. Если вы ссылаетесь на объект <b>location</b> и определяют имя окна, например, <TT><I>windowReference</I>.location.<I>propertyName</I></TT>, то объект <b>location</b> представляет <b>location</b> указанного окна. 
+<P>
+Не путайте объект <b>location</b> со свойством <i>location</i> объекта document. Вы не можете изменять значение свойства <b>location</b> <TT>(document.location)</TT>, но вы можете изменять значение свойства объекта <b>location</b> <TT><I>(window.location.propertyName)</I></TT>. 
+<H3> Синтаксис для общих типов URL</H3> 
+<P>
+Когда Вы определяете URL, Вы можете использовать стандартные формы URL и <font color="red"><i> JavaScript</i></font> утверждения. Следующая таблица показывает синтаксис для определения части наиболее общих типов URL. 
+<TABLE WIDTH=100% CELLSPACING=1>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TH>URL&nbsptype</TH><TH>Protocol</TH><TH>Example</TH>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD>JavaScript&nbspcode</TD><TD>javascript:</TD><TD>javascript:history.go(-1)</TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD>Navigator&nbspinfo</TD><TD>about:</TD><TD>about:cache</TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD>World&nbspWide&nbspWeb</TD><TD>http:</TD><TD>http://www.netscape.com/</TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD>File</TD><TD>file:</TD><TD>file:///javascript/methods.html</TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD>FTP</TD><TD>ftp:</TD><TD>ftp://ftp.mine.com/home/mine</TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD>MailTo</TD><TD>mailto:</TD><TD>mailto:info@netscape.com</TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD>Usenet</TD><TD>news:</TD><TD>news://news.scruznet.com/comp.lang.javascript</TD>
+</TR>
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD>Gopher</TD><TD>gopher:</TD><TD>gopher.myhost.com</TD>
+</TR>
+</TABLE>
+<P>
+<i> Javascript</i>: протокол вычисляет выражение после двоеточия (:),и пытается загрузить получившееся выражение. Если выражение нет или неопределено, остается загруженной текущая страница. 
+<P>
+<i>about:</i> протокол представляет три метода получения информации о браузере и имеет следующий синтаксис:
+<table><tr><td bgcolor=aqua><pre>  
+about: [cache|plugins]
+ </pre></table> 
+1. Сам по себе дает такой же результат, что и выбор пункта Netscape Abort меню Help. <BR>
+about:cacheотражает текущее состояние кэша. <BR>
+about:plug-ins содержит информацию об установленных приложениях plug-ins.
+<H3> Свойства</H3> 
+<LI> <A HREF="h_l.html#list_hash">hash</A> определяет имя якоря в URL 
+<LI> <A HREF="h_l.html#list_host">host</A> определяет hostname:port части URL 
+<LI> <A HREF="h_l.html#list_hostname">hostname</A> определяет host и name области, или IP адрес, сетевого host 
+<LI> <A HREF="h_l.html#list_hpr">Href</A> определяет полный URL 
+<LI> <A HREF="m_q.html#list_pathname">pathname </A>  часть URL, содержащая путь
+<LI> <A HREF="m_q.html#list_port">port</A> часть URL, содержащая номер порта
+<LI> <A HREF="m_q.html#list_protocol">protocol</A> строка, содержащая начальную часть URL, до двоеточия включительно. <BR>
+<LI> <A HREF="s.html#list_search">search</A> строка, содержащая любую информацию запроса, присоединенную к URL, начинающийся с вопросительного знака.
+<H3> Методы</H3> 
+<LI> Отсутствуют. 
+<H3> Обработчики событий</H3> 
+<LI> Отсутствуют. 
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1.</B> Следующие два утверждения эквивалентны и изменяют URL текущего окна в Netscape home page: 
+<table><tr><td bgcolor=aqua><xmp>
+  window.location.href="http://www.netscape.com/"
+  window.location="http://www.netscape.com/"  
+</xmp></table>
+<P>
+<B>Пример 2.</B> Следующее утверждение устанавливает URL фрейма с именем <I>frame2</I> в home page sun: 
+<table><tr><td bgcolor=aqua><xmp>
+  parent.frame2.location.href="http://www.sun.com/"  
+</xmp></table>
+<P>
+Смотрите также пример для объекта <A HREF="a.html#list_anchorob">anchor</A>. 
+<H3> Смотрите также</H3> 
+<LI> Объект <A HREF="h_l.html#list_history">history</A> 
+<LI> Свойства <A HREF="t_z.html#list_URL">URL</A> 
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_log">
+<H2> Метод log</H2> 
+<P>
+ Возвращает натуральный логарифм для положительного аргумента. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math.log <I>(number)</I></pre></table> 
+<I>number</I> - любое положительное числовое выражение или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<A HREF="m_q.html#list_Math"> Math </A> 
+<H3> Описание</H3> 
+<P>
+Если значение <I>number</I> - расположено вне предложенного диапазона, то возвращаемое значение - всегда -1.797693134862316e+308. 
+<H3> Примеры</H3> 
+<PRE>  
+// Возвращает значение 2.302585092994046 
+document.write (" натуральный логарифм 10 -" + Math.log (10))
+
+// Возвращает значение 0 
+document.write (" натуральный логарифм 1 -" + Math.log (1))
+
+// Возвращает значение -1.797693134862316e+308, 
+// потому что аргумент находится вне диапазона
+document.write ("натуральный логарифм 0 -" + Math.log (0)) </pre></table> 
+<H3> Смотрите также</H3> 
+<LI> Методы <A HREF="d_e.html#list_exp">exp</A>, <A HREF="m_q.html#list_pow">pow</A>
+<!------------------------------------------------------------------------------------------------->
+ <hr align=center width=250>
+ <A NAME="list_LOG2E">
+<H2> Свойство LOG2E</H2> 
+<P>
+Константа, представляющяя логарифм с основанием 2 числа E (приблизительно равно 1.442). 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math. LOG2E</pre></table> 
+<H3> Свойства</H3> 
+<P>
+<A HREF="m_q.html#list_Math"> Math </A> 
+<H3> Описание</H3> 
+<P>
+Так как <b>LOG2E</b> константа, то это - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает логарифм с основанием 2 числа E: 
+<table><tr><td bgcolor=aqua><pre> document.write (" логарифм с основанием 2 числа e равен" + Math. LOG2E)</pre></table> 
+<H3> Смотрите также</H3> 
+<LI>  Свойства <A HREF="d_e.html#list_E">E</A>, <A HREF="h_l.html#list_LN2">LN2</A>, <A HREF="h_l.html#list_LN10">LN10</A>, <A HREF="h_l.html#list_LOG10E">LOG10E</A>, <A HREF="m_q.html#list_PI">PI</A>, <A HREF="s.html#list_SQRT1_2">SQRT1_2</A>, <A HREF="s.html#list_SQRT2">SQRT2</A>
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_LOG10E">
+<H2> Свойство LOG10E</H2> 
+<P>
+Константа, представляющяя логарифм с основанием 10 числа E (приблизительно равно 0.434). 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><pre> Math. LOG10E</pre></table> 
+<H3> Свойства</H3> 
+<P>
+<A HREF="m_q.html#list_Math"> Math </A> 
+<H3> Описание</H3> 
+<P>
+Так как <b>LOG10E</b> константа, то это - свойство только для чтения. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример показывает логарифм с основанием 10 числа E: 
+<table><tr><td bgcolor=aqua><pre> Document.write (" логарифм с основанием 10 числа E" + Math. LOG10E)</pre></table> 
+<H3> Смотрите также</H3> 
+<LI>Свойства <A HREF="d_e.html#list_E">E</A>, <A HREF="h_l.html#list_LN2">LN2</A>, <A HREF="h_l.html#list_LN10">LN10</A>, <A HREF="h_l.html#list_LOG2E">LOG2E</A>, <A HREF="m_q.html#list_PI">PI</A>, <A HREF="s.html#list_SQRT1_2">SQRT1_2</A>, <A HREF="s.html#list_SQRT2">SQRT2</A>
+</body>
+</HTML>

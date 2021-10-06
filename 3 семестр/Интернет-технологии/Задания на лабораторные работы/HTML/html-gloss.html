@@ -1,0 +1,2980 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD><TITLE>HTML Reference</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H2><A NAME="htmlref2_0001000113000100">!--...--</A></H2>
+&lt;<B>!--</B> <B>...</B> <B>--&gt;<BR>
+</B>
+<P>
+Любой текст заключенный между этими скобками игнорируется просмотрщиком.
+<P><B>Пример</B>
+<PRE>&lt;!-- This line text, enclosed in an HTML page, will not print.
+This line of text, will not print               --&gt;
+</PRE>
+<H2><A NAME="htmlref2_0001000113000200">!DOCTYPE</A></H2>
+&lt;<B>!DOCTYPE&gt;<BR>
+</B><P>
+Задает версию HTML, используемую в текущем документе.
+Команда !DOCTYPE должна быть первой командой в документе.
+Команда !DOCTYPE является обязательным требованием языка HTML 3.2.
+<P><B>Пример</B>
+<PRE>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"&gt;
+</PRE>
+<H2><A NAME="htmlref2_0001000113000300">A</A></H2>
+&lt;<B>A<BR></B>
+<B>HREF=</B><I>reference (url)</I><BR>
+<b>METHODS=</b><i>methods of HTTP protocol</i> (через запятую)<br>
+    <B>NAME=</B><I>label</I><BR>
+    <B>REL=</B><I>relationship</I><BR>
+    <B>REV=</B><I>revision</I><BR>
+    <B>TARGET=</B><I>window</I><BR>
+    <B>TITLE=</B><I>title</I><BR>
+    <b>URN=</b><i>uniform resource name</i><br>
+    &gt;<BR>
+<P>
+Задание гиперссылки (anchor - анкер).
+В скобках &lt;A&gt; и &lt;/A&gt; может быть текст или
+<a href="img.html#img" TARGET="contentFrame">рисунок</a> (описание графического файла).
+<P>
+Используя <b>атрибут</b> HREF= команда задает гиперссылку, связанную
+с текстом или рисунком.
+<P>
+Используя <b>атрибут</b> NAME= команда задает символическую метку внутри
+документа.
+<DL><DT><B><A NAME="htmlref2_0001000113000301">HREF=</B></A><I>reference</I>
+</DT>
+<DD>Задание адреса гиперссылки в <a href="url.html#url" TARGET="contentFrame">URL</a>
+формате.
+Если документ находится на том же сервере, то допускаются неполные
+адреса (пути к файлу), согласно правилам UNIX'а. Неполные адреса
+могут быть модифицированы командой
+<a href="#htmlref2_0001000113000800">BASE</A>.
+</DD>
+<DT><B><A NAME="htmlref2_0001000113000302">NAME=</B></A><I>label</I>
+</DT><DD>Задание метки внутри HTML документа. Ссылка на метку (label) внутри
+документа начинается со знака # (#label). Ссылка на метку другого
+документа имеет вид (url#label).
+</DD><DT><B><A NAME="htmlref2_0001000113000303">REL=</B></A><I>relationship</I>
+</DT><DD>Определяет систему связей для документа. Работает только
+при наличии <b>атрибута</b> HREF. Содержит, разделенные запятыми,
+отношения - список докуметов, которые имеют (или будут иметь) отношение к данному
+документу (необязательный параметр).
+</DD>
+<DT><B><A NAME="htmlref2_0001000113000304">REV=</B></A><I>revision</I>
+</DT><DD>Тоже самое, что и <b>REL</b> только отношения имеют обратный порядок
+- список документов, к которым данный документ имеет отношение
+(необязательный параметр).
+</DD>
+<DT><B><A NAME="htmlref2_0001000113000305">TARGET=</B></A><I>window</I></DT>
+<DD>Определяет место (окно - window) загрузки документа.
+Этот <b>атрибут</b> используется при использовании многооконных документов,
+определяемых командой
+<A href="#htmlref2_0001000113002000">FRAME</A>
+(см. также команду
+<A href="#htmlref2_0001000113000800">BASE TARGET=</A>).
+Прармент <I>window</I> может принимать следующие значения:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><I>window</I>
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Имя активного окна, куда следует загрузить докумет (окно должно быть ранее
+описано в задании FRAMEs). Если окно с этим именем отсутствует,
+то открывается новое окно.</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><B><A NAME="htmlref2_0001000113000306">_blank</B></A></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Закрузка документа в новое окно (без имени).</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+<B><A NAME="htmlref2_0001000113000307">_parent</B></A></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в "родительское" окно по отношению к текущему.</FONT></TD>
+</TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><B>
+<A NAME="htmlref2_0001000113000308">_self</B></A></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в то же самое окно, откуда он был вызван.</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><B>
+<A NAME="htmlref2_0001000113000309">_top</B></A></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в основное окно.</FONT></TD></TR></TABLE>
+</DD>
+<DT><B><A NAME="htmlref2_000100011300030a">TITLE=</B></A><I>name</I>
+</DT><DD>Информационный параметр. Определяет заголовок,
+который появляется во время загрузки документа. Соответсвует команде
+<b>&lt;TITLE&gt;</b> в заголовке документа.
+</DD></DL>
+<P><B>Примеры</B>
+<PRE>&lt;A HREF="http://www.comapany.com"&gt;Это адрес компании.&lt;/A&gt;
+&lt;A HREF="home.html"&gt;Ссылка на файл home.html в той же<br> директории.&lt;/A&gt;
+&lt;A TARGET="viewer" HREF="sample.htm"&gt;Загрузка в окно <br>"viewer".&lt;/A&gt;</PRE>
+<H2><A NAME="htmlref2_0001000113000400">ADDRESS</A></H2>
+&lt;<B>ADDRESS&gt;<BR></B>
+<P>
+Задание адреса. Эта команда обычно используется в конце документа.
+Выводится как правило курсивом (italic).
+<P>
+<B>Пример</B>
+<PRE>&lt;ADDRESS&gt;Текст выводится курсивом.&lt;/ADDRESS&gt;</PRE>
+<H2><A NAME="htmlref2_0001000113000500">APPLET</A></H2>
+&lt;<B>APPLET</B><BR> 
+<B>ALIGN=</B><I>LEFT</I>|<B>RIGHT</B>|<B>CENTER</B><BR> <B>ALT=</B><I>alternateText</I><BR>
+<B>CODEBASE=</B><I>codebaseURL</I><BR>
+<B>CODE=</B><I>appletFile</I><BR>
+<B>HEIGHT=</B><I>pixels</I><BR>
+<B>HSPACE=</B><I>pixels</I> &gt;<BR>
+<B>NAME=</B><I>appletInstanceName</I> [&lt;
+<B>PARAM</B> <B>NAME</B> <B>=</B> <I>AttributeName</I> &gt;]<BR> <B>WIDTH=</B><I>pixels</I><BR>
+<B>VSPACE=</B><I>pixels</I><BR>
+&lt;<B>/APPLET&gt;<BR></B>
+<P>
+Подключение Java приложения (applet) в HTML документ.
+<DL><DT><B><A NAME="htmlref2_0001000113000501">ALIGN=</B></A><I>alignment</I>
+</DT><DD>Расположение OBJECT в тексте.
+</DD><DT><B><A NAME="htmlref2_0001000113000502">ALT=</B></A><I>alternateAppletText</I>
+</DT><DD>Текст для просмотрщиков не поддерживающих Java.
+</DD><DT><B><A NAME="htmlref2_0001000113000503">CODE=</B></A><I>appletFile</I>
+</DT><DD>Имя Java приложения.
+</DD><DT><B>
+<A NAME="htmlref2_0001000113000504">CODEBASE=</B></A><I>codebaseURL</I>
+</DT><DD>Базовый URL адрес (директория) с Java программой.
+</DD><DT><B><A NAME="htmlref2_0001000113000505">HEIGHT=</B></A><I>pixels</I>
+</DT><DD>Начальна высота приложения.
+</DD><DT><B><A NAME="htmlref2_0001000113000506">HSPACE=</B></A><I>pixels</I>
+</DT><DD>Горизонтальная размер приложения.
+</DD><DT><B><A NAME="htmlref2_0001000113000507">NAME=</B></A><I>appletInstanceName</I>
+</DT><DD>NAME используется для идентификации данного приложения (applet) в других
+приложениях (applets) на HTML странице.
+</DD><DT><B><A NAME="htmlref2_0001000113000508">PARAM NAME=</B></A><I>AttributeName</I>
+</DT><DD>Use NAME= to pass applet-specific arguments in from an HTML page.
+</DD><DT><B><A NAME="htmlref2_0001000113000509">VSPACE=</B></A><I>pixels</I>
+</DT><DD>Вертикальный отступ от applet.
+</DD><DT><B><A NAME="htmlref2_000100011300050a">WIDTH=</B></A><I>pixels</I>
+</DT><DD>Начальна ширина приложения.
+</DD></DL>
+<H2><A NAME="htmlref2_0001000113000600">AREA</A></H2>
+&lt;<B>AREA<BR></B>
+<B>COORDS=</B><I>coords</I><BR>
+<B>SHAPE=</B><I>shape-type</I><BR>
+<B>NOHREF</B> <BR>
+<B>HREF=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+<B>TARGET=</B><I>window</I> &gt;<BR>
+<P>
+Определение "горячих точек"  при формаровании карты
+(image map) активного рисунка.
+<DL><DT><B><A NAME="htmlref2_0001000113000601">COORDS=</B></A><I>coords</I>
+</DT><DD>Координаты соответсвующие виду разметки (shape).
+</DD><DT><B><A NAME="htmlref2_0001000113000602">HREF=</B></a> href="url.html" TARGET="contentFrame"><I>url</I></a>
+</DT><DD>Гиперссылка.
+</DD><DT><B><A NAME="htmlref2_0001000113000603">NOHREF</B></A>
+</DT><DD>Определение области без ссылок.
+</DD><DT><B><A NAME="htmlref2_0001000113000604">SHAPE=</B></A><I>shape-type</I>
+</DT><DD>Задание типа разметки. Тип <I>shape</I> имеет следующие значения:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RECT
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Прямоугольник.
+4 координаты: <I>x1</I>, <I>y1</I>, <I>x2</I>, и <I>y2</I>.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RECTANGLE
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Прямоугольник.
+4 координаты: <I>x1</I>, <I>y1</I>, <I>x2</I>, и <I>y2</I>.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">CIRC
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Круг.
+3 координаты: <I>centerx</I>, <I>centery</I>, и <I>radius</I>.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">CIRCLE
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Круг.
+3 координаты: <I>centerx</I>, <I>centery</I>, и <I>radius</I>.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">POLY
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Многоуголиник.
+задается 3 и более парами координат, определяющих область.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">POLYGON
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Многоуголиник.
+задается 3 и более парами координат, определяющих область.
+</FONT></TD></TR></TABLE>
+</DD><DT><B><A NAME="htmlref2_0001000113000605">TARGET=</B></A><I>window</I>
+</DT><DD>Задание окна для загрузки докумета. Параметр <I>window</I>
+принимает одно из следующих значений:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><I>window</I>
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Имя заданнго ранее окна для загрузки. Если имя окна не задано, то
+документ открывается в новом окне.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_blank
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в новое окно без имени.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_parent
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в "родительское" окно по отношению к текущему.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_self
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в текущее окно.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_top
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загузка документа в основное окно просмотрщика.
+</FONT></TD></TR></TABLE>
+</DD></DL>
+<P><B>Пример</B>
+<PRE>&lt;AREA SHAPE="RECT" COORDS="50, 25, 150, 125" <br> HREF="http://www.sample.com"&gt;
+&lt;AREA SHAPE="RECT" COORDS="50, 25, 150, 125" NOHREF&gt;
+&lt;AREA TARGET="viewer" HREF="sample.htm" SHAPE="CIRCLE" <br>COORDS="50, 25, 150, 125"&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113000700">B</A></H2>
+&lt;<B>B&gt;<BR>
+</B><P>Полужирный текст.
+<P><B>Пример</B>
+<PRE>&lt;B&gt;Displayed in a bold typeface.&lt;/B&gt;</PRE>
+<H2><A NAME="htmlref2_0001000113000800">BASE</A></H2>
+&lt;<B>BASE<BR></B>
+<B>HREF=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+<B>TARGET=</B><I>window</I>&gt;<BR>
+<P>Задание базового URL адреса для сокращенных адресов.
+<DL><DT><B><A NAME="htmlref2_0001000113000801">HREF=</B></A>
+<a href="url.html" TARGET="contentFrame"><I>url</I></a>
+</DT><DD>Задание полного URL адреса документа, относительно которого
+определяются сокращенные адреса.
+</DD><DT><B>
+<A NAME="htmlref2_0001000113000802">TARGET=</B></A><I>window</I>
+</DT><DD>Задает имя окна загрузки всех документов, гиперссылки на которые
+находятся в данном документе. Параметр <I>window</I> принимает значения:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><I>window</I>
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Имя заданнго ранее окна для загрузки. Если имя окна не задано, то
+документ открывается в новом окне.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_blank
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в новое окно без имени.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_parent
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в "родительское" окно по отношению к текущему.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_self
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загрузка документа в текущее окно.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_top
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Загузка документа в основное окно просмотрщика.
+</FONT></TD></TR></TABLE>
+</DD></DL>
+
+<P><B>Примеры</B>
+<PRE>&lt;BASE HREF="http:// www.sample.com/hello.htm"&gt;
+&lt;BASE HREF="http:// www.sample.com/hello.htm" TARGET="viewer"&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113000900">BASEFONT</A></H2>
+&lt;<B>BASEFONT<BR></B>
+<B>COLOR=</B><I>color</I><BR>
+<B>NAME=</B><I>name</I><BR>
+<B>SIZE=</B><I>n</I>&gt;<BR>
+<P>
+Установка базовых значений для шрифта, используемого в документе.
+Эти значения используются по умолчанию для неформатируемого
+текста, <b>style sheet</b> и командой
+<font color=red>FONT</font>.
+<DL><DT><B><A NAME="htmlref2_0001000113000901">COLOR=</B></A>
+<a href="color.html#color"><I>color</I></a>
+</DT><DD>Задание цвета для базового шрифта.
+</DD><DT><B><A NAME="htmlref2_0001000113000902">NAME=</B></A><I>name</I>
+</DT><DD>Задание <a href="fonts.html#name">имени</a> базового шрифта.
+</DD><DT><B><A NAME="htmlref2_0001000113000903">SIZE=</B></A><I>n</I>
+</DT><DD>
+Задание размера шрифта. Число <I>n</I> принимает значения от 1 до 7
+включительно. Значение по умолчанию равно 3.
+Позволяет задавать относительные размеры шрифта, например,
+&lt;FONT SIZE=+3&gt;.</DD></DL>
+
+<P><B>Примеры</B>
+<PRE>&lt;BASEFONT SIZE=3&gt; This sets the base font size to 3.
+&lt;FONT SIZE=+4&gt; Now the font size is 7.
+&lt;FONT SIZE=-1&gt; Now the font size is 2.</PRE>
+
+<H2><A NAME="htmlref2_0001000113000a00">BGSOUND</A></H2>
+&lt;<B>BGSOUND<BR></B>
+<B>SRC=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+<B>LOOP=</B><I>n</I> &gt;<BR>
+<P>
+Задние фоновых звуков для страницы в формате WAV,  AU или MIDI.
+<DL><DT><B><A NAME="htmlref2_0001000113000a01">SRC=</B></A>
+<a href="url.html" TARGET="contentFrame"><I>url</I></a>
+</DT><DD>URL адрес звукового файла.
+</DD><DT><B><A NAME="htmlref2_0001000113000a02">LOOP=</B></A><I>n</I>
+</DT><DD>Сколько раз данный файл проигрывать. Если <I>n</I>= -1
+или <I>LOOP=</I>INFINITE тогда звуковой файл проигрывается непрерыно.
+(см. раздел <A HREF="img.html#sound" TARGET="contentFrame">Звуки</A>).
+</DD></DL>
+<H2><A NAME="htmlref2_0001000113000b00">BIG</A></H2>
+&lt;<B>BIG&gt;<BR></B>
+<P>
+Увеличение текущего размера шрифта на единицу.
+
+<P><B>Пример</B>
+<PRE>&lt;BIG&gt;This text is larger&lt;/BIG&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113000c00">BLOCKQUOTE</A></H2>
+&lt;<B>BLOCKQUOTE&gt;<BR></B>
+<P>
+Выделение текста, заданием левого и правого отступа.
+
+<P><B>Пример</B>
+<PRE>&lt;P&gt;He said,
+&lt;BLOCKQUOTE&gt;"Hi there!" &lt;/BLOCKQUOTE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113000d00">BODY</A></H2>
+&lt;<B>BODY<BR></B>
+<B>BACKGROUND=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+<B>BGCOLOR=</B><I>color</I><BR>
+<B>BGPROPERTIES=FIXED<BR></B>
+<B>LINK=</B><I>color</I><BR>
+<B>TEXT=</B><I>color</I><BR>
+<B>TOPMARGIN=</B><I>n</I><BR>
+<B>VLINK=</B><I>color</I>&gt;<BR>
+<P>
+Общие параметры докумета.
+<DL><DT><B><A NAME="htmlref2_0001000113000d01">BACKGROUND=</B></a>
+<a href="url.html" TARGET="contentFrame"><I>url</I></a>
+</DT><DD>Задание фонового рисунка для всего документа.
+</DD><DT><B><A NAME="htmlref2_0001000113000d02">BGCOLOR=</B></A><I>color</I>
+</DT><DD>Задание цвета фона документа.
+Значение <I>color</I> -- имя или RGB номер цвета.
+См. <A HREF="color.html" TARGET="contentFrame">Color</A>.
+</DD><DT><B><A NAME="htmlref2_0001000113000d03">BGPROPERTIES=</B></A>FIXED
+</DT><DD>Запрещение сролинга для фонового рисунка (поддерживается IE 3.0).
+</DD><DT><B><A NAME="htmlref2_0001000113000d04">LEFTMARGIN=</B></A><I>n</I>
+</DT><DD>Левый отступ в пикселах (поддерживается IE 3.0).
+</DD><DT><B><A NAME="htmlref2_0001000113000d05">LINK=</B></A><I>color</I>
+</DT><DD>Задание цвета гиперссылки на не просмотренный документ.
+Значение <I>color</I> -- имя или RGB номер цвета.
+См. <A HREF="color.html" TARGET="contentFrame">Color</A>.
+</DD><DT><B><A NAME="htmlref2_0001000113000d06">TEXT=</B></A><I>color</I>
+</DT><DD>Задание цвета текста. Значение <I>color</I> -- имя или RGB номер цвета.
+См. <A HREF="color.html" TARGET="contentFrame">Color</A>.
+</DD><DT><B><A NAME="htmlref2_0001000113000d07">TOPMARGIN=</B></A><I>n</I>
+</DT><DD>Верхний отступ в пикселах (поддерживается IE 3.0).
+</DD><DT><B><A NAME="htmlref2_0001000113000d08">VLINK=</B></A><I>color</I>
+</DT><DD>Задание цвета гиперссылок просмотренных документов.
+Значение <I>color</I> -- имя или RGB номер цвета.
+См. <A HREF="color.html" TARGET="contentFrame">Color</A>.
+</DD>
+<DT><B><A NAME="htmlref2_alink">ALINK=</B></A><I>color</I>
+</DT><DD>Задание цвета активной гиперссылки вутри документа.
+Значение <I>color</I> -- имя или RGB номер цвета.
+См. <A HREF="color.html" TARGET="contentFrame">Color</A>.
+</DL>
+
+<P><B>Пример</B>
+<P>Использование фонового рисунка:
+
+<PRE>&lt;BODY BACKGROUND="/icons/bg.gif" BGPROPERTIES=FIXED
+BGCOLOR=#FFFFFF TEXT=#000000 LINK=#ff6600 VLINK=#330099&gt;</PRE>
+
+<PRE>&lt;HTML&gt; &lt;BODY&gt;Here's a Web page!&lt;/BODY&gt;&lt;/HTML&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113000e00">BR</A></H2>
+<B>&lt;BR<BR></B>
+<B>CLEAR=align-type&gt;<BR>
+</B><P>Переход на следующую строку.
+<DL><DT><B><A NAME="htmlref2_0001000113000e01">CLEAR=</B></A><I>align-type</I>
+</DT><DD>
+Переход на новую строку так, чтобы текст размещался после left- или
+right- прижатых (align) "плавающих" объектов
+(<a href="img.html#float" TARGET="contentFrame">Графика</a>, Таблицы, Окна).
+<BR>Значения <I>align-type</I>:
+<TABLE BORDER=0>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><B>LEFT</B>
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Следуемый далее текст располагался
+ниже прижатого влево "плавающего" изображения (картинки) или таблицы.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><B>RIGHT</B>
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Следуемый далее текст располагался
+ниже прижатого вправо "плавающего" изображения (картинки) или таблицы.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><B>ALL</B>
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Расположить следующий далее текст ниже всех "плавающих" объектов
+(картинки, таблицы и т.д.).
+</FONT></TD></TR></TABLE>
+</DD></DL>
+<H2><A NAME="htmlref2_0001000113000f00">CAPTION</A></H2>
+&lt;<B>CAPTION<BR></B>
+<B>ALIGN=</B><I>align-type</I>&gt;<BR>
+<P>
+Задает подпись (заголовок) к таблице.
+<DL><DT><B><A NAME="htmlref2_0001000113000f01">ALIGN=</B></A><I>align-type</I>
+</DT><DD>Расположение заголовка, <I>align-type</I> принимает значения:
+LEFT, RIGHT, TOP или BOTTOM. По умолчанию заголовок центрируется и располагается
+над таблицей.
+</DD></DL>
+<P>Команда <B>CAPTION</B> работает только внутри команды
+<A HREF="#htmlref2_0001000113004600">TABLE</A> (см. раздел
+<a href="tables.html" TARGET="contentFrame">Таблицы</a>).
+
+<P><B>Пример</B>
+<PRE>&lt;TABLE&gt;
+&lt;CAPTION ALIGN=BOTTOM&gt;
+This caption will appear centered below the table.
+&lt;/CAPTION&gt;
+&lt;TR&gt;
+     ....
+&lt;/TR&gt;
+&lt;/TABLE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001000">CENTER</A></H2>
+<P>Центрирование.
+
+<P><B>Пример</B>
+<PRE>&lt;CENTER&gt;Hi there!&lt;/CENTER&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001100">CITE</A></H2>
+&lt;<B>CITE&gt;<BR></B>
+<P>Цитаты (выводятся как правило курсивом).
+
+<P><B>Пример</B>
+<PRE>&lt;CITE&gt;Book Title.&lt;/CITE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001200">CODE</A></H2>
+&lt;<B>CODE&gt;<BR></B>
+<P>
+Предназначен для выдачи текстов программ (code listing, sample).
+Выводит текст малым (small) шрифтом фиксированной ширины.
+Спецификация FONT FACE не воспринимается.
+
+<P><B>Пример</B>
+<PRE>&lt;CODE&gt;Here is some text in a small fixed-width font.&lt;/CODE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001300">COL</A></H2>
+&lt;<B>COL<BR></B>
+<B>ALIGN=</B><I>align-type</I><BR>
+<B>SPAN=</B><I>n</I>&gt;<BR>
+<P>Задание свойств одного или более столбцов
+<a href="tables.html" TARGET="contentFrame">таблицы</a>
+Используется совместно с командой
+<A HREF="#htmlref2_0001000113001400">COLGROUP</A>.
+<DL><DT><B><A NAME="htmlref2_0001000113001301">ALIGN=</B></A><I>align-type</I>
+</DT><DD>Задание размещения текста в клетке столбца, <I>align-type</I>
+принимает значения CENTER, LEFT или  RIGHT.
+</DD><DT><B><A NAME="htmlref2_0001000113001302">SPAN=</B></A><I>n</I>
+</DT><DD>Задание числа поледовательно идущих стобцов.
+</DD></DL>
+<P>Команда работает только внутри команды
+<A HREF="#htmlref2_0001000113004600">TABLE</A> (см. раздел
+<a href="tables.html" TARGET="contentFrame">Таблицы</a>).
+<P>Параметры, определяемые командой COL, "сильнее" параметров команды COLGROUP.
+
+<P><B>Пример</B>
+<PRE>&lt;TABLE&gt;
+&lt;COLGROUP&gt;
+    &lt;COL ALIGN=RIGHT&gt;
+    &lt;COL ALIGN=LEFT&gt;
+&lt;COLGROUP&gt;
+    &lt;COL ALIGN=CENTER&gt;
+&lt;TBODY&gt;
+    &lt;TR&gt;
+    &lt;TD&gt;This is the first column in the group and is <br>right-aligned.&lt;/TD&gt;
+    &lt;TD&gt;This is the second column in the group and is <br>left-aligned.&lt;/TD&gt;
+    &lt;TD&gt;This column is in a new group and is centered.&lt;/TD&gt;
+    &lt;/TR&gt;
+&lt;/TABLE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001400">COLGROUP</A></H2>
+&lt;<B>COLGROUP<BR></B>
+<B>ALIGN=</B><I>align-type</I><BR>
+<B>SPAN=</B><I>n</I>&gt;<BR>
+<P>Задание свойств одного или более столбцов.
+<DL><DT><B><A NAME="htmlref2_0001000113001401">ALIGN=</B></A><I>align-type</I>
+</DT><DD>Задание расположения клетки, <I>align-type</I> принимает
+значения CENTER, LEFT или RIGHT.
+</DD><DT><B><A NAME="htmlref2_0001000113001402">SPAN=</B></A><I>n</I>
+</DT><DD>Задание числа последовательных столбцов.
+</DD></DL>
+<P>Команда работает только внутри команды
+<A HREF="#htmlref2_0001000113004600">TABLE</A> (см. раздел
+<a href="tables.html" TARGET="contentFrame">Таблицы</a>).
+<P>Свойства, заданные командой COLGROUP, переопределяются комндой COL.
+<P>Эта команда влияет на отрисовку линий, определяемых
+атрибутом RULES= команды
+<A HREF="#htmlref2_0001000113004600">TABLE</A>.
+
+<P><B>Пример</B>
+<PRE>&lt;TABLE&gt;
+&lt;COLGROUP ALIGN=RIGHT&gt;
+&lt;COLGROUP SPAN=2 ALIGN=LEFT&gt;
+&lt;TBODY&gt;
+    &lt;TR&gt;
+    &lt;TD&gt;This column is in the first group and is <br>right-aligned&lt;/TD&gt;
+    &lt;TD&gt;This column is in the second group and is <br>left-aligned&lt;/TD&gt;
+    &lt;TD&gt;This column is in the second group and is <br>left-aligned&lt;/TD&gt;
+    &lt;/TR&gt;
+&lt;/TABLE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001500">COMMENT</A></H2>
+<P>
+Задание кометариев в документе.
+Текст внутри команды игнорируется просмотрщиком до
+первой команды HTML или до конца коментария.
+
+<P><B>Пример</B>
+<PRE>&lt;COMMENT&gt;Данный текст не выводится.&lt;/COMMENT&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001600">DD</A></H2>
+&lt;<B>DD&gt;<BR></B>
+<P>Задание элемента <a href="list.html#def-data" TARGET="contentFrame">списка определений.</a>
+
+<P><B>Пример</B>
+<PRE>&lt;DL&gt;
+&lt;DT&gt;Cat
+  &lt;DD&gt;A furry cute animal that purrs and likes milk.
+&lt;DT&gt;Lizard
+  &lt;DD&gt;A weird desert animal with a long tongue.
+&lt;/DL&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001700">DFN</A></H2>
+&lt;<B>DFN&gt;<BR></B>
+<P>Выделение определений (выводится как правило курсивом).
+
+<P><B>Пример</B>
+<PRE>&lt;DFN&gt;HTML stands for hypertext markup language.&lt;/DFN&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001800">DIR</A></H2>
+&lt;<B>DIR&gt;<BR></B>
+<P>Задание <a href="list.html#dir" TARGET="contentFrame">списка directory</a>.
+Элемент списка задается командой
+<A HREF="#htmlref2_0001000113002c00">LI</A>.
+Элемент не может содержать более 20 символов.
+
+<P><B>Пример</B>
+<PRE>&lt;DIR&gt; &lt;LI&gt;Art
+&lt;LI&gt;History
+&lt;LI&gt;Literature
+&lt;LI&gt;Sports
+&lt;LI&gt;Entertainment
+&lt;LI&gt;Science
+&lt;/DIR&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001900">DIV</A></H2>
+&lt;<B>DIV</B> <B>ALIGN=</B><I>align-type</I> &lt;<B>/DIV&gt;<BR></B>
+<P>Размещение группы элементов друг под другом.
+<DL><DT><B><A NAME="htmlref2_0001000113001901">ALIGN=</B></A><I>align-type</I>
+</DT><DD>Значение <I>align-type</I> равно LEFT, CENTER, или RIGHT.
+По умолчанию принимается LEFT.
+</DD></DL>
+
+<P><B>Пример</B>
+<PRE>&lt;DIV&gt;
+This text represents a section.
+&lt;/DIV&gt;
+&lt;DIV ALIGN=CENTER&gt;
+This text represents another section.
+&lt;/DIV&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001a00">DL</A></H2>
+&lt;<B>DL&gt;<BR></B>
+<P>Задание <a href="list.html#def-data" >списка определений.</a>
+
+<P><B>Пример</B>
+<PRE>&lt;DL&gt;
+&lt;DT&gt;Cat
+ &lt;DD&gt;A furry cute animal that purrs and likes milk.
+&lt;DT&gt;Lizard
+ &lt;DD&gt;A weird desert animal with a long tongue.
+&lt;/DL&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001b00">DT</A></H2>
+&lt;<B>DT&gt;<BR></B>
+<P>Задание term'а в
+<a href="list.html#def-data" TARGET="contentFrame">списке определений.</a>
+
+<P><B>Пример</B>
+<PRE>&lt;DL&gt; &lt;DT&gt;Cat&lt;DD&gt;A furry cute animal that purrs and likes milk.
+&lt;DT&gt;Lizard&lt;DD&gt;A weird desert animal with a long tongue.&lt;/DL&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001c00">EM</A></H2>
+<P>Выделение текста (выводится как правило курсивом).
+
+<P><B>Пример</B>
+<PRE>&lt;EM&gt;This text will be in italics.&lt;/EM&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001d00">EMBED</A></H2>
+&lt;<B>EMBED<BR></B>
+<B>HEIGHT=</B><I>size</I> <B>of</B> <B>object<BR></B>
+<B>NAME=</B><I>programmatic</I> <B>name<BR></B>
+<B>OPTIONAL</B> <B>PARAM=&quot;value&quot;</B> <B>...</B> <B>OPTIONAL</B> <B>PARAM=</B><BR>
+<B>PALETTE=</B><I>foreground</I> | <B>background<BR></B>
+<B>SRC=</B><I>data</I> <B>to</B> <B>object<BR></B>
+<B>WIDTH=</B><I>size</I> <B>of</B> <B>object&gt;<BR></B>
+<P>
+Определения внедряемых объектов. Аналог команды
+<A HREF="#htmlref2_0001000113003500">OBJECT</A>.
+Команда EMBED используется для совместимости с ранними версиями HTML документов.
+<DL><DT><B><A NAME="htmlref2_0001000113001d01">HEIGHT=</B></A>
+<I>size of object</I></DT><DD>Высота в пикселах.
+</DD><DT><B>
+<A NAME="htmlref2_0001000113001d02">NAME=</B></A><I>programmatic name</I>
+</DT><DD>Имя для ссылок на данный OBJECT.</DD>
+<DT><B><A NAME="htmlref2_0001000113001d03">OPTIONAL PARAM=</B></A><I>value</I>
+</DT><DD>Параметры объекта.
+</DD><DT><B><A NAME="htmlref2_0001000113001d04">PALETTE=</B></A><I>foreground | background</I>;
+</DT><DD>Задание the color palette to the foreground or background color.
+</DD><DT><B><A NAME="htmlref2_0001000113001d05">SRC=</B></A><I>data to object</I>
+</DT><DD>Задание данных для объекта.
+</DD><DT><B><A NAME="htmlref2_0001000113001d06">WIDTH=</B></A><I>size of object</I>
+</DT><DD>Ширина в пикселах.</DD></DL>
+
+<P><B>Пример</B>
+<PRE>&lt;EMBED SRC="MyMovie.AVI" WIDTH=100 HEIGHT=250
+AUTOSTART=TRUE PLAYBACK=FALSE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113001e00">FONT</A></H2>
+&lt;<B>FONT<BR></B>
+<B>SIZE=</B><I>n</I><BR>
+<B>FACE=</B><I>name</I><BR>
+<B>COLOR=</B><I>color</I>&gt;<BR>
+<P>
+Задание размера, цвета и вида шрифта.
+<DL><DT><B><A NAME="htmlref2_0001000113001e01">COLOR=</B></A><I>color</I>
+</DT><DD>Задание цвета шрифта, <I>color</I> имя или RGB номер цвета, см.
+<A HREF="color.html" TARGET="contentFrame">Color</A>.
+</DD><DT><B><A NAME="htmlref2_0001000113001e02">FACE=</B></A>"<I>name</I> [,<I>name2</I>[,<I>name3</I>]]"
+</DT><DD>Задание семейства шрифтов (гарнитуры), см. раздел
+<a href="fonts.html#name" TARGET="contentFrame">Шрифты</a>.
+</DD><DT><B><A NAME="htmlref2_0001000113001e03">SIZE=</B></A><I>n</I>
+</DT><DD>Задание размера шрифта, см. раздел
+<a href="fonts.html#size-font" TARGET="contentFrame">Шрифты</a>.
+Параметр n принимает значения от 1 до 7 для абсолютных значений размерови
+(+)plus или (-)minus перед числом для размера, задаваемого относительного размера
+шрифта, определенного командой
+<A HREF="#htmlref2_0001000113000900">BASEFONT</A>.
+</DD></DL>
+
+<H2><A NAME="htmlref2_0001000113001f00">FORM</A></H2>
+&lt;<B>FORM<BR></B>
+<B>ACTION=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+<B>METHOD=</B><I>get-post</I><BR>
+<B>TARGET=</B><I>window</I>&gt;<BR>
+<P>Задание формы для пользователя.<DL><DT><B>
+<A NAME="htmlref2_0001000113001f01">ACTION=</B></a>
+<a href="url.html" TARGET="contentFrame"><I>url</I></a>
+</DT><DD>
+Передача данных на сервер. Адрес обрабатывающей программы (CGI Script) задается <b>атрибутом</b> action. Если он не задан, используется BASE URL документа
+(либо URL адрес самого документа, либо URL адрес, определяемый командой BASE HREF).
+</DD><DT><B><A NAME="htmlref2_0001000113001f02">METHOD=</B></A><I>get-post</I>
+</DT><DD>Способ передачи данных на сервер (по умолчанию GET):
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">GET</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Передача по методу URL encoding: данные добавляюся в качестве параметров к адресу URL.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">POST</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Данные передаются в теле HTTP запроса.</FONT></TD>
+</TR></TABLE>
+</DD><DT><B><A NAME="htmlref2_0001000113001f03">TARGET=</B></A><I>window</I>
+</DT><DD>Определяет имя окна, в которое следует загрузить ответ. Значения <I>window</I>:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2"><I>window</I></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Specifies to load the link into the targeted window. The <I>window</I> must begin with an alpha-numeric character to be valid, except for the four  windows detailed below.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_blank</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Specifies to load the link into a new blank window. This window is not named.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_parent</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Specifies to load the link into the immediate parent of the document the link is in.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_self</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Specifies to load the link into the same window the link was clicked in.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">_top</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Specifies to load the link into the full body of the window.</FONT></TD></TR></TABLE>
+</DD></DL>
+
+<P><B>Пример</B>
+<PRE>&lt;FORM TARGET="viewer" ACTION="http://www.sample.com/bin/search"&gt;
+    ...
+&lt;/FORM&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113002000">FRAME</A></H2>
+&lt;<B>FRAME<BR></B>
+<B>ALIGN=</B><I>align-type</I><BR>
+<B>FRAMEBORDER=</B><I>1</I>|<B>0<BR></B>
+<B>MARGINHEIGHT=</B><I>height</I><BR>
+<B>MARGINWIDTH=</B><I>width</I><BR>
+<B>NAME=</B><I>name</I><BR>
+<B>SCROLLING=</B><I>yes</I>|<B>no<BR></B>
+<B>SRC=</B><I>address</I> <BR>
+<P>
+Определение одного окна в команде FRAMESET.
+У команды FRAME отсутсвует ограничетель "конец команды".
+<DL>
+<DT><B><A NAME="htmlref2_0001000113002001">ALIGN=</B></A><I>align-type</I></DT>
+<DD>
+Размещение содержимого в окне или способ сколинга для текста.
+Значения <I>align-type</I>:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TOP</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Текст прижат к верней части окна.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MIDDLE</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Текст размещен в середине окна.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BOTTOM</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Текст прижат к нижней части окна.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">LEFT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Окно (frame)
+выводится прижатого влево "floating frame," (плавующего окна) и внешний текст обтекает его справа.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RIGHT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Окно (frame)
+выводится прижатого вправо "floating frame," (плавующего окна) и внешний текст обтекает его слева.</FONT></TD></TR></TABLE>
+</DD>
+<DT><B><A NAME="htmlref2_0001000113002002">FRAMEBORDER=</B></A><I>0|1</I></DT>
+<DD>Отрисовка 3-D рамки вокруг окна. 1 (default) - рисовать рамку; 0 - не рисовать рамку.</DD>
+<DT><B><A NAME="htmlref2_0001000113002003">MARGINHEIGHT=</B></A><I>height</I></DT>
+<DD>Верний отступ от края окна в пикселах (pixels).</DD>
+<DT><B><A NAME="htmlref2_0001000113002004">MARGINWIDTH=</B></A><I>width</I></DT>
+<DD>Горизонтальный отступ от края в пикселах (pixels).</DD>
+<DT><B><A NAME="htmlref2_0001000113002005">NAME=</B></A><I>name</I></DT>
+<DD>Задание имени окна (target name).</DD>
+<DT><B><A NAME="htmlref2_0001000113002006">NORESIZE</B></A></DT>
+<DD>Запрет для клиента на изменение размеров окна.</DD>
+<DT><B><A NAME="htmlref2_0001000113002007">SCROLLING=</B></A><I>yes|no</I></DT>
+<DD>Параметры скролинга текста в окне.</DD>
+<DT><B><A NAME="htmlref2_0001000113002008">SRC=</B></A><I>address</I></DT>
+<DD>URL адрес НTML страницы для размещения в данном окне.</DD></DL>
+<P><B>Пример</B>
+<PRE>&lt;FRAME FRAMEBORDER=0 SCROLLING=NO SRC="sample.htm"&gt;</PRE></td></tr></table>
+
+<H2><A NAME="htmlref2_0001000113002100">FRAMESET</A></H2>
+&lt;<B>FRAMESET<BR></B>
+<B>COLS=</B><I>col-widths</I><BR>
+<B>FRAMEBORDER=</B><I>1</I>|<B>0<BR></B>
+<B>FRAMESPACING=</B><I>spacing</I><BR>
+<B>ROWS=</B><I>row-heights</I>
+<P>
+Задание многоокнного документа: использует команды
+<A HREF="#htmlref2_0001000113002000">FRAME</A> внутри <B>FRAMESET</B>,
+и <A HREF="#htmlref2_0001000113003400">NOFRAMES</A> вне.
+<DL>
+<DT><B><A NAME="htmlref2_0001000113002101">COLS=</B></A><I>col-widths</I></DT>
+<DD>Разделение рабочего поля по столбцам по заданным размерам в прцентах (%),
+пикселах (pixels), или
+<a href="ss_frame.html#dim">относительно</a> от других частей (*).</DD>
+<DT><B><A NAME="htmlref2_0001000113002102">FRAMEBORDER=</B></A><I>1|0</I></DT>
+<DD>Задание 3-D рамки вокруг фреймов: 1 (default) - рисовать рамку, 0 - не рисовать рамку.</DD>
+<DT><B><A NAME="htmlref2_0001000113002103">FRAMESPACING=</B></A><I>spacing</I></DT>
+<DD>Задание дополнительного пространства между фреймами в пикселах.</DD>
+<DT><B><A NAME="htmlref2_0001000113002104">ROWS=</B></A><I>row-heights</I></DT>
+<DD>Разделение рабочего поля по строкам по заданным размерам в прцентах (%),
+пикселах (pixels), или
+<a href="ss_frame.html#dim">относительно</a> от других частей (*).</DD>
+</DL>
+<P>
+Атрибуты <B>FRAMEBORDER=</B> и <B>FRAMESPACING=</B>
+команды <B>FRAMESET</B> имеют отношение ко всем окнам в данном <B>FRAMESET</B>
+определяемых командами
+<A HREF="#htmlref2_0001000113002000">FRAME</A>.
+Их значение может быть изменено атрибутами команды FRAME.
+<P><B>Пример</B>
+<PRE>&lt;FRAMESET SCROLLING=YES COLS="25%, 50%, *"&gt;
+    &lt;FRAME SRC="contents.htm"&gt;
+    &lt;FRAME SRC="info.htm"&gt;
+    &lt;FRAME SCROLLING=NO SRC="graphic.htm"&gt;
+&lt;/FRAMESET&gt;</PRE></td></tr></table>
+
+<H2><A NAME="htmlref2_0001000113002200">Hn</A></H2>
+&lt;<B>H</B><I>n</I><BR><B>
+ALIGN=</B><I>align-type</I>&gt;<BR>
+
+<P> Заключенный в теги текст представляет собой заголовок уровня n.Возможны значения n - от 1 до 6.
+
+<DT><B><A NAME="htmlref2_0001000113002201">ALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Sets alignment of header text. <I>Align-type</I> can be CENTER, LEFT or RIGHT. LEFT is default.
+
+</DD></DL>
+
+<P>The end-tag is required.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;H1&gt;Welcome to Internet Explorer!&lt;/H1&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002300">HEAD</A></H2>
+
+&lt;<B>HEAD&gt;<BR>
+
+</B><P>Начальный и конечный теги заголовка документа.
+<P><B>Пример
+
+</B>
+
+<PRE>&lt;HEAD&gt;
+
+&lt;TITLE&gt;A Simple Document&lt;/TITLE&gt;
+
+&lt;/HEAD&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002400">HR</A></H2>
+
+&lt;<B>HR<BR>
+
+</B>    <B>ALIGN=</B><I>align-type</I><BR>
+
+    <B>COLOR=</B><I>color</I><BR>
+
+    <B>NOSHADE<BR>
+
+</B>    <B>SIZE=</B><I>n</I><BR>
+
+    <B>WIDTH=</B><I>n</I>&gt;<BR>
+
+<P>Разрыв текущего текстового потока. В месте разрыва будет вставлена горизонтальная линия.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113002401">ALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Draws the rule left-aligned, right-aligned, or centered. The <I>align-type</I> can be LEFT, RIGHT, or CENTER.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002402">COLOR=</B></A><I>color</I>
+
+ </DT><DD>Sets the color of the rule. The <I>color</I> can be either a hexadecimal, red-green-blue color value or a predefined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002403">NOSHADE</B></A>
+
+ </DT><DD>Draws the rule without 3-D shading.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002404">SIZE=</B></A><I>n</I>
+
+ </DT><DD>Sets the height of the rule in pixels.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002405">WIDTH=</B></A><I>n</I>
+
+ </DT><DD>Sets the width of the rule either in pixels or as a percentage of window width. To specify a percentage, the <I>n</I> must end with the percent (%) sign.
+
+</DD></DL>
+
+<P><B>Пример</B>
+
+<PRE>&lt;HR SIZE=5 WIDTH=80% NOSHADE&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002500">HTML</A></H2>
+
+&lt;<B>HTML&gt;<BR>
+
+</B><P>Начальный и конечный теги всего HTML- документа.
+<P><B>Пример
+</B>
+
+<PRE>&lt;HTML&gt;
+
+&lt;BODY&gt;
+
+&lt;P&gt;This is an HTML document.
+
+&lt;/BODY&gt;
+
+&lt;/HTML&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002600">I</A></H2>
+
+&lt;<B>I&gt;<BR>
+
+</B><P>Заключенный в теги текст будет отображаться в курсивном начертании.
+
+<P><B>Пример</B>
+
+<PRE>&lt;I&gt;This text will be in italics.&lt;/I&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002700">IFRAME</A></H2>
+
+&lt;<B>IFRAME</B> <B>ALIGN=</B><I>align-type</I> <B>FRAMEBORDER=</B><I>1</I>|<B>0</B> <B>MARGINHEIGHT=</B><I>height</I> <B>MARGINWIDTH=</B><I>width</I> <B>NAME=</B><I>name</I> <B>SCROLLING=</B><I>yes</I>|<B>no</B> <B>SRC=</B><I>address</I> &lt;<B>/IFRAM
+E<BR>
+
+</B><P>В документе определяется "плавающий" кадр, который аналогичным образом будет размещен в img.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113002701">ALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Sets the alignment of the frame or of the surrounding text. The <I>align-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TOP
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Surrounding text is aligned with the top of the frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MIDDLE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Surrounding text is aligned with the middle of the frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BOTTOM
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Surrounding text is aligned with the bottom of the frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">LEFT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The frame is drawn as a left-flush "floating frame," and text flows around it.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RIGHT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The frame is drawn as a right-flush "floating frame," and text flows around it.
+
+</FONT></TD></TR></TABLE>
+
+</DD><DT><B><A NAME="htmlref2_0001000113002702">FRAMEBORDER=</B></A><I>0|1</I>
+
+ </DT><DD>Renders a 3-D edge border around the frame. 1 (default) inserts a border. 0 displays no border.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002703">MARGINHEIGHT=</B></A><I>height</I>
+
+ </DT><DD>Controls the margin height for the frame in pixels.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002704">MARGINWIDTH=</B></A><I>width</I>
+
+ </DT><DD>Controls the margin width for the frame in pixels.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002705">NAME=</B></A><I>name</I>
+
+ </DT><DD>Provides a target name for the frame.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002706">NORESIZE</B></A>
+
+ </DT><DD>Prevents the user from resizing the frame.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002707">SCROLLING=</B></A><I>yes|no</I>
+
+ </DT><DD>Creates a scrolling frame.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002708">SRC=</B></A><I>address</I>
+
+ </DT><DD>Displays the source file for the frame.
+
+</DD></DL>
+
+<P><B>Пример
+
+</B>
+
+<PRE>&lt;IFRAME FRAMEBORDER=0 SCROLLING=NO SRC="sample.htm"&gt;&lt;/IFRAME&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002800">IMG</A></H2>
+&lt;<B>IMG<BR></B>
+<B>ALIGN=</B><I>align-type</I><BR>
+<B>ALT=</B><I>text</I><BR>
+<B>BORDER=</B><I>n</I><BR>
+<B>CONTROLS<BR></B>
+<B>DYNSRC=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+<B>HEIGHT=</B><I>n</I><BR>
+<B>HSPACE=</B><I>n</I><BR>
+<B>ISMAP<BR></B>
+<B>LOOP=</B><I>n</I><BR>
+<B>SRC=</B><I>URL address</I><BR>
+<B>START=</B><I>start-event</I><BR>
+<B>USEMAP=</B><I>map-name</I><BR>
+<B>VSPACE=</B><I>n</I><BR>
+<B>WIDTH=</B><I>n</I>&gt;<BR>
+<P>
+Вставка графики в HTML документ.
+<DL>
+<DT><B><A NAME="htmlref2_0001000113002801">ALIGN=</B></A><I>align-type</I>
+</DT><DD>
+Установка размещения картинки и окружающего ее текста
+<b>Атрибут</b> может принимать следующие значения <I>align-type</I>:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TOP
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Текст располагается вверху картинки.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MIDDLE
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Текст располагается по центру картинки.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BOTTOM
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Текст располагается внизу картинки.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">LEFT
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Картинка является "плавающей", текст обтекает картинку справа.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RIGHT
+</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Картинка является "плавающей", текст обтекает картинку слева.
+</FONT></TD></TR></TABLE>
+</DD><DT><B><A NAME="htmlref2_0001000113002802">ALT=</B></A><I>text</I>
+</DT><DD>
+Задает текст, который выводится, если показ картинок отключен или просмотрщик
+не поддерживает графику.
+</DD><DT><B><A NAME="htmlref2_0001000113002803">BORDER=</B></A><I>n</I>
+</DT><DD>
+Определяет ширину рамки, которая рисуется вокруг картинки.
+Если на картинку поставлена гиперссылка, то рамка рисуется цветом,
+указанным для гиперссылок, если ссылки нет, то рамка не выводится.
+</DD><DT><B><A NAME="htmlref2_0001000113002804">CONTROLS</B></A>
+</DT><DD>
+Этот <b>атрибут</b> управляет просмотром видео-клипа.
+Если он присутствует, то клип стартует по указанию пользователя.
+</DD><DT><B><A NAME="htmlref2_0001000113002805">DYNSRC=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+</DT><DD>
+Определяет <a href="url.html#html">URL адрес</a> видео-клипа или
+текста VRML приложения (Stands for Dynamic Source.)
+</DD><DT><B><A NAME="htmlref2_0001000113002806">HEIGHT=</B></A><I>n</I>
+</DT><DD>
+Подобно <b>атрибуту</b> <B>WIDTH=</B> задает высоту в пикселях, которую
+должна иметь картинка при просмотре. Если реальные размеры графического
+файла отличаются от заданных, то просмотрщик масштабирует файл.
+Масштабирование может привести к ухудшению качества изображения.
+</DD><DT><B>
+<A NAME="htmlref2_0001000113002807">HSPACE=</B></A><I>n</I>
+</DT><DD>
+Аналогично <B>VSPACE=</B>
+задается вертикальный отступ в пикселях от картинки.
+Это задание существенно при использовании гиперссылки
+на картинку совместно с <b>атрибутом</b> <B>BORDER=</B>.
+</DD>
+<DT><B><A NAME="htmlref2_0001000113002808">ISMAP</B></A>
+</DT>
+<DD>Отмечает, что данная картинка является картинкой с гиперссылками, которые
+сообщают серверу координаты указываемые пользователем.
+</DD>
+<DT><B><A NAME="htmlref2_0001000113002809">LOOP=</B></A><I>n</I>
+</DT>
+<DD>
+Определяет частоту проигрывания видео клипа (сколько раз).
+Если <I>n</I>=-1, или LOOP=INFINITE, то клип проигрывается непрерывно.
+</DD>
+<DT><B><A NAME="htmlref2_000100011300280a">SRC=</B></A><I>address</I>
+</DT><DD>Задание <a href="url.html#url">URL адреса</a> картинки.
+</DD>
+<DT><B><A NAME="htmlref2_000100011300280b">START=</B></A><I>start-event</I>
+</DT><DD>
+Задание условий начала проигрывания звукового файла, заданного <b>атрибутом</b>
+<B>DYNSRC=</B>. Значения <I>start-event</I> могут быть следующими:
+<TABLE BORDER=0><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">FILEOPEN
+</FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Начинать проигрывание как только закончится загрузка (используется
+по умолчанию).</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MOUSEOVER
+</FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Начинать проигрывать после указания пользователя (курсором мышки).
+</FONT></TD></TR></TABLE>
+<P>Могут присутствовать оба значения, разделенные запятыми.
+</DD>
+<DT><B><A NAME="htmlref2_000100011300280c">USEMAP=</B></A><I>map-name</I>
+</DT><DD>
+Задание картинки для графических активных ссылок на картинке. Ссылки определяются
+командой <A HREF="#htmlref2_0001000113002f00">MAP</A>.
+</DD><DT>
+<B><A NAME="htmlref2_000100011300280d">VSPACE=</B></A><I>n</I>
+</DT><DD>Аналогично <B>HSPACE=</B>
+задается вертикальный отступ в пикселях от картинки.
+Это задание существенно при использовании гиперссылки
+на картинку совместно с <b>атрибутом</b> <B>BORDER=</B>.
+</DD>
+<DT>
+<B><A NAME="htmlref2_000100011300280e">WIDTH=</B></A><I>n</I>
+</DT><DD>
+Подобно <B>HEIGHT=</B>, определяет ширину картинки в пикселях, которую
+должна иметь картинка при просмотре. Если реальные размеры графического
+файла отличаются от заданных, то просмотрщик масштабирует файл.
+Масштабирование может привести к ухудшению качества изображения.
+</DD></DL>
+<H2><A NAME="htmlref2_0001000113002900">INPUT</A></H2>
+&lt;<B>INPUT<BR></B>
+<B>ALIGN=</B><I>align-type</I><BR>
+[<B>CHECKED</B>|]<BR>
+<B>MAXLENGTH=</B><I>length</I><BR>
+<B>NAME=</B><I>name</I><BR>
+<B>SIZE=</B><I>size</I><BR>
+<B>SRC=</B><I>address</I><BR>
+<B>TYPE=</B><I>type</I><BR>
+<B>VALUE=</B><I>value</I>&gt;<BR>
+<P>
+Задание параметров, определяющих ввод запросов (Форм).
+<DL><DT><B><A NAME="htmlref2_0001000113002901">ALIGN=</B></A><I>align-type</I>
+</DT><DD>
+Used when TYPE=IMAGE. Specifies how the next line of text will be aligned with the image. The <I>align-type</I> can be TOP, MIDDLE, or BOTTOM.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002902">CHECKED</B></A>
+
+ </DT><DD>Include CHECKED to set a checkbox or radio button to "selected" when the form first loads.
+
+</DD><DT><B><A NAME="htmlref2_0001000113002903">MAXLENGTH=</B></A><I>length</I>
+
+ </DT><DD>Indicates the maximum number of characters that can be entered into a text control.
+</DD>
+<DT><B><A NAME="htmlref2_0001000113002904">NAME=</B></A><I>name</I>
+</DT><DD>Specifies the name of the control.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002905">SIZE=</B></A><I>size</I>
+
+ </DT><DD>Specifies the size of the control (in characters). For TEXTAREA-type controls, both height and width can be specified, using this format: "<I>width</I>,<I>height</I>".
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002906">SRC=</B></A><I>address</I>
+
+ </DT><DD>Used when TYPE=IMAGE. Specifies the address of the image to be used.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002907">TYPE=</B></A><I>type</I>
+
+ </DT><DD>Specifies what type of control to use. The <I>type</I> can be one of these:
+
+
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">CHECKBOX
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Used for simple Boolean attributes or for attributes that can take multiple values at the same time. It is represented by a number of check box fields, each of which has the sa
+me name. Each selected check box generates a separate name/value pair in the submitted data, even if this results in duplicate names. The default value for check boxes is "on."
+
+
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">HIDDEN
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">No field is presented to the user, but the content of the field is sent with the submitted form. This value can be used to transmit state information about client/server intera
+ction.
+
+
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">IMAGE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">An image field which you can click, causing the form to be immediately submitted. The coordinates of the selected point are measured in pixel units from the upper-left corner o
+f the image, and are returned (along with the other contents of the form) in two name/value pairs. The x-coordinate is submitted under the name of the field with ".x" appended, and the y-coordinate is submitted under the name of the field with ".y" appe
+nded. Any VALUE attribute is ignored. The image itself is specified by the SRC attribute, exactly as for the Image element.
+
+
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">PASSWORD
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The same as the TEXT attribute, except that text is not displayed as the user enters it.
+
+
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RADIO
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Used for attributes that accept a single value from a set of alternatives. Each radio-button field in the group should be given the same name. Only the selected radio button in
+ the group generates a name/value pair in the submitted data. Radio buttons require an explicit VALUE attribute.
+
+
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RESET
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">A button that when clicked resets the form's fields to their specified initial values. The label to be displayed on the button can be specified just as for the SUBMIT button.
+
+
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">SUBMIT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">A button that when clicked submits the form. You can use the VALUE attribute to provide a non-editable label to be displayed on the button. The default label is application-spe
+cific. If a SUBMIT button is clicked in order to submit the form, and that button has a NAME attribute specified, then that button contributes a name/value pair to the submitted data. Otherwise, a SUBMIT button makes no contribution to the submitted dat
+a.
+
+
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TEXT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Used for a single-line text-entry field. Use in conjunction with the SIZE and MAXLENGTH attributes.
+
+</FONT></TD></TR></TABLE>
+
+<P>This default control type is TEXT.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002908">VALUE=</B></A><I>value</I>
+
+ </DT><DD>For textual/numerical controls, specifies the default value of the control. For Boolean controls, specifies the value to be returned when the control is turned on.
+
+</DD></DL>
+
+<P><B>Пример
+
+
+
+</B>
+
+<PRE>&lt;FORM ACTION="http://intranet/survey" METHOD=POST&gt;
+
+&lt;P&gt;Name
+
+&lt;BR&gt;&lt;INPUT NAME="CONTROL1" TYPE=TEXT VALUE="Your Name"&gt;
+
+&lt;P&gt;Password
+
+&lt;BR&gt;&lt;INPUT TYPE="PASSWORD" NAME="CONTROL2"&gt;
+
+&lt;P&gt;Color
+
+&lt;BR&gt;&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="0" CHECKED&gt;Red
+
+&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="1"&gt;Green
+
+&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="2"&gt;Blue
+
+&lt;P&gt;Comments
+
+&lt;BR&gt;&lt;INPUT TYPE="TEXTAREA" NAME="CONTROL4" SIZE="20,5" <br>MAXLENGTH="250"&gt;
+
+&lt;P&gt;&lt;INPUT NAME="CONTROL5" TYPE=CHECKBOX CHECKED&gt;Send receipt
+
+&lt;P&gt;&lt;INPUT TYPE="SUBMIT" VALUE="OK"&gt;&lt;INPUT TYPE="RESET" <br>VALUE="Reset"&gt;
+
+&lt;/FORM&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002a00">ISINDEX</A></H2>
+
+&lt;<B>ISINDEX<BR>
+
+</B>    <B>ACTION=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>PROMPT=</B><I>prompt-text</I>&gt;<BR>
+
+<P>Создание документа, в котором реализована возможность поиска.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113002a01">ACTION=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Specifies the gateway program to which the string in the text box should be passed.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113002a02">PROMPT=</B></A><I>prompt-text</I>
+
+ </DT><DD>Specifies a prompt to be used instead of the default prompt.
+
+</DD></DL>
+
+<P>If the <B>PROMPT=</B> attributes is not used, the element displays the following message followed by a text box: "You can search this index. Type the keyword(s) you want to search for:" When the user enters text and presses ENTER, that text is posted
+ back to the page's URL as a query.
+
+
+
+<P><B>Пример
+
+</B>
+
+<PRE>&lt;ISINDEX ACTION="http://intranet/search" PROMPT="Type in <br>keywords here."&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002b00">KBD</A></H2>
+
+&lt;<B>KBD&gt;<BR>
+
+</B><P>Заключенный в теги текст вводится по символьно (как с клавиатуры).
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;KBD&gt;This user should enter this text.&lt;/KBD&gt;
+
+</FONT></PRE>
+
+<P><B>Source</B>
+
+<P>HTML 2
+
+
+
+<H2><A NAME="htmlref2_0001000113002c00">LI</A></H2>
+
+&lt;<B>LI<BR>
+
+</B>    <B>TYPE=</B><I>order-type</I><BR>
+
+    <B>VALUE=</B><I>n</I>&gt;<BR>
+
+<P>Начальный и конечный теги, ограничивающие элемент списка. В <A HREF="#htmlref2_0001000113001800">DIR</A>, <A HREF="#htmlref2_0001000113003100">MENU</A>, <A HREF="#htmlref2_0001000113003600" TARGET="contentFrame"
+y">OL</A>, или <A HREF="#htmlref2_0001000113005100">UL</A> блоках.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113002c01">TYPE=</B></A><I>order-type</I>
+
+ </DT><DD>Changes the style of an ordered list. The <I>order-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">A
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use large letters
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">a
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use small letters
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">I
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use large Roman numerals
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">i
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use small Roman numerals
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">1
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use numbers.
+
+</FONT></TD></TR></TABLE>
+
+</DD><DT><B><A NAME="htmlref2_0001000113002c02">VALUE=</B></A><I>n</I>
+
+ </DT><DD>Changes the count of ordered lists as they progress.
+
+</DD></DL>
+
+<P><B>Пример</B>
+
+<PRE>&lt;DIR&gt; &lt;LI&gt;Art
+
+&lt;LI&gt;History
+
+&lt;LI&gt;Literature
+
+&lt;LI&gt;Sports
+
+&lt;LI&gt;Entertainment
+
+&lt;LI&gt;Science&lt;/DIR&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002d00">LINK</A></H2>
+
+&lt;<B>LINK<BR>
+
+</B>    <B>HREF=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a>&gt;<BR>
+
+<P> В заголовке (Head) документа определяется ссылка из данного документа на другой документ.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113002d01">HREF=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Specifies the URL which has a relationship to the current document.
+
+
+
+</DD></DL>
+
+<P><B>Пример</B>
+
+<PRE>
+
+        &lt;LINK HREF="http://www.microsoft.com/newdocnewdoc.htm"&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002e00">LISTING</A></H2>
+
+&lt;<B>LISTING&gt;<BR>
+
+</B><P>Renders text in fixed-width type.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;LISTING&gt;Here's some plain text.&lt;/LISTING&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113002f00">MAP</A></H2>
+
+&lt;<B>MAP<BR>
+
+</B>    <B>NAME=</B><I>name</I>&gt;<BR>
+
+<P>Определить чувствительную к перемещению мыши область изображения.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113002f01">NAME=</B></A><I>name</I>
+
+ </DT><DD>Gives the MAP a name so it can be referred to later. See below for an example of a client-side image map.
+
+</DD></DL>
+
+<P><B>Пример
+
+</B>
+
+<PRE>&lt;MAP NAME="map1"&gt;
+
+     &lt;AREA ... &gt;
+
+    &lt;AREA ... &gt;
+
+&lt;/MAP&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113003000">MARQUEE</A></H2>
+<font color=red>Команда, поддерживается только MSIE</font><p>
+&lt;<B>MARQUEE<BR></B>
+<B>ALIGN=</B><I>align-type</I><BR>
+<B>BEHAVIOR=</B><I>type</I><BR>
+<B>BGCOLOR=</B><I>color</I><BR>
+<B>DIRECTION=</B><I>direction</I><BR>
+<B>HEIGHT=</B><I>n</I><BR>
+<B>HSPACE=</B><I>n</I><BR>
+<B>LOOP=</B><I>n</I><BR>
+<B>SCROLLAMOUNT=</B><I>n</I><BR>
+<B>SCROLLDELAY=</B><I>n</I><BR>
+<B>VSPACE=</B><I>n</I><BR>
+<B>WIDTH=</B><I>n</I>&gt;<BR>
+<P>Создаётся бегущая строка текста.
+<DL><DT><B><A NAME="htmlref2_0001000113003001">ALIGN=</B></A><I>align-type</I></DT>
+<DD>Specifies how the surrounding text should align with the marquee. The <I>align-type</I> can be one of these values:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TOP</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Surrounding text aligns with the top of the marquee.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MIDDLE</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Surrounding text aligns with the middle of the marquee.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BOTTOM</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Surrounding text aligns with the bottom of the marquee.</FONT></TD></TR></TABLE></DD>
+<DT><B><A NAME="htmlref2_0001000113003002">BEHAVIOR=</B></A><I>type</I></DT>
+<DD>Specifies how the text should behave. The <I>type</I> can be one of these values:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">SCROLL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Start completely off one side, scroll all the way across and completely off, and then start again. This is the default.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">SLIDE</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Start completely off one side, scroll in, and stop as soon as the text touches the other margin.</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">ALTERNATE</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Bounce back and forth within the marquee.</FONT></TD></TR></TABLE></DD>
+<DT><B><A NAME="htmlref2_0001000113003003">BGCOLOR=</B></A><I>color</I></DT>
+<DD>Specifies a background color for the marquee. The <I>color</I> can be either a hexadecimal number (optionally preceded by a number (#) sign) specifying a red, green, and blue color value, or a predefined color name as described in
+<A HREF="color.html">Color</A>.</DD>
+<DT><B><A NAME="htmlref2_0001000113003004">DIRECTION=</B></A><I>direction</I></DT>
+<DD>Specifies which direction the text should scroll. The <I>direction</I> can be LEFT or RIGHT. The default is LEFT, which means scrolling to the left from the right.</DD>
+<DT><B><A NAME="htmlref2_0001000113003005">HEIGHT=</B></A><I>n</I></DT>
+<DD>Specifies the height of the marquee, either in pixels or as a percentage of the screen height. To specify a percentage, the <I>n</I> must be end with a percent (%) sign.</DD>
+<DT><B><A NAME="htmlref2_0001000113003006">HSPACE=</B></A><I>n</I></DT>
+<DD>Specifies left and right margins for the outside of the marquee, in pixels.</DD>
+<DT><B><A NAME="htmlref2_0001000113003007">LOOP=</B></A><I>n</I></DT>
+<DD>Specifies how many times a marquee will loop when activated. If <I>n</I>=-1, or if LOOP=INFINITE is specified, it will loop indefinitely.</DD>
+<DT><B><A NAME="htmlref2_0001000113003008">SCROLLAMOUNT=</B></A><I>n</I></DT>
+<DD>Specifies the number of pixels between each successive draw of the marquee text.</DD>
+<DT><B><A NAME="htmlref2_0001000113003009">SCROLLDELAY=</B></A><I>n</I></DT>
+<DD>Specifies the number of milliseconds between each successive draw of the marquee text.</DD>
+<DT><B><A NAME="htmlref2_000100011300300a">VSPACE=</B></A><I>n</I></DT>
+<DD>Specifies top and bottom margins for the outside of the marquee, in pixels.</DD>
+<DT><B><A NAME="htmlref2_000100011300300b">WIDTH=</B></A><I>n</I></DT>
+<DD>Sets the width of the marquee, either in pixels or as a percentage of the screen width. To specify a percentage, the <I>n</I> must end with a percent (%) sign.</DD></DL>
+
+<P><B>Пример</B>
+<PRE>&lt;MARQUEE DIRECTION=RIGHT BEHAVIOR=SCROLL SCROLLAMOUNT=10 <br>SCROLLDELAY=200&gt;This is a scrolling marquee.&lt;/MARQUEE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113003100">MENU</A></H2>
+
+&lt;<B>MENU&gt;<BR></B>
+<P>Задаётся список меню, содержащий теги <A HREF="#htmlref2_0001000113002c00">LI</A>.
+
+<P><B>Пример</B>
+<PRE>&lt;MENU&gt;
+&lt;LI&gt;This is the first item in the menu.
+&lt;LI&gt;And this is the second item in the menu.
+&lt;/MENU&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113003200">META</A></H2>
+
+&lt;<B><a href="meta.html">META</a><BR></B>
+<B>HTTP-EQUIV=</B><I>response</I><BR>
+<B>CONTENT=</B><I>description</I><BR>
+<B>NAME=</B><I>description</I><BR>
+<B>URL=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a>  <BR>
+&gt;<BR>
+<P>
+Задание дополнительной информации об HTML документе для сервера, просмотрщика и
+поисковых машин в Internet'e.
+<DL><DT><B><A NAME="htmlref2_0001000113003201">CONTENT=</B></A></DT>
+<DD>Задание meta-инфрмации, ассоциированной с заданным именем, для работы поисковых
+машин или для формирования заголовка HTTP ответа сервера.
+Может использоваться с заданием URL=, времени, даты перезагрузки докмента
+(<a href="meta.html">см. описание команды META)</a>.</DD>
+<DT><B><A NAME="htmlref2_0001000113003202">HTTP-EQUIV=</B></A></DT>
+<DD>Задание информации для заголовка HTTP ответа сервера.</DD>
+<DT><B><A NAME="htmlref2_0001000113003203">NAME=</B></A></DT>
+<DD>Элемент описания документа для поисковых машин.</DD>
+<DT><B><A NAME="htmlref2_0001000113003204">URL=</B></A></DT>
+<DD>URL адрес документа.</DD></DL>
+
+<P><B>Примеры:</B>
+<PRE>&lt;META HTTP-EQUIV="Expires" CONTENT="Tue,<br> 04 Dec 1996 21:29:02 GMT"&gt;
+&lt;meta http-equiv="Keywords" CONTENT="HTML, Reference"&gt;
+&lt;META HTTP-EQUIV="Reply-to" content="anybody@microsoft.com"&gt;
+&lt;Meta Http-equiv="Keywords" CONTENT="HTML Reference Guide"&gt;</pre>
+В данном случае сервер должен включить в заголовок HTTP ответа следующую
+информацию:
+
+<pre>Expires: Tue, 04 Dec 1996 21:29:02 GMT
+Keywords: HTML, Reference
+Reply-to: anybody@microsoft.com</pre>
+
+как часть HTTP ответа для методов `GET' или `HEAD', по которым затребован
+данный документ.
+
+
+<PRE>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;META HTTP-EQUIV="REFRESH" CONTENT=2&gt;
+&lt;TITLE&gt;Reload Document&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+&lt;P&gt;Данный документ буде перезагужен через 2 секунды.
+&lt;/BODY&gt;
+&lt;/HTML&gt;</pre>
+<P>
+<PRE>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;META HTTP-EQUIV="REFRESH" CONTENT="5; <br>URL=http://www.sample.com/next.htm"&gt;
+&lt;TITLE&gt;Load Next Document&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+&lt;P&gt;Через 5 секунд будет загружен документ <br>"http://www.sample.com/next.htm".
+&lt;/BODY&gt;
+&lt;/HTML&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113003300">NOBR</A></H2>
+&lt;<B>NOBR&gt;<BR></B>
+<P>
+Запрет разрыва строки.
+
+<P><B>Пример</B>
+<PRE>&lt;NOBR&gt;Here's a line of text I don't want to be broken . . .<br> here's the end of the line.&lt;/NOBR&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113003400">NOFRAMES</A></H2>
+&lt;<B>NOFRAMES&gt;<BR></B>
+<P>
+Отметка части документа, предназначенного для просмотра через браузеры,
+не поддерживающие фреймы (FRAMES).
+Просмотрщики, поддерживающие фреймы игнорируют часть документа, которая
+содержится между командами начало <B>NOFRAMES</B> и конец <b>/NOFRAMES.</b>
+<P><B>Пример</B>
+<PRE>&lt;FRAMESET&gt;
+ &lt;NOFRAMES&gt;You need NN or MSie 3.0 to view frames!&lt;/NOFRAMES&gt;
+&lt;/FRAMESET&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113003500">OBJECT</A></H2>
+
+&lt;<B>OBJECT<BR>
+
+</B>    <B>ALIGN=</B><I>align-type</I><BR>
+
+    <B>BORDER=</B><I>n</I><BR>
+
+    <B>CLASSID=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>CODEBASE=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>CODETYPE=</B><I>codetype</I><BR>
+
+    <B>DATA=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>DECLARE<BR>
+
+</B>    <B>HEIGHT=</B><I>n</I><BR>
+
+    <B>HSPACE=</B><I>n</I><BR>
+
+    <B>NAME=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>SHAPES<BR>
+
+</B>    <B>STANDBY=</B><I>message</I><BR>
+
+    <B>TYPE=</B><I>type</I><BR>
+
+    <B>USEMAP=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>VSPACE=</B><I>n</I><BR>
+
+    <B>WIDTH=</B><I>n</I>&gt;<BR>
+
+<P>Вставка объекта в документ. Этот тег используется для задания апплетов и других медиа-объектов.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113003501">ALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Sets the alignment for the object. The <I>align-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BASELINE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The bottom of the object aligns with the baseline of surrounding text.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">CENTER
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The object is centered between left and right margins. Subsequent text starts on the next line after the object.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">LEFT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The object aligns with the left margin, and subsequent text wraps along the right side of the object.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MIDDLE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The middle of the object aligns with the baseline of surrounding text.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RIGHT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The object aligns with the right margin, and subsequent text wraps along the left side of the object.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TEXTBOTTOM
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The bottom of the object aligns with the bottom of surrounding text.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TEXTMIDDLE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The middle of the object aligns with the midpoint between the baseline and the x-height of the surrounding text.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TEXTTOP
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The top of the object aligns with the top of surrounding text.
+
+</FONT></TD></TR></TABLE>
+
+</DD><DT><B><A NAME="htmlref2_0001000113003502">BORDER=</B></A><I>n</I>
+
+ </DT><DD>Specifies the width of the border if the object is defined to be a hyperlink.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003503">CLASSID=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Identifies the object implementation. The syntax of the <I>url</I> depends on the object type. For example, for registered ActiveX controls, the syntax is: <B>CLSID:</B><I>class-identifier</I>.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003504">CODEBASE=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Identifies the codebase for the object. The syntax of the <I>url</I> depends on the object.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003505">CODETYPE=</B></A><I>codetype</I>
+
+ </DT><DD>Specifies the Internet media type for code.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003506">DATA=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Identifies data for the object. The syntax of the <I>url</I> depends on the object.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003507">DECLARE</B></A>
+
+ </DT><DD>Declares the object without instantiating it. Use this when creating cross-references to the object later in the document or when using the object as a parameter in another object.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003508">HEIGHT=</B></A><I>n</I>
+
+ </DT><DD>Specifies the suggested height for the object.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003509">HSPACE=</B></A><I>n</I>
+
+ </DT><DD>Specifies the horizontal gutter. This is the extra, empty space between the object and any text or images to the left or right of the object.
+
+</DD><DT><B><A NAME="htmlref2_000100011300350a">NAME=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Sets the name of the object when submitted as part of a form.
+
+</DD><DT><B><A NAME="htmlref2_000100011300350b">SHAPES</B></A>
+
+ </DT><DD>Specifies that the object has shaped hyperlinks.
+
+</DD><DT><B><A NAME="htmlref2_000100011300350c">STANDBY=</B></A><I>message</I>
+
+ </DT><DD>Sets the message to show while loading the object.
+
+</DD><DT><B><A NAME="htmlref2_000100011300350d">TYPE=</B></A><I>type</I>
+
+ </DT><DD>Specifies the Internet media type for data.
+
+</DD><DT><B><A NAME="htmlref2_000100011300350e">USEMAP=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Specifies the image map to use with the object.
+
+</DD><DT><B><A NAME="htmlref2_000100011300350f">VSPACE=</B></A><I>n</I>
+
+ </DT><DD>Specifies the vertical gutter. This is the extra, empty space between the object and any text or images above or below the object.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003510">WIDTH=</B></A><I>n</I>
+
+ </DT><DD>Specifies the suggested width for the object.
+
+</DD></DL>
+
+<P>The end-tag is required.
+
+
+
+<P>An object can contain any elements ordinarily used within the body of an HTML document, including section headings, paragraphs, lists, forms and even nested objects.
+
+
+
+<H2><A NAME="htmlref2_0001000113003600">OL</A></H2>
+
+&lt;<B>OL<BR>
+
+</B>    <B>START=</B><I>n</I><BR>
+
+    <B>TYPE=</B><I>order-type</I> &gt;<BR>
+
+<P>Начальный и конечный теги упорядоченного списка, содержащего пронумерованные элементы<A HREF="#htmlref2_0001000113002c00">LI</A>.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113003601">START=</B></A><I>n</I>
+
+ </DT><DD>Specifies a starting number for the list.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113003602">TYPE=</B></A><I>order-type</I>
+
+ </DT><DD>Changes the style of the list. The <I>order-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">A
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use large letters
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">a
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use small letters
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">I
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use large Roman numerals
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">i
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use small Roman numerals
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">1
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Use numbers.
+
+</FONT></TD></TR></TABLE>
+
+</DD></DL>
+
+<P><B>Пример</B>
+
+<PRE>&lt;OL&gt;
+
+&lt;LI&gt;This is the first item in the list.
+
+&lt;LI&gt;And this is the second item in the list.
+
+&lt;/OL&gt;
+
+
+
+&lt;ex&gt;&lt;OL START=3&gt;
+
+&lt;LI&gt;This is item number 3.
+
+&lt;/OL&gt;
+
+
+
+&lt;OL TYPE=A&gt;
+
+&lt;LI&gt;This is item A.
+
+&lt;/OL&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113003700">OPTION</A></H2>
+
+&lt;<B>SELECT<BR>
+
+</B>    <B>SELECTED<BR>
+
+</B>    <B>VALUE=</B><I>value</I>&gt;<BR>
+
+<P>Определить меню внутри элемента <A HREF="#htmlref2_0001000113003f00">SELECT</A>.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113003701">SELECTED</B></A>
+
+ </DT><DD>Indicates that this item is the default. If not present, item #1 becomes the default.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113003702">VALUE=</B></A><I>value</I>
+
+ </DT><DD>Indicates the value that will be returned if this item is chosen.
+
+</DD></DL>
+
+<H2><A NAME="htmlref2_0001000113003800">P</A></H2>
+
+&lt;<B>P<BR>
+
+</B>    <B>ALIGN=</B><I>align-type</I>&gt;<BR>
+
+<P>Начальный и конечный теги абзаца.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113003801">ALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Sets the alignment of the paragraph. The <I>align-type</I> can be CENTER, LEFT, or RIGHT. Default is left alignment.
+
+</DD></DL>
+
+<P>The end-tag is optional.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;P&gt;This is a paragraph.&lt;/P&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113003900">PARAM</A></H2>
+
+&lt;<B>PARAM<BR>
+
+</B>    <B>NAME=</B><I>name</I><BR>
+
+    <B>VALUE=</B><I>value</I><BR>
+
+    <B>VALUETYPE=</B><I>type</I><BR>
+
+    <B>TYPE=</B><I>type</I>&gt;<BR>
+
+<P>Указывает параметр для applet или object, в пределах которого находится данный тег.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113003901">NAME=</B></A><I>name</I>
+
+ </DT><DD>Specifies the property name.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003902">VALUE=</B></A><I>value</I>
+
+ </DT><DD>Specifies the property value. The value is passed to the object without change except that any character or numeric character entities are replaced with their corresponding character values.
+
+</DD><DT><B><A NAME="htmlref2_0001000113003903">VALUETYPE=</B></A><I>type</I>
+
+ </DT><DD>Specifies how to interpret the value. The <I>type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">DATA
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The value is data. This is the default value type.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">REF
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The value is a URL.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">OBJECT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The value is a URL of an object in the same document.
+
+</FONT></TD></TR></TABLE>
+
+</DD><DT><B><A NAME="htmlref2_0001000113003904">TYPE=</B></A><I>type</I>
+
+ </DT><DD>Specifies the Internet media type.
+
+</DD></DL>
+
+<P>This element is valid only within an <A HREF="#htmlref2_0001000113003500">OBJECT</A> element. The end-tag is optional.
+
+
+
+<H2><A NAME="htmlref2_0001000113003a00">PLAINTEXT</A></H2>
+
+&lt;<B>PLAINTEXT&gt;<BR>
+
+</B><P> Указывается, что остальную часть документа следует отображать без обработки, как предварительно отформатированный текст.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;PLAINTEXT&gt; Here's a sample of HTML: &lt;A HREF="sample.url"&gt;<br>This is a shortcut to sample.&lt;/A&gt;&lt;/PLAINTEXT&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113003b00">PRE</A></H2>
+<B>&lt;PRE&gt;</B>
+<P>
+Вывод текста без форматирования с сохранением всех пробелов
+и концов строк. Выводится равноширенным шрифтом.
+<br><b>Замечание:</b> будте осторожны,
+в данном режиме вывода происходит обработка команд языка HTML
+и <a href="format.html#6">спецсимволов</a>.
+<P><B>Пример</B>
+<PRE>&lt;PRE&gt;Here's some plain text.&lt;/PRE&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113003c00">S</A></H2>
+<B>&lt;S&gt;</B>
+<P>Зачернутый текст.
+<P><B>Пример</B>
+<PRE>&lt;S&gt;This text has a line through it.&lt;/S&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113003d00">SAMP</A></H2>
+<B>&lt;SAMP&gt;</B>
+<P>
+Режим вывода предназначенный для примеров (уменьшенный равноширинный шрифт).
+Шрифт можно изменить, используя команду
+<a href="fonts.html#font">FONT FACE</a>.
+<P><B>Пример</B>
+<PRE>&lt;SAMP&gt;Here is some text in a small fixed-width font.&lt;/SAMP&gt;</PRE>
+
+<H2><A NAME="htmlref2_0001000113003e00">SCRIPT</A></H2>
+
+&lt;<B>SCRIPT<BR>
+
+</B>      <B>LANGUAGE=</B><I>scripting</I> <B>language<BR>
+
+</B>      &gt;<BR>
+
+<P>Specifies the inclusion of a script. Scripts execute and instantiate objects in the order in which they appear in the HTML. Named objects can be referenced only in the order in which they appear in the document.
+
+
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113003e01">LANGUAGE=</B></A><I>scripting language</I>
+
+ </DT><DD>The ActiveX scripting language in which the enclosed script was written. Примерs of an ActiveX scripting language are "VBScript" and "JavaScript".
+
+</DD></DL>
+
+<P><B>Пример</B>
+
+<PRE>&lt;SCRIPT&gt;
+
+&lt;SCRIPT language="VBScript"&gt;
+
+    '... Additional VBScript statements ...
+
+&lt;/SCRIPT&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113003f00">SELECT</A></H2>
+
+&lt;<B>SELECT<BR>
+
+</B>    <B>MULTIPLE<BR>
+
+</B>    <B>NAME=</B><I>name</I><BR>
+
+    <B>SIZE=</B><I>n</I>&gt;<BR>
+
+<P>Denotes a list box or dropdown list.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113003f01">MULTIPLE</B></A>
+
+ </DT><DD>Indicates that multiple items can be selected.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113003f02">NAME=</B></A><I>name</I>
+
+ </DT><DD>Specifies a name for the list.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113003f03">SIZE=</B></A><I>n</I>
+
+ </DT><DD>Specifies the height of the list control.
+
+</DD></DL>
+
+<P><B>Пример
+
+</B>
+
+<PRE>&lt;SELECT NAME="Cars" MULTIPLE SIZE="1"&gt;
+
+    &lt;OPTION VALUE="1"&gt;BMW
+
+    &lt;OPTION VALUE="2"&gt;PORSCHE
+
+    &lt;OPTION VALUE="3" SELECTED&gt;MERCEDES
+
+&lt;/SELECT&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004000">SMALL</A></H2>
+
+&lt;<B>SMALL&gt;<BR>
+
+</B><P>Текст отображается шрифтом меньшего размера.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;SMALL&gt;This text is smaller&lt;/SMALL&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004100">SPAN</A></H2>
+
+&lt;<B>SPAN&gt;<BR>
+
+</B>    <B>STYLE=<BR>
+
+</B><P>Текст будет форматироваться с использованием таблицы стилей.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;SPAN STYLE="margin-left: 1.0in"&gt; This paragraph is 1.0 inches <br>from the left margin.&lt;SPAN&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004200">STRIKE</A></H2>
+
+&lt;<B>STRIKE&gt;<BR>
+
+</B><P>Текст будет перечеркнут горизонтальной линией.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;STRIKE&gt;This text has a line through it.&lt;/STRIKE&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004300">STRONG</A></H2>
+
+&lt;<B>STRONG&gt;<BR>
+
+</B><P>Для текста в качестве дополнительного параметра форматирования задается курсивное начертание..
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;STRONG&gt;This text will be bold.&lt;/STRONG&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004400">SUB</A></H2>
+
+&lt;<B>SUB&gt;<BR>
+
+</B><P>Текст будет смещен вниз (нижний индекс).
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;SUB&gt;This text is rendered as subscript.&lt;/SUB&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004500">SUP</A></H2>
+
+&lt;<B>SUP&gt;<BR>
+
+</B><P>Текст будет смещен вверх (верхний регистр).
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;SUP&gt;This text is rendered as superscript.&lt;/SUP&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004600">TABLE</A></H2>
+Для команды <B>&lt;TABLE&gt;</B> используются следующие <b>атрибуты</b>:
+<BLOCKQUOTE>
+    <B>ALIGN=</B><I>align-type</I> <BR>
+    <B>BACKGROUND=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a> <BR>
+    <B>BGCOLOR=</B><I>color</I> <BR>
+    <B>BORDER=</B><I>n</I> <BR>
+    <B>BORDERCOLOR=</B><I>color</I> <BR>
+    <B>BORDERCOLORDARK=</B><I>color</I> <BR>
+    <B>BORDERCOLORLIGHT=</B><I>color</I> <BR>
+    <B>CELLPADDING=</B><I>n</I><BR>
+    <B>CELLSPACING=</B><I>n</I><BR>
+    <B>COLS=</B><I>n</I> <BR>
+    <B>FRAME=</B><I>frame-type</I> <BR>
+    <b>HEIGHT=</b><i>n (value or percent)</i><br>
+    <B>RULES=</B><I>rules</I><BR>
+    <B>VALIGN=</B><I>valign-type</I> <BR>
+    <B>WIDTH=</B><I>n (value or percent)</I> <BR>
+</BLOCKQUOTE>
+<P>
+Задание таблиц. Таблица будет пустой, если внутри команды не используются команды
+<A HREF="#htmlref2_0001000113004e00">TR</A>,
+<A HREF="#htmlref2_0001000113004800">TD</A>, и
+<A HREF="#htmlref2_0001000113004b00">TH</A>.
+<DL>
+<DT><B><A NAME="htmlref2_0001000113004601">ALIGN=</B></A><I>align-type</I>
+</DT><DD>Определяет горизонтальное положение таблицы.
+Задание этого <b>атрибута</b> фактически определяет плавающую таблицу,
+которую может обтекать текст. При использовании этого <b>атрибута</b>
+по окончании таблицы должна следовать команда
+<a href="#htmlref2_0001000113000e00">BR</a>.<br>
+Допустимые значения <I>align-type</I>:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE="2">LEFT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE="2">
+Таблица прижимается влево (используется по умолчанию).
+</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE="2">RIGHT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Таблица прижимается вправо. Текст в клетках прижимается к влево.
+</FONT></TD></TR></TABLE>
+<DT><B><A NAME="htmlref2_val">VALIGN=</B></A><I>align-type</I>
+</DT><DD>Определяет вертикальное расположение текста в таблице.
+Допустимые значения <I>align-type</I>:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE="2">MIDDLE</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE="2">
+Текст центрируется (используется по умолчанию).
+</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE="2">TOP</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE="2">
+Текст прижимается вверх.
+</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE="2">BOTTOM</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Текст прижимается вниз.
+</FONT></TD></TR></TABLE>
+</DD><DT><B><A NAME="htmlref2_0001000113004602">BACKGROUND=</B></A>
+<a href="url.html#url" TARGET="contentFrame"><I>url</I></a>
+</DT><DD>Задает в качестве фона графический файл.
+Фон задается для всей таблицы, включая заголовки и клетки.
+</DD><DT><B><A NAME="htmlref2_0001000113004603">BGCOLOR=</B></A>
+<a href="color.html#color" TARGET="contentFrame"><I>color</I></a>
+</DT><DD>Задает цвет фона. Цвет определятся именем или номером Red-Green-Blue.
+(cм. <A HREF="color.html" TARGET="contentFrame">Цвета в HTML документах</A>).
+</DD><DT><B><A NAME="htmlref2_0001000113004604">BORDER=</B></A><I>n</I>
+</DT><DD>Ширина рамки в пикселях. По умолчанию рамка не рисуется.
+</DD><DT><B><A NAME="htmlref2_0001000113004605">BORDERCOLOR=</B></A>
+<a href="color.html#color" TARGET="contentFrame"><I>color</I></a>
+</DT><DD>Задание цвета рамки. Используется вместе с <b>атрибутом</b>
+BORDER. Цвет определятся именем или номером Red-Green-Blue.
+(cм. <A HREF="color.html" TARGET="contentFrame">Цвета в HTML документах</A>).
+</DD>
+<DT><B><A NAME="htmlref2_0001000113004606">BORDERCOLORLIGHT=</B></A>
+<A HREF="color.html" TARGET="contentFrame"><I>color</I></a>
+</DT><DD>Задание цвета для рамки с тенью (псевдо трехмерная графика).
+Используется вместе с <b>атрибутами</b> BORDERCOLORDARK и BORDER.
+Цвет определятся именем или номером Red-Green-Blue.
+(cм. <A HREF="color.html" TARGET="contentFrame">Цвета в HTML документах</A>).
+</DD>
+<DT><B><A NAME="htmlref2_0001000113004607">BORDERCOLORDARK=</B></A>
+<A HREF="color.html" TARGET="contentFrame"><I>color</I></a>
+</DT><DD>Задание цвета для рамки с тенью (псевдо трехмерная графика).
+Используется вместе с <b>атрибутами</b> BORDERCOLORLIGHT и BORDER.
+Цвет определяется именем или номером Red-Green-Blue.
+(cм. <A HREF="color.html" TARGET="contentFrame">Цвета в HTML документах</A>).
+</DD><DT><B><A NAME="htmlref2_0001000113004608">CELLPADDING=</B></A><I>n</I>
+</DT><DD>Задает расстояние в пикселях между границей клетки и ее содержимым.
+</DD><DT><B><A NAME="htmlref2_0001000113004609">CELLSPACING=</B></A><I>n</I>
+</DT><DD>Задает расстояние в пикселях между рамкой таблицы и ее клетками
+внутри таблицы.
+</DD><DT><B><A NAME="htmlref2_000100011300460a">COLS=</B></A><I>n</I>
+</DT>
+<DD>Число столбцов в таблице. Данный атрибут ускоряет вывод таблицы, что
+особенно заметно для больших таблиц.
+</DD>
+<DT><B><A NAME="htmlref2_000100011300460b">WIDTH=</B></A><I>n</I>
+</DT><DD>Определяет ширину таблицы в пикселях или в процентах
+от ширины экрана. Для задания <I>n</I> в процентах используется знак (%)
+процента.
+</DD>
+<DT><B><A NAME="htmlref2_000100011300460b">HEIGTH=</B></A><I>n</I>
+</DT><DD>Определяет высоту таблицы в пикселях или в процентах
+от высоты экрана. Позволяет при необходимости растягивать таблицу на весь экран.
+</DD><DT><B><A NAME="htmlref2_000100011300460c">FRAME=</B></A><I>frame-type</I>
+</DT>
+<DD>Определяет метод отрисовки рамки
+Допустимы следующие значения для <I>frame-type</I>:
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">VOID</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+Убрать наружную часть рамки.
+</FONT></TD></TR><TR>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">ABOVE</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">
+
+Displays a border on the top side of the table frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BELOW
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays a border on the bottom side of the table frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">HSIDES
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays a border on the top and bottom sides of the table frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">LHS
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays a border on the left-hand side of the table frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RHS
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays a border on the right-hand side of the table frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">VSIDES
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays a border on the left and right sides of the table frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BOX
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays a border on all sides of the table frame.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BORDER
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays a border on all sides of the table frame.
+
+</FONT></TD></TR></TABLE>
+
+</DD><DT><B><A NAME="htmlref2_000100011300460d">RULES=</B></A><I>rule-type</I>
+
+ </DT><DD>Specifies which dividing lines (inner borders) are displayed. The <I>rule-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">NONE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Removes all interior table borders.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">GROUPS
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays horizontal borders between all table groups. Groups are specified by the  HREF="#htmlref2_0001000113004c00">THEAD</A>,  HREF="html-gl
+oss.html#htmlref2_0001000113004700">TBODY</A>, <A HREF="#htmlref2_0001000113004a00">TFOOT</A>, and <A HREF="#htmlref2_0001000113001400">COLGROUP</A> elements.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">ROWS
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays horizontal borders between all table rows.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">COLS
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays vertical borders between all table columns.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">ALL
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Displays a border on all rows and columns.
+
+</FONT></TD></TR></TABLE>
+
+</DD></DL>
+
+<P>The end-tag is required.
+
+
+
+<P>The optional <A HREF="#htmlref2_0001000113004c00">THEAD</A>, <A HREF="#htmlref2_0001000113004700">TBODY</A>, <A HREF="#htmlref2_0001000113004a00">TFOOT</A>, <A
+HREF="#htmlref2_0001000113001400">COLGROUP</A>, and <A HREF="#htmlref2_0001000113001300">COL</A> elements can be used to organize a table and apply attributes across columns and groups of colum
+ns.
+
+
+
+<P><B>Пример
+
+</B>
+
+<PRE>&lt;TABLE BORDER=1 WIDTH=80%&gt;
+
+&lt;THEAD&gt;
+
+&lt;TR&gt;
+
+    &lt;TH&gt;Heading 1&lt;/TH&gt;
+
+    &lt;TH&gt;Heading 2&lt;/TH&gt;
+
+&lt;/TR&gt;
+
+&lt;TBODY&gt;
+
+&lt;TR&gt;
+
+    &lt;TD&gt;Row 1, Column 1 text.&lt;/TD&gt;
+
+    &lt;TD&gt;Row 1, Column 2 text.&lt;/TD&gt;
+
+&lt;/TR&gt;
+
+&lt;TR&gt;
+
+    &lt;TD&gt;Row 2, Column 1 text.&lt;/TD&gt;
+
+    &lt;TD&gt;Row 2, Column 2 text.&lt;/TD&gt;
+
+&lt;/TR&gt;
+
+&lt;/TABLE&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004700">TBODY</A></H2>
+
+&lt;<B>TBODY&gt;<BR>
+
+</B><P>Начальный тег для строк таблицы,образующих основное тело таблицы.
+Наличия конечного тега не требуется. Используется для указания места расположения
+разграниченных линий, если в теге table задан атрибут rules=groups. 
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;TABLE&gt;
+
+&lt;THEAD&gt;
+
+&lt;TR&gt;
+
+    ...
+
+&lt;/TR&gt;
+
+&lt;TBODY&gt;
+
+&lt;TR&gt;
+
+    ...
+
+&lt;/TR&gt;
+
+&lt;/TBODY&gt;
+
+&lt;/TABLE&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004800">TD</A></H2>
+
+&lt;<B>TD<BR>
+
+</B>    <B>ALIGN=</B><I>align-type</I><BR>
+
+    <B>BACKGROUND=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>BGCOLOR=</B><I>color</I><BR>
+
+    <B>BORDERCOLOR=</B><I>color</I><BR>
+
+    <B>BORDERCOLORLIGHT=</B><I>color</I><BR>
+
+    <B>BORDERCOLORDARK=</B><I>color</I><BR>
+
+    <B>COLSPAN=</B><I>n</I><BR>
+
+    <B>NOWRAP=NOWRAP<BR>
+
+</B>    <B>ROWSPAN=</B><I>n</I><BR>
+
+    <B>VALIGN=</B><I>align-type</I>&gt;<BR>
+
+<P>Начальный и конечный теги ячейки данных таблицы.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113004801">ALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Specifies the horizontal alignment of text in the cell. The <I>align-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">LEFT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The table is left-aligned.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">CENTER
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is centered.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RIGHT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">The table is right-aligned.
+
+</FONT></TD></TR></TABLE>
+
+<P>By default, text is centered.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004802">BACKGROUND=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Specifies a background picture. The picture is tiled behind the text and graphics in the table, table head, or table cell.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004803">BGCOLOR=</B></A><I>color</I>
+
+ </DT><DD>Sets background color. The <I>color</I> is either a hexadecimal, red-green-blue color value or a predefined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004804">BORDERCOLOR=</B></A><I>color</I>
+
+ </DT><DD>Sets border color and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a predefined color name. See  HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004805">BORDERCOLORLIGHT=</B></A><I>color</I>
+
+ </DT><DD>Sets independent border color control over one of the two colors used to draw a 3-D border, opposite of BORDERCOLORDARK, and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a pred
+efined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004806">BORDERCOLORDARK=</B></A><I>color</I>
+
+ </DT><DD>Sets independent border color control over one of the two colors used to draw a 3-D border, opposite of BORDERCOLORLIGHT, and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a pre
+defined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004807">VALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Specifies that the vertical alignment of text in the cell. The <I>align-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TOP
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned with the top of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MIDDLE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned in the middle of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BOTTOM
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned with the bottom of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BASELINE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text in adjoining cells in a row is aligned along a common baseline.
+
+</FONT></TD></TR></TABLE>
+
+<P>By default, text is aligned in the middle of the cell.
+
+</DD></DL>
+
+<P>This element is valid only within a row in a table, that is, you must use a  HREF="#htmlref2_0001000113004e00">TR</A> element before using <B>TD</B>. All attributes are optional. The end-tag is optional.
+
+
+
+<H2><A NAME="htmlref2_0001000113004900">TEXTAREA</A></H2>
+
+&lt;<B>TEXTAREA<BR>
+
+</B>    <B>COLS=</B><I>n</I><BR>
+
+    <B>NAME=</B><I>name</I><BR>
+
+    <B>ROWS=</B><I>n</I>&gt;<BR>
+
+<P>Начальный и конечный теги многострочной области ввода текста в форме form. Содержимое тега 
+textarea принимается как исходное значение по умолчанию.
+
+<DL><DT><B><A NAME="htmlref2_0001000113004901">COLS=</B></A><I>n</I>
+
+ </DT><DD>Sets the width, in characters, of the text area.
+
+</DD><DT><B><A NAME="htmlref2_0001000113004902">NAME=</B></A><I>n</I>
+
+ </DT><DD>Sets the name of the text area. This name is used when the element is used within a <A HREF="#htmlref2_0001000113001f00">FORM</A> element.
+
+</DD><DT><B><A NAME="htmlref2_0001000113004903">ROWS=</B></A><I>n</I>
+
+ </DT><DD>Sets the height, in characters, of the text area.
+
+</DD></DL>
+
+<P>The end-tag is required. Any text between the start and end-tags is used as the initial value for the control.
+
+
+
+<H2><A NAME="htmlref2_0001000113004a00">TFOOT</A></H2>
+
+&lt;<B>TFOOT&gt;<BR>
+
+</B>Начальный тег для строк, образующий нижний колонтитул таблицы. 
+Используется для указания места расположения разграничительных линий, если в теге задан атрибут rules=groups.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;TABLE&gt;
+
+&lt;TBODY&gt;
+
+    &lt;TR&gt;
+
+    ...
+
+    &lt;/TR&gt;
+
+&lt;TFOOT&gt;
+
+    &lt;TR&gt;
+
+    ...
+
+    &lt;/TR&gt;
+
+&lt;/TABLE&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004b00">TH</A></H2>
+
+&lt;<B>TH<BR>
+
+</B>    <B>ALIGN=</B><I>align-type</I><BR>
+
+    <B>BACKGROUND=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>BGCOLOR=</B><I>color</I><BR>
+
+    <B>BORDERCOLOR=</B><I>color</I><BR>
+
+    <B>BORDERCOLORLIGHT=</B><I>color</I><BR>
+
+    <B>BORDERCOLORDARK=</B><I>color</I><BR>
+
+    <B>COLSPAN=</B><I>n</I><BR>
+
+    <B>NOWRAP=NOWRAP<BR>
+
+</B>    <B>ROWSPAN=</B><I>n</I><BR>
+
+    <B>VALIGN=</B><I>align-type</I>&gt;<BR>
+
+<P>Начальный и конечный теги ячейки заголовка таблицы.
+
+
+
+<DL><DT><B><A NAME="htmlref2_0001000113004b01">ALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Specifies the alignment of text in the cell. The <I>align-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">LEFT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is left-aligned.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">CENTER
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is centered.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RIGHT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is right-aligned.
+
+</FONT></TD></TR></TABLE>
+
+<P>By default, text is centered.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b02">BACKGROUND=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Specifies a background picture. The picture is tiled behind the text and graphics in the table, table head, or table cell.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b03">BGCOLOR=</B></A><I>color</I>
+
+ </DT><DD>Sets background color. The <I>color</I> is either a hexadecimal, red-green-blue color value or a predefined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b04">BORDERCOLOR=</B></A><I>color</I>
+
+ </DT><DD>Sets border color and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a predefined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b05">BORDERCOLORLIGHT=</B></A><I>color</I>
+
+ </DT><DD>Sets independent border color control over one of the two colors used to draw a 3-D border, opposite of BORDERCOLORDARK, and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a pred
+efined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b06">BORDERCOLORDARK=</B></A><I>color</I>
+
+ </DT><DD>Sets independent border color control over one of the two colors used to draw a 3-D border, opposite of BORDERCOLORLIGHT, and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a pre
+defined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b07">COLSPAN=</B></A><I>n</I>
+
+ </DT><DD>Number of table columns this cell spans.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b08">NOWRAP=</B></A>NOWRAP
+
+ </DT><DD>Prevents word wrapping with the cell. Lines of text appear as given in the HTML document.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b09">ROWSPAN=</B></A><I>n</I>
+
+ </DT><DD>Number of table rows this cell spans.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004b0a">VALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Specifies that the vertical alignment of text in the table. The <I>align-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TOP
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned with the top of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MIDDLE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned in the middle of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BOTTOM
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned with the bottom of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BASELINE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text in adjoining cells in a row is aligned along a common baseline.
+
+</FONT></TD></TR></TABLE>
+
+<P>By default, text is aligned in the middle of the cell.
+
+</DD></DL>
+
+<P>This element is valid only within a row in a table, that is, you must use a <A HREF="#htmlref2_0001000113004e00">TR</A> element before using <B>TH</B>. All attributes are optional. The end-tag is optional.
+
+
+
+<H2><A NAME="htmlref2_0001000113004c00">THEAD</A></H2>
+
+&lt;<B>THEAD&gt;<BR>
+
+</B><P>Начальный тег для строк, образующих заголовок таблицы.
+
+
+
+<P><B>Пример</B>
+
+<PRE>&lt;TABLE&gt;
+
+&lt;THEAD&gt;
+
+    &lt;TR&gt;
+
+    ...
+
+    &lt;/TR&gt;
+
+&lt;TBODY&gt;
+
+    &lt;TR&gt;
+
+    ...
+
+    &lt;/TR&gt;
+
+&lt;/TABLE&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004d00">TITLE</A></H2>
+
+&lt;<B>TITLE&gt;<BR>
+
+</B><P>Начальный и конечный теги заголовка документа.
+<P><B>Пример
+
+</B>
+
+<PRE>&lt;HEAD&gt;
+
+&lt;TITLE&gt;"Welcome To Internet Explorer!"&lt;/TITLE&gt;
+
+&lt;/HEAD&gt;
+
+</FONT></PRE>
+
+<H2><A NAME="htmlref2_0001000113004e00">TR</A></H2>
+
+&lt;<B>TR<BR>
+
+</B>    <B>ALIGN=</B><I>align-type</I><BR>
+
+    <B>BACKGROUND=</B><a href="url.html" TARGET="contentFrame"><I>url</I></a><BR>
+
+    <B>BGCOLOR=</B><I>color</I><BR>
+
+    <B>BORDERCOLOR=</B><I>color</I><BR>
+
+    <B>BORDERCOLORLIGHT=</B><I>color</I><BR>
+
+    <B>BORDERCOLORDARK=</B><I>color</I><BR>
+
+    <B>VALIGN=</B><I>align-type</I>&gt;<BR>
+
+<P>Начальный и конечный теги строки ячеек в таблице.
+<DL><DT><B><A NAME="htmlref2_0001000113004e01">ALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Specifies the alignment of text in the cells in the row. The <I>align-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">LEFT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is left-aligned.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">CENTER
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is centered.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">RIGHT
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is right-aligned.
+
+</FONT></TD></TR></TABLE>
+
+<P>By default, text is centered.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004e02">BACKGROUND=</B></a><a href="url.html" TARGET="contentFrame"><I>url</I></a>
+
+ </DT><DD>Specifies a background picture. The picture is tiled behind the text and graphics in the table, table head, or table cell.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004e03">BGCOLOR=</B></A><I>color</I>
+
+ </DT><DD>Sets background color. The <I>color</I> is either a hexadecimal, red-green-blue color value or a predefined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004e04">BORDERCOLOR=</B></A><I>color</I>
+
+ </DT><DD>Sets border color and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a predefined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004e05">BORDERCOLORLIGHT=</B></A><I>color</I>
+
+ </DT><DD>Sets independent border color control over one of the two colors used to draw a 3-D border, opposite of BORDERCOLORDARK, and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a pred
+efined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004e06">BORDERCOLORDARK=</B></A><I>color</I>
+
+ </DT><DD>Sets independent border color control over one of the two colors used to draw a 3-D border, opposite of BORDERCOLORLIGHT, and must be used with the BORDER attribute. The <I>color</I> is either a hexadecimal, red-green-blue color value or a pre
+defined color name. See <A HREF="color.html">Color</A>.
+
+
+
+</DD><DT><B><A NAME="htmlref2_0001000113004e07">VALIGN=</B></A><I>align-type</I>
+
+ </DT><DD>Specifies that the vertical alignment of text in the cells of the row. The <I>align-type</I> can be one of these values:
+
+<TABLE BORDER=0>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">TOP
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned with the top of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">MIDDLE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned in the middle of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BOTTOM
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text is aligned with the bottom of each cell.
+
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">BASELINE
+
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT SIZE="2">Text in adjoining cells in a row is aligned along a common baseline.
+
+</FONT></TD></TR></TABLE>
+
+<P>By default, text is aligned in the middle of the cell.
+
+</DD></DL>
+
+<H2><A NAME="htmlref2_0001000113004f00">TT</A></H2>
+&lt;<B>TT&gt;<BR></B>
+<P>Teletype. Вывод текста в режиме печатающей машинки.
+Выводится равноширинным шрифтом.
+
+<P><B>Пример</B>
+
+<PRE>&lt;TT&gt;Это обычный (plain) текст.&lt;/TT&gt;
+</PRE>
+
+<H2><A NAME="htmlref2_0001000113005000">U</A></H2>
+
+&lt;<B>U&gt;<BR></B>
+<P>
+Подчернутый текст.
+
+<P><B>Пример</B>
+
+<PRE>&lt;U&gt;Этот текст будет подчеркнут.&lt;/U&gt;
+</PRE>
+Что даст:
+<P>
+<U>Этот текст будет подчеркнут.</U>
+<p>
+<H2><A NAME="htmlref2_0001000113005100">UL</A></H2>
+
+&lt;<B>UL&gt;<BR></B>
+<P>
+Задает <a href="list.html#ul" TARGET="contentFrame">ненумерованный список</a>.
+Для задание элемента списка используется команда
+<A HREF="#htmlref2_0001000113002c00">LI</A>.
+Требуется обязательно команда "конец списка" &lt;/UL&gt;.
+
+<P><B>Пример</B>
+
+<PRE>&lt;UL&gt;
+    &lt;LI&gt;Первый элемент списка.
+    &lt;LI&gt;Второй элемент списка.
+&lt;/UL&gt;
+</PRE>
+
+<H2><A NAME="htmlref2_0001000113005200">VAR</A></H2>
+
+&lt;<B>VAR&gt;<BR></B>
+<P>Используется для выделения переменных в тексте.
+Вывод зависет от настроек просмотрщика.
+
+<P><B>Пример</B>
+
+<PRE>Enter the &lt;VAR&gt;filename&lt;/VAR&gt; in the dialog box.
+</PRE>
+Что даст:
+<P>Enter the <VAR>filename</VAR> in the dialog box.
+<P>
+<H2><A NAME="htmlref2_0001000113005300">WBR</A></H2>
+<P>Вставка мягкого конца строки в NOBR текст.
+<P>
+<B>Пример</B>
+<PRE>&lt;NOBR&gt; Эта строка текста выводится в режиме no break, <br>но возможно его прервать с помощью команды .<br>&lt;WBR&gt; Здесь может быть перенос строки &lt;WBR&gt;, или нет.&lt;/NOBR&gt;
+</PRE>
+Что даст:
+<P>
+<NOBR> Эта строка текста выводится в режиме no break, но возможно его прервать <br>с помощью команды .<WBR> Здесь может быть перенос строки <WBR>, или нет.</NOBR>
+<P>
+<H2><A NAME="htmlref2_0001000113005400">XMP</A></H2>
+&lt;<B>XMP&gt;<BR>
+</B>
+<P>Пример текста. Текст выводится шрифтом фиксированной ширины (Courier).
+<P><B>Пример</B>
+<PRE>&lt;XMP&gt;Это есть равноширинный текст.&lt;/XMP&gt;
+</FONT></PRE>
+<P>
+
+
+
+
+
+
+

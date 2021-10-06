@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Цвет в HTML документе</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H2><A NAME="color">Цвет в HTML документе</A></H2>
+<P>
+Установка цветов в  HTML документе производится с использованием
+<b>атрибутов</b> установки цвета в командах:
+<A HREF="html-gloss.html#htmlref2_0001000113000d00" TARGET="contentFrame">BODY</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113002400" TARGET="contentFrame">HR</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113003000" TARGET="contentFrame">MARQUEE</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113004600" TARGET="contentFrame">TABLE</A>.
+<P>
+Например, для установки цвета фона используется атрибут
+<A HREF="html-gloss.html#htmlref2_0001000113000d02" TARGET="contentFrame">BGCOLOR=</A>
+в команде
+<A HREF="html-gloss.html#htmlref2_0001000113000d00" TARGET="contentFrame">BODY</A>.
+В следующем примере определяет белый фон документа.
+<table><tr><td bgcolor=aqua><PRE>&lt;BODY BGCOLOR=WHITE&gt;
+&lt;P&gt;Эта страница имеет белый фон.
+&lt;/BODY&gt;
+</PRE></table>
+<P>
+Выбор цвета можно производить двумя способами:
+<ul>
+<li>Заданием имени выбранного цвета
+<li>Заданием номера Red-Green-Blue выбранного цвета
+</ul>
+Язык HTML 3.2 поддерживает следующие имена цветов:
+
+<P><TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="ARIAL,HELVETICA" SIZE="2">AQUA, BLACK, BLUE, FUCHSIA
+</FONT></TD><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="ARIAL,HELVETICA" SIZE="2">GRAY, GREEN, LIME, MAROON
+</FONT></TD><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="ARIAL,HELVETICA" SIZE="2">NAVY, OLIVE, PURPLE, RED
+</FONT></TD><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="ARIAL,HELVETICA" SIZE="2">SILVER, TEAL, WHITE, YELLOW.
+</FONT></TD></TABLE>
+<P>
+Эти цвета выглядят следующим образом:
+<P><TABLE BGCOLOR=BLACK border=1>
+<TR>
+<TD><FONT COLOR=AQUA>AQUA</font>
+<TD BGCOLOR=WHITE><FONT COLOR=BLACK>BLACK</font>
+<TD><FONT COLOR=BLUE>BLUE</font>
+<TD><FONT COLOR=FUCHSIA>FUCHSIA</font>
+<TR>
+<TD><FONT COLOR=GRAY>GRAY</font>
+<TD><FONT COLOR=GREEN>GREEN</font>
+<TD><FONT COLOR=LIME>LIME</font>
+<TD><FONT COLOR=MAROON>MAROON</font>
+<TR>
+<TD><FONT COLOR=NAVY>NAVY</font>
+<TD><FONT COLOR=OLIVE>OLIVE</font>
+<TD><FONT COLOR=PURPLE>PURPLE</font>
+<TD><FONT COLOR=RED>RED</font>
+<TR>
+<TD><FONT COLOR=SILVER>SILVER</font>
+<TD><FONT COLOR=TEAL>TEAL</font>
+<TD><FONT COLOR=WHITE>WHITE</font>
+<TD><FONT COLOR=YELLOW>YELLOW</font>
+</TABLE>
+<BR CLEAR=ALL>
+<p><a name="return">&nbsp;</a><a href="colors-table.html" target="contentFrame">
+См. таблицу соответсвия 16 имен цветов и их шестнадцатеричных номеров. </a>
+<P>
+<a href="#color"><img src="icons/up.gif" border=0></a>
+<P>
+Номер цвета Red-Green-Blue задается тремя двухзначными шестнадцатиричными числами.
+Каждое число из интервала [00 - FF] ([0 - 255])
+определяет интенсивность соответствующего цвета.
+<P>
+Например номер цвета #FF0000 соответствует красному цвету (<font color=red>RED</font>),
+так как имеет максимальную интенсивность для красного (Red), а зеленый
+(Green) и голубой (Blue) имеют значения равные нулю.
+Соответственно, номер #00FF00 соответствует зеленому цвету
+(<font color=GREEN>GREEN</font>) и номер #0000FF
+- голубому (синему) (<font color=BLUE>BLUE</font>).
+Знак (#) обозначает номер.
+<P>
+<hr COLOR="#00FF0000">
+<b>Пример</b>
+зеленой горизонтальной линии (к сожалению этот <b>атрибут</B> понимает только
+MS Microsoft Explorer):
+<table><tr><td bgcolor=aqua><PRE>&lt;HR COLOR="#00FF00"&gt;
+</PRE></table>
+<hr COLOR="#00FF00">
+<p>
+Если вы желаете выделить фоном часть вашей страницы, то для этого
+лучше всего использовать "пустую" таблицу (таблицу, состоящую из одной клетки)
+(см. <a href="tables.html#tables">раздел описания таблиц</a>).
+<P>
+Хотя задание Red-Green-Blue теоретически позволяет выводить "миллион" цветов,
+на самом деле все определяется видеокартой и монитором, которые использует
+пользователь-клиент. 
+<P>
+<a href="#color"><img src="icons/up.gif" border=0></a>
+
+</BODY></HTML>

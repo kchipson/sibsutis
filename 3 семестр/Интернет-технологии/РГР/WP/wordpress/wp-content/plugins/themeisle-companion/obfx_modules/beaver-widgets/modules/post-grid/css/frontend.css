@@ -1,0 +1,66 @@
+.obfx-card {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+	border-radius: 6px;
+	color: rgba(0, 0, 0, 0.87);
+	background: #fff;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.obfx-post-grid-thumbnail.obfx-card {
+	width: auto;
+	margin: 10px;
+	box-shadow: 4px 8px 59px -15px rgba(0,0,0,1);
+}
+
+.obfx-post-grid-wrapper {
+	display: inline-block;
+	padding: 0 10px;
+	vertical-align: top;
+}
+
+.obfx-post-grid-meta i {
+	padding-right: 5px;
+}
+
+.obfx-post-grid-meta > div {
+	display: inline;
+	word-wrap: initial;
+}
+
+.obfx-post-grid-meta > div:not(:last-child),
+.obfx-category a:not(:last-child),
+.obfx-tags a:not(:last-child) {
+	padding-right: 5px;
+}
+
+.obfx-post-grid-meta > div:not(:last-child):after,
+.obfx-category a:not(:last-child):after,
+.obfx-tags a:not(:last-child):after {
+	content: ",";
+}
+
+.obfx-category a:not(:last-child):after {
+	content: ",";
+}
+
+.obfx-post-grid-pagination li {
+	padding: 5px;
+	vertical-align: bottom;
+}
+
+.obfx-post-grid-pagination li a {
+	padding: 0;
+	background: none;
+}
+
+.page-numbers {
+	padding: 0;
+	list-style: none;
+}
+
+.page-numbers li {
+	display: inline-block;
+}

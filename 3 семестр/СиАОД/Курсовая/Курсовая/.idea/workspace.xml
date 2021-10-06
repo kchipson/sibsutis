@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="CourseWork_sas" targetName="CourseWork_sas" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed93708f-64ef-435f-b592-258932e4b60d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1TIeCmomPE8zMc3om8WM4jOpO5k" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Object-oriented programming/lab4G_clion" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CourseWork_sas" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CourseWork_sas" TARGET_NAME="CourseWork_sas" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CourseWork_sas" RUN_TARGET_NAME="CourseWork_sas">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed93708f-64ef-435f-b592-258932e4b60d" name="Default Changelist" comment="" />
+      <created>1573151911334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573151911334</updated>
+      <workItem from="1573151914897" duration="8097000" />
+      <workItem from="1573221667985" duration="12874000" />
+      <workItem from="1573291485345" duration="19783000" />
+      <workItem from="1573387696042" duration="1039000" />
+      <workItem from="1573388876779" duration="87000" />
+      <workItem from="1573389224150" duration="550000" />
+      <workItem from="1573792899480" duration="642000" />
+      <workItem from="1575556920879" duration="1397000" />
+      <workItem from="1575792845082" duration="3361000" />
+      <workItem from="1575798011199" duration="22598000" />
+      <workItem from="1575998487657" duration="12568000" />
+      <workItem from="1576156469683" duration="12660000" />
+      <workItem from="1576211931841" duration="710000" />
+      <workItem from="1576213270910" duration="456000" />
+      <workItem from="1576213983674" duration="1608000" />
+      <workItem from="1576494341683" duration="107000" />
+      <workItem from="1576596734536" duration="69000" />
+      <workItem from="1576814714335" duration="1394000" />
+      <workItem from="1577043210187" duration="8790000" />
+    </task>
+    <servers />
+  </component>
+</project>

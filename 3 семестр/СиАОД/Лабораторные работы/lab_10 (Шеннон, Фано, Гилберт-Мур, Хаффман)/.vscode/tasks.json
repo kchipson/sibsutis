@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compile lab_10",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${fileDirname}\\main.cpp",
+                "${fileDirname}\\somefunctions.cpp",
+                "${fileDirname}\\codings.cpp",
+                "${fileDirname}\\functions.cpp",
+                "-o",
+                "${fileDirname}\\bin\\main.exe"
+                // "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

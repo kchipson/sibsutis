@@ -1,0 +1,25 @@
+div.main {
+    background-color: #b26957;
+    height: 3em;
+    display: flex;
+    font-weight: bold;
+
+    justify-content: center;
+    width: 100%;
+    color: white;
+    border-radius: 1em;
+}
+div.menu {
+    line-height: 3em;
+    width: 10%;
+    text-align: center;
+    cursor: hand;
+    float: left;
+}
+div.subMenu {
+    position: relative;
+    background-color: #b2696e;
+}
+span {
+    display: block;
+}

@@ -1,0 +1,312 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+<script>
+function fonWin1(){myWin= open("ex_fon1.html", "displayWindow","width=250,height=150,status=no,toolbar=no,menubar=no,scrollbars=no");}
+function StringWin(){myWin= open("ex_string.html", "displayWindow","width=450,height=400,status=no,toolbar=no,menubar=no,scrollbars=no");}
+</script>
+</HEAD>
+<BODY text="Black" link="#336699" vlink="#6699cc" alink=" #ff6600">
+ <A NAME="list_back">
+<H2>Метод back</H2> 
+<P>
+Загружает предыдущий URL в списке хронологии. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> History.back ()</PRE> </table>
+<H3> Метод</H3> 
+<P>
+<a hrEF="h_l.html#list_history">history</A> 
+<H3> Описание</H3> 
+<P>
+Этот метод выполняет то же самое, какое выполняет следующее выражениее  <TT>history.go (-1)</TT>. 
+<H3> Примеры</H3> 
+Следующие кнопки выполняют то же самое действия, что и в Navigator кропки Back и Forward: 
+<table><tr><td bgcolor=aqua><xmp>   
+<INPUT TYPE="button" VALUE="< Back"
+   onClick="history.back()">
+<INPUT TYPE="button" VALUE="> Forward"
+   onClick="history.forward()">
+ </xmp> </table>
+<H3> Смотрите также</H3> 
+<LI> Методы <a hrEF="f_g.html#list_forward">forward</A>, <a hrEF="f_g.html#list_go">go</A> 
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_bgColor">
+<H2>Свойство bgColor</H2> 
+<P>
+ Строка, определяющая фоновый цвет документа. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> Document.bgColor</PRE> </table>
+<H3> Свойство</H3> 
+<P>
+<a hrEF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Свойство <b>bgColor</b> выражается как шестнадцатеричный триплет RGB или так как это один из строковых литералов, внесенных в раздел <a hrEF="colorV.html">Цвета JavaScript</A>. Это свойство - <font color="red"><i>JavaScript</i></font> отражение атрибута BGCOLOR  тега HTML &lt;BODY>. 
+<P>
+Вы можете регулировать свойство <b>bgColor</b> в любое время. 
+<P>
+Если вы выражаете цвет, как шестнадцатеричный триплет RGB, то вы должны использовать формат rrggbb. Например, шестнадцатеричное значения RGB для цвета salmon - red=FA, green=80, и blue=72, следователь триплет RGB для salmon - "FA8072". 
+<H3> Примеры</H3> 
+<P>
+Следующий пример устанавливает фон документа в цвет aqua при использование строкового литерала: 
+<table><tr><td bgcolor=aqua><PRE>  
+Document.bgColor = "aqua"
+ </PRE></table> 
+<P>
+Следующий пример устанавливает фон документа в aqua при использование шестнадцатеричного триплета: 
+<table><tr><td bgcolor=aqua><PRE>  
+Document.bgColor = "00FFFF"
+</PRE></table>
+Следующий пример позволяет пользователю устанавливать свой собственный цвет фона с помощью переключателей.
+<table><tr><td bgcolor=aqua><xmp>
+function newColor(colorString){
+      document.bgColor=colorString
+}
+   ...
+<FORM NAME="colors">
+<INPUT TYPE="radio" NAME="color" VALUE="F0F8FF"
+ onClick="newColor(this.value)">Alice Blue
+<INPUT TYPE="radio" NAME="color" VALUE="FF4500"
+ onClick="newColor(this.value)">Ochre
+<INPUT TYPE="radio" NAME="color" VALUE="FFEFD5"
+ onClick="newColor(this.value)">Papaya Whip
+</FORM>
+</xmp></table>
+<form>
+<input type="button" value="Просмотр" onClick="fonWin1()">
+</form>
+<H3> Смотрите также</H3> 
+<LI>Свойства <a hrEF="a.html#list_alinkColor">AlinkColor</A>, <a hrEF="f_g.html#list_fgColor">fgColor</A>, <a hrEF="h_l.html#list_linkColor">linkColor</A>, и <a hrEF="t_z.html#list_vlinkColor">vlinkColor</A>  
+<!------------------------------------------------------------------------------------------------->
+ 
+<hr align=center width=250>
+ <A NAME="list_big">
+<H2>Метод big</H2> 
+<P>
+Показывает строку более крупным шрифтом. Этот метод идентичен тегу HTML &LT;BIG>. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>StringName</I>.big ()</PRE> </table>
+<P>
+<I>StringName</I> - любая строка. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>big</b> с методами <i>write</i> или <i>writeln</i>. 
+<H3> Примеры</H3> 
+Следующий пример использует метод <i>string</i>, чтобы изменить размер строки: 
+<table><tr><td bgcolor=aqua><PRE>  
+var worldString = " Привет мир "
+Document.write (worldString.small ()) 
+document.write (" &lt;P>; " + worldString.big ()) 
+document.write (" &lt;P>; " + worldString.fontsize (7)) </PRE> </table>
+<P>
+Следующий пример приводит к аналогичному результату:
+<table><tr><td bgcolor=aqua><XMP>
+<SMALL>
+  Привет, мир
+</SMALL>
+<P>
+<BIG>
+  Привет, мир
+</BIG>
+<P>
+<FONTSIZE=7>
+  Привет, мир
+</FONTSIZE>
+</XMP></table>
+<form>
+<input type="button" value="Look at me" onClick="StringWin()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Методы  <a hrEF="f_g.html#list_fontsize">fontsize</A>, <a hrEF="s.html#list_small">small</A>
+<!------------------------------------------------------------------------------------------------>
+ <hr align=center width=250>
+ <A NAME="list_blink">
+<H2>Метод blink</H2> 
+<P>
+ Формотирует строку в виде мигающей, как будто это было в &ltBLINK &gt; отметка. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>StringName</I>.blink ()</PRE> </table>
+<P>
+<I>StringName</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метода <b>blink</b> с методами <i>write</i> или <i>writeln</i> для форматирования строки в документе. Использование метода <b>blink</b> идентично изменению вида выводимого текста с помощью тега HTML &lt;BLINK>.
+<H3> Примеры</H3> 
+Следующий пример использует методы <i>string</i>, чтобы изменить строку: 
+<table><tr><td bgcolor=aqua><PRE>  
+var worldString = " Привет, мир "
+Document.write (worldString.blink ()) 
+document.write (" &lt;P>; " + worldString.bold ()) 
+document.write (" &lt;P>; " + worldString.italics ()) 
+document.write (" &lt;P>; " + worldString.strike ())
+ </PRE></table> 
+<P>
+Следующий пример приведет к аналогичному результату: 
+<table><tr><td bgcolor=aqua><XMP>
+<BLINK>
+ Привет, мир
+</BLINK>
+<P>
+ <B>Привет, мир</B> 
+<P>
+ <I>Привет, мир</I> 
+<P>
+<STRIKE>Привет, мир</STRIKE> 
+</XMP></table>
+<form>
+<input type="button" value="Click me" onClick="StringWin()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Методы <a hrEF="b.html#list_bold">bold</A>, <a hrEF="h_l.html#list_italics">italics</A>, <a hrEF="s.html#list_strike">strike</A> 
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_blur">
+<H2>Метод blur</H2> 
+<FONT SIZE=-2><a hrEF="introduction.html#1_blur">Измененный в Navigator 3.0</A></FONT>  
+<P>
+ Удаляет фокус из указанного элемента формы. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>PasswordName</I>.blur () 
+2. <I>SelectName</I>.blur () 
+3. <I>TextName</I>.blur () 
+4. <I>TextareaName</I>.blur () </PRE> 
+<P>
+<I>PasswordName</I> является либо значением атрибута NAME объекта password либо значением элемента в массиве <I>elements</I>. <BR>
+<I>SelectName</I> является либо значением атрибута NAME выбранного объекта либо значением элемента в массиве <I>elements</I>. <BR>
+<I>TextName</I> является либо значением атрибута NAME текстового объекта либо значением элемента в массиве <I>elements</I>. <BR>
+<I>TextareaName</I> является либо значением атрибута NAME объекта textarea либо значением элемента в массиве <I>elements</I>. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="m_q.html#list_password">password</A>, <a hrEF="s.html#list_select">select</A>, <a hrEF="t_z.html#list_textob">text</A>, <a hrEF="t_z.html#list_textarea">textarea</A> 
+<H3> Описание</H3> 
+<P>
+Использование метода <b>blur</b> удалять фокус из определенного элемента формы. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример удаляет фокус из элемента password <I>userPass</I>: 
+<table><tr><td bgcolor=aqua><PRE>  
+UserPass.blur ()
+ </PRE> </table>
+Если элемент password определен как: 
+<table><tr><td bgcolor=aqua><xmp>
+<INPUT TYPE="password" NAME="userPass">
+</xmp></table>
+Или другой пример следующая строка удаляет фокус из элемента <i>feedback</i>:
+<table><tr><td bgcolor=aqua><PRE>  
+feedback.blur ()
+ </PRE> </table>
+в предположение, что элемент <i>feedback</i> определен следующим образом:
+<table><tr><td bgcolor=aqua><xmp>
+<INPUT TYPE="text" NAME="feedback">
+</xmp></table>
+<H3> Смотрите также</H3> 
+<LI> Методы <a hrEF="f_g.html#list_focus">focus</A>, <a hrEF="s.html#list_selectmet">select</A> 
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_bold">
+<H2>Метод bold</H2> 
+<P>
+Показывает строку жирным шрифтом, аналогично тегу HTML &LT;B>. 
+<H3> Синтаксис</H3> 
+<font color="purple"><PRE> <I>StringName</I>.bold ()</PRE></font>
+<P>
+<I>StringName</I> - любой ряд или собственность существующего объекта(цели). 
+<H3> Метод</H3> 
+<P>
+<a hrEF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>bold</b> с методами <i>write</i> или <i>writeln</i>, чтобы форматировать строку в документе. 
+<H3> Примеры</H3> 
+Следующий пример использует метод <i>string</i>, чтобы изменить строку: 
+<table><tr><td bgcolor=aqua><xmp>  
+var worldString = " Привет мир "
+Document.write (worldString.blink ()) 
+document.write (" <P> " + worldString.bold ()) 
+document.write (" <P>" + worldString.italics ()) 
+document.write (" <P> " + worldString.strike ())
+ </xmP></table> 
+<P>
+Или в синтакси HTML: 
+<table><tr><td bgcolor=aqua><xmp>  
+<BLINK>Привет мир</BLINK>
+<P><B>Привет мир</B>
+<P><I>Привет мир</I>
+<P><STRIKE>Привет мир</STRIKE>
+</xmP></table>
+<form>
+<input type="button" value="Просмотр" onClick="StringWin()">
+</form> 
+<H3> Смотрите также</H3> 
+<LI> Методы  <a hrEF="b.html#list_blink">blink</A>, <a hrEF="h_l.html#list_italics">italics</A>, <a hrEF="s.html#list_strike">strike</A>
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_button">
+<H2> Объект button</H2> 
+<FONT SIZE=-2><a hrEF="introduction.html#1_button">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Кнопка в форме HTML. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><xmp>   
+<INPUT
+   TYPE="button"
+   NAME="buttonName"
+   VALUE="buttonText"
+   [onClick="handlerText"]>
+ </xmP></table> 
+<I>NAME = "buttonName"</I> определяет имя объекта кнопки. Вы можете обращаться к этому значению, используя свойство имени. <BR>
+<I>VALUE = "buttonText"</I> определяет значение кнопки на экране. Вы можете обращаться к этому значению, используя свойство значения. 
+<P>
+Использование свойства объекта и методы <b>button</b>: 
+<PRE>  
+1. <I>ButtonName</I>.<I>propertyName </I>
+2. <I>ButtonName</I>.<I>methodName</I> <I>(parameters)</I> 
+3. <I>FormName</I>.elements <I>[index]</I> .<I>propertyName </I>
+4. <I><I>formName.elements[index].methodName(parameters)</I></I>  </PRE> 
+<I>ButtonName</I> - значение атрибута NAME объекта кнопки. <BR>
+<I>FormName</I> является либо значением атрибута NAME объекта формы либо значением элемента в массиве <I>form</I>. <BR>
+<I>index</I> - целое число, представляющее объект кнопки в форме. <BR>
+<I>PropertyName</I> - один из свойств, описанных ниже. <BR>
+<I>MethodName</I> - один из методов, описанных ниже. 
+<H3> Свойства</H3> 
+<LI> <a hrEF="f_g.html#list_formob">form</A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>button</b> в форме выглядит следующим образом: 
+<FORM>  
+<P>
+<INPUT TYPE="button" VALUE="Click me">
+</FORM>
+<P>
+Объект <b>button</b> - элемент формы и должен быть определен внутри тега &LT;FORM>. 
+<P>
+Объект <b>button</b> - кнопка, которую вы можете использовать, для выполнения каких - либо действий, которое вы определили. При назначении кнопке обработчика событий onClick эта кнопка становится дополнительным средством для инициализации событий, отличных от <i>submit</i> и <i>reset</i>. 
+<h3>Связанные элементы</h3>
+<li type="circle"><H4>Свойства</H4> 
+<ul><LI> <a hrEF="m_q.html#list_name">name</A> отражает атрибут NAME 
+<LI> <a hrEF="t_z.html#list_value">value</A> отражает атрибут VALUE </ul>
+<li type="circle"><H4> Методы</H4> 
+<ul><LI> <a hrEF="c.html#list_click">click</A> </ul>
+<li type="circle"><H3> Обработчики событий</H3> 
+<ul><LI> <a hrEF="m_q.html#list_onClickt">OnClick</A> </ul>
+<H3> Примеры</H3> 
+<P>
+Следующий пример создает кнопку <I>calcButton</I>.На экране, которой написано "Calculate". Когда кнопка нажата вызывается функция <I>calcFunction ()</I>. 
+<table><tr><td bgcolor=aqua><XMP>
+<INPUT TYPE="button" VALUE="Calculate"
+       NAME="calcButton" 
+   onClick="calcFunction(this.form)">
+</XMP></table>
+<H3> Смотрите также</H3> 
+<LI> Объекты <a hrEF="f_g.html#list_formob">form</A>, <a hrEF="r.html#list_reset">reset</A>, и <a hrEF="s.html#list_submit">submit</A> 
+</body>
+</html>

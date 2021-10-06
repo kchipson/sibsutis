@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Таблицы стилей CSS.Примеры. </TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+
+<h2><A NAME="list">Адаптация интерфейса</A></h2>
+<p>Таблицы стилей <b>CSS</b> имеют возможность создания стилей, автоматически адаптирующихся к пользовательской системе. 
+Для этого в них реализовано определение пользовательских системных установок цвета и шрифтов, а также 
+применение этих значений к любому из элементов <b>web</b>-страницы, который может использовать значения <b>color</b> и <b>font</b>.
+ Для определения пользовательских настроек  используется набор ключевых слов.
+</p>
+<p>
+В этой таблице приведен список ключевых слов для определения пользовательских цветов и примеры их применения.
+ <table border=3 bgcolor="#ffffff" width="100%">
+          <tr><th>Цвета<th>значение<th>описание
+          <tr><td style="background: activeborder">&nbsp;<td>activeborder<td>Цвет границы активного окна. 
+          <tr><td style="background: activecaption">&nbsp;<td>activecaption<td>Цвет заголовка активного окна. 
+          <tr><td style="background: appworkspace">&nbsp;<td>appworkspace<td>Цвет  мультидокументного фона. 
+          <tr><td style="background: background">&nbsp;<td>background<td>Цвет фона рабочего стола. 
+          <tr><td style="background: buttonface">&nbsp;<td>buttonface<td>"Лицевая" сторона объемных элементов. 
+          <tr><td style="background: buttonhighlight">&nbsp;<td>buttonhighlight<td>Насыщенная тень объемных элементов. 
+          <tr><td style="background: buttonshadow">&nbsp;<td>buttonshadow<td>Цвет тени объемных элементов. 
+          <tr><td style="background: buttontext">&nbsp;<td>buttontext<td>Цвет текста на кнопках. 
+          <tr><td style="background: captiontext">&nbsp;<td>captiontext<td>Цвет текста в заголовках. 
+          <tr><td style="background: graytext">&nbsp;<td>graytext<td>Отключенный (недоступный) текст. 
+          <tr><td style="background: highlight">&nbsp;<td>highlight<td>Выделение объекта элемента управления. 
+          <tr><td style="background: highlighttext">&nbsp;<td>highlighttext<td>Выделение текста элемента управления. 
+          <tr><td style="background: inactiveborder">&nbsp;<td>inactiveborder<td>Цвет границы неактивного окна. 
+          <tr><td style="background: inactivecaption">&nbsp;<td>inactivecaption<td>Цвет заголовка неактивного окна. 
+          <tr><td style="background: inactivecaptiontext">&nbsp;<td>inactivecaptiontext<td>Цвет текста в неактивном заголовке. 
+          <tr><td style="background: infobackground">&nbsp;<td>infobackground<td>Цвет фона всплывающей подсказки. 
+          <tr><td style="background: infotext">&nbsp;<td>infotext<td>Цвет текста всплывающей подсказки. 
+          <tr><td style="background: menu">&nbsp;<td>menu<td>Цвет фона меню. 
+          <tr><td style="background: menutext">&nbsp;<td>menutext<td>Цвет текста в меню. 
+          <tr><td style="background: scrollbar">&nbsp;<td>scrollbar<td>Цвет полосы прокрутки. 
+          <tr><td style="background: threeddarkshadow">&nbsp;<td>threeddarkshadow<td>Темная тень объемных элементов. 
+          <tr><td style="background: threedface">&nbsp;<td>threedface<td>"Лицевая" сторона объемных элементов. 
+          <tr><td style="background: threedhighlight">&nbsp;<td>threedhighlight<td>Цвет выделения объемных элементов. 
+          <tr><td style="background: threedlightshadow">&nbsp;<td>threedlightshadow<td>Светлый цвет тени объемных элементов. 
+          <tr><td style="background: threedshadow">&nbsp;<td>threedshadow<td>Насыщенная тень объемных элементов. 
+          <tr><td style="background: window">&nbsp;<td>window<td>Цвет фона окна. 
+          <tr><td style="background: windowframe">&nbsp;<td>windowframe<td>Цвет рамки окна. 
+          <tr><td style="background: windowtext">&nbsp;<td>windowtext<td>Цвет текста в окне. 
+        </table>
+<BR>Синтаксис:<span class=cod>   <strong>селектор</strong> {color: <strong>background</strong>; } </span><br>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a><br>
+Пример: <span  class= user> текст имеет цвет фона Вашего рабочего стола </span>
+
+
+</p>
+<p>
+Применяя  правила стилей, которые используют настройки пользователя, можно добиться следующих преимуществ: 
+во-первых, это позволяет создавать страницы, с интерфейсом, отвечающим требованиям и вкусу пользователя, а во-вторых 
+позволяет создавать более доступные страницы, т.к. настройки пользователя могут быть связаны с их физическими ограничениями. 
+Значение, которое отсутствует в системе, при этом будет заменено ближайшим к нему атрибутом системы или цветом, используемым по умолчанию.
+</p>
+<p>
+В этой таблице приведен список ключевых слов для определения пользовательских шрифтов и примеры их применения.
+ <table border=3 bgcolor="#ffffff" width="100%">
+          <tr><th>Системные шрифты<th>значение<th>описание
+          <tr><td STYLE="font: caption">Шрифт<td>caption<td>Шрифт, используемый в заголовках кнопок и т.д.
+          <tr><td STYLE="font: icon">Шрифт<td>icon<td>Шрифт, используемый в иконках.
+          <tr><td STYLE="font: menu">Шрифт<td>menu<td>Шрифт, используемый в меню.
+          <tr><td STYLE="font: messagebox">Шрифт<td>messagebox<td>Шрифт, используемый в диалогах и т.д.
+          <tr><td STYLE="font: smallcaption">Шрифт<td>smallcaption<td>Шрифт, используемый в малых элементах.
+          <tr><td STYLE="font: statusbar">Шрифт<td>statusbar<td>Шрифт, используемый в статусной строке.
+        </table> 
+<br>Синтаксис:<span class=cod>  <strong>селектор</strong> {font: <strong>icon</strong>; } </span>
+</p>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a> 
+</BODY>
+</HTML>

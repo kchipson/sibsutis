@@ -1,0 +1,42 @@
+/**
+ * This file should contain frontend styles that
+ * will be applied to all module instances.
+ */
+.obfx-services-section {
+	text-align: center;
+}
+
+.obfx-service-title {
+	display: inline-block;
+}
+
+.obfx-card {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+	border-radius: 6px;
+	color: rgba(0, 0, 0, 0.87);
+	background: #fff;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.obfx-service {
+	padding: 15px;
+}
+
+.obfx-service-icon {
+	vertical-align: middle;
+}
+
+.obfx-service-icon i {
+	vertical-align: inherit;
+}
+
+.obfx-service-icon .dashicons,
+.obfx-service-icon .dashicons-before:before {
+	width: inherit;
+	height: inherit;
+	font-size: inherit;
+	vertical-align: inherit;
+}

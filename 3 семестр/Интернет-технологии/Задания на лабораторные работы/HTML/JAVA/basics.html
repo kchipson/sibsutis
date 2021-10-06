@@ -1,0 +1,476 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Основные понятия</TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+<a href="javabook.html"><img src="icons/home.gif" border=0 alt="Домой" width=64 height=64></a>
+<H2><A NAME="list">Основные понятия</A></H2>
+<P>
+<UL>
+        <LI><A href="#place1">Размещение JavaScript</a>
+        <LI><A href="#place2">Браузеры без поддержки JavaScript</a>
+        <LI><A href="#place3">События</a>
+        <LI><A href="#place4">Иерархия объектов</a>
+        <LI><A href="#place5">Навигационные панели</a>
+        <LI><A href="#place6">Окна и динамически создаваемые документы</a>
+        <LI><A href="#place7">Таймеры и строка состояния</a>
+        <LI><A href="#place8">Массивы в JavaScript 1.0</a>
+        <LI><A href="#place9">Перехват событий</a>
+</UL>
+<H3><A NAME="place1">Размещение JavaScript</A></H3>
+<Blockquote>
+<P>Код скрипта JavaScript размещется непосредственно на HTML-странице.
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;body&gt;&lt;br&gt;
+      Это обычный HTML документ.&lt;br&gt;
+      <Font color='green'>&lt;script language="JavaScript"&gt;
+         document.write("А это JavaScript!&lt;br&gt;")
+      &lt;/script&gt;</Font>
+      Вновь документ HTML.
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Результат выполнения этого файла:
+<P><Font color='brown'><I>Это обычный HTML документ.<BR>
+А это JavaScript!<BR>
+Вновь документ HTML.</I></Font>
+<P>Все, что стоит между тэгами <B>&lt;script&gt;</B> и <B>&lt;/script&gt;</B>,
+интерпретируется как код на языке JavaScript. Команда <B>document.write()</B>
+используется, когда необходимо что-либо написать в текущем документе.
+</Blockquote>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+
+<H3><A NAME="place2">Браузеры без поддержки JavaScript</A></H3>
+<Blockquote>
+<P>Браузеры, не имеющие поддержки JavaScript, не распознают  тэг <B>&lt;script&gt;</B>
+и печатают все стоящие вслед за ним коды как обычный текст. Чтобы этого
+избежать используют тэг комментария из HTML: <B>&lt;!-- --&gt;</B>.
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;body&gt;&lt;br&gt;
+      Это обычный HTML документ.&lt;br&gt;
+      <Font color='green'>&lt;script language="JavaScript"&gt;
+         &lt;!-- для старых браузеров
+         document.write("А это JavaScript!&lt;br&gt;")
+         // --&gt;
+      &lt;/script&gt;</Font>
+      Вновь документ HTML.
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>В этом случае браузер без поддержки JavaScript будет печатать:
+<P><Font color='brown'><I>Это обычный HTML документ.<BR>
+Вновь документ HTML.</I></Font>
+</Blockquote>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+<H3><A NAME="place3">События</A></H3>
+<Blockquote>
+<P>События, главным образом, инициируются теми или иными действиями пользователя.
+Если он щелкает по некоторой кнопке, происходит событие "Click". Если указатель
+мыши пересекает какую-либо ссылку гипертекста - происходит событие MouseOver.
+Существует несколько различных типов событий. Мы можем заставить
+JavaScript-программу реагировать на некоторые из них. И это может быть выполнено
+ с помощью специальных программ обработки событий. Приведенный ниже код
+ представляет простой пример с обработчиком события "нажатие кнопки" onClick:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;head&gt;
+   <Font color='green'>&lt;script language="JavaScript"&gt;
+      &lt;!-- hide
+      function calculation() {
+         var x= 12;
+         var y= 5;
+         var result= x + y;
+         alert(result);
+      }
+      // --&gt;
+   &lt;/script&gt;</Font>
+   &lt;/head&gt;
+   &lt;Body&gt;
+      &lt;form&gt;
+         &lt;input type="button" value="Calculate" onClick="calculation()"&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Eсли имеет место событие <B>Click</B>, компьютер выполняет вызов
+функции <B>calculation()</B>. Как можно заметить, эта функция выполняет некие вычисления,
+пользуясь переменными x, y и result.
+<P>Переменную мы можем определить с помощью ключевого слова <B>var</B>.
+Переменные могут использоваться для хранения различных величин - чисел, строк текста и т.д.
+Таким образом, строка скрипта <B>var result = x + y;</B> сообщает браузеру о том, что необходимо
+создать переменную result и поместить туда результат выполнения арифметической
+операции x + y (т.е. 5 + 12).
+<P>Функция <B>alert()</B> позволяет создавать выпадающие окна.
+В данном  мы получаем выпадающее окно, в котором написано число 17.
+</Blockquote>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+<H3><A NAME="place4">Иерархия объектов</A></H3>
+<Blockquote>
+<P>В языке JavaScript все элементы на web-странице выстраиваются
+ в иерархическую структуру. Каждый элемент предстает в виде объекта.
+ И каждый такой объект может иметь определенные свойства и методы.
+ В свою очередь, язык JavaScript позволит Вам легко управлять объектами web-страницы,
+ хотя для этого очень важно понимать иерархию объектов, на которые опирается разметка HTML.
+<P>С точки зрения языка JavaScript окно браузера - это некий объект <B>window</B>.
+Этот объект также содержит в свою очередь некоторые элементы оформления,
+такие как строка состоятия. Внутри окна мы можем разместить документ HTML
+(или файл какого-либо другого типа). Такая страница является ни чем иным,
+как объектом <B>document</B>. Это означает, что объект document представляет
+в языке JavaScript загруженный на настоящий момент документ HTML. К свойствам
+объекта <B>document</B> относятся, например, цвет фона для web-страницы.
+Все без исключения объекты HTML являются свойствами объекта document.
+Например, рисунки - <B>images</B>, формы - <B>forms</B>, ссылки - <B>links</B>
+и другие элементы - <B>elements</B>.
+<P>Каждый объект иерархической структуры имеет свое имя и индекс.
+ Индексация для каждого типа объекта(рисунки,формы,ссылки,начинается с нуля).
+ Например, если Вы хотите обратиться к первому рисунку на нашей HTML-странице,
+ то должны записать <B>document.images[0]</B>.
+ Чтобы узнать, какой текст ввел читатель в первый элемент формы,
+ надо записать<BR> <B>name  = document.forms[0].elements[0].value;</B>
+ Полученная строка заносится в переменную name.
+<P>Если Вы имеете дело с большими страницами, то процедура адресации к различным объектам по номеру может стать весьма запутынной. Во избежание подобной проблемы, Вы можете сами присваивать различным объектам уникальные имена.
+<P>Ниже, пример формы с именем myForm и текстового поля text.
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;Body&gt;
+      &lt;form name="myForm""&gt;
+         &lt;input type="text" name="name" value=""&gt;&lt;br&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Таким образом, чтобы узнать, какой текст ввел читатель в первый элемент формы,
+ надо записать<BR> <B>name = document.myForm.name.value;</B>
+<P><Font color='red'>Обратите внимание, что при написании имен Вы должны еще следить и за положением регистра - то есть Вы не имеете права написать myform вместо myForm</FONT></P>
+<P>Можно получить доступ к любому объекту с помощью конструкции<BR>
+<B>document.all('имя_объекта')</B>.
+<P>В JavaScript многие свойства объектов доступны не только для чтения.
+   Нажмите кнопку, чтобы посмотреть следующий пример:
+<Form>
+   <input type="button" value="Пример" onClick="location.href='example1.html'; ">
+</Form>
+<P>Данная кнопка создана с использованием объекта location. В этом объекте
+представлен адрес загруженного HTML-документа. Можно записывать в location.href свои новые значения.
+В данном случае по нажатию на кнопку в текущее окно загружается новая страница:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;Form&gt;
+   &lt;input type="button" value="Пример" onClick="location.href='example1.html';"&gt;
+&lt;/Form&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Заметьте, что в команде onClick мы использовали двойные кавычки ("),
+а при указании имени файла example1.html  - только одинарные. Если бы было написано
+<B>onClick="location.href='example1.html';"</B>, то компьютер не смог бы разобраться в нашем скрипте, поскольку становится неясно, к которой из частей конструкции имеет отношение функция обработки событий onClick, а к которой - нет.
+<P>Не имеет значения, в каком порядке использованы кавычки - сперва двойные, а затем одинарные или наоборот. То есть Вы можете точно так же написать и <B>onClick='location.href="example1.html";'</B>.
+</BLOCKQUOTE>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+<H3><A NAME="place5">Навигационные панели</A></H3>
+<BLOCKQUOTE>
+<P>Давайте рассмотрим, как создаются навигационные панели. В одном фрейме мы создаем несколько ссылок. Однако, если посетитель активирует какую-либо из них, соответствующая страница будет помещена не в тот же самый фрейм, а в соседний.
+<P>Пример этого:
+<P>Сперва необходимо создать указанные фреймы.
+<B>frames3.htm</B>
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;frameset rows="80%,20%"&gt;
+      &lt;frame src="start.htm" name="main"&gt;
+      &lt;frame src="menu.htm" name="menu"&gt;
+   &lt;/frameset&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Здесь start.htm - это та страница, которая первоначально будет показана в главном фрейме (main).
+<P>Следующая web-страница будет загружена во фрейм "menu":
+<B>menu.htm</B>
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;head&gt;
+      <Font color='green'>&lt;script language="JavaScript"&gt;
+      &lt;-- hide
+         function load(url) {
+            parent.main.location.href= url;
+         }
+         function load2(url) {
+            parent.location.href= url;
+         }
+      // --&gt;
+      &lt;/script&gt;</font>
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;a href="javascript:load('first.htm')"&gt;first&lt;/a&gt;
+      &lt;a href="javascript:load('second.htm')"&gt;second&lt;/a&gt;
+      &lt;a href="third.htm" target="_top"&gt;third&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>В первой ссылке для загрузки страницы во фрейм main используется функция load().
+Для этого мы воспользовались параметром <B>javascript:</B> вместо обычного <B>href</B>. Далее, внутри скобок можно увидеть 'first.htm'. Эту строка передается в качестве аргумента функции load().
+Здесь Вы можете увидеть, что внутри скобок написано url. Это означает, что в нашем примере строка 'first1.htm' при вызове функции заносится в переменную url. И эту новую переменную теперь можно использовать при работе внутри функций load().
+<P>Во второй ссылке мы используем функцию load2, в которой избавляемся от фреймов,
+загружая новую страницу сразу в главный фрейм parent.
+</BLOCKQUOTE>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+<H3><A NAME="place6">Окна и динамически создаваемые документы</A></H3>
+<BLOCKQUOTE>
+<P>Окна в JavaScript создаются и открываются с помощью следующей конструкции:<BR>
+<B>myWin = window.open("URL_адрес", "имя_окна","строка_свойств");</B>
+<P>URL_адрес - URL-адрес, открываемого окна. Если указана пустая строка "", то
+   создается новый документ.
+   имя_окна -  уникальный идентификатор, которым можно пользоваться с любого из окон браузера, для доступа
+   к открываемому окну.<BR>
+   строка_свойств - список свойств создаваемого окна.<BR>
+   myWin - c ее помощью можно получить доступ к новому окну.
+<P>Ниже представлен список свойств:
+<TABLE border=1 cellspacing=4 cellpadding=4>
+<TR>
+<TH>directories</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>height</TH><TD>количество пикселей</TD>
+</TR>
+<TR>
+<TH>location</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>menubar</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>resizable</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>scrollbars</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>status</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>toolbar</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>width</TH><TD>количество пикселей</TD>
+</TR>
+<TR>
+<TH>alwaysLowered</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>alwaysRaised</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>dependent</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>hotkeys</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>innerWidth</TH><TD>количество пикселей (заменяет width)</TD>
+</TR>
+<TR>
+<TH>innerHeight</TH><TD>количество пикселей (заменяет height)</TD>
+</TR>
+<TR>
+<TH>outerWidth</TH><TD>количество пикселей</TD>
+</TR>
+<TR>
+<TH>outerHeight</TH><TD>количество пикселей</TD>
+</TR>
+<TR>
+<TH>screenX</TH><TD>количество пикселей</TD>
+</TR>
+<TR>
+<TH>screenY</TH><TD>количество пикселей</TD>
+</TR>
+<TR>
+<TH>titlebar</TH><TD>yes|no</TD>
+</TR>
+<TR>
+<TH>z-lock</TH><TD>yes|no</TD>
+</TR>
+</TABLE>
+<P><Font color="red">В строке свойств не следует помещать символы пробела</Font>
+<P>В следующем скрипте открывается новое окно размером 400x300 пикселов.
+Оно не имеет ни строки статуса, ни панели инструментов, ни меню.
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;head&gt;
+      <Font color="green">&lt;script language="JavaScript"&gt;
+      &lt;!-- hide
+         function openWin2() {
+            myWin = window.open("bla.htm", "displayWindow","width=400,height=300,status=no,toolbar=no,menubar=no");
+        }
+      // --&gt;
+      &lt;/script&gt;</font>
+   &lt;/head&gt;
+   &lt;/body&gt;
+      &lt;form&gt;
+         &lt;input type="button" value="Открыть новое окно" onClick="openWin2()"&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Окна закрываются с помощью следующей конструкции:<BR>
+<B>myWin = window.close</B>
+<P>Ниже пример создания простого HTML-документа.
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;head&gt;
+      <Font color="green">&lt;script language="JavaScript"&gt;
+      &lt;!-- hide
+         function openWin3() {
+            myWin= open("", "displayWindow","width=500,height=400,status=yes,toolbar=yes,menubar=yes");
+            //открыть объект document для последующей печати
+            myWin.document.open();
+            // генерировать новый документ
+            myWin.document.write("&lt;html&gt;&lt;head&gt;&lt;title&gt;На лету");
+            myWin.document.write("&lt;/title&gt;&lt;/head&gt;&lt;body&gt;");
+            myWin.document.write("&lt;center&gt;&lt;font size=+3&gt;");
+            myWin.document.write("This HTML-document has been created ");
+            myWin.document.write("&lt;/font&gt;&lt;/center&gt;");
+            myWin.document.write("&lt;/body&gt;&lt;/html&gt;");
+            // закрыть документ - (но не окно!)
+            myWin.document.close();
+        }
+      // --&gt;
+      &lt;/script&gt;</Font>
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;form&gt;
+         &lt;input type=button value="On-the-fly" onClick="openWin3()"&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+</BLOCKQUOTE>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+<H3><A NAME="place7">Таймеры и строка состояния</A></H3>
+<BLOCKQUOTE>
+<P>С помощью функции Timeout (или таймера) Вы можете запрограммировать компьютер на выполнение некоторых команд по истечении некоторого времени.
+<P>Рассмотрим работу с таймером на примере создания прокрутки.<BR>
+   Нажмите кнопку, чтобы увидеть пример.
+<Form>
+   <input type="button" value="Пример" onClick="location.href='example2.html'; ">
+</Form>
+<P>Проанализируем код данного примера:
+<P>Чтобы запустить этот процесс, мы используем процедуру обработки события onLoad, описанной в тэге <body>. То есть функция scroll() будет вызвана сразу же после загрузки HTML-страницы.
+<P>Первым делом в функции scroll() мы устанавливаем командой <B>setTimeout</B>.
+Здесь setTimeout() - это метод объекта window. Первый аргумент при вызове - это код JavaScript, который следует выполнить по истечении указанного времени. В нашем случае это вызов - "scroll()". Обратите пожалуйста внимание, что код на JavaScript должен быть заключен в кавычки.
+Во втором аргументе компьютеру сообщается, когда этот код следует выполнять. При этом время Вы должны указывать в миллисекундах (1000 миллисекунд = 1 секунда).
+<P>Таким образом, функция scroll() будет повторно вызвана через 100 миллисекунд. При этом текст будет перемещен еще на один шаг и запущен другой таймер. Так будет продолжаться без конца.
+<P>Чтобы записать некий текст в строку состояния используется <B>window.status</B>.
+<P>Нажав на следующую кнопку, вы увидите на экране изображение часов:
+<Form>
+   <input type="button" value="Пример2" onClick="location.href='example3.html'; ">
+</Form>
+</BLOCKQUOTE>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+<H3><A NAME="place8">Массивы в JavaScript 1.0</A></H3>
+<BLOCKQUOTE>
+<P>Поскольку в JavaScript 1.0 (Netscape Navigator 2.x, и Microsoft Internet Explorer 3.x) объекта Array еще не существовало, то нужна его альтернатива. Следующий фрагмент кода можно найти в документации фирмы Netscape:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+<font color="green">function initArray() {
+  this.length = initArray.arguments.length
+  for (var i = 0; i &lt; this.length; i++) this[i+1] = initArray.arguments[i]
+}</font>
+</FONT></PRE></BLOCKQUOTE>
+<P>После этого Вы можете создавать массив одной строкой:<BR>
+<font color="green">myArray = new initArray(17, 3, 5);</Font>
+<P>Числа в скобках - значения, которыми инициализируется массив.
+</BLOCKQUOTE>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+
+
+<H3><A NAME="place9">Перехват событий</A></H3>
+<BLOCKQUOTE>
+<P>Если кто-то, к примеру, щелкает на кнопке, то вызывается программа обработки события onClick,
+ соответствующая этой кнопке. С помощью обработки событий Вы можете добиться того, чтобы объект, соответсвующий вашему окну, документу или слою, перехватывал и обрабатывал событие еще до того,
+ как для этой цели объектом указанной кнопки будет вызван обработчик событий.
+<P>Рассмотрим следующий пример:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   &lt;head&gt;
+      <Font color="green">&lt;script language="JavaScript"&gt;
+         window.captureEvents(Event.CLICK);
+         window.onclick= handle;
+         function handle(e) {
+            alert("Объект window перехватывает это событие!");
+            window.routeEvent(e);
+            return true; // т.е. проследить ссылку
+         }
+      &lt;/script&gt;</Font>
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;a href="test.htm"&gt;Кликните по этой ссылке.&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Как видно, мы не указываем программы обработки событий в тэге &lt;a&gt;. Вместо этого мы пишем
+<B>window.captureEvents(Event.CLICK);</B> с тем, чтобы перехватить событие Click объектом window.
+<P>Объект Event содержит свойства, описывающие некое событие. Каждый раз, когда происходит какое-либо событие, объект Event передается соответствующей программе обработки.
+<P>Если же Вы хотите перехватывать несколько событий, то Вам следует отделить их друг от друга символами |. <BR>Например: <B>window.captureEvents(Event.CLICK | Event.MOVE);</B>
+<P>Помимо этого в функции handle(), назначенной нами на роль обработчика событий, мы пользуемся инструкцией<BR>
+<B>return true;</B>. В действительности это означает, что браузер должен обработать и саму ссылку, после того, как завершится выполнение функции handle(). Если же Вы напишете вместо этого<BR>
+<B>return false;</B>, то на этом все и закончится.
+<P>Если теперь в тэге &lt;a&gt; Вы зададите программу обработки события onClick, то данная программа при возникновении данного события вызвана уже не будет, поскольку объект window перехватывает сигнал о событии еще до того, как он достигает объекта link.
+<P>Благодаря методу <B>window.routeEvent(e);</B> компьютер будет проверять, определены ли другие программы обработки событий для данного объекта. Переменная e - это наш объект Event, передаваемый функции обработки событий в виде аргумента.
+<P><Font color="red">Отметьте, что в <B>Event.CLICK</B> фрагмент <B>CLICK</B>
+должен писаться заглавными буквами.</Font>
+<P>Можно непосредственно послать сигнал о событии какому-либо объекту. Для этого ипользуют метод
+<B>handleEvent()</B>:.
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+&lt;html&gt;
+   <Font color="green">&lt;script language="JavaScript"&gt;
+      window.captureEvents(Event.CLICK);
+      window.onclick= handle;
+      function handle(e) {
+         document.links[1].handleEvent(e);
+      }
+   &lt;/script&gt;</Font>
+   &lt;BODY&gt;
+      &lt;a href="test.htm"&gt;"Кликните" по этой ссылке&lt;/a&gt;&lt;br&gt;
+      &lt;a href="test.htm" onClick="alert('Обработчик событий для второй ссылки!');"&gt;Вторая ссылка&lt;/a&gt;
+   &lt;/BODY&gt;
+&lt;/html&gt;
+</FONT></PRE></BLOCKQUOTE>
+<P>Все сигналы о событиях Click, посылаются на обработку по второй ссылке - даже если Вы вовсе и не щелкнули ни по одной из ссылок!
+<P>Некоторые свойства EVENT:
+<TABLE border=1 cellspacing=4 cellpadding=4>
+<TR>
+<TH>data</TH><TD>Массив адресов URL оставленных объектов, когда происходит событие DragDrop.</TD>
+</TR>
+<TR>
+<TH>pageX</TH><TD>Горизонтальное положение курсора (в пикселах) относительно окна браузера.</TD>
+</TR>
+<TR>
+<TH>pageY</TH><TD>Вертикальное положение курсора (в пикселах) относительно окна браузера.</TD>
+</TR>
+<TR>
+<TH>screenX</TH><TD>Горизонтальное положение курсора (в пикселах) относительно экрана.</TD>
+</TR>
+<TR>
+<TH>screenY</TH><TD>Вертикальное положение курсора (в пикселах) относительно экрана.</TD>
+</TR>
+<TR>
+<TH>target</TH><TD>Строка, представляющая объект, которому исходно было послано событие.</TD>
+</TR>
+<TR>
+<TH>type</TH><TD>Строка, указывающая тип события.</TD>
+</TR>
+<TR>
+<TH>which</TH><TD>ASCII-значение нажатой клавиши или номер клавиши мыши.</TD>
+</TR>
+</TABLE>
+</BLOCKQUOTE>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+</BODY>
+</HTML>

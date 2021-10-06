@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>ActiveXObject</TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+<a href="javabook.html"><img src="icons/home.gif" border=0 alt="Домой" width=64 height=64></a>
+<H2><A NAME="start">ActiveXObject</A></H2>
+<P>Создание объекта: new <B>ActiveXObject</B>(servername.typename[, location])
+<P><i>servername</I> - The name of the application providing the object.<BR>
+   <I>typename</I> - The type or class of the object to create.<BR>
+   <i>location</I> - The name of the network server where the object is to be created.
+<P>Automation servers provide at least one type of object.
+   For example, a word-processing application may provide an application object,
+   a document object, and a toolbar object. To create an Automation object,
+   assign the new ActiveXObject to an object variable:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+var ExcelSheet;
+ExcelSheet = new ActiveXObject("Excel.Sheet");
+</FONT></PRE></BLOCKQUOTE>
+<P>This code starts the application creating the object (in this case,
+   a Excel worksheet). Once an object is created, you refer to it in code using
+   the object variable you defined. In the following example,
+   you access properties and methods of the new object using the object variable
+   ExcelSheet and other Excel objects, including the Application object and
+   the ActiveSheet.Cells collection. For example:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+// Make Excel visible through the Application object.
+ExcelSheet.Application.Visible = true;
+// Place some text in the first cell of the sheet.
+ExcelSheet.ActiveSheet.Cells(1,1).Value = "This is column A, row 1";
+// Save the sheet.
+ExcelSheet.SaveAs("C:\\TEST.XLS");
+// Close Excel with the Quit method on the Application object.
+ExcelSheet.Application.Quit();
+// Release the object variable.
+ExcelSheet = "";
+</FONT></PRE></BLOCKQUOTE>
+<P>Creating an object on a remote server can only be accomplished when
+   Internet security is turned off. You can create an object on a remote
+   networked computer by passing the name of the computer to the servername
+   argument of ActiveXObject. That name is the same as the machine name portion
+   of a sharename. For a network share named "\\myserver\public",
+   the servername is "myserver". In addition, you can specify servername
+   using DNS format or an IP address. The following code returns the version
+   number of an instance of Excel running on a remote network computer named "myserver":
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>
+Function GetVersion {
+  var XLApp = CreateObject("Excel.Application", "MyServer");
+  return(XLApp.Version);
+}
+</FONT></PRE></BLOCKQUOTE>
+<P>An error occurs if the specified remote server does not exist or cannot be found.
+</blockquote>
+<a href="#start"><img src="icons/up.gif" border=0 alt="наверх" width="55" height="38"></a>
+</BODY>
+</HTML>

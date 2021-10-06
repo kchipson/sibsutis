@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Команды HTML - Таблицы</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H2><A NAME="tables">Таблицы - Форматирование документа</A></H2>
+<ul>
+<li><a href="#8">Команда TABLE</A>
+<ul>
+<li><a href="#1">Размещение содержимого в клетках (ALIGN,VALIGN)</A>
+<li><a href="#2">Атрибуты CELLPADDING,CELLSPACING</A>
+<li><a href="#3">Задание заголовка к таблице (CAPTION)</A>
+<li><a href="#4">Рамка (BORDER)</A>
+<li><a href="#5">Задание цвета фона клеток и рамки</A>
+<li><a href="#6">Изменение шрифтов</A>
+<li><a href="#7">Задание нестандартных таблиц</A>
+</ul>
+</ul>
+<P>
+<a name="8">
+Команда <font color="red">&lt;TABLE&gt;</font> (задание и описание таблиц)
+является основной командой форматирования документа HTML.
+<P>
+Задание таблицы определяется двумя командами (и соответственно их
+<a href="command.html#atribut" target="contentFrame">атрибутами</a>):
+<ul>
+<LI><font color="red">&lt;TR&gt;</font> (table row) - описание строки таблицы;
+<LI><font color="red">&lt;TD&gt;</font> (table detail)- описание клетки таблицы;
+</ul>
+<b>Пример</b> простой таблицы:
+<table><tr><td bgcolor=aqua><PRE>&lt;TABLE&gt;
+&lt;TR&gt;
+  &lt;TD&gt;Яблоки&lt;/TD&gt;&lt;TD&gt;Огурцы&lt;/TD&gt;
+&lt;TR&gt;&lt;/TR&gt;
+  &lt;TD&gt;Апельсины&lt;TD&gt;&lt;/TD&gt;Помидоры&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TABLE&gt;
+</PRE></table>
+<b>Что даст:</b>
+<TABLE>
+<TR>
+<TD>Яблоки<TD>Огурцы
+<TR>
+<TD>Апельсины<TD>Помидоры
+</TABLE>
+<P>
+<a href="#tables"><img src="icons/up.gif" border=0></a>
+<BR CLEAR=ALL><P>
+По умолчанию таблица прижимается (aligns) влево,
+ширина таблицы определяется наиболее длинным элементом в столбце,
+содержание каждой клетки размещается в середине клетки по высоте и
+прижимается к левому углу по ширине.
+<P>
+<a name="1">
+Ширина таблицы задается <b>атрибутом</b>
+<A HREF="html-gloss.html#htmlref2_000100011300460b" TARGET="contentFrame">WIDTH=</A>
+для команды
+<A HREF="html-gloss.html#htmlref2_0001000113004600" TARGET="">TABLE</A>.
+Значение ширины таблицы может задаваться в пикселях или в процентах от
+ширины экрана просмотрщика.
+Содержание каждой клетки  может быть размещено с помощью <b>атрибутов</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004e01" TARGET="contentFrame">ALIGN=</A>
+(горизонтальное положение) и
+<A HREF="html-gloss.html#htmlref2_0001000113004e07" TARGET="contentFrame">VALIGN=</A>
+(вертикальное положение)
+для команд
+<A HREF="html-gloss.html#htmlref2_0001000113004e00" TARGET="contentFrame">TR</A> или
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A>.
+<P>
+<b>Атрибут</B> <font color="red">VALIGN</font> может принимать следующие значения:
+<ul>
+<LI>top - прижать вверх
+<LI>bottom - прижать вниз
+<LI>middle - разместить по центу
+</ul>
+<b>Атрибут</B> <font color="red">ALIGN</font> может принимать следующие значения:
+<ul>
+<LI>left - прижать влево
+<LI>right - прижать вправо
+<LI>center - разместить по центу
+</ul>
+<P>
+<a href="#tables"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="2">
+<b>Атрибуты</B>
+<a href="html-gloss.html#htmlref2_0001000113004608">CELLPADDING=</a> и
+<a href="html-gloss.html#htmlref2_0001000113004609">CELLSPACING=</a>
+определяют расстояние в пикселях между границей клетки и ее содержимым и
+между клетками соответственно.
+<P>
+Рассмотрим пример таблицы, занимающей весь экран просмотрщика и
+содержащей клетки прижатые влево и вверх:
+<table><tr><td bgcolor=aqua><PRE>&lt;TABLE WIDTH="100%"&gt;
+&lt;TR VALIGN=TOP ALIGN=LEFT&gt;
+&lt;TD&gt;Яблоки&lt;TD&gt;Огурцы
+&lt;TR VALIGN=TOP ALIGN=LEFT&gt;
+&lt;TD&gt;Апельсины&lt;TD&gt;Помидоры
+&lt;/TABLE&gt;
+</PRE></table>
+<b>Что даст:</b>
+<TABLE WIDTH=100%>
+<TR VALIGN=TOP ALIGN=LEFT>
+<TD>Яблоки<TD>Огурцы
+<TR VALIGN=TOP ALIGN=LEFT>
+<TD>Апельсины<TD>Помидоры
+</TABLE>
+<BR CLEAR=ALL><P>
+В этом примера ширина таблицы задана в процентах (100%) от ширины экрана.
+<P>
+<a href="#tables"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="3">
+Можно добавить к таблице заголовок (caption),
+а также (headings) к строке или столбцу.
+<b>Команда</B>
+<A HREF="html-gloss.html#htmlref2_0001000113000f00" TARGET="contentFrame">CAPTION</A>
+после команды <font color=red>TABLE</font>
+задает заголовок к таблице. По умолчанию заголовок центрируется относительно таблицы.
+При помощи <b>атрибутов</B> заголовок можно разместить
+<A HREF="html-gloss.html#htmlref2_0001000113000f01" TARGET="contentFrame">ALIGN=</A> или
+<A HREF="html-gloss.html#htmlref2_0001000113004b0a" TARGET="contentFrame">VALIGN=</A>
+вверху (top) или внизу (bottom) и в левом (left) или правом (right)
+углу таблицы.
+<P>
+Задание headings к строке (rows) или столбцу (columns) таблицы
+осуществляется при помощи <b>команды</B>
+<A HREF="html-gloss.html#htmlref2_0001000113004b00" TARGET="contentFrame">TH</A>
+после команды <font color=red>TR</font> или <font color=red>TD</font>.
+<P>
+Внутри клетки, задаваемой командой
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A>
+можно поместить текст или рисунок.
+<P>
+<a href="#tables"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="4">
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004604" TARGET="contentFrame">BORDER=</A>
+к команде
+<A HREF="html-gloss.html#htmlref2_0001000113004600" TARGET="contentFrame">TABLE</A>
+рисует рамку вокруг таблицы и каждой клетки.
+<b>Отметим,</b> что если клетка является пустой, вокруг нее рамка рисоваться
+не будет, поэтому в пустые клетки в таблицах следует помещать любой
+непечатный символ (например,
+<a href="symbols.html#nbsp">неразрывный пробел</a> (&amp;nbsp;).
+Ширина рамки (бордюра) задается в пикселях.
+<p>
+В следующем примере построена таблица с рамкой, заголовком и headings:
+<table><TR><TD bgcolor=aqua>
+<PRE>&lt;TABLE BORDER=1&gt;
+&lt;CAPTION&gt;Фрукты и Овощи&lt;/CAPTION&gt;
+&lt;TR&gt;
+&lt;TH&gt;Фрукты&lt;TH&gt;Овощи
+&lt;TR&gt;
+&lt;TD&gt;Яблоки&lt;TD&gt;Огурцы
+&lt;TR&gt;
+&lt;TD&gt;Апельсины&lt;TD&gt;Помидоры
+&lt;/TABLE&gt;
+</PRE></table>
+<b>Что даст:</b>
+<TABLE BORDER=1>
+<CAPTION>Фрукты и Овощи</CAPTION>
+<TR>
+<TH>Фрукты<TH>Овощи
+<TR>
+<TD>Яблоки<TD>Огурцы
+<TR>
+<TD>Апельсины<TD>Помидоры
+</TABLE>
+<BR CLEAR=ALL>
+По умолчании  headings центрируется относительно клетки таблицы.
+<b>Атрибуты</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004b01" TARGET="contentFrame">ALIGN=</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113004b0a" TARGET="contentFrame">VALIGN=</A>
+соответственным образом изменяют его горизонтальное и вертикальное расположение.
+<P>
+<a href="#tables"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="5">
+При формировании таблиц, можно задавать цвет фона клеток и цвет рамки,
+используя <b>атрибуты</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004603" TARGET="contentFrame">BGCOLOR=</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113004605" TARGET="contentFrame">BORDERCOLOR=</A>
+к командам
+<A HREF="html-gloss.html#htmlref2_0001000113004600" TARGET="contentFrame">TABLE</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113004e00" TARGET="contentFrame">TR</A>, и
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A>
+соответственно изменяя цвет фона во всей таблице, в строке или в клетке.
+<P>
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004603" TARGET="contentFrame">BGCOLOR=</A>
+устанавливает цвет фона для элементов таблицы.
+<P>
+<b>Атрибут</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004605" TARGET="contentFrame">BORDERCOLOR=</A>
+устанавливает цвет рамки.
+<P>
+В следующем примере использовано задание одинакового цвета фона для заголовков
+(headings) столбцов, и разное для клеток таблицы:
+<table bgcolor=aqua><tr><td>
+<PRE>&lt;TABLE BORDERCOLOR=NAVY BORDER=1&gt;
+&lt;CAPTION&gt;Фрукты и Овощи&lt;/CAPTION&gt;
+&lt;TR BGCOLOR=GRAY&gt;
+&lt;TH&gt;Фрукты&lt;TH&gt;Овощи
+&lt;TR&gt;
+&lt;TD BGCOLOR=LIME&gt;Яблоки&lt;TD BGCOLOR=AQUA&gt;Огурцы
+&lt;TR&gt;
+&lt;TD BGCOLOR=LIME&gt;Апельсины&lt;TD BGCOLOR=AQUA&gt;Помидоры
+&lt;/TABLE&gt;
+</PRE></table>
+
+<b>Что даст:</b>
+<TABLE BORDER=1>
+<CAPTION>Фрукты и Овощи</CAPTION>
+<TR BGCOLOR=GRAY>
+<TH>Фрукты<TH>Овощи
+<TR>
+<TD BGCOLOR=LIME>Яблоки<TD BGCOLOR=AQUA>Огурцы
+<TR>
+<TD BGCOLOR=LIME>Апельсины<TD BGCOLOR=AQUA>Помидоры
+</TABLE>
+<BR CLEAR=ALL>
+<P>
+<a href="#tables"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="6">
+Используя команды изменения
+<a href="fonts.html#fonts">текстовых шрифтов</a> такие как, например,
+<A HREF="html-gloss.html#htmlref2_0001000113000700" TARGET="contentFrame">B</A>,
+(bold - полужирный)
+<A HREF="html-gloss.html#htmlref2_0001000113002600" TARGET="contentFrame">I</A>,
+(italic - курсив) или
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>
+(команда задания типа фонта)
+можно изменить начертание букв в тексте, однако эти команды правильно действуют
+(особенно команда
+<A HREF="html-gloss.html#htmlref2_0001000113001e00" TARGET="contentFrame">FONT</A>)
+только в пределах одной клетки.
+При переходе в другую клетку, при выходе из таблицы или при входе в таблицу
+эти команды <i>могут быть отменены, а могут и не отменены.</i>
+Для правильного их использования команды изменения шрифтов следует
+указывать в каждой клетке таблицы.
+<P>
+<a href="#tables"><img src="icons/up.gif" border=0></a>
+<P>
+<a name="7">
+Как известно, таблицы далеко не всегда имеют правильную клеточную структуру.
+Для задания не стандартных таблиц используются дополнительные команды и атрибуты.
+Команды
+<A HREF="html-gloss.html#htmlref2_0001000113004c00" TARGET="contentFrame">THEAD</A>,
+<A HREF="html-gloss.html#htmlref2_0001000113004700" TARGET="contentFrame">TBODY</A>, и
+<A HREF="html-gloss.html#htmlref2_0001000113004a00" TARGET="contentFrame">TFOOT</A>
+делят таблицу на три части: верхняя часть таблицы (header), тело таблицы (body)
+и нижняя часть таблицы (footer), в каждой из которых может быть свое деление
+на клетки.
+<p>
+Команды
+<A HREF="html-gloss.html#htmlref2_0001000113001400" TARGET="contentFrame">COLGROUP</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113001300" TARGET="contentFrame">COL</A>
+определяют общие свойства столбцов таблицы, объединяя <b>атрибуты</b>
+отдельных клеток команды
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A>.
+<P>
+<b>Атрибуты</b>
+<A HREF="html-gloss.html#htmlref2_000100011300460c" TARGET="contentFrame">FRAME=</A> и
+<A HREF="html-gloss.html#htmlref2_000100011300460d" TARGET="contentFrame">RULES=</A>
+команды<A HREF="html-gloss.html#htmlref2_0001000113004600" TARGET="contentFrame">TABLE</A>
+определяют способ отрисовки рамки таблицы.
+Например, рассмотрим таблицу имеющую рамку вокруг таблицы, а внутри таблицы
+рамкой выделяются верхняя часть таблицы (заголовок) и столбцы в нижней части.
+<b>Атрибуты</b>
+<A HREF="html-gloss.html#htmlref2_0001000113004b07" TARGET="contentFrame">COLSPAN=</A> и
+<A HREF="html-gloss.html#htmlref2_0001000113004b09" TARGET="contentFrame">ROWSPAN=</A>
+команд
+<A HREF="html-gloss.html#htmlref2_0001000113004800" TARGET="contentFrame">TD</A>  
+<A HREF="html-gloss.html#htmlref2_0001000113004b00" TARGET="contentFrame">TH</A>
+позволяют объединять клетки таблицы в группы, вокруг которых рисуется рамка.
+<P>
+Следующий <b>пример</b> показывает как можно выполнить поставленную задачу:
+<table bgcolor=aqua><tr><td>
+<PRE>&lt;TABLE WIDTH="50%" BORDER=1 FRAME=BOX RULES=GROUPS&gt;
+&lt;COLGROUP ALIGN=CENTER&gt;
+&lt;COLGROUP ALIGN=CENTER&gt;
+&lt;THEAD&gt;
+&lt;TR&gt;
+&lt;TH COLSPAN=2&gt;Фрукты и овощи
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD&gt;Яблоки&lt;TD&gt;Огурцы
+&lt;TR&gt;
+&lt;TD&gt;Апельсины&lt;TD&gt;Помидоры
+&lt;/TABLE&gt;
+</PRE></table>
+<b>Что даст:</b>
+<TABLE WIDTH=50% BORDER=1 FRAME=BOX RULES=GROUPS>
+<COLGROUP ALIGN=CENTER>
+<COLGROUP ALIGN=CENTER>
+<THEAD>
+<TR>
+<TH COLSPAN=2>Фрукты и овощи
+<TBODY>
+<TR>
+<TD>Яблоки<TD>Огурцы
+<TR>
+<TD>Апельсины<TD>Помидоры
+</TABLE>
+<BR CLEAR=ALL>
+<p>Или
+<p>
+<table bgcolor=aqua><tr><td>
+<PRE>&lt;TABLE WIDTH="50%" BORDER=1&gt;
+&lt;TR&gt;
+&lt;TH ROWSPAN=2&gt;Фрукты и овощи
+&lt;TD align=center&gt;Яблоки Огурцы
+&lt;TR&gt;
+&lt;TD align=center&gt;Апельсины Помидоры
+&lt;/TABLE&gt;
+</PRE></table>
+<b>Что даст:</b>
+<TABLE WIDTH=50% BORDER=1>
+<TR>
+<TH ROWSPAN=2>Фрукты и овощи</TH>
+<TD align=center>Яблоки<BR> Огурцы</TD>
+</TR><TR>
+<TD align=center>Апельсины<BR> Помидоры</TD></TR>
+</TABLE>
+<P>
+Принципиально в стандарте языка имеется возможность включать в качестве
+фона клетки таблицы рисунки, и устанавливать правила отрисовки рамки,
+но не все просмотрщики это понимают.
+<P>
+<a href="#tables"><img src="icons/up.gif" border=0></a>
+
+</BODY></HTML>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>типы узлов DOM</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<h3>Типы узлов DOM</h3>
+<hr color=black>
+<P>
+Узлы в XML DOM подразделяются на несколько типов. 
+В данной таблице представлены основные типы узлов (nodeType), их свойства (nodeValue - значение узла, nodeName - имя узла), а также с помощью свойства nodeTypeString можно получить свойство узла Node Type в виде текстовой строки.
+<p>
+<h4>Сводная таблица</h4>
+<table border=1 width="600" CELLPADDING="3">
+<tr><th>nodeType</th> <th>nodeTypeString</th> <th>nodeName</th> <th>nodeValue</th></tr>
+<tr><td align=center>1</td><td>element</td> <td>имя тэга</td> <td>null</td></tr>
+<tr><td align=center>2</td><td>attribute</td> <td>имя атрибута</td> <td>значение атрибута</td></tr>
+<tr><td align=center>3</td><td>text</td> <td>#text</td> <td>содержимое узла</td></tr>
+</table>
+<h4>Типы узлов - именованные константы</h4>
+<table border=1 width="350" CELLPADDING="3">
+<tr><th>nodeType</th> <th>constName</th></tr>
+<tr><td align=center>1</td><td>ELEMENT_NODE</td> </tr>
+<tr><td align=center>2</td><td>ATTRIBUTE_NODE</td> </tr>
+<tr><td align=center>3</td><td>TEXT_NODE</td> </tr>
+</table>
+
+
+</BODY>
+</HTML>

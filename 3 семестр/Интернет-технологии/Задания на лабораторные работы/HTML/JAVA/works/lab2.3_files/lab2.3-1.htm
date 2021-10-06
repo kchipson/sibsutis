@@ -1,0 +1,48 @@
+<html>
+<head>
+<script language="javascript1.1">
+
+<!--
+firstimage=new Image();   firstimage.src="1.gif";
+secondimage=new Image();  secondimage.src="2.gif";
+firstimage1=new Image();  firstimage1.src="22.gif";
+secondimage1=new Image(); secondimage1.src="11.gif";
+firstimage2=new Image();  firstimage2.src="222.gif";
+secondimage2=new Image(); secondimage2.src="111.gif";
+
+function filter(imagename,objectsrc){
+if (document.images)
+document.images[imagename].src=eval(objectsrc+".src")
+}
+// все рисунки заносятся в массив document.images
+// элементы этого массива перебираются через [...], 
+// это значение (a, b или c) задается в атрибуте name команды <img>
+// т.е. здесь формируется команда вида:
+// a.src = secondimage.src 
+// чтобы вместо рисунка с name="a" (1.gif) подставился
+// рисунок secondimage.src (2.gif)
+//-->
+
+</script>
+</head>
+<body bgcolor="white">
+<a href="javascript:void(0)" onClick="filter('a','secondimage')">
+<img src="1.gif" name="a" border=0 ></a>
+
+<p>
+<a href="javascript:void(0)" onClick="filter('b','secondimage1')">
+<img src="22.gif" name="b" border=0 ></a>
+
+<p>
+<a href="javascript:void(0)" onClick="filter('c','secondimage2')">
+<img src="222.gif" name="c" border=0></a>
+
+<center>
+<p><font color=red><b>Кликните мышкой по гиперссылке</b></font>
+<form>
+<p><input type="button" value="Очистить" onClick="location.replace('lab9-1.htm')">
+<p><input type="button" value="Закрыть окно" onClick="window.close()">
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD><TITLE>Лабораторная работа N 3.3</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<META NAME="Description" CONTENT="Lecture about Internet">
+<META NAME="Keywords" CONTENT="Internet, Lecture">
+<META NAME="OWNER" CONTENT="Fedotov@ict.nsc.ru">
+<META NAME="LANGUAGE" CONTENT="ru">
+<META NAME="AUTHOR" CONTENT="C_One">
+<STYLE type="text/css">
+  s {text-decoration: none;  /* убрать зачеркивание */
+     font-style:italic;      /* сделать курсив */
+     font-weight: bold;      /* сделать жирный шрифт */
+     }
+</STYLE>
+</HEAD>
+
+<BODY LEFTMARGIN=10 TOPMARGIN=0  BGCOLOR=#FFEFCF TEXT=#000000 LINK=#006600 VLINK=#330099 ALINK=#ff0000>
+<hr noshade size=3><center>
+<h3>Сибирский государственный университет <br>телекоммуникаций и информатики
+</h3>
+</center>
+<P align=center><i> Лабораторные задания по курсу
+&nbsp;"Интернет-технологии"</i>
+<hr noshade size=3>
+
+<H2 align=center>Лабораторная работа N&nbsp;3.3<br>
+Представление данных XML</H2>
+<center><img border=0 src="xml1-1.jpg"></center>
+<P><H3>Задание</H3>
+Преобразовать предложенные XML данные средствами таблиц XSL в соответствии с вариантом.<br>
+<OL>
+  <P><LI>Создать таблицу. Данные в таблице должны быть отсортированы в начале по количеству спутников, затем по названию(в порядке возрастания). Выделить одним цветом данные о планетах, радиусом меньше 10000км и другим данные об остальных. В первом столбце должен располагаться номер строки.
+  <P><LI>Поместить данные о планетах, расположенных в области, ограниченной астероидным поясом (Меркурий-Марс) в одну таблицу (таблица должна быть отсортирована по диаметру), данные об остальных планетах поместить в другую таблицу(таблица должна быть отсортирована по количеству спутников). В обоих таблицах выделить столбец значений массы относительно Земли.
+  <P><LI>Поместить данные о планетах, имеющих спутники в таблицу. Данные в таблице отсортировать по количеству спутников. Разметить четные строки таблицы одним цветом, нечетные другим.  Данные о планетах, не имеющих спутников представить в виде списка определений.
+  <P><LI>Создать таблицу таким образом, чтобы свойства планет располагались по строкам а названия планет по столбцам. Строку с названиями планет выделить другим цветом.
+</OL>
+*Исходные данные должны быть сохранены в файл с расширением xml. Преобразования должны осуществляться при подключении к исходному файлу файла таблиц стиля xsl.
+<h3>Исходные данные</h3>
+<pre>
+&lt;solar&gt;
+   &lt;planet caption="Меркурий"&gt;
+       &lt;satellite_number&gt;0&lt;/satellite_number&gt;
+       &lt;weight unit="масса Земли"&gt;0.06&lt;/weight&gt;
+       &lt;diametr unit="км"&gt;2440&lt;/diametr&gt;
+       &lt;revolution_period unit="час"&gt;1410&lt;/revolution_period&gt;
+       &lt;circulation_period unit="год"&gt;0.24&lt;/circulation_period&gt;
+       &lt;distance unit="а.е."&gt;0.39&lt;/distance&gt;
+   &lt;/planet&gt;
+
+   &lt;planet caption="Венера"&gt;
+       &lt;satellite_number&gt;0&lt;/satellite_number&gt;
+       &lt;weight unit="масса Земли"&gt;0.82&lt;/weight&gt;
+       &lt;diametr unit="км"&gt;6050&lt;/diametr&gt;
+       &lt;revolution_period unit="час"&gt;5834&lt;/revolution_period&gt;
+       &lt;circulation_period unit="год"&gt;0.61&lt;/circulation_period&gt;
+       &lt;distance unit="а.е."&gt;0.72&lt;/distance&gt;
+   &lt;/planet&gt;
+
+   &lt;planet caption="Земля"&gt;
+       &lt;satellite_number&gt;1&lt;/satellite_number&gt;
+       &lt;weight unit="масса Земли"&gt;1.00&lt;/weight&gt;
+       &lt;diametr unit="км"&gt;6378&lt;/diametr&gt;
+       &lt;revolution_period unit="час"&gt;24&lt;/revolution_period&gt;
+       &lt;circulation_period unit="год"&gt;1.00&lt;/circulation_period&gt;
+       &lt;distance unit="а.е."&gt;1.00&lt;/distance&gt;
+   &lt;/planet&gt;
+
+   &lt;planet caption="Марс"&gt;
+       &lt;satellite_number&gt;2&lt;/satellite_number&gt;
+       &lt;weight unit="масса Земли"&gt;0.11&lt;/weight&gt;
+       &lt;diametr unit="км"&gt;3390&lt;/diametr&gt;
+       &lt;revolution_period unit="час"&gt;24.5&lt;/revolution_period&gt;
+       &lt;circulation_period unit="год"&gt;1.88&lt;/circulation_period&gt;
+       &lt;distance unit="а.е."&gt;1.55&lt;/distance&gt;
+   &lt;/planet&gt;
+
+   &lt;planet caption="Юпитер"&gt;
+       &lt;satellite_number&gt;16&lt;/satellite_number&gt;
+       &lt;weight unit="масса Земли"&gt;318.0&lt;/weight&gt;
+       &lt;diametr unit="км"&gt;71400&lt;/diametr&gt;
+       &lt;revolution_period unit="час"&gt;10.0&lt;/revolution_period&gt;
+       &lt;circulation_period unit="год"&gt;11.86&lt;/circulation_period&gt;
+       &lt;distance unit="а.е."&gt;5.20&lt;/distance&gt;
+   &lt;/planet&gt;
+
+   &lt;planet caption="Сатурн"&gt;
+       &lt;satellite_number&gt;17&lt;/satellite_number&gt;
+       &lt;weight unit="масса Земли"&gt;95.1&lt;/weight&gt;
+       &lt;diametr unit="км"&gt;60400&lt;/diametr&gt;
+       &lt;revolution_period unit="час"&gt;10.2&lt;/revolution_period&gt;
+       &lt;circulation_period unit="год"&gt;29.46&lt;/circulation_period&gt;
+       &lt;distance unit="а.е."&gt;9.54&lt;/distance&gt;
+   &lt;/planet&gt;
+
+   &lt;planet caption="Уран"&gt;
+       &lt;satellite_number&gt;16&lt;/satellite_number&gt;
+       &lt;weight unit="масса Земли"&gt;14.6&lt;/weight&gt;
+       &lt;diametr unit="км"&gt;24300&lt;/diametr&gt;
+       &lt;revolution_period unit="час"&gt;17.0&lt;/revolution_period&gt;
+       &lt;circulation_period unit="сутки"&gt;84.02&lt;/circulation_period&gt;
+       &lt;distance unit="а.е."&gt;19.19&lt;/distance&gt;
+   &lt;/planet&gt;
+
+   &lt;planet caption="Нептун"&gt;
+      &lt;satellite_number&gt;8&lt;/satellite_number&gt;
+      &lt;weight unit="масса Земли"&gt;17.2&lt;/weight&gt;
+      &lt;diametr unit="км"&gt;25050&lt;/diametr&gt;
+      &lt;revolution_period unit="час"&gt;17.8&lt;/revolution_period&gt;
+      &lt;circulation_period unit="сутки"&gt;164.78&lt;/circulation_period&gt;
+      &lt;distance unit="а.е."&gt;30.07&lt;/distance&gt;
+   &lt;/planet&gt;
+
+   &lt;planet caption="Плутон"&gt;
+      &lt;satellite_number&gt;1&lt;/satellite_number&gt;
+      &lt;weight unit="масса Земли"&gt;0.002&lt;/weight&gt;
+       &lt;diametr unit="км"&gt;1500&lt;/diametr&gt;
+      &lt;revolution_period unit="час"&gt;153.6&lt;/revolution_period&gt;
+      &lt;circulation_period unit="сутки"&gt;247.70&lt;/circulation_period&gt;
+      &lt;distance unit="а.е."&gt;39.52&lt;/distance&gt;
+   &lt;/planet&gt;
+&lt;/solar&gt;
+</pre>
+</body>
+</html>

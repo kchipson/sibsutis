@@ -1,0 +1,58 @@
+/*
+ Theme Name: Popularis Hub
+ Theme URI: https://populariswp.com/popularis-hub/
+ Description: Popularis Hub is a fast, clean and modern-looking responsive multipurpose theme for WordPress. Theme works perfect with any of favorite page builders like Elementor, Beaver Builder, SiteOrigin, Thrive Architect, Divi, Visual Composer, etc. Popularis Hub is WooCommerce ready, lightweight, easy to use, responsive and SEO friendly.
+ Author: Themes4WP
+ Author URI: https://themes4wp.com/
+ Version: 1.0.1
+ License: GNU General Public License v3
+ License URI: http://www.gnu.org/licenses/gpl.html
+ Tags: one-column, two-columns, full-width-template, right-sidebar, custom-background, custom-menu, editor-style, featured-images, translation-ready, custom-logo, threaded-comments, footer-widgets, blog, e-commerce
+ Text Domain: popularis-hub
+ Template: popularis
+*/
+
+article.blog-article {
+    clear: none;
+}
+.news-thumb .cats-tags {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding: 5px 15px;
+    background-color: #fff;
+    width: auto;
+}
+.single-entry-summary, .cats-tags, .single-head {
+    max-width: 100%;
+}
+.widget-title {
+    margin-bottom: 15px;
+}
+.widget-title:after {
+    top: auto;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    height: 1px;
+}
+.widget-title h3 {
+    padding: 8px 8px 8px 2px;
+}
+.nav > li.active > a:hover:after, .current-page-parent:hover:after {
+    width: 70%;
+    left: 15%;
+}
+.post-item h2 a {
+    font-size: 30px;
+    line-height: 35px;
+}
+article.blog-article:nth-of-type(2n-1) {
+    clear: both;
+}
+.top-bar-section {
+    background-color: #000;
+}
+.top-bar-section a {
+    color: #07bcfd;
+}

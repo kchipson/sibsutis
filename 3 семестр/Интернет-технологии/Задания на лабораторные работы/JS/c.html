@@ -1,0 +1,476 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1251">
+	<TITLE>СПРАВОЧНОЕ РУКОВОДСТВО ПО JAVASCRIPT</TITLE>
+<script>
+function charAtWin(){myWin= open("ex_charAt1.html", "displayWindow",
+"width=250,height=250,status=no,toolbar=no,menubar=no,scrollbars=no");}
+function openWin2() {
+  myWin= open("close.html","displayWindow","width=200,height=100,status=no,toolbar=no,menubar=no");
+}
+function openWin1() {
+  myWin= open("ex_close.html","displayWindow","width=240,height=220,status=no,toolbar=no,menubar=no");
+}
+</script>
+</HEAD>
+<BODY text="Black" link="#336699" vlink=": #6699cc" alink=" #ff6600">
+ <A NAME="list_ceil">
+<H2> Метод ceil</H2> 
+<P>
+Возвращает ближайшее целое число, большее или равное аргументу. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> Math.ceil <I>(number)</I></PRE></table>
+<P>
+<I>number</I> - любое числовое выражение. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="m_q.html#list_Math">Math</A> 
+<H3> Примеры</H3> 
+<PRE>  
+// Показывает значение 46 
+document.write (" ceil 45.95 - " + Math.ceil (45.95))
+
+// Показывает значение -45 
+document.write ("The Ceil -45.95 - " + Math.ceil (-45.95))
+</PRE> 
+<H3> Смотрите также</H3> 
+<LI> Метод <a hrEF="f_g.html#list_floor">floor</A> 
+<!------------------------------------------------------------------------------------------------>
+ <hr align=center width=250>
+ <A NAME="list_charAt">
+<H2> Метод charAt</H2> 
+<P>
+Возвращает символ из строки. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>StringName</I>.charAt <I>(index)</I></PRE></table> 
+<P>
+<I>StringName</I> - любая строка или свойство существующего объекта. <BR>
+<I>Индекс</I> - любое целое число от 0 до <I>stringName</I>.length - 1, или собственности существующего объекта(цели). 
+<H3> Метод</H3> 
+<P>
+<a hrEF="s.html#list_string">string</A> 
+<H3> Описание</H3> 
+<P>
+Знаки в строке индексированы слева направо. Индекс первого символа - 0, последнего символа - <I>stringName</I>.length - 1. Если <I>index</I> находится вне диапазона, то <font color="red"><i>JavaScript</i></font> возвращает пустую строку. 
+<H3> Примеры</H3> 
+Следующий пример показывает символы в различных локализациях строки " Выдерживают новый мир ". 
+<table><tr><td bgcolor=aqua><xmP>  
+var anyString = "Brave new world"
+  document.write (" символ в индексе 0 - " + anyString.charAt (0)) 
+  document.write ("<p>"+" символ в индексе 1 - " + anyString.charAt (1)) 
+  document.write ("<p>"+" символ в индексе 2 - " + anyString.charAt (2)) 
+  document.write ("<p>"+" символ в индексе 3 - " + anyString.charAt (3)) 
+  document.write ("<p>"+" символ в индексе 4 - " + anyString.charAt (4)) </xmP> </table>
+<form>
+<input type="button" value="Exampl" onClick="charAtWin()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Методы <a hrEF="h_l.html#list_indexOf">IndexOf</A>, <a hrEF="h_l.html#list_lastIndexOf">lastIndexOf</A> 
+<!------------------------------------------------------------------------------------------------>
+ <hr align=center width=250>
+ <A NAME="list_checkbox"> 
+<H2> Объект checkbox</H2> 
+ <FONT SIZE=-2><a hrEF="introduction.html#1_checkbox">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Элемент формы,  который пользователь устанавливает в состоянии <i>on</i> или <i>off</i> посредством щелчка левой кнопкой миши. 
+<H3> Синтаксис</H3> 
+<P>
+Чтобы определить объект <b>checkbox</b>, используйте стандарт HTML синтаксис с использованием обработчика событий onClick: 
+<table><tr><td bgcolor=aqua><xmp>  
+<INPUT 
+ TYPE="checkbox"
+   NAME="checkboxName"
+   VALUE="checkboxValue"
+   [CHECKED]
+   [onClick="handlerText"]>
+   textToDisplay
+</xmp></table>
+<I>NAME = "checkboxName"</I> определяет имя объекта <b>checkbox</b>. Вы можете обращаться к этому значению, используя свойство имени. <BR>
+<I>VALUE = "checkboxValue"</I> определяет значение, которая возвращена серверу, когда <b>checkbox</b> выбран, и форма подчинена. Это значение по умолчанию  <i>on</i>. Вы можете обращаться к этому значению, используя свойство значения. <BR>
+<I>CHECKED</I> определяет состояние флажка. Вы можете обращаться к этому значению, используя свойство defaultChecked. <BR>
+<I>TextToDisplay</I> определяет значение, которое показано на экране. 
+<P>
+Использование свойству объекта и методы <b>checkbox</b>: 
+<PRE>  
+1. <I>CheckboxName</I>.<I>propertyName </I>
+2. <I>CheckboxName</I>.<I>methodName</I> <I>(parameters)</I> 
+3. <I>FormName</I>.elements <I>[index]</I> .<I>propertyName </I>
+4. <I><I>formName.elements[index].methodName(parameters)</I></I>  </PRE> 
+<I>CheckboxName</I> - значение атрибута NAME объекта <b>checkbox</b>. <BR>
+<I>FormName</I> является либо значением атрибута NAME объекта формы либо элемента в массиве <I>form</I>. <BR>
+<I>index</I> - целое число, представляющее объект <b>checkbox</b> в форме. <BR>
+<I>PropertyName</I> - один из свойств, описанных ниже. <BR>
+<I>MethodName</I> - один из методов, описанных ниже. 
+<H3> Свойство</H3> 
+<LI> <a hrEF="f_g.html#list_formpr">form</A> 
+<H3> Описание</H3> 
+<P>
+Объект <b>checkbox</b> в форме выглядет следующим образом: 
+<FORM>  
+<P>
+<INPUT TYPE="checkbox" CHECKED>
+Overnight delivery 
+</FORM>
+<P>
+Объект <b>checkbox</b> - элемент формы и должен быть определен внутри тега HTML &LT;FORM>. 
+<P>
+Свойства и методы флажков имеют множество применений.
+<br>
+Используйте свойство <i>checked</i> объект <b>checkbox</b> для проверки текущего состояния флажка: установлен(true) или нет(false). Если атрибут CHECKED был использован в определении флажка, свойство <i>defaultChecked</i> также возращает true.
+<h3>Связанные элементы</h3>
+<li type="circle"><H4>войства)</H4> 
+<ul><LI> <a hrEF="c.html#list_checked">checked</A> проверяет текущее состояние флажка 
+<LI> <a hrEF="d_e.html#list_defaultChecked">DefaultChecked</A> отражает атрибут CHECKED
+<LI> <a hrEF="m_q.html#list_name">name</A> отражает атрибут NAME 
+<LI> <a hrEF="t_z.html#list_value">value</A> отражает атрибут VALUE </ul>
+<li type="circle"><H4> Методы</H4> 
+<ul><LI> <a hrEF="c.html#list_click">click</A></ul>
+<li type="circle"><H4> Обработчики событий</H4> 
+<ul><LI> <a hrEF="m_q.html#list_onClickt">OnClick</A></ul>
+<H3> Примеры</H3> 
+<P>
+<B>Пример 1.</B> Следующий пример показывает группу четырех <b>checkbox</b>, которые все отмеченны по умолчанию. 
+<table><tr><td bgcolor=aqua><XMP>
+ <B>Specify your music preferences (check all that apply):</B> <BR>
+<INPUT TYPE="checkbox" NAME="musicprnb" CHECKED>
+ R&B <BR>
+<INPUT TYPE="checkbox" NAME="musicpjazz" CHECKED>
+ Jazz <BR>
+<INPUT TYPE="checkbox" NAME="musicpblues" CHECKED>
+ Blues <BR>
+<INPUT TYPE="checkbox" NAME="musicpnewage" CHECKED>
+ Newage 
+</XMP></table>
+<P>
+<B>Пример 2.</B> Следующий пример содержит форму с тремя текстовыми блоками и одним <b>checkbox</b>. <b>Checkbox</b> позволяет пользователя выбрать, преобразовывать или нет текс в большие буквы. Каждая текстовая область имеет обработчик событий onChange , который преобразует значение области , если флажок выбран. <b>Checkbox</b> имеет обработчика событий onClick, который преобразовывает области, когда пользователь выбирает <b>checkbox</b>. 
+<table><tr><td bgcolor=aqua><XMP>
+<HTML>
+<HEAD>
+<TITLE>Checkbox object example</TITLE>
+</HEAD>
+<SCRIPT>
+function convertField(field) {
+   if (document.form1.convertUpper.checked) {
+      field.value = field.value.toUpperCase()}
+}
+function convertAllFields() {
+   document.form1.lastName.value = document.form1.lastName.value.toUpperCase()
+   document.form1.firstName.value = document.form1.firstName.value.toUpperCase()
+   document.form1.cityName.value = document.form1.cityName.value.toUpperCase()
+}
+</SCRIPT>
+<BODY>
+<FORM NAME="form1">
+<B>Last name:</B>
+<INPUT TYPE="text" NAME="lastName" SIZE=20 onChange="convertField(this)">
+<BR><B>First name:</B>
+<INPUT TYPE="text" NAME="firstName" SIZE=20 onChange="convertField(this)">
+<BR><B>City:</B>
+<INPUT TYPE="text" NAME="cityName" SIZE=20 onChange="convertField(this)">
+<P><INPUT TYPE="checkBox" NAME="convertUpper"
+   onClick="if (this.checked) {convertAllFields()}"
+   > Convert fields to upper case
+</FORM>
+</BODY>
+</HTML>
+</XMP></table>
+<H3> Смотрите также</H3> 
+<LI>Объекты <a hrEF="f_g.html#list_formob">form</A> и <a hrEF="r.html#list_radio">radio</A> 
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_checked">
+<H2>Свойство checked</H2> 
+<P>
+ Логическое значение, представляющее текущее состояние отдельного флажка или переключателя. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>CheckboxName</I>.checked 
+2. <I>RadioName</I> <I>[index]</I> .checked </PRE> 
+<P>
+<I>CheckboxName</I> является либо значением атрибута NAME объекта checkbox или элемента в массиве <I>elements</I>. <BR>
+<I>RadioName</I> - значение атрибута NAME объекта <i>radio</i>. <BR>
+<I>index</I> - целое число, представляющее переключатели в объекте <i>radio</i>. 
+<H3> Свойство</H3> 
+<P>
+<a hrEF="c.html#list_checkbox">checkbox</A>, <a hrEF="r.html#list_radio">radio</A> 
+<H3> Описание</H3> 
+<P>
+Если флажок или переключатель выбраны, то значение выбранного свойства истинна; иначе ложно. 
+<P>
+Вы можете управлять свойством в любое время. Флажок или переключатель модернизируется немедленно, после таго как вы исправили свойство. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример исследует массив переключателей <I>musicType</I> в форме <I>musicForm</I>, чтобы определить, кокая выбрана кнопка. Будуче использовано в  цикле <i>for...in</i>, свойство может определить состояние кнопок:
+<table><tr><td bgcolor=aqua><xmP>  
+function stateChecker() {
+   var checkedButton = ""
+   for (var i in document.musicForm.musicType) {
+      if (document.musicForm.musicType[i].checked=="1") {
+         checkedButton=document.musicForm.musicType[i].value
+      }
+   }
+}
+</xmP> </table>
+<H3> Смотрите также</H3> 
+<LI>Свойство <a hrEF="d_e.html#list_defaultChecked">DefaultChecked</A>
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_clearTimeout">
+<H2>Метод clearTimeout</H2> 
+<P>
+Отключает таймер, установленный при помощи метода <i>setTimeout</i>. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> ClearTimeout <I>(timeoutID)</I></PRE> </table>
+<P>
+<I>TimeoutID</I> - отключает таймер, который был установлен предыдущим запросом методом <i>setTimeout</i>. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="f_g.html#list_frameob">frame</A>, <a hrEF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Смотрите описание для метода <a hrEF="s.html#list_setTimeout">setTimeout</A>. 
+<H3> Примеры</H3> 
+<P>
+Смотрите примеры для метода <a hrEF="s.html#list_setTimeout">setTimeout</A>. 
+<H3> Смотрите также</H3> 
+<LI>Метода <a hrEF="s.html#list_setTimeout">SetTimeout</A>
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_click">
+<H2> Метод click</H2> 
+<P>
+Эмулирует щелчок на объекте левой кнопкой мыши. 
+<H3> Синтаксис</H3> 
+<PRE>  
+1. <I>ButtonName</I>.click () 
+2. <I>RadioName</I> <I>[index]</I> .click () <BR>
+3. <I>CheckboxName</I>.click () </PRE> 
+<P>
+<I>ButtonName</I> является либо значением атрибута NAME кнопки <i>reset</i> либо объект <i>submit</i> либо элемент в массиве <I>elements</I>. <BR>
+<I>RadioName</I> - значение атрибута NAME объекта <i>radio</i> либо элемент в массиве <I>elements</I>. <BR>
+<I>index</I> - целое число, представляющее переключатель в объекте <i>radio</i>. <BR>
+<I>CheckboxName</I> является либо значением атрибута NAME объекта <i>checkbox</i> либо элемент в массиве <I>elements</I>. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="b.html#list_button">button</A>, <a hrEF="c.html#list_checkbox">checkbox</A>, <a hrEF="r.html#list_radio">radio</A>, <a hrEF="r.html#list_reset">reset</A>, <a hrEF="s.html#list_submitob">submit</A> 
+<H3> Описание</H3> 
+<P>
+Эффект щелчка зависит от типа элемента формы.<p>
+Воздействие метода <b>click</b> на элементы формы: 
+<LI> Для <i>button</i>, выполняет то же самое действие, что и нажатие кнопки. 
+<LI> Для <i>radio</i>, выбирает переключатель. 
+<LI> Для <i>checkbox</i>, устанавливает флажок и присваивает ему значение <i>on</i>. 
+<H3> Примеры</H3> 
+<P>
+Следующий пример переключает состояние выбора первого переключателя в <I>musicType</I> объекте <i>radio</i> в форме <I>musicForm</I>: 
+<table><tr><td bgcolor=aqua><PRE> Document.musicForm.musicType [0] .click ()</PRE> </table>
+<P>
+Следующий пример переключает состояние выбора переключателя <I>newAge</I> в форме <I>musicForm</I>: 
+<table><tr><td bgcolor=aqua><PRE> Document.musicForm.newAge.click ()</PRE> </table>
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+ <A NAME="list_closedoc">
+<H2>Метод close (объект документа)</H2> 
+<P>
+Для документов закрывает текущий поток вывода и показывает содержимое документа на экране. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> Document.close ()</PRE> </table>
+<H3> Метод</H3> 
+<P>
+<a hrEF="d_e.html#list_document">document</A> 
+<H3> Описание</H3> 
+<P>
+Для документов метод <b>close</b> прекращает динамическое формирование документа, выводит содержимое документа на экран и сообщение в строке состояния "Document:Done".<p>
+<H3> Примеры</H3> 
+Следующие обращения к функции закрывает document.close () открытый document.open ().
+<table><tr><td bgcolor=aqua><xmp>  
+function windowWriter1() {
+   var myString = "Hello, world!"
+   msgWindow.document.open()
+   msgWindow.document.write(myString + "<P>")
+   msgWindow.document.close()
+}
+</xmp> </table>
+<H3> Смотрите также</H3> 
+<LI> Методы <a hrEF="m_q.html#list_opendoc">open</A>, <a hrEF="t_z.html#list_write">write</A>, <a hrEF="t_z.html#list_writeln">writeln</A> 
+<li> Раздел <a href="win_fr.html#1">Использование окон и фреймов</a>
+<!------------------------------------------------------------------------------------------------>
+ <hr align=center width=250>
+ <A NAME="list_closewin">
+<H2>Метод close (объект окна)</H2> 
+ <FONT SIZE=-2><a hrEF="introduction.html#1_window">Измененный в Navigator 3.0</A></FONT>  
+<P>
+Закрывает указанное окно. 
+<H3> Синтаксис</H3> 
+<table><tr><td bgcolor=aqua><PRE> <I>WindowReference</I>.close ()</PRE></table>
+<P>
+<I>WindowReference</I> - способ имеющий силу только для окна, смотрите в объекте <a hrEF="t_z.html#list_windowob">window</A>. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Метод <b>close</b> закрывает указанное окно. Если Вы вызываете <b>close</b> без определения  <I>windowReference</I>, <font color="red"><i>JavaScript</i></font> закрывает текущее окно. 
+<P>
+В обработчиках событий, вы должны определять window.close () вместо использования <b>close</b>().
+<H3> Примеры</H3> 
+<P>
+Любой из следующих примеров закрывает текущее окно: 
+<table><tr><td bgcolor=aqua><PRE>
+ Window.close () 
+ self.close () 
+ close()</PRE></table> 
+<P>
+Следующий пример закрывает окно <I>messageWin</I>: 
+<table><tr><td bgcolor=aqua><PRE> MessageWin.close ()</PRE></table> 
+<P>
+Теперь создадим пример, который открывает новое окно. Загрузим туда web-страницу, где при нажатие кнопки оно будет закрыто:
+<table><tr><td bgcolor=aqua><xmp>
+<html>
+ <script language="JavaScript">
+  <!-- hide
+   function closeIt(){
+    close();
+   }
+  // -->
+ </script>
+ <center>
+  <form>
+    <input type=button value="Закрыть окно" onClick="closeIt()">
+  </form>
+ </center>
+</html>
+</xmp></table>
+<form>
+<input type="button" value="Прсмотр примера" onClick="openWin2()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Метод <a hrEF="m_q.html#list_openwin">open</A> 
+<li> Раздел <a href="win_fr.html#1">Использование окон и фреймов</a>
+<!------------------------------------------------------------------------------------------------>
+ <hr align=center width=250>
+ <A NAME="list_confirm">
+<H2>Метод confirm</H2> 
+<P>
+ Показывает диалоговое окно <form color="red"><i>JavaScript</i></font> Confirm с указанным сообщением и BATTON "OK" и "Cancel". 
+<H3> Синтаксис</H3> 
+<P>
+<table><tr><td bgcolor=aqua>confirm (<I>"message"</I>) </table>
+<P>
+<I>message</I> - любая строка или свойство существующего объекта. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="t_z.html#list_windowob">window</A> 
+<H3> Описание</H3> 
+<P>
+Используйте метод <b>confirm</b>, чтобы пользователя подтвердил принятое решение. Аргумент <I>message</I> определяет сообщение, которое побуждает пользователя для решения. Подтверждение возвращает методу, true, если пользователь выбирает "OK" или false если пользователь выбирает "Cancel". 
+<P>
+<b>confirm</b> - метод объекта окна, вы не должны определять <I>windowReference</I>, когда Вы вызываете его. Например, <TT><I>windowReference</I>.confirm ()</TT> ненужен. 
+<H3> Примеры</H3> 
+<P>
+Этот пример использует метод confirm в функции <I>confirmCleanUp ()</I>, чтобы подтвердить, что пользователь действительно хочет выйти. Если пользователь выбирает OK, то функция <I>cleanUp()</I> закрывает приложение. 
+<table><tr><td bgcolor=aqua><xmp>  
+function confirmCleanUp() {
+   if (confirm("Are you sure you want to quit this application?")) {
+      cleanUp()
+   }
+}
+</xmP> </table>
+Вы можете вызвать функциею <I>confirmCleanUp ()</I> в обработчике событий onClick кнопки формы, как показано в следующем примере: 
+<table><tr><td bgcolor=aqua><xmp>
+<INPUT TYPE="button" VALUE="Quit" onClick="confirmCleanUp()">
+</xmp></table>
+<form>
+<input type="button" value="Демонстрация примера" onClick="openWin1()">
+</form>
+<H3> Смотрите также</H3> 
+<LI> Методы <a hrEF="a.html#list_alert">alert</A>, <a hrEF="m_q.html#list_prompt">prompt</A> 
+<!------------------------------------------------------------------------------------------------>
+ 
+<hr align=center width=250>
+ <A NAME="list_cookie">
+<H2>Свойство cookie</H2> 
+<P>
+Значение строки <b>cookie</b>, которая содержит небольшое количество информации, сохраненной Navigator в файле cookies.txt. 
+<H3> Синтаксис</H3> 
+<font color="purple"><PRE> Document.cookie</PRE></font>
+<H3> Свойство</H3> 
+<P>
+<a hrEF="d_e.html#list_document">document</A> 
+<H3>Описание</H3> 
+<P>
+Значение, хранимое в свойстве <b>cookie</b>, может быть извлечено с помощью методов  charAt, indexOf, и lastIndexOf. 
+<P>
+Вы можете управлять свойством <b>cookie</b> в любое время. 
+<H3> Примеры</H3> 
+<P>
+Следующая функция использует свойством <b>cookie</b>, чтобы делать запись напоминания для пользователей заявления(применения). " Истекает = " компонента, устанавливает дату истечения срока для печенья, так что это сохраняется вне текущего сеанса окна просмотра. Формат даты должен быть 
+<PRE>  
+Wdy, DD-Mon-YY HH:MM:SS GMT
+ </PRE> 
+Где Wednesday - имя дня недели, DD - днь месяца, Mon - месяц, YY - последние два числа года, и HH, MM, и SS - соответственно часы, минуты, и секунды. 
+<P>
+ Это тот же формат даты какой возвращяет <i>Date.toGMTString</i>, за исключением: 
+<UL>
+ <LI>Черточек между днем, месяцем, и годом 
+ <LI> Год состоит из двух-однозначных чисел для <b>cookies</b>. 
+</UL>
+<P>
+ Например, имеет силу истечения даты <b>cookies</b>: <BR>
+expires=Wednesday, 09-Nov-99 23:12:40 GMT 
+<xmP>  
+function RecordReminder(time, expression) {
+// Делает запись <b>cookies</b> формы "@="
+К отображению 
+// из
+ 
+<T>
+ В миллисекундах начиная с периода, 
+// возвращенный Date.getTime (), на закодированное выражение, 
+// 
+<E>
+ ( Закодированный, чтобы содержать никакое незаполненное пространство, точку с запятой, 
+// или цифры(знаки) запятой) 
+document.cookie = "@" + time + "=" + expression + ";"
+// урегулируют истечение печенья время к одному дню 
+// вне напоминания, время 
+  document.cookie += "expires=" + cookieDate(time + 24*60*60*1000)
+// cookieDate - функция, которая форматирует дату согласно спецификациям печенья
+}
+ </xmP> 
+<P>
+Когда пользователь грузит страницу, которая содержит эту функцию, другая функция использует indexOf ("@") и indexOf ("=") чтобы определить дату и время, сохраненную в печеньи. 
+<H3> Смотрите также</H3> 
+<LI>Объект <a hrEF="h_l.html#list_hidden">hidden</A> 
+<!------------------------------------------------------------------------------------------------->
+<hr align=center width=250>
+ <A NAME="list_cos">
+<H2> Метод cos</H2> 
+<P>
+ Возвращает косинус своего аргумента. 
+<H3> Синтаксис</H3> 
+<font color="purple"><PRE> Math.cos <I>(number)</I></PRE> </font>
+<P>
+<I>number</I> - числовое выражение, представляющее размер угла в радианах. 
+<H3> Метод</H3> 
+<P>
+<a hrEF="m_q.html#list_Math">Math</A> 
+<H3> Описание</H3> 
+<P>
+Метод <b>cos</b> возвращает числовое значение в диапозоне между -1 и 1. 
+<H3> Примеры</H3> 
+<PRE>
+// Показывает значение 6.123031769111886e-017 
+document.write (" косинус PI/2 радиан,  " + Math.cos (Math. PI/2))
+// Показывает значение -1 
+document.write (" косинус PI радиан " + Math.cos (Math. PI))
+
+// Показывает значение 1 
+document.write (" косинус 0 радиан - " + Math.cos (0))
+ </PRE> 
+<H3> Смотрите также</H3> 
+<LI>  Методы <a hrEF="a.html#list_acos">acos</A>, <a hrEF="a.html#list_asin">asin</A>, <a hrEF="a.html#list_atan">atan</A>, <a hrEF="s.html#list_sin">sin</A>, <a hrEF="t_z.html#list_tan">tan</A>
+<!------------------------------------------------------------------------------------------------>
+<hr align=center width=250>
+</BODY>
+</HTML>

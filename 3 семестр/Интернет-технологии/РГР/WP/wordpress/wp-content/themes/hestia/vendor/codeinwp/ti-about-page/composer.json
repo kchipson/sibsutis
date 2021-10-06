@@ -1,0 +1,24 @@
+{
+  "name": "codeinwp/ti-about-page",
+  "description": "The theme about page for themeisle themes.",
+  "version": "1.0.8",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "minimum-stability": "dev",
+  "homepage": "https://github.com/Codeinwp/ti-about-page",
+  "authors": [
+    {
+      "name": "ThemeIsle team",
+      "email": "friends@themeisle.com",
+      "homepage": "https://themeisle.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "load.php"
+    ]
+  },
+  "support": {
+    "issues": "https://github.com/Codeinwp/ti-about-page/issues"
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="WINDOWS-1251"?>
+<?xml-stylesheet type='text/xsl' href='ex1-2.xsl'?>
+
+<shop>
+     <product_type caption="Фрукты">
+       <product ammount="100">Апельсины</product>
+       <product ammount="200">Мандарины</product>
+       <product ammount="300">Яблоки</product>
+     </product_type>
+     
+     <product_type caption="Овощи">
+       <product ammount="100">Морковь</product>
+       <product ammount="200">Картофель</product>
+       <product ammount="300">Огурцы</product>
+     </product_type>
+</shop>

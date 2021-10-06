@@ -1,0 +1,26 @@
+{
+  "name": "ti-about-page",
+  "version": "1.0.8",
+  "dependencies": {
+    "sticky-js": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "cross-env": "^5.1.6",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build:js": "cross-env webpack --mode production --module-bind js=babel-loader",
+    "watch:js": "cross-env webpack --mode development --module-bind js=babel-loader --watch",
+    "build:css": "./node_modules/.bin/node-sass assets/scss -o assets/css --output-style compressed",
+    "watch:css": "./node_modules/.bin/node-sass --watch assets/scss -o assets/css --source-map true",
+    "build": "npm-run-all build:css build:js",
+    "dev": "npm-run-all --parallel watch:js watch:css "
+  }
+}

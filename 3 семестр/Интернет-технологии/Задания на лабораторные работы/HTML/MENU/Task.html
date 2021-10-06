@@ -1,0 +1,42 @@
+<HTML><HEAD><TITLE>Лабораторная работа N 3.1</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<META NAME="Description" CONTENT="Lecture about Internet">
+<META NAME="Keywords" CONTENT="Internet, Lecture">
+<META NAME="LANGUAGE" CONTENT="ru">
+</HEAD>
+<BODY LEFTMARGIN=10 TOPMARGIN=0  BGCOLOR=#FFEFCF 
+TEXT=#000000 LINK=#006600 VLINK=#330099 ALINK=#ff0000>
+<hr noshade size=3>
+<h3 align=center>Сибирский государственный университет 
+<br>телекоммуникаций и информатики
+</h3>
+<P align=center><i> Лабораторные задания по курсу
+&nbsp;"Интернет-технологии"</i>
+<hr noshade size=3>
+
+<H2 align=center>Лабораторная работа N 3.1<br>Создание выпадающего меню</H2>
+
+<p><b>Задание:</b>&nbsp;
+<p align=justify>
+Сделать простое одноуровневое выпадающее меню:<p>
+<img src="Popupmenu.bmp">
+<P>Для этого необходимо:
+<OL>
+<p><LI> На каждый элемент главного горизонтального меню сделать обработчики событий:
+	<ul type=disc>
+		<li> <tt>onMouseOver</tt> - показать соответствующее выпадающее меню 
+		<li> <tt>onMouseOut</tt>  - через заданное время (в виде константы) спрятать текущее подменю:<br>
+			( можно сделать следующим образом: <tt>timer = setTimeout("CurrentMenu.style.display = 'none'",delay)</tt> )
+	</ul>
+<p><LI> Каждое выпадающее меню изначально спрятано. <br>
+		К подменю необходимо добавить следующие обработчики:
+	<ul type=disc>
+		<li> <tt>onMouseOver</tt> - отменить таймер на закрытие: <tt>clearTimeout(timer)</tt>;
+		<li> <tt>onMouseOut</tt>  - такой же как у главного меню.
+	</ul>
+
+<p><LI> Каждый элемент выпадающего меню должен быть интерактивным (изменение фона, цвета, начертания элемента, находящегося под курсором мыши)
+<p><LI> Как главное, так и выпадающие меню должны быть оформлены в виде слоев (<b>div</b> или <b>span</b>). Использование таблиц недопустимо.
+</OL>
+<p>
+</BODY></HTML>

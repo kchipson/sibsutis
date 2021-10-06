@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>Лабораторная работа N </TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+
+<BODY LEFTMARGIN=8 BGCOLOR="#FFFFFF" VLINK="#666666" LINK="#FF0000">
+<h3><a name="start">XSLT</a></h3>
+<P>
+<UL>
+<LI><a href="#1">Элемент xsl:template</A>
+<LI><a href="#2">Элемент xsl:value-of</A>
+<LI><a href="#3">Элемент xsl:for-each</A>
+<LI><a href="#4">Элемент xsl:sort</A>
+<LI><a href="#5">Элемент xsl:if</A>
+<LI><a href="#6">Элемент xsl:choose</A>
+<LI><a href="#7">Элемент xsl:attribute</A>
+</UL>
+<P>
+
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+&lt;?xml-stylesheet type='text/xsl' href='yourxsl.xsl'?&gt;
+
+&lt;shop&gt;
+  &lt;product_type caption="Фрукты"&gt;
+    &lt;product ammount="100"&gt;Апельсины&lt;/product&gt;
+    &lt;product ammount="300"&gt;Мандарины&lt;/product&gt;
+    &lt;product ammount="500"&gt;Яблоки&lt;/product&gt;
+  &lt;/product_type&gt;
+
+  &lt;product_type caption="Овощи"&gt;
+    &lt;product ammount="200"&gt;Морковь&lt;/product&gt;
+    &lt;product ammount="400"&gt;Картофель&lt;/product&gt;
+    &lt;product ammount="600"&gt;Огурцы&lt;/product&gt;
+  &lt;/product_type&gt;
+&lt;/shop&gt;
+</span></pre></td></tr></table>
+
+Все дальнейщие XSL преобразования буду производиться над этим XML файлом
+
+<ul>
+<li><h4>Элемент xsl:template</h4>
+Задает шаблон преобразования для выходного потока<p>
+<p>
+<b>Атрибуты элемента xsl:template</b>
+<DL>
+<DT><strong>name</strong>=<i>name</i>
+<DD>Необязателен. Имя шаблона. Если этот атрибут опускается должен быть атрибут match
+<DT><strong>match</strong>=<i>pattern</i>
+<DD>Не обязателен. Совпадающая конфигурация для данного шаблона. Если этот атрибут опускается - должен быть атрибут name.
+<DT><strong>priority</strong>=<i>number</i>
+<DD>Не обязателен - число, показывающее приоритет данного шаблона.
+</DL>
+<P>
+
+<b>Пример:</b>
+
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+  &lt;xsl:template match="product_type"&gt;
+   &lt;p/&gt; &lt;div style="color=red"&gt;&lt;xsl:value-of select="@caption"/&gt;&lt;/div&gt;
+  &lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+</span></pre></td></tr></table>
+
+<p>Представление в HTML:
+
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<p><div style="color:red">Фрукты<br>Овощи</div><p>
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+
+<p><li><h4><a name="2">Элемент xsl:value-of</a></h4>
+Создает текстовый узел и вставляет некоторое значение в дерево-результат<p>
+<p><b>Атрибуты элемента xsl:value-of</b>
+<DL>
+<DT><strong>select</strong>=<i>expression</i>
+<DD>Обязателен. Значение, передаваемо не выход
+</DL>
+<P><b>Пример:</b>
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+  &lt;xsl:template match="/"&gt;
+  &lt;b&gt;&lt;xsl:value-of select="//product_type[1]/@caption"/&gt;&lt;/b&gt;
+  &lt;div style="color=red"&gt;&lt;xsl:value-of select="//product_type[2]/product[2]"/&gt;&lt;/div&gt;
+  &lt;br/&gt;&lt;u&gt;&lt;xsl:value-of select="2+3"/&gt;&lt;/u&gt;
+  &lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+</span></pre></td></tr></table>
+<p>Представление в HTML:
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<p><b>Фрукты</b><br>
+<font color="red">Картофель</font><br>
+<u>5</u><p>
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+
+<p><li><h4><a name="3">Элемент xsl:for-each</a></h4>
+Позволяет создать цикл из нескольких узлов в выходном потоке<p>
+<p><b>Атрибуты элемента xsl:for-each</b>
+<DL>
+<DT><strong>select</strong>=<i>expression</i>
+<DD>Обязателен. Обрабатываемый набор узлов
+</DL>
+<P>
+
+<b>Пример:</b>
+
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+  &lt;xsl:template match="/"&gt;
+
+  &lt;xsl:for-each select="//product_type[2]/product"&gt;
+    &lt;xsl:value-of select="position()"/&gt; -
+    &lt;xsl:value-of select="."/&gt;&lt;br/&gt;
+  &lt;/xsl:for-each&gt;
+
+  &lt;xsl:for-each select="//product_type"&gt;&lt;br/&gt;
+    &lt;xsl:value-of select="@caption"/&gt;
+  &lt;/xsl:for-each&gt;
+
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</span></pre></td></tr></table>
+<p>Представление в HTML:
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<p>1 - Морковь<br>
+   2 - Картофель<br>
+   3 - Огурцы<p>
+   Фрукты<br>
+   Овощи<br>
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+
+<p><li><h4><a name="4">Элемент xsl:sort</a></h4>
+Позволяет создать сортировку набора узлов. Элемент &lt;xsl:sort&gt; всегда является дочерним элементом элемента &lt;xsl:for-each&gt;<p>
+<p><b>Атрибуты элемента xsl:sort</b>
+<DL>
+<DT><strong>select</strong>=<i>expression</i>
+<DD>Не обязателен. Выражение для сортировки
+<DT><strong>order</strong>=<i><b>ascending</b>|descending</i>
+<DD>Не обязателен. Порядок сортировки. По умолчанию в порядке возрастания "ascending"
+<DT><strong>case-order</strong>=<i><b>upper-first</b>|lower-first</i>
+<DD>Не обязателен. Определяет, орядок сортировки для больших и малых букв.
+<DT><strong>data-type</strong>=<i><b>text</b>|number|qname</i>
+<DD>Не обязателен. Тип сортируемых данных. Текст, число, или тип данных, определенный пользователем.
+</DL>
+<P>
+
+<b>Пример:</b>
+
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+  &lt;xsl:template match="/"&gt;
+
+  &lt;xsl:for-each select="//product_type//product"&gt;
+  &lt;xsl:sort order="ascending" select="."/&gt;
+     &lt;xsl:value-of select="."/&gt; - &lt;xsl:value-of select="@ammount"/&gt; &lt;br/&gt;
+  &lt;/xsl:for-each&gt;
+  &lt;p/&gt;
+  &lt;xsl:for-each select="//product_type//product"&gt;
+  &lt;xsl:sort order="ascending" select="@ammount" data-type="number"/&gt;
+     &lt;xsl:value-of select="."/&gt; - &lt;xsl:value-of select="@ammount"/&gt; &lt;br/&gt;
+  &lt;/xsl:for-each&gt;
+
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</span></pre></td></tr></table>
+
+<p>Представление в HTML:
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<p>
+Апельсины - 100<br>
+Картофель - 400<br>
+Мандарины - 300<br>
+Морковь - 200<br>
+Огурцы - 600<br>
+Яблоки - 500<p>
+
+Апельсины - 100<br>
+Морковь - 200<br>
+Мандарины - 300<br>
+Картофель - 400<br>
+Яблоки - 500<br>
+Огурцы - 600<br>
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+
+<p><li><h4><a name="5">Элемент xsl:if</a></h4>
+Позволяет писать условные выражения. Несет шаблон, который будет выполняться при определенном условии<p>
+<p><b>Атрибуты элемента xsl:if</b>
+<DL>
+<DT><strong>test</strong>=<i>expression</i>
+<DD>Обязателен. Проверяемое условие
+</DL>
+<P>
+
+<b>Пример:</b>
+
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+  &lt;xsl:template match="/"&gt;
+
+  &lt;xsl:for-each select="//product_type//product"&gt;
+  &lt;xsl:if test="@ammount &gt; 300"&gt;
+     &lt;xsl:value-of select="."/&gt; -
+     &lt;xsl:value-of select="@ammount"/&gt; &lt;br/&gt;
+  &lt;/xsl:if&gt;
+  &lt;/xsl:for-each&gt;
+
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</span></pre></td></tr></table>
+<p>Представление в HTML:
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<p>
+Яблоки - 500<br>
+Картофель - 400<br>
+Огурцы - 600<p>
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+
+<p><li><h4><a name="6">Элемент xsl:choose</a></h4>
+Элемент &lt;xsl:choose&gt; применяется для реализации выбора между несколькими альтернативами на основе проверки условия. Он содержит один и более элементов &lt;xsl:when&gt;, за которыми может следовать необязательный элемент &lt;xsl:otherwise&gt;.
+<a href="#start"><img src="icons/up.gif" border=0></a>
+<p>&nbsp;</p>
+<li><h4><a mame="7">Элемент xsl:attribute</a></h4>
+Добавляет атрибут к ближайшему поражденному элементу. Элемент xsl:attribute заменяет уществующие атрибуты с тем же именем. Элемент &lt;xsl:attribute&gt; должен всталяться до того, как добавлен какой-либо поражденный элемент<p>
+<p>
+<b>Атрибуты элемента xsl:attribute</b>
+<DL>
+<DT><strong>name</strong>=<i>attributename</i>
+<DD>Обязателен. Имя добавляемого атрибута
+</DL>
+<P>
+
+<b>Пример:</b>
+
+<p><table><tr><td bgcolor=aqua>
+<pre>
+&lt;?xml version="1.0" encoding="WINDOWS-1251"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+  &lt;xsl:template match="/"&gt;
+  &lt;xsl:for-each select="//product_type[1]//product"&gt;
+
+  &lt;xsl:choose&gt;
+   &lt;xsl:when test=". = 'Мандарины'"&gt;
+     &lt;font&gt;
+      &lt;xsl:attribute name="color"&gt;red&lt;/xsl:attribute&gt;
+      &lt;xsl:value-of select="."/&gt;&lt;br/&gt;
+     &lt;/font&gt;
+   &lt;/xsl:when&gt;
+
+   &lt;xsl:when test=". = 'Яблоки'"&gt;
+     &lt;font&gt;
+      &lt;xsl:attribute name="color"&gt;green&lt;/xsl:attribute&gt;
+      &lt;xsl:attribute name="size"&gt;6px&lt;/xsl:attribute&gt;
+      &lt;xsl:value-of select="."/&gt;&lt;br/&gt;
+      &lt;/font&gt;
+   &lt;/xsl:when&gt;
+
+   &lt;xsl:otherwise&gt;
+      &lt;font&gt;
+      &lt;xsl:attribute name="face"&gt;Courier New&lt;/xsl:attribute&gt;
+      &lt;xsl:value-of select="."/&gt;&lt;br/&gt;
+      &lt;/font&gt;
+   &lt;/xsl:otherwise&gt;
+  &lt;/xsl:choose&gt;
+  &lt;/xsl:for-each&gt;
+
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</span></pre></td></tr></table>
+<p>Представление в HTML:
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<p>
+<font face="Courier New">Апельсины</font><br>
+<font color="red">Мандарины</font><br>
+<font color="green" size="6px">Яблоки</font><br>
+<HR SIZE=2 WIDTH=80% NOSHADE align="left">
+<a href="#start"><img src="icons/up.gif" border=0></a>
+</ul>
+
+</BODY>
+</HTML>

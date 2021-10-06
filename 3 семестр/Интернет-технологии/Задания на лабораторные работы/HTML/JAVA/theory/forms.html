@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<TITLE>HTML Commands - Forms</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</HEAD>
+<BODY>
+<H2><A NAME="forms">Формы</A></H1>
+<UL><LI>
+<A HREF="#for">Формы - Передача данных на сервер</a><LI>
+<A HREF="#syntax">Подробное описание команды FORM</a><UL>
+<LI><A HREF="#syntax">Синтаксис</A>
+<LI><A HREF="#select">Команда SELECT</A>
+<LI><A HREF="#input">Команда INPUT</A>
+<LI><A HREF="#textarea">Команда TEXTAREA</A>
+<LI><A HREF="#isindex">Команда ISINDEX</A>
+</UL></UL>
+
+<P><A NAME="for">
+<b>Формы</b></a> (Forms) позволяют запросить у пользователя информацию требуемую
+для дальнейшие работы сервера, например, "права доступа" для регистрации
+или комментарии о работе сервера.
+<b>Формы</b> составляются из одного (или нескольких) запросов
+к пользователю, ответом на которые должен быть ввод текста или выбор условий.
+<P>
+Передаваемая на сервер информация активизирует специальную программу
+для ее обработки (CGI Script).
+Активные программы помимо обработки запросов от пользователя,
+могут выполнять множество различных функций таких как: формирование
+активных WWW страниц, обращение к базам данных, поиск информации
+на сервере, запуск вычислительных программ и  выполнения разрешенных, в зависимости от ответа пользователя,
+действий по дальнейшему предоставлению информации.
+<P>
+Взаимодействие активных программ с протоколом передачи гипертекста
+(HTTP)
+организовано через спецификацию интерфейса между сервером httpd
+и внешними, вызываемыми программами -
+CGI (Common Gateway Interface).
+<P>
+Для создания <b>формы</b> используется
+<a href="command.html#command">команда</a> 
+<A HREF="html-gloss.html#htmlref2_0001000113001f00" TARGET="contentFrame">FORM</A>,
+внутри которой содержится как минимум одна команда
+<A HREF="html-gloss.html#htmlref2_0001000113002900" TARGET="contentFrame">INPUT</A>.
+<P>
+Команда
+<A HREF="html-gloss.html#htmlref2_0001000113001f00" TARGET="contentFrame">FORM</A>
+задает тип запроса информации от пользователя.
+<p>
+Команда
+<A HREF="html-gloss.html#htmlref2_0001000113002900" TARGET="contentFrame">INPUT</A>
+определяет способ и адрес для запрашиваемой от пользователя информации.
+<P>
+<a href="#forms"><img src="icons/up.gif" border=0></a><P>
+<b>Пример</b> задания <b>формы:</b>
+<p><table><tr><td bgcolor=aqua>
+<PRE>&lt;FORM ACTION="http://intranet/local" METHOD=POST&gt;
+&lt;P&gt;Имя пользователя
+&lt;BR&gt;
+&lt;INPUT NAME="CONTROL1" TYPE=TEXTBOX VALUE="Введите Ваше имя"&gt;
+&lt;P&gt;Пароль
+&lt;BR&gt;&lt;INPUT TYPE="PASSWORD" NAME="CONTROL2"&gt;
+&lt;P&gt;Выберете цвет
+&lt;BR&gt;&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="0" CHECKED&gt;Красный
+&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="1"&gt;Зеленый
+&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="2"&gt;Голубой
+&lt;P&gt;Ваши комментарии
+&lt;BR&gt;&lt;TEXTAREA NAME="CONTROL4" ROWS="2" COLS="25"&gt;&lt;/TEXTAREA&gt;
+&lt;P&gt;&lt;INPUT NAME="CONTROL5" TYPE=CHECKBOX CHECKED&gt;
+          Подтвердить получение
+&lt;P&gt;&lt;INPUT TYPE="SUBMIT" VALUE="Готово" 
+          OnClick="alert('Это только пример')"&gt;
+&lt;INPUT TYPE="RESET" VALUE="Отменить"&gt;
+&lt;/FORM&gt;
+</PRE></table>
+<P><b>Что даст</b>:
+<hr>
+<FORM>
+<P>Имя пользователя<BR>
+<INPUT NAME="CONTROL1" TYPE=TEXTBOX VALUE="Введите Ваше имя">
+<P>Пароль<BR><INPUT TYPE="PASSWORD" NAME="CONTROL2">
+<P>Выберете цвет
+<BR><INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="0" CHECKED>Красный
+<INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="1">Зеленый
+<INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="2">Голубой
+<P>Ваши комментарии
+<BR><TEXTAREA NAME="CONTROL4" ROWS="2" COLS="25"></TEXTAREA>
+<P><INPUT NAME="CONTROL5" TYPE=CHECKBOX CHECKED>Подтвердить получение
+<P><INPUT TYPE="button" VALUE="Готово" OnClick="alert('Это только пример')">
+<INPUT TYPE="RESET" VALUE="Отменить"">
+</FORM>
+<P>
+<a href="#forms"><img src="icons/up.gif" border=0></a><hr>
+<P>
+<A NAME="syntax"><H2>Синтаксис</H2></A>
+<TAB>Команда FORM определяет форму для заполнения в HTML документе. В одном документе может быть определено несколько форм для заполнения, но вложенные команды FORM не
+разрешены. Формат команды FORM выглядит следующим образом:
+<P>
+<table><tr><td bgcolor=aqua>
+<Pre>&lt;FORM ACTION="url" METHOD="POST"&gt; ... &lt;/FORM&gt</Pre>
+</td></tr></table>
+<P>
+Атрибуты команды FORM:
+<DL>
+<DT><STRONG>ACTION</STRONG>=<i>url</i>
+<DD><A HREF="url.html">URL</A> адрес сервера
+запросов, куда будет отослано содержание формы после подтверждения; Если
+это поле отсутствует, будет использован URL адрес текущего документа.
+<DT><STRONG>METHOD</STRONG>=<i>get-post</i>
+<dd>
+HTTP/1.0 метод используемый для посылки содержания заполненной формы на сервер.
+Этот метод зависит от того, как работает конкретный сервер запросов. Настоятельно рекомендуется
+использование метода POST. Возможные варианты следующие:
+<UL><LI>GET это метод по умолчанию, который приводит к добавлению содержимого заполненной формы к URL, как и в нормальном запросе.
+<LI>POST при использовании этого метода содержимое заполненной формы пересылается не как
+часть URL, а как содержимое тела запроса.
+</UL>
+<DT><STRONG>ENCTYPE</STRONG>=
+<DD>задает тип кодирования содержимого заполненной формы.
+Этот атрибут действует только
+когда используется метод POST и даже в этом случае имеет только одно возможное значение (которое является значением по умолчанию) -
+<tt>application/x-www-form-urlencoded.</tt> (За исключением случая, когда на сервер
+клиентом посылается file - File - Upload).
+<br>Передается через переменную окружения <tt>CONTENT_TYPE</tt>.
+<DT><STRONG>TARGET</STRONG>=<i>window</i>
+<DD>Определяет положение ответа сервера по получению формы
+(по аналогии с командой
+<A HREF="html-gloss.html#htmlref2_0001000113000300">A</a>).<br>
+Значения параметра <i>window</i>:
+<table width=90%><tr><td valign=top><i>window</i></td>
+<td valign=top>имя окна, в котором будет выведен результат, если указанное
+имя отсутствует, то результат будет показан в новом окне;
+</td></tr>
+<tr><td valign=top><b><tt>_blank</tt></b></td>
+<td align=top>показать результат в новом окне;
+</td></tr>
+<tr><td valign=top><b><tt>_parent</tt></b></td>
+<td valign=top>показать результат в родительском окне;
+</td></tr>
+<tr><td valign=top><b><tt>_self</tt></b></td>
+<td valign=top>показать результат в том же окне;
+</td></tr>
+<tr><td valign=top><b><tt>_top</tt></b></td>
+<td valign=top>показать результат в основном окне.</td></tr>
+</table>
+</DL>
+<P>
+Внутри команды FORM может находиться все, что угодно, кроме другого
+оператора FORM. Согласно
+спецификации, для задания интерфейсных элементов внутри команды FORM
+используются команды <A HREF="#input">INPUT</A>,
+<A HREF="#select">SELECT</A>, и <A HREF="#textarea">TEXTAREA</A>.<P>
+<a href="#forms"><img src="icons/up.gif" border=0></a>
+<HR>
+<A NAME="select"><H2>Команда SELECT</H2></A>
+Внутри &lt;FORM&gt; ... &lt;/FORM&gt;, может присутствовать любое количество команд SELECT,  
+в сочетании с другими HTML-элементами (включая INPUT и TEXTAREA)
+и текстом (кроме команды FORM).
+Команда SELECT представляется как список.
+<P>
+SELECT имеет закрывающую команду. Внутри оператора SELECT,
+разрешена только последовательность команд OPTION - за каждым из которых следует некоторое
+количество простого текста (без HTML разметки); например:
+<P>
+<table bgcolor=aqua><tr><td><Pre> &lt;SELECT NAME="my-menu"&gt;
+ &lt;OPTION VALUE="1" SELECTED&gt; First option.
+ &lt;OPTION VALUE="2"&gt; Second option.
+ &lt;/SELECT&gt;</pre></table>
+<p><b>
+Атрибуты команды SELECT:</b>
+<DL>
+<DT><strong>NAME</strong>=<i>идентификатор</i>
+<DD>символическое имя для этого SELECT элемента. Это поле должно присутствовать, т.к. оно
+используется при посылке запроса (аналогично команде INPUT).
+<DT><strong>SIZE</strong>=<i>n</i>
+<DD>если SIZE равен 1 или если этот атрибут опущен, по умолчанию SELECT будет представлен как
+выпадающее меню. Если SIZE=2 или более, SELECT будет представлен как окно выбора; значение
+SIZE тогда будет определять, сколько элементов списка будут видны.
+<DT><strong>MULTIPLE</strong>
+<DD>если присутствует (нет значения), задает, что SELECT должен позволять множественный
+выбор из списка. Наличие MULTIPLE принуждает SELECT быть представленным как список выбора,
+вне зависимости от значения SIZE.
+</DL>
+<P>
+<b>Атрибуты команды OPTION:</b>
+<DL>
+<dt><strong>VALUE</strong>="<I>значение</I>"
+<dd>задается то значение, которое будет передано программе, обрабатывающей данную форму при 
+выборе одного из элементов формы.
+<dt><strong>SELECTED</strong> 
+<dd>задает,
+что эта опция выбрана по умолчанию. Если SELECT позволяет множественный
+выбор (с помощью атрибута MULTIPLE), как SELECTED могут быть помечены несколько опций.
+</DL><P>
+<a href="#forms"><img src="icons/up.gif" border=0></a>
+<HR>
+<H2><A NAME="input">Команда INPUT</A></H2>
+<TAB>Команда INPUT используется для задания простого элемента ввода внутри
+FORM. Это одиночная команда, ее
+ничего не окружает и она не имеет закрывающей команды
+- т.е. он используется подобно команде
+<A HREF="img.html">IMG</A>.
+<P>
+Атрибуты команды INPUT:
+<DL>
+<DT><strong>TYPE</strong>=<i>параметр</I>
+<DD>Параметр принимает одно из следующих значений:
+<table width=90%><tr><td valign=top><b><tt>hidden</tt></b></td>
+<td valign=top>
+Пользователю не предлагается поля для ввода, но содержимое команды передается
+при подтверждении и посылке формы. Это значение может быть использовано для
+передачи информации состояния при взаимодействии клиента сервера.
+<table bgcolor=aqua><tr><td><pre>&lt;INPUT TYPE=HIDDEN NAME=custom VALUE="c12-234-8534"&gt;</pre></td></tr></table></td>
+</tr><tr><td valign=top><b><tt>image</tt></b></td>
+<td valign=top>
+Картинка, по которой вы можете сделать щелчок мышью или другим указывающим
+устройством, что приводит к немедленному подтверждению и отсылке формы.
+Координаты выбранной точки измеряются в точках от верхнего левого угла и
+возвращаются (наряду с другими компонентами формы) точно так же, как для
+команды <a href="img.html">IMG</a>.
+</td></tr><tr><td valign=top><b><tt>text</tt></b></td>
+<td valign=top>
+Поле ввода текста, значение по умолчанию.
+</td></tr><tr><td valign=top><b><tt>password</tt></b></td>
+<td valign=top>
+Поле ввода пароля; вводимые символы представляются как звездочки.
+</td></tr><tr><td valign=top><b><tt>checkbox</tt></b></td>
+<td valign=top>
+Кнопка, принимающая положения on (включено) и off(выключено).
+</td></tr><tr><td valign=top><b><tt>radio</tt></b></td>
+<td valign=top>
+Кнопка, принимающая положения on и off; причем остальные кнопки с тем-же
+параметром NAME ведут себя по принципу "одна из многих".
+</td></tr><tr><td valign=top><b><tt>submit</tt></b></td>
+<td valign=top>
+Кнопка, действие которой сводится к отсылке содержимого заполненной формы
+на сервер запросов.
+</td></tr><tr><td valign=top><b><tt>reset</tt></b></td>
+<td valign=top>
+Кнопка, которая устанавливает во всех интерфейсных элементах значения по умолчанию.
+</td></tr></table>
+броузеры четвертых версий позволяют организовать передачу файлов на сервер
+(File - Upload) - для этого используется значение
+<tt>TYPE=FILE</tt> и устанавливается режим передачи <tt>ENCTYPE</tt>. 
+
+<DT><strong>NAME</strong>=<I>идентификатор</I>
+<DD>символическое имя (оно не показывается) для этого поля ввода. Это поле
+должно присутствовать для всех полей ввода кроме "submit" and "reset", т.к.
+оно используется в стоке запроса при идентификации поля ввода при посылке
+ее на сервер после подтверждения формы.
+<DT><strong>VALUE</strong>=<I>значение</I>
+<DD>для полей ввода текста или пароля, может быть использовано для задания
+начального содержания поля. Для checkbox или radio button, VALUE задает значение кнопки, когда она находится
+в отмеченном состоянии (неотмеченные кнопки опускаются при посылке
+запроса); значение по
+умолчанию для checkbox или radio button - "on". Для типов "submit" и
+"reset", VALUE может быть
+использовано для задания надписи на этих кнопках.
+<DT><strong>CHECKED</strong> (значение не требуется)
+<DD> задает что данная кнопка типа checkbox или radio button отмечены
+по умолчанию; это поле работает только для кнопок типа checkbox и radio button.
+<DT><strong>SIZE</strong>=<i>n</i>
+<DD>физический размер поля ввода в символах; это поле действует только для
+элементов ввода текста или пароля.
+Если не присутствует явно, то по умолчанию равно 20.
+Многострочные поля ввода текста
+могут быть  заданы с помощью SIZE=ширина,высота; например SIZE=60,12. Заметим, что SIZE
+атрибут не следует использовать для задания многострочных полей ввода, т.к. можно
+воспользоваться командой <A HREF="#textarea">TEXTAREA</A>.
+<DT><strong>MAXLENGTH</strong>=<i>n</i>
+<DD>максимальное количество введенных символов, которые будут приниматься для ввода,
+верно только для полей ввода текста и пароля (и только в однострочных полях).
+По умолчанию -
+неограничено. Подразумевается, что поля ввода должны прокручиваться.
+</DL><P><a href="#forms"><img src="icons/up.gif" border=0></a>
+<HR>
+<A NAME="textarea"><H2>Команда TEXTAREA</H2></A>
+Команда TEXTAREA может быть использована для расположения многострокового поля ввода с
+необязательным содержимым по умолчанию в форме. Атрибуты команды TEXTAREA следующие:
+<ul>
+<table><col align=left span=3>
+<tr><td valign=top><b>NAME</b>= </td><td valign=top>символическое имя поля ввода.</td>
+</tr><tr><td valign=top><b>ROWS</b>= </td><td valign=top> число строк в поле ввода 
+(высота).</td>
+</tr><tr><td valign=top><b>COLS</b>= </td><td valign=top> число столбцов в поле ввода (ширина).
+</td></tr></table></ul>
+<P>
+TEXTAREA имеет полосы прокрутки, так что может быть введено любое количество текста.
+TEXTAREA требует закрывающей команды. TEXTAREA без содержания по
+умолчанию выглядит так:
+<table bgcolor=aqua><tr><td><Pre>&lt;TEXTAREA NAME="foo" ROWS=4 COLS=40&gt;&lt;/TEXTAREA&gt;</pre></table>
+<P>
+TEXTAREA с содержанием по умолчанию выглядит так:
+<P><table bgcolor=aqua><tr><td><Pre>&lt;TEXTAREA NAME="foo" ROWS=4 COLS=40&gt;
+Содержание поля ввода по умолчанию
+&lt;/TEXTAREA&gt;</pre></table>
+<P>
+Содержание по умолчанию должно быть строгим ASCII текстом. Символы перевода строки
+воспринимаются (так, что в примере выше до и после текста
+"Содержание поля ввода по умолчанию" будет пустая строка).<P><a href="#forms"><img src="icons/up.gif" border=0></a>
+<HR>
+<A NAME="isindex"><H2>Команда ISINDEX</H2></A>
+<P>
+Команда ISINDEX посылает на сервер только одно сообщение,
+указанное в поле ввода. Как правило используется для оформления
+заданий на поиск.
+<P>
+<b>Синтаксис команды ISINDEX</b>
+<p>
+&lt;<b>ISINDEX<br>
+ACTION</b>=<i>url</i><br>
+<b>PROMPT</b>=<i>prompt-text</i>&gt;<br>
+
+Атрибуты команды ISINDEX:
+<DL>
+<DT><STRONG>ACTION</STRONG>=<i>url</i>
+<DD><A HREF="url.html">URL</A> адрес сервера
+запросов, куда будет отослано содержание формы после подтверждения; Если
+это поле отсутствует, будет использован URL адрес текущего документа.
+<DT><STRONG>PROMPT</STRONG>=<i>prompt-text</i><dd>
+Приглашение к посылке данных для поиска на сервер.
+</dl>
+Если атрибут PROMPT= не используется, выводится следующее сообщение
+в a text box: "You can search this index. Type the keyword(s) you want to
+search for:"
+После нажатия пользователем ENTER, набранный текст добавляется к
+указанному адресу URL (по аналогии с методом GET для отправки FORM).
+<p>
+<b>Пример</b>
+<table bgcolor=aqua><tr><td><pre>&lt;ISINDEX ACTION="http://www.ict.nsk.su/cgi-bin/test-cgi.sh"
+PROMPT="Тест ISINDEX"&gt;</pre></td></tr></table>
+<isindex ACTION="http://www.ict.nsk.su/cgi-bin/test-cgi.sh" prompt="Тест ISINDEX">
+Запрос на поиск ISINDEX броузер может выделять двумя горизонтальными
+линиями (команда <tt>&lt;HR&gt;</tt>).
+</ol><P>
+<a href="#forms"><img src="icons/up.gif" border=0></a>

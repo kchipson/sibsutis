@@ -1,0 +1,15 @@
+.panel-elements-category-title-eaw-elementor-widgets-pro + .panel-elements-category-items .elementor-element {
+    position: relative;
+}
+.panel-elements-category-title-eaw-elementor-widgets-pro + .panel-elements-category-items .elementor-element:before {
+    content:"PRO";
+    position: absolute;
+    background: #b7084e;
+    color: #fff;
+    border-radius: 3px;
+    padding: 3px 5px;
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+    font-weight: 700;
+}

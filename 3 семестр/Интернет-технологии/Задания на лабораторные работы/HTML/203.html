@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<TITLE>Таблицы стилей CSS.Примеры. </TITLE>
+<link REL="stylesheet" TYPE="text/css" HREF="mstyle.css">
+</head>
+<body>
+
+<h2><A NAME="list">Единицы измерения</A></h2> 
+<ul>
+<li><a href=#1 onFocus="this.blur()">Относительные размеры</a>
+<li><a href=#2 onFocus="this.blur()">Абсолютные размеры</a>
+<li><a href=#3 onFocus="this.blur()">Единицы определения цвета</a>
+</ul>
+<h3>Относительные размеры</h3>
+<p id=1>Относительные размеры элементов документа <b>HTML</b> задаются при помощи относительных единиц измерения, которые указывают значение длины относительно других элементов документа. Таблицы стилей, которые используют такой тип единиц, 
+намного легче перенастраиваются с одного типа устройств на другой.<br> 
+К относительным единицам измерения относятся: 
+<ul>
+<li><b>em</b> - размер, относительно размера буквы "<b>m</b>" 
+<li><b>ex</b> - размер, относительно вертикального размера букв, соответствующего шрифта 
+<li><b>px</b> - размер, использующий пиксели, относительно устройства вывода
+<li><b>%</b> - размер, использующий процентные значения, относительно основного размера 
+</ul>
+Пример:</p>
+<table><tr><td bgcolor=#2980b9>
+<div class=cod>
+<strong>H1</strong> { margin-left: <strong>1.5</strong>em }<br>      
+<strong>H3</strong> { margin-left: <strong>2</strong>ex } <br>       
+<strong>span</strong>  { font-size: <strong>16</strong>px }<br> 
+<strong>P</strong>  { font-size: <strong>150%</strong>px } 
+</div></table>   
+<p>
+<b>Дочерние</b> элементы не наследуют относительные значения, указанные для их <b>родительских</b> элементов.
+</p>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+<h3>Абсолютные размеры</h3>
+<p id=2>Абсолютные единицы измерения полезны только в том случае, когда известны физические параметры устройства вывода. К ним относятся: 
+<ul>
+<li><b>in</b> - размер, в дюймах, <b>1</b> дюйм равен <b>2.54</b> сантиметрам.
+<li><b>cm</b> - размер, в сантиметрах
+<li><b>mm</b> - размер, в миллиметрах 
+<li><b>pt</b> - размер, в точках, <b>1</b> точка равна <b>1/72</b> дюйма.
+<li><b>pc</b> - размер, в пиках,  <b>1</b> пика равна <b>12</b> точкам.
+</ul>
+Пример:</p>
+<table><tr><td bgcolor=#2980b9>
+<div class=cod>
+<strong>H1</strong> { margin: <strong>1.5</strong>in } <br>    
+<strong>H2</strong> { line-height: <strong>5</strong>cm } <br> 
+<strong>H3</strong> { word-spacing: <strong>3</strong>mm }<br> 
+<strong>H4</strong> { font-size: <strong>16</strong>pt } <br>  
+<strong>H4</strong> { font-size: <strong>2</strong>pc } 
+</div></table>
+<p>
+Если указанное значение длины не поддерживается, то браузеры автоматически замещают его поддерживаемым значением. Кроме рассмотренных абсолютных единиц измерения, существуют еще несколько, предназначенных
+ для голосовых и прочих браузеров. К ним относятся: <b>deg</b>, <b>rad</b>, <b>grad</b>, <b>ms</b>, <b>s</b>, <b>Hz</b>, <b>kHz</b>.
+</p>
+<p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+<h3>Единицы определения цвета</h3>
+<p id=3>
+<ul>
+<li><b>ключевое слово</b> - цвет задается, используя пользовательские <a href="212.html"  onFocus="this.blur()">настройки</a> 
+<li><b>литерал</b> - цвет задается, используя стандартные <a href="107.html#2"  onFocus="this.blur()">названия</a>
+<li><b>шестнадцатеричное</b> - цвет задается, используя значения <a href="107.html#1"  onFocus="this.blur()">RGB</a>
+<li><b>процентное</b> - цвет задается, используя значения 
+<li><b>десятичное</b> - цвет задается, используя значения 
+</ul>
+Пример:</p>
+<table><tr><td bgcolor=#2980b9>
+<div class=cod>
+<strong>H1</strong> { color: <strong>background</strong> } <br>    
+<strong>H2</strong> { color: <strong>red</strong> } <br> 
+<strong>H3</strong> { color: <strong>#ff0033</strong>mm }<br> 
+<strong>H4</strong> { color: rgb(<strong>100%</strong>,<strong> 0%</strong>,<strong> 0%</strong>)} <br>  
+<strong>H4</strong> { color: rgb(<strong>255</strong>,<strong> 0</strong>,<strong> 125</strong>)} 
+</div></table>
+ <p>
+<a href="#list"><img src="icons/up.gif" border=0></a>
+</BODY>
+</HTML>

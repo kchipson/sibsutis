@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HTML><HEAD><TITLE>Лабораторная работа N 2.4</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<META NAME="Description" CONTENT="Lecture about Internet">
+<META NAME="Keywords" CONTENT="Internet, Lecture">
+<META NAME="LANGUAGE" CONTENT="ru">
+<META NAME="AUTHOR" CONTENT="E.V.Rychkova">
+</HEAD>
+<BODY LEFTMARGIN=10 TOPMARGIN=0  BGCOLOR=#FFEFCF 
+TEXT=#000000 LINK=#006600 VLINK=#330099 ALINK=#ff0000>
+<hr noshade size=3>
+<h3 align=center>Сибирский государственный университет 
+<br>телекоммуникаций и информатики
+</h3>
+<P align=center><i> Лабораторные задания по курсу
+&nbsp;"Интернет-технологии"</i>
+<hr noshade size=3>
+
+<H2 align=center>Лабораторная работа N&nbsp;2.4<br>Графические часы </H2>
+
+<p align=justify>
+Первый пример - это часы, отображающие время загрузки страницы 
+(т.е. момент вызова скрипта). Используются методы объекта <tt>Date 
+(getHours, getMinutes)</tt> и графические файлы, отображающие полученное 
+время (имена этих файлов соответствуют цифрам <nobr>0-9</nobr>).
+
+<p align=justify>Во втором примере, отображающем текущую дату, 
+также используются методы объекта <tt>Date (getDate, getMonth, getYear)</tt> 
+и графические файлы, отображающие полученную дату.
+
+<p align=center><table border=0><tr valign=top><td>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write(setClock())
+
+function setClock() { // Первый пример
+	var text = ""  // создание пустой строки
+	
+	var openImage = "<IMG SRC=\"" + getPath(location.href) + "lab2.5_files\\dg"
+	var closeImage = ".gif\" HEIGHT=21 WIDTH=16>"
+	// openImage, closeImage - вспомогательные переменные 
+	// для формирования пути к графическим файлам с цифрами
+	
+	var now = new Date()  // Создает объект, хранящий дату и время
+	
+	var hour = now.getHours() // Возвращает час (от 0 до 23)
+	
+	var minute = now.getMinutes() // Возвращает минуту
+	
+	now = null // "никакое" значение
+	
+	var ampm = "" 
+	if (hour >= 12) {
+		hour -= 12
+		ampm = "pm"
+	} else
+		ampm = "am"
+	hour = (hour == 0) ? 12 : hour
+	// здесь конструкция вида 
+	//  переменная = (условие) ? если выполняется : если не выполняется 
+	
+	if (minute < 10)
+		minute = "0" + minute // для формирования числа вида "05" минут
+	minute += ""
+	hour += ""
+	
+	for (var i = 0; i < hour.length; ++i) { 
+	                     // .length - длина строки в переменной hour
+	
+		text += openImage + hour.charAt(i) + closeImage
+                                      // charAt(i) возвращает i-ый символ из строки,
+                                      // а фактически цифру часа
+                // в целом вся конструкция формирует html-команду
+                // вида <IMG SRC="dg + ЦИФРА_ЧАСА +.gif" HEIGHT=21 WIDTH=16>
+                // например, <IMG SRC="dg1.gif" HEIGHT=21 WIDTH=16>
+	}
+	text += openImage + "c.gif\" HEIGHT=21 WIDTH=9>" 
+	// здесь формируется команда <IMG SRC="dgс.gif" HEIGHT=21 WIDTH=9>,
+	// где dgс.gif - знак двоеточия между цифрами
+	
+	for (var i = 0; i < minute.length; ++i) {
+		text += openImage + minute.charAt(i) + closeImage
+	}
+	text += openImage + ampm + closeImage
+	// здесь формируется команда <IMG SRC="dgam(или pm).gif" HEIGHT=21 WIDTH=16>
+	
+	return text // та переменная, которую возвращает функция setClock
+	}
+	
+	function getPath(url) {
+	lastSlash = url.lastIndexOf("/")
+	// lastIndexOf возвращает позицию указанного символа в строке,
+	// начиная поиск с конца
+	
+	return url.substring(0, lastSlash + 1)
+	// substring(1,2) возвращает часть строки от 1-го по 2-й индекс
+	// нумерация элементов в строке (и в массиве) ВСЕГДА начинается с 0!!!
+	}
+// -->
+</SCRIPT>
+</td>
+
+<td>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write(setDate())
+
+function setDate() {  // Второй пример
+                      // все то же самое, но только для дня, месяца и года
+	var text = "" 
+	var openImage = "<IMG SRC=\"" + getPath(location.href) + "lab2.5_files\\dg"
+	var closeImage = ".gif\" HEIGHT=21 WIDTH=16>"
+	var now = new Date()
+	var date = now.getDate()
+	var month = now.getMonth()
+	var year = now.getYear()
+	now = null
+
+	month++  // 0 - 11 => 1 - 12
+                 // нумерация месяцев тоже ВСЕГДА начинается с 0!!!
+                 // поэтому ее приходится "подправлять"
+
+	date += ""
+	month += ""
+	year += ""
+	for (var i = 0; i < date.length; ++i) {
+		text += openImage + date.charAt(i) + closeImage
+	}
+	text += openImage + "p.gif\" HEIGHT=21 WIDTH=9>" 
+	for (var i = 0; i < month.length; ++i) {
+		text += openImage + month.charAt(i) + closeImage
+	}
+	text += openImage + "p.gif\" HEIGHT=21 WIDTH=9>" 
+	// здесь формируется команда <IMG SRC="dgp.gif" HEIGHT=21 WIDTH=9>,
+	// где dgp.gif - знак точки между днем, месяцем и годом
+	
+	for (var i = 0; i < year.length; ++i) {
+		text += openImage + year.charAt(i) + closeImage
+	}
+	return text}
+	
+	function getPath(url) {
+	lastSlash = url.lastIndexOf("/")
+	return url.substring(0, lastSlash + 1)
+	}
+
+         function clock_status() {
+         window.setTimeout("clock_status()",100);
+	 today=new Date();
+	 self.status=today.toString();
+	 // self.status - вывод информации в статусной строке броузера
+	 // toString() - преобразует объект (в данном случае today)
+	 // в строку вида "Mon Sep 2 10:10:10 ..."
+	 }
+// -->
+</SCRIPT>
+</td></tr></table>
+
+<p><b>Задание - сделать идущие часы</b>&nbsp;- 
+<a href="javascript:clock_status()">см. пример в стаус строке</a>.
+
+<h4>Картинки:</h4>
+
+<p><table border=1 cellpadding=5><TR>
+<td><IMG SRC="lab2.5_files\dg0.gif"></td>
+<td><IMG SRC="lab2.5_files\dg1.gif"></td>
+<td><IMG SRC="lab2.5_files\dg2.gif"></td>
+<td><IMG SRC="lab2.5_files\dg3.gif"></td>
+<td><IMG SRC="lab2.5_files\dg4.gif"></td>
+<td><IMG SRC="lab2.5_files\dg5.gif"></td>
+<td><IMG SRC="lab2.5_files\dg6.gif"></td>
+<td><IMG SRC="lab2.5_files\dg7.gif"></td>
+<td><IMG SRC="lab2.5_files\dg8.gif"></td>
+<td><IMG SRC="lab2.5_files\dg9.gif"></td>
+</tr><tr>
+<th>dg0.gif</th>
+<th>dg1.gif</th>
+<th>dg2.gif</th>
+<th>dg3.gif</th>
+<th>dg4.gif</th>
+<th>dg5.gif</th>
+<th>dg6.gif</th>
+<th>dg7.gif</th>
+<th>dg8.gif</th>
+<th>dg9.gif</th>
+</tr>
+</table>
+<br><table border=1 cellpadding=5><TR>
+<td><IMG SRC="lab2.5_files\dgam.gif"></td>
+<td><IMG SRC="lab2.5_files\dgpm.gif"></td>
+<td><IMG SRC="lab2.5_files\dgc.gif"></td>
+<td><IMG SRC="lab2.5_files\dgp.gif"></td>
+</tr><tr>
+<th>dgam.gif</th>
+<th>dgpm.gif</th>
+<th>dgc.gif</th>
+<th>dgp.gif</th>
+</tr>
+</table>
+
+
+</BODY></HTML>

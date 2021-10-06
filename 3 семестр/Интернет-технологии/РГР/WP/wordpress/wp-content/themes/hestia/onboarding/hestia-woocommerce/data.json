@@ -1,0 +1,193 @@
+{
+  "content_file": "https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/ti-demo-data/export.xml",
+  "theme_mods": {
+    "show_on_front": "page",
+    "custom_css_post_id": 888,
+    "hestia_big_title_background": "https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/10/liliac.jpg",
+    "hestia_big_title_title": "Looking for flowers?",
+    "hestia_big_title_text": "We have plenty of them",
+    "hestia_big_title_button_text": "Shop Now",
+    "hestia_big_title_button_link": "#",
+    "accent_color": "#ff9800",
+    "hestia_slider_alignment": "right",
+    "hestia_general_layout": false,
+    "hestia_blog_hide": true,
+    "hestia_features_hide": true,
+    "hestia_team_hide": true,
+    "hestia_page_editor": "<h2>Feel the nature while you are working</h2>\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tOurdoor Plants\t\t\t\t\t\n\t\t\t\t\t<p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>\n\t\t\t\t\t\t\t\t\t\t\t\tGrowing dry plants\t\t\t\t\t\n\t\t\t\t\t<p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. </p>\n\t\t\t<h2>Tropical garden</h2>\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tLufixequin\t\t\t\t\t\n\t\t\t\t\t<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>\n\t\t\t\t\t\t\t\t\t\t\t\tAtiaspaisy\t\t\t\t\t\n\t\t\t\t\t<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>\n\t\t\t<h2>Hotchpotches</h2>\t\t\n\t\t\n\t\t\t#gallery-1 {\n\t\t\t\tmargin: auto;\n\t\t\t}\n\t\t\t#gallery-1 .gallery-item {\n\t\t\t\tfloat: left;\n\t\t\t\tmargin-top: 10px;\n\t\t\t\ttext-align: center;\n\t\t\t\twidth: 33%;\n\t\t\t}\n\t\t\t#gallery-1 img {\n\t\t\t\tborder: 2px solid #cfcfcf;\n\t\t\t}\n\t\t\t#gallery-1 .gallery-caption {\n\t\t\t\tmargin-left: 0;\n\t\t\t}\n\t\t\t/* see gallery_shortcode() in wp-includes/media.php */\n\t\t\n\t\t<dl class='gallery-item'>\n\t\t\t<dt class='gallery-icon landscape'>\n\t\t\t\t<a href='https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/botanic-botanical-cacti-1048036.png'><img width=\"150\" height=\"150\" src=\"https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/botanic-botanical-cacti-1048036-150x150.png\" alt=\"\" /></a>\n\t\t\t</dt></dl><dl class='gallery-item'>\n\t\t\t<dt class='gallery-icon landscape'>\n\t\t\t\t<a href='https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/window-593364.jpg'><img width=\"150\" height=\"150\" src=\"https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/window-593364-150x150.jpg\" alt=\"\" /></a>\n\t\t\t</dt></dl><dl class='gallery-item'>\n\t\t\t<dt class='gallery-icon landscape'>\n\t\t\t\t<a href='https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/succulent-2931486.jpg'><img width=\"150\" height=\"150\" src=\"https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/succulent-2931486-150x150.jpg\" alt=\"\" /></a>\n\t\t\t</dt></dl><br style=\"clear: both\" /><dl class='gallery-item'>\n\t\t\t<dt class='gallery-icon landscape'>\n\t\t\t\t<a href='https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/light-rocks-pot-white.jpg'><img width=\"150\" height=\"150\" src=\"https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/light-rocks-pot-white-150x150.jpg\" alt=\"\" /></a>\n\t\t\t</dt></dl><dl class='gallery-item'>\n\t\t\t<dt class='gallery-icon portrait'>\n\t\t\t\t<a href='https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/cactus-1430357.jpg'><img width=\"150\" height=\"150\" src=\"https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/cactus-1430357-150x150.jpg\" alt=\"\" /></a>\n\t\t\t</dt></dl><dl class='gallery-item'>\n\t\t\t<dt class='gallery-icon landscape'>\n\t\t\t\t<a href='https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/thing-2569683.jpg'><img width=\"150\" height=\"150\" src=\"https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/11/thing-2569683-150x150.jpg\" alt=\"\" /></a>\n\t\t\t</dt></dl><br style=\"clear: both\" />\n\t\t\t\t\t\tPlant\n\t\t\t\tPlant\n\t\t\t\t\t\t\t\t\t20%\n\t\t\t\t\t\tGrow\n\t\t\t\tGrow\n\t\t\t\t\t\t\t\t\t50%\n\t\t\t\t\t\tMove\n\t\t\t\tMove\n\t\t\t\t\t\t\t\t\t100%",
+    "hestia_feature_thumbnail": "https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/10/plant-3077047.jpg",
+    "hestia_features_content": "[{\"icon_value\":\"fa-wechat\",\"color\":\"#e91e63\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\",\"link\":\"#\",\"text2\":\"undefined\",\"title\":\"Responsive\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5b4dc5b4baaef\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-check\",\"color\":\"#00bcd4\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\",\"link\":\"#\",\"text2\":\"undefined\",\"title\":\"Quality\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5b4dc5b496656\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-support\",\"color\":\"#4caf50\",\"text\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\",\"link\":\"#\",\"text2\":\"undefined\",\"title\":\"Support\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5b4dc5b404da5\",\"shortcode\":\"undefined\"}]",
+    "hestia_testimonials_title": "Our experts",
+    "hestia_testimonials_subtitle": "Ask us about plant care",
+    "hestia_testimonials_content": "[{\"text\":\"\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/uploads\\/sites\\/154\\/2018\\/10\\/Doctor-1a.jpg\",\"title\":\"Kelley Clarke\",\"subtitle\":\"Business Owner\",\"social_repeater\":\"undefined\",\"id\":\"customizer_repeater_56d7ea7f40d56\",\"shortcode\":\"undefined\"},{\"text\":\"\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/uploads\\/sites\\/154\\/2018\\/10\\/Doctor-2a.jpg\",\"title\":\"Johnson Hoffman\",\"subtitle\":\"Plant manager\",\"social_repeater\":\"undefined\",\"id\":\"customizer_repeater_56d7ea7f40d66\",\"shortcode\":\"undefined\"},{\"text\":\"\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/uploads\\/sites\\/154\\/2018\\/10\\/Doctor-3a.jpg\",\"title\":\"Natalya Mcgrath\",\"subtitle\":\"seller\",\"social_repeater\":\"undefined\",\"id\":\"customizer_repeater_56d7ea7f40d76\",\"shortcode\":\"undefined\"}]",
+    "hestia_team_content": "[{\"icon_value\":\"fa-facebook\",\"text\":\"Locavore pinterest chambray affogato art party, forage coloring book typewriter. Bitters cold selfies, retro celiac sartorial mustache.\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/themes\\/hestia\\/assets\\/img\\/1.jpg\",\"title\":\"Desmond Purpleson\",\"subtitle\":\"CEO\",\"social_repeater\":\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb908674e06&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9148530ft&quot;,&quot;link&quot;:&quot;plus.google.com&quot;,&quot;icon&quot;:&quot;fa-google-plus&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9148530fc&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9150e1e89&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\",\"id\":\"customizer_repeater_56d7ea7f40c56\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-facebook\",\"text\":\"Craft beer salvia celiac mlkshk. Pinterest celiac tumblr, portland salvia skateboard cliche thundercats. Tattooed chia austin hell.\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/themes\\/hestia\\/assets\\/img\\/2.jpg\",\"title\":\"Parsley Pepperspray\",\"subtitle\":\"Marketing Specialist\",\"social_repeater\":\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9155a1072&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9160ab683&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9160ab484&quot;,&quot;link&quot;:&quot;pinterest.com&quot;,&quot;icon&quot;:&quot;fa-pinterest&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb916ddffc9&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\",\"id\":\"customizer_repeater_56d7ea7f40c66\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-facebook\",\"text\":\"Pok pok direct trade godard street art, poutine fam typewriter food truck narwhal kombucha wolf cardigan butcher whatever pickled you.\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/themes\\/hestia\\/assets\\/img\\/3.jpg\",\"title\":\"Desmond Eagle\",\"subtitle\":\"Graphic Designer\",\"social_repeater\":\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb917e4c69e&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb91830825c&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb918d65f2e&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb918d65f2x&quot;,&quot;link&quot;:&quot;dribbble.com&quot;,&quot;icon&quot;:&quot;fa-dribbble&quot;}]\",\"id\":\"customizer_repeater_56d7ea7f40c76\",\"shortcode\":\"undefined\"},{\"icon_value\":\"fa-github-square\",\"text\":\"Small batch vexillologist 90&#039;s blue bottle stumptown bespoke. Pok pok tilde fixie chartreuse, VHS gluten-free selfies wolf hot.\",\"link\":\"\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/themes\\/hestia\\/assets\\/img\\/4.jpg\",\"title\":\"Ruby Von Rails\",\"subtitle\":\"Lead Developer\",\"social_repeater\":\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb925cedcg5&quot;,&quot;link&quot;:&quot;github.com&quot;,&quot;icon&quot;:&quot;fa-github-square&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb925cedcb2&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb92615f030&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9266c223a&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\",\"id\":\"customizer_repeater_56d7ea7f40c86\",\"shortcode\":\"undefined\"}]",
+    "hestia_clients_bar_content": "[{\"text\":\"undefined\",\"link\":\"#\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/plugins\\/themeisle-companion\\/obfx_modules\\/companion-legacy\\/inc\\/hestia\\/inc\\/img\\/clients1.png\",\"title\":\"undefined\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5b4dc5b4e5603\",\"shortcode\":\"undefined\"},{\"text\":\"undefined\",\"link\":\"#\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/plugins\\/themeisle-companion\\/obfx_modules\\/companion-legacy\\/inc\\/hestia\\/inc\\/img\\/clients2.png\",\"title\":\"undefined\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5b4dc5b4b1a8a\",\"shortcode\":\"undefined\"},{\"text\":\"undefined\",\"link\":\"#\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/plugins\\/themeisle-companion\\/obfx_modules\\/companion-legacy\\/inc\\/hestia\\/inc\\/img\\/clients3.png\",\"title\":\"undefined\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5b4dc5b4491d7\",\"shortcode\":\"undefined\"},{\"text\":\"undefined\",\"link\":\"#\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/plugins\\/themeisle-companion\\/obfx_modules\\/companion-legacy\\/inc\\/hestia\\/inc\\/img\\/clients4.png\",\"title\":\"undefined\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5b4dc5b405cde\",\"shortcode\":\"undefined\"},{\"text\":\"undefined\",\"link\":\"#\",\"text2\":\"undefined\",\"image_url\":\"https:\\/\\/demo.themeisle.com\\/hestia-woocommerce\\/wp-content\\/plugins\\/themeisle-companion\\/obfx_modules\\/companion-legacy\\/inc\\/hestia\\/inc\\/img\\/clients5.png\",\"title\":\"undefined\",\"subtitle\":\"undefined\",\"social_repeater\":\"undefined\",\"id\":\"social-repeater-5b4dc5b45048c\",\"shortcode\":\"undefined\"}]",
+    "hestia_contact_background": "https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2019/08/cropped-landscape-3779922_1920_3.jpg",
+    "hestia_contact_content_new": "<div class=\"hestia-info info info-horizontal\">\n<div class=\"icon icon-primary\"></div>\n<div class=\"description\">\n<h4 class=\"info-title\">Find us at the garden</h4>\n<span>Șoseaua Cotroceni</span><span>, nr.</span><span>32</span><span> Bucharest, Romania</span>\n\n</div>\n</div>\n<div class=\"hestia-info info info-horizontal\">\n<div class=\"icon icon-primary\"></div>\n<div class=\"description\">\n<h4 class=\"info-title\">Give us a ring</h4>\nMichael Jordan\n+40 721 555 555\nMon - Fri, 8:00-22:00\n\n</div>\n</div>",
+    "hestia_contact_title": "Visit our botanical garden",
+    "hestia_contact_subtitle": "",
+    "hestia_page_sidebar_layout": "sidebar-left",
+    "hestia_header_gradient_color": "#146d06",
+    "advanced_css_global_css": "",
+    "hestia_top_bar_hide": false,
+    "hestia_blog_sidebar_layout": "full-width",
+    "hestia_featured_posts_category": [
+      "17"
+    ],
+    "hestia_contact_form_shortcode": "[wpforms id='918']",
+    "zerif_frontpage_was_imported": "not-zerif",
+    "hestia_feature_thumbnail_buffer": "https://demo.themeisle.com/hestia-woocommerce/wp-content/uploads/sites/154/2018/10/plant-3077047.jpg",
+    "hestia_contact_hide": false,
+    "hestia_shop_subtitle": "",
+    "ti_about_recommended_plugins": {
+      "themeisle-companion": "visible"
+    },
+    "__ti_import_menus_location": {
+      "primary": "primary-menu",
+      "footer": "primary-menu",
+      "top-bar-menu": "very-top-bar"
+    }
+  },
+  "wp_options": {
+    "obfx_data": {
+      "core_settings": [],
+      "module_status": {
+        "social-sharing": {
+          "showed_notices": []
+        },
+        "gutenberg-blocks": {
+          "showed_notices": [],
+          "active": false
+        },
+        "uptime-monitor": {
+          "showed_notices": []
+        },
+        "google-analytics": {
+          "showed_notices": []
+        },
+        "companion-legacy": {
+          "showed_notices": [],
+          "active": true
+        },
+        "elementor-widgets": {
+          "showed_notices": [],
+          "active": false
+        },
+        "template-directory": {
+          "showed_notices": [],
+          "active": false
+        },
+        "menu-icons": {
+          "showed_notices": [],
+          "active": false
+        },
+        "mystock-import": {
+          "showed_notices": [],
+          "active": false
+        },
+        "policy-notice": {
+          "showed_notices": []
+        },
+        "safe-updates": {
+          "showed_notices": []
+        }
+      },
+      "module_settings": {
+        "safe-updates": {
+          "auto_update_checks": "0"
+        }
+      }
+    },
+    "elementor_disable_color_schemes": "yes",
+    "elementor_disable_typography_schemes": "yes",
+    "elementor_load_fa4_shim": "yes"
+  },
+  "widgets": {
+    "sidebar-1": {
+      "search-2": {
+        "title": ""
+      },
+      "recent-posts-2": {
+        "title": "",
+        "number": 5
+      },
+      "recent-comments-2": {
+        "title": "",
+        "number": 5
+      },
+      "archives-2": {
+        "title": "",
+        "count": 0,
+        "dropdown": 0
+      },
+      "categories-2": {
+        "title": "",
+        "count": 0,
+        "hierarchical": 0,
+        "dropdown": 0
+      },
+      "meta-2": {
+        "title": ""
+      }
+    },
+    "sidebar-woocommerce": {
+      "woocommerce_product_search-3": {
+        "title": ""
+      },
+      "woocommerce_widget_cart-3": [],
+      "woocommerce_price_filter-3": [],
+      "woocommerce_product_categories-3": {
+        "title": "Product categories",
+        "orderby": "name",
+        "dropdown": 0,
+        "count": 1,
+        "hierarchical": 1,
+        "show_children_only": 0,
+        "hide_empty": 1,
+        "max_depth": ""
+      },
+      "woocommerce_recently_viewed_products-3": []
+    },
+    "sidebar-top-bar": {
+      "woocommerce_widget_cart-5": []
+    },
+    "sidebar-big-title": {
+      "media_gallery-3": {
+        "title": "",
+        "ids": [
+          1040,
+          1041,
+          1042,
+          1043,
+          1044,
+          1045
+        ],
+        "columns": 3,
+        "size": "thumbnail",
+        "link_type": "file",
+        "orderby_random": false
+      }
+    }
+  },
+  "recommended_plugins": {
+    "woocommerce": "WooCommerce"
+  },
+  "mandatory_plugins": {
+    "themeisle-companion": "Orbit Fox by ThemeIsle",
+    "wpforms-lite": "Contact Form by WPForms &#8211; Drag &amp; Drop Form Builder for WordPress",
+    "elementor": "Elementor Page Builder"
+  },
+  "default_off_recommended_plugins": [
+    "woocommerce"
+  ],
+  "front_page": {
+    "front_page": "hestia-front",
+    "blog_page": "blog"
+  },
+  "shop_pages": {
+    "woocommerce_shop_page_id": "shop",
+    "woocommerce_cart_page_id": "cart",
+    "woocommerce_checkout_page_id": "checkout",
+    "woocommerce_myaccount_page_id": "my-account"
+  }
+}

@@ -1,0 +1,30 @@
+BODY 
+{
+	BACKGROUND-COLOR: #FFFFFF; 
+	CURSOR: default; 
+	FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif;
+	FONT-SIZE: 11pt;
+	COLOR: #000000; 
+	FONT-WEIGHT: normal;
+	MARGIN-TOP: 10px;
+	MARGIN-LEFT: 10px 
+}
+A:link
+{
+	COLOR: #336699;
+	FONT-SIZE: 11pt;
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: underline
+}
+A:visited
+{
+	COLOR: #2980b9;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: underline
+}
+A:hover
+{
+	COLOR: #ff6600;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: underline
+}

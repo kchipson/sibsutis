@@ -1,0 +1,351 @@
+# Translation of Themes - Popularis in Russian
+# This file is distributed under the same license as the Themes - Popularis package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-12-12 14:25:26+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Themes - Popularis\n"
+
+#. Description of the theme
+msgid "Popularis is a fast, clean and modern-looking responsive multipurpose theme for WordPress. Theme works perfect with any of favorite page builders like Elementor, Beaver Builder, SiteOrigin, Thrive Architect, Divi, Visual Composer, etc. Popularis is WooCommerce ready, lightweight, easy to use, responsive and SEO friendly. Demo: http://popularis.themes4wp.com/"
+msgstr "Popularis — быстрая, чистая и современная адаптивная WordPress тема. Тема поддерживает популярные конструкторы страниц, такие как Elementor, Beaver Builder, SiteOrigin, Thrive Architect, Divi, Visual Composer и т.д. Тема адаптивна, супер быстра, дружественна к SEO, готова для WPML и RTL, поддерживает WooCommerce. Демо: http://popularis.themes4wp.com/"
+
+#. Theme Name of the theme
+msgid "Popularis"
+msgstr "Popularis"
+
+#. translators: %s plugin name string
+#. translators: %s: Plugin name string
+#: functions.php:71 inc/admin/customizer.php:31
+msgid "To take full advantage of all the features this theme has to offer, please install and activate the %s plugin."
+msgstr "Если вы хотите воспользоваться полным спектром функций этой темы, пожалуйста, установите и активируйте плагин %s."
+
+#. translators: %s plugin name string
+#: functions.php:77
+msgid "The most advanced frontend drag & drop page builder."
+msgstr "Самый продвинутый фронтенд-конструктор страниц с функцией перетаскивания."
+
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:110
+#: inc/admin/customizer/customizer-notice/class-customizer-notice.php:144
+msgid "Activating"
+msgstr "Активация"
+
+#: inc/admin/customizer.php:36
+msgid "Install now"
+msgstr "Установить сейчас"
+
+#: functions.php:283
+msgid "Skip to the content"
+msgstr "Перейти к содержимому"
+
+#: inc/admin/customizer/info.php:153
+msgid "PRO version"
+msgstr "Версия PRO"
+
+#. translators: %s: "demos here" string
+#: inc/admin/customizer/info.php:25
+msgid "demos"
+msgstr "демо"
+
+#. translators: %1$s "documentation" string and link
+#. translators: %s: "documentation" string
+#. translators: %s: "Click here" string
+#: inc/admin/dashboard.php:466 inc/admin/customizer/info.php:29
+#: inc/admin/customizer/demo.php:26
+msgid "documentation"
+msgstr "документация"
+
+#: inc/admin/dashboard.php:448
+msgid "Hooray! There are no required actions for you right now."
+msgstr "Ура! Прямо сейчас больше ничего делать не надо."
+
+#: inc/admin/dashboard.php:439
+msgid "Recommended plugins"
+msgstr "Рекомендованные плагины"
+
+#: inc/admin/dashboard.php:420
+msgid "Theme Screenshot"
+msgstr "Скриншот темы"
+
+#: inc/admin/dashboard.php:414
+msgid "Contact us"
+msgstr "Обратная связь"
+
+#: inc/admin/dashboard.php:412
+msgid "Having trouble? Need support?"
+msgstr "Испытываете трудности? Нужна поддержка?"
+
+#: inc/admin/dashboard.php:391
+msgid "Start customizing"
+msgstr "Начать настройку"
+
+#: inc/admin/dashboard.php:302
+msgid "Recommended Actions"
+msgstr "Рекомендуемые действия"
+
+#: inc/admin/dashboard.php:234
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:59
+#: inc/admin/customizer/plugin-install/class-plugin-install-helper.php:75
+#: inc/admin/customizer.php:37
+msgid "Activate"
+msgstr "Активировать"
+
+#: inc/admin/dashboard.php:215
+msgid "Install Now"
+msgstr "Установить"
+
+#: inc/admin/dashboard.php:255
+msgid "Details"
+msgstr "Детали"
+
+#: inc/admin/dashboard.php:172 inc/admin/dashboard.php:176
+#: inc/admin/dashboard.php:457 inc/admin/customizer/demo.php:41
+#: inc/admin/customizer/demo.php:43
+msgid "Import demo data"
+msgstr "Импортировать демо-данные"
+
+#. translators: %s theme name
+#: inc/admin/dashboard.php:162
+msgid "Get started with %s"
+msgstr "Начать с %s"
+
+#: inc/admin/dashboard.php:123
+msgid "Popularis theme"
+msgstr "Тема Popularis"
+
+#. translators: %s: replaced with number (counter)
+#: inc/admin/dashboard.php:121
+msgid "Popularis theme %s"
+msgstr "Тема Popularis %s"
+
+#: inc/admin/dashboard.php:383
+msgid "Theme Customizer"
+msgstr "Настройщик темы"
+
+#. translators: %s plugin name string
+#: functions.php:83
+msgid "To enable shop features, please install and activate the %s plugin."
+msgstr "Чтобы воспользоваться функциями магазина, пожалуйста, установите и активируйте плагин %s."
+
+#: inc/admin/dashboard.php:321 inc/admin/dashboard.php:323
+#: inc/admin/customizer/demo.php:14
+msgid "One Click Demo Import"
+msgstr "Импортировать демо в один клик"
+
+#. translators: %1$s "documentation" string and link
+#. translators: %s: "Click here" string
+#: inc/admin/dashboard.php:466 inc/admin/customizer/demo.php:26
+msgid "You can import the demo content with just one click. For step-by-step video tutorial, see %1$s"
+msgstr "Вы можете импортировать демо данные в один клик. Для пошагового видео руководства перейдите к %1$s"
+
+#: inc/admin/customizer/info.php:10
+msgid "Video Documentation & Demo"
+msgstr "Видео документация и демо"
+
+#. translators: %s: "demos here" string
+#: inc/admin/customizer/info.php:25
+msgid "You can use this theme to create a website like these %1$s"
+msgstr "Вы можете использовать эту тему, чтобы создавать сайты похожие на эти %1$s"
+
+#. translators: %s: "documentation" string
+#: inc/admin/customizer/info.php:29
+msgid "For step-by-step videos and text tutorials, see %1$s"
+msgstr "Для пошаговых видео и текстовых руководств посетите %1$s "
+
+#. translators: %1$s: replaced with number (counter)
+#: inc/admin/dashboard.php:118
+msgid "%1$s action required"
+msgid_plural "%1$s actions required"
+msgstr[0] "%1$s  действие требуется"
+msgstr[1] "%1$s  действия требуется"
+msgstr[2] "%1$s  действий требуется"
+
+#: inc/admin/dashboard.php:126
+msgid "Popularis dashboard"
+msgstr "Консоль Popularis"
+
+#. translators: %1$s: theme name, %2$s theme version
+#. translators: %1$s theme name, %2$s theme version
+#. translators: %s: Theme name
+#: inc/admin/dashboard.php:147 inc/admin/dashboard.php:366
+#: inc/admin/customizer.php:35
+msgid "Welcome to %1$s - Version %2$s"
+msgstr "Добро пожаловать в %1$s - Версия %2$s"
+
+#: inc/admin/dashboard.php:169
+msgid "Save time by importing our demo data: your website will be set up and ready to be customized in minutes."
+msgstr "Сэкономьте время с помощью импорта наших демо данных: ваш сайт будет готов к настройке в считанные минуты."
+
+#. translators: %s theme name
+#: inc/admin/dashboard.php:387
+msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to personalize your site."
+msgstr "%s поддерживает Настройщик тем для всех настроек. Нажмите \"Настроить\", чтобы персонализировать свой сайт."
+
+#: inc/admin/dashboard.php:395
+msgid "Theme documentation"
+msgstr "Документация темы"
+
+#. translators: %s theme name
+#: inc/admin/dashboard.php:406
+msgid "%s Documentation"
+msgstr "Документация %s"
+
+#. translators: %s theme name
+#: inc/admin/dashboard.php:399
+msgid "Need help in setting up and configuring %s? Please take a look at our documentation page."
+msgstr "Нуждаетесь в помощи для установки и настройки %s? Пожалуйста, взгляните на нашу страницу документации."
+
+#: inc/admin/customizer/info.php:155
+msgid "View PRO version"
+msgstr "Посмотреть версию Pro"
+
+#. translators: %1$s: theme name, %2$s link
+#: inc/admin/dashboard.php:154
+msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
+msgstr "Добро пожаловать! Спасибо, что выбрали %1$s! Чтобы в полной мере насладиться всем функционалом темы, пожалуйста, посетите нашу <a href=\"%2$s\">приветственную страницу</a>"
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr "Обсуждение закрыто."
+
+#: inc/extra.php:102
+msgid "Next Post"
+msgstr "Следующая запись"
+
+#: inc/extra.php:101
+msgid "Previous Post"
+msgstr "Предыдущая запись"
+
+#. translators: %1$s: Popularis theme name with populariswp.com URL
+#: inc/extra.php:84
+msgid "Theme: %1$s"
+msgstr "Тема: %1$s"
+
+#. translators: %s: WordPress string with wordpress.org URL
+#: inc/extra.php:79
+msgid "https://wordpress.org/"
+msgstr "https://ru.wordpress.org/"
+
+#: inc/extra.php:56
+msgid "Tags"
+msgstr "Метки"
+
+#: inc/wp_bootstrap_navwalker.php:328
+msgid "Add a menu"
+msgstr "Добавить меню"
+
+#: inc/woocommerce.php:45
+msgid "My Account"
+msgstr "Моя учётная запись"
+
+#. Template Name of the theme
+msgid "Page Builders"
+msgstr "Конструкторы страниц"
+
+#: single.php:38
+msgid "About The Author"
+msgstr "Об авторе"
+
+#: 404.php:11
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "По данному адресу ничего не найдено. Попробуйте воспользоваться поиском."
+
+#: 404.php:9
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ой! Страница не найдена."
+
+#: functions.php:22
+msgid "Main Menu"
+msgstr "Главное меню"
+
+#. translators: %s: post title
+#: comments.php:15
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Один отзыв для &ldquo;%s&rdquo;"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:18
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%2$s: %1$s комментарий"
+msgstr[1] "%2$s: %1$s комментария"
+msgstr[2] "%2$s: %1$s комментариев"
+
+#: content-none.php:3
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#. translators: %1$s: link to admin area
+#: content-none.php:10
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начните здесь</a>."
+
+#: content-none.php:16
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Жаль, но по данному запросу ничего не найдено. Пожалуйста, попробуйте снова, используя другие ключевые слова."
+
+#: content-none.php:21
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Кажется, мы не можем найти то, что вы ищете. Возможно, поиск может помочь."
+
+#: functions.php:113
+msgctxt "Open Sans Condensed font: on or off"
+msgid "on"
+msgstr "вкл"
+
+#: functions.php:233
+msgid "Sidebar"
+msgstr "Боковая колонка"
+
+#: functions.php:243
+msgid "Top Bar Section"
+msgstr "Раздел верхней панели"
+
+#. translators: %s: WordPress string with wordpress.org URL
+#: inc/extra.php:79
+msgid "Proudly powered by %s"
+msgstr "Сайт работает на %s"
+
+#: inc/extra.php:102
+msgid "Next"
+msgstr "Следующая"
+
+#: inc/extra.php:117
+msgid "By"
+msgstr "Автор:"
+
+#: inc/woocommerce.php:6
+msgid "View your shopping cart"
+msgstr "Просмотреть свою корзину"
+
+#. translators: %s: search result string
+#: search.php:8
+msgid "Search Results for: %s"
+msgstr "Результаты поиска: %s"
+
+#: functions.php:253
+msgid "Footer Section"
+msgstr "Раздел подвала"
+
+#: inc/extra.php:101
+msgid "Previous"
+msgstr "Предыдущая"
+
+#. Theme URI of the theme
+msgid "https://populariswp.com/popularis/"
+msgstr "https://populariswp.com/popularis/"
+
+#. Author URI of the theme
+msgid "https://themes4wp.com/"
+msgstr "https://themes4wp.com/"
+
+#. Author of the theme
+msgid "Themes4WP"
+msgstr "Themes4WP"
