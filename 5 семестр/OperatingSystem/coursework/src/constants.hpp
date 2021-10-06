@@ -1,0 +1,4 @@
+#define BUFFER_SIZE        500
+#define MAX_NICKNAME_SIZE  30
+#define MSG_SIZE           BUFFER_SIZE-MAX_NICKNAME_SIZE-4-1
+
