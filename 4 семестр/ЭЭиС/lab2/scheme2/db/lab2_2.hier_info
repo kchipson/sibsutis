@@ -1,0 +1,15 @@
+|lab2_2
+y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+X2 => inst8.IN0
+X2 => inst1.IN0
+X2 => inst10.IN0
+X2 => inst11.IN0
+X3 => inst8.IN1
+X3 => inst9.IN1
+X3 => inst10.IN1
+X3 => inst.IN0
+X1 => inst8.IN2
+X1 => inst9.IN2
+X1 => inst2.IN0
+
+

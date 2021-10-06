@@ -1,0 +1,13 @@
+|scheme1
+y1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x1 => inst.IN0
+x1 => inst4.IN0
+x1 => inst5.IN0
+x2 => inst3.IN1
+x2 => inst1.IN0
+x2 => inst5.IN1
+y2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

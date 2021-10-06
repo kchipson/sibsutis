@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{007E2A94-8150-4FA4-BD3A-98AF4CB1B9AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RGR</RootNamespace>
+    <AssemblyName>RGR</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\Downloads\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseDataSet.cs">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddFilm.Designer.cs">
+      <DependentUpon>FormAddFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDebtors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDebtors.Designer.cs">
+      <DependentUpon>FormDebtors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelFilm.Designer.cs">
+      <DependentUpon>FormDelFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelUser.Designer.cs">
+      <DependentUpon>FormDelUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFilmGive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFilmGive.Designer.cs">
+      <DependentUpon>FormFilmGive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFilmReceive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFilmReceive.Designer.cs">
+      <DependentUpon>FormFilmReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHistoryFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistoryFilm.Designer.cs">
+      <DependentUpon>FormHistoryFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHistoryUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistoryUser.Designer.cs">
+      <DependentUpon>FormHistoryUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMissingFilms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMissingFilms.Designer.cs">
+      <DependentUpon>FormMissingFilms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormView.Designer.cs">
+      <DependentUpon>FormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddFilm.resx">
+      <DependentUpon>FormAddFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDebtors.resx">
+      <DependentUpon>FormDebtors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelFilm.resx">
+      <DependentUpon>FormDelFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelUser.resx">
+      <DependentUpon>FormDelUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFilmGive.resx">
+      <DependentUpon>FormFilmGive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFilmReceive.resx">
+      <DependentUpon>FormFilmReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistoryFilm.resx">
+      <DependentUpon>FormHistoryFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistoryUser.resx">
+      <DependentUpon>FormHistoryUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMissingFilms.resx">
+      <DependentUpon>FormMissingFilms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormView.resx">
+      <DependentUpon>FormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

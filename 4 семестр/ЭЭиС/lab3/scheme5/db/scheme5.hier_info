@@ -1,0 +1,22 @@
+|scheme5
+Pout <= 74183o:inst.1CN1
+Pin => 74183o:inst.1CN0
+A => 74183o:inst.1A
+B => 74183o:inst.1B
+S <= 74183o:inst.1SUM
+
+
+|scheme5|74183o:inst
+1CN1 <= 8.DB_MAX_OUTPUT_PORT_TYPE
+1CN0 => 16.IN0
+1CN0 => 12.IN2
+1CN0 => 9.IN2
+1A => 4.IN0
+1A => 12.IN0
+1A => 11.IN0
+1B => 1.IN0
+1B => 11.IN1
+1B => 9.IN1
+1SUM <= 7.DB_MAX_OUTPUT_PORT_TYPE
+
+

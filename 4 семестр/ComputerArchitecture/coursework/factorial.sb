@@ -1,0 +1,10 @@
+1  REM Факториал числа
+2  INPUT A
+3  LET R = 1
+4  LET B = 1
+5  IF B > A GOTO 9
+6  LET R = R * B
+7  LET B = B + 1
+8  GOTO 5
+9  PRINT R
+10 END

@@ -1,0 +1,6 @@
+|scheme3
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Button => inst.CLK
+D => inst.DATAIN
+
+

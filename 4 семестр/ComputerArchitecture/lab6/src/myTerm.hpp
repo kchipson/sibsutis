@@ -1,0 +1,33 @@
+//
+// Created by kchipson on 18.05.2020.
+//
+
+#ifndef MYTERM_HPP
+#define MYTERM_HPP
+
+#include <iostream>
+
+#include <sys/ioctl.h>
+
+enum colors {
+    RED = 196,
+    PEACH = 203,
+    GREEN = 10,
+    SOFT_GREEN =192,
+    BLUE = 20,
+    BLACK = 16,
+    GRAY = 240,
+    WHITE = 15,
+    DEFAULT = 0};
+
+
+int mt_clrScreen () ;
+
+int mt_gotoXY(unsigned int col,unsigned int row) ;
+
+int mt_getScreenSize(unsigned int *rows, unsigned int* cols) ;
+int mt_setFGcolor(enum colors color) ;
+int mt_setBGcolor(enum colors color) ;
+int mt_setDefaultColorSettings() ;
+
+#endif //MYTERM_HPP

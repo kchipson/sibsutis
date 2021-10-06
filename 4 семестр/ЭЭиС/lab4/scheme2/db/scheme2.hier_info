@@ -1,0 +1,7 @@
+|scheme2
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst.IN1
+R => inst.IN0
+Button => inst.CLK
+
+

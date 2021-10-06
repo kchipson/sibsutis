@@ -1,0 +1,8 @@
+|scheme3
+y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+X1 => inst2.IN0
+X1 => inst.IN0
+X2 => inst2.IN1
+X3 => inst1.IN1
+
+

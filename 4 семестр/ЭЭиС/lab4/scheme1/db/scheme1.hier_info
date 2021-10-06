@@ -1,0 +1,6 @@
+|scheme1
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst2.IN0
+R => inst.IN1
+
+
