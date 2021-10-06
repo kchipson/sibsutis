@@ -1,0 +1,66 @@
+0 _ * l minus 
+0 * * r * 
+
+minus - * * shift_r_z 
+minus + * * delete_r 
+minus 1 0 l shift_l 
+minus 2 1 l shift_l 
+minus 3 2 l shift_l 
+minus 4 3 l shift_l 
+minus 5 4 l shift_l 
+minus 6 5 l shift_l 
+minus 7 6 l shift_l 
+minus 8 7 l shift_l 
+minus 9 8 l shift_l 
+minus 0 9 l * 
+
+shift_l + * l checkminus 
+shift_l _ * r 0 
+shift_l * * l * 
+
+shift_r_z + * l plus 
+shift_r_z * 0 r * 
+
+checkminus - * * minus_shift_r 
+checkminus _ * r plus_shift_r 
+checkminus * * l * 
+
+plus_shift_r + * l plus 
+plus_shift_r * * r * 
+
+minus_shift_r + * l minus 
+minus_shift_r * * r * 
+
+plus _ 1 r 0 
+plus 0 1 r 0 
+plus 1 2 r 0 
+plus 2 3 r 0 
+plus 3 4 r 0 
+plus 4 5 r 0 
+plus 5 6 r 0 
+plus 6 7 r 0 
+plus 7 8 r 0 
+plus 8 9 r 0 
+plus 9 0 l * 
+
+delete_r _ * * con 
+delete_r * _ r * 
+
+con _ * l con 
+con * * l prov 
+
+prov _ * r zero 
+prov - * * zero_m 
+prov * * l prov 
+
+zero 0 _ r zero 
+zero * * * halt 
+
+zero_m - _ r zero_m 
+zero_m 0 _ r zero_m 
+zero_m * * l zero_m 
+zero_m _ - r ostanova 
+
+ostanova - 0 * ostanova 
+ostanova _ * l ostanova 
+ostanova * * * halt

@@ -1,0 +1,45 @@
+0 _ | r lr
+0 * * l *
+
+lr _ | l find_one
+lr * * r *
+
+find_one | * r find_one_no
+find_one 1 _ l find_one_yes
+find_one * * l *
+
+find_one_yes | * r find_zero
+find_one_yes * * l *
+
+find_one_no * * * check_zero
+
+find_zero | * l find_zero_no
+find_zero 0 _ r find_zero_yes
+find_zero * * r *
+
+find_zero_yes | * l find_one
+find_zero_yes * * r *
+
+find_zero_no * * * its_one
+
+check_zero | * l its_two
+check_zero 0 * * its_zero
+check_zero * * r *
+
+its_one | _ r delete_one
+its_one * * l *
+
+delete_one | 1 * halt
+delete_one * _ r *
+
+its_zero | _ r delete_zero
+its_zero * * l *
+
+delete_zero | 0 * halt
+delete_zero * _ r *
+
+its_two | _ r delete_two
+its_two * * l *
+
+delete_two | 2 * halt
+delete_two * _ r *
