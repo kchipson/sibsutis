@@ -1,0 +1,79 @@
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname AdditionalOfficeRouter
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0
+ description Connect to main office
+ no ip address
+!
+interface Serial0/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+banner motd /
+###################################
+This is an additional office router
+###################################
+/
+!
+!
+!
+!
+!
+line con 0
+ password qwerty
+ login
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
