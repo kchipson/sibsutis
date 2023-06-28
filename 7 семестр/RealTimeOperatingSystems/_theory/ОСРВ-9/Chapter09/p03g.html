@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 9</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>9.3. Пространство имен</h3></td>
+<td valign="middle" align="right"><a href="p03f.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Монтирование файловых систем</font>
+
+
+<dl>
+<dt><big><tt><b>/dev/fd0</b></tt></big>
+<dd>"сырой" флоппи-диск (массив байт)
+<dt><big><tt><b>dinit /dev/fd0</b></tt></big>
+<dd> инициализация файловой системы QNX-4
+<dt><big><tt><b>mount -t qnx4 /dev/fd0 /fd</b></tt></big>
+<dd> монтирование файловой системы
+</dl>
+
+<p> точно также
+
+<dl>
+<dt><big><tt><b>bigfile</b></tt></big>
+<dd>некоторый файл
+<dt><big><tt><b>dinit bigfile</b></tt></big>
+<dd> создание файловой системы QNX-4 внутри файла
+<dt><big><tt><b>mount -t qnx4 bigfile /dd</b></tt></big>
+<dd> монтирование файловой системы
+</dl>
+
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 8</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>8.8. Задача</h3></td>
+<td valign="middle" align="right"><a href="p07.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p08.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p> Три нити T1, T2, T3 с номерами соответственно 1, 2, 3 работают на одном процессоре,
+начальный приоритет равен 10, алгоритм планирования FIFO. Определить последовательность
+выводимых символов.
+
+<table>
+<tr valign="top">
+<td><pre>
+void* T1 (void* foo)
+  {
+  sem_wait (&amp;sem);
+  putchar ('A');
+  setprio (0, 11);
+  pthread_barrier_wait (&amp;bar);
+  putchar ('I');
+  sem_wait (&amp;sem);
+  putchar ('I');
+  sem_post (&amp;sem);
+  pthread_join (2, 0);
+  putchar ('T');
+  }
+<td><pre>
+void* T2 (void* foo)
+  {
+  pthread_barrier_wait (&amp;bar);
+  putchar ('M');
+  sem_post (&amp;sem);
+  putchar ('R');
+  sched_yield ();
+  putchar ('U');
+  }
+<td><pre>
+void* T3 (void* foo)
+  {
+  putchar ('V');
+  sem_post (&amp;sem);
+  putchar ('L');
+  sched_yield ();
+  putchar ('D');
+  pthread_barrier_wait (&amp;bar);
+  sem_wait (&amp;sem);
+  putchar ('P');
+  setprio (0, 9);
+  putchar ('I');
+  sched_yield ();
+  putchar ('N');
+  }
+</table>
+
+<p> Перед запуском нитей выполнена сдедующая инициализация:
+
+<pre>
+  sem_init (&sem, 0, 0);
+  pthread_barrier_init (&bar, 0, 3);
+</pre>
+
+</body>
+</html>
+

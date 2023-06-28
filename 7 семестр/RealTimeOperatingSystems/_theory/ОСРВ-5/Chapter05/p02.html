@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 5</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>5.2. Сигналы со значением</h3></td>
+<td valign="middle" align="right"><a href="p01.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p02a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Дополнительная информация о сигнале</font>
+
+<table>
+<tr><td valign="top"><font color=Purple><b><big><tt>siginfo_t:&nbsp;&nbsp; 
+<td><pre><big>int si_signo;
+int si_code;
+union sigval
+  {
+  int sival_int;
+  void* sival_ptr;&nbsp;&nbsp;
+  } si_value;
+</pre>&nbsp;&nbsp;
+<td valign="top"><font color=Purple><b><big><tt>ucontext_t:</tt></big></b></font><br>
+  (не документирована)<br><br><br><br> <font color=Green>
+  &lt;-- (<big><tt>SIGSEGV: </tt></big> адрес,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; вызвавший ошибку)
+</table>
+
+<p> Обработчик сигнала:
+
+<p>
+<pre>
+<big><tt>void sigcatch (int signo, siginfo_t* info, ucontext_t* uc);
+  {
+  ...
+  info-&gt;si_code ...
+  info-&gt;si_value.sival_ptr ...
+  ...
+  }
+</body>
+</html>
+

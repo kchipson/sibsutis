@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.3. Счетчик циклов процессора (x86)</h3></td>
+<td valign="middle" align="right"><a href="p02.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Измерение малых временных интервалов</font>
+
+<p>Time Stamp Counter (TSC) -- 64 бита; +1 на каждом цикле процессора.
+
+<p> Команда <big><tt>&nbsp;&nbsp;rdtsc&nbsp;&nbsp;</tt></big>
+записывает содержимое TSC в пару (%edx, %eax).
+
+
+<p><big><tt><b>#include &lt;sys/neutrino.h&gt;<br>
+#include &lt;sys/syspage.h&gt;<br>
+uint64_t ClockCycles ();</b></tt></big>
+
+<p> Возвращает текущее значение счетчика циклов процессора.
+
+<p> Количество циклов процессора в секунду можно взять в ячейке<br>
+<big><tt><b>SYSPAGE_ENTRY(qtime)-&gt;cycles_per_sec</b></tt></big>
+
+
+<p> Если известно, что измеряемый временной интервал содержит заведомо меньше, чем 4,000,000,000
+циклов процессора, то можно пользоваться только младшим словом счетчика TSC:
+
+<pre>
+unsigned int t1 = ClockCycles ();
+          ...
+unsigned int t2 = ClockCycles ();
+unsigned int d = t2 - t1;
+</pre>
+
+
+
+</body>
+</html>
+

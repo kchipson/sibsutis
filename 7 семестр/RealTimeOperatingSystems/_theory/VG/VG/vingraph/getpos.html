@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>GetPos</title>
+<link href="getdim.html" rel="NEXT">
+<link href="setlwidth.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="setlwidth.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="getdim.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>GetPos()</i></a></h1>
+
+<p>Определяет текущую позицию графического элемента</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+tPoint GetPos (int ident);</pre>
+
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>ident</tt></dt>
+<dd>Идентификатор графического элемента.
+</dd>
+
+</dl>
+
+<h2><a name="id7">Библиотека:</a></h2>
+
+<p><tt>libvg.a</tt></p>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Функция возвращает координаты точки привязки графического элемента
+в полях <tt>x</tt> и <tt>y</tt> структуры
+<tt><a href="tpoint.html">tPoint</a></tt>.
+Если графический элемент входит в состав рисунка, то его координаты
+отсчитываются относительно начала рисунка.
+Если идентификатор элемента равен нулю, то возвращаются координаты
+(в пределах всего экрана) левого верхнего угла окна графического терминала.
+</p>
+
+
+<h2><a name="id11">Возвращаемое значение:</a></h2>
+
+<p>Точка привязки графического элемента либо -1 в случае ошибки.</p>
+
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+<table border>
+<tr><th><a name="id16">Безопасность:</a></th><th></th></tr>
+<tr><td>Точка завершения</td>
+    <td>Да</td>
+<tr><td>Обработчик прерывания</td>
+    <td>Нет</td>
+<tr><td>Обработчик сигнала</td>
+    <td>Да</td>
+<tr><td>Нить</td>
+    <td>Да</td>
+</table>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p>
+<a href="getdim.html"><tt>GetDim</a>()</tt>
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="setlwidth.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="getdim.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

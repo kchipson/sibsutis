@@ -1,0 +1,37 @@
+https://shra.ru/2017/09/sql-join-v-primerakh-s-opisaniem/
+https://office-menu.ru/uroki-sql/92-sql-join
+
+
+# 1. Выведите все заказы с именами продавцов и покупателей
+
+SELECT ord.onum, ord.amt, ord.odate, cust.cname AS Покупатель, sal.sname AS Продавец FROM ord INNER JOIN cust on ord.cnum = cust.cnum JOIN sal on ord.snum = sal.snum
+---------------------------------------------------------------------
+
+# 2. Выведите заказы Лондона (продавец и покупатель из Лондона)
+
+SELECT ord.onum, ord.amt, ord.odate, cust.cname AS Покупатель, sal.sname AS Продавец FROM ord INNER JOIN cust on ord.cnum = cust.cnum JOIN sal on ord.snum = sal.snum WHERE sal.city = 'London' and cust.city = 'London'
+---------------------------------------------------------------------
+
+# 3. Вывести имена покупателей, совершивших более 2 заказов, а также сумму их заказов?
+
+SELECT cust.cnum, cust.cname, SUM(ord.amt) FROM cust JOIN ord ON cust.cnum=ord.cnum GROUP BY ord.cnum HAVING COUNT(ord.cnum) >= 2
+---------------------------------------------------------------------
+
+# 4. Выведите информацию о пукапателях и продавцах. Предусмотрите, чтобы покупатели с отсутстующей информацией о поставщике также выводились, имея в полях информации о поставщике значение NULL.
+
+SELECT cust.cname, cust.city, cust.rating, sal.sname, sal.city, sal.comm FROM cust LEFT OUTER JOIN sal ON cust.snum = sal.snum
+---------------------------------------------------------------------
+
+# 5. Выведите количество заказов и максимальную комиссию за день
+
+SELECT odate AS 'Дата', COUNT(*) AS 'Кол-во заказов', MAX(sal.comm) AS 'MAX(комиссия)' FROM ord INNER JOIN sal ON sal.snum = ord.snum GROUP BY odate ORDER BY odate
+---------------------------------------------------------------------
+
+# 6. Выведите сумму заказов каждого из продавцов
+
+SELECT sal.snum, sal.sname, SUM(ord.amt) AS 'Сумма заказов' FROM ord INNER JOIN sal ON ord.snum = sal.snum GROUP BY ord.snum
+---------------------------------------------------------------------
+
+# 7. Выведите средний рейтинг покупателей и среднюю комиссию за день
+
+SELECT ord.odate AS 'Дата', AVG(cust.rating) AS 'Средний рейтинг покупателей', AVG(sal.comm) AS 'Средняя коммисия продавцов' FROM ord INNER JOIN cust ON ord.cnum = cust.cnum  INNER JOIN sal ON ord.snum = sal.snum GROUP BY odate ORDER BY odate

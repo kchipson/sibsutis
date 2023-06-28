@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 8</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>8.2. Семафоры</h3></td>
+<td valign="middle" align="right"><a href="p02.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p03.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><big><tt><b>sem_post (sem_t* sem);</b></tt></big>
+
+<p> Увеличивает семафор на 1.
+
+<pre>
+
+</pre>
+
+
+
+<p><big><tt><b>sem_wait (sem_t* sem);</b></tt></big>
+
+<p> Уменьшает семафор на 1.&nbsp;&nbsp; Однако:
+
+<dl>
+<dt> если семафор = 0,
+<dd> то нить <b>блокируется</b> до тех пор, пока кто-то не увеличит его.<br><br>
+<dt> если несколько нитей вызывают <big><tt>sem_wait</tt></big> на нулевом семафоре,
+<dd> то они ставятся в очередь, упорядоченную по приоритетам.<br><br>
+<dt> <big><tt>sem_post</tt></big> выводит из ожидания только одну нить (первую в очереди).
+</dl>
+
+
+<pre>
+
+</pre>
+
+<p> Ожидание <big><tt>sem_wait</tt></big> может быть прервано сигналом.
+
+</body>
+</html>
+

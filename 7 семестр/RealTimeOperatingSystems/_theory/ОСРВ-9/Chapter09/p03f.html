@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 9</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>9.3. Пространство имен</h3></td>
+<td valign="middle" align="right"><a href="p03e.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p03g.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Символические префиксы</font>
+
+
+<pre>
+
+<big><b>ln -sP путь префикс</b></big>
+
+</pre>
+
+<p> Символический префикс включается в префиксное дерево.<br>
+Он заставляет procnto осуществить подстановку и еще раз пройти по префиксному дереву.
+
+<p> Пример:
+
+<pre><big>$ ln -sP /net/qnx425-5/home /home
+<small>
+префикс      подстановка                 менеджер</small>
+/home      /net/qnx425-5/home    io-net
+
+
+/home/Bob/file  -&gt;  /net/qnx425-5/home/Bob/file
+
+</big></pre>
+
+
+
+</body>
+</html>
+

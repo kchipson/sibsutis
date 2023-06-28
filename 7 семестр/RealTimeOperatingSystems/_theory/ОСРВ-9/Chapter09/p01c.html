@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 9</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>9.1. Основные принципы организации QNX Neutrino</h3></td>
+<td valign="middle" align="right"><a href="p01b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p01d.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Функции микроядра</font>
+
+<ul>
+<li>нити (создание, планирование)
+<li>каналы, соединения, сообщения, импульсы
+<li>сигналы
+<li>часы, таймеры
+<li>обработчики прерываний
+<li>семафоры, мьютексы, переменные условий, барьеры
+</ul>
+
+<p> см. файл <tt>/usr/include/sys/neutrino.h</tt>
+
+<p> Вся система строится на основе этих функций
+
+<p> Примеры функций, которые <b>не</b> делает микроядро:
+<ul>
+<li><tt>fork(), execlp()</tt>
+<li><tt>mmap()</tt>
+<li><tt>netmgr_strtond()</tt>
+<li>файловый ввод-вывод: <tt>open(), read(), write(), ...</tt>
+</ul>
+
+</body>
+</html>
+

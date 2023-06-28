@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.6. Функции таймерной поддержки (POSIX)</h3></td>
+<td valign="middle" align="right"><a href="p05.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<pre><big><b>
+#include &lt;time.h&gt;
+
+clock_nanosleep (int clockid, int flags,
+                 const struct timespec* rqtp, struct timespec* rmtp);
+</b></big></pre>
+
+<p> Приостанавливает выполнение текущей нити на указанное время.
+
+<p> Параметр <big><tt>clockid</tt></big> задает тип часов, к которым привязывается
+(неявно создаваемый) таймер. 
+
+<p>Параметр <big><tt>flags</tt></big> м.б. 0 либо <big><tt>TIMER_ABSTIME</tt></big>.
+
+<p> С помощью <big><tt>rqtp</tt></big> задается требуемый временной интервал
+(<big><tt>flags=0</tt></big>) или время, до наступления которого нить будет спать
+(<big><tt>flags=TIMER_ABSTIME</tt></big>).
+
+<p> Указатель <big><tt>rmtp</tt></big> (м.б. 0) показывает, куда нужно записать 
+оставшееся время сна, если сон был прерван сигналом.
+
+
+</body>
+</html>
+

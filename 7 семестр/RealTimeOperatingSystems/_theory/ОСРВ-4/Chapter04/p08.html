@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.8. Сеть Qnet</h3></td>
+<td valign="middle" align="right"><a href="p07.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p08a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<table>
+<tr>
+<td valign="middle" align="left"><img src="qnet.png">
+<td valign="top" align="right"><b>Send-Receive-Reply</b>
+</table>
+
+
+<p> Все узлы qnet открываются под префиксом <big><tt><b>/net</b></tt></big>
+
+<p> <big><tt><b>ls /net</b></tt></big> -- просмотр узлов qnet
+
+<p> Все локальные ресурсы узла nodename 
+открываются под префиксом <big><tt><b>/net/</b></tt></big>nodename
+
+<p> Имя узла содержится в переменной среды <big><tt><b>HOSTNAME</b></tt></big>
+
+<p> <big><tt><b>on [-d] -f nodename prog [args]</b></tt></big>
+
+<p> Запуск программы <big><tt>prog</tt></big> на узле <big><tt>nodename</tt></big>.
+Опция <big><tt>-d</tt></big> означает запуск в открепленном режиме (без ожидания завершения).
+
+</body>
+</html>
+

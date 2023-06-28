@@ -1,0 +1,106 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>VinGraph</title>
+<link href="pg3.html" rel="NEXT">
+<meta name="description" content="Библиотека VinGraph">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg3.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1>Подключение библиотеки к программе</h1>
+
+<p>Допустим, ваша программа содержится в файле <tt>prog.cpp</tt>.
+</p>
+
+<table>
+<tr><td><img src="imagelib/pointing.gif" alt="Note:"></td>
+<td>
+  Программа пользователя должна быть написана на языке C++.
+Это связано с тем, что библиотека VinGraph в целях упрощения интерфейса
+использует такие средства языка, как аргументы, задаваемые по умолчанию,
+и перегруженные функции, что недоступно в чистом C.
+</td></tr>
+</table>
+
+
+<p>В начало текста программы нужно включить файл, содержащий объявления
+прототипов функций и другие нужные вещи:
+</p>
+
+<pre>#include &lt;vingraph.h&gt;</pre>
+
+
+<p>
+Вначале выполнения программы, до вызова графических функций, необходимо
+присоединиться к терминалу VinGraph, а в конце -- отсоединиться от него.
+Фрагмент вашего кода может иметь, например, следующий вид:
+</p>
+
+<pre>int main ()
+  {
+  ...
+  ConnectGraph ();
+  .
+  .
+  .
+  CloseGraph ();
+  return 0;
+  }
+</pre>
+
+<p>Функция
+<a href="connect.html"><tt>ConnectGraph</a>()</tt>
+может вызываться с аргументом, задающим имя терминала,
+если вас не устраивает стандартное имя, или вы хотите работать с несколькими
+терминалами. Данная функция также запускает терминал VinGraph (с соответствующим именем),
+если он еще не был запущен. Функция
+<a href="close.html"><tt>CloseGraph</a>()</tt>
+закрывает соединение с терминалом,
+а также завершает работу терминала, если он был запущен вашей  программой. 
+</p>
+
+<p>
+Компиляция программы осуществляется с помощью  команды
+</p>
+
+<pre>cc prog.cpp -l vg</pre>
+
+<p>Здесь опция <tt>­l</tt> указывает файл библиотеки VinGraph (<tt>libvg.a</tt>). 
+Теперь вы можете запускать вашу
+программу:
+</p>
+
+<pre>./a.out</pre>
+
+
+<p>Чтобы запустить терминал VinGraph из командной строки, напечатайте
+</p>
+
+<pre>vg</pre>
+
+<p>Опции программы <tt>vg</tt>, позволяющие получить определенные эффекты,
+описаны в разделе <a href="pg9.html">о терминале VinGraph</a>.
+</p>
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg3.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
+

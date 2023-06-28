@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 5</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>5.2. Сигналы со значением</h3></td>
+<td valign="middle" align="right"><a href="p02a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p02c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Эффект наличия нитей</font>
+
+<p>
+<ul>
+<li> маски сигналов
+<li> "подвешенные" сигналы
+</ul>
+
+<p>
+<big><tt><b>
+sigset_t:&nbsp;&nbsp;&nbsp;<font color=Green>int bits [2];</font><br><br>
+sigemptyset (sigset_t* ss);<br>
+sigadset (sigset_t* ss, int signo);
+</b></tt></big>
+
+
+<p><font color=Blue>Установка маски сигналов в текущей нити</font>
+
+<p>
+<big><tt><b>pthread_sigmask (int how, const sigset_t* ss, 0);</b><br><br>
+how = SIG_BLOCK | SIG_UNBLOCK | SIG_SETMASK
+</tt></big>
+
+<p><font color=Blue>Посылка сигнала нити</font>
+
+<p>
+<big><tt><b>pthread_kill (int tid, int signo);
+</b></tt></big>
+
+
+
+</body>
+</html>
+

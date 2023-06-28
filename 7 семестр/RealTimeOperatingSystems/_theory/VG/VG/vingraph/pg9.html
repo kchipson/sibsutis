@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>VinGraph</title>
+<link href="pg8.html" rel="PREVIOUS">
+<meta name="description" content="Библиотека VinGraph">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="20%">
+<tr>
+<td valign="middle" align="center"><a href="pg8.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<h1><a name="VG">Графический терминал VinGraph</a></h1>
+
+<p>Графический терминал VinGraph -- это приложение, с которым взаимодействуют
+функции библиотеки VinGraph.
+</p>
+
+<p>Графический терминал VinGraph запускается автоматически
+функцией <tt>ConnectGraph()</tt> с параметрами, принятыми по умолчанию.
+Он может быть также запущен из командной строки следующего формата:
+</p>
+
+<pre>vg [-n NAME] [-a X Y W H] [-c R G B]</pre>
+
+<p>Все аргументы командной строки должны разделяться пробелами.
+Квадратные скобки указывают на необязательность соответствующих опций,
+сами скобки не должны печататься.
+</p>
+
+<p>Опция <tt>-n</tt> задает имя терминала.
+</p>
+
+<p>Опция <tt>-a</tt> устанавливает координаты левого верхнего угла,
+ширину и высоту окна терминала.
+</p>
+
+<p>Опция <tt>-c</tt> задает цвет фона путем указания трех составляющих цвета.
+</p>
+
+<p>Вот пример командной строки:
+</p>
+
+<pre>vg -n MyName -c 0 50 100</pre>
+
+<p>Одновременно может быть запущено множество терминалов при условии,
+что им заданы различные имена.
+</p>
+
+<p>Переменная  среды <tt>VGOSC</tt> определяет режим работы терминала:
+с использованием буфера внеэкранного контекста (<tt>VGOSC=1</tt>)
+или без него (<tt>VGOSC=0</tt> или не определена).
+Использование внеэкранного контекста позволяет убирать 
+мерцание при передвижении графических элементов, однако успешность реализации
+этого режима зависит от графического адаптера и его драйвера.
+Этот режим также создает дополнительную нагрузку на центральный процессор.
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="20%">
+<tr>
+<td valign="middle" align="center"><a href="pg8.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
+

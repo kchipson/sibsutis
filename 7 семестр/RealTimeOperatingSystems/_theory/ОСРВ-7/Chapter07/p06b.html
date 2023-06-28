@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.6. Функции таймерной поддержки (POSIX)</h3></td>
+<td valign="middle" align="right"><a href="p06a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<pre><big><b>
+struct itimerspec { struct timespec it_value, it_interval; };
+
+timer_settime (int timerid, int flags, struct itimerspec* ts, 0);
+</b></big></pre>
+
+<p> Запускает (останавливает) таймер <big><tt>timerid</tt></big>.
+
+<p> Время срабатывания таймера указывается с помощью параметра <big><tt>ts</tt></big>.
+Поле <big><tt>it_value</tt></big> содержит значение времени при первом запуске (секунды
+и наносекунды). Это время может быть относительным или абсолютным, что определяется
+параметром <big><tt>flags</tt></big> (<big><tt>0</tt></big> или <big><tt>TIMER_ABSTIME</tt></big>).
+
+<p> Если <big><tt>it_value = 0</tt></big>, то таймер останавливается.
+
+<p> Поле <big><tt>it_interval</tt></big> содержит интервал перезапуска таймера.
+Если <big><tt>it_interval = 0</tt></big>, то перезапуски не планируются.
+
+<p> При повторном вызове <big><tt>timer_settime()</tt></big> таймер "перезаряжается"
+на новое время срабатывания.
+
+<p> Когда таймер срабатывает, то генерируется событие, прописанное при его создании.
+
+
+
+
+</body>
+</html>
+

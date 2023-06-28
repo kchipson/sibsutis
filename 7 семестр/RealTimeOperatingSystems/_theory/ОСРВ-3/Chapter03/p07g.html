@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.7. Разделяемые объекты и библиотеки</h3></td>
+<td valign="middle" align="right"><a href="p07f.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07h.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p><font color=Blue>Инфраструктура для PIC</font><br>
+
+<dl>
+<dt> <b>ld</b> создает две таблицы:
+<dd> <big><tt><b>_GLOBAL_OFFSET_TABLE_&nbsp;&nbsp;&nbsp;        (GOT)</b></tt></big>
+<dd> <big><tt><b>_PROCEDURE_LINKAGE_TABLE_&nbsp;    (PLT)</b></tt></big>
+</dl>
+
+<p> <b>GOT</b> размещается в сегменте .data, ее можно модифицировать.
+
+<p> <b>PLT</b> размещается в сегменте .text, она не изменяется.
+
+<p> <b>GOT</b> содержит в себе адреса всех глобальных процедур и данных,
+с которыми работает разделяемый объект. Эти адреса настраиваются независимо
+для каждого процесса.
+
+<p> <b>PLT</b> содержит точки входа для вызова глобальных процедур.
+
+<pre>
+
+</pre>
+
+
+<p> Разумеется, в каждом объекте имеется также <b>таблица имен</b> символов.
+
+</body>
+</html>
+

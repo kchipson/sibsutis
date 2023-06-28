@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.7. Разделяемые объекты и библиотеки</h3></td>
+<td valign="middle" align="right"><a href="p07a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p><font color=Blue>Построение статических библиотек ( ar )</font><br>
+
+<p>
+<big><tt>cc -A libr.a file1.o file2.o ...</big></tt> -- новый архив
+
+<p>
+<big><tt>cc -a libr.a file1.o file2.o ...</big></tt> -- добавление
+
+
+<p><font color=Blue>Построение динамических библиотек ( ld )</font><br>
+
+<p>
+<big><tt>cc -shared -o libr.so file1.o file2.o ...</big></tt>
+
+
+
+</body>
+</html>
+

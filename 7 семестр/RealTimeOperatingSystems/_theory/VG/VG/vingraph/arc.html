@@ -1,0 +1,171 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Arc</title>
+<link href="text.html" rel="NEXT">
+<link href="ellipse.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="ellipse.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="text.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>Arc()</i></a></h1>
+
+<p>Рисует дугу</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+int Arc (int x, int y, int w, int h, int sangle, int eangle, int arctype, int color, int parent);</pre>
+
+<h2><a name="id3">Варианты:</a></h2>
+<pre>
+int Arc (int x, int y, int w, int h, int sangle, int eangle, int arctype, int color);
+
+int Arc (int x, int y, int w, int h, int sangle, int eangle, int arctype);
+
+int Arc (int x, int y, int w, int h, int sangle, int eangle);</pre>
+
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>x, y</tt></dt>
+<dd>Координаты левой верхней вершины описывающего прямоугольника.
+</dd>
+
+<dt><tt>w</tt></dt>
+<dd>Ширина описывающего прямоугольника.
+</dd>
+
+<dt><tt>h</tt></dt>
+<dd>Высота  описывающего прямоугольника.
+</dd>
+
+<dt><tt>sangle</tt></dt>
+<dd>Начальный угол.
+</dd>
+
+<dt><tt>eangle</tt></dt>
+<dd>Конечный угол.
+</dd>
+
+<dt><tt>arctype</tt></dt>
+<dd>Тип фигуры (см. ниже).
+</dd>
+
+<dt><tt>color</tt></dt>
+<dd>Цвет.
+</dd>
+
+<dt><tt>parent</tt></dt>
+<dd>Идентификатор рисунка, в рамках  которого создается графический элемент.
+</dd>
+
+</dl>
+
+<h2><a name="id7">Библиотека:</a></h2>
+
+<p><tt>libvg.a</tt></p>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Функция рисует дугу, проходящую по эллипсу, вписанному
+в указанный прямоугольник. Начальный и конечный угол определяют
+ту часть эллипса, которая и составляет дугу.
+Углы указываются в десятых долях градуса и измеряются
+отностительно горизонтальной оси по
+направлению против часовой стрелки (что общепринято).
+Допускаются отрицательные значения углов.
+</p>
+
+<p>Если идентификатор рисунка равен нулю или не указан, то
+графический элемент создается в рамках всего окна   терминала VinGraph.
+Если цвет не указан, то используется цвет, установленный ранее
+с помощью <tt><a href="setcolor.html">SetColor</a>(int&nbsp;color)</tt>.
+Для задания цвета можно использовать макрос
+<tt><a href="rgb.html">RGB</a>(r,g,b)</tt>.
+</p>
+
+<p>Параметр <tt>arctype</tt> задает тип образующейся фигуры:
+</p>
+<ul>
+<li><tt>arctype=0</tt> или не указан: простая дуга;</li>
+<li><tt>arctype=1</tt>: дуга с двумя прямыми линиями, идущими от ее концов
+к центроиду эллипса;</li>
+<li><tt>arctype=2</tt>:  дуга, концы которой соединены прямой линией.</li>
+</ul>
+
+<p>Пример:
+</p>
+
+<h1><img border=0 align="center" src="./images/exarc.jpg" alt="QQ"></h1>
+<br clear="all">
+
+
+<p>Точкой привязки считается   точка <tt>(x,y)</tt>.
+</p>
+
+
+<h2><a name="id11">Возвращаемое значение:</a></h2>
+
+<p>Идентификатор созданного графического элемента либо -1 в случае ошибки.</p>
+
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+<table border>
+<tr><th><a name="id16">Безопасность:</a></th><th></th></tr>
+<tr><td>Точка завершения</td>
+    <td>Да</td>
+<tr><td>Обработчик прерывания</td>
+    <td>Нет</td>
+<tr><td>Обработчик сигнала</td>
+    <td>Да</td>
+<tr><td>Нить</td>
+    <td>Да</td>
+</table>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p>
+<a href="ellipse.html"><tt>Ellipse</a>()</tt>,
+<a href="move.html"><tt>Move</a>()</tt>,
+<a href="moveto.html"><tt>MoveTo</a>()</tt>,
+<a href="enlarge.html"><tt>Enlarge</a>()</tt>,
+<a href="enlargeto.html"><tt>EnlargeTo</a>()</tt>,
+<a href="setcolor.html"><tt>SetColor</a>()</tt>,
+<a href="fill.html"><tt>Fill</a>()</tt>,
+<a href="setlwidth.html"><tt>SetLineWidth</a>()</tt>,
+<a href="show.html"><tt>Show</a>()</tt>,
+<a href="hide.html"><tt>Hide</a>()</tt>,
+<a href="delete.html"><tt>Delete</a>()</tt>
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="ellipse.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="text.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

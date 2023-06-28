@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.7. Тайм-ауты на состояния блокировки (QNX)</h3></td>
+<td valign="middle" align="right"><a href="p07.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Состояния блокировки и
+флаги в параметре <big><tt>flags</tt></big></font>
+
+<pre>
+
+</pre>
+
+<table>
+<tr><th>Состояния &nbsp;&nbsp;<th>Системные вызовы&nbsp;&nbsp; <th>Флаги
+<tr><td><hr><td><hr><td><hr>
+<tr><td><big><tt>SEND <td><big><tt>MsgSend () <td><big><tt>_NTO_TIMEOUT_SEND
+<tr><td><big><tt>REPLY <td><big><tt>MsgSend () <td><big><tt>_NTO_TIMEOUT_REPLY
+<tr><td><big><tt>RECEIVE <td><big><tt>MsgReceive () <td><big><tt>_NTO_TIMEOUT_RECEIVE 
+<tr><td><big><tt>JOIN <td><big><tt>pthread_join ()<td><big><tt>_NTO_TIMEOUT_JOIN 
+<tr><td><big><tt>SIGSUSPEND <td><big><tt>sigsuspend ()<td><big><tt>_NTO_TIMEOUT_SIGSUSPEND 
+<tr><td><big><tt>SIGWAITINFO&nbsp;&nbsp; <td><big><tt>sigwaitinfo ()<td><big><tt>_NTO_TIMEOUT_SIGWAITINFO 
+<tr><td><big><tt>INTR<td><big><tt>InterruptWait ()<td><big><tt>_NTO_TIMEOUT_INTR
+<tr><td><big><tt>SEM <td><big><tt>sem_wait ()<td><big><tt>_NTO_TIMEOUT_SEM 
+<tr><td><big><tt>MUTEX <td><big><tt>pthread_mutex_lock ()&nbsp;&nbsp;<td><big><tt>_NTO_TIMEOUT_MUTEX 
+<tr><td><big><tt>CONDVAR <td><big><tt>pthread_cond_wait ()<td><big><tt>_NTO_TIMEOUT_CONDVAR 
+</table>
+
+<p> Флаги могут объединяться: <big><tt>_NTO_TIMEOUT_SEND | _NTO_TIMEOUT_REPLY</big></tt>
+
+<p> Тайм-аут назначается только на один системный вызов.
+
+<p> Будет ли нить разблокирована в результате тайм-аута зависит от типа события.
+
+</body>
+</html>
+

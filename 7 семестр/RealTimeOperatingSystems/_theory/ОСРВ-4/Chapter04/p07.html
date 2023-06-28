@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.7. Импульсы</h3></td>
+<td valign="middle" align="right"><a href="p06.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p08.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p> <b>Импульс</b> -- короткое сообщение, которое передается <b>без блокировки</b> отправителя.
+
+<center>
+<img src="pulse.png">
+</center>
+
+<big><tt><b>#include &lt;sys/neutrino.h&gt;</b></tt></big><br>
+<big><tt><b>MsgSendPulse (int coid, int prio, int code, int value);</b></tt></big>
+
+
+<p> Посылает импульс по соединению <big><tt>coid</tt></big>.
+
+
+<dl>
+<dt><big><tt>prio</tt></big>&nbsp;&nbsp; приоритет импульса
+<dt><big><tt>code</tt></big>&nbsp;&nbsp; код импульса (<b>0..127</b>)
+<dt><big><tt>value</tt></big>&nbsp;&nbsp; значение импульса (произвольные 4 байта)
+</dl>
+
+<p> Импульс принимается с помощью функции <big><tt><b>MsgReceive(...)</b></tt></big>,
+которая при приеме импульса возвращает <b>0</b>. Отвечать на импульс не нужно.
+
+
+</body>
+</html>
+

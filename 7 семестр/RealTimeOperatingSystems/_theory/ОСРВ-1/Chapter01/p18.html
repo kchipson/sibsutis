@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.18. Принудительный останов и завершение программ</h3></td>
+<td valign="middle" align="right"><a href="p17.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p19.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+Останов и завершение программ осуществляется путем посылки <b>сигналов</b> соответствующим процессам.
+Большинство сигналов может перехватываться и тогда их действие определяется программой.
+
+<p>
+<big><tt><b>kill [-signal] pid ...</b></tt></big><br>
+<big><tt><b>slay [-s signal] name ...</b></tt></big>&nbsp;&nbsp;&nbsp;&nbsp;(QNX)
+</p>
+
+<p>
+Посылают сигналы процессам, указанным по номеру (pid) или по имени (name).<br>
+Если сигнал явно не указан, посылается SIGTERM.
+</p>
+
+
+<dl><dt><font color=Blue>Сигналы, которые могут перехватываться</font><dd>
+  <dl>
+  <dt><font color=Purple><b>SIGINT, SIGTERM, ...</b></font>
+  </dl>
+</dl>
+
+<dl><dt><font color=Blue>Сигналы, которые <big>не могут</big> перехватываться</font><dd>
+  <dl>
+  <dt><font color=Purple><b>SIGKILL</b></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;завершение процесса
+  <dt><font color=Purple><b>SIGSTOP</b></font>&nbsp;&nbsp;&nbsp;останов процесса
+  <dt><font color=Purple><b>SIGCONT</b></font>&nbsp;&nbsp;&nbsp;возобновление процесса
+  </dl>
+</dl>
+
+<dl><dt>Если процесс принимает <font color=Blue>ввод с клавиатуры в 
+приготовленном режиме</font>, то<dd>
+  <dl>
+  <dt><font color=Purple><b>Ctrl-C</b></font>&nbsp;&nbsp;&nbsp;
+    завершение процесса (<font color=Purple><b>SIGINT</b></font>)
+  <dt><font color=Purple><b>Ctrl-Z</b></font>&nbsp;&nbsp;&nbsp;
+    останов процесса (<font color=Purple><b>SIGSTOP</b></font>)
+  </dl>
+</dl>
+
+
+
+</body>
+</html>
+

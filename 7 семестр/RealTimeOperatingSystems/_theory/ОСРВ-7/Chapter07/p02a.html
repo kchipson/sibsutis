@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.2. Часы стандарта POSIX</h3></td>
+<td valign="middle" align="right"><a href="p02.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p02b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Данные для преобразования формата представления времени</font>
+
+<ul>
+<li> 1 мин = 60 с
+<li> 1 ч = 60 мин
+<li> 1 день = 24 часа
+<li> 1 год = 365 дней (високосный год = 366 дней)<br>
+&nbsp;&nbsp;&nbsp; високосные года: 2004, <b>2000</b>, 1996, 1992, ..., 1972 (8 штук)
+<li> часовые пояса
+<dl>
+<dd>Greenwich Mean Time [GMT] 0
+<dd>Universal Coordinated Time [UTC] = GMT
+<dd>std -- зимнее время (нач. в последнее воскресенье октября в 2:00) 
+<dd>dst -- летнее время (нач. в первое воскресенье апреля в 2:00)<br><br>
+<dd>Новосибирск: +6 (std), +7 (dst)
+<dd><big><tt>TZ=nst-6ndt-7</tt></big>
+</dl>
+</ul>
+
+<pre>
+
+</pre>
+
+<p> 
+<font color=Blue>Функции библиотеки Си для преобразования времени</font>
+
+<p><big><tt><b>acstime(), ctime(), localtime(), ...</tt></big>
+
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 8</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>8.5. Несистемные средства реализации КС</h3></td>
+<td valign="middle" align="right"><a href="p04e.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p05a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+Эти средства <b>не требуют обращений к ОС</b>, поэтому могут быть использованы даже в
+обработчиках прерываний.
+
+<p><font color=Blue>Атомарные операции</font>
+
+<pre><big><tt><b>#include &lt;atomic.h&gt
+
+void atomic_add (volatile unsigned *loc, unsigned incr);
+    </b> выполняет (*loc) += incr<b>
+unsigned atomic_add_value (volatile unsigned *loc, unsigned incr);
+    </b> выполняет (*loc) += incr, возвращая предыдущее значение (*loc)<b>
+void atomic_sub (volatile unsigned *loc, unsigned decr);
+    </b> выполняет (*loc) -= decr<b>
+unsigned atomic_sub_value (volatile unsigned *loc, unsigned decr);
+    </b> выполняет (*loc) -= decr, возвращая предыдущее значение (*loc)<b>
+</b></tt></big></pre>
+
+
+<p> Пример использования: безопасный инсремент счетчика
+
+<pre>
+volatile unsigned count;
+...
+
+atomic_add (&count, 1);
+</pre>
+
+
+
+</body>
+</html>
+

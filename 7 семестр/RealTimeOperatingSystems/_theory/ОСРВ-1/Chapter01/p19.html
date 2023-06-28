@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.19. Перехват простых сигналов</h3></td>
+<td valign="middle" align="right"><a href="p18.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p20.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Перехват сигналов</font>
+
+<p>
+<big><tt><b>#include &lt;signal.h&gt;</b></tt></big><br>
+<big><tt><b>signal (int sig, void (*func) (int));</b></tt></big>
+</p>
+
+<p>
+Назначает обработчик для сигнала <big><tt>sig</tt></big>.
+Параметр <big><tt>func</tt></big> -- указатель на функцию-обработчик,
+которая должна иметь заголовок вида
+</p>
+
+<p>
+<big><tt><b>void func (int sig)</b></tt></big>
+</p>
+
+<p>Сигнал прерывает программу и вызывает назначенный обработчик.
+В качестве параметра обработчику передается номер сигнала.
+После выхода из обработчика программа продолжает свою работу.
+</p>
+
+<pre>
+
+</pre>
+
+<font color=Blue>Завершение программы</font>
+
+<p>
+<big><tt><b>#include &lt;stdlib.h&gt;</b></tt></big><br>
+<big><tt><b>exit (int status);</b></tt></big>
+</p>
+
+
+</body>
+</html>
+

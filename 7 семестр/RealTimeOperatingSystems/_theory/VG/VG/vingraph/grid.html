@@ -1,0 +1,149 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Grid</title>
+<link href="ellipse.html" rel="NEXT">
+<link href="rect.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="rect.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="ellipse.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>Grid()</i></a></h1>
+
+<p>Рисует пустую таблицу</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+int Grid (int x, int y, int w, int h, int nrows, int ncols, int color, int parent);</pre>
+
+<h2><a name="id3">Варианты:</a></h2>
+<pre>
+int Grid (int x, int y, int w, int h, int nrows, int ncols, int color);
+
+int Grid (int x, int y, int w, int h, int nrows, int ncols);</pre>
+
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>x, y</tt></dt>
+<dd>Координаты левого верхнего угла таблицы.
+</dd>
+
+<dt><tt>w</tt></dt>
+<dd>Ширина таблицы.
+</dd>
+
+<dt><tt>h</tt></dt>
+<dd>Высота таблицы.
+</dd>
+
+<dt><tt>nrows</tt></dt>
+<dd>Число строк в таблице.
+</dd>
+
+<dt><tt>ncols</tt></dt>
+<dd>Число столбцов в таблице.
+</dd>
+
+<dt><tt>color</tt></dt>
+<dd>Цвет.
+</dd>
+
+<dt><tt>parent</tt></dt>
+<dd>Идентификатор рисунка, в рамках которого создается графический элемент.
+</dd>
+
+</dl>
+
+<h2><a name="id7">Библиотека:</a></h2>
+
+<p><tt>libvg.a</tt></p>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Функция рисует пустую (незаполненную) таблицу.
+Все ячейки таблицы имеют одинаковые размеры.
+</p>
+
+<p>Если идентификатор рисунка равен нулю или не указан, то
+графический элемент создается в рамках всего окна   терминала VinGraph.
+Если цвет не указан, то используется цвет, установленный ранее
+с помощью <tt><a href="setcolor.html">SetColor</a>(int&nbsp;color)</tt>.
+Для задания цвета можно использовать макрос
+<tt><a href="rgb.html">RGB</a>(r,g,b)</tt>.
+</p>
+
+<p>Вот пример таблицы:
+</p>
+
+<h1><img border=0 align="center" src="./images/exgrid.jpg" alt="QQ"></h1>
+<br clear="all">
+
+<p>Точкой привязки считается   точка <tt>(x,y)</tt>.
+</p>
+
+
+<h2><a name="id11">Возвращаемое значение:</a></h2>
+
+<p>Идентификатор созданного графического элемента либо -1 в случае ошибки.</p>
+
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+<table border>
+<tr><th><a name="id16">Безопасность:</a></th><th></th></tr>
+<tr><td>Точка завершения</td>
+    <td>Да</td>
+<tr><td>Обработчик прерывания</td>
+    <td>Нет</td>
+<tr><td>Обработчик сигнала</td>
+    <td>Да</td>
+<tr><td>Нить</td>
+    <td>Да</td>
+</table>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p>
+<a href="move.html"><tt>Move</a>()</tt>,
+<a href="moveto.html"><tt>MoveTo</a>()</tt>,
+<a href="enlarge.html"><tt>Enlarge</a>()</tt>,
+<a href="enlargeto.html"><tt>EnlargeTo</a>()</tt>,
+<a href="setcolor.html"><tt>SetColor</a>()</tt>,
+<a href="fill.html"><tt>Fill</a>()</tt>,
+<a href="setlwidth.html"><tt>SetLineWidth</a>()</tt>,
+<a href="show.html"><tt>Show</a>()</tt>,
+<a href="hide.html"><tt>Hide</a>()</tt>,
+<a href="delete.html"><tt>Delete</a>()</tt>
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="rect.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="ellipse.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

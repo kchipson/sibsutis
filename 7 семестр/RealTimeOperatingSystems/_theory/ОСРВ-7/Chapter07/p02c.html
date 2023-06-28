@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.2. Часы стандарта POSIX</h3></td>
+<td valign="middle" align="right"><a href="p02b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p03.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Другие типы часов</font>
+
+<dl>
+<dt><big><tt><b>CLOCK_SOFTTIME</b>
+<dd> = CLOCK_REALTIME</tt></big>, но останавливаются, когда
+процессор входит в "спящий" режим<br><br>
+<dt><big><tt><b>CLOCK_MONOTONIC</b></tt></big>
+<dd> часы без коррекции: время увеличивается с постоянной скоростью<br><br>
+<dt><big><tt><b>CLOCK_PROCESS_CPUTIME_ID</b></tt></big>
+<dt><big><tt><b>CLOCK_THREAD_CPUTIME_ID</b></tt></big>
+<dd> часы, считающие время, потребленное соответственно процессом и нитью.
+Т.к. таких часов много, то действительные идентификаторы определяются
+с помощью вызовов <big><tt><b>clock_getcpuclockid(...)</b></tt></big> и 
+<big><tt><b>pthread_getcpuclockid(...)</b></tt></big>.
+</dl>
+
+
+
+</body>
+</html>
+

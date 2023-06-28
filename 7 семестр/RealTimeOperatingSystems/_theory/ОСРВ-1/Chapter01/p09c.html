@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.9. Права доступа к файлам и каталогам</h3></td>
+<td valign="middle" align="right"><a href="p09b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p10.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+
+<p><font color=Blue>Права доступа к каталогам</font>
+</p>
+
+
+<dl>
+<dd> <font color=Blue><b>r</b></font> &nbsp;&nbsp;&nbsp;&nbsp; разрешение получения имен файлов
+<dd> <font color=Blue><b>x</b></font> &nbsp;&nbsp;&nbsp; разрешение получения остальной информации
+  о файлах
+<dd> <font color=Blue><b>w</b></font> &nbsp;&nbsp; разрешение изменения каталога 
+  (создание и удаление файлов)
+<dd> <font color=Blue><b>t</b></font> &nbsp;&nbsp;&nbsp; разрешение удаления только тех файлов,
+  которыми пользователь владеет или имеет права на запись 
+  (<small>владелец каталога может удалить файл независимо от флага t</small>)
+<dd> <font color=Blue><b>s</b></font>  (group)&nbsp;&nbsp;&nbsp; разрешение устанавливать группу
+создаваемых файлов равной группе каталога
+</dl>
+
+<pre>
+
+</pre>
+
+<p>Типичные примеры:</p>
+
+<dl>
+<dd><big><tt><b>rwxrwxr-x</b>&nbsp;&nbsp;&nbsp;/home, /bin, /usr, /lib, ...</big></tt>
+<dd><big><tt><b>r-xr-xr-x</b>&nbsp;&nbsp;&nbsp;/proc</big></tt>
+<dd><big><tt><b>rwx------</b>&nbsp;&nbsp;&nbsp;/root</big></tt>
+<dd><big><tt><b>rwxrwxrwt</b>&nbsp;&nbsp;&nbsp;/tmp</big></tt>
+<dd>&nbsp;
+<dd><big><tt><b>rwx-wx--x</b>&nbsp;&nbsp;&nbsp;</big></tt>темный каталог
+<dd><big><tt><b>---rwxrwx</b>&nbsp;&nbsp;&nbsp;</big></tt>каталог, доступный всем, кроме владельца
+</dl>
+
+</body>
+</html>
+

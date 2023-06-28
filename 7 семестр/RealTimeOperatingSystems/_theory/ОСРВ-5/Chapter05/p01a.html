@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 5</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>5.1. Простые сигналы</h3></td>
+<td valign="middle" align="right"><a href="p01.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p01b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Перехват сигнала</font>
+
+
+<pre>
+#include &lt;signal.h&gt;
+...
+void sigcatch (int signo)
+  {
+  ...
+  exit (signo);
+  }
+
+int main ()
+  {
+  ...
+  signal (SIGINT, sigcatch);
+  ...
+  return 0;
+  }
+</pre>
+
+<p> Вместо адреса функции (<big><tt>sigcatch</big></tt>) могут быть указаны константы
+<big><tt><b>SIG_DFL</b></tt></big> и <big><tt><b>SIG_IGN</b></tt></big>.
+
+<p> Функция <big><tt>signal()</tt></big> может вызываться многократно, меняя
+<b>диспозицию сигнала</b>.
+
+<p> В обработчиках сигналов актуально использование процедур языка Си 
+<big><tt><b>longjmp (siglongjmp)</b></tt></big>.
+
+
+
+</body>
+</html>
+

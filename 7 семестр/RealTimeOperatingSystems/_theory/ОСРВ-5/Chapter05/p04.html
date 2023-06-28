@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 5</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>5.4. Расширения QNX6 для сигналов</h3></td>
+<td valign="middle" align="right"><a href="p03.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p> <font color=Blue>Дополнительные сигналы 57..64 </font> предназначены исключительно для 
+<big><tt>sigwaitinfo()</tt></big>. Они всегда заблокированы.
+
+
+<p> <font color=Blue>Механизм </font> <big><tt>sigqueue / sigwaitinfo</tt></big>
+аналогичен механизму передачи импульса <big><tt>MsgSendPulse / MsgReceive</tt></big>,
+но не требует создания канала и, как следствие, не работает по сети.
+
+
+<p> <font color=Blue><big><tt>MsgSend</tt></big>, прерываемый сигналом</font>,
+может ввести сервер (<big><tt>MsgReceive</tt></big>) в затруднительное положение.
+Чтобы выйти из затруднения, сервер создает канал с помощью
+
+<p><big><tt>ChannelCreate (_NTO_CHF_UNBLOCK);</tt></big>
+
+<p> Если нить, пославшая сообщение серверу и находящаяся в состоянии
+<big><tt>REPLY_BLK</tt></big>, получает сигнал, то в канал серверу
+посылается импульс, информирующий сервер об этой ситуации.
+Сервер должен дать какой-либо ответ клиенту, только после этого
+сигнал будет доставлен и разблокирует нить.
+
+</body>
+</html>
+

@@ -1,0 +1,129 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Pixel</title>
+<link href="line.html" rel="NEXT">
+<link href="close.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="close.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="line.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>Pixel()</i></a></h1>
+
+<p>Рисует точку (пиксел)</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+int Pixel (int x, int y, int color, int parent);</pre>
+
+<h2><a name="id3">Варианты:</a></h2>
+<pre>
+int Pixel (int x, int y, int color);
+
+int Pixel (int x, int y);</pre>
+
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>x</tt></dt>
+<dd>Координата <tt>x</tt>.
+</dd>
+
+<dt><tt>y</tt></dt>
+<dd>Координата <tt>y</tt>.
+</dd>
+
+<dt><tt>color</tt></dt>
+<dd>Цвет.
+</dd>
+
+<dt><tt>parent</tt></dt>
+<dd>Идентификатор рисунка, в рамках которого создается графический элемент.
+</dd>
+
+</dl>
+
+<h2><a name="id7">Библиотека:</a></h2>
+
+<p><tt>libvg.a</tt></p>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Функция рисует точку (пиксел).
+</p>
+
+<p>Если идентификатор рисунка равен нулю или не указан, то
+графический элемент создается в рамках всего окна терминала VinGraph.
+Если цвет не указан, то используется цвет, установленный ранее
+с    помощью <tt><a href="setcolor.html">SetColor</a>(int&nbsp;color)</tt>.
+Для задания цвета можно использовать макрос
+<tt><a href="rgb.html">RGB</a>(r,g,b)</tt>.
+</p>
+
+<p>Несмотря на то что <tt>Pixel()</tt> создает изначально одну точку,
+позднее эта точка может быть переделана в множество точек с помощью
+функции <tt><a href="enlargeto.html">EnlargeTo</a>()</tt>.
+</p>
+
+
+<h2><a name="id11">Возвращаемое значение:</a></h2>
+
+<p>Идентификатор созданного графического элемента либо -1 в случае ошибки.</p>
+
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+<table border>
+<tr><th><a name="id16">Безопасность:</a></th><th></th></tr>
+<tr><td>Точка завершения</td>
+    <td>Да</td>
+<tr><td>Обработчик прерывания</td>
+    <td>Нет</td>
+<tr><td>Обработчик сигнала</td>
+    <td>Да</td>
+<tr><td>Нить</td>
+    <td>Да</td>
+</table>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p>
+<a href="move.html"><tt>Move</a>()</tt>,
+<a href="moveto.html"><tt>MoveTo</a>()</tt>,
+<a href="enlargeto.html"><tt>EnlargeTo</a>()</tt>,
+<a href="setcolor.html"><tt>SetColor</a>()</tt>,
+<a href="show.html"><tt>Show</a>()</tt>,
+<a href="hide.html"><tt>Hide</a>()</tt>,
+<a href="delete.html"><tt>Delete</a>()</tt>
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="close.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="line.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

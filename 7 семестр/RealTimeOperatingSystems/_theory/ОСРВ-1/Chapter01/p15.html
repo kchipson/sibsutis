@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.15. Сигнализация об ошибках</h3></td>
+<td valign="middle" align="right"><a href="p14.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p16.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<dl><dt>Как правило, библиотечные функции сигнализируют об ошибках, возникающих при их 
+выполнении, следующим образом:<dd>
+  <dl>
+  <dt>если функция возвращает <b>int</b>, то <font color=Red><b>-1</b></font> означает ошибку;
+  <dt>если функция возвращает <b>указатель</b>, то <font color=Red><b>0 (NULL)</b></font> означает ошибку;
+  </dl>
+</dl>
+
+<pre>
+
+</pre>
+
+<p>Внешняя глобальная переменная
+<big><tt><b>errno</b></tt></big>
+содержит в себе код ошибки.<br> Возможные коды описаны в файле
+<big><tt><b>errno.h</b></tt></big>.
+</p>
+
+<pre>
+
+</pre>
+
+<p>Имеется ряд библиотечных функций (например,
+<big><tt><b>perror (...)</b></tt></big>),
+позволяющих формировать сообщения об ошибках.
+</p>
+
+
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>ConnectGraph</title>
+<link href="close.html" rel="NEXT">
+<link href="input.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="input.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="close.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>ConnectGraph()</i></a></h1>
+
+<p>Подключает прикладной процесс к терминалу VinGraph</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+int ConnectGraph (const char *name);</pre>
+
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>name</tt></dt>
+<dd>Адрес строки, содержащей имя графического терминала.
+</dd>
+
+</dl>
+
+<h2><a name="id7">Библиотека:</a></h2>
+
+<p><tt>libvg.a</tt></p>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Данная функция создает соединение с графическим терминалом VinGraph, при
+необходимости запуская его. Созданное соединение используется функциями
+библиотеки VinGraph для посылки сообщений графическому терминалу.
+Т.о. функция <tt>ConnectGraph()</tt> должна быть вызвана до вызова любой другой
+функции библиотеки VinGraph.
+</p>
+
+<p>Параметр <tt>name</tt> может быть опущен либо равен нулю.
+В этом случае используется  терминал с именем "VG".
+</p>
+
+<p>Если терминала с указанным именем не существует, то он запускается.
+При автоматическом запуске параметры окна терминала
+соответствуют умолчаниям, заложенным в программу <a href="intro.html#VG"><tt>vg</tt></a>.
+Размер рабочей области и местоположение окна могут быть
+изменены с помощью мыши.
+Размер, цвет рабочей области и местоположение окна могут быть
+изменены программно с помощью функций 
+<a href="fill.html"><tt>Fill</a>()</tt> и 
+<a href="enlargeto.html"><tt>EnlagreTo</a>()</tt>.
+</p>
+
+<table>
+<tr><td><img src="images/warning.gif">
+<td>Подключение к терминалу VinGraph наследуется дочерними процессами.
+</table>
+
+
+
+<h2><a name="id11">Возвращаемое значение:</a></h2>
+
+<p>0 в случае успеха либо -1 в случае ошибки.</p>
+
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+<table border>
+<tr><th><a name="id16">Безопасность:</a></th><th></th></tr>
+<tr><td>Точка завершения</td>
+    <td>Да</td>
+<tr><td>Обработчик прерывания</td>
+    <td>Нет</td>
+<tr><td>Обработчик сигнала</td>
+    <td>Да</td>
+<tr><td>Нить</td>
+    <td>Да</td>
+</table>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p><a href="close.html"><tt>CloseGraph</a>()</tt>
+</p>
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="input.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="close.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

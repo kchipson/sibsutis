@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>VinGraph</title>
+<link href="pg6.html" rel="NEXT">
+<link href="pg4.html" rel="PREVIOUS">
+<meta name="description" content="Библиотека VinGraph">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg4.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg6.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<h1><a name="MANAGE">Управление графическими элементами и создание рисунков</a></h1>
+
+<p>На самом деле все графические элементы, созданные с   помощью
+функций рисования, являются объектами, т.е. помнят   свое состояние и
+могут выполнять  определенные действия.
+Каждый графический элемент имеет идентификатор -- положительное целое число.
+Этот идентификатор возвращается функцией рисования.
+Например, если вас интересует идентификатор нарисованной линии,
+то вы пишете следующий код:
+</p>
+
+<pre>int myline;
+...
+myline = Line (10, 20, 30, 40);
+</pre>
+
+<p>Нулевой идентификатор закреплен за окном графического терминала.
+</p>
+
+<p>Зная идентификатор, вы можете управлять состоянием графического элемента и
+включать его в состав рисунка. В данном разделе рассмотрим следующие
+функции управления состоянием:
+</p>
+
+<dl>
+<dt><tt><a href="show.html">Show</a>(int ident)</tt></dt>
+<dd>Показывает элемент с идентификатором <tt>ident</tt>
+(вызывается автоматически при создании элемента непосредственно 
+в окне графического терминала).
+</dd>
+<dt><tt><a href="hide.html">Hide</a>(int ident)</tt></dt>
+<dd>Скрывает элемент. Впоследствии он может быть показан с помощью
+функции <tt>Show()</tt>.
+</dd>
+<dt><tt><a href="delete.html">Delete</a>(int ident)</tt></dt>
+<dd>Удаляет элемент.
+</dd>
+<dt><tt><a href="clear.html">Clear</a>(int ident)</tt></dt>
+<dd>Очищает элемент, удаляя все его внутренние элементы.
+Данная функция имеет смысл только для  окна графического терминала и рисунков.
+</dd>
+</dl>
+
+
+<p>Приведем  два примера  использования этих функций.
+</p>
+
+<p><tt>Delete (myline); // </tt>удаляет нарисованную ранее линию</p>
+<p><tt>Clear (0);       // </tt>очищает окно</p>
+
+<p>Создание составного графического элемента, или рисунка,
+выполняется с помощью функции
+<tt>int&nbsp;<a href="picture.html">Picture</a>(int&nbsp;x,&nbsp;int&nbsp;y)</tt>.
+Параметры функции задают точку привязки рисунка в окне терминала.
+Функция возвращает идентификатор рисунка.
+Первоначально рисунок пуст.
+Он наполняется графическими элементами путем вызова функций
+рисования с еще одним (после цвета) дополнительным параметром --
+идентификатором рисунка. Координаты элементов исчисляются
+относительно левого верхнего угла рисунка.
+После наполнения рисунка элементами его можно показать с помощью
+функции <tt>Show()</tt>.
+</p>
+
+<p>Приведем пример рисунка и последовательности операций для
+его формирования и отображения.
+</p>
+
+<h1><img border=0 align="center" src="./images/expict.jpg" alt="QQ"></h1>
+<br clear="all">
+
+<pre>int p = Picture (100, 100);
+int c = RGB (255, 0, 0);
+Ellipse (0, 0, 60, 60, c, p);
+Line (30, 30, 30,  1, c, p);
+Line (30, 30, 56, 45, c, p);
+Line (30, 30,  4, 45, c, p);
+Show (p);
+</pre>
+
+<p>С рисунком можно выполнять действия как с единым целым.
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg4.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg6.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+
+
+</body>
+</html>
+

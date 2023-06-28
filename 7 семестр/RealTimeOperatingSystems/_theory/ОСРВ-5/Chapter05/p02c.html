@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 5</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>5.2. Сигналы со значением</h3></td>
+<td valign="middle" align="right"><a href="p02b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p02d.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Новая установка диспозиции сигнала</font>
+
+
+<p>
+<big><tt><b>
+sigaction (int signo, const struct sigaction* sa, 0);
+</b></tt></big>
+
+
+<p>
+<pre>
+<big><tt><b>
+struct sigaction:
+
++-&gt;  void (*sa_handler) (int signo);
++-&gt;  void (*sa_sigaction) (int signo, siginfo_t* info, ucontext_t* uc);
+|    sigset_t sa_mask;
+|    int sa_flags;     <font color=Green> &lt;-- SA_SIGINFO</font>
+|  
++--  func, SIG_DFL, SIG_IGN 
+</b></tt></big>
+</pre>
+
+<p> В поля <big><tt>sa_handler</tt></big> или <big><tt>sa_sigaction</tt></big>
+записывается адрес функции-обработчика сигнала. Поле <big><tt>sa_mask</tt></big>
+задает маску сигналов на время работы обработчика. Флаг
+<big><tt>SA_SIGINFO</tt></big> заставляет ставить сигналы в очередь.
+
+
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.7. Тайм-ауты на состояния блокировки (QNX)</h3></td>
+<td valign="middle" align="right"><a href="p07a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Проверка условия блокировки</font>
+
+
+<p> Если параметр <big><tt>ntime = 0</big></tt>, то таймер не используется, а попытка входа
+в состояние блокировки сразу отклоняется с кодом ошибки <big><tt>ETIMEDOUT</big></tt>.
+
+<p> Пример: <b>условный прием сообщения</b>
+
+<pre>
+timer_timeout (CLOCK_REALTIME, _NTO_TIMEOUT_RECEIVE, 0, 0, 0);
+rcvid = MsgReceive (...);
+if ((rcvid < 0) && (errno == ETIMEDOUT) &lt;данные не готовы&gt;
+else if (rcvid > 0) &lt;данные приняты&gt;
+...
+
+</pre>
+
+
+</body>
+</html>
+

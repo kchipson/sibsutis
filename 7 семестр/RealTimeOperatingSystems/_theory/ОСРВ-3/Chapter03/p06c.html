@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.6. Нити</h3></td>
+<td valign="middle" align="right"><a href="p06b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06d.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Алгоритмы планирования нитей</font><br>
+
+<dl>
+<dt><big><tt>(1) FIFO</tt></big>
+<dd> <dl>
+     <dt>Нить выполняется до тех пор, пока она
+     <dd>1) не заблокирует себя
+     <dd>2) не будет вытеснена более приоритетной нитью
+     </dl>
+<dt><big><tt>(2) RR</tt></big>
+<dd> <dl>
+     <dt>Нить выполняется до тех пор, пока она
+     <dd>1) не заблокирует себя
+     <dd>2) не будет вытеснена более приоритетной нитью
+     <dd>3) не исчерпает выделенный timeslice
+     <dt>по умолчанию &nbsp;&nbsp;&nbsp;<font color=Blue><big><tt>RR, prio = 10</tt></big></font>
+     </dl>
+<dt><big><tt>(3) OTHER</tt></big>
+<dt><big><tt>(4) SPORADIC</tt></big>
+<dd> <dl>
+     <dt>Сложный алгоритм, характеризующийся параметрами:
+     <dd> нормальный приоритет <big><tt><b>N</b></tt></big>
+     <dd> пониженный приоритет <big><tt><b>L</b></tt></big>
+     <dd> начальный бюджет времени <big><tt><b>C</b></tt></big>
+     <dd> период пополнения бюджета <big><tt><b>T</b></tt></big>
+     </dl>
+</dl>
+
+
+
+</body>
+</html>
+

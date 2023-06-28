@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.7. Тайм-ауты на состояния блокировки (QNX)</h3></td>
+<td valign="middle" align="right"><a href="p07b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p><font color=Blue>Реализация задержек</font>
+
+<p> Если параметр <big><tt>flags = _NTO_TIMEOUT_NANOSLEEP</big></tt>,
+то вызов <big><tt>timer_timeout()</big></tt> блокирует нить
+на указанное время (блокрировка м.б. прервана сигналом).
+
+<p> Это используется для эффективной реализации на уровне микроядра функций типа
+<big><tt>sleep()</big></tt>:
+
+<pre>
+timer_timeout (CLOCK_REALTIME, _NTO_TIMEOUT_NANOSLEEP, 0, &ntime, &otime );
+</pre>
+
+Если <big><tt>otime != 0</big></tt> и сон прерван сигналом,
+то по указателю <big><tt>otime</big></tt> будет записано время оставшегося сна.
+
+
+
+</body>
+</html>
+

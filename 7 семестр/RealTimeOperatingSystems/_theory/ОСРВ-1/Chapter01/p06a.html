@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.6. Интерпретатор команд - Shell</h3></td>
+<td valign="middle" align="right"><a href="p06.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06a1.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<dl><dt><font color=Blue>Некоторые внутренние команды</font><dd>
+  <dl>
+  <dt><font color=Purple><b>. script param1 param2 ...</b></font> &nbsp;&nbsp;
+     выполнение скрипта внутри текущего Shella
+  <dt><font color=Purple><b>echo str</b></font> &nbsp;&nbsp; печать строки str
+  <dt><font color=Purple><b>cd dir</b></font> &nbsp;&nbsp; изменение рабочего каталога
+  <dt><font color=Purple><b>pwd</b></font> &nbsp;&nbsp; печать полного имени рабочего каталога
+  <dt><font color=Purple><b>exit</b></font> &nbsp;&nbsp; завершение работы Shella
+  </dl>
+</dl>
+
+<dl><dt><font color=Blue>Запуск внешних программ с ожиданием завершения</font><dd>
+  <dl>
+  <dt><font color=Purple><b>prog|com param1 param2 ...</b></font>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PATH)
+  <dt><font color=Purple><b>/dir1/dir2/.../prog param1 param2 ...</b></font>
+  <dt>Запуск программы из текущего каталога:&nbsp;&nbsp; 
+    <font color=Purple><b>./prog ...</b></font>
+  </dl>
+</dl>
+
+<dl><dt><font color=Blue>Запуск внешних программ без ожидания их завершения</font>
+  <dl>
+  <dt><font color=Purple><b>prog|com param1 param2 ... &amp;</b></font>&nbsp;
+  <dt><font color=Purple><b>/dir1/dir2/.../prog param1 param2 ... &amp;</b></font>
+  </dl>
+</dl>
+
+<dl><td>Точно также могут быть запущены и скрипты. Однако:
+    <dd>1) флаг <b>x</b>
+    <dd>2) новая копия Shella
+</dl>
+
+</body>
+</html>
+

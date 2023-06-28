@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 9</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>9.4. Диски и разделы</h3></td>
+<td valign="middle" align="right"><a href="p04b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04d.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Разделы (partitions)</font>
+
+<p> Структура описателя раздела:<br><br>
+ 
+<table>
+<tr><td>Маркер активности<td>&nbsp;&nbsp;<td> 1 байт
+<tr><td>Цилиндр, головка, сектор (CHS) начала раздела<td> <td> 3 байта
+<tr><td>Тип раздела или файловой системы  <td> <td> 1 байт
+<tr><td>Цилиндр, головка, сектор (CHS) конца раздела<td> <td> 3 байта
+<tr><td>Номер начального сектора раздела  <td> <td> 4 байта
+<tr><td>Количество секторов в разделе<td> <td> 4 байта
+</table>
+
+<p> При логической адресации диска (LBA) параметры CHS не используются.
+
+</body>
+</html>
+

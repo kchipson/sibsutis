@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>VinGraph</title>
+<link href="pg8.html" rel="NEXT">
+<link href="pg6.html" rel="PREVIOUS">
+<meta name="description" content="Библиотека VinGraph">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg6.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg8.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<h1><a name="GET">Определение текущих параметров графических элементов</a></h1>
+
+<p>Вообще говоря, параметры всех графических элементов и самого графического
+терминала находятся под контролем программы пользователя.
+Но все же в некоторых случаях, особенно при работе множества нитей,
+бывает удобно запросить информацию о состоянии непосредственно у
+графического элемента. Такая информация может также понадобиться при
+отладке программы.
+</p>
+
+<p>В принципе графический элемент может рассказать о
+себе все. Но в настоящие время библиотека VinGraph предоставляет только
+следующие четыре функции для определения состояния элемента:
+</p>
+
+<dl>
+<dt><tt>int <a href="getcolor.html">GetColor</a>(int ident)</tt></dt>
+<dd>Возвращает цвет элемента.
+</dd>
+<dt><tt>int <a href="getfill.html">GetFill</a>(int ident)</tt></dt>
+<dd>Возвращает цвет заполнения элемента.
+</dd>
+<dt><tt>tPoint <a href="getpos.html">GetPos</a>(int ident)</tt></dt>
+<dd>Возвращает точку, задающую положение элемента в окне терминала
+или внутри рисунка (в зависимости от того, как был создан элемент).
+</dd>
+<dt><tt>tPoint <a href="getdim.html">GetDim</a>(int ident)</tt></dt>
+<dd>Возвращает точку, содержащую ширину и высоту элемента.
+</dd>
+</dl>
+
+<p>Приведем небольшой пример использования этих функций.
+Следующий фрагмент  программы выводит на обычный  терминал
+параметры окна графического терминала:
+</p>
+
+<pre>int fillcolor;
+tPoint pos, dim;
+fillcolor = GetFill (0);
+pos = GetPos (0);
+dim = GetDim (0);
+printf ("Graphic Terminal VG:\n\n"
+        "  position   = %d, %d\n"
+        "  dimensions = %d x %d\n"
+        "  fill color = %d\n",
+        pos.x, pos.y, dim.x, dim.y, fillcolor);
+</pre>
+
+<p>Результат выглядит следующим образом:
+</p>
+
+<pre>Graphic Terminal VG:
+
+  position   = 100, 100
+  dimensions = 640 x 480
+  fill color = 0
+</pre>
+
+<p>Таковы параметры терминала VinGraph, установленные по умолчанию.
+</p>
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg6.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg8.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
+

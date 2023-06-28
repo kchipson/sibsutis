@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.5. Построение отображений</h3></td>
+<td valign="middle" align="right"><a href="p05a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p05c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<dl>
+<dt><big><tt>flags</tt></big>
+<dd><dl><dt>вид и тип отображения:
+<dd><big><tt>MAP_SHARED</tt></big> &nbsp;&nbsp;разделяемое
+<dd><big><tt>MAP_PRIVATE</tt></big> частное
+<dd><big><tt>MAP_ANON</tt></big> &nbsp;&nbsp;&nbsp;&nbsp;анонимное
+<dd><big><tt>MAP_PHYS</tt></big> &nbsp;&nbsp;&nbsp;&nbsp;с заданием физического адреса
+</dl>
+</dl>
+
+
+<dl>
+<dt><big><tt>fd</tt></big>
+<dd>дескриптор файла (-1 для анонимных отображений)
+</dl>
+
+
+<dl>
+<dt><big><tt>offset</tt></big>
+<dd>смещение в файле либо физический адрес
+</dl>
+
+<pre>
+
+</pre>
+
+<p>Функция возвращает виртуальный адрес отображенной области<br> или
+<font color=Purple><big><tt>-1 = MAP_FAILED</tt></big></font> в случае ошибки.
+
+</body>
+</html>
+

@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>VinGraph</title>
+<link href="pg9.html" rel="NEXT">
+<link href="pg7.html" rel="PREVIOUS">
+<meta name="description" content="Библиотека VinGraph">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg7.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg9.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<h1><a name="INPUT">Ввод с клавиатуры</a></h1>
+
+<p>Для ввода символа с клавиатуры, когда активно окно терминала
+VinGraph, используется функция
+<tt>char&nbsp;<a href="input.html">InputChar</a>()</tt>.
+Эта функция ждет нажатия на клавишу и возвращает введенный символ.
+Функция работает в режиме односимвольного ввода 
+без эхо печати (сырой режим в терминологии терминалов UNIX).
+При нажатии управляющих клавиш формируются нестандартные коды.
+Чтобы узнать коды клавиш, возвращаемые функцией 
+<tt>InputChar()</tt>, рекомендуем использовать следующую программу:
+</p>
+
+<pre>#include &lt;stdio.h&gt;
+#include &lt;vingraph.h&gt;
+
+int main ()
+  {
+  char c, str [100];
+  ConnectGraph ();
+  Text (20, 20, "Press a key");
+  int mytext = Text (20, 40, "");
+  while (1)
+    {
+    c = InputChar ();
+    if (c == ' ') break;
+    sprintf (str, "Code = %d", c);
+    SetText (mytext, str);
+    }
+  CloseGraph ();
+  return 0;
+  }
+</pre>
+
+<p>Вы можете запустить эту программу прямо сейчас
+(<tt>exinput.demo</tt>).
+Для знатоков Си отметим, что выход из программы производится путем
+нажатия на клавишу пробела.
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg7.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg9.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
+

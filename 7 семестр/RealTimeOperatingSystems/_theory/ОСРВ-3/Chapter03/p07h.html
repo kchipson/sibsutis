@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.7. Разделяемые объекты и библиотеки</h3></td>
+<td valign="middle" align="right"><a href="p07g.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07i.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p><font color=Blue>Инфраструктура для PIC</font><br>
+
+<p> Для работы с таблицами GOT и PLT программа ld предлагает следующие конструкции идентификаторов:
+
+
+<dl>
+<dt> <big><tt><b>name@GOT</b></tt></big>
+<dd> индекс в таблице GOT для адреса глобальной переменной 
+или функции с именем <big><tt>name</tt></big>
+<dt> <big><tt><b>name@GOTOFF</b></tt></big>
+<dd> смещение от начала таблицы GOT до метки <big><tt>name</tt></big>
+внутри разделяемого объекта
+<dt> <big><tt><b>name@PLT</b></tt></big>
+<dd> адрес точки входа таблицы PLT для глобальной функции с именем
+<big><tt>name</tt></big>
+</dl>
+
+<p> При работе с таблицами предполагается, что регистр 
+<big><tt><b>%ebx</b></tt></big> указывает на начало таблицы GOT.
+
+
+</body>
+</html>
+

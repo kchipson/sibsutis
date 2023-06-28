@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.8. Сеть Qnet</h3></td>
+<td valign="middle" align="right"><a href="p08.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p09.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue> Как узнать параметры для ConnectAttach()</font>
+
+
+<table>
+<tr>
+<td><big><tt><b>nd</b></tt></big>
+<td valign="top"><big><tt><b>#include &lt;sys/netmgr.h&gt;<br>
+   int netmgr_strtond (const char *nodename, 0);</b></tt></big>
+<tr>
+<td><big><tt><b>pid<br>chid&nbsp;&nbsp;&nbsp;</b></tt></big>
+<td>через файл в <big><tt>/dev/shmem</tt></big>
+</table>
+
+
+<p><u>процесс на узле "qnx425-1"</u>
+
+<pre>
+chid = ChannelCreate (0);
+pid = getpid ();
+fd = open ("/dev/shmem/NAME", O_CREAT+O_RDWR, 0666);
+write (fd, &pid, 4), write (fd, &chid, 4);
+...
+</pre>
+
+<p><u>процесс на узле "qnx425-2"</u>
+
+<pre>
+nd = netmgr_strtond ("qnx425-1", 0);
+
+fd = open ("/net/qnx425-1/dev/shmem/NAME", O_RDWR);
+read (fd, &pid, 4), read (fd, &chid, 4);
+
+coid = ConnectAttach (nd, pid, chid, 0, 0);
+...
+</pre>
+
+
+
+</body>
+</html>
+

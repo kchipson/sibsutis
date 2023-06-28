@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.9. Права доступа к файлам и каталогам</h3></td>
+<td valign="middle" align="right"><a href="p09.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p09b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Маска пользователя</font> <big><tt>umask</tt></big>
+(1 означает сброс соответствующего флага при создании файла):
+</p>
+
+<p>
+<big><tt><b>umask 8-число</b></tt></big> &nbsp;&nbsp; установка маски<br>
+<big><tt><b>umask</b></tt></big> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; печать значения маски
+</p>
+
+<dl>
+<dt><big><tt><b>umask 022</b></tt></big><dd>во вновь создаваемых файлах будут отсутствовать права
+на запись для group и other.
+</dl>
+
+<pre>
+
+</pre>
+
+<font color=Blue>Изменение флагов</font> доступа (это может сделать только <b>владелец</b> файла):
+
+<p>
+<big><tt><b>chmod 8-число file1 file2 ...</b></tt></big>
+</p>
+
+<dl>
+<dt><big><tt><b>chmod 440 *</b></tt></big><dd> устанавливает флаги в состояние
+<big><tt><b>r--r-----</b></tt></big>
+для всех файлов в рабочем каталоге.
+</dl>
+
+
+</body>
+</html>
+

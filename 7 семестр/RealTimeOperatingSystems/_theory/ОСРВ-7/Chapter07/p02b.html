@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.2. Часы стандарта POSIX</h3></td>
+<td valign="middle" align="right"><a href="p02a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p02c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Системные функции для работы с часами</font>
+
+
+<pre><big><tt><b>
+#include &lt;time.h&gt;
+
+struct timespec {
+  int tv_sec, tv_nsec };
+  
+</b></tt></big></pre>
+
+<dl>
+<dt><big><tt><b>int time (0);</b></tt></big>
+<dd> возвращает текущее системное время в секундах<br><br>
+<dt><big><tt><b>clock_gettime (int clockid, struct timespec* ts);</b></tt></big>
+<dd> считывает показание часов <big><tt>clockid</tt></big> в структуру по указателю
+     <big><tt>ts</tt></big><br><br>
+<dt><big><tt><b>clock_getres (int clockid, struct timespec* ts);</b></tt></big>
+<dd> записывает величину тика часов <big><tt>clockid</tt></big> в структуру по указателю
+     <big><tt>ts</tt></big><br><br>
+<dt><big><tt><b>clock_settime (int clockid, struct timespec* ts);</b></tt></big>
+<dd> устанавливает новое время из структуры по указателю
+     <big><tt>ts</tt></big> в часы <big><tt>clockid</tt></big>.
+</dl>
+
+
+</body>
+</html>
+

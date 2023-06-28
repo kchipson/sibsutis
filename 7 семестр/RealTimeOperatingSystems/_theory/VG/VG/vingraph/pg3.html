@@ -1,0 +1,158 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>VinGraph</title>
+<link href="pg4.html" rel="NEXT">
+<link href="pg2.html" rel="PREVIOUS">
+<meta name="description" content="Библиотека VinGraph">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg2.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg4.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1>Функции рисования</h1>
+
+<p>Библиотека VinGraph позволяет выводить на экран следующие элементы графики:
+точки, прямые и ломаные линии, прямоугольники, многоугольники, окружности,
+эллипсы, дуги, а также сетки, текстовые надписи и изображения. Кроме того, из этих элементов
+можно составлять новые композитные элементы (рисунки). Вот пример окна графического
+терминала с перечисленными выше элементами:
+</p>
+
+<h1><img border=0 align="center" src="images/elems.jpg" alt="QQ"></h1>
+<br clear="all">
+
+<p>Координаты точек, определяющих местоположение и размер графических элементов,
+задаются положительными целыми числами. Начало координат, т.е. точка <tt>(0,0)</tt>,
+соответствует верхнему левому углу рабочей области окна.
+Ось абсцисс направлена вправо, ось ординат -- вниз.
+Заметим,  что вы можете рисовать за пределами окна. При расширении окна,
+например, с помощью мыши, вы увидите нарисованные там графические элементы.
+</p>
+
+
+<p>Познакомимся кратко с функциями рисования.
+</p>
+
+<dl>
+<dt><tt><a href="pixel.html">Pixel</a>(int x, int y)</tt></dt>
+<dd>Рисует точку с координатами <tt>(x,&nbsp;y)</tt>.
+</dd>
+<dt><tt><a href="line.html">Line</a>(int x1, int y1, int x2, int y2)</tt></dt>
+<dd>Рисует прямую линию, соединяющую точки <tt>(x1,&nbsp;y1)</tt> и <tt>(x2,&nbsp;y2)</tt>.
+</dd>
+<dt><tt><a href="polyline.html">Polyline</a>(const tPoint points [], int npoints)</tt></dt>
+<dd>Рисует ломаную линию. При вызове функции первый параметр содержит
+адрес массива точек, задающих ломаную, второй параметр -- количество точек.
+Каждая точка описывается структурой 
+<tt><a href="tpoint.html">tPoint</a></tt>, состоящей из двух
+элементов: <tt>short&nbsp;int&nbsp;x</tt> и <tt>short&nbsp;int&nbsp;y</tt>,
+которые содержат соответствующие координаты точки.
+</dd>
+<dt><tt><a href="rect.html">Rect</a>(int x, int y, int w, int h)</tt></dt>
+<dd>Рисует прямоугольник. Точка <tt>(x,&nbsp;y)</tt> задает левую верхнюю вершину прямоугольника,
+а параметры <tt>w</tt> и <tt>h</tt> -- соответственно его ширину и высоту.
+</dd>
+<dt><tt><a href="polygon.html">Polygon</a>(const tPoint points [], int npoints)</tt></dt>
+<dd>Рисует многоугольник. Смысл параметров то же, что и в функции <tt>Polyline()</tt>,
+но при рисовании первая точка соединяется с последней, т.е.  получается замкнутая
+ломаная линия.
+</dd>
+<dt><tt><a href="ellipse.html">Ellipse</a>(int x, int y, int w, int h)</tt></dt>
+<dd>Рисует эллипс. Параметры функции задают прямоугольник,
+в который вписывается эллипс.
+Заметим, что в библиотеке нет особой функции, рисующей окружность.
+Окружность может быть нарисована как эллипс, вписанный в квадрат.
+</dd>
+<dt><tt><a href="arc.html">Arc</a>(int x, int y, int w, int h, int sangle, int eangle)</tt></dt>
+<dd>Рисует дугу, проходящую вдоль эллипса, задаваемого первыми четырьмя
+параметрами. Параметры <tt>sangle</tt> и <tt>eangle</tt> определяют соответственно
+углы начала и конца дуги. Углы задаются в десятых долях градуса и измеряются
+в направлении против часовой стрелки.
+</dd>
+<dt><tt><a href="grid.html">Grid</a>(int x, int y, int w, int h, int nrows, int ncols)</tt></dt>
+<dd>Рисует сетку (пустую таблицу). Первые два параметра задают
+координаты левого верхнего угла таблицы, следующие два параметра --
+ширину и высоту,
+а параметры <tt>nrows</tt> и <tt>ncols</tt> -- количество строк и столбцов
+соответственно.
+</dd>
+<dt><tt><a href="text.html">Text</a>(int x, int y, const char *text)</tt></dt>
+<dd>Изображает текст, начиная с позиции <tt>(x,&nbsp;y)</tt>. 
+Параметр <tt>text</tt>
+передает адрес строки, завершающейся нулевым байтом.
+</dd>
+<dt><tt><a href="image.html">Image32</a>(int x, int y, int w, int h, const int *image)</tt></dt>
+<dt><tt><a href="image.html">Image24</a>(int x, int y, int w, int h, const int *image)</tt></dt>
+<dd>Выводит произвольное изображение (картинку).
+Точки <tt>(x,&nbsp;y)</tt> задают
+левый верхний угол картинки, а параметры <tt>w</tt> и <tt>h</tt> -- ее ширину и высоту. 
+Само изображение задается в виде матрицы пикселов через указатель <tt>image</tt>.
+</dd>
+</dl>
+
+
+<p>Вот фрагмент   программы,  с  помощью которого были нарисованы представленные
+выше графические элементы:
+</p>
+
+<pre>Text (10, 10, "Pixel"); 
+Pixel (20, 40);
+
+Text (70, 10, "Line"); 
+Line (70, 50, 130, 90);
+
+Text (140, 10, "Polyline");
+tPoint p1 [] = { {140, 100}, {200, 40}, {200, 100}, {155, 55} };
+Polyline (p1, 4);
+
+Text (210, 10, "Rect");
+Rect (210, 40, 60, 60);
+
+Text (280, 10, "Polygon");
+tPoint p2 [] = { {280, 100}, {310, 40}, {340, 100} };
+Polygon (p2, 3);
+
+Text (385, 10, "Ellipse");
+Ellipse (350, 40, 60, 60);
+Ellipse (420, 50, 60, 40);
+
+Text (490, 10, "Arc");
+Arc (490, 40, 60, 60, 0, 1800);
+
+Text (560, 10, "Grid");
+Grid (560, 40, 60, 60, 3, 2);
+
+int *im_buf = (int*) malloc (60*60*4);
+for (int i = 0, c = 10; i < 60; i++, c += 0x010304)
+  for (int j = 0; j < 60; j++) im_buf [60*i + j] = c;
+Text (630, 10, "Image");
+Image32 (630, 40, 60, 60, im_buf);
+</pre>
+
+<p>Не правда ли, все просто?
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg2.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg4.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
+

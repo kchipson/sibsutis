@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.12. Терминалы ANSI</h3></td>
+<td valign="middle" align="right"><a href="p11.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p12a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<dl><dt><font color=Blue>Режимы ввода</font><dd>
+  <dl>
+  <dt><font color=Purple><b>сырой (raw)</b></font>
+  <dt><font color=Purple><b>приготовленный (cooked)</b></font>
+  </dl>
+</dl>
+
+
+<big><tt><b>#include &lt;/home/adm/raw.h&gt;</b></tt></big><br>
+<big><tt><b>setraw ()</b></tt></big> &nbsp;&nbsp;&nbsp;&nbsp;переводит терминал в сырой режим<br>
+<big><tt><b>c = getchar ()</b></tt></big>&nbsp;&nbsp;ввод символа<br>
+<big><tt><b>unsetraw ()</b></tt></big>&nbsp;&nbsp;восстанавливает приготовленный режим
+
+<pre>
+
+</pre>
+
+<dl><dt><font color=Blue>Консоли и псевдотерминалы</font><dd>
+  <dl>
+  <dt>В нашей конфигурации существуют 4 консоли (скрытые графической оболочкой)
+  <dd><font color=Purple><b>/dev/con1 ... /dev/con4</b></font>
+  <dt>и 8 псевдотерминалов (доступные в графической оболочке)
+  <dd><font color=Purple><b>/dev/ttyp0 ... /dev/ttyp7</b></font>
+  </dl>
+</dl>
+
+
+<p>Можно направить вывод какой-либо программы на конкретную консоль или псевдотерминал:</p>
+
+<dl><dt><big><tt><b>prog &gt; /dev/ttyp1</b></tt></big>
+
+</body>
+</html>
+

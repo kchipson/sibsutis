@@ -1,0 +1,167 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>EnlargeTo</title>
+<link href="setlwidth.html" rel="NEXT">
+<link href="enlarge.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="enlarge.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="setlwidth.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>EnlargeTo()</i></a></h1>
+
+<p>Изменяет положение и конфигурацию графического элемента</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+(1) void EnlargeTo (const tPoint points [], int npoints, int ident);
+
+(2) void EnlargeTo (int x, int y, int w, int h, int ident);</pre>
+
+<h2><a name="id3">Варианты:</a></h2>
+<pre>
+(1) void EnlargeTo (const tPoint points [], int npoints);
+
+(2) void EnlargeTo (int x, int y, int w, int h);
+</pre>
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>points</tt></dt>
+<dd>Массив точек, задающих новую конфигурацию графического элемента.
+</dd>
+
+<dt><tt>npoints</tt></dt>
+<dd>Количество точек в массиве <tt>points</tt>.
+</dd>
+
+<dt><tt>x, y</tt></dt>
+<dd>Кординаты новой точки привязки.
+</dd>
+
+<dt><tt>w</tt></dt>
+<dd>Ширина.
+</dd>
+
+<dt><tt>h</tt></dt>
+<dd>Высота.
+</dd>
+
+<dt><tt>ident</tt></dt>
+<dd>Идентификатор графического элемента.
+</dd>
+
+</dl>
+
+<h2><a name="id7">Библиотека:</a></h2>
+
+<p><tt>libvg.a</tt></p>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Функции изменяют положение и конфигурацию графического элемента.
+</p>
+
+<p>Функция первого вида наиболее универсальна и применима ко всем без исключения
+графическим элементам. Первый параметр (<tt>points</tt>) указывает на 
+массив структур <a href=tpoint.html><tt>tPoint</tt></a>,
+который описывает множество точек, задающих графический элемент.
+Второй параметр (<tt>npoints</tt>) определяет число элементов в массиве <tt>points</tt>.
+Действие функции следующим образом зависит от типа графического элемента:
+</p>
+
+<dl>
+<dt>Точка (пиксел)</dt>
+<dd>Если <tt>npoints=1</tt>, то точка просто изменяет свое положение на экране
+(или в рисунке). Если <tt>npoints&gt;1</tt>, то точка превращается в множество
+точек, ведущих себя как один графический элемент. Такое множество точек
+может быть, например, использовано для вывода точечного графика функции
+или траектории движения снаряда.
+
+</dd>
+<dt>Прямая линия</dt>
+<dd>Учитываются только две точки 
+<tt>points[0]</tt> и <tt>points[1]</tt> 
+(<tt>npoints=2</tt>), которые и определяют новое положение линии.
+</dd>
+
+<dt>Ломаная линия и многоугольник</dt>
+<dd>Массив <tt>points</tt> полностью переопределяет ломаную или многоугольник,
+т.е. изменяются не только координаты вершин, но и их число
+(число вершин может остаться таким же, стать больше или меньше).
+Другие параметры элемента (цвет и ширина линий, заполнение внутренней области)
+сохраняются.
+</dd>
+
+<dt>Прямоугольник, эллипс, дуга, таблица, окно графического терминала</dt>
+<dd>Новое положение и размеры определяются первыми двумя точками.
+Точка <tt>points[0]</tt> задает левый верхний угол,
+а точка <tt>points[1]</tt> -- правый нижний угол
+описывающего прямоугольника. Все другие параметры графического элемента
+сохраняются.
+</dd>
+
+</dl>
+
+<p>Функция второго вида может использоваться вместо функции первого вида,
+когда <tt>npoints=2</tt>. Ее параметры задают
+левый верхний угол, ширину и высоту описывающего прямоугольника.
+</p>
+
+<p>Если параметр <tt>ident</tt> равен нулю или опущен, то функции применяются к
+окну графического терминала.
+</p>
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+<table border>
+<tr><th><a name="id16">Безопасность:</a></th><th></th></tr>
+<tr><td>Точка завершения</td>
+    <td>Да</td>
+<tr><td>Обработчик прерывания</td>
+    <td>Нет</td>
+<tr><td>Обработчик сигнала</td>
+    <td>Да</td>
+<tr><td>Нить</td>
+    <td>Да</td>
+</table>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p>
+<tt><a href="enlarge.html"><tt>Enlarge</a>()</tt>,
+<tt><a href="move.html"><tt>Move</a>()</tt>,
+<tt><a href="moveto.html"><tt>MoveTo</a>()</tt>,
+<tt><a href="getpos.html"><tt>GetPos</a>()</tt>,
+<tt><a href="getdim.html"><tt>GetDim</a>()</tt>
+</p>
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="enlarge.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="setlwidth.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

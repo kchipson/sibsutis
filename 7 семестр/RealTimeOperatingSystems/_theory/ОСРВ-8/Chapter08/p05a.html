@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 8</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>8.5. Несистемные средства реализации КС</h3></td>
+<td valign="middle" align="right"><a href="p05.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p05b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Атомарные операции</font> (продолжение)
+
+<pre><big><tt><b>#include &lt;atomic.h&gt
+
+void atomic_clr (volatile unsigned * loc, unsigned bits);
+    </b> выполняет (*loc) &= ~bits
+     (обнуляет биты, соответствующие единицам в bits)<b>
+unsigned atomic_clr_value (volatile unsigned * loc, unsigned bits);
+    </b> выполняет (*loc) &= ~bits, возвращая предыдущее значение (*loc)<b>
+
+void atomic_set (volatile unsigned * loc, unsigned bits);
+    </b> выполняет (*loc) |= bits
+     (устанавливает биты, соответствующие единицам в bits)<b>
+unsigned atomic_set_value (volatile unsigned * loc, unsigned bits);
+    </b> выполняет (*loc) |= bits, возвращая предыдущее значение (*loc)<b>
+
+void atomic_toggle (volatile unsigned * loc, unsigned bits);
+    </b> выполняет (*loc) ^= bits 
+     (инвертирует биты, соответствующие единицам в bits)<b>
+unsigned atomic_toggle_value (volatile unsigned * loc, unsigned bits );
+    </b> выполняет (*loc) ^= bits, возвращая предыдущее значение (*loc)<b>
+</b></tt></big></pre>
+
+
+
+
+
+</body>
+</html>
+

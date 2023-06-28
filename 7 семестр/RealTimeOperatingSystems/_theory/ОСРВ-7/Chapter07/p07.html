@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.7. Тайм-ауты на состояния блокировки (QNX)</h3></td>
+<td valign="middle" align="right"><a href="p06c.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<pre><big><b>
+#include &lt;sys/neutrino.h&gt;
+#include &lt;time.h&gt;
+
+timer_timeout (int clockid, int flags, const struct sigevent* ev,
+               const struct timespec* ntime, struct timespec* otime);
+</b></big></pre>
+
+<p> Назначает тайм-аут на состояние блокировки.
+
+<p> Параметр <big><tt>clockid</tt></big> задает тип часов, по которым будет отмеряться тайм-аут.
+
+<p> <big><tt>flags</tt></big> определяет, какое или какие состояния блокировки будут задействованы;
+также может содержать флаг <big><tt>TIMER_ABSTIME</tt></big>, означающий, что тайм-аут указан
+в виде абсолютного времени.
+
+<p> <big><tt>ev</tt></big> содержит указатель на описание события, которое случится по тайм-ауту.
+Если <big><tt>ev = 0</tt></big>, то в качестве события выбирается <big><tt>SIGEV_UNBLOCK</tt></big>
+(разблокировка нити).
+
+<p> Величина тайм-аута задается параметром <big><tt>ntime</tt></big> (в секундах и наносекундах).
+По указателю <big><tt>otime</tt></big> записывается реальное время ожидания
+
+
+<p> <img src="../pointing.gif"> <b>Таймер запускается автоматически при вхождении нити
+в состояние блокировки </b> (указанное в параметре <big><tt>flags</tt></big>).
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.3. Каналы и соединения</h3></td>
+<td valign="middle" align="right"><a href="p03.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p03b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p>
+<font color=Blue>Проблема инверсии приоритетов</font>
+
+<p>
+Высокоприоритетная нить ждет, пока сервер обрабатывает сообщение от низкоприоритетной нити.
+
+<pre>
+
+</pre>
+
+<p>
+<font color=Blue>Решение проблемы инверсии приоритетов</font>
+
+<p>
+(1) Очередь сообщений <b>упорядочивается по приоритету</b> нитей, их пославших.
+
+<p>
+(2) Приоритет нити, получившей сообщение, <b>делается равным</b> приоритету нити, отправившей сообщение.
+
+<p>
+(3) Если нет нити, готовой принять сообщение, а в канал поступает сообщение от более
+приоритетной нити, то приоритет <b>всех</b> работающих нитей, ранее получавших сообщения
+по этому каналу, <b>повышается</b> до этого более высокого приоритета.
+
+</body>
+</html>
+

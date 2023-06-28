@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.2. Часы стандарта POSIX</h3></td>
+<td valign="middle" align="right"><a href="p01.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p02a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Часы реального времени</font>
+
+
+<p><big><tt><b>CLOCK_REALTIME</b></tt></big> (POSIX) -- часы реального времени с коррекцией
+
+<dl><dt> Содержат два поля типа <big><tt>int</tt></big>: <dd>число секунд, прошедших с 1 января 1970 г.
+<dd> число наносекунд в пределах текущей секунды.
+</dl>
+
+<p> Начальное значение времени определяется во время загрузки ОС по показаниям энергонезависимых часов.
+
+<p> Значение времени изменяется по каждому тику системного таймера.
+
+<pre>
+
+</pre>
+
+<font color=Blue>Проблема 2000 года для POSIX-совместимых систем</font>
+
+<p>
+наступит в 2038 году, когда переполнится счетчик секунд.
+
+</body>
+</html>
+

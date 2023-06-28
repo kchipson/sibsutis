@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.12. Терминалы ANSI</h3></td>
+<td valign="middle" align="right"><a href="p12.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p13.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<dl><dt><font color=Blue>Управление экраном</font> осуществляется с помощью esc-последовательностей<br>
+(без пробелов, маленькие и большие буквы различаются, код esc = (033)<sub>8</sub>):<dd>
+  <table cellspacing=5>
+  <tr><td><font color=Purple><tt><b>\033[2J</b></tt></font> <td>стирание экрана
+  <tr><td><font color=Purple><tt><b>\033[=nF</b></tt></font> <td>установить цвет символов n = 0 .. 7
+  <tr><td><font color=Purple><tt><b>\033[=nG</b></tt></font> <td>установить цвет фона n = 0 .. 7
+  <tr><td><font color=Purple><tt><b>\033[?25l</b></tt></font> <td>сделать курсор невидимым
+  <tr><td><font color=Purple><tt><b>\033[?25h</b></tt></font> <td>сделать курсор видимым
+  <tr><td valign=top><font color=Purple><tt><b>\033[y;xH&nbsp;&nbsp;&nbsp;</b></tt></font>
+    <td>установить курсор в позицию (x,y)<br>
+      y - номер строки (с 1, 10-ичное число),  x - номер столбца (с 1)<br>
+      стандартный размер экрана - 80 х 25
+  </table>
+</dl>
+
+
+
+</body>
+</html>
+

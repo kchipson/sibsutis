@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 9</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>9.2. Пространство файловых дескрипторов</h3></td>
+<td valign="middle" align="right"><a href="p01.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p02a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Файловый дескриптор (fd)</font> -- целое число 0, 1, 2, ...,
+которое возвращается функцией <big><tt>open()</tt></big> и используется в последующих
+запросах ввода-вывода.
+
+<p> Комбинация fd и sсoid (идентификатор соединения с сервером) указывает на
+блок управления файлом -- open control block (OCB).
+
+<center>
+<p><img src="scofdocb.jpg">
+</center>
+
+<p> OCB содержит активную информацию об открытом файле (в частности, текущую позицию
+для чтения/записи).
+
+</body>
+</html>
+

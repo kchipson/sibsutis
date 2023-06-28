@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Лабораторная работа №10</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body><center>
+	<form action="z10-2.php" method="GET">
+		<table border="1" >
+			<tr>
+				<td rowspan="2" align="center"><i>Таблицы</i></td>
+				<th colspan="2" align="center">Отобразить</th>
+			</tr>
+			<tr>
+				<th align="center"><i>Структуру</i></th>
+				<th align="center"><i>Содержимое</i></th>
+			</tr>
+			<tr>
+				<th><b>Продавцы (sal)</b></th>
+				<td align="center"><input type="checkbox" name="structure[]" value="sal"></td>
+				<td align="center"><input type="checkbox" name="content[]" value="sal"></td>
+			</tr>
+			<tr>
+				<th><b>Покупатели (cust)</b></th>
+				<td align="center"><input type="checkbox" name="structure[]" value="cust"></td>
+				<td align="center"><input type="checkbox" name="content[]" value="cust"></td>
+			</tr>
+			<tr>
+				<th><b>Заказы (ord)</b></th>
+				<td align="center"><input type="checkbox" name="structure[]" value="ord"></td>
+				<td align="center"><input type="checkbox" name="content[]" value="ord"></td>
+			</tr>
+		</table>
+		<br>
+		<input type="submit" value="Вывести">
+	</form>
+	</center>
+</body>
+</html>

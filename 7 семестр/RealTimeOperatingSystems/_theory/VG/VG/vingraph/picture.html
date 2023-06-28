@@ -1,0 +1,142 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Picture</title>
+<link href="rgb.html" rel="NEXT">
+<link href="settext.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="settext.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="rgb.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>Picture()</i></a></h1>
+
+<p>Создает рисунок</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+int Picture (int x, int y);</pre>
+
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>x, y</tt></dt>
+<dd>Координаты точки привязки рисунка.
+</dd>
+
+</dl>
+
+<h2><a name="id7">Библиотека:</a></h2>
+
+<p><tt>libvg.a</tt></p>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Функция создает контейнер, для размещения в нем
+графических элементов. Для удобства терминологии
+такой контейнер называется рисунком.
+Рисунок можно перемещать по экрану как единое целое,
+а также скрывать и показывать. Изменение конфигурации и
+размеров рисунка возможно только путем изменения
+конфигурации и размеров составляющих его элементов.
+</p>
+
+<p>Для включения в состав рисунка графического элемента
+необходимо использовать  идентификатор рисунка в
+качестве значения параметра <tt>parent</tt> функции рисования.
+Координаты элементов, входящих в состав рисунка,
+исчисляются локально по отношению к рисунку:
+за начало отсчета берется левый верхний угол рисунка.
+</p>
+
+<p>При включении элементов в состав рисунка они сразу не отображаются
+на экране. Чтобы показать созданный и заполненный графикой рисунок,
+необходимо вызвать функцию 
+<tt><a href="show.html">Show</a>()</tt>.
+</p>
+
+<p>Следующий фрагмент программы
+</p>
+
+<pre>int p = Picture (100, 100);
+int c = RGB (255, 0, 0);
+Ellipse (0, 0, 60, 60, c, p);
+Line (30, 30, 30,  1, c, p);
+Line (30, 30, 56, 45, c, p);
+Line (30, 30,  4, 45, c, p);
+Show (p);
+</pre>
+
+<p>создает такой рисунок:
+</p>
+
+<h1><img border=0 align="center" src="./images/expict.jpg" alt="QQ"></h1>
+<br clear="all">
+
+<h2><a name="id11">Возвращаемое значение:</a></h2>
+
+<p>Идентификатор созданного графического элемента либо -1 в случае ошибки.</p>
+
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+<table border>
+<tr><th><a name="id16">Безопасность:</a></th><th></th></tr>
+<tr><td>Точка завершения</td>
+    <td>Да</td>
+<tr><td>Обработчик прерывания</td>
+    <td>Нет</td>
+<tr><td>Обработчик сигнала</td>
+    <td>Да</td>
+<tr><td>Нить</td>
+    <td>Да</td>
+</table>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p>
+<a href="pixel.html"><tt>Pixel</a>()</tt>,
+<a href="line.html"><tt>Line</a>()</tt>,
+<a href="polyline.html"><tt>Polyline</a>()</tt>,
+<a href="polygon.html"><tt>Polygon</a>()</tt>,
+<a href="rect.html"><tt>Rect</a>()</tt>,
+<a href="ellipse.html"><tt>Ellipse</a>()</tt>,
+<a href="arc.html"><tt>Arc</a>()</tt>,
+<a href="grid.html"><tt>Grid</a>()</tt>,
+<a href="move.html"><tt>Move</a>()</tt>,
+<a href="moveto.html"><tt>MoveTo</a>()</tt>,
+<a href="show.html"><tt>Show</a>()</tt>,
+<a href="hide.html"><tt>Hide</a>()</tt>,
+<a href="delete.html"><tt>Delete</a>()</tt>,
+<a href="clear.html"><tt>Clear</a>()</tt>
+</p>
+
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="settext.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="rgb.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

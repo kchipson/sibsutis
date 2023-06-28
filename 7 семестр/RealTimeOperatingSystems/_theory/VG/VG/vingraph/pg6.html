@@ -1,0 +1,193 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>VinGraph</title>
+<link href="pg7.html" rel="NEXT">
+<link href="pg5.html" rel="PREVIOUS">
+<meta name="description" content="Библиотека VinGraph">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg5.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg7.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<h1><a name="ANIM">Анимация</a></h1>
+
+<p>Библиотека VingGaph позволяет изменять такие параметры
+ отображаемых элементов, как цвет, местоположение, размер и др.
+Это позволяет строить изображения, динамически меняющиеся по
+алгоритму пользователя. 
+</p>
+
+<table>
+<tr><td><img src="imagelib/pointing.gif" alt="Note:"></td>
+<td>Точкой привязки графического элемента считается левая верхняя
+вершина прямоугольника, в который вписан этот элемент.
+</td></tr>
+</table>
+
+<p>Рассмотрим функции, изменяющие текущие параметры графических элементов.
+Во всех этих функциях графические элементы указываются посредством своего
+идентификатора <tt>ident</tt>.
+</p>
+
+<dl>
+<dt><tt><a href="setcolor.html">SetColor</a>(int ident, int color)</tt></dt>
+<dd>Изменяет цвет элемента на <tt>color</tt>.
+</dd>
+<dt><tt><a href="fill.html">Fill</a>(int ident, int color)</tt></dt>
+<dd>Заполняет внутреннюю область элемента цветом <tt>color</tt>.
+Параметр <tt>color</tt> может быть опущен, в этом случае используется
+цвет, установленный в текущей нити с 
+помощью <tt>SetColor(int&nbsp;color)</tt>,
+как объяснялось в разделе <a href="pg4.html">об установке цвета</a>.
+Значение параметра <tt>color=-1</tt> 
+убирает заполнение, т.е. делает элемент прозрачным (как в начальном состоянии).
+Функция <tt>Fill()</tt> позволяет изменить цвет рабочей области
+окна графического терминала, если <tt>ident=0</tt>.
+
+<table>
+<tr><td><img src="imagelib/warning.gif" alt="Bug:"></td>
+<td>В QNX Neutrino 1.0 при работе терминала VinGraph в режиме <tt>VGOSC=0</tt>
+(см. раздел <a href="pg9.html">о терминале VinGraph</a>) функция <tt>Fill(0,&nbsp;color)</tt>
+заполняет окно терминала не полностью. Для устранения этой ошибки рекомендуется 
+использовать следующую последовательность действий:
+<pre>    Hide (0), Fill (0, color), Show (0);</pre>
+Указанная ошибка отсутствует в QNX Neutrino 2.0 и в режиме
+<tt>VGOSC=1</tt>. 
+</td></tr>
+</table>
+
+
+</dd>
+<dt><tt><a href="moveto.html">MoveTo</a>(int x, int y, int ident)</tt></dt>
+<dd>Передвигает  элемент в точку <tt>(x,&nbsp;y)</tt>.
+</dd>
+<dt><tt><a href="move.html">Move</a>(int ident, int dx, int dy)</tt></dt>
+<dd>Сдвигает элемент на <tt>dx</tt> точек по горизонтали
+и <tt>dy</tt> точек по вертикали. Параметры <tt> dx, dy </tt> могут
+быть положительными, отрицательными или нулевыми.
+</dd>
+<dt><tt><a href="enlarge.html">Enlarge</a>(int ident, int left, int up, int right, int down)</tt></dt>
+<dd>Увеличивает размер элемента на указанное количество точек
+влево, вверх, вправо и вниз (по порядку следования параметров).
+Если значение параметра отрицательно, то происходит уменьшение
+элемента в соответствующем направлении.
+</dd>
+<dt><tt><a href="enlarge.html">Enlarge</a>(int ident, int dx, int dy)</tt></dt>
+<dd>Производит центрированное увеличение элемента, т.е. увеличивает
+его на <tt>dx</tt> точек одновременно влево и вправо и на <tt>dy</tt> точек
+вверх и вниз. Если значение параметра отрицательно, то происходит
+уменьшение элемента по соответствующей оси.
+</dd>
+<dt><tt><a href="enlargeto.html">EnlargeTo</a>(int x, int y, int w, int h, int ident)</tt></dt>
+<dd>Изменяет положение и размеры элемента путем указания с помощью первых
+четырех параметров нового описывающего прямоугольника.
+Данная функция может также использоваться для изменения
+положения и размеров окна графического терминала (если <tt>ident=0</tt> или
+опущен).
+</dd>
+<dt><tt><a href="enlargeto.html">EnlargeTo</a>(const tPoint points [], int npoints, int ident)</tt></dt>
+<dd>Изменяет положение и конфигурацию ломаных линий и многоугольников, а также,
+как частный случай, всех элементов, которые можно определить двумя точками --
+координатами левой верхней и правой нижней вершин описывающего прямоугольника.
+Данная функция также оказывает особое влияние на точечный элемент,
+рисуемый с помощью функции <tt>Pixel()</tt>, превращая его
+во множество точек, не связанных линиями. Параметр <tt>points</tt> указывает
+на массив из <tt>npoints</tt> точек.
+</dd>
+<dt><tt><a href="setlwidth.html">SetLineWidth</a>(int ident, int width)</tt></dt>
+<dd>Изменяет толщину линий, которыми рисуется элемент.
+Толщина линий становится равной <tt>width</tt> пикселов.
+Рисование графических элементов толстыми линиями более трудоемко, т.к.
+требуется рассчитывать большее количество точек и особо обрабатывать стыковку
+линий и их окончание. Значение <tt>width=0</tt> выключает
+этот особый режим рисования.
+</dd>
+<dt><tt><a href="settext.html">SetText</a>(int ident, const char *text)</tt></dt>
+<dd>Заменяет текст в элементе, созданном с помощью функции <tt>Text()</tt>,
+на новый, задаваемый параметром <tt>text</tt>.
+</dd>
+</dl>
+
+<p>Рассмотрим два простых примера.
+</p>
+
+<p>Следующая программа рисует движущиеся квадрат и круг:
+</p>
+<pre>
+#include &lt;unistd.h&gt;
+#include &lt;vingraph.h&gt;
+
+int main ()
+  {
+  ConnectGraph ();
+  Fill (0, RGB (255, 242, 205));
+  int c1 = RGB (38, 176, 136);
+  int f1 = Rect (10, 200, 50, 50, 0, c1);
+  Fill (f1, c1);
+  int c2 = RGB (48, 200, 240);
+  int f2 = Ellipse (580, 200, 50, 50, c2);
+  Fill (f2, c2);
+  delay (1000);
+  for (int i = 320; i; i--)
+    Move (f1, 2, 0), Move (f2, -3, 0), delay (20);
+  CloseGraph ();
+  return 0;
+  }
+</pre>
+
+<p>Вы можете посмотреть, как работает эта программа,
+запустив файл <tt>exmove.demo</tt>.
+</p>
+
+<p>Следующая программа рисует расширяющиеся квадрат и окружность:
+</p>
+<pre>
+#include &lt;unistd.h&gt;
+#include &lt;vingraph.h&gt;
+
+int main ()
+  {
+  ConnectGraph ();
+  Fill (0, RGB (255, 242, 205));
+  int f1 = Rect (280, 190, 50, 50, 0, RGB (38, 176, 136));
+  int f2 = Ellipse (370, 210, 200, 200, RGB (48, 200, 240));
+  delay (1000);
+  for (int i = 240; i; i--)
+    Enlarge (f1, 2, 2), Enlarge (f2, -1, -1), delay (20);
+  CloseGraph ();
+  return 0;
+  }
+</pre>
+,
+<p>Вы можете посмотреть, как работает эта программа,
+запустив файл <tt>exenlarge.demo</tt>.
+Обратите внимание на нештатное поведение окружности, когда она продолжает
+"умешьшаться" после достижения нулевого размера.
+</p>
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg5.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg7.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+
+
+
+</body>
+</html>
+

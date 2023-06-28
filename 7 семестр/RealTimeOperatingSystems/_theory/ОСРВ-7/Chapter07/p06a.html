@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 7</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>7.6. Функции таймерной поддержки (POSIX)</h3></td>
+<td valign="middle" align="right"><a href="p06.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<pre><big><b>
+#include &lt;time.h&gt;
+
+timer_create (int clockid, struct sigevent* ev, int* timerid);
+</b></big></pre>
+
+<p> Создает таймер.
+
+<p> Параметр <big><tt>clockid</tt></big> задает часы, к которым привязывается
+таймер. 
+
+<p>Параметр <big><tt>ev</tt></big> указывает на структуру с описанием события,
+которое будет порождаться при срабатывании таймера. Если <big><tt>ev=0</tt></big>,
+то таймер будет посылать сигнал <big><tt>SIGALRM</tt></big>.
+
+<p> По адресу <big><tt>timerid</tt></big> записывается идентификатор созданного таймера.
+
+<pre>
+
+</pre>
+
+<pre><big><b>
+timer_delete (int timerid);
+</b></big></pre>
+
+<p> Останавливает и удаляет таймер.
+
+
+
+
+</body>
+</html>
+

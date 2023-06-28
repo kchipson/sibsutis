@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.6. Интерпретатор команд - Shell</h3></td>
+<td valign="middle" align="right"><a href="p05.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+Интерпретаторы: &nbsp;&nbsp; <b><big><code>Bourne, <font color=Blue>Korn</font>, C, Bourne-Again, ...
+</code></big></b><br>
+Программа на языке интерпретатора - <b>скрипт</b>.
+
+<dl><dt><font color=Blue>Редактирование командной строки</font><dd>
+  <dl>
+  <dt><font color=Purple><b>&#X2191;&#X2193;</b></font> &nbsp;&nbsp; вызов ранее введенных команд
+  <dt><font color=Purple><b>Ctrl-U</b></font> &nbsp;&nbsp; аннулировать команду
+  <dt><font color=Purple><b>EscEsc</b></font> &nbsp;&nbsp; завершить частично сделанный ввод 
+    команды или файла
+  <dt><font color=Purple><b>Esc?</b></font> &nbsp;&nbsp; выдать список команд или файлов, 
+    соответствующих частично набранному слову
+  </dl>
+</dl>
+
+<dl><dt><font color=Blue>Переменные</font></dt><dd>
+  <dl>
+  <dt>Определение переменной var:&nbsp;&nbsp; <font color=Purple><b>var=value</b></font>
+  <dt>Использование потока вывода команды:&nbsp;&nbsp; <font color=Purple><b>var=`command`</b></font>
+  <dt>Получение значения переменной:&nbsp;&nbsp; <font color=Purple><b>$var</b></font>
+  <dt>Встроенные переменные:
+  <dd><font color=Purple><b>$1, $2, ..., $9</b></font>&nbsp;&nbsp; позиционные параметры скрипта
+  <dd><font color=Purple><b>$?</b></font>&nbsp;&nbsp; код завершения программы (0=OK)
+  <dt>Стандартные переменные:&nbsp;&nbsp; 
+    <font color=Purple><b>PATH, LOGNAME, HOSTNAME, HOME, PS1, ...</b></font>
+  <dt>Объявление var как глобальной переменной:&nbsp;&nbsp; <font color=Purple><b>export var</b></font>
+  <dt>Вывод всех определенных переменных:&nbsp;&nbsp; <font color=Purple><b>set</b></font>
+  <dt>Удаление переменной var:&nbsp;&nbsp; <font color=Purple><b>unset var</b></font>
+  </dl>
+</dl>
+
+</body>
+</html>
+

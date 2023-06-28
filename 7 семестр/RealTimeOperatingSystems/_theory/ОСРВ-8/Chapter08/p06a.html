@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 8</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>8.6. Барьеры</h3></td>
+<td valign="middle" align="right"><a href="p06.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Системные вызовы (POSIX)</font>
+
+<table>
+<tr>
+<td><big><tt><b>#include &lt;pthread.h&gt;<br><br>
+
+<tr>
+<td><big><tt><b>pthread_barrier_t barrier; <td>описание барьера
+
+<tr><td>  <td>
+<tr>
+<td><big><tt><b>pthread_barrier_init (&amp;barrier, 0, int count); <td> инициализация барьера
+<tr><td><td> 0 = тип по умолчанию<br><br>
+
+<tr><td><big><tt><b>pthread_barrier_wait (&amp;barrier); <td> ожидание барьера
+<tr><td><td> (д.б. вызвана <big><tt>count</tt></big> раз)<br><br>
+
+</table>
+
+
+<p> После перехода через барьер барьер переводится в начальное состояние.
+
+<p> <img src="../warning.gif"> <big><tt>pthread_barrier_wait()</tt></big>
+<b>не</b> прерывается сигналом.
+
+
+
+</body>
+</html>
+

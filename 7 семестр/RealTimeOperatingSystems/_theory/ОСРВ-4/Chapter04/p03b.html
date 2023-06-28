@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.3. Каналы и соединения</h3></td>
+<td valign="middle" align="right"><a href="p03a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p03c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<font color=Blue>Соединение с каналом</font>
+
+<p>
+Соединения используются  <b>для передачи</b> сообщений.
+
+<p>
+<big><tt><b>#include &lt;sys/neutrino.h&gt;</b></tt></big><br>
+<big><tt><b>int ConnectAttach (int nd, int pid, int chid, int index, int flags);</b></tt></big>
+</p>
+
+<p>
+Создает соединение с каналом.
+
+<table>
+<tr>
+<td><big><tt>nd</tt></big>
+<td>номер узла в сети qnet (magic cookie, 0 -- локальное подключение)
+<tr><td><big><tt>pid</tt></big>
+<td>номер процесса (0 -- текущий процесс)
+<tr><td><big><tt>chid&nbsp;&nbsp;</tt></big>
+<td>идентификатор канала
+</table>
+
+<tr><td><big><tt>index = 0, flags = 0.</tt></big>
+
+<p>
+Возвращает идентификатор соединения (<big><tt>coid</tt></big>), выбираемый из пространства свободных
+файловых дескрипторов.
+
+<p>
+Соединение может использоваться всеми нитями процесса для посылки сообщений.
+
+<p>
+Допускается создание нескольких соединений с одним каналом.
+
+<p>
+Нити, пославшие сообщения, выстраиваются в очередь к каналу.
+
+
+</body>
+</html>
+

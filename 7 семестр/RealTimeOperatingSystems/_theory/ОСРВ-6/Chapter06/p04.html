@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 6</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>6.4. Обработка прерываний: системные функции</h3></td>
+<td valign="middle" align="right"><a href="p03.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<pre><big><tt><b>
+#include &lt;sys/neutrino.h&gt;
+
+int InterruptAttach (int intr,
+                     const struct sigevent* (*isr)(void*, int),
+                     0, 0, int flags);
+</b></tt></big></pre>
+
+<p> Назначает обработчик прерывания.
+
+<dl><dt>Параметры:
+<dd><big><tt>intr</big></tt>&nbsp;&nbsp; номер прерывания
+<dd><big><tt>isr</big></tt>&nbsp;&nbsp;&nbsp;&nbsp; адрес обработчика
+<dd><big><tt>flags:</big></tt>&nbsp;&nbsp;
+<dd><dl>
+<dd><big><tt>_NTO_INTR_FLAGS_END</big></tt>&nbsp;&nbsp; поставить в конец списка обработчиков
+<dd><big><tt>_NTO_INTR_FLAGS_PROCESS</big></tt>&nbsp;&nbsp; ассоциировать обработчик с процессом
+<dd><big><tt>_NTO_INTR_FLAGS_TRK_MSK</big></tt>&nbsp;&nbsp; отслеживать маскирования и размаскирования
+</dl>
+</dl>
+
+<p> Функция возвращает идентификатор обработчика <big><tt>isrid</big></tt>.
+
+<p>
+
+<table>
+<tr><td><img src="../warning.gif"
+<td> Необходимо запросить нулевой уровень привелегий:<br>
+<big><tt>ThreadCtl (_NTO_TCTL_IO, 0);
+</table>
+</body>
+</html>
+

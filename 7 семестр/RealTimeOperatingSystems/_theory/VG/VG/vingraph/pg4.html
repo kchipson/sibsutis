@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>VinGraph</title>
+<link href="pg5.html" rel="NEXT">
+<link href="pg3.html" rel="PREVIOUS">
+<meta name="description" content="Библиотека VinGraph">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg3.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg5.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<h1>Установка цвета</h1>
+
+<p>Цвет задается числом типа <tt>int</tt>, в котором три младших байта кодируют
+интенсивность трех основных цветов -- красного (r), зеленого (g) и синего (b).
+Для сведения всех трех составляющих цвета в одно целое число используется
+макрос
+<a href="rgb.html"><tt>RGB</a>(r,&nbsp;g,&nbsp;b)</tt>,
+определенный в файле <tt>vingraph.h</tt>.
+Так, черному цвету соответствует <tt>RGB(0,&nbsp;0,&nbsp;0)</tt>, 
+белому -- <tt>RGB(255,&nbsp;255,&nbsp;255)</tt>, а промежуточные значения
+соответствуют всем остальным цветам.
+</p>
+
+<p>Текущее значение цвета, которым рисуются все графические элементы устанавливается
+с помощью функции
+<a href="setcolor.html"><tt>SetColor</a>(int&nbsp;color)</tt>. 
+Эта установка локальна по
+отношению к каждой нити в вашем  процессе, т.е. каждая  независимо  выполняемая нить
+имеет свою установку  текущего цвета.
+По умолчанию установлен белый цвет.
+</p>
+
+<p>Текущее значение цвета выбирается при каждом вызове функции рисования 
+из области TLS (Thread Local Storage) по ключу. 
+Эта выборка требует некоторых затрат времени.
+Более быстрым вариантом является  непосредственное указание цвета с помощью
+дополнительного параметра функций рисования. Например, следующие фрагменты
+кода эквивалентны по своему действию, но второй вариант быстрее:
+</p>
+
+<pre>SetColor (RGB (50, 100, 150)),
+Line (10, 20, 30, 40);
+
+Line (10, 20, 30, 40, RGB (50, 100, 150));
+</pre>
+
+<p>Вы можете запомнить цвет в какой-либо переменной и затем использовать ее
+для нескольких графических элементов:
+</p>
+
+<pre>int c = RGB (50, 100, 150);
+Line (10, 20, 30, 40, c);
+Line (100, 200, 300, 400, c);
+</pre>
+
+<p>Все функции рисования, перечисленные
+<a href="pg3.html">выше</a>, 
+могут вызываться с дополнительным параметром, задающим цвет
+графического элемента
+(см., однако, особенности функций
+<tt><a href="rect.html">Rect</a>()</tt>
+и
+<tt><a href="arc.html">Arc</a>()</tt>).
+</p>
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="pg3.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="pguide.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="pg5.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+
+
+</body>
+</html>
+

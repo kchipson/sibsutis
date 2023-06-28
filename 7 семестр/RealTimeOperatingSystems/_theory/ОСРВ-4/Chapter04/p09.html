@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.9. Реализация доступа к файлам</h3></td>
+<td valign="middle" align="right"><a href="p08.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p09a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue> Механизм работы функции open()</font>
+
+<p> <table>
+<tr><td> <img src="mp1.jpg">&nbsp;&nbsp;&nbsp;&nbsp;
+<td> <big><tt><b>open (<br><br>
+     "/net/lab2/dev/ser1",<br><br>
+     ... )
+</table>
+
+<pre>
+1. ConnectAttach PM (local), MsgSend -&gt; "open /net/lab2/dev/ser1"
+       &lt;- "ask Qnet (pid, chid)"
+2. ConnectAttach Qnet (local), MsgSend -&gt; "open lab2/dev/ser1"
+       &lt;- "ask PM (remote) (nd, pid, chid)"
+3. ConnectAttach PM (remote), MsgSend -&gt; "open dev/ser1"
+       &lt;- "ask Serial driver (nd, pid, chid)"
+4. ConnectAttach Serial driver, MsgSend "open"
+       &lt;- "OK"
+</pre>
+
+</body>
+</html>
+

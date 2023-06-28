@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.6. Интерпретатор команд - Shell</h3></td>
+<td valign="middle" align="right"><a href="p06a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<font color=Blue>Перенаправление ввода-вывода</font>
+
+<p>Программа, запущенная из командной строки, получает <b>три открытых потока ввода-вывода</b>:</p>
+
+<table>
+<tr><td><small>Название потока<td><small>Файловый дескриптор&nbsp;&nbsp;<td><small>Указатель на структуру FILE
+<tr><td>Стандартный ввод<td align=center>0<td align=center><big><tt>stdin&nbsp;
+<tr><td>Стандартный вывод<td align=center>1<td align=center><big><tt>stdout
+<tr><td>Стандартный вывод ошибок&nbsp;&nbsp;<td align=center>2<td align=center><big><tt>stderr
+</table>
+
+<p>По умолчанию все потоки <b>ассоциированы с терминалом</b>, однако, они могут быть перенаправлены:</p>
+
+<dl>
+<dt><font color=Purple><b><big><tt>&gt; file</tt></big></b></font> &nbsp;&nbsp;&nbsp;&nbsp;<big><tt>stdout &#X2192;&nbsp; file</tt></big>
+<dt><font color=Purple><b><big><tt>&gt;&gt; file</tt></big></b></font> &nbsp;&nbsp;то же самое в режиме добавления к файлу
+<dt><font color=Purple><b><big><tt>2&gt; file</tt></big></b></font> &nbsp;&nbsp; <big><tt>stderr &#X2192;&nbsp; file</tt></big>
+<dt><font color=Purple><b><big><tt>&lt; file</tt></big></b></font> &nbsp;&nbsp;&nbsp;&nbsp; <big><tt>stdin &#X2190;&nbsp; file</tt></big>
+<dt><font color=Purple><b><big><tt>prog1 | prog2</tt></big></b></font> &nbsp;&nbsp;
+  <big><tt>stdout(prog1) &#X2192;&nbsp; stdin(prog2)</tt></big>
+</dl>
+
+
+</body>
+</html>
+

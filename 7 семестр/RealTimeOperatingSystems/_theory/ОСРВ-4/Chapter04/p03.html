@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.3. Каналы и соединения</h3></td>
+<td valign="middle" align="right"><a href="p02.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p03a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<font color=Blue>Создание канала</font>
+
+<p>
+Каналы используются  <b>для приема</b> сообщений.
+
+<p>
+<big><tt><b>#include &lt;sys/neutrino.h&gt;</b></tt></big><br>
+<big><tt><b>int ChannelCreate (int flags);</b></tt></big>
+</p>
+
+<p>
+Создает канал (<big><tt>flags = 0</tt></big>).
+</p>
+
+<p>
+Возвращает идентификатор канала <big><tt>chid</tt></big>.
+
+<p>
+Канал может использоваться всеми нитями процесса для приема сообщений.
+
+<p>
+Сообщение может прийти от кого угодно.
+
+<p>
+Нити, ждущие сообщения, выстраиваются в очередь к каналу.
+
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 5</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>5.3. Синхронная обработка сигналов</h3></td>
+<td valign="middle" align="right"><a href="p02.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Ожидание незаблокированных сигналов</font>
+
+<p>
+<big><tt><b>sigsuspend (const sigset_t* ss);</b></tt></big>
+
+<p> Ждет появление сигнала и выхода из обработчика. Параметр <big><tt>ss</tt></big>
+устанавливает маску сигналов на время ожидания.
+
+<pre>
+
+</pre>
+
+<font color=Blue>Ожидание заблокированных сигналов</font>
+
+<p>
+<big><tt><b>sigwaitinfo (const sigset_t* ss, siginfo_t* info);</b></tt></big>
+
+<p> Ждет появление <b>заблокированного</b> сигнала. Параметр <big><tt>ss</tt></big>
+указывает, какие сигналы (из числа заблокированных) ждать. В <big><tt>info</tt></big>
+записывается информация о сигнале.
+
+<p> * Разные нити могут ждать разные сигналы *
+
+
+
+
+</body>
+</html>
+

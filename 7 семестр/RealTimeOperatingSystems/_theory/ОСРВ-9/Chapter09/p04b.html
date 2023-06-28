@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 9</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>9.4. Диски и разделы</h3></td>
+<td valign="middle" align="right"><a href="p04a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Разделы (partitions)</font>
+
+<p><font color=Blue>Раздел</font> – множество последовательно расположенных секторов на диске,
+которое воспринимается операционной системой как отдельный независимый диск.
+
+<p><font color=Blue>Первый сектор</font> диска содержит код для начальной загрузки (MBR, Master Boot Record)
+и описание <font color=Blue>четырех первичных разделов</font>.
+
+<p> Структура первого сектора диска:<br><br>
+ 
+<table>
+<tr><td>Код начальной загрузки <td> <td> 446 байт
+<tr><td>Описатель первого первичного раздела  <td> &nbsp;&nbsp; <td> 16 байт
+<tr><td>Описатель второго первичного раздела  <td> &nbsp;&nbsp; <td> 16 байт
+<tr><td>Описатель третьего первичного раздела  <td> &nbsp;&nbsp; <td> 16 байт
+<tr><td>Описатель четвертого первичного раздела  <td> &nbsp;&nbsp; <td> 16 байт
+<tr><td>Сигнатура 0xAA55<td> <td> 2 байта
+</table>
+
+</body>
+</html>
+

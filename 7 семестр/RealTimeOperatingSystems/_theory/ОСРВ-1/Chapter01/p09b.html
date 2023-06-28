@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.9. Права доступа к файлам и каталогам</h3></td>
+<td valign="middle" align="right"><a href="p09a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p09c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+
+<p><font color=Blue>Флаги <b>s</b></font>
+</p>
+
+<p>Полномочия любой программы определяются ее <b>эффективными</b> (действующими) идентификаторами
+пользователя и группы euid и egid. Обычно при запуске программы</p>
+
+<dl>
+<dd> <font color=Purple><b>euid = uid, egid = gid</b></font>
+</dl>
+
+<pre>
+
+</pre>
+
+<p>Флаги <b>s</b> изменяют этот порядок по следующему правилу:</p>
+
+<dl>
+<dd> <font color=Blue><b>s (user)&nbsp;&nbsp;</b></font> &#X2192;  
+  <font color=Purple><b>euid = uid владельца исполняемого файла</b></font>
+<dd> <font color=Blue><b>s (group)</b></font> &#X2192;  
+  <font color=Purple><b>egid = gid группы исполняемого файла</b></font>
+</dl>
+
+
+<pre>
+
+</pre>
+
+<p><font color=Blue>Флаг <b>t</b></font>&nbsp; не используется.
+</p>
+
+
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.7. Разделяемые объекты и библиотеки</h3></td>
+<td valign="middle" align="right"><a href="p07b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07d.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p><font color=Blue>Загрузка динамической библиотеки</font><br>
+
+<pre><big><tt><b>#include &lt;dlfcn.h&gt;
+
+void* dlopen (const char *path, int mode);
+</big></tt></b></pre>
+
+<p> Загружает динамическую библиотеку и отображает ее в адресное пространство процесса.
+
+<dl>
+<dt><big><tt>path</big></tt>
+<dd> путь к библиотеке
+<dd> если указано только имя, то библиотека ищется в каталогах <big><tt>LD_LIBRARY_PATH</big></tt>
+<dt><big><tt>mode</big></tt>
+<dd> управление режимом разрешения имен и видимостью
+<dd><big><tt>mode = RTLD_NOW&nbsp;</big></tt> &nbsp;&nbsp; все ссылки настраиваются при
+загрузке библиотеки
+<dd><big><tt>mode = RTLD_LAZY</big></tt> &nbsp;&nbsp; ссылки настраиваются по мере их использования
+</dl>
+
+<p> Функция возвращает handle, использующийся для доступа к библиотеке.
+
+
+<pre>
+<big><tt><b>
+void* dlsym (void *handle, const char *name);
+</big></tt></b></pre>
+
+<p> Возвращает адрес функции или др. объекта с именем <big><tt>name</big></tt> в библиотеке.
+
+
+<pre>
+<big><tt><b>
+dlclose (void *handle);
+</big></tt></b></pre>
+
+<p> Закрывает библиотеку.
+
+
+</body>
+</html>
+

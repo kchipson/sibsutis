@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.4. Передача однокомпонентных сообщений</h3></td>
+<td valign="middle" align="right"><a href="p03.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p>
+<big><tt><b>#include &lt;sys/neutrino.h&gt;</b></tt></big><br>
+<table>
+<tr><td><big><tt><b>int MsgSend ( <td><big><tt><b>int coid,
+<tr><td><td> <big><tt><b>const void *smsg, int sbytes,
+<tr><td><td>  <big><tt><b>void *rmsg, int rbytes);
+</table>
+</p>
+
+<p>
+Посылает сообщение и ждет ответ.
+</p>
+
+<p><big><tt>coid</tt></big>&nbsp;&nbsp; идентификатор соединения
+
+<p><big><tt>smsg, sbytes</tt></big>&nbsp;&nbsp; адрес и длина сообщения в байтах
+
+<p><big><tt>rmsg, rbytes</tt></big>&nbsp;&nbsp; адрес и размер буфера для приема ответа
+
+<p> Возвращает значение параметра <big><tt>stat</tt></big> из соответствующей
+фукции передачи ответа <big><tt>MsgReply()</tt></big>.
+
+</body>
+</html>
+

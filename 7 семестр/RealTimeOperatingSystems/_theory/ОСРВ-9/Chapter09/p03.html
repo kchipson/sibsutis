@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 9</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>9.3. Пространство имен</h3></td>
+<td valign="middle" align="right"><a href="p02.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p03a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Пространство имен (namespace)</font> -- это
+совокупность всех путей к файлам, имеющимся в системе.
+
+<p> Каждый менеджер ресурсов регистрирует свое имя <font color=Blue>(mountpoint)</font>
+в пространстве имен.
+
+<p>
+
+<table>
+<tr>
+<td><small>mountpoint <td><small>менеджер <td> <small>описание
+<tr>
+<tr>
+<tr>
+<td><big><tt>/ <td><big><tt>devb-eide + fs-qnx4.so&nbsp;&nbsp; <td> дисковая файловая система
+<tr>
+<td><big><tt>/proc/ <td><big><tt>procnto <td> процессы (pid)
+<tr>
+<td><big><tt>/proc/boot/&nbsp;&nbsp; <td><big><tt>procnto <td> файлы загрузочного образа системы
+<tr>
+<td><big><tt>/dev/fd0 <td><big><tt>devb-fdc <td> гибкий диск
+<tr>
+<td><big><tt>/dev/hd0 <td><big><tt>devb-eide <td> жесткий диск
+<tr>
+<td><big><tt>/net <td><big><tt>io-net <td> сеть Qnet
+<tr>
+<td><big><tt>/dev/shmem <td><big><tt>procnto <td> электронный диск
+</table>
+
+
+<p> <font color=Blue>mountpoints = префиксное дерево</font> &nbsp;&nbsp;&nbsp; (procnto)
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; может содержать идентичные или частично перекрывающиеся префиксы
+
+<p> <big><tt>open():&nbsp;&nbsp;</tt></big> путь &nbsp;-&gt;&nbsp; procnto:&nbsp;&nbsp; какой менеджер?
+
+</body>
+</html>
+

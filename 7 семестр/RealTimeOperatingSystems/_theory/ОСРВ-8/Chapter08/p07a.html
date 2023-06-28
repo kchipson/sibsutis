@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 8</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>8.7. Переменные условий (condvars)</h3></td>
+<td valign="middle" align="right"><a href="p07.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p08.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Системные вызовы (POSIX)</font>
+
+<table>
+<tr>
+<td><big><tt><b>#include &lt;pthread.h&gt;<br><br>
+
+<tr>
+<td><big><tt><b>pthread_cond_t cond; <td>описание
+
+<tr><td>  <td>
+<tr>
+<td><big><tt><b>pthread_cond_init (&amp;cond, 0); <td> инициализация
+<tr><td><td> 0 = тип по умолчанию<br><br>
+
+<tr><td><big><tt><b>pthread_cond_wait (&amp;cond, &amp;mutex); <td> ожидание
+
+<tr><td>  <td>
+<tr><td><big><tt><b>pthread_cond_broadcast (&amp;cond); <td> разблокирует все нити,
+<tr><td><td>       ожидающие <big><tt>cond</tt></big>
+
+</table>
+
+<p> Техника использования:
+
+<pre>
+pthread_mutex_lock (&amp;mutex);
+...
+while (!condition) pthread_cond_wait (&amp;cond, &amp;mutex);
+...
+pthread_mutex_unlock (&amp;mutex);
+</pre>
+
+<p><img src="../warning.gif"> Сигнал <b>выводит</b> нить из ожидания, <big><tt>errno = OK</tt></big>.
+
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 8</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>8.5. Несистемные средства реализации КС</h3></td>
+<td valign="middle" align="right"><a href="p05a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<p><font color=Blue>Запрет прерываний</font>
+
+<p> Используются команды процессора
+
+<dl>
+<dt><big><tt><b>cli</b></tt></big>
+<dd> сброс флага разрешения прерываний
+<dt><big><tt><b>sti</b></tt></big>
+<dd> установка флага разрешения прерываний
+</dl>
+
+<p> В QNX: <tt>InterruptDisable(), InterruptEnable()</tt>
+
+<p><img src="../warning.gif"> необходим нулевой уровень привелегий 
+(<big><tt>ThreadCtl&nbsp;(_NTO_TCTL_IO,&nbsp;0)</tt></big>)
+
+<p> Оформление критической секции:
+
+<p><big><tt>InteruptDisable ();<br> &nbsp;&nbsp;КС <br>InterruptEnable ();
+
+
+
+
+
+</body>
+</html>
+

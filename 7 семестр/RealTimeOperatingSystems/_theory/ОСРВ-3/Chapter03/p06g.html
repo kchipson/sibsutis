@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.6. Нити</h3></td>
+<td valign="middle" align="right"><a href="p06f.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Динамическое планирование нитей</font><br>
+
+
+<p>
+<big><tt><b>pthread_setschedparam (int tid, int alg, const struct sched_param *param);</b></tt></big>
+
+<pre>
+</pre>
+
+<p> Устанавливает для нити новые параметры планирования (приоритет).
+
+<pre>
+
+</pre>
+
+<font color=Blue>Изменение приоритета текущей нити</font><br>
+
+<p>
+<big><tt><b>#include &lt;sched.h&gt;</b></tt></big><br>
+<big><tt><b>setprio (0, int prio);</b></tt></big> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(QNX)
+
+<pre>
+
+</pre>
+
+<font color=Blue>Динамическая карусель</font><br>
+
+<p>
+<big><tt><b>#include &lt;sched.h&gt;</b></tt></big><br>
+<big><tt><b>sched_yield ();</b></tt></big>
+
+<p> Ставит вызвавшую нить в конец очереди текущего приоритета.
+
+</body>
+</html>
+

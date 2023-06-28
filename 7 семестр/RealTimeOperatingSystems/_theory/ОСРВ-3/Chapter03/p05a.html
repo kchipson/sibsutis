@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.5. Построение отображений</h3></td>
+<td valign="middle" align="right"><a href="p05.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p05b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<big><tt><b>
+#include &lt;sys/mman.h&gt;<br>
+void* mmap (void* addr, int len, int prot, int flags, int fd, int offset );
+</b></tt></big>
+
+<p>
+Отображает область виртуального адресного пространства на файл или физическую память.
+
+
+<dl>
+<dt><big><tt>addr, len</tt></big>
+<dd>адрес и длина области. Рекомендуется задавать <big><tt>addr = 0</tt></big>.
+</dl>
+
+<dl>
+<dt><big><tt>prot</tt></big>
+<dd><dl><dt>режим доступа к отображаемой области:
+<dd><big><tt>PROT_READ</tt></big> &nbsp;&nbsp;разрешение чтения
+<dd><big><tt>PROT_WRITE</tt></big> разрешение записи
+<dd><big><tt>PROT_EXEC</tt></big> &nbsp;&nbsp;разрешение выполнения
+<dd><big><tt>PROT_NONE</tt></big> &nbsp;&nbsp;запрет доступа
+<dd><big><tt>PROT_NOCACHE</tt></big> &nbsp;запрет кеширования
+</dl>
+</dl>
+
+
+
+</body>
+</html>
+

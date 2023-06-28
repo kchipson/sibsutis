@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.2. Процессы</h3></td>
+<td valign="middle" align="right"><a href="p02b.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p03.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<font color=Blue>Запуск внешних программ (fork-exec)</font>
+
+<p>
+<big><tt><b>#include &lt;process.h&gt;</b></tt></big><br>
+<big><tt><b>execlp (const char *file, const char *arg0, const char *arg1, ..., 0);</b></tt></big><br>
+</p>
+
+<p>
+Замещает образ текущего процесса образом из файла<br>
+(pid и дескрипторы открытых файлов сохраняются).
+</p>
+
+<pre>
+
+</pre>
+
+<p>
+<big><tt><b>#include &lt;unistd.h&gt;</b></tt></big><br>
+<big><tt><b>pipe (int fd[2]);</b></tt></big><br>
+</p>
+
+<p>
+Создает трубу (pipe) для обмена данными между процессами.<br>
+В <big><tt>fd[0]</tt></big> записывается файловый дескриптор для чтения из трубы,<br>
+в <big><tt>fd[1]</tt></big> -- файловый дескриптор для записи в трубу.
+</p>
+
+
+<p>
+<big><tt><b>#include &lt;unistd.h&gt;</b></tt></big><br>
+<big><tt><b>dup2 (int fd1, int fd2);</b></tt></big><br>
+</p>
+
+<p>
+Дупликация дескриптора открытого файла <big><tt>fd1</tt></big>
+в другой дескриптор <big><tt>fd2</tt></big><br>
+(если под <big><tt>fd2</tt></big> был открытый файл, то он закрывается).
+</p>
+
+
+</body>
+</html>
+

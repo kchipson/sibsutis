@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 8</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>8.4. Мьютексы</h3></td>
+<td valign="middle" align="right"><a href="p04c.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p04e.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Системные вызовы (POSIX)</font>
+
+<table>
+<tr>
+<td><big><tt><b>#include &lt;pthread.h&gt;<br><br>
+
+<tr>
+<td><big><tt><b>pthread_mutex_t mutex; <td>описание мьютекса
+
+<tr><td>  <td>
+<tr>
+<td><big><tt><b>pthread_mutex_init (&amp;mutex, 0); <td> инициализация мьютекса
+<tr><td><td> 0 = тип по умолчанию<br><br>
+
+<tr><td><big><tt><b>pthread_mutex_lock (&amp;mutex); <td> lock <td> 26 ops
+
+<tr><td><big><tt><b>pthread_mutex_unlock (&amp;mutex); <td> unlock <td> 18 ops (QNX)<br><br><br>
+
+<tr><td><big><tt><b>pthread_mutex_destroy (&amp;mutex); <td> уничтожение мьютекса
+
+
+</table>
+
+</body>
+</html>
+

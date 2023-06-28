@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.5. Построение отображений</h3></td>
+<td valign="middle" align="right"><a href="p05e.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p05g.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Взаимодействие с физическими устройствами</font><br>
+
+<p>(1) Устройства с двухпортовой памятью (графический адаптер)
+
+<p>
+<big><tt>ptr = mmap (0, len, prot<font color=Purple>+PROT_NOCACHE, MAP_SHARED + MAP_PHYS, -1, PA</font>);
+</tt></big>
+
+<pre>
+
+</pre>
+
+<p>(2) Устройства с DMA (сетевой адаптер)
+
+<p>
+<big><tt>ptr = mmap (0, len, prot<font color=Purple>+PROT_NOCACHE, MAP_SHARED + MAP_PHYS + MAP_ANON, -1, 0</font>);
+</tt></big>
+
+<p> Физический адрес области можно узнать с помощью функции <big><tt>mem_offset(...)</tt></big>.
+</body>
+</html>
+

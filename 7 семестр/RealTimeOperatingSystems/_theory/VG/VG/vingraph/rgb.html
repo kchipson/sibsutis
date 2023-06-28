@@ -1,0 +1,111 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>RGB</title>
+<link href="setcolor.html" rel="NEXT">
+<link href="picture.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="picture.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="setcolor.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>RGB()</i></a></h1>
+
+<p>Задание цвета в формате RGB</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+#define RGB(r,g,b) ((((r &lt;&lt; 8) + g) &lt;&lt; 8) + b)</pre>
+
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>r</tt></dt>
+<dd>Красная составляющая цвета.
+</dd>
+
+<dt><tt>g</tt></dt>
+<dd>Зеленая составляющая цвета,
+</dd>
+
+<dt><tt>b</tt></dt>
+<dd>Синяя составляющая цвета,
+</dd>
+
+</dl>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Этот макрос строит композитный цвет из трех составляющих --
+красной, зеленой и синей. Значение каждой составляющей
+лежит в диапазоне от 0 до 255.
+</p>
+
+<p>Вот несколько примеров задания цвета:
+</p>
+
+<table>
+<tr><td>Черный: </td><td><tt>RGB (0, 0, 0)</tt></td><td>(= 0)</td>
+<tr><td>Белый:  </td><td><tt>RGB (255, 255, 255)</tt></td><td>(= 16777215)</td>
+<tr><hr></hr></tr>
+<tr><td>Красный:  </td><td><tt>RGB (255, 0, 0)</tt></td><td>(= 16711680)</td>
+<tr><td>Зеленый:  </td><td><tt>RGB (0, 255, 0)</tt></td><td>(= 65280)</td>
+<tr><td>Синий:  </td><td><tt>RGB (0, 0, 255)</tt></td><td>(= 255)</td>
+</table>
+
+<table>
+<tr><td><img src="imagelib/pointing.gif" alt="Note:"></td>
+<td>
+Наиболее удобный способ задания цвета, когда вы пишете программу,
+следующий. Находясь в редакторе <tt>ped</tt>, 
+выберете пункт меню Edit/Preferences, закладку Font&amp;Color
+и элемент Text Color (или Background Color).
+Появляется диалоговое окно, в котором вы можете выбирать цвет.
+Вы можете использовать закладку Palettes или Patches.
+В верхней строке окна выводится образец цвета и значения
+его составляющих, которые вы можете использовать в программе.
+Для выхода из окна используйте кнопку Cancel, чтобы не менять
+параметров редактора.
+</td></tr>
+</table>
+
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p>
+<tt><a href="setcolor.html"><tt>SetColor</a>()</tt>,
+<tt><a href="getcolor.html"><tt>GetColor</a>()</tt>,
+<tt><a href="fill.html"><tt>Fill</a>()</tt>
+</p>
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="picture.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="setcolor.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

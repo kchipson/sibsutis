@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 4</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>4.9. Реализация доступа к файлам</h3></td>
+<td valign="middle" align="right"><a href="p09a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p09b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue> Реализация функции write() в Linux</font>
+
+
+<pre>
+int write (int fd, const void *buf, int nbytes)
+
+    SYS_WRITE -&gt; %eax
+    fd        -&gt; %ebx
+    buf       -&gt; %ecx
+    nbytes    -&gt; %edx
+    int 0x80
+</pre>
+
+</body>
+</html>
+

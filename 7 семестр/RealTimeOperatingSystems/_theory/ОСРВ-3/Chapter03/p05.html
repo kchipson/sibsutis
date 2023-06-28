@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.5. Построение отображений</h3></td>
+<td valign="middle" align="right"><a href="p04.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p05a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<p>
+Системный вызов: &nbsp;&nbsp;&nbsp;<font color=Purple><b>mmap (...);</b></font>
+
+<dl>
+<dt>Виды отображений:
+<dd>на именованный объект (файл) <big><tt><b>fd >= 0</b></tt></big>
+<dd>анонимное <font color=Purple>MAP_ANON</font> <big><tt><b>fd = -1</b></tt></big>
+</dl>
+
+<dl>
+<dt>Типы отображений:
+<dd>разделяемое <font color=Purple>MAP_SHARED</font>
+<dd>частное <font color=Purple>MAP_PRIVATE</font>
+</dl>
+
+<dl>
+<dt>Режим доступа:
+<dd>чтение <font color=Purple>PROT_READ</font>
+<dd>запись <font color=Purple>PROT_WRITE</font>
+<dd>выполнение <font color=Purple>PROT_EXEC</font>
+</dl>
+
+
+</body>
+</html>
+

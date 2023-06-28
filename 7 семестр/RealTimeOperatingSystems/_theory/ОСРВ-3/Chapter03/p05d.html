@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.5. Построение отображений</h3></td>
+<td valign="middle" align="right"><a href="p05c.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p05e.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Разделяемый доступ к файлу</font><br>
+(изменения записываются в файл)
+
+<p>
+<big><tt>ptr = mmap (addr, len, prot, <font color=Purple>MAP_SHARED</font>, fd, offset);
+</tt></big>
+
+<p>Именованные общие области для обмена данными между процессами
+
+<dl><dt>
+<img src="../warning.gif"> Не все файловые системы поддерживают отображение файлов в память:
+<dd><table>
+<tr><td><big><tt>/dev/shmem&nbsp;&nbsp;</tt></big> <td>чтение, запись, выполнение 
+    <td><big><tt>&nbsp;&nbsp;&nbsp;&nbsp;shm_open (...)</tt></big>
+<tr><td><big><tt>QNX4FS</tt></big> <td>только чтение и выполнение
+</table>
+</dl>
+
+
+<dl>
+<dt>Основные операции с файлами:
+<dd><big><tt>open</big></tt> &nbsp;&nbsp;&nbsp; создает или открывает существующий файл
+<dd><big><tt>ftruncate</big></tt> &nbsp;&nbsp;устанавливает размер файла
+<dd><big><tt>unlink</big></tt> &nbsp;&nbsp;удаляет файл
+<dd><big><tt>read, write, lseek</big></tt> &nbsp;&nbsp;заменяются прямым доступом через 
+    <big><tt>ptr</big></tt> 
+</dl>
+
+
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.6. Нити</h3></td>
+<td valign="middle" align="right"><a href="p05.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p06a.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>POSIX threads 1003.1</font><br>
+<big><tt><b>#include &lt;pthread.h&gt;</b></tt></big>
+
+<pre>
+
+</pre>
+
+<font color=Blue>Создание нити</font><br>
+<big><tt><b>pthread_create (int* tid, 0, void* (*func)(void*), void* arg);</b></tt></big>
+
+<pre>
+</pre>
+
+<table>
+<tr><td><big><tt>tid <td> куда положить номер нити, м.б. 0
+<tr><td><big><tt>0 <td> вместо указателя на структуру с атрибутами нити
+<tr><td><big><tt>func&nbsp;&nbsp; <td> указатель на функцию, которая запускается в виде нити
+<tr><td><td>  (первичная функция нити)
+<tr><td><big><tt>arg <td> аргумент, который будет передан в <big><tt>func
+</table>
+
+<pre>
+
+</pre>
+
+<font color=Blue>Завершение нити</font><br>
+<pre>
+</pre>
+
+(1) Выход из первичной функции нити (с возвратом статуса завершения)<br>
+(2) <big><tt><b>pthread_exit (void* stat);</b></tt></big><br>
+(3) <big><tt><b>pthread_cancel (int tid);</b></tt></big>
+
+
+</body>
+</html>
+

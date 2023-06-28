@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.7. Разделяемые объекты и библиотеки</h3></td>
+<td valign="middle" align="right"><a href="p07.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p07b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<font color=Blue>Примеры</font><br>
+
+<dl>
+<dt><big><tt>plates.o</big></tt>
+<dd> простой объектный файл
+<dt><big><tt>libc.a, libvg.a</big></tt>
+<dd> библиотеки статической компоновки (архивы объектных файлов)
+<dt><big><tt>libc.so, libvg.so</big></tt>
+<dd> библиотеки динамической компоновки, разделяемые объекты
+</dl>
+
+
+<p><font color=Blue>Динамическая компоновка</font><br>
+
+<p>
+<big><tt>cc test.c</big></tt>
+
+<p><font color=Blue>Статическая компоновка</font><br>
+
+<p>
+<big><tt>cc -static test.c</big></tt>
+
+<p><font color=Blue>Смешанная компоновка</font><br>
+
+<p>
+<big><tt>cc ... -Bdynamic lib1 lib2 -Bstatic lib3 lib4 -Bdynamic lib5 ...</big></tt>
+
+
+</body>
+</html>
+

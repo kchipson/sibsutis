@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>1.13. Вывод информации и временная приостановка</h3></td>
+<td valign="middle" align="right"><a href="p13.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p13b.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<font color=Blue>Приостановка программы</font>
+
+<p>
+<big><tt><b>#include &lt;unistd.h&gt;</b></tt></big><br>
+<big><tt><b>int usleep (int usec);</b></tt></big><br>
+</p>
+
+<p>
+Приостанавливает выполнение программы на usec микросекунд (1с = 1000000мкс).
+</p>
+
+
+
+<dl><dt><font color=Blue>Функции ввода-вывода:</font>
+  <dl>
+  <dt>1) с внутренней буферизацией через структуру FILE
+  <dd><font color=Purple><b>fwrite, fread, ..., printf, ...</b></font>
+  <dt>2) без буферизации через fd
+  <dd><font color=Purple><b>write, read, ...</b></font>
+  </dl>
+</dl>
+
+<dl><dt>
+<big><tt><b>#include &lt;unistd.h&gt;</b></tt></big><br>
+<big><tt><b>int write (int fd, const void * buf, int n);</b></tt></big><br><br>
+  <dl><dt> <big><tt><b>fd</b></tt></big> - дескриптор файла,
+    <big><tt><b>buf</b></tt></big> - адрес буфера,
+    <big><tt><b>n</b></tt></big> - число байт.<br> Функция возвращает количество реально
+    записанных байт (обычно = n).
+  </dl>
+</dl>
+
+
+</body>
+</html>
+

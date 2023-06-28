@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Chapter 1</title>
+</head>
+<body bgcolor="#EDE9E0" text="#000000">
+<center>
+<table align="center" width="90%">
+<tr>
+<td valign="middle" align="left"><h3>3.2. Процессы</h3></td>
+<td valign="middle" align="right"><a href="p02a.html"><img src="../prev.gif" width=27 height=41 border=0></a></td>
+<td valign="middle" align="right"><a href="p02c.html"><img src="../next.gif" width=27 height=41 border=0></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+
+<font color=Blue>Ожидание завершения дочернего процесса</font>
+
+<p>
+<big><tt><b>#include &lt;sys/wait.h&gt;</b></tt></big><br>
+<big><tt><b>int wait (int *stat);</b></tt></big>
+</p>
+
+<p>
+Ждет завершения (какого-либо) дочернего процесса.<br>
+Возвращает pid завершенного процесса и записывает код завершения
+по указателю <big><tt>stat</tt></big> .
+</p>
+
+<pre>
+
+</pre>
+
+<font color=Blue>Состояние Zombie</font>
+
+<p>
+Если дочерний процесс завершается, то он переходит в состояние
+<font color=Purple><b>Zombie</b></font> до тех пор, пока
+родительский процесс не вызовет функцию
+<big><tt>wait()</tt></big> или не завершится.
+</p>
+
+
+
+</body>
+</html>
+

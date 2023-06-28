@@ -1,0 +1,131 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Enlarge</title>
+<link href="enlargeto.html" rel="NEXT">
+<link href="moveto.html" rel="PREVIOUS">
+<link href="libref.html" rel="CONTENTS">
+<meta name="description" content="Do something">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="moveto.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="enlargeto.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+<hr>
+
+<h1><a name="id1"><i>Enlarge()</i></a></h1>
+
+<p>Увеличивает или уменьшает размеры элемента</p>
+
+<h2><a name="id3">Прототип:</a></h2>
+<pre>#include &lt;vingraph.h&gt;
+
+(1) void Enlarge (int ident, int dx, int dy);
+
+(2) void Enlarge (int ident, int left, int up, int right, int down);</pre>
+
+
+<h2><a name="id5">Параметры:</a></h2>
+
+<dl>
+
+<dt><tt>ident</tt></dt>
+<dd>Идентификатор графического элемента.
+</dd>
+
+<dt><tt>dx</tt></dt>
+<dd>Увеличение по горизонтали.
+</dd>
+
+<dt><tt>dy</tt></dt>
+<dd>Увеличение по вертикали.
+</dd>
+
+<dt><tt>left</tt></dt>
+<dd>Увеличение влево.
+</dd>
+
+<dt><tt>up</tt></dt>
+<dd>Увеличение вверх.
+</dd>
+
+<dt><tt>right</tt></dt>
+<dd>Увеличение вправо.
+</dd>
+
+<dt><tt>down</tt></dt>
+<dd>Увеличение вниз.
+</dd>
+
+
+</dl>
+
+<h2><a name="id7">Библиотека:</a></h2>
+
+<p><tt>libvg.a</tt></p>
+
+<h2><a name="id9">Описание:</a></h2>
+
+<p>Функции увеличивают (уменьшают) графический элемент.
+Увеличение (в соответствующих направлениях) происходит при положительных
+значениях параметров, уменьшение -- при отрицательных.
+</p>
+
+<p>Функция первого вида производит симметричное увеличение или уменьшение элемента,
+т.е. центр элемента остается неподвижным.
+Функция второго вида может выполнять произвольные (несимметричные) изменения
+размеров элемента.
+</p>
+
+<p>По своему смыслу данные функции применимы только к следующим графическим элементам:
+прямая линия, прямоугольник, таблица, эллипс, дуга. При применении к другим элементам
+результат может быть неожиданным.
+</p>
+
+<p>В результате выполнения функций может измениться точка привязки элемента.
+</p>
+
+
+<h2><a name="id15">Классификация:</a></h2>
+<p>VinGraph</p>
+<table border>
+<tr><th><a name="id16">Безопасность:</a></th><th></th></tr>
+<tr><td>Точка завершения</td>
+    <td>Да</td>
+<tr><td>Обработчик прерывания</td>
+    <td>Нет</td>
+<tr><td>Обработчик сигнала</td>
+    <td>Да</td>
+<tr><td>Нить</td>
+    <td>Да</td>
+</table>
+
+
+<h2><a name="id18">См. также:</a></h2>
+
+<p>
+<tt><a href="enlargeto.html"><tt>EnlargeTo</a>()</tt>,
+<tt><a href="getpos.html"><tt>GetPos</a>()</tt>,
+<tt><a href="getdim.html"><tt>GetDim</a>()</tt>
+</p>
+
+<hr>
+<center>
+<table align="center" width="40%">
+<tr>
+<td valign="middle" align="center"><a href="moveto.html"><img src="imagelib/prev.gif" width=27 height=41 border=0 alt="[Previous]"></a></td>
+<td valign="middle" align="center"><a href="libref.html"><img src="imagelib/contents.gif" width=47 height=41 border=0 alt="[Contents]"></a></td>
+<td valign="middle" align="center"><a href="enlargeto.html"><img src="imagelib/next.gif" width=27 height=41 border=0 alt="[Next]"></a></td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>
